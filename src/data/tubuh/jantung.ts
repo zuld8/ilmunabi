@@ -4,122 +4,106 @@ export const jantungData: ObjectData = {
   slug: "jantung",
   name: {
     id: "Jantung",
-    en: "Heart",
+    en: "Jantung",
   },
-  scientificName: "Cor / Cardia",
+  scientificName: "Cor",
   surahName: "Qaf",
   surahReference: "50:37",
   icon: "🫀",
   category: "tubuh",
   type: "tubuh",
-  unlockedAtPoints: 150,
+  unlockedAtPoints: 50,
   kosakata: [
-    { arab: "قَلْبٌ", latin: "Qalb", arti: "Jantung/Hati", artiEn: "Heart" },
-    { arab: "صَدْرٌ", latin: "Sadr", arti: "Dada", artiEn: "Chest" },
-    { arab: "عَقْلٌ", latin: "Aql", arti: "Akal/Pemahaman", artiEn: "Intellect" },
-    { arab: "وَرِيدٌ", latin: "Warid", arti: "Urat/Pembuluh Darah", artiEn: "Vein" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Qaf 50:37" }
   ],
   balita: {
     text: {
-      id: "Ini jantungmu! Jantung berdetak *deg-deg-deg* mengalirkan darah ke seluruh tubuh. 🫀",
-      en: "This is your heart! It beats *thump-thump* pumping blood throughout your body. 🫀",
+      id: "Ini Jantung! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Jantung! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Jantung kita berada di dalam dada sebelah kiri. Jantung bekerja siang malam tanpa henti agar kita tetap sehat.",
-      en: "Our heart is inside the left chest. The heart works day and night without stopping so we remain healthy.",
+      id: "Ini Jantung. Allah menciptakan Jantung dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Jantung. Allah created Jantung beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Di mana letak jantung kita?",
-        en: "Where is our heart located?",
+        id: "Mana gambar Jantung?",
+        en: "Which one is the picture of Jantung?",
       },
       options: [
-        { text: { id: "Dada sebelah kiri", en: "Left side of the chest" } },
-        { text: { id: "Di dalam perut", en: "Inside the stomach" } },
-        { text: { id: "Di telapak kaki", en: "In the sole of the foot" } },
+        { text: { id: "🫀 Jantung", en: "🫀 Jantung" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Jantung adalah otot penopang hidup kita. Ukuran jantungmu kira-kira sebesar kepalan tanganmu sendiri. Allah merancangnya untuk memompa darah secara konsisten.",
-      en: "The heart is the muscular engine of our life. Your heart is about the size of your clenched fist. Allah designed it to pump blood consistently.",
+      id: "Fakta menarik tentang Jantung: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Jantung: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Jantung berdetak sekitar 100.000 kali dalam satu hari.", en: "The heart beats about 100,000 times in a single day." },
-      { id: "Jantung memompa sekitar 7.500 liter darah setiap hari.", en: "The heart pumps about 7,500 liters of blood daily." },
-      { id: "Otot jantung bekerja secara otomatis tanpa harus kita suruh.", en: "Heart muscles work automatically without us telling it to." },
-      { id: "Berolahraga secara rutin membantu menjaga kekuatan jantung.", en: "Regular exercise helps maintain the heart's strength." },
+      { id: "Jantung diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Jantung was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Jantung dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Jantung in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "إِنَّ فِي ذَٰلِكَ لَذِكْرَىٰ لِمَنْ كَانَ لَهُ قَلْبٌ",
-      transliteration: "Inna fī dhālika ladhikrā liman kāna lahu qalb",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Sungguh, pada yang demikian itu benar-benar terdapat peringatan bagi orang-orang yang mempunyai jantung (hati),",
-        en: "Indeed in that is a reminder for whoever has a heart,",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Seberapa besar ukuran jantung manusia?",
-        en: "How large is the human heart?",
+        id: "Siapa yang menciptakan Jantung dengan sempurna?",
+        en: "Who created Jantung perfectly?",
       },
       options: [
-        { text: { id: "Sebesar buah semangka", en: "As big as a watermelon" } },
-        { text: { id: "Sebesar kepalan tangan sendiri", en: "As big as one's own fist" } },
-        { text: { id: "Sebesar kelereng", en: "As big as a marble" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Jantung terbagi menjadi 4 ruang utama (2 atrium dan 2 ventrikel). Jantung memiliki jaringan saraf intrinsik mandiri (pacemaker alami) yang memicu impuls listrik secara otomatis.",
-      en: "The heart is divided into 4 chambers (2 atria and 2 ventricles). The heart possesses an intrinsic neural network (natural pacemaker) that generates electrical impulses automatically.",
+      id: "Eksplorasi anatomi dan struktur Jantung mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Jantung reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Nodus Sinoatrial (SA)", en: "SA Node" },
-        desc: { id: "Pembangkit listrik alami jantung yang mengatur irama detak.", en: "The natural electrical pacemaker of the heart regulating beat rhythms." },
-      },
-      {
-        part: { id: "Atrium", en: "Atria" },
-        desc: { id: "Dua ruang atas jantung yang menerima darah yang masuk.", en: "The two upper chambers of the heart that receive incoming blood." },
-      },
-      {
-        part: { id: "Ventrikel", en: "Ventricles" },
-        desc: { id: "Dua ruang bawah berdinding tebal yang memompa darah keluar.", en: "The two thick-walled lower chambers that pump blood out." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Sains modern (neurokardiologi) menemukan bahwa jantung memiliki 'otak kecil' sendiri yang terdiri dari sekitar 40.000 neuron (sel saraf). Jantung bisa memproses informasi, mengingat, dan merasakan secara independen dari otak di kepala. Hal ini menjelaskan mengapa Al-Qur'an mengaitkan pemahaman spiritual dan berpikir dengan 'Qalb' (jantung/hati) bukan semata-mata otak.",
-      en: "Modern science (neurocardiology) discovered that the heart has its own 'little brain' consisting of about 40,000 neurons. The heart can process information, remember, and feel independently of the brain in the head. This explains why the Quran attributes spiritual understanding and thinking to the 'Qalb' (heart) rather than the brain alone.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Jantung di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Jantung in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "أَفَلَمْ يَسِيرُوا فِي الْأَرْضِ فَتَكُونَ لَهُمْ قُلُوبٌ يَعْقِلُونَ بِهَا",
-      transliteration: "Afalam yasīrū fil-ardhi fatakūna lahum qulūbuy ya'qilūna bihā",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Maka tidakkah mereka berjalan di bumi, sehingga hati (jantung) mereka dapat memahami,",
-        en: "So have they not traveled through the earth and have hearts by which to reason,",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Surah Al-Hajj ayat 46 mengisyaratkan fungsi kognitif dan emosional jantung (Qulub) dalam memahami kebenaran.",
-        en: "Surah Al-Hajj verse 46 hints at the cognitive and emotional functions of hearts (Qulub) in understanding truth.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
     quiz: [
       {
         question: {
-          id: "Berapa banyak jumlah sel saraf (neuron) intrinsik yang ditemukan di jantung manusia?",
-          en: "How many intrinsic neurons are discovered in the human heart?",
+          id: "Apa hikmah utama diutusnya tanda sains tentang Jantung?",
+          en: "What is the primary wisdom of scientific signs regarding Jantung?",
         },
         options: [
-          { text: { id: "1.000", en: "1,000" } },
-          { text: { id: "40.000", en: "40,000" } },
-          { text: { id: "1 juta", en: "1 million" } },
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
         ],
-        answerIdx: 1,
+        answerIdx: 0,
       },
     ],
   },

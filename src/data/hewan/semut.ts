@@ -2,166 +2,109 @@ import { ObjectData } from "../objects";
 
 export const semutData: ObjectData = {
   slug: "semut",
-  name: { id: "Semut", en: "Ant" },
+  name: {
+    id: "Semut",
+    en: "Semut",
+  },
   scientificName: "Formicidae",
-  surahName: "An-Naml (18)",
+  surahName: "An-Naml",
   surahReference: "27:18",
   icon: "🐜",
-  category: "Serangga",
+  category: "hewan",
   type: "hewan",
   unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "نَمْلٌ",
-      latin: "Naml",
-      arti: "Semut",
-      artiEn: "Ant",
-      contohAyat: "An-Naml 27:18",
-      icon: "🐜"
-    },
-    {
-      arab: "مَسَاكِنُ",
-      latin: "Masakin",
-      arti: "Sarang/Rumah",
-      artiEn: "Dwellings",
-      contohAyat: "An-Naml 27:18",
-      icon: "🏡"
-    },
-    {
-      arab: "سُلَيْمَانُ",
-      latin: "Sulaiman",
-      arti: "Nabi Sulaiman",
-      artiEn: "Prophet Solomon",
-      contohAyat: "An-Naml 27:18",
-      icon: "👑"
-    },
-    {
-      arab: "فَرَمُونُ",
-      latin: "Faramun",
-      arti: "Feromon",
-      artiEn: "Pheromone",
-      contohAyat: "An-Naml 27:18",
-      icon: "🧪"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "An-Naml 27:18" }
   ],
   balita: {
     text: {
-      id: "Ini semut! Semut sangat kuat. Semut suka bekerja sama. 🐜",
-      en: "This is an ant! Ants are very strong. Ants like to work together. 🐜",
+      id: "Ini Semut! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Semut! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini semut! Semut sangat kuat. Semut suka bekerja sama.",
-      en: "This is an ant! Ants are very strong. Ants like to work together.",
+      id: "Ini Semut. Allah menciptakan Semut dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Semut. Allah created Semut beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Mana gambar semut?",
-        en: "Which picture is the ant?",
+        id: "Mana gambar Semut?",
+        en: "Which one is the picture of Semut?",
       },
       options: [
-        { text: { id: "🐜 Semut", en: "🐜 Ant" }, isImage: true },
-        { text: { id: "🐝 Lebah", en: "🐝 Bee" }, isImage: true },
-        { text: { id: "🕷️ Laba-laba", en: "🕷️ Spider" }, isImage: true },
+        { text: { id: "🐜 Semut", en: "🐜 Semut" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Semut adalah serangga sosial yang hidup teratur dan memiliki ratu sebagai pemimpin.",
-      en: "Ants are social insects that live in ordered societies led by a queen.",
+      id: "Fakta menarik tentang Semut: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Semut: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Semut bisa angkat beban 50x berat badannya.",
-        en: "Ants can lift weights 50 times their own body weight.",
-      },
-      {
-        id: "Semut berkomunikasi menggunakan bau (feromon).",
-        en: "Ants communicate using scents (pheromones).",
-      },
-      {
-        id: "Satu koloni semut bisa berisi jutaan semut.",
-        en: "A single ant colony can contain millions of ants.",
-      },
-      {
-        id: "Semut tidak punya telinga — mereka 'dengar' lewat getaran tanah.",
-        en: "Ants do not have ears — they 'hear' through ground vibrations.",
-      },
-      {
-        id: "Semut sudah ada di bumi sejak 130 juta tahun lalu.",
-        en: "Ants have been on Earth since 130 million years ago.",
-      },
+      { id: "Semut diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Semut was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Semut dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Semut in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "قَالَتْ نَمْلَةٌ يٰٓاَيُّهَا النَّمْلُ ادْخُلُوْا مَسٰكِنَكُمْ",
-      transliteration: "Qālat namlātun yā ayyuhan-namlu udkhulū masākinakum",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Berkatalah seekor semut: Wahai semut-semut, masuklah ke sarang-sarangmu",
-        en: "An ant said, 'O ants, enter your dwellings'",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Bagaimana cara semut mendengarkan suara?",
-        en: "How do ants hear sounds?",
+        id: "Siapa yang menciptakan Semut dengan sempurna?",
+        en: "Who created Semut perfectly?",
       },
       options: [
-        { text: { id: "Dengan telinga besar", en: "With large ears" } },
-        { text: { id: "Lewat getaran tanah", en: "Through ground vibrations" } },
-        { text: { id: "Menggunakan mata mereka", en: "Using their eyes" } },
-        { text: { id: "Mereka tidak bisa mendengar", en: "They cannot hear at all" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Semut memiliki sistem komunikasi sosial yang canggih yang diakui sains modern.",
-      en: "Ants have sophisticated social communication systems recognized by modern science.",
+      id: "Eksplorasi anatomi dan struktur Semut mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Semut reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Mandibula", en: "Mandibles" },
-        desc: { id: "Rahang kuat untuk mencapit, membawa beban, dan menggali sarang.", en: "Strong jaws used for pinching, carrying loads, and digging." },
-      },
-      {
-        part: { id: "Antena", en: "Antennae" },
-        desc: { id: "Alat indra utama untuk mencium aroma feromon dan berkomunikasi lewat sentuhan.", en: "Main sensory organs used to smell pheromones and touch-communicate." },
-      },
-      {
-        part: { id: "Eksoskeleton", en: "Exoskeleton" },
-        desc: { id: "Kerangka luar keras yang melindungi organ dalam tanpa perlu tulang dalam.", en: "Hard outer skeleton that protects internal organs without bones." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Ayat ini menggambarkan semut yang BERBICARA dan memberi peringatan kepada kawanannya saat pasukan Nabi Sulaiman lewat. Ilmu modern baru membuktikan semut berkomunikasi secara kompleks menggunakan feromon dan getaran — 1.400 tahun setelah Al-Qur'an menggambarkan seekor semut yang memberi peringatan kepada kawanannya. Nabi Sulaiman dalam kisah ini bahkan MENDENGAR dan MEMAHAMI perkataan semut tersebut — ini mukjizat yang disebut langsung dalam Qur'an.",
-      en: "This verse describes an ant SPEAKING and warning its peers as Solomon's army approached. Modern science only recently proved that ants communicate in complex ways using pheromones and vibrations — 1,400 years after the Qur'an depicted a single ant warning its colony. Prophet Solomon in this story even HEARD and UNDERSTOOD the ant's words — a miracle mentioned directly in the Qur'an.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Semut di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Semut in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "حَتَّىٰ إِذَا أَتَوْا عَلَىٰ وَادِ النَّمْلِ قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا يَشْعُرُونَ",
-      transliteration: "Hattaaa izaa ataw 'alaa waadin-namli qaalat namlatuy yaa ayyuhan-namlud khuloo masaakinakum laa yahtimannakum Sulaimaanu wa junooduhoo wa hum laa yash'uroon",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Hingga ketika mereka sampai di lembah semut, berkatalah seekor semut, 'Wahai semut-semut! Masuklah ke dalam sarang-sarangmu, agar kamu tidak diinjak oleh Sulaiman dan bala tentaranya, sedangkan mereka tidak menyadari.'",
-        en: "Until, when they came upon the valley of the ants, an ant said, 'O ants, enter your dwellings that you not be crushed by Solomon and his soldiers while they perceive not.'",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Nabi Sulaiman tersenyum mendengar perkataan semut tersebut, membuktikan mukjizat beliau yang dikaruniai kemampuan memahami bahasa binatang.",
-        en: "Prophet Solomon smiled upon hearing the ant's speech, confirming his miracle of understanding animal languages.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Zat kimia apa yang diproduksi semut untuk menandai jalur dan berkomunikasi?",
-        en: "Which chemical compound do ants produce to mark trails and communicate?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Semut?",
+          en: "What is the primary wisdom of scientific signs regarding Semut?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "Klorofil", en: "Chlorophyll" } },
-        { text: { id: "Feromon", en: "Pheromones" } },
-        { text: { id: "Oksigen", en: "Oxygen" } },
-        { text: { id: "Glukosa", en: "Glucose" } },
-      ],
-      answerIdx: 1,
-    },
+    ],
   },
 };

@@ -2,193 +2,108 @@ import { ObjectData } from "../objects";
 
 export const lebahData: ObjectData = {
   slug: "lebah",
-  name: { id: "Lebah", en: "Honeybee" },
+  name: {
+    id: "Lebah",
+    en: "Lebah",
+  },
   scientificName: "Apis mellifera",
-  surahName: "An-Nahl (68-69)",
+  surahName: "An-Nahl",
   surahReference: "16:68-69",
   icon: "🐝",
-  category: "Serangga",
+  category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 0,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "نَحْلٌ",
-      latin: "Nahl",
-      arti: "Lebah",
-      artiEn: "Honeybee",
-      contohAyat: "An-Nahl 16:68",
-      icon: "🐝"
-    },
-    {
-      arab: "عَسَلٌ",
-      latin: "Asal",
-      arti: "Madu",
-      artiEn: "Honey",
-      contohAyat: "An-Nahl 16:69",
-      icon: "🍯"
-    },
-    {
-      arab: "وَحْيٌ",
-      latin: "Wahy",
-      arti: "Wahyu/Perintah Allah",
-      artiEn: "Revelation/Command",
-      contohAyat: "An-Nahl 16:68",
-      icon: "📜"
-    },
-    {
-      arab: "شِفَاءٌ",
-      latin: "Syifa",
-      arti: "Penyembuh",
-      artiEn: "Healing",
-      contohAyat: "An-Nahl 16:69",
-      icon: "🧪"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "An-Nahl 16:68-69" }
   ],
   balita: {
     text: {
-      id: "Ini lebah! Lebah suka bunga. Lebah bikin madu yang manis. 🐝",
-      en: "This is a bee! Bees love flowers. Bees make sweet honey. 🐝",
+      id: "Ini Lebah! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Lebah! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini lebah! Lebah suka bunga. Lebah bikin madu yang manis.",
-      en: "This is a bee! Bees love flowers. Bees make sweet honey.",
+      id: "Ini Lebah. Allah menciptakan Lebah dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Lebah. Allah created Lebah beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Mana gambar lebah?",
-        en: "Which picture is the bee?",
+        id: "Mana gambar Lebah?",
+        en: "Which one is the picture of Lebah?",
       },
       options: [
-        { text: { id: "🐝 Lebah", en: "🐝 Bee" }, isImage: true },
-        { text: { id: "🦋 Kupu-kupu", en: "🦋 Butterfly" }, isImage: true },
-        { text: { id: "🦟 Nyamuk", en: "🦟 Mosquito" }, isImage: true },
+        { text: { id: "🐝 Lebah", en: "🐝 Lebah" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Lebah bekerja sama dalam koloni besar untuk memproduksi madu berkhasiat.",
-      en: "Bees work together in large colonies to produce healthy honey.",
+      id: "Fakta menarik tentang Lebah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Lebah: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Lebah punya 6 kaki dan 4 sayap.",
-        en: "Bees have 6 legs and 4 wings.",
-      },
-      {
-        id: "Lebah terbang 800 km hanya untuk 1 sendok madu.",
-        en: "Bees fly 800 km just for 1 spoonful of honey.",
-      },
-      {
-        id: "Lebah berkomunikasi dengan cara menari!",
-        en: "Bees communicate by dancing!",
-      },
-      {
-        id: "Satu sarang lebah bisa berisi 60.000 lebah.",
-        en: "One beehive can contain 60,000 bees.",
-      },
-      {
-        id: "Lebah bisa mengenali wajah manusia.",
-        en: "Bees can recognize human faces.",
-      },
+      { id: "Lebah diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Lebah was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Lebah dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Lebah in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "وَأَوْحَىٰ رَبُّكَ إِلَى ٱلنَّحْلِ",
-      transliteration: "Wa awḥā rabbuka ilan-naḥl",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Dan Tuhanmu mewahyukan kepada lebah",
-        en: "And your Lord inspired the bee",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Berapa kaki yang dimiliki lebah?",
-        en: "How many legs does a bee have?",
+        id: "Siapa yang menciptakan Lebah dengan sempurna?",
+        en: "Who created Lebah perfectly?",
       },
       options: [
-        { text: { id: "4 kaki", en: "4 legs" } },
-        { text: { id: "6 kaki", en: "6 legs" } },
-        { text: { id: "8 kaki", en: "8 legs" } },
-        { text: { id: "2 kaki", en: "2 legs" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Lebah menggunakan sistem navigasi yang menggabungkan posisi matahari, medan magnet bumi, dan peta memori visual. Ilmuwan Karl von Frisch baru memecahkan kode komunikasi lebah pada 1973 dan memenangkan Nobel Prize. Lebah melakukan 'waggle dance' — tarian goyang yang memberi tahu rekan-rekannya lokasi persis bunga sejauh beberapa kilometer.",
-      en: "Bees use a navigation system combining the sun's position, Earth's magnetic field, and visual memory maps. Scientist Karl von Frisch decoded bee communication in 1973, winning the Nobel Prize. Bees perform a 'waggle dance' to tell their peers the exact flower location kilometers away.",
+      id: "Eksplorasi anatomi dan struktur Lebah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Lebah reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Mata Majemuk", en: "Compound Eyes" },
-        desc: { id: "Terdiri dari ribuan lensa untuk mendeteksi cahaya UV dari bunga.", en: "Consists of thousands of lenses to detect UV light from flowers." },
-      },
-      {
-        part: { id: "Kantung Madu", en: "Honey Stomach" },
-        desc: { id: "Organ khusus untuk menyimpan nektar sementara sebelum dibawa ke sarang.", en: "Special organ to store nectar temporarily before bringing it to the hive." },
-      },
-      {
-        part: { id: "Kaki Pengumpul", en: "Pollen Basket" },
-        desc: { id: "Rambut khusus di kaki belakang untuk menempelkan serbuk sari.", en: "Specialized hairs on hind legs to carry pollen." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "1.400 tahun sebelum Karl von Frisch lahir, Al-Qur'an sudah menyebut lebah diperintah Allah secara langsung menggunakan kata 'awha' — kata yang sama digunakan untuk wahyu kepada Nabi. Para ilmuwan Muslim abad pertengahan seperti Ibnu Sina sudah menulis tentang khasiat madu sebagai obat. Surah ke-16 dalam Al-Qur'an dinamai An-Nahl — artinya lebah.",
-      en: "1,400 years before Karl von Frisch was born, the Qur'an already mentioned bees being commanded directly by Allah using the word 'awha' — the same word used for revelation to Prophets. Medieval Muslim scientists like Ibn Sina wrote about honey's healing properties. The 16th surah in the Qur'an is named An-Nahl — meaning the bee.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Lebah di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Lebah in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "فِيهِ شِفَآءٌ لِّلنَّاسِ",
-      transliteration: "Fīhi shifā'ul lin-nās",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Di dalamnya terdapat obat bagi manusia",
-        en: "In it is healing for people",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Ayat ini menekankan bahwa madu memiliki fungsi terapeutik alami (obat). Madu modern terbukti memiliki kandungan antibakteri dan antiinflamasi yang kuat.",
-        en: "This verse emphasizes that honey acts as a natural cure. Modern science validates that honey contains powerful antibacterial and anti-inflammatory properties.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
     quiz: [
       {
         question: {
-          id: "Siapa ilmuwan yang memenangkan Nobel karena memecahkan kode komunikasi lebah?",
-          en: "Who was the scientist who won the Nobel Prize for decoding bee communication?",
+          id: "Apa hikmah utama diutusnya tanda sains tentang Lebah?",
+          en: "What is the primary wisdom of scientific signs regarding Lebah?",
         },
         options: [
-          { text: { id: "Albert Einstein", en: "Albert Einstein" } },
-          { text: { id: "Karl von Frisch", en: "Karl von Frisch" } },
-          { text: { id: "Charles Darwin", en: "Charles Darwin" } },
-          { text: { id: "Ibnu Sina", en: "Ibn Sina" } },
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
         ],
-        answerIdx: 1,
-      },
-      {
-        question: {
-          id: "Apa nama surah Al-Qur'an yang dinamai dari lebah?",
-          en: "What is the name of the Qur'an surah named after the bee?",
-        },
-        options: [
-          { text: { id: "An-Naml", en: "An-Naml" } },
-          { text: { id: "An-Nahl", en: "An-Nahl" } },
-          { text: { id: "Al-Ankabut", en: "Al-Ankabut" } },
-          { text: { id: "Al-Fil", en: "Al-Fil" } },
-        ],
-        answerIdx: 1,
-      },
-      {
-        question: {
-          id: "Apa arti kata 'Syifa' dalam bahasa Arab?",
-          en: "What does the Arabic word 'Syifa' mean?",
-        },
-        options: [
-          { text: { id: "Lebah", en: "Bee" } },
-          { text: { id: "Madu", en: "Honey" } },
-          { text: { id: "Penyembuh", en: "Healer/Cure" } },
-          { text: { id: "Wahyu", en: "Revelation" } },
-        ],
-        answerIdx: 2,
+        answerIdx: 0,
       },
     ],
   },

@@ -4,55 +4,39 @@ export const adamData: NabiData = {
   slug: "nabi-adam",
   name: {
     id: "Nabi Adam A.S.",
-    en: "Prophet Adam A.S.",
+    en: "Nabi Adam A.S.",
   },
   icon: "🕌",
   category: "nabi",
   type: "nabi",
-  unlockedAtPoints: 50,
+  unlockedAtPoints: 100,
   storyShort: {
-    id: "Nabi Adam A.S. adalah manusia pertama yang diciptakan Allah dari tanah liat, diajarkan nama-nama segala benda, dan diturunkan ke bumi sebagai khalifah pertama.",
-    en: "Prophet Adam A.S. is the first human created by Allah from clay, taught the names of all things, and sent down to Earth as the first caliph.",
+    id: "Kisah perjuangan dakwah keteladanan mulia Nabi Adam A.S. kepada kaumnya.",
+    en: "The story of Nabi Adam A.S.'s struggle in preaching and leading as a noble role model.",
   },
   storyFull: {
-    id: "Allah SWT menciptakan Nabi Adam dari sari pati tanah dan meniupkan ruh-Nya. Allah kemudian mengajarkan Adam nama-nama semua benda di alam semesta, menunjukkan kecerdasan akal manusia. Malaikat bersujud menghormatinya atas perintah Allah, namun Iblis menolak karena sombong. Adam tinggal di surga bersama Hawa, tetapi setelah tergoda memakan buah Khuldi, mereka diturunkan ke bumi untuk memulai peradaban manusia dengan memohon ampunan tulus kepada Allah.",
-    en: "Allah SWT created Prophet Adam from clay and breathed life into him. Allah then taught Adam the names of all things, demonstrating the intellect of humans. The angels bowed in respect by Allah's command, but Iblis refused due to pride. Adam lived in heaven with Eve, but after being tempted into eating the forbidden fruit, they were sent to Earth to start human civilization, asking for sincere forgiveness.",
+    id: "Kisah lengkap keteladanan Nabi Adam A.S.. Beliau diutus oleh Allah SWT untuk membimbing umatnya ke jalan kebenaran dengan penuh kesabaran, mukjizat, dan kasih sayang yang luar biasa.",
+    en: "The full story of Nabi Adam A.S.. He was sent by Allah SWT to guide his people to the path of truth with immense patience, miracles, and extraordinary love.",
   },
   miracles: [
-    { id: "Manusia pertama di alam semesta tanpa ayah dan ibu.", en: "The first human in the universe without father and mother." },
-    { id: "Diajarkan langsung oleh Allah nama-nama seluruh benda di alam semesta.", en: "Taught directly by Allah the names of all objects in the universe." },
-    { id: "Diberi umur panjang dan kecerdasan intelektual yang luar biasa.", en: "Blessed with a long lifespan and extraordinary intellectual capacity." },
+    { id: "Mendapat petunjuk dan kekuatan dakwah dari Allah SWT.", en: "Blessed with guidance and strength in preaching from Allah SWT." }
   ],
   characterTraits: [
     {
-      trait: { id: "Senang Belajar", en: "Love for Learning" },
-      desc: { id: "Selalu antusias mempelajari ilmu baru yang diajarkan oleh Allah.", en: "Always enthusiastic in learning new knowledge taught by Allah." },
-    },
-    {
-      trait: { id: "Mengakui Kesalahan", en: "Accountability" },
-      desc: { id: "Segera bertaubat dan memohon ampun ketika menyadari kekhilafannya.", en: "Immediately repented and asked for forgiveness upon realizing his mistake." },
-    },
+      trait: { id: "Sabar", en: "Patience" },
+      desc: { id: "Menghadapi segala rintangan dakwah dengan tenang dan tawakal.", en: "Confronted all obstacles in preaching with calmness and trust in Allah." }
+    }
   ],
   timeline: [
     {
-      yearOrAge: "Penciptaan",
-      title: { id: "Diciptakan dari Tanah", en: "Created from Clay" },
-      desc: { id: "Allah membentuk tubuh Adam dan meniupkan ruh kehidupan.", en: "Allah formed Adam's body and breathed life into him." },
-    },
-    {
-      yearOrAge: "Pendidikan",
-      title: { id: "Belajar Nama Benda", en: "Learning Names of Things" },
-      desc: { id: "Allah mengajarkan Adam nama-nama benda yang tidak diketahui malaikat.", en: "Allah taught Adam the names of things unknown to the angels." },
-    },
-    {
-      yearOrAge: "Ujian",
-      title: { id: "Turun ke Bumi", en: "Descent to Earth" },
-      desc: { id: "Memulai kehidupan baru di bumi bersama Hawa sebagai khalifah pertama.", en: "Starting a new life on Earth with Hawa as the first caliph." },
-    },
+      yearOrAge: "Awal",
+      title: { id: "Menerima Wahyu", en: "Receiving Revelation" },
+      desc: { id: "Allah memilihnya sebagai nabi dan rasul pembawa kebenaran.", en: "Allah chose him as a prophet and messenger of truth." }
+    }
   ],
   dailyLifeConnection: {
-    id: "Seperti Nabi Adam, jika kita berbuat salah, kita tidak boleh sombong seperti Iblis. Kita harus berani meminta maaf secara tulus dan berjanji memperbaiki diri.",
-    en: "Like Prophet Adam, if we make a mistake, we must not be proud like Iblis. We must be brave to apologize sincerely and promise to improve ourselves.",
+    id: "Kita harus meniru akhlak mulia Nabi Adam A.S. dalam kehidupan sehari-hari seperti berkata jujur dan rajin beribadah.",
+    en: "We must emulate Nabi Adam A.S.'s noble character in daily life, such as telling the truth and praying diligently.",
   },
   surahReference: "Al-Baqarah 2:30-37",
 };

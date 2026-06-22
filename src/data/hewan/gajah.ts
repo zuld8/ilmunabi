@@ -2,152 +2,109 @@ import { ObjectData } from "../objects";
 
 export const gajahData: ObjectData = {
   slug: "gajah",
-  name: { id: "Gajah", en: "Elephant" },
-  scientificName: "Elephantidae",
-  surahName: "Al-Fil (1-5)",
+  name: {
+    id: "Gajah",
+    en: "Gajah",
+  },
+  scientificName: "Elephas maximus",
+  surahName: "Al-Fil",
   surahReference: "105:1-5",
   icon: "🐘",
-  category: "Hewan Darat",
+  category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 250,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "فِيلٌ",
-      latin: "Fiil",
-      arti: "Gajah",
-      artiEn: "Elephant",
-      contohAyat: "Al-Fil 105:1",
-      icon: "🐘"
-    },
-    {
-      arab: "أَصْحَابٌ",
-      latin: "Ashhaab",
-      arti: "Pasukan/Pemilik",
-      artiEn: "Companions/Army",
-      contohAyat: "Al-Fil 105:1",
-      icon: "👥"
-    },
-    {
-      arab: "كَيْدٌ",
-      latin: "Kayd",
-      arti: "Tipu daya",
-      artiEn: "Strategy/Plot",
-      contohAyat: "Al-Fil 105:2",
-      icon: "🕸️"
-    },
-    {
-      arab: "تَضْلِيلٌ",
-      latin: "Tadhliil",
-      arti: "Sia-sia",
-      artiEn: "Stray/Misguided",
-      contohAyat: "Al-Fil 105:2",
-      icon: "❌"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Fil 105:1-5" }
   ],
   balita: {
     text: {
-      id: "Ini gajah! Gajah punya belalai panjang dan telinga lebar yang bergoyang-goyang. 🐘",
-      en: "This is an elephant! Elephants have long trunks and big floppy ears. 🐘",
+      id: "Ini Gajah! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Gajah! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini gajah! Gajah punya belalai panjang dan telinga lebar yang bergoyang-goyang.",
-      en: "This is an elephant! Elephants have long trunks and big floppy ears.",
+      id: "Ini Gajah. Allah menciptakan Gajah dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Gajah. Allah created Gajah beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Manakah ciri khas hidung gajah?",
-        en: "What is the signature feature of an elephant's nose?",
+        id: "Mana gambar Gajah?",
+        en: "Which one is the picture of Gajah?",
       },
       options: [
-        { text: { id: "👃 Belalai Panjang", en: "👃 Long Trunk" }, isImage: true },
-        { text: { id: "🐦 Paruh", en: "🐦 Beak" }, isImage: true },
-        { text: { id: "🦁 Taring", en: "🦁 Fangs" }, isImage: true },
+        { text: { id: "🐘 Gajah", en: "🐘 Gajah" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Gajah adalah hewan darat terbesar yang terkenal cerdas dan penyayang keluarga.",
-      en: "Elephants are the largest land animals, known for their high intelligence and strong family bonds.",
+      id: "Fakta menarik tentang Gajah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Gajah: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Belalai gajah sangat kuat, tersusun dari 40.000 otot untuk menggenggam makanan.",
-        en: "An elephant's trunk is extremely strong, containing 40,000 muscles to grasp food.",
-      },
-      {
-        id: "Gajah berkomunikasi menggunakan suara infrasonik frekuensi rendah yang merambat lewat tanah.",
-        en: "Elephants communicate using low-frequency infrasound that travels through the ground.",
-      },
-      {
-        id: "Mereka memiliki ingatan luar biasa, mampu mengingat sumber air selama puluhan tahun.",
-        en: "They have exceptional memory, remembering waterhole locations for decades.",
-      },
+      { id: "Gajah diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Gajah was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Gajah dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Gajah in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
-      transliteration: "Alam tara kaifa fa'ala Rabbuka bi ashaabil feel",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Tidakkah engkau memperhatikan bagaimana Tuhanmu telah bertindak terhadap pasukan bergajah?",
-        en: "Have you not seen how your Lord dealt with the companions of the elephant?",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Berapa banyak otot yang menyusun belalai gajah?",
-        en: "How many muscles make up an elephant's trunk?",
+        id: "Siapa yang menciptakan Gajah dengan sempurna?",
+        en: "Who created Gajah perfectly?",
       },
       options: [
-        { text: { id: "40 otot", en: "40 muscles" } },
-        { text: { id: "4.000 otot", en: "4,000 muscles" } },
-        { text: { id: "40.000 otot", en: "40,000 muscles" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 2,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Gajah memiliki otak besar dengan kapasitas memori emosional yang luar biasa.",
-      en: "Elephants possess large brains capable of deep emotional memory.",
+      id: "Eksplorasi anatomi dan struktur Gajah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Gajah reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Telinga Lebar", en: "Large Ears" },
-        desc: { id: "Berfungsi menyebarkan panas tubuh untuk mendinginkan darah saat cuaca panas.", en: "Used to radiate body heat and cool down blood temperature." },
-      },
-      {
-        part: { id: "Gading", en: "Tusks" },
-        desc: { id: "Gigi seri memanjang untuk menggali tanah, mengupas kulit pohon, dan melindungi diri.", en: "Elongated incisor teeth used to dig, strip bark, and protect themselves." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Pasukan Abrahah membawa gajah tempur besar ke Mekah untuk meruntuhkan Ka'bah. Uniknya, riwayat mencatat gajah Abrahah bernama Mahmud menolak maju ke arah Ka'bah dan malah bersimpuh (duduk), tunduk pada takdir Allah, meski dipukuli. Naluri alamiah hewan mengenali kekuasaan Penciptanya.",
-      en: "Abrahah's army brought war elephants to destroy the Kaaba. Historical records state the lead elephant, Mahmud, knelt down and refused to march toward the Kaaba, resisting whips, submitting to Allah's decree. Animal instincts recognize the authority of their Creator.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Gajah di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Gajah in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ تَرْمِيهِمْ بِحِجَارَةٍ مِنْ سِجِّيلٍ",
-      transliteration: "Wa arsala 'alaihim tairan abaabeel. Tarmeehim bi hijaratim min sijjeel",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Dan Dia mengirimkan kepada mereka burung yang berbondong-bondong, yang melempari mereka dengan batu dari tanah liat yang dibakar.",
-        en: "And He sent against them birds in flocks, striking them with stones of hard clay.",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Peristiwa runtuhnya pasukan gajah ini terjadi pada tahun kelahiran Nabi Muhammad SAW, menandai perlindungan Ilahi atas kota suci Mekah dari penyerbuan militer asing.",
-        en: "The collapse of the elephant army occurred in the year of Prophet Muhammad's birth, signaling divine protection over the holy city of Mecca.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Apa reaksi gajah utama Abrahah (Mahmud) ketika dihadapkan ke arah Ka'bah?",
-        en: "What did Abrahah's lead elephant (Mahmud) do when directed toward the Kaaba?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Gajah?",
+          en: "What is the primary wisdom of scientific signs regarding Gajah?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "Menyerang Ka'bah dengan marah", en: "Attacked the Kaaba angrily" } },
-        { text: { id: "Bersimpuh (duduk) menolak maju", en: "Dutifully knelt down and refused to move forward" } },
-        { text: { id: "Berlari kencang kembali ke Yaman", en: "Ran back to Yemen" } },
-      ],
-      answerIdx: 1,
-    },
+    ],
   },
 };

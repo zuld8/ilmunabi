@@ -4,122 +4,106 @@ export const matahariData: ObjectData = {
   slug: "matahari",
   name: {
     id: "Matahari",
-    en: "Sun",
+    en: "Matahari",
   },
-  scientificName: "Sol",
+  scientificName: "Sun",
   surahName: "Asy-Syams",
   surahReference: "91:1-2",
   icon: "☀️",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 100,
+  unlockedAtPoints: 50,
   kosakata: [
-    { arab: "شَمْسٌ", latin: "Syams", arti: "Matahari", artiEn: "Sun" },
-    { arab: "ضُحَى", latin: "Dhuha", arti: "Pagi Hari", artiEn: "Morning" },
-    { arab: "نَهَارٌ", latin: "Nahar", arti: "Siang Hari", artiEn: "Daytime" },
-    { arab: "ضِيَاءٌ", latin: "Dhiya'", arti: "Sinar Terang", artiEn: "Radiance" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Asy-Syams 91:1-2" }
   ],
   balita: {
     text: {
-      id: "Ini matahari! Matahari terbit pagi hari dan menghangatkan bumi. ☀️",
-      en: "This is the sun! The sun rises in the morning and warms the earth. ☀️",
+      id: "Ini Matahari! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Matahari! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Matahari bersinar di pagi hari. Matahari memberikan cahaya dan kehangatan untuk kita semua.",
-      en: "The sun shines in the morning. It provides light and warmth for all of us.",
+      id: "Ini Matahari. Allah menciptakan Matahari dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Matahari. Allah created Matahari beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Mana gambar matahari?",
-        en: "Which one is the sun?",
+        id: "Mana gambar Matahari?",
+        en: "Which one is the picture of Matahari?",
       },
       options: [
-        { text: { id: "☀️ Matahari", en: "☀️ Sun" } },
-        { text: { id: "🌙 Bulan", en: "🌙 Moon" } },
-        { text: { id: "☁️ Awan", en: "☁️ Cloud" } },
+        { text: { id: "☀️ Matahari", en: "☀️ Matahari" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Matahari adalah bintang yang sangat besar. Gravitasinya menjaga semua planet berputar dengan rapi, persis seperti yang Allah atur.",
-      en: "The sun is a very massive star. Its gravity keeps all the planets orbiting in order, exactly as Allah designed.",
+      id: "Fakta menarik tentang Matahari: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Matahari: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Matahari berukuran 1,3 juta kali lebih besar dari bumi.", en: "The sun is 1.3 million times larger than the Earth." },
-      { id: "Cahaya matahari membutuhkan 8 menit untuk sampai ke bumi.", en: "Sunlight takes about 8 minutes to reach the Earth." },
-      { id: "Matahari memancarkan energi yang melimpah untuk fotosintesis.", en: "The sun provides abundant energy for photosynthesis." },
-      { id: "Matahari juga berotasi pada porosnya sendiri secara konsisten.", en: "The sun also rotates on its own axis consistently." },
+      { id: "Matahari diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Matahari was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Matahari dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Matahari in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "وَالشَّمْسِ وَضُحَاهَا",
-      transliteration: "Wash-syamsi wa dhuhāhā",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Demi matahari dan sinarnya pada pagi hari,",
-        en: "By the sun and its brightness,",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Berapa lama cahaya matahari sampai ke bumi?",
-        en: "How long does it take for sunlight to reach Earth?",
+        id: "Siapa yang menciptakan Matahari dengan sempurna?",
+        en: "Who created Matahari perfectly?",
       },
       options: [
-        { text: { id: "5 menit", en: "5 minutes" } },
-        { text: { id: "8 menit", en: "8 minutes" } },
-        { text: { id: "1 jam", en: "1 hour" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Matahari berada di pusat tata surya kita. Reaksi fusi nuklir hidrogen menjadi helium di intinya menghasilkan energi dahsyat yang menyinari kehidupan bumi.",
-      en: "The sun sits at the center of our solar system. Hydrogen-to-helium nuclear fusion in its core generates the immense energy that sustains life on Earth.",
+      id: "Eksplorasi anatomi dan struktur Matahari mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Matahari reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Inti Matahari", en: "Core" },
-        desc: { id: "Suhu mencapai 15 juta °C tempat terjadinya fusi nuklir.", en: "Temperatures reach 15 million °C, where nuclear fusion occurs." },
-      },
-      {
-        part: { id: "Fotosfer", en: "Photosphere" },
-        desc: { id: "Permukaan luar matahari yang memancarkan cahaya tampak.", en: "The visible outer surface of the sun that emits light." },
-      },
-      {
-        part: { id: "Korona", en: "Corona" },
-        desc: { id: "Atmosfer terluar matahari yang menyerupai mahkota cahaya.", en: "The outermost atmosphere of the sun resembling a crown of light." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Qur'an menjelaskan matahari sebagai 'Siraj' (obor/pelita menyala yang memancarkan cahayanya sendiri), sedangkan bulan disebut 'Nur' (pantulan cahaya). Sains modern mengonfirmasi matahari memproduksi energinya sendiri, sedangkan bulan hanya memantulkan cahaya matahari.",
-      en: "The Quran describes the sun as a 'Siraj' (a blazing torch that generates its own light) and the moon as 'Nur' (reflected light). Modern science confirms that the sun produces its own energy, whereas the moon only reflects it.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Matahari di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Matahari in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
-      transliteration: "Wa ja'alnā sirājaw wahhājā",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Dan Kami jadikan pelita yang amat terang (matahari),",
-        en: "And made a burning lamp,",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Surah An-Naba ayat 13 menegaskan peran matahari sebagai sumber energi utama (Siraj) untuk kehidupan biologis bumi.",
-        en: "Surah An-Naba verse 13 asserts the sun's role as the primary energy source (Siraj) for biological life on Earth.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
     quiz: [
       {
         question: {
-          id: "Apa istilah Qur'an untuk matahari yang menggambarkan kemampuannya memproduksi cahaya sendiri?",
-          en: "What Quranic term for the sun reflects its ability to generate its own light?",
+          id: "Apa hikmah utama diutusnya tanda sains tentang Matahari?",
+          en: "What is the primary wisdom of scientific signs regarding Matahari?",
         },
         options: [
-          { text: { id: "Nur", en: "Nur" } },
-          { text: { id: "Siraj", en: "Siraj" } },
-          { text: { id: "Kaukab", en: "Kaukab" } },
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
         ],
-        answerIdx: 1,
+        answerIdx: 0,
       },
     ],
   },

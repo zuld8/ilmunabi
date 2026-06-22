@@ -2,153 +2,109 @@ import { ObjectData } from "../objects";
 
 export const nyamukData: ObjectData = {
   slug: "nyamuk",
-  name: { id: "Nyamuk", en: "Mosquito" },
+  name: {
+    id: "Nyamuk",
+    en: "Nyamuk",
+  },
   scientificName: "Culicidae",
-  surahName: "Al-Baqarah (26)",
+  surahName: "Al-Baqarah",
   surahReference: "2:26",
   icon: "🦟",
-  category: "Serangga",
+  category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 200,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "بَعُوضَةٌ",
-      latin: "Ba'udhah",
-      arti: "Nyamuk",
-      artiEn: "Mosquito",
-      contohAyat: "Al-Baqarah 2:26",
-      icon: "🦟"
-    },
-    {
-      arab: "فَوْقَ",
-      latin: "Fawqa",
-      arti: "Atas/Lebih dari",
-      artiEn: "Above/Beyond",
-      contohAyat: "Al-Baqarah 2:26",
-      icon: "⬆️"
-    },
-    {
-      arab: "مَثَلٌ",
-      latin: "Matsal",
-      arti: "Perumpamaan",
-      artiEn: "Example/Parable",
-      contohAyat: "Al-Baqarah 2:26",
-      icon: "📝"
-    },
-    {
-      arab: "حَقٌّ",
-      latin: "Haqq",
-      arti: "Kebenaran",
-      artiEn: "Truth",
-      contohAyat: "Al-Baqarah 2:26",
-      icon: "✅"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:26" }
   ],
   balita: {
     text: {
-      id: "Ini nyamuk! Tubuhnya sangat kecil dan bisa terbang cepat. Nyamuk suka hinggap di kulit. 🦟",
-      en: "This is a mosquito! It is very tiny and flies quickly. It likes to land on skin. 🦟",
+      id: "Ini Nyamuk! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Nyamuk! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini nyamuk! Tubuhnya sangat kecil dan bisa terbang cepat. Nyamuk suka hinggap di kulit.",
-      en: "This is a mosquito! It is very tiny and flies quickly. It likes to land on skin.",
+      id: "Ini Nyamuk. Allah menciptakan Nyamuk dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Nyamuk. Allah created Nyamuk beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Bagaimana cara nyamuk berpindah tempat?",
-        en: "How do mosquitoes move around?",
+        id: "Mana gambar Nyamuk?",
+        en: "Which one is the picture of Nyamuk?",
       },
       options: [
-        { text: { id: "🚶 Berjalan kaki", en: "🚶 Walking" }, isImage: true },
-        { text: { id: "✈️ Terbang", en: "✈️ Flying" }, isImage: true },
-        { text: { id: "⛵ Berlayar", en: "⛵ Sailing" }, isImage: true },
+        { text: { id: "🦟 Nyamuk", en: "🦟 Nyamuk" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Meskipun kecil, nyamuk dibekali alat canggih untuk mendeteksi darah makhluk hidup.",
-      en: "Despite their small size, mosquitoes are equipped with advanced sensors to locate blood.",
+      id: "Fakta menarik tentang Nyamuk: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Nyamuk: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Hanya nyamuk betina yang menggigit manusia untuk mendapatkan protein demi telurnya.",
-        en: "Only female mosquitoes bite humans to get protein required for their eggs.",
-      },
-      {
-        id: "Nyamuk tertarik pada gas karbondioksida (CO2) yang kita keluarkan saat bernapas.",
-        en: "Mosquitoes are attracted to carbon dioxide (CO2) exhaled by humans.",
-      },
-      {
-        id: "Nyamuk mengepakkan sayapnya 500 kali per detik, menghasilkan suara dengungan.",
-        en: "Mosquitoes flap their wings 500 times per second, creating the buzzing sound.",
-      },
+      { id: "Nyamuk diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Nyamuk was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Nyamuk dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Nyamuk in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "إِنَّ اللَّهَ لَا يَسْتَحْيِي أَنْ يَضْرِبَ مَثَلًا مَا بَعُوضَةً فَمَا فَوْقَهَا",
-      transliteration: "Innallaaha laa yastahyee ay yadriba mathalam maa ba'oodatan famaa fawqahaa",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Sesungguhnya Allah tidak segan membuat perumpamaan berupa nyamuk atau yang lebih kecil dari itu.",
-        en: "Indeed, Allah is not timid to present an example - that of a mosquito or what is smaller than it.",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Jenis nyamuk manakah yang menggigit manusia untuk menghisap darah?",
-        en: "Which type of mosquito bites humans to suck blood?",
+        id: "Siapa yang menciptakan Nyamuk dengan sempurna?",
+        en: "Who created Nyamuk perfectly?",
       },
       options: [
-        { text: { id: "Nyamuk jantan", en: "Male mosquito" } },
-        { text: { id: "Nyamuk betina", en: "Female mosquito" } },
-        { text: { id: "Semua nyamuk", en: "All mosquitoes" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Nyamuk adalah keajaiban rekayasa mikrobiologi dengan jarum hisap ultra kompleks.",
-      en: "Mosquitoes are micro-engineering marvels equipped with complex proboscis structures.",
+      id: "Eksplorasi anatomi dan struktur Nyamuk mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Nyamuk reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Probosis", en: "Proboscis" },
-        desc: { id: "Jarum hisap yang terdiri atas 6 pisau mikro tajam untuk menembus kulit tanpa terasa sakit.", en: "Mouthpart structure consisting of 6 micro-needles to pierce skin painlessly." },
-      },
-      {
-        part: { id: "Sensor Termal", en: "Thermal Sensors" },
-        desc: { id: "Mendeteksi radiasi panas tubuh mangsa dari jarak jauh.", en: "Locates blood vessels by sensing body heat radiation." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Al-Baqarah 2:26 menyebut nyamuk sebagai contoh yang 'tidak Allah malu untuk dijadikan perumpamaan.' Sains modern baru menemukan nyamuk betina punya 6 jarum berbeda saat menghisap darah — kompleksitas yang luar biasa dari makhluk sekecil itu.",
-      en: "Al-Baqarah 2:26 mentions the mosquito as an example that 'Allah is not timid to present as a parable.' Modern science recently discovered that female mosquitoes have 6 different needles to suck blood — an incredible complexity for such a tiny creature.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Nyamuk di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Nyamuk in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "إِنَّ اللَّهَ لَا يَسْتَحْيِي أَنْ يَضْرِبَ مَثَلًا مَا بَعُوضَةً فَمَا فَوْقَهَا",
-      transliteration: "Innallaaha laa yastahyee ay yadriba mathalam maa ba'oodatan famaa fawqahaa",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Sesungguhnya Allah tidak segan membuat perumpamaan berupa nyamuk atau yang lebih kecil dari itu.",
-        en: "Indeed, Allah is not timid to present an example - that of a mosquito or what is smaller than it.",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Perumpamaan ini diturunkan untuk membantah orang kafir yang meremehkan penyebutan hewan-hewan kecil di dalam wahyu. Allah membuktikan makhluk terkecil pun memiliki rancangan anatomi yang sangat kompleks.",
-        en: "This verse was revealed to counter claims that small insects are too trivial to be mentioned in scripture. God proves even tiny creatures possess immense architectural complexity.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Berapa banyak jarum mikro terpisah yang digunakan nyamuk betina saat menghisap darah?",
-        en: "How many separate micro-needles does a female mosquito use to suck blood?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Nyamuk?",
+          en: "What is the primary wisdom of scientific signs regarding Nyamuk?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "1 jarum tunggal", en: "1 single needle" } },
-        { text: { id: "2 jarum kembar", en: "2 twin needles" } },
-        { text: { id: "6 jarum berbeda", en: "6 different needles" } },
-        { text: { id: "12 jarum melingkar", en: "12 circular needles" } },
-      ],
-      answerIdx: 2,
-    },
+    ],
   },
 };

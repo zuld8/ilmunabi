@@ -2,152 +2,109 @@ import { ObjectData } from "../objects";
 
 export const kudaData: ObjectData = {
   slug: "kuda",
-  name: { id: "Kuda", en: "Horse" },
+  name: {
+    id: "Kuda",
+    en: "Kuda",
+  },
   scientificName: "Equus caballus",
-  surahName: "Al-Adiyat (1-2)",
-  surahReference: "100:1-2",
+  surahName: "Al-Adiyat",
+  surahReference: "100:1",
   icon: "🐎",
-  category: "Hewan Darat",
+  category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 450,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "عَادِيَاتٌ",
-      latin: "‘Aadiyaat",
-      arti: "Kuda perang",
-      artiEn: "Warhorses",
-      contohAyat: "Al-Adiyat 100:1",
-      icon: "🐎"
-    },
-    {
-      arab: "ضَبْحٌ",
-      latin: "Dhabh",
-      arti: "Terengah-engah",
-      artiEn: "Panting",
-      contohAyat: "Al-Adiyat 100:1",
-      icon: "💨"
-    },
-    {
-      arab: "مُورِيَاتٌ",
-      latin: "Muriyaat",
-      arti: "Memercikkan api",
-      artiEn: "Spark producers",
-      contohAyat: "Al-Adiyat 100:2",
-      icon: "🔥"
-    },
-    {
-      arab: "قَدْحٌ",
-      latin: "Qadh",
-      arti: "Pukulan kuku kaki",
-      artiEn: "Striking",
-      contohAyat: "Al-Adiyat 100:2",
-      icon: "⚡"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Adiyat 100:1" }
   ],
   balita: {
     text: {
-      id: "Ini kuda! Kuda berlari kencang sekali. Kuku kakinya berbunyi tak-tok-tak-tok saat berjalan. 🐎",
-      en: "This is a horse! It runs very fast. Its hooves go clip-clop when it walks. 🐎",
+      id: "Ini Kuda! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Kuda! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini kuda! Kuda berlari kencang sekali. Kuku kakinya berbunyi tak-tok-tak-tok saat berjalan.",
-      en: "This is a horse! It runs very fast. Its hooves go clip-clop when it walks.",
+      id: "Ini Kuda. Allah menciptakan Kuda dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Kuda. Allah created Kuda beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Suara langkah kaki kuda berbunyi seperti apa?",
-        en: "What sound do horse hooves make?",
+        id: "Mana gambar Kuda?",
+        en: "Which one is the picture of Kuda?",
       },
       options: [
-        { text: { id: "🎵 Tak-tok-tak-tok", en: "🎵 Clip-clop" }, isImage: true },
-        { text: { id: "🎵 Krik-krik", en: "🎵 Chirp-chirp" }, isImage: true },
-        { text: { id: "🎵 Byur-byur", en: "🎵 Splash-splash" }, isImage: true },
+        { text: { id: "🐎 Kuda", en: "🐎 Kuda" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Kuda adalah hewan tangguh berkuku satu yang mendampingi perjuangan para kesatria.",
-      en: "Horses are resilient single-hooved animals that have accompanied knights in histories.",
+      id: "Fakta menarik tentang Kuda: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Kuda: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Kuda bisa tidur sambil berdiri karena memiliki sistem pengunci sendi kaki (stay apparatus).",
-        en: "Horses can sleep standing up due to a unique joint-locking system (stay apparatus).",
-      },
-      {
-        id: "Mata kuda berada di samping, memberikan sudut pandang hampir 360 derajat.",
-        en: "A horse's eyes are located on the sides of its head, providing an almost 360-degree view.",
-      },
-      {
-        id: "Kuku kuda terbuat dari keratin, bahan yang sama dengan kuku jari manusia.",
-        en: "A horse's hoof is made of keratin, the same material as human fingernails.",
-      },
+      { id: "Kuda diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Kuda was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Kuda dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Kuda in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "وَالْعَادِيَاتِ ضَبْحًا فَالْمُورِيَاتِ قَدْحًا",
-      transliteration: "Wal-'aadiyaati dabhaa. Fal-mooriyaati qadhaa",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Demi kuda perang yang berlari kencang dengan terengah-engah, dan kuda yang mencetuskan api (dengan pukulan kuku kakinya).",
-        en: "By the racing horses, panting, and the producers of sparks [when their hooves strike rocks].",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Mengapa kuda bisa tidur pulas sambil tetap berdiri kokoh?",
-        en: "How can horses sleep soundly while standing up?",
+        id: "Siapa yang menciptakan Kuda dengan sempurna?",
+        en: "Who created Kuda perfectly?",
       },
       options: [
-        { text: { id: "Karena mereka takut ular", en: "Because they fear snakes" } },
-        { text: { id: "Memiliki pengunci persendian kaki khusus (stay apparatus)", en: "They have a special leg-joint locking mechanism (stay apparatus)" } },
-        { text: { id: "Kuda tidak pernah tidur", en: "Horses never sleep" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Kuda perang adalah puncak adaptasi kardiovaskular mamalia untuk kecepatan tinggi.",
-      en: "Warhorses represent the peak of mammalian cardiovascular adaptation for speed.",
+      id: "Eksplorasi anatomi dan struktur Kuda mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Kuda reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Stay Apparatus", en: "Stay Apparatus Joint" },
-        desc: { id: "Mekanisme tendon kaki untuk menahan beban tubuh tanpa menggunakan otot aktif.", en: "Tendon mechanism that locks the limbs to hold weight without active muscle fatigue." },
-      },
-      {
-        part: { id: "Kuku Keratin", en: "Keratin Hooves" },
-        desc: { id: "Ujung kaki tebal penyerap getaran benturan ekstrem dari tanah berbatu.", en: "Shock-absorbing footpad casing designed to sustain high-speed impact on hard ground." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Surah Al-Adiyat:1-2 melukiskan secara ilmiah fisika gesekan kuku kuda yang mencetuskan api ('fal-mooriyaati qadhaa') saat berderap di batu gurun. Tekanan kuku seberat 400kg pada kecepatan 60 km/jam melepaskan energi kinetik ekstrem yang memanaskan partikel silika batu, menciptakan percikan api riil.",
-      en: "Surah Al-Adiyat:1-2 captures the friction physics of horse hooves sparking fire ('fal-mooriyaati qadhaa') on desert rocks. An impact pressure of 400kg at 60 km/h releases kinetic energy that heats silica particles, creating real sparks.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Kuda di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Kuda in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "وَالْعَادِيَاتِ ضَبْحًا فَالْمُورِيَاتِ قَدْحًا",
-      transliteration: "Wal-'aadiyaati dabhaa. Fal-mooriyaati qadhaa",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Demi kuda perang yang berlari kencang dengan terengah-engah, dan kuda yang mencetuskan api (dengan pukulan kuku kakinya).",
-        en: "By the racing horses, panting, and the producers of sparks [when their hooves strike rocks].",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Sumpah Allah atas kuda perang berlari kencang ini adalah metafora perjuangan yang tak kenal lelah demi menegakkan kalimat tauhid di muka bumi.",
-        en: "God's oath by the charging warhorse is a metaphor for relentless struggle and energy spent in the cause of truth.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Mengapa kuku kuda bisa mengeluarkan percikan api saat berlari di tanah berbatu?",
-        en: "Why do horse hooves strike sparks of fire on rocky ground?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Kuda?",
+          en: "What is the primary wisdom of scientific signs regarding Kuda?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "Kuda memakai tapal besi mengandung bubuk mesiu", en: "Horses wear iron shoes mixed with gunpowder" } },
-        { text: { id: "Energi kinetik benturan beban berat di kecepatan tinggi memanaskan silika batu", en: "Kinetic energy of heavy impacts at high speed heats up silica in rocks" } },
-        { text: { id: "Karena tanah gurun memiliki minyak bumi di permukaan", en: "Because desert soils contain oil on the surface" } },
-      ],
-      answerIdx: 1,
-    },
+    ],
   },
 };

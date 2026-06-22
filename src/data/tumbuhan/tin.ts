@@ -2,152 +2,109 @@ import { ObjectData } from "../objects";
 
 export const tinData: ObjectData = {
   slug: "tin",
-  name: { id: "Tin", en: "Fig" },
+  name: {
+    id: "Tin",
+    en: "Tin",
+  },
   scientificName: "Ficus carica",
-  surahName: "At-Tin (1)",
+  surahName: "At-Tin",
   surahReference: "95:1",
-  icon: "🫒",
-  category: "Tumbuhan",
+  icon: "🪪",
+  category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 100,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "تِينٌ",
-      latin: "Tiin",
-      arti: "Buah Tin",
-      artiEn: "Fig",
-      contohAyat: "At-Tin 95:1",
-      icon: "🫒"
-    },
-    {
-      arab: "قَسَمٌ",
-      latin: "Qasam",
-      arti: "Sumpah",
-      artiEn: "Oath",
-      contohAyat: "At-Tin 95:1",
-      icon: "📜"
-    },
-    {
-      arab: "حُلْوٌ",
-      latin: "Hulw",
-      arti: "Manis",
-      artiEn: "Sweet",
-      contohAyat: "At-Tin 95:1",
-      icon: "🍯"
-    },
-    {
-      arab: "هَضْمٌ",
-      latin: "Hadhm",
-      arti: "Pencernaan",
-      artiEn: "Digestion",
-      contohAyat: "At-Tin 95:1",
-      icon: "🫁"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "At-Tin 95:1" }
   ],
   balita: {
     text: {
-      id: "Ini pohon buah tin! Buah tin rasanya sangat manis dan lembut sekali saat dimakan. Buah tin bagus untuk pencernaan kita! 🫒",
-      en: "This is a fig tree! Figs taste very sweet and soft when eaten. Figs are great for our digestion! 🫒",
+      id: "Ini Tin! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Tin! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini pohon buah tin! Buah tin rasanya sangat manis dan lembut sekali saat dimakan. Buah tin bagus untuk pencernaan kita.",
-      en: "This is a fig tree! Figs taste very sweet and soft when eaten. Figs are great for our digestion.",
+      id: "Ini Tin. Allah menciptakan Tin dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Tin. Allah created Tin beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Bagaimana rasa buah tin saat dimakan?",
-        en: "How do figs taste when eaten?",
+        id: "Mana gambar Tin?",
+        en: "Which one is the picture of Tin?",
       },
       options: [
-        { text: { id: "🫒 Manis dan lembut", en: "🫒 Sweet and soft" }, isImage: true },
-        { text: { id: "🍋 Sangat asam", en: "🍋 Very sour" }, isImage: true },
-        { text: { id: "🌶️ Pedas sekali", en: "🌶️ Very spicy" }, isImage: true },
+        { text: { id: "🪪 Tin", en: "🪪 Tin" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Buah tin adalah salah satu buah istimewa yang disebutkan dalam Al-Qur'an dan memiliki sejarah yang sangat tua.",
-      en: "The fig is a special fruit mentioned in the Qur'an and has a very ancient history.",
+      id: "Fakta menarik tentang Tin: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Tin: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Pohon tin adalah salah satu pohon pertama yang dibudidayakan oleh manusia ribuan tahun lalu.",
-        en: "The fig tree is one of the first trees cultivated by humans thousands of years ago.",
-      },
-      {
-        id: "Buah tin tidak memiliki bunga di luar, bunganya tersembunyi di dalam buahnya yang bulat!",
-        en: "Figs do not have flowers on the outside; the flowers are hidden inside the round fruit!",
-      },
-      {
-        id: "Buah tin kaya akan kalsium dan serat yang membantu perut kita bekerja dengan sehat.",
-        en: "Figs are rich in calcium and fiber that help our stomachs function healthily.",
-      },
+      { id: "Tin diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Tin was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Tin dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Tin in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "وَالتِّينِ وَالزَّيْتُونِ",
-      transliteration: "Wat-teeni waz-zaitoon",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Demi buah tin dan buah zaitun.",
-        en: "By the fig and the olive.",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Di manakah letak bunga pohon buah tin?",
-        en: "Where are the flowers of the fig tree located?",
+        id: "Siapa yang menciptakan Tin dengan sempurna?",
+        en: "Who created Tin perfectly?",
       },
       options: [
-        { text: { id: "Di ujung daun", en: "At the leaf tips" } },
-        { text: { id: "Tersembunyi di dalam buahnya", en: "Hidden inside the fruit" } },
-        { text: { id: "Di bawah akar", en: "Under the roots" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Buah tin memiliki simbiosis mutualisme unik dengan tawon tin untuk penyerbukan internal.",
-      en: "The fig fruit has a unique mutualistic symbiosis with fig wasps for internal pollination.",
+      id: "Eksplorasi anatomi dan struktur Tin mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Tin reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Sikonium (Syconium)", en: "Syconium" },
-        desc: { id: "Struktur buah tertutup berbentuk kantung yang menampung ratusan bunga kecil di bagian dalamnya.", en: "Closed hollow fruit structure containing hundreds of tiny internal flowers." },
-      },
-      {
-        part: { id: "Ostiole", en: "Ostiole" },
-        desc: { id: "Lubang kecil di ujung buah sebagai jalan masuk satu-satunya bagi tawon penyerbuk.", en: "Small passage at the fruit tip functioning as the only entrance for wasp pollinators." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Sumpah Allah dalam Surah At-Tin menggabungkan Tin dan Zaitun. Studi nutrisi modern menunjukkan kombinasi buah tin dan zaitun mengandung senyawa metallothionein, senyawa anti penuaan sel yang bekerja optimal jika dikonsumsi dengan perbandingan tepat 1 buah tin dan 7 buah zaitun — rahasia menakjubkan dari sumpah Allah!",
-      en: "Allah's oath in Surah At-Tin joins the Fig and the Olive. Modern nutritional studies show that combining figs and olives produces metallothionein, an anti-aging compound that is highly effective when consumed in a ratio of exactly 1 fig to 7 olives — a stunning secret behind Allah's oath!",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Tin di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Tin in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "وَالتِّينِ وَالزَّيْتُونِ",
-      transliteration: "Wat-teeni waz-zaitoon",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Demi buah tin dan buah zaitun.",
-        en: "By the fig and the olive.",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Penyebutan buah tin sebagai sumpah Allah menunjukkan pentingnya buah ini sebagai sumber nutrisi tinggi dan obat penyembuh alami bagi manusia.",
-        en: "The mention of the fig as a divine oath highlights its significant value as a high-nutrient source and natural remedy for humanity.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Berapa perbandingan konsumsi buah tin dan zaitun yang terbukti secara nutrisi mengaktifkan senyawa anti-penuaan sel (metallothionein)?",
-        en: "What ratio of consuming figs to olives is nutritionally proven to activate the cell anti-aging compound metallothionein?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Tin?",
+          en: "What is the primary wisdom of scientific signs regarding Tin?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "5 tin dan 5 zaitun", en: "5 figs and 5 olives" } },
-        { text: { id: "1 tin dan 7 zaitun", en: "1 fig and 7 olives" } },
-        { text: { id: "10 tin dan 1 zaitun", en: "10 figs and 1 olive" } },
-      ],
-      answerIdx: 1,
-    },
+    ],
   },
 };

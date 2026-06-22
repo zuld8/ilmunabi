@@ -4,122 +4,106 @@ export const lautData: ObjectData = {
   slug: "laut",
   name: {
     id: "Laut",
-    en: "Sea",
+    en: "Laut",
   },
-  scientificName: "Oceanus",
+  scientificName: "Ocean",
   surahName: "Ar-Rahman",
   surahReference: "55:19-20",
   icon: "🌊",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 120,
+  unlockedAtPoints: 50,
   kosakata: [
-    { arab: "بَحْرٌ", latin: "Bahr", arti: "Laut", artiEn: "Sea" },
-    { arab: "مَوْجٌ", latin: "Mawj", arti: "Ombak", artiEn: "Wave" },
-    { arab: "لُجِّيّ", latin: "Lujjiyy", arti: "Lautan Dalam", artiEn: "Deep Ocean" },
-    { arab: "بَرْزَخٌ", latin: "Barzakh", arti: "Batas/Pemisah", artiEn: "Barrier" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Ar-Rahman 55:19-20" }
   ],
   balita: {
     text: {
-      id: "Ini laut yang luas! Ada ikan berenang dan ombak menari-nari. 🌊",
-      en: "This is the wide sea! Fishes swim and waves dance around. 🌊",
+      id: "Ini Laut! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Laut! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Laut itu sangat luas dan biru. Allah menciptakan lautan sebagai tempat tinggal ikan-ikan yang cantik.",
-      en: "The sea is very vast and blue. Allah created the ocean as a home for beautiful fishes.",
+      id: "Ini Laut. Allah menciptakan Laut dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Laut. Allah created Laut beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Hewan apa yang tinggal di dalam laut?",
-        en: "Which animal lives in the sea?",
+        id: "Mana gambar Laut?",
+        en: "Which one is the picture of Laut?",
       },
       options: [
-        { text: { id: "🐟 Ikan", en: "🐟 Fish" } },
-        { text: { id: "🐈 Kucing", en: "🐈 Cat" } },
-        { text: { id: "🦅 Elang", en: "🦅 Eagle" } },
+        { text: { id: "🌊 Laut", en: "🌊 Laut" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Lautan menutupi 70% bumi kita. Di beberapa tempat, dua laut bertemu tetapi airnya tidak bercampur karena adanya batas fisika tak terlihat.",
-      en: "Oceans cover 70% of our Earth. In some places, two seas meet but their waters do not mix due to an invisible physical barrier.",
+      id: "Fakta menarik tentang Laut: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Laut: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Air laut rasanya asin karena kaya akan mineral natrium klorida.", en: "Ocean water tastes salty because it is rich in sodium chloride minerals." },
-      { id: "Laut menguap membentuk awan yang menjadi sumber air hujan.", en: "The sea evaporates to form clouds, which are the source of rain." },
-      { id: "Ombak terjadi karena gesekan angin di permukaan air.", en: "Waves occur due to the friction of wind on the water surface." },
-      { id: "Terumbu karang di laut adalah tempat tinggal ribuan biota laut.", en: "Coral reefs in the sea are home to thousands of marine creatures." },
+      { id: "Laut diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Laut was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Laut dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Laut in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "مَرَجَ الْبَحْرَيْنِ يَلْتَقِيَانِ بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ",
-      transliteration: "Marajal-bahrayni yaltaqiyān, baynahumā barzakhul-lā yabghiyān",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Dia membiarkan dua laut mengalir yang (kemudian) keduanya bertemu, di antara keduanya ada batas yang tidak dilampaui oleh masing-masing.",
-        en: "He released the two seas, meeting [side by side]; Between them is a barrier [so] neither of them transgresses.",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Berapa persen permukaan bumi yang ditutupi oleh lautan?",
-        en: "What percentage of the Earth's surface is covered by oceans?",
+        id: "Siapa yang menciptakan Laut dengan sempurna?",
+        en: "Who created Laut perfectly?",
       },
       options: [
-        { text: { id: "30%", en: "30%" } },
-        { text: { id: "50%", en: "50%" } },
-        { text: { id: "70%", en: "70%" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 2,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Lautan dalam memiliki lapisan ekologis yang berbeda. Batas air laut (halocline dan thermocline) mencegah percampuran air yang memiliki salinitas dan suhu berbeda secara instan.",
-      en: "Deep oceans have distinct ecological zones. Marine water barriers (halocline and thermocline) prevent the instant mixing of waters with different salinities and temperatures.",
+      id: "Eksplorasi anatomi dan struktur Laut mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Laut reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Zona Epipelagis", en: "Epipelagic Zone" },
-        desc: { id: "Lapisan permukaan atas yang menerima banyak cahaya matahari (zona fotik).", en: "The top surface layer that receives abundant sunlight (photic zone)." },
-      },
-      {
-        part: { id: "Zona Batipelagis", en: "Bathypelagic Zone" },
-        desc: { id: "Kedalaman 1000 hingga 4000 meter yang gelap gulita dan bertekanan tinggi.", en: "Depths of 1000 to 4000 meters that are pitch black with extreme pressure." },
-      },
-      {
-        part: { id: "Halocline", en: "Halocline" },
-        desc: { id: "Batas gradien kadar garam yang memisahkan massa air laut.", en: "The salinity gradient barrier separating marine water masses." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Sains kelautan modern menemukan fenomena batas pertemuan laut seperti di Selat Gibraltar, di mana air Samudra Atlantik dan Laut Tengah bertemu tetapi tidak bercampur langsung karena perbedaan densitas, salinitas, dan suhu. Batas tak terlihat ini disebut 'Barzakh' di dalam Surah Ar-Rahman.",
-      en: "Modern oceanography discovered the sea barrier phenomenon in places like the Strait of Gibraltar, where the Atlantic Ocean and the Mediterranean Sea meet but do not instantly mix due to density, salinity, and temperature gradients. This invisible barrier is called 'Barzakh' in Surah Ar-Rahman.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Laut di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Laut in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "أَوْ كَظُلُمَاتٍ فِي بَحْرٍ لُجِّيٍّ يَغْشَاهُ مَوْجٌ مِنْ فَوْقِهِ مَوْجٌ",
-      transliteration: "Aw kadhulumātin fī bahrin lujjiyyin yaghsyāhu mawjun min fawqihi mawj",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Atau (keadaan orang-orang kafir) seperti gelap gulita di lautan yang dalam, yang diliputi oleh ombak, yang di atasnya ada ombak (pula),",
-        en: "Or [it is] like darknesses within a deep sea which is covered by a wave, upon which is another wave,",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Surah An-Nur ayat 40 menggambarkan kegelapan lautan dalam dan fenomena ombak internal di dasar laut dalam yang baru dibuktikan oseanografi modern abad ke-20.",
-        en: "Surah An-Nur verse 40 describes the darkness of the deep sea and internal waves, a phenomenon oceanographers only proved in the 20th century.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
     quiz: [
       {
         question: {
-          id: "Apa nama pembatas kandungan kadar garam air laut yang memisahkan dua perairan laut?",
-          en: "What is the name of the salinity gradient barrier separating two sea waters?",
+          id: "Apa hikmah utama diutusnya tanda sains tentang Laut?",
+          en: "What is the primary wisdom of scientific signs regarding Laut?",
         },
         options: [
-          { text: { id: "Thermocline", en: "Thermocline" } },
-          { text: { id: "Halocline", en: "Halocline" } },
-          { text: { id: "Pycnocline", en: "Pycnocline" } },
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
         ],
-        answerIdx: 1,
+        answerIdx: 0,
       },
     ],
   },

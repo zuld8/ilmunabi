@@ -2,152 +2,109 @@ import { ObjectData } from "../objects";
 
 export const zaitunData: ObjectData = {
   slug: "zaitun",
-  name: { id: "Zaitun", en: "Olive" },
+  name: {
+    id: "Zaitun",
+    en: "Zaitun",
+  },
   scientificName: "Olea europaea",
-  surahName: "At-Tin (1)",
+  surahName: "At-Tin",
   surahReference: "95:1",
   icon: "🫒",
-  category: "Tumbuhan",
+  category: "tumbuhan",
   type: "tumbuhan",
   unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "زَيْتُونٌ",
-      latin: "Zaytuun",
-      arti: "Zaitun",
-      artiEn: "Olive",
-      contohAyat: "At-Tin 95:1",
-      icon: "🫒"
-    },
-    {
-      arab: "شَجَرَةٌ",
-      latin: "Syajarah",
-      arti: "Pohon",
-      artiEn: "Tree",
-      contohAyat: "An-Nur 24:35",
-      icon: "🌳"
-    },
-    {
-      arab: "مُبَارَكَةٌ",
-      latin: "Mubaarakah",
-      arti: "Yang Diberkahi",
-      artiEn: "Blessed",
-      contohAyat: "An-Nur 24:35",
-      icon: "✨"
-    },
-    {
-      arab: "زَيْتٌ",
-      latin: "Zayt",
-      arti: "Minyak",
-      artiEn: "Oil",
-      contohAyat: "An-Nur 24:35",
-      icon: "🧪"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "At-Tin 95:1" }
   ],
   balita: {
     text: {
-      id: "Ini pohon zaitun! Pohon zaitun buahnya kecil dan bulat. Minyak dari buah zaitun sehat sekali untuk tubuh kita! 🫒",
-      en: "This is an olive tree! Olives are small and round. Olive oil is very healthy for our body! 🫒",
+      id: "Ini Zaitun! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Zaitun! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini pohon zaitun! Pohon zaitun buahnya kecil dan bulat. Minyak dari buah zaitun sehat sekali untuk tubuh kita.",
-      en: "This is an olive tree! Olives are small and round. Olive oil is very healthy for our body.",
+      id: "Ini Zaitun. Allah menciptakan Zaitun dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Zaitun. Allah created Zaitun beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Buah apa yang menghasilkan minyak zaitun yang sehat?",
-        en: "Which fruit makes healthy olive oil?",
+        id: "Mana gambar Zaitun?",
+        en: "Which one is the picture of Zaitun?",
       },
       options: [
-        { text: { id: "🫒 Zaitun", en: "🫒 Olive" }, isImage: true },
-        { text: { id: "🍒 Ceri", en: "🍒 Cherry" }, isImage: true },
-        { text: { id: "🍇 Anggur", en: "🍇 Grape" }, isImage: true },
+        { text: { id: "🫒 Zaitun", en: "🫒 Zaitun" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Zaitun adalah pohon istimewa yang diberkahi Allah. Pohon ini sangat kuat dan daunnya selalu hijau sepanjang tahun.",
-      en: "The olive is a special tree blessed by Allah. It is very strong and its leaves remain green all year round.",
+      id: "Fakta menarik tentang Zaitun: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Zaitun: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Pohon zaitun bisa hidup hingga ribuan tahun, dan masih bisa menghasilkan buah!",
-        en: "Olive trees can live for thousands of years and still produce fruit!",
-      },
-      {
-        id: "Minyak zaitun memiliki banyak sekali manfaat untuk kesehatan jantung dan kulit.",
-        en: "Olive oil has many benefits for heart and skin health.",
-      },
-      {
-        id: "Daun zaitun tidak gugur di musim dingin (evergreen) sehingga melambangkan perdamaian dan kekuatan.",
-        en: "Olive leaves do not fall in winter (evergreen), symbolizing peace and strength.",
-      },
+      { id: "Zaitun diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Zaitun was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Zaitun dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Zaitun in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "وَالتِّينِ وَالزَّيْتُونِ",
-      transliteration: "Wat-teeni waz-zaitoon",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Demi buah tin dan buah zaitun.",
-        en: "By the fig and the olive.",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Apa keistimewaan daun pohon zaitun?",
-        en: "What is special about olive tree leaves?",
+        id: "Siapa yang menciptakan Zaitun dengan sempurna?",
+        en: "Who created Zaitun perfectly?",
       },
       options: [
-        { text: { id: "Berwarna merah muda", en: "They are pink in color" } },
-        { text: { id: "Tidak pernah gugur meskipun musim dingin", en: "They never fall even during winter" } },
-        { text: { id: "Rasanya manis sekali", en: "They taste very sweet" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Pohon zaitun memiliki adaptasi seluler yang luar biasa untuk bertahan di tanah kering dan berbatu.",
-      en: "The olive tree has amazing cellular adaptations to survive in dry, rocky soils.",
+      id: "Eksplorasi anatomi dan struktur Zaitun mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Zaitun reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Lapisan Sklerenkim", en: "Sclerenchyma Layer" },
-        desc: { id: "Jaringan sel daun yang tebal dan kokoh menjaga kestabilan struktur daun di bawah kekeringan ekstrem.", en: "Thick and rigid leaf cell tissues that stabilize leaf structures under extreme drought." },
-      },
-      {
-        part: { id: "Trikoma Perak", en: "Silver Trichomes" },
-        desc: { id: "Bulu-bulu halus mikroskopis di bawah daun untuk memantulkan sinar matahari berlebih dan menjaga kelembapan.", en: "Microscopic fine hairs beneath leaves that reflect excess sunlight and preserve moisture." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Al-Qur'an dalam Surah An-Nur:35 menyebut minyak zaitun bersumber dari 'pohon yang diberkahi... yang minyaknya hampir-hampir menerangi walaupun tidak disentuh api'. Secara sains, minyak zaitun perasan pertama (extra virgin) mengandung senyawa polifenol antioksidan tingkat tertinggi yang memperkuat dinding sel tubuh manusia dari penuaan dini dan kanker, memancarkan 'cahaya kesehatan' dari dalam.",
-      en: "The Qur'an in Surah An-Nur:35 refers to olive oil from a 'blessed tree... whose oil would almost glow even if untouched by fire'. Scientifically, extra virgin olive oil contains high concentrations of polyphenols and antioxidants that protect human cell walls from aging and diseases, radiating health from within.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Zaitun di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Zaitun in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "وَالتِّينِ وَالزَّيْتُونِ",
-      transliteration: "Wat-teeni waz-zaitoon",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Demi buah tin dan buah zaitun.",
-        en: "By the fig and the olive.",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Sumpah Allah demi Zaitun mensejajarkannya dengan tempat-tempat suci para Nabi, menandakan betapa berharganya ciptaan ini sebagai obat fisik dan simbol spiritual.",
-        en: "Allah's oath by the olive associates it with sacred prophetic lands, emphasizing its exceptional value as a physical remedy and a spiritual symbol.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Senyawa aktif apa dalam minyak zaitun extra virgin yang terbukti melindungi sel-sel tubuh dari kerusakan?",
-        en: "Which active compound in extra virgin olive oil is proven to protect body cells from damage?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Zaitun?",
+          en: "What is the primary wisdom of scientific signs regarding Zaitun?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "Polifenol antioksidan alami", en: "Natural antioxidant polyphenols" } },
-        { text: { id: "Karbohidrat sederhana", en: "Simple carbohydrates" } },
-        { text: { id: "Zat kapur", en: "Lime substances" } },
-      ],
-      answerIdx: 0,
-    },
+    ],
   },
 };

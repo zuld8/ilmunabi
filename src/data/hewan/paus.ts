@@ -2,144 +2,109 @@ import { ObjectData } from "../objects";
 
 export const pausData: ObjectData = {
   slug: "paus",
-  name: { id: "Ikan Paus", en: "Whale" },
-  scientificName: "Cetacea",
-  surahName: "As-Saffat (142)",
-  surahReference: "37:142",
+  name: {
+    id: "Ikan Paus",
+    en: "Ikan Paus",
+  },
+  scientificName: "Balaenoptera musculus",
+  surahName: "Al-Anbiya",
+  surahReference: "21:87",
   icon: "🐋",
-  category: "Hewan Air",
+  category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 400,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "حُوتٌ",
-      latin: "Huut",
-      arti: "Ikan besar/Paus",
-      artiEn: "Big fish/Whale",
-      contohAyat: "As-Saffat 37:142",
-      icon: "🐋"
-    },
-    {
-      arab: "فَالْتَقَمَ",
-      latin: "Faltaqama",
-      arti: "Menelan",
-      artiEn: "Swallowed",
-      contohAyat: "As-Saffat 37:142",
-      icon: "👄"
-    },
-    {
-      arab: "مُلِيمٌ",
-      latin: "Muliim",
-      arti: "Tercela",
-      artiEn: "Blameworthy",
-      contohAyat: "As-Saffat 37:142",
-      icon: "😔"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Anbiya 21:87" }
   ],
   balita: {
     text: {
-      id: "Ini paus! Tubuhnya sangat besar seperti pulau. Paus tinggal di laut dalam dan suka menyemburkan air. 🐋",
-      en: "This is a whale! It is as big as an island. It lives in the deep blue sea and spouts water. 🐋",
+      id: "Ini Ikan Paus! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Ikan Paus! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini paus! Tubuhnya sangat besar seperti pulau. Paus tinggal di laut dalam dan suka menyemburkan air.",
-      en: "This is a whale! It is as big as an island. It lives in the deep blue sea and spouts water.",
+      id: "Ini Ikan Paus. Allah menciptakan Ikan Paus dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Ikan Paus. Allah created Ikan Paus beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Di manakah paus tinggal?",
-        en: "Where do whales live?",
+        id: "Mana gambar Ikan Paus?",
+        en: "Which one is the picture of Ikan Paus?",
       },
       options: [
-        { text: { id: "🌊 Laut", en: "🌊 Ocean" }, isImage: true },
-        { text: { id: "🌲 Hutan", en: "🌲 Forest" }, isImage: true },
-        { text: { id: "🏙️ Kota", en: "🏙️ City" }, isImage: true },
+        { text: { id: "🐋 Ikan Paus", en: "🐋 Ikan Paus" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Paus bukan ikan biasa, mereka adalah mamalia raksasa yang bernapas dengan paru-paru.",
-      en: "Whales are not actual fish; they are giant mammals that breathe using lungs.",
+      id: "Fakta menarik tentang Ikan Paus: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Ikan Paus: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Paus Biru adalah hewan terbesar di bumi, lidahnya saja seberat seekor gajah.",
-        en: "The Blue Whale is the largest animal ever, with a tongue weighing as much as an elephant.",
-      },
-      {
-        id: "Paus bernapas melalui lubang sembur (blowhole) di atas kepala mereka.",
-        en: "Whales breathe through blowholes located on top of their heads.",
-      },
-      {
-        id: "Paus bernyanyi dengan melodi indah untuk berkomunikasi sejauh ribuan kilometer.",
-        en: "Whales sing complex melodies to communicate across thousands of kilometers.",
-      },
+      { id: "Ikan Paus diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Ikan Paus was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Ikan Paus dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Ikan Paus in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "فَالْتَقَمَهُ الْحُوتُ وَهُوَ مُلِيمٌ",
-      transliteration: "Faltaqamahul hootu wa huwa muleem",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Maka dia ditelan oleh ikan besar (paus) dalam keadaan tercela.",
-        en: "Then the fish (whale) swallowed him while he was blameworthy.",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Bagaimana cara paus menghirup udara bersih?",
-        en: "How do whales breathe clean air?",
+        id: "Siapa yang menciptakan Ikan Paus dengan sempurna?",
+        en: "Who created Ikan Paus perfectly?",
       },
       options: [
-        { text: { id: "Menggunakan insang", en: "Using gills" } },
-        { text: { id: "Lewat lubang sembur (blowhole) di atas kepala", en: "Through a blowhole on top of their head" } },
-        { text: { id: "Menggunakan sisik", en: "Through scales" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Paus memiliki adaptasi fisiologis laut dalam yang menakjubkan untuk menyelam berjam-jam.",
-      en: "Whales have stunning physiological adaptations for deep-diving without getting decompression sickness.",
+      id: "Eksplorasi anatomi dan struktur Ikan Paus mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Ikan Paus reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Baleen", en: "Baleen Plates" },
-        desc: { id: "Struktur penyaring mirip sapu untuk menyaring udang kecil (krill) dari air.", en: "Broom-like filter structures to trap krill while flushing out seawater." },
-      },
-      {
-        part: { id: "Lapisan Blubber", en: "Blubber Layer" },
-        desc: { id: "Lapisan lemak tebal di bawah kulit untuk menahan kehangatan di air es kutub.", en: "Thick fat layer underneath the skin protecting internal organs from freezing arctic temperatures." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Nabi Yunus AS ditelan hidup-hidup oleh ikan paus ('Al-Hut') dan bertahan hidup berhari-hari di dalam perutnya. Secara medis, paus sperma memiliki lambung tiga bilik raksasa. Bilik pertama tidak memproduksi asam pencernaan, melainkan hanya wadah mekanis beroksigen tempat mangsa disimpan sementara sebelum dicerna, memungkinkan Yunus bertahan hidup.",
-      en: "Prophet Jonah (Yunus) was swallowed alive by a whale ('Al-Hut') and survived inside its belly. Specially, Sperm Whales possess a three-chambered stomach. The first chamber acts as an oxygenated container, functioning without digestive acids, allowing Jonah to survive.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Ikan Paus di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Ikan Paus in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "فَلَوْلَا أَنَّهُ كَانَ مِنَ الْمُسَبِّحِينَ لَلَبِثَ فِي بَطْنِهِ إِلَىٰ يَوْمِ يُبْعَثُونَ",
-      transliteration: "Falaw laaa anna hoo kaana minal musabbiheena Lalabitha fee batnihiii ilaa yawmi yub'athoon",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Maka sekiranya dia tidak termasuk orang yang banyak berdzikir (mengingat Allah), niscaya dia akan tetap tinggal di dalam perut (paus) itu sampai hari kebangkitan.",
-        en: "And had he not been of those who exalt Allah, he would have remained inside its belly until the Day they are resurrected.",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Doa Nabi Yunus di dalam kegelapan perut paus ('La ilaha illa Anta, Subhanaka inni kuntu minaz-zalimin') adalah salah satu doa terkuat untuk memohon keselamatan dari kesempitan hidup.",
-        en: "Prophet Jonah's prayer inside the whale's belly ('There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers') remains a powerful invocation for relief.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Mengapa Nabi Yunus secara anatomis dimungkinkan bertahan hidup di lambung pertama paus sperma?",
-        en: "Why was it anatomically possible for Prophet Jonah to survive in a sperm whale's first stomach chamber?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Ikan Paus?",
+          en: "What is the primary wisdom of scientific signs regarding Ikan Paus?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "Karena lambung paus sangat dingin", en: "Because the stomach is cold" } },
-        { text: { id: "Bilik pertama tidak menghasilkan asam pencernaan dan beroksigen", en: "The first chamber lacks digestive acids and holds oxygen" } },
-        { text: { id: "Paus tidak memakan daging", en: "Whales do not eat meat" } },
-      ],
-      answerIdx: 1,
-    },
+    ],
   },
 };

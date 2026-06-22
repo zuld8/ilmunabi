@@ -4,122 +4,106 @@ export const bumiData: ObjectData = {
   slug: "bumi",
   name: {
     id: "Bumi",
-    en: "Earth",
+    en: "Bumi",
   },
-  scientificName: "Tellus / Terra",
+  scientificName: "Earth",
   surahName: "Al-Anbiya",
   surahReference: "21:30",
   icon: "🌍",
   category: "langit",
   type: "langit",
-  unlockedAtPoints: 90,
+  unlockedAtPoints: 50,
   kosakata: [
-    { arab: "أَرْضٌ", latin: "Ardh", arti: "Bumi/Tanah", artiEn: "Earth/Land" },
-    { arab: "جِبَالٌ", latin: "Jibal", arti: "Gunung", artiEn: "Mountains" },
-    { arab: "مِهَادًا", latin: "Mihada", arti: "Hamparan/Tempat Tidur", artiEn: "Resting Place" },
-    { arab: "سَمَاءٌ", latin: "Sama'", arti: "Langit", artiEn: "Sky/Heaven" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Anbiya 21:30" }
   ],
   balita: {
     text: {
-      id: "Ini bumi tempat tinggal kita! Ada pohon, hewan, air, dan kita semua hidup gembira di sini. 🌍",
-      en: "This is Earth, our home! There are trees, animals, water, and we all live happily here. 🌍",
+      id: "Ini Bumi! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Bumi! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Bumi diciptakan Allah sebagai tempat tinggal yang sangat nyaman. Bumi dilindungi langit yang biru dan indah.",
-      en: "Earth was created by Allah as a very comfortable home. It is protected by a beautiful blue sky.",
+      id: "Ini Bumi. Allah menciptakan Bumi dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Bumi. Allah created Bumi beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Di planet manakah kita semua tinggal?",
-        en: "Which planet do we all live on?",
+        id: "Mana gambar Bumi?",
+        en: "Which one is the picture of Bumi?",
       },
       options: [
-        { text: { id: "Mars", en: "Mars" } },
-        { text: { id: "Bumi", en: "Earth" } },
-        { text: { id: "Yupiter", en: "Jupiter" } },
+        { text: { id: "🌍 Bumi", en: "🌍 Bumi" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Bumi berputar pada porosnya menghasilkan siang dan malam. Di sekeliling bumi terdapat atmosfer tebal yang berfungsi sebagai atap pelindung dari kejatuhan meteor.",
-      en: "Earth rotates on its axis, producing day and night. Surrounding the Earth is a thick atmosphere that acts as a protective ceiling against falling meteors.",
+      id: "Fakta menarik tentang Bumi: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Bumi: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Bumi berotasi penuh dalam waktu 24 jam.", en: "Earth completes one full rotation in 24 hours." },
-      { id: "Atmosfer bumi memantulkan radiasi berbahaya dari luar angkasa.", en: "Earth's atmosphere deflects harmful space radiation." },
-      { id: "Bumi adalah satu-satunya planet yang memiliki kehidupan aktif.", en: "Earth is the only planet known to host active life." },
-      { id: "Gunung-gunung dipasang tegak sebagai tiang pancang penstabil bumi.", en: "Mountains are set upright to stabilize the Earth." },
+      { id: "Bumi diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Bumi was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Bumi dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Bumi in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "وَجَعَلْنَا السَّمَاءَ سَقْفًا مَحْفُوظًا",
-      transliteration: "Wa ja'alnas-samā'a saqfam mahfūdhā",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Dan Kami menjadikan langit itu sebagai atap yang terpelihara,",
-        en: "And We made the sky a protected ceiling,",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Apa fungsi atmosfer bumi yang diisyaratkan sebagai 'atap yang terpelihara'?",
-        en: "What is the function of Earth's atmosphere hinted as a 'protected ceiling'?",
+        id: "Siapa yang menciptakan Bumi dengan sempurna?",
+        en: "Who created Bumi perfectly?",
       },
       options: [
-        { text: { id: "Membuat bumi gelap", en: "Making Earth dark" } },
-        { text: { id: "Melindungi bumi dari ancaman luar angkasa", en: "Protecting Earth from space hazards" } },
-        { text: { id: "Menghasilkan gravitasi", en: "Generating gravity" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Struktur dalam bumi terdiri dari kerak bumi, mantel silikat kental, inti luar cair besi-nikel, dan inti dalam padat.",
-      en: "Earth's internal structure consists of a crust, a viscous silicate mantle, a liquid iron-nickel outer core, and a solid inner core.",
+      id: "Eksplorasi anatomi dan struktur Bumi mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Bumi reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Kerak Bumi", en: "Crust" },
-        desc: { id: "Lapisan padat terluar bumi, tempat samudra dan benua berada.", en: "The outermost solid layer of Earth, containing oceans and continents." },
-      },
-      {
-        part: { id: "Mantel Bumi", en: "Mantle" },
-        desc: { id: "Lapisan batuan semi-cair tebal yang bergerak secara dinamis.", en: "A thick layer of semi-molten rock that moves dynamically." },
-      },
-      {
-        part: { id: "Inti Bumi", en: "Core" },
-        desc: { id: "Pusat bumi yang sangat panas, menghasilkan medan magnet pelindung.", en: "The extremely hot center of Earth, generating a protective magnetic field." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Teori Big Bang menjelaskan bumi dan benda langit awalnya menyatu sebelum terpisah (inflasi kosmik). Hal ini selaras dengan Surah Al-Anbiya ayat 30: '...bahwa langit dan bumi itu keduanya dahulu adalah suatu yang padu, kemudian Kami pisahkan antara keduanya.' Selain itu, ayat tersebut menegaskan bahwa semua makhluk hidup diciptakan dari air, suatu fakta biokimia modern.",
-      en: "The Big Bang theory describes that the heavens and the earth were originally joined before being split apart (cosmic inflation). This aligns with Surah Al-Anbiya verse 30: '...that the heavens and the earth were a joined entity, and We separated them.' Additionally, the verse asserts that all living things are created from water, a cornerstone of biochemistry.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Bumi di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Bumi in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "أَوَلَمْ يَرَ الَّذِينَ كَفَرُوا أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ",
-      transliteration: "Awalam yaral-ladhīna kafarū annas-samāwāti wal-ardha kānatā ratqan fafataqnāhumā, wa ja'alnā minal-mā'i kulla syay'in hayy",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Dan apakah orang-orang yang kafir tidak mengetahui bahwasanya langit dan bumi itu keduanya dahulu adalah suatu yang padu, kemudian Kami pisahkan antara keduanya. Dan dari air Kami jadikan segala sesuatu yang hidup.",
-        en: "Have those who disbelieved not considered that the heavens and the earth were a joined entity, and We separated them and made from water every living thing?",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Surah Al-Anbiya ayat 30 mengisyaratkan asal mula alam semesta (kosmologi) dan biokimia asal-usul kehidupan.",
-        en: "Surah Al-Anbiya verse 30 hints at the universe's origin (cosmology) and the biochemical origin of life.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
     quiz: [
       {
         question: {
-          id: "Apa asal mula semua makhluk hidup menurut Surah Al-Anbiya ayat 30?",
-          en: "What is the origin of all living things according to Surah Al-Anbiya verse 30?",
+          id: "Apa hikmah utama diutusnya tanda sains tentang Bumi?",
+          en: "What is the primary wisdom of scientific signs regarding Bumi?",
         },
         options: [
-          { text: { id: "Tanah", en: "Soil" } },
-          { text: { id: "Api", en: "Fire" } },
-          { text: { id: "Air", en: "Water" } },
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
         ],
-        answerIdx: 2,
+        answerIdx: 0,
       },
     ],
   },

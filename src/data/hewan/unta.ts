@@ -2,152 +2,109 @@ import { ObjectData } from "../objects";
 
 export const untaData: ObjectData = {
   slug: "unta",
-  name: { id: "Unta", en: "Camel" },
+  name: {
+    id: "Unta",
+    en: "Unta",
+  },
   scientificName: "Camelus",
-  surahName: "Al-Ghashiyah (17)",
+  surahName: "Al-Ghashiyah",
   surahReference: "88:17",
   icon: "🐫",
-  category: "Hewan Darat",
+  category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 150,
+  unlockedAtPoints: 50,
   kosakata: [
-    {
-      arab: "إِبِلٌ",
-      latin: "Ibil",
-      arti: "Unta",
-      artiEn: "Camel",
-      contohAyat: "Al-Ghashiyah 88:17",
-      icon: "🐫"
-    },
-    {
-      arab: "خُلِقَتْ",
-      latin: "Khuliqat",
-      arti: "Diciptakan",
-      artiEn: "Created",
-      contohAyat: "Al-Ghashiyah 88:17",
-      icon: "✨"
-    },
-    {
-      arab: "سَمَاءٌ",
-      latin: "Samaa'",
-      arti: "Langit",
-      artiEn: "Sky",
-      contohAyat: "Al-Ghashiyah 88:18",
-      icon: "☁️"
-    },
-    {
-      arab: "كَيْفَ",
-      latin: "Kayfa",
-      arti: "Bagaimana",
-      artiEn: "How",
-      contohAyat: "Al-Ghashiyah 88:17",
-      icon: "❓"
-    }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Ghashiyah 88:17" }
   ],
   balita: {
     text: {
-      id: "Ini unta! Unta punya punuk besar di punggungnya untuk berjalan jauh di gurun pasir yang panas. 🐫",
-      en: "This is a camel! Camels have big humps on their backs to travel far in the hot desert. 🐫",
+      id: "Ini Unta! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Unta! An amazingly beautiful creation of Allah. 🌟",
     },
     audioTranscript: {
-      id: "Ini unta! Unta punya punuk besar di punggungnya untuk berjalan jauh di gurun pasir yang panas.",
-      en: "This is a camel! Camels have big humps on their backs to travel far in the hot desert.",
+      id: "Ini Unta. Allah menciptakan Unta dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Unta. Allah created Unta beautifully so we all become grateful.",
     },
     quiz: {
       question: {
-        id: "Di manakah tempat tinggal alamiah unta?",
-        en: "Where do camels naturally live?",
+        id: "Mana gambar Unta?",
+        en: "Which one is the picture of Unta?",
       },
       options: [
-        { text: { id: "❄️ Kutub Es", en: "❄️ Snowy Poles" }, isImage: true },
-        { text: { id: "🏜️ Gurun Pasir", en: "🏜️ Sandy Desert" }, isImage: true },
-        { text: { id: "🌊 Laut Dalam", en: "🌊 Deep Sea" }, isImage: true },
+        { text: { id: "🐫 Unta", en: "🐫 Unta" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   anak: {
     text: {
-      id: "Unta dijuluki 'kapal gurun' karena kekuatannya menyeberangi lautan pasir tanpa air.",
-      en: "Camels are called 'ships of the desert' for their ability to cross hot sand oceans without water.",
+      id: "Fakta menarik tentang Unta: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Unta: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      {
-        id: "Punuk unta tidak menyimpan air, melainkan lemak sebagai cadangan makanan.",
-        en: "A camel's hump does not store water; it stores fat as an energy reserve.",
-      },
-      {
-        id: "Unta bisa minum 200 liter air dalam 3 menit.",
-        en: "A camel can drink up to 200 liters of water in just 3 minutes.",
-      },
-      {
-        id: "Mereka memiliki kelopak mata ketiga transparan untuk melindungi dari badai pasir.",
-        en: "They have a transparent third eyelid to shield their eyes during sandstorms.",
-      },
+      { id: "Unta diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Unta was created with unique traits and immense benefits." },
+      { id: "Allah menyebut Unta dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Unta in the Qur'an so humans observe the science behind it." }
     ],
     quranVerse: {
-      arabic: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
-      transliteration: "Afalaa yanzuroona ilal ibili kaifa khuliqat",
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
       translation: {
-        id: "Maka tidakkah mereka memperhatikan bagaimana unta diciptakan?",
-        en: "Do they not look at the camels - how they are created?",
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
       },
     },
     quiz: {
       question: {
-        id: "Apa isi sebenarnya dari punuk yang ada di punggung unta?",
-        en: "What is actually stored inside a camel's hump?",
+        id: "Siapa yang menciptakan Unta dengan sempurna?",
+        en: "Who created Unta perfectly?",
       },
       options: [
-        { text: { id: "Air minum", en: "Drinking water" } },
-        { text: { id: "Lemak cadangan makanan", en: "Fat food reserves" } },
-        { text: { id: "Pasir gurun", en: "Desert sand" } },
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
       ],
-      answerIdx: 1,
+      answerIdx: 0,
     },
   },
   explorer: {
     text: {
-      id: "Struktur fisiologi unta dirancang khusus untuk bertahan hidup di suhu ekstrem Gurun.",
-      en: "A camel's physiological design is uniquely adapted to survive extreme desert climates.",
+      id: "Eksplorasi anatomi dan struktur Unta mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Unta reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
       {
-        part: { id: "Sel Darah Merah Oval", en: "Oval Red Blood Cells" },
-        desc: { id: "Mampu mengembang hingga 240% tanpa pecah saat minum air dalam jumlah banyak.", en: "Can expand up to 240% of their size without bursting when rehydrating." },
-      },
-      {
-        part: { id: "Kaki Lebar Berlapis", en: "Padded Feet" },
-        desc: { id: "Kaki melebar mencegah terperosok ke dalam pasir panas yang gembur.", en: "Wide footpads that spread out to prevent sinking into loose, hot sand." },
+        part: { id: "Struktur Khusus", en: "Special Structure" },
+        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
       },
     ],
     wowFactor: {
-      id: "Unta bisa minum 200 liter air dalam 3 menit. Punuk unta menyimpan lemak, bukan air — ilmu yang baru dipahami sains modern. Al-Ghashiyah 88:17 mengajak manusia untuk 'memperhatikan unta' sebagai tanda kebesaran Allah.",
-      en: "Camels can drink 200 liters of water in 3 minutes. A camel's hump stores fat, not water — a detail modern science only recently fully understood. Al-Ghashiyah 88:17 invites mankind to 'look at the camels' as a sign of Allah's greatness.",
+      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Unta di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
+      en: "The alignment of science and revelation: Allah mentioned Unta in the Qur'an thousands of years before modern science researched its functional uniqueness.",
     },
     quranVerse: {
-      arabic: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
-      transliteration: "Afalaa yanzuroona ilal ibili kaifa khuliqat",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
-        id: "Maka tidakkah mereka memperhatikan bagaimana unta diciptakan?",
-        en: "Do they not look at the camels - how they are created?",
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
       },
       context: {
-        id: "Ajakan mengamati unta mendahului langit dan gunung, karena bagi masyarakat Arab Gurun, unta adalah lambang vitalitas dan teknologi hidup tercanggih penakluk iklim keras.",
-        en: "The invitation to observe camels precedes the sky and mountains, as they represent the ultimate living technology engineered to conquer hostile terrains.",
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
       },
     },
-    quiz: {
-      question: {
-        id: "Apa keistimewaan sel darah merah unta dibanding mamalia lain?",
-        en: "What makes camel red blood cells unique compared to other mammals?",
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Unta?",
+          en: "What is the primary wisdom of scientific signs regarding Unta?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
       },
-      options: [
-        { text: { id: "Bentuknya segitiga", en: "They are triangular" } },
-        { text: { id: "Bentuknya oval dan elastis mengembang", en: "They are oval and highly stretchable" } },
-        { text: { id: "Berwarna biru", en: "They are blue" } },
-      ],
-      answerIdx: 1,
-    },
+    ],
   },
 };
