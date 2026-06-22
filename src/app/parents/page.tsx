@@ -203,7 +203,7 @@ export default function ParentDashboard() {
                   onClick={handleSubscribeClick}
                   className="w-full rounded-xl bg-teal py-3 text-center text-xs font-bold text-white shadow hover:bg-teal-dark transition"
                 >
-                  Aktifkan Premium (Rp 49.000 / bln)
+                  Aktifkan Premium (Rp 79.000 / bln)
                 </button>
               </div>
             )}

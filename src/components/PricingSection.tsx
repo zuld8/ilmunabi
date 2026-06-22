@@ -12,12 +12,13 @@ export default function PricingSection({ lang }: PricingSectionProps) {
   const content = {
     id: {
       sectionId: "pricing",
-      title: "Investasi Terbaik untuk Masa Depan Anak",
+      title: "Satu harga. Tiga zona belajar. Tumbuh bersama anak Anda selama 10 tahun.",
       subtitle: "Mulai perjalanan menumbuhkan rasa kagum si kecil secara gratis selama 7 hari. Batalkan kapan saja.",
-      popularTag: "Terpopuler & Hemat 30%",
+      popularTag: "TERPOPULER & HEMAT 37%",
       ctaTrial: "Mulai Uji Coba Gratis",
       ctaSelect: "Pilih Paket Ini",
       guarantee: "Uji coba gratis 7 hari selesai, baru tagihan dikirim. Batalkan kapan saja tanpa komitmen.",
+      footnote: "💡 Orang tua Indonesia rata-rata menghabiskan Rp 400.000–700.000/bulan untuk les anak. IlmuNabi hadir seharga secangkir kopi per minggu.",
       tiers: [
         {
           name: "Free Trial (7 Hari)",
@@ -34,9 +35,11 @@ export default function PricingSection({ lang }: PricingSectionProps) {
         },
         {
           name: "Langganan Bulanan",
-          price: "Rp 49.000",
+          price: "Rp 79.000",
+          originalPrice: "Rp 99.000",
           period: "per bulan",
-          desc: "Akses fleksibel tanpa komitmen jangka panjang.",
+          desc: "Fleksibel, batalkan kapan saja.",
+          subpriceNote: "✨ Termasuk semua 3 Zona Belajar — tumbuh bersama anak dari 2 hingga 12 tahun",
           features: [
             "Akses ke seluruh 10+ objek ciptaan Allah",
             "Semua 3 Zona Belajar (Balita, Anak, Explorer)",
@@ -48,12 +51,14 @@ export default function PricingSection({ lang }: PricingSectionProps) {
         },
         {
           name: "Langganan Tahunan",
-          price: "Rp 399.000",
+          price: "Rp 599.000",
+          originalPrice: "Rp 948.000",
           period: "per tahun",
-          desc: "Pilihan terbaik untuk konsistensi belajar anak dengan harga hemat.",
+          desc: "Hemat 37% — setara Rp 49.000/bulan",
+          subpriceNote: "✨ Termasuk semua 3 Zona Belajar — tumbuh bersama anak dari 2 hingga 12 tahun",
           features: [
             "Semua fitur paket Bulanan",
-            "Hemat lebih dari 30% dibanding bulanan",
+            "Hemat lebih dari 37% dibanding bulanan",
             "Laporan evaluasi belajar mingguan via email orang tua",
             "Prioritas akses ke objek baru yang rilis berkala",
             "Materi cetak lembar aktivitas fisik gratis (PDF)",
@@ -64,12 +69,13 @@ export default function PricingSection({ lang }: PricingSectionProps) {
     },
     en: {
       sectionId: "pricing",
-      title: "The Best Investment for Your Child's Future",
+      title: "One price. Three learning zones. Grows with your child for 10 years.",
       subtitle: "Start cultivating your little one's awe for free for 7 days. Cancel anytime.",
-      popularTag: "Most Popular - Save 30%",
+      popularTag: "MOST POPULAR - SAVE 37%",
       ctaTrial: "Start Free Trial",
       ctaSelect: "Choose This Plan",
       guarantee: "7 days free trial, then billed. Cancel anytime with zero commitment.",
+      footnote: "💡 Indonesian parents spend on average Rp 400,000–700,000/month on children's tutoring. IlmuNabi is here for the price of a cup of coffee per week.",
       tiers: [
         {
           name: "Free Trial (7 Days)",
@@ -86,9 +92,11 @@ export default function PricingSection({ lang }: PricingSectionProps) {
         },
         {
           name: "Monthly Subscription",
-          price: "$4.99",
+          price: "$7.99",
+          originalPrice: "$9.99",
           period: "per month",
-          desc: "Flexible access with no long-term commitment.",
+          desc: "Flexible, cancel anytime.",
+          subpriceNote: "✨ Includes all 3 Learning Zones — grows with your child from 2 to 12 years old",
           features: [
             "Access to all 10+ Allah's creation objects",
             "All 3 learning zones (Toddler, Kids, Explorer)",
@@ -100,12 +108,14 @@ export default function PricingSection({ lang }: PricingSectionProps) {
         },
         {
           name: "Yearly Subscription",
-          price: "$39.99",
+          price: "$59.99",
+          originalPrice: "$95.88",
           period: "per year",
-          desc: "Best value option for consistent learning and maximum savings.",
+          desc: "Save 37% — equivalent to $4.99/month",
+          subpriceNote: "✨ Includes all 3 Learning Zones — grows with your child from 2 to 12 years old",
           features: [
             "All features from the Monthly package",
-            "Save over 30% compared to monthly rates",
+            "Save over 37% compared to monthly rates",
             "Weekly progress reports sent directly to parents' email",
             "Priority access to newly released objects",
             "Free printable activity sheets (PDF downloads)",
@@ -156,13 +166,25 @@ export default function PricingSection({ lang }: PricingSectionProps) {
                   <p className="mt-3 text-sm text-charcoal/60 leading-relaxed min-h-[40px]">
                     {tier.desc}
                   </p>
-                  <div className="mt-6 flex items-baseline justify-center lg:justify-start gap-1">
-                    <span className="text-4xl font-extrabold text-charcoal tracking-tight">
-                      {tier.price}
-                    </span>
-                    <span className="text-sm font-semibold text-charcoal/50">
-                      /{tier.period}
-                    </span>
+                  <div className="mt-6 flex flex-col items-center lg:items-start min-h-[96px] justify-end">
+                    {tier.originalPrice && (
+                      <span className="text-sm text-charcoal/40 line-through font-semibold">
+                        {tier.originalPrice}
+                      </span>
+                    )}
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl font-extrabold text-charcoal tracking-tight">
+                        {tier.price}
+                      </span>
+                      <span className="text-sm font-semibold text-charcoal/50">
+                        /{tier.period}
+                      </span>
+                    </div>
+                    {tier.subpriceNote && (
+                      <span className="mt-2 text-[11px] font-medium text-teal text-center lg:text-left leading-normal">
+                        {tier.subpriceNote}
+                      </span>
+                    )}
                   </div>
                 </div>
 
@@ -195,6 +217,11 @@ export default function PricingSection({ lang }: PricingSectionProps) {
             </div>
           ))}
         </div>
+
+        {/* Footnote psychological anchor */}
+        <p className="mt-8 text-center text-xs text-charcoal/50 italic max-w-xl mx-auto leading-relaxed">
+          {t.footnote}
+        </p>
 
         {/* Guarantee text */}
         <div className="mt-12 flex justify-center">
