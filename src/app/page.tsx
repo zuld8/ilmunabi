@@ -1,5 +1,6 @@
 "use client";
 
+// Force rebuild trigger - Vercel cache clear v1.0.1
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
