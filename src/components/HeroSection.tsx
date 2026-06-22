@@ -12,22 +12,22 @@ export default function HeroSection({ lang }: HeroSectionProps) {
   const content = {
     id: {
       tagline: "Sains Pertama, Iman Selamanya",
-      titlePre: "Ajarkan Anak Mengagumi ",
-      titleHighlight: "Ciptaan Allah",
-      titlePost: " Melalui Keajaiban Sains",
+      titlePre: "Bagaimana kalau anak Anda ",
+      titleHighlight: "kagum pada lebah",
+      titlePost: " — bukan karena disuruh, tapi karena memang menakjubkan?",
       subtitle:
-        "Lelah dengan konten agama yang kaku atau dogmatis? IlmuNabi mengajak anak usia 2–12 tahun bertualang memahami sains di balik alam semesta demi menumbuhkan tauhid yang kokoh dan rasional.",
+        "IlmuNabi mengajak anak usia 2–12 tahun menjelajahi keajaiban sains — sampai mereka sendiri yang bertanya, 'Siapa yang menciptakan ini semua?'",
       cta: "Mulai Free Trial 7 Hari",
       subCta: "Bebas batalkan kapan saja • Tanpa kartu kredit",
       badgeText: "Untuk Orang Tua Muslim Modern",
     },
     en: {
       tagline: "Science First, Faith Always",
-      titlePre: "Help Your Child Marvel at ",
-      titleHighlight: "Allah's Creation",
-      titlePost: " Through the Wonders of Science",
+      titlePre: "What if your child ",
+      titleHighlight: "marvels at the honeybee",
+      titlePost: " — not because they are told to, but because it is truly amazing?",
       subtitle:
-        "Tired of rigid, dogmatic religious resources? IlmuNabi invites kids aged 2–12 to explore the scientific principles behind nature, building a logical, awe-inspired faith.",
+        "IlmuNabi invites kids aged 2–12 to explore the wonders of science — until they ask by themselves, 'Who created all of this?'",
       cta: "Start 7-Day Free Trial",
       subCta: "Cancel anytime • No credit card required",
       badgeText: "For Modern Muslim Parents",

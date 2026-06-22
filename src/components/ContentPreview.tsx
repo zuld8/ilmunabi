@@ -41,10 +41,14 @@ export default function ContentPreview({ lang }: ContentPreviewProps) {
       beeAlt: "Animasi Lebah Madu",
       balitaTxt: "Ini lebah! Lebah suka bunga. Lebah bikin madu yang manis. 🐝",
       anakTxt: "Lebah bisa terbang sejauh 800 km hanya untuk membuat satu sendok madu. Lebah berkomunikasi dengan cara... menari! Mereka goyang-goyang badan untuk kasih tahu teman-temannya di mana ada bunga.",
-      explorerTxt: "Lebah menggunakan 'waggle dance' — sistem komunikasi yang baru dipahami ilmuwan di tahun 1973 oleh Karl von Frisch, yang kemudian menang Nobel. Tapi 14 abad sebelumnya, Al-Qur'an sudah menyebut lebah diperintah Allah untuk membuat sarang dan menghasilkan minuman yang menyembuhkan. Surah An-Nahl, ayat 68–69.",
-      explorerQTitle: "Fakta Quranic",
-      explorerQBody: "Surah An-Nahl:69 — 'Kemudian makanlah dari segala (macam) buah-buahan lalu tempuhlah jalan Tuhanmu yang telah dimudahkan...' Dari perutnya keluar minuman (madu) yang bermacam-macam warnanya, di dalamnya terdapat obat yang menyembuhkan bagi manusia.",
-      wowFactorTitle: "Fakta WOW yang Menjembatani Sains ke Islam",
+      explorerScienceTitle: "🔬 FAKTA SAINS",
+      explorerScienceText: "Lebah dapat terbang sejauh 800 km hanya untuk menghasilkan satu sendok teh madu. Sistem navigasi mereka menggunakan posisi matahari dan medan magnet bumi — teknologi yang baru dipahami ilmuwan di abad ke-20.",
+      explorerWowTitle: "⚡ FAKTA WOW",
+      explorerWowText: "Lebah berkomunikasi menggunakan \"waggle dance\" — tarian goyang yang memberi tahu rekan-rekannya lokasi persis bunga sejauh beberapa kilometer. Karl von Frisch memecahkan kode tarian ini pada 1973 dan memenangkan Nobel. Tapi 1.400 tahun sebelumnya, Al-Qur'an sudah menyebut lebah diperintah Allah secara langsung.",
+      explorerQuranTitle: "🕌 KONEKSI QUR'AN",
+      explorerQuranVerse: "Surah An-Nahl (16) : 68-69",
+      explorerQuranText: '"Dan Tuhanmu mewahyukan kepada lebah: Buatlah sarang-sarang di bukit-bukit, di pohon-pohon kayu, dan di tempat yang dibuat manusia."',
+      explorerQuranTafsir: "Para ulama dan ilmuwan menyebut ayat ini sebagai salah satu isyarat ilmiah Al-Qur'an yang paling menakjubkan — karena kata \"awhaa\" (mewahyukan) digunakan untuk menggambarkan instruksi Allah langsung kepada lebah, jauh sebelum sains modern memahami kompleksitas perilaku lebah.",
     },
     en: {
       title: "Preview Material: Honeybee (An-Nahl)",
@@ -61,10 +65,14 @@ export default function ContentPreview({ lang }: ContentPreviewProps) {
       beeAlt: "Animated Honeybee",
       balitaTxt: "This is a bee! Bees love flowers. Bees make sweet honey. 🐝",
       anakTxt: "A honeybee flies up to 800 km just to produce a single spoonful of honey. Bees communicate by... dancing! They waggle their bodies to show their friends where the best flowers are.",
-      explorerTxt: "Bees communicate using a 'waggle dance' — a system scientists only understood in 1973 through Karl von Frisch (which won a Nobel Prize). Yet 14 centuries ago, the Qur'an already mentioned that bees are commanded by Allah to build hives and produce a healing drink. Surah An-Nahl, verses 68–69.",
-      explorerQTitle: "Quranic Connection",
-      explorerQBody: "Surah An-Nahl:69 — 'Then eat from all the fruits and follow the ways of your Lord made easy for you.' There emerges from their bellies a drink, varying in colors, in which there is healing for people.",
-      wowFactorTitle: "WOW Factor Bridging Science to Islam",
+      explorerScienceTitle: "🔬 SCIENCE FACTS",
+      explorerScienceText: "Bees can fly up to 800 km just to produce a single teaspoon of honey. Their navigation system uses the sun's position and the Earth's magnetic field — technology scientists only understood in the 20th century.",
+      explorerWowTitle: "⚡ WOW FACT",
+      explorerWowText: "Bees communicate using a \"waggle dance\" — a wiggling dance that tells their peers the exact location of flowers miles away. Karl von Frisch decoded this dance in 1973 and won a Nobel Prize. Yet 1,400 years ago, the Qur'an already stated that bees are commanded directly by Allah.",
+      explorerQuranTitle: "🕌 QURAN CONNECTION",
+      explorerQuranVerse: "Surah An-Nahl (16) : 68-69",
+      explorerQuranText: '"And your Lord inspired the bee: Take for yourself dwellings in the mountains and in the trees and in what they construct."',
+      explorerQuranTafsir: "Scholars and scientists describe this verse as one of the most astonishing scientific signs in the Qur'an — because the word \"awhaa\" (inspired/revealed) is used to describe Allah's direct instructions to the bee, long before modern science understood the complexity of bee behavior.",
     },
   };
 
@@ -206,23 +214,30 @@ export default function ContentPreview({ lang }: ContentPreviewProps) {
               )}
 
               {activeZone === "explorer" && (
-                <div className="space-y-6">
-                  <div className="space-y-3">
-                    <h4 className="text-sm font-bold text-teal tracking-wider uppercase">
-                      {t.wowFactorTitle}
-                    </h4>
-                    <p className="text-base leading-relaxed text-charcoal font-medium">
-                      {t.explorerTxt}
+                <div className="space-y-5 text-left w-full">
+                  {/* Science Fact Card */}
+                  <div className="p-5 border border-cream-dark rounded-2xl bg-cream/40 shadow-sm hover:shadow-md transition duration-200">
+                    <span className="block text-xs font-bold text-teal tracking-wider uppercase mb-1">
+                      {t.explorerScienceTitle}
+                    </span>
+                    <p className="text-sm leading-relaxed text-charcoal font-medium">
+                      {t.explorerScienceText}
                     </p>
                   </div>
 
-                  <div className="rounded-2xl border-l-4 border-gold bg-gold/5 p-4 space-y-2">
-                    <h5 className="text-xs font-bold text-gold uppercase tracking-wider flex items-center gap-1.5">
-                      <BookOpen className="h-3.5 w-3.5" />
-                      {t.explorerQTitle}
-                    </h5>
-                    <p className="text-xs italic leading-relaxed text-charcoal/80">
-                      {t.explorerQBody}
+                  {/* Quran Connection Card */}
+                  <div className="p-5 border border-cream-dark rounded-2xl bg-white shadow-sm hover:shadow-md transition duration-200 space-y-2">
+                    <span className="block text-xs font-bold text-teal tracking-wider uppercase">
+                      {t.explorerQuranTitle}
+                    </span>
+                    <div className="text-xs font-bold text-gold">
+                      {t.explorerQuranVerse}
+                    </div>
+                    <p className="text-xs italic leading-relaxed text-charcoal/80 bg-cream/30 p-3 rounded-lg border border-cream-dark/40">
+                      {t.explorerQuranText}
+                    </p>
+                    <p className="text-xs leading-relaxed text-charcoal/70 pt-1">
+                      {t.explorerQuranTafsir}
                     </p>
                   </div>
                 </div>
@@ -322,33 +337,32 @@ export default function ContentPreview({ lang }: ContentPreviewProps) {
                 </div>
               )}
 
-              {/* Explorer Visual (Anatomy overview or science connections) */}
+              {/* Explorer Visual - Highlighted WOW Card */}
               {activeZone === "explorer" && (
-                <div className="relative flex flex-col items-center gap-6 w-full">
-                  
-                  {/* Honeycomb diagram style structure */}
-                  <div className="grid grid-cols-3 gap-2 w-full max-w-[280px]">
-                    <div className="rounded-2xl border border-gold/40 bg-gold/5 p-3 text-center flex flex-col justify-center items-center h-24">
-                      <span className="text-[10px] font-bold text-teal uppercase">1. Sun Angle</span>
-                      <span className="text-xs font-semibold text-charcoal/80 mt-1">Azimuth navigation</span>
+                <div className="w-full h-full flex items-center justify-center p-2">
+                  <div className="w-full p-6 border-4 border-gold bg-gradient-to-tr from-gold/15 to-gold-light/20 rounded-3xl shadow-xl hover:scale-[1.01] transition-all relative overflow-hidden flex flex-col justify-center text-left">
+                    {/* Share Banner */}
+                    <div className="absolute top-0 right-0 bg-gold text-white text-[9px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">
+                      WOW Moment
                     </div>
-                    <div className="rounded-2xl border border-teal-medium/40 bg-teal-light/20 p-3 text-center flex flex-col justify-center items-center h-24 col-span-2">
-                      <span className="text-[10px] font-bold text-teal uppercase">2. Honey Quality</span>
-                      <span className="text-xs font-semibold text-charcoal/80 mt-1">pH 3.2-4.5 (Prevents bacterial growth)</span>
+                    
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gold text-white font-bold text-sm shadow">
+                        ⚡
+                      </div>
+                      <span className="text-sm font-extrabold text-gold uppercase tracking-wider">
+                        {t.explorerWowTitle}
+                      </span>
                     </div>
-                    <div className="rounded-2xl border border-teal-medium/40 bg-teal-light/20 p-3 text-center flex flex-col justify-center items-center h-24 col-span-2">
-                      <span className="text-[10px] font-bold text-teal uppercase">3. An-Nahl (The Bee)</span>
-                      <span className="text-xs font-semibold text-charcoal/80 mt-1">Named specifically in Qur&apos;an as a sign for thinkers</span>
-                    </div>
-                    <div className="rounded-2xl border border-gold/40 bg-gold/5 p-3 text-center flex flex-col justify-center items-center h-24">
-                      <span className="text-[10px] font-bold text-teal uppercase">4. Nobel 1973</span>
-                      <span className="text-xs font-semibold text-charcoal/80 mt-1">Empirical validation</span>
-                    </div>
-                  </div>
 
-                  <span className="text-xs font-semibold text-charcoal/40 text-center max-w-[240px]">
-                    {lang === "id" ? "Integrasi ilmu sains empiris & ayat Al-Qur'an secara padu." : "Seamless integration of empirical science and Quranic revelation."}
-                  </span>
+                    <p className="text-sm leading-relaxed text-charcoal font-bold bg-white/70 p-4 rounded-xl border border-gold/20 shadow-inner">
+                      {t.explorerWowText}
+                    </p>
+                    
+                    <span className="text-[10px] font-bold text-gold/80 text-center mt-4">
+                      💡 {lang === "id" ? "Screenshot & share ke WhatsApp grup keluarga!" : "Screenshot & share to your family WhatsApp groups!"}
+                    </span>
+                  </div>
                 </div>
               )}
 

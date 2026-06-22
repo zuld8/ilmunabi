@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Compass, Lightbulb, HeartHandshake } from "lucide-react";
+import { Compass, Lightbulb, HeartHandshake, X, Check } from "lucide-react";
 
 interface WhyDifferentProps {
   lang: "id" | "en";
@@ -13,7 +13,11 @@ export default function WhyDifferent({ lang }: WhyDifferentProps) {
       sectionId: "kenapa-beda",
       title: "Kenapa IlmuNabi Berbeda?",
       subtitle:
-        "Kami merombak cara pendidikan agama diajarkan. Kami tidak mendikte keyakinan anak; kami menumbuhkannya secara logis melalui kekaguman sains.",
+        "Anak Anda tidak perlu diyakinkan untuk percaya. Cukup tunjukkan fakta yang cukup mengagumkan — dan mereka akan sampai sendiri.",
+      beforeTitle: "Sebelum IlmuNabi (✗)",
+      beforeText: "“Lebah disebut di Al-Qur'an, kita harus percaya.”",
+      afterTitle: "Sesudah IlmuNabi (✓)",
+      afterText: "Anak membaca fakta waggle dance, terdiam, lalu bertanya sendiri: “Kok bisa Al-Qur'an tahu ini?”",
       items: [
         {
           title: "Sains Dulu, Iman Menyusul",
@@ -36,7 +40,11 @@ export default function WhyDifferent({ lang }: WhyDifferentProps) {
       sectionId: "kenapa-beda",
       title: "Why is IlmuNabi Different?",
       subtitle:
-        "We are redesigning how Islamic education is taught. We do not impose faith on children; we nurture it logically through scientific wonder.",
+        "Your child doesn't need to be convinced to believe. Just show them facts that are awe-inspiring enough — and they will arrive there on their own.",
+      beforeTitle: "Before IlmuNabi (✗)",
+      beforeText: "“Bees are mentioned in the Qur'an, so we must believe it.”",
+      afterTitle: "After IlmuNabi (✓)",
+      afterText: "Child reads the waggle dance science, stays silent in awe, then asks: “How could the Qur'an know this?”",
       items: [
         {
           title: "Science First, Faith Next",
@@ -62,14 +70,50 @@ export default function WhyDifferent({ lang }: WhyDifferentProps) {
   return (
     <section id={t.sectionId} className="bg-cream-dark/20 py-20">
       <div className="mx-auto max-w-7xl px-6">
+        
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
             {t.title}
           </h2>
-          <p className="mt-4 text-lg text-charcoal/80 leading-relaxed">
+          <p className="mt-4 text-lg text-charcoal/80 leading-relaxed font-semibold">
             {t.subtitle}
           </p>
+        </div>
+
+        {/* Before / After Showcase Cards */}
+        <div className="mt-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          {/* Before Card */}
+          <div className="flex flex-col justify-between rounded-3xl border border-red-100 bg-red-50/20 p-6 md:p-8 shadow-sm">
+            <div className="flex items-center gap-2 text-red-600 font-bold text-sm">
+              <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-red-100 text-red-600 font-extrabold text-xs">
+                <X className="h-3.5 w-3.5" />
+              </div>
+              <span>{t.beforeTitle}</span>
+            </div>
+            <p className="mt-4 text-base font-semibold leading-relaxed text-charcoal/70 italic">
+              {t.beforeText}
+            </p>
+          </div>
+
+          {/* After Card */}
+          <div className="flex flex-col justify-between rounded-3xl border-2 border-teal bg-teal-light/20 p-6 md:p-8 shadow-md relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-teal text-white text-[9px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+              Pendekatan Kami
+            </div>
+            
+            <div className="flex items-center gap-2 text-teal font-bold text-sm">
+              <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-teal text-white font-extrabold text-xs">
+                <Check className="h-3.5 w-3.5" />
+              </div>
+              <span>{t.afterTitle}</span>
+            </div>
+            <p className="mt-4 text-base font-bold leading-relaxed text-charcoal">
+              {t.afterText}
+            </p>
+          </div>
+
         </div>
 
         {/* Feature Grid */}
@@ -96,6 +140,7 @@ export default function WhyDifferent({ lang }: WhyDifferentProps) {
             );
           })}
         </div>
+
       </div>
     </section>
   );
