@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useApp, ChildProfile } from "@/context/AppContext";
 import { createClient } from "@/lib/supabase/client";
@@ -33,6 +33,13 @@ export default function ParentDashboard() {
   const [selectedChildId, setSelectedChildId] = useState<string | null>(
     profiles.length > 0 ? profiles[0].id : null
   );
+
+  // Update selectedChildId once profiles are loaded from DB
+  useEffect(() => {
+    if (profiles.length > 0 && !selectedChildId) {
+      setSelectedChildId(profiles[0].id);
+    }
+  }, [profiles, selectedChildId]);
 
   const selectedChild = profiles.find((p) => p.id === selectedChildId) || null;
 

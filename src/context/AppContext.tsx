@@ -24,6 +24,7 @@ interface AppContextType {
   isSubscribed: boolean;
   subscriptionStatus: "trial" | "subscribed" | "expired";
   lang: "id" | "en" | "ar";
+  isLoading: boolean;
   setLang: (lang: "id" | "en" | "ar") => void;
   addProfile: (name: string, age: number, zoneOverride?: "balita" | "anak" | "explorer") => Promise<string>;
   switchProfile: (id: string) => void;
@@ -43,6 +44,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [trialEndsAt, setTrialEndsAt] = useState<string | null>(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [lang, setLang] = useState<"id" | "en" | "ar">("id");
+  const [isLoading, setIsLoading] = useState(true);
 
   const supabase = createClient();
 
@@ -59,6 +61,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      setIsLoading(true);
       if (session) {
         try {
           const userId = session.user.id;
@@ -137,9 +140,14 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
             } else {
               setActiveChildId(null);
             }
+          } else {
+            setProfiles([]);
+            setActiveChildId(null);
           }
         } catch (err) {
           console.error("Error fetching data from Supabase", err);
+        } finally {
+          setIsLoading(false);
         }
       } else {
         // Reset states if logged out
@@ -147,6 +155,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setActiveChildId(null);
         setIsSubscribed(false);
         setTrialEndsAt(null);
+        setIsLoading(false);
       }
     });
 
@@ -446,6 +455,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         isSubscribed,
         subscriptionStatus,
         lang,
+        isLoading,
         setLang,
         addProfile,
         switchProfile,

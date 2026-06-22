@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useApp } from "@/context/AppContext";
-import { objectsData } from "@/data/objects";
-import KategoriFilter from "@/components/KategoriFilter";
+import { objectsData, ObjectData, NabiData, AsmaulHusnaData } from "@/data/objects";
+import KategoriFilter, { CategoryType } from "@/components/KategoriFilter";
 import { createClient } from "@/lib/supabase/client";
 import { 
   Sparkles, 
@@ -27,11 +27,12 @@ export default function Dashboard() {
     streak, 
     trialDaysRemaining,
     subscriptionStatus,
-    awardBadge
+    awardBadge,
+    isLoading
   } = useApp();
 
   const [showProfileMenu, setShowProfileMenu] = useState(false);
-  const [activeCategory, setActiveCategory] = useState<"semua" | "hewan" | "tumbuhan">("semua");
+  const [activeCategory, setActiveCategory] = useState<CategoryType>("semua");
   const [showParentModal, setShowParentModal] = useState(false);
   const [mathAnswer, setMathAnswer] = useState("");
   const [mathQuestion, setMathQuestion] = useState({ q: "", a: 0 });
@@ -61,10 +62,10 @@ export default function Dashboard() {
 
   // Redirect to onboarding if no profiles exist
   useEffect(() => {
-    if (profiles.length === 0) {
+    if (!isLoading && profiles.length === 0) {
       router.push("/onboarding");
     }
-  }, [profiles, router]);
+  }, [profiles, isLoading, router]);
 
   // Generate simple math gate question for parent area
   const openParentArea = () => {
@@ -89,7 +90,7 @@ export default function Dashboard() {
     }
   };
 
-  if (!activeChild) {
+  if (isLoading || !activeChild) {
     return (
       <div className="min-h-screen bg-cream flex items-center justify-center">
         <p className="text-charcoal/60 animate-pulse font-medium">Memuat profil belajar...</p>
@@ -380,10 +381,14 @@ export default function Dashboard() {
                       {activeChild.zone === "balita" ? obj.name.id : obj.name.en}
                     </h4>
                     
-                    {/* Scientific Name (unlocked only) */}
+                    {/* Subtitle / Scientific Name (unlocked only) */}
                     {!isLocked && (
                       <p className="text-[11px] text-charcoal/50 italic leading-none mt-1">
-                        {obj.scientificName}
+                        {obj.type === "hewan" || obj.type === "tumbuhan" || obj.type === "alam" || obj.type === "tubuh" || obj.type === "langit"
+                          ? (obj as ObjectData).scientificName
+                          : obj.type === "nabi"
+                          ? "Kisah Nabi & Rasul"
+                          : (obj as AsmaulHusnaData).arabicWithHarakat}
                       </p>
                     )}
 
@@ -398,7 +403,13 @@ export default function Dashboard() {
                   {/* Footer status text (unlocked only) */}
                   {!isLocked && (
                     <div className="mt-8 border-t border-cream-dark/60 pt-4 flex items-center justify-between text-[11px] font-semibold">
-                      <span className="text-teal-medium">{obj.surahName}</span>
+                      <span className="text-teal-medium">
+                        {obj.type === "hewan" || obj.type === "tumbuhan" || obj.type === "alam" || obj.type === "tubuh" || obj.type === "langit"
+                          ? (obj as ObjectData).surahName
+                          : obj.type === "nabi"
+                          ? (obj as NabiData).surahReference
+                          : "Asmaul Husna"}
+                      </span>
                       <span className="text-green-600">
                         {isCompleted ? "Selesai" : "Mulai"}
                       </span>
