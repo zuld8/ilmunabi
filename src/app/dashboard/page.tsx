@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useApp } from "@/context/AppContext";
 import { objectsData } from "@/data/objects";
+import KategoriFilter from "@/components/KategoriFilter";
 import { 
   Sparkles, 
   Gamepad2, 
@@ -28,6 +29,7 @@ export default function Dashboard() {
   } = useApp();
 
   const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<"semua" | "hewan" | "tumbuhan">("semua");
   const [showParentModal, setShowParentModal] = useState(false);
   const [mathAnswer, setMathAnswer] = useState("");
   const [mathQuestion, setMathQuestion] = useState({ q: "", a: 0 });
@@ -249,49 +251,60 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="flex gap-4">
-            {activeChild.unlockedCards.length === 0 && activeChild.badges.length === 0 ? (
-              <>
-                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
-                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
+            {/* Kartu Counter */}
+            <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
+              <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
+              {activeChild.unlockedCards.length === 0 ? (
+                <>
                   <span className="text-lg font-extrabold text-teal block my-0.5">📦</span>
                   <span className="text-[9px] font-bold text-charcoal/40 leading-none">Koleksi kosong</span>
-                </div>
-                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
-                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
-                  <span className="text-lg font-extrabold text-gold block my-0.5">🌟</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-lg font-extrabold text-teal block my-0.5">{activeChild.unlockedCards.length}</span>
+                  <span className="text-[9px] font-bold text-charcoal/40 leading-none">KARTU</span>
+                </>
+              )}
+            </div>
+
+            {/* Badge Counter */}
+            <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
+              <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
+              {activeChild.badges.length === 0 ? (
+                <>
+                  <span className="text-lg font-extrabold text-gold block my-0.5">🏅</span>
                   <span className="text-[9px] font-bold text-charcoal/40 leading-none">Mulai belajar!</span>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[90px]">
-                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
-                  <span className="text-lg font-extrabold text-teal">{activeChild.unlockedCards.length}</span>
-                </div>
-                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[90px]">
-                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
-                  <span className="text-lg font-extrabold text-gold">{activeChild.badges.length}</span>
-                </div>
-              </>
-            )}
+                </>
+              ) : (
+                <>
+                  <span className="text-lg font-extrabold text-gold block my-0.5">{activeChild.badges.length}</span>
+                  <span className="text-[9px] font-bold text-charcoal/40 leading-none">BADGE</span>
+                </>
+              )}
+            </div>
           </div>
         </div>
 
         {/* Categories / Grid Header */}
-        <div className="mt-12">
-          <h3 className="text-xl font-bold text-charcoal">
-            Jelajahi Ciptaan Allah
-          </h3>
-          <p className="text-xs text-charcoal/60 mt-1.5 font-semibold">
-            {activeChild.zone === "balita" && "Mulai petualangan dari Lebah — hewan yang punya rahasia mengagumkan! 🐝"}
-            {activeChild.zone === "anak" && "Lebah menyimpan fakta sains yang bikin kamu bilang WOW. Yuk mulai dari sini!"}
-            {activeChild.zone === "explorer" && "10 ciptaan Allah yang disebut langsung dalam Al-Qur'an. Mulai eksplorasi!"}
-          </p>
+        <div className="mt-12 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-cream-dark/60 pb-6">
+          <div>
+            <h3 className="text-xl font-bold text-charcoal">
+              Jelajahi Ciptaan Allah
+            </h3>
+            <p className="text-xs text-charcoal/60 mt-1.5 font-semibold">
+              {activeChild.zone === "balita" && "Mulai petualangan dari Lebah — hewan yang punya rahasia mengagumkan! 🐝"}
+              {activeChild.zone === "anak" && "Lebah menyimpan fakta sains yang bikin kamu bilang WOW. Yuk mulai dari sini!"}
+              {activeChild.zone === "explorer" && "10 ciptaan Allah yang disebut langsung dalam Al-Qur'an. Mulai eksplorasi!"}
+            </p>
+          </div>
+          <KategoriFilter activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
         </div>
 
         {/* Objects Grid */}
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {objectsData.map((obj, idx) => {
+          {objectsData
+            .filter((o) => activeCategory === "semua" || o.type === activeCategory)
+            .map((obj, idx) => {
             const isCompleted = activeChild.completedObjects.includes(obj.slug);
             const isLocked = activeChild.points < obj.unlockedAtPoints && subscriptionStatus !== "subscribed";
             
@@ -328,8 +341,8 @@ export default function Dashboard() {
                 className={`group flex flex-col justify-between text-left rounded-3xl border p-5 shadow-sm transition-all duration-300 relative bg-white min-h-[200px] ${
                   isLocked 
                     ? isNextUnlock
-                      ? "border-cream-dark bg-cream-dark/5 opacity-70 cursor-pointer hover:bg-cream-dark/10" 
-                      : "border-cream-dark/50 bg-cream-dark/5 opacity-40 cursor-default"
+                      ? "border-cream-dark bg-cream-dark/5 cursor-pointer hover:bg-cream-dark/10 card-blur-light" 
+                      : "border-cream-dark/50 bg-cream-dark/5 cursor-default card-blur-heavy"
                     : "border-cream-dark hover:-translate-y-1 hover:shadow-md cursor-pointer"
                 }`}
               >
@@ -341,13 +354,7 @@ export default function Dashboard() {
                   </span>
                 )}
 
-                <div className={`w-full flex-grow flex flex-col justify-between h-full ${
-                  isLocked 
-                    ? isNextUnlock 
-                      ? "blur-[0.3px]" 
-                      : "blur-[1.2px]" 
-                    : ""
-                }`}>
+                <div className="w-full flex-grow flex flex-col justify-between h-full">
                   <div>
                     {/* Emoji Icon */}
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cream border border-cream-dark group-hover:scale-105 transition-transform duration-300 text-3xl">

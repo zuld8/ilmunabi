@@ -28,17 +28,23 @@ export default function ObjectDetail() {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
   // Quiz progression states
+  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [quizSubmitted, setQuizSubmitted] = useState(false);
-  const [quizScore, setQuizScore] = useState(0); // 0 or 1 for our single structured quiz in data
+  const [hasErrors, setHasErrors] = useState(false);
   const [showRewardModal, setShowRewardModal] = useState(false);
 
-  // Search object
+  // Search object and reset quiz states
   useEffect(() => {
     if (!slug) return;
     const found = objectsData.find((o) => o.slug === slug);
     if (found) {
       setObject(found);
+      setCurrentQuestionIdx(0);
+      setSelectedAnswer(null);
+      setQuizSubmitted(false);
+      setHasErrors(false);
+      setShowRewardModal(false);
     } else {
       router.push("/dashboard");
     }
@@ -61,28 +67,40 @@ export default function ObjectDetail() {
   const zoneData = object[zone];
   const quran = object.anak.quranVerse;
 
+  const quizzes = Array.isArray(zoneData.quiz) ? zoneData.quiz : [zoneData.quiz];
+  const currentQuiz = quizzes[currentQuestionIdx];
+
   const handleQuizOptionClick = (idx: number) => {
     if (quizSubmitted) return;
     setSelectedAnswer(idx);
   };
 
   const handleQuizSubmit = () => {
-    if (selectedAnswer === null || quizSubmitted) return;
+    if (selectedAnswer === null || quizSubmitted || !currentQuiz) return;
     
-    const isCorrect = selectedAnswer === zoneData.quiz.answerIdx;
-    if (isCorrect) {
-      setQuizScore(100); // Perfect score
-    } else {
-      setQuizScore(0);
+    const isCorrect = selectedAnswer === currentQuiz.answerIdx;
+    if (!isCorrect) {
+      setHasErrors(true);
     }
     setQuizSubmitted(true);
   };
 
-  const handleCollectReward = () => {
-    // Complete object, award 20 points
-    completeObject(object.slug, 20);
-    setShowRewardModal(false);
-    router.push("/dashboard");
+  const handleNextQuestion = () => {
+    if (currentQuestionIdx < quizzes.length - 1) {
+      setCurrentQuestionIdx((prev) => prev + 1);
+      setSelectedAnswer(null);
+      setQuizSubmitted(false);
+    } else {
+      // Completed all questions! Claim reward and show modal
+      const pointsAwarded = isBalita ? 50 : isAnak ? 75 : 100;
+      completeObject(object.slug, pointsAwarded);
+      setShowRewardModal(true);
+    }
+  };
+
+  const handleRetryQuestion = () => {
+    setSelectedAnswer(null);
+    setQuizSubmitted(false);
   };
 
   const speakAudio = (text: string) => {
@@ -363,22 +381,29 @@ export default function ObjectDetail() {
           )}
 
           {/* QUIZ TAB */}
-          {activeTab === "kuis" && (
+          {activeTab === "kuis" && currentQuiz && (
             <div className="space-y-6">
               
+              {/* Progress indicator for multiple questions */}
+              {quizzes.length > 1 && (
+                <div className="flex items-center gap-2 text-xs font-bold text-teal bg-teal-light/55 px-3 py-1.5 rounded-full w-fit">
+                  <span>📝 Pertanyaan {currentQuestionIdx + 1} dari {quizzes.length}</span>
+                </div>
+              )}
+
               {/* Question */}
               <div className="flex items-start gap-3">
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-teal-light text-teal font-bold">
                   ❓
                 </div>
                 <h3 className="text-xl font-bold text-charcoal">
-                  {zoneData.quiz.question.id}
+                  {currentQuiz.question.id}
                 </h3>
               </div>
 
               {/* Grid Options */}
               <div className={`mt-6 grid gap-4 ${isBalita ? "grid-cols-3" : "grid-cols-1"}`}>
-                {zoneData.quiz.options.map((opt, idx) => {
+                {currentQuiz.options.map((opt, idx) => {
                   const isSelected = selectedAnswer === idx;
                   
                   return (
@@ -393,11 +418,11 @@ export default function ObjectDetail() {
                           ? "border-teal bg-teal-light/40 ring-2 ring-teal"
                           : "border-cream-dark bg-white hover:bg-cream/40"
                       } ${
-                        quizSubmitted && idx === zoneData.quiz.answerIdx
+                        quizSubmitted && idx === currentQuiz.answerIdx
                           ? "bg-green-50 border-green-500 ring-2 ring-green-500/20 text-green-800"
                           : ""
                       } ${
-                        quizSubmitted && isSelected && idx !== zoneData.quiz.answerIdx
+                        quizSubmitted && isSelected && idx !== currentQuiz.answerIdx
                           ? "bg-red-50 border-red-500 text-red-800"
                           : ""
                       }`}
@@ -433,24 +458,26 @@ export default function ObjectDetail() {
                   </button>
                 ) : (
                   <div className="flex items-center gap-4">
-                    <span className={`text-sm font-bold ${quizScore === 100 ? "text-green-600" : "text-red-500"}`}>
-                      {quizScore === 100 ? "🎉 Luar Biasa! Benar!" : "❌ Kurang Tepat, Coba lagi nanti."}
+                    <span className={`text-sm font-bold ${selectedAnswer === currentQuiz.answerIdx ? "text-green-600" : "text-red-500"}`}>
+                      {selectedAnswer === currentQuiz.answerIdx ? "🎉 Luar Biasa! Benar!" : "❌ Kurang Tepat, Coba lagi nanti."}
                     </span>
                     <button
                       onClick={() => {
-                        if (quizScore === 100) {
-                          setShowRewardModal(true);
+                        if (selectedAnswer === currentQuiz.answerIdx) {
+                          handleNextQuestion();
                         } else {
-                          // Reset quiz
-                          setSelectedAnswer(null);
-                          setQuizSubmitted(false);
+                          handleRetryQuestion();
                         }
                       }}
                       className={`rounded-xl px-6 py-3 text-sm font-bold text-white shadow transition ${
-                        quizScore === 100 ? "bg-gold hover:bg-gold-dark" : "bg-charcoal hover:bg-charcoal-light"
+                        selectedAnswer === currentQuiz.answerIdx ? "bg-gold hover:bg-gold-dark" : "bg-charcoal hover:bg-charcoal-light"
                       }`}
                     >
-                      {quizScore === 100 ? "Klaim Kartu Ciptaan!" : "Coba Lagi"}
+                      {selectedAnswer === currentQuiz.answerIdx
+                        ? currentQuestionIdx < quizzes.length - 1
+                          ? "Pertanyaan Selanjutnya →"
+                          : "Selesaikan Kuis"
+                        : "Coba Lagi"}
                     </button>
                   </div>
                 )}
@@ -469,58 +496,150 @@ export default function ObjectDetail() {
       </main>
 
       {/* Rewards Congrats Modal */}
-      {showRewardModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/60 backdrop-blur-sm p-4">
-          <div className="w-full max-w-sm rounded-3xl bg-white border-4 border-gold p-6 shadow-2xl text-center space-y-6 relative overflow-hidden animate-bounce">
+      {showRewardModal && (() => {
+        const currentIdx = objectsData.findIndex((o) => o.slug === object.slug);
+        const nextObject = currentIdx !== -1 && currentIdx < objectsData.length - 1 ? objectsData[currentIdx + 1] : null;
+        const points = isBalita ? 50 : isAnak ? 75 : 100;
+        
+        return (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/60 backdrop-blur-sm p-4">
             
-            {/* Sparkles background effect */}
-            <div className="absolute inset-0 bg-gradient-to-b from-yellow-50/50 to-transparent -z-10" />
-
-            <div className="mx-auto h-20 w-20 bg-gold rounded-full flex items-center justify-center text-4xl shadow-lg border-2 border-white">
-              👑
+            {/* Confetti Particles */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+              {Array.from({ length: 45 }).map((_, i) => {
+                const left = Math.random() * 100;
+                const delay = Math.random() * 2;
+                const duration = Math.random() * 2 + 1.5;
+                const size = Math.random() * 8 + 6;
+                const colors = ["#EAB308", "#14B8A6", "#F97316", "#EC4899", "#3B82F6"];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                return (
+                  <div
+                    key={i}
+                    className="absolute rounded-full animate-fall"
+                    style={{
+                      left: `${left}%`,
+                      top: `-20px`,
+                      width: `${size}px`,
+                      height: `${size}px`,
+                      backgroundColor: color,
+                      animationDelay: `${delay}s`,
+                      animationDuration: `${duration}s`,
+                      animationIterationCount: "infinite",
+                    }}
+                  />
+                );
+              })}
             </div>
 
-            <div className="space-y-2">
-              <span className="text-[10px] font-bold text-gold uppercase tracking-widest">
-                Objek Selesai Dipelajari
-              </span>
-              <h3 className="text-2xl font-extrabold text-charcoal">Kartu Ciptaan Terbuka!</h3>
-              <p className="text-xs text-charcoal/60 max-w-xs mx-auto">
-                Hebat! Kamu berhasil menjawab kuis dan membuka kartu koleksi ciptaan Allah: **{object.name.id}**.
-              </p>
-            </div>
+            <div className="w-full max-w-md rounded-3xl bg-white border-4 border-gold p-8 shadow-2xl text-center space-y-6 relative overflow-hidden scale-in-animation z-10">
+              
+              {/* Sparkles background effect */}
+              <div className="absolute inset-0 bg-gradient-to-b from-yellow-50/50 to-transparent -z-10" />
 
-            {/* Simulated Trading Card */}
-            <div className="mx-auto w-52 aspect-[3/4] bg-gradient-to-tr from-teal to-teal-dark border-4 border-gold rounded-2xl shadow-xl flex flex-col justify-between p-4 relative group">
-              <div className="absolute top-2 right-2 text-xs">⭐ 20</div>
-              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white/10 text-4xl mx-auto mt-4">
-                {object.icon}
+              <div className="mx-auto h-16 w-16 bg-gold rounded-full flex items-center justify-center text-3xl shadow-lg border-2 border-white animate-bounce">
+                🎖️
               </div>
-              <div className="text-center text-white space-y-0.5">
-                <span className="block text-xs font-bold">{object.name.en}</span>
-                <span className="block text-[8px] text-white/60 font-serif italic">{object.scientificName}</span>
+
+              {/* Stars */}
+              <div className="text-3xl text-gold tracking-widest my-2 select-none">
+                {hasErrors ? "⭐⭐" : "⭐⭐⭐"}
               </div>
-              <div className="text-[8px] text-center text-gold bg-white/10 py-1 rounded-lg uppercase tracking-wider font-bold">
-                {object.surahName}
+
+              <div className="space-y-2">
+                <span className="text-[10px] font-bold text-gold uppercase tracking-widest">
+                  Objek Selesai Dipelajari
+                </span>
+                <h3 className="text-2xl font-extrabold text-charcoal">
+                  Luar biasa! Kamu sekarang Ahli {object.name.id}!
+                </h3>
+                <p className="text-xs text-charcoal/60 max-w-xs mx-auto leading-relaxed">
+                  Kamu berhasil menjawab kuis dan membuka kartu koleksi ciptaan Allah: **{object.name.id}**.
+                </p>
               </div>
+
+              {/* Trading Card Preview */}
+              <div className="mx-auto w-40 aspect-[3/4] bg-gradient-to-tr from-teal to-teal-dark border-4 border-gold rounded-2xl shadow-xl flex flex-col justify-between p-3.5 relative">
+                <div className="absolute top-2 right-2 text-[10px] font-bold text-gold">
+                  ⭐ {points}
+                </div>
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-3xl mx-auto mt-2">
+                  {object.icon}
+                </div>
+                <div className="text-center text-white space-y-0.5">
+                  <span className="block text-[11px] font-bold leading-tight">{object.name.en}</span>
+                  <span className="block text-[7px] text-white/60 font-serif italic leading-none">{object.scientificName}</span>
+                </div>
+                <div className="text-[8px] text-center text-gold bg-white/10 py-1 rounded-lg uppercase tracking-wider font-bold">
+                  {object.surahName}
+                </div>
+              </div>
+
+              {/* Point badge */}
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-teal bg-teal-light px-4 py-2 rounded-full border border-teal/10">
+                <Sparkles className="h-4 w-4 text-gold animate-spin" />
+                <span>+{points} Poin & Lencana Baru &ldquo;{object.icon} Ahli {object.name.id}&rdquo; Diperoleh</span>
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex flex-col gap-2 pt-2">
+                <button
+                  onClick={() => {
+                    setShowRewardModal(false);
+                    router.push("/dashboard");
+                  }}
+                  className="w-full rounded-2xl bg-teal py-3 text-center text-xs font-bold text-white shadow-md hover:bg-teal-dark transition active:scale-95"
+                >
+                  Lihat Badge Saya
+                </button>
+                
+                {nextObject && (
+                  <button
+                    onClick={() => {
+                      setShowRewardModal(false);
+                      router.push(`/learn/${nextObject.slug}`);
+                    }}
+                    className="w-full rounded-2xl bg-gold py-3 text-center text-xs font-bold text-white shadow-md hover:bg-gold-dark transition active:scale-95"
+                  >
+                    Lanjut ke {nextObject.name.id} →
+                  </button>
+                )}
+              </div>
+
             </div>
 
-            {/* Points earned */}
-            <div className="inline-flex items-center gap-1.5 text-sm font-bold text-teal bg-teal-light px-4 py-2 rounded-full">
-              <Sparkles className="h-4 w-4 text-gold" />
-              <span>+20 Poin Diperoleh</span>
-            </div>
-
-            <button
-              onClick={handleCollectReward}
-              className="w-full rounded-2xl bg-teal py-4 text-center text-sm font-bold text-white shadow-md hover:bg-teal-dark"
-            >
-              Simpan ke Album Koleksi
-            </button>
-
+            <style>{`
+              @keyframes fall {
+                0% {
+                  transform: translateY(0) rotate(0deg);
+                  opacity: 1;
+                }
+                100% {
+                  transform: translateY(100vh) rotate(360deg);
+                  opacity: 0;
+                }
+              }
+              .animate-fall {
+                animation-name: fall;
+                animation-timing-function: linear;
+              }
+              @keyframes scaleIn {
+                0% {
+                  transform: scale(0.9);
+                  opacity: 0;
+                }
+                100% {
+                  transform: scale(1);
+                  opacity: 1;
+                }
+              }
+              .scale-in-animation {
+                animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+              }
+            `}</style>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
     </div>
   );

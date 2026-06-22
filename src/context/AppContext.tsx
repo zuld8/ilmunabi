@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { objectsData } from "@/data/objects";
 
 export interface ChildProfile {
   id: string;
@@ -161,6 +162,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         // Check badge achievements
         const updatedBadges = [...profile.badges];
         
+        // 0. Dynamic "Ahli [Object]" badge
+        const obj = objectsData.find((o) => o.slug === slug);
+        if (obj) {
+          const objectBadge = `${obj.icon} Ahli ${obj.name.id}`;
+          if (!updatedBadges.includes(objectBadge)) {
+            updatedBadges.push(objectBadge);
+          }
+        }
+        
         // 1. Insect badge ("Ahli Serangga")
         const insectSlugs = ["lebah", "semut", "laba-laba", "nyamuk", "lalat"];
         const completedInsects = updatedCompleted.filter((s) => insectSlugs.includes(s));
@@ -178,6 +188,23 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         // 3. Animal Kingdom badge ("Cendekiawan Hewan")
         if (updatedCompleted.length >= 5 && !updatedBadges.includes("Cendekiawan Cilik")) {
           updatedBadges.push("Cendekiawan Cilik");
+        }
+
+        // 4. Plant badges
+        const completedPlants = updatedCompleted.filter((s) => {
+          const obj = objectsData.find((o) => o.slug === s);
+          return obj && obj.type === "tumbuhan";
+        });
+        
+        if (completedPlants.length >= 1 && !updatedBadges.includes("Pekebun Muda")) {
+          updatedBadges.push("Pekebun Muda");
+        }
+        if (completedPlants.length >= 5 && !updatedBadges.includes("Penjaga Kebun Allah")) {
+          updatedBadges.push("Penjaga Kebun Allah");
+        }
+        const totalPlantsCount = objectsData.filter((o) => o.type === "tumbuhan").length;
+        if (totalPlantsCount > 0 && completedPlants.length >= totalPlantsCount && !updatedBadges.includes("Ahli Botani Qur'an")) {
+          updatedBadges.push("Ahli Botani Qur'an");
         }
 
         return {

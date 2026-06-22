@@ -39,3 +39,13 @@ html {
   background: #EAF2F4;
   color: #1E5F74;
 }
+
+.card-blur-light { 
+  filter: blur(1px); 
+  opacity: 0.7; 
+}
+
+.card-blur-heavy { 
+  filter: blur(2px); 
+  opacity: 0.4; 
+}
