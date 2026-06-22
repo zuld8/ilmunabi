@@ -27,6 +27,7 @@ interface AppContextType {
   completeObject: (slug: string, pointsEarned: number) => void;
   unlockCard: (slug: string) => void;
   subscribe: () => void;
+  awardBadge: (badgeName: string) => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -205,6 +206,19 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("ilmunabi_subscribed", "true");
   };
 
+  const awardBadge = (badgeName: string) => {
+    setProfiles((prev) =>
+      prev.map((profile) => {
+        if (profile.id !== activeChildId) return profile;
+        if (profile.badges.includes(badgeName)) return profile;
+        return {
+          ...profile,
+          badges: [...profile.badges, badgeName],
+        };
+      })
+    );
+  };
+
   const activeChild = profiles.find((p) => p.id === activeChildId) || null;
 
   return (
@@ -223,6 +237,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         completeObject,
         unlockCard,
         subscribe,
+        awardBadge,
       }}
     >
       {children}

@@ -11,7 +11,6 @@ import {
   Plus, 
   Award, 
   Settings, 
-  Lock, 
   CheckCircle2, 
   Flame
 } from "lucide-react";
@@ -24,7 +23,8 @@ export default function Dashboard() {
     switchProfile, 
     streak, 
     trialDaysRemaining,
-    subscriptionStatus
+    subscriptionStatus,
+    awardBadge
   } = useApp();
 
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -32,6 +32,28 @@ export default function Dashboard() {
   const [mathAnswer, setMathAnswer] = useState("");
   const [mathQuestion, setMathQuestion] = useState({ q: "", a: 0 });
   const [mathError, setMathError] = useState(false);
+  const [showWelcomePopup, setShowWelcomePopup] = useState(false);
+
+  // Trigger Welcome Popup after 1 second if child has 0 cards and 0 badges
+  useEffect(() => {
+    if (activeChild && activeChild.completedObjects.length === 0 && !activeChild.badges.includes("Penjelajah Baru")) {
+      const timer = setTimeout(() => {
+        setShowWelcomePopup(true);
+      }, 1000);
+      return () => clearTimeout(timer);
+    } else {
+      setShowWelcomePopup(false);
+    }
+  }, [activeChild]);
+
+  const dailyMotivations = [
+    "Hari ini kita belajar tentang lebah! 🐝",
+    "Setiap ilmu adalah cahaya. ✨",
+    "Satu fakta baru hari ini, yuk! 🔬",
+    "Allah menciptakan semua ini untukmu. 🌍",
+  ];
+  const dayIndex = new Date().getDay();
+  const dailyMotivation = dailyMotivations[dayIndex % dailyMotivations.length];
 
   // Redirect to onboarding if no profiles exist
   useEffect(() => {
@@ -208,28 +230,50 @@ export default function Dashboard() {
               <h2 className="text-2xl font-bold text-charcoal">
                 Selamat Belajar, {activeChild.name}!
               </h2>
-              <div className="mt-1.5 flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center gap-1 rounded-full bg-teal-light px-3 py-1 text-xs font-bold text-teal">
-                  <ZoneIcon className="h-3.5 w-3.5" />
-                  {activeChild.zone === "balita" && "Zona Balita (Usia 2-5)"}
-                  {activeChild.zone === "anak" && "Zona Anak (Usia 6-8)"}
-                  {activeChild.zone === "explorer" && "Zona Explorer (Usia 9-12)"}
-                </span>
-                <span className="text-xs text-charcoal/50 font-medium">
-                  • Usia {activeChild.age} tahun
-                </span>
+              <div className="mt-1.5 flex flex-col gap-1.5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-teal-light px-3 py-1 text-xs font-bold text-teal">
+                    <ZoneIcon className="h-3.5 w-3.5" />
+                    {activeChild.zone === "balita" && "Zona Balita (Usia 2-5)"}
+                    {activeChild.zone === "anak" && "Zona Anak (Usia 6-8)"}
+                    {activeChild.zone === "explorer" && "Zona Explorer (Usia 9-12)"}
+                  </span>
+                  <span className="text-xs text-charcoal/50 font-medium">
+                    • Usia {activeChild.age} tahun
+                  </span>
+                </div>
+                <p className="text-xs text-teal font-semibold italic mt-0.5 animate-pulse">
+                  {dailyMotivation}
+                </p>
               </div>
             </div>
           </div>
           <div className="flex gap-4">
-            <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[90px]">
-              <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
-              <span className="text-lg font-extrabold text-teal">{activeChild.unlockedCards.length}</span>
-            </div>
-            <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[90px]">
-              <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
-              <span className="text-lg font-extrabold text-gold">{activeChild.badges.length}</span>
-            </div>
+            {activeChild.unlockedCards.length === 0 && activeChild.badges.length === 0 ? (
+              <>
+                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
+                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
+                  <span className="text-lg font-extrabold text-teal block my-0.5">📦</span>
+                  <span className="text-[9px] font-bold text-charcoal/40 leading-none">Koleksi kosong</span>
+                </div>
+                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
+                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
+                  <span className="text-lg font-extrabold text-gold block my-0.5">🌟</span>
+                  <span className="text-[9px] font-bold text-charcoal/40 leading-none">Mulai belajar!</span>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[90px]">
+                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
+                  <span className="text-lg font-extrabold text-teal">{activeChild.unlockedCards.length}</span>
+                </div>
+                <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[90px]">
+                  <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
+                  <span className="text-lg font-extrabold text-gold">{activeChild.badges.length}</span>
+                </div>
+              </>
+            )}
           </div>
         </div>
 
@@ -238,21 +282,38 @@ export default function Dashboard() {
           <h3 className="text-xl font-bold text-charcoal">
             Jelajahi Ciptaan Allah
           </h3>
-          <p className="text-xs text-charcoal/50 mt-1">
-            Kumpulkan poin belajar untuk membuka hewan dan mengoleksi Kartu Ciptaan Allah.
+          <p className="text-xs text-charcoal/60 mt-1.5 font-semibold">
+            {activeChild.zone === "balita" && "Mulai petualangan dari Lebah — hewan yang punya rahasia mengagumkan! 🐝"}
+            {activeChild.zone === "anak" && "Lebah menyimpan fakta sains yang bikin kamu bilang WOW. Yuk mulai dari sini!"}
+            {activeChild.zone === "explorer" && "10 ciptaan Allah yang disebut langsung dalam Al-Qur'an. Mulai eksplorasi!"}
           </p>
         </div>
 
         {/* Objects Grid */}
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {objectsData.map((obj) => {
+          {objectsData.map((obj, idx) => {
             const isCompleted = activeChild.completedObjects.includes(obj.slug);
-            const isLocked = activeChild.points < obj.unlockedAtPoints && subscriptionStatus !== "subscribed"; // Lock check based on points (except for subscribers)
+            const isLocked = activeChild.points < obj.unlockedAtPoints && subscriptionStatus !== "subscribed";
             
+            // Determine next unlock object (first locked object in list)
+            const lockedObjects = objectsData.filter(
+              (o) => activeChild.points < o.unlockedAtPoints && subscriptionStatus !== "subscribed"
+            );
+            const nextUnlockSlug = lockedObjects.length > 0 ? lockedObjects[0].slug : null;
+            const isNextUnlock = nextUnlockSlug === obj.slug;
+
+            // Get previous object name for hint
+            let prevObjName = "";
+            if (isNextUnlock && idx > 0) {
+              const prevObj = objectsData[idx - 1];
+              prevObjName = activeChild.zone === "balita" ? prevObj.name.id : prevObj.name.en;
+            }
+
             return (
               <button
                 key={obj.slug}
-                disabled={isLocked && subscriptionStatus === "expired"} // force block if expired
+                id={`card-${obj.slug}`}
+                disabled={isLocked && subscriptionStatus === "expired"}
                 onClick={() => {
                   if (subscriptionStatus === "expired") {
                     openParentArea();
@@ -264,56 +325,63 @@ export default function Dashboard() {
                   }
                   router.push(`/learn/${obj.slug}`);
                 }}
-                className={`group flex flex-col justify-between text-left rounded-3xl border p-5 shadow-sm transition-all duration-300 relative bg-white ${
+                className={`group flex flex-col justify-between text-left rounded-3xl border p-5 shadow-sm transition-all duration-300 relative bg-white min-h-[200px] ${
                   isLocked 
-                    ? "border-cream-dark bg-cream-dark/20 opacity-70" 
+                    ? isNextUnlock
+                      ? "border-cream-dark bg-cream-dark/5 opacity-70 cursor-pointer hover:bg-cream-dark/10" 
+                      : "border-cream-dark/50 bg-cream-dark/5 opacity-40 cursor-default"
                     : "border-cream-dark hover:-translate-y-1 hover:shadow-md cursor-pointer"
                 }`}
               >
                 
                 {/* Complete Checkmark badge */}
                 {isCompleted && (
-                  <span className="absolute top-4 right-4 flex h-6 w-6 items-center justify-center rounded-full bg-green-500 text-white shadow-sm">
+                  <span className="absolute top-4 right-4 flex h-6 w-6 items-center justify-center rounded-full bg-green-500 text-white shadow-sm z-10">
                     <CheckCircle2 className="h-4 w-4" />
                   </span>
                 )}
 
-                {/* Locked indicator */}
-                {isLocked && (
-                  <span className="absolute top-4 right-4 flex h-6 w-6 items-center justify-center rounded-full bg-charcoal/10 text-charcoal/40">
-                    <Lock className="h-3.5 w-3.5" />
-                  </span>
-                )}
+                <div className={`w-full flex-grow flex flex-col justify-between h-full ${
+                  isLocked 
+                    ? isNextUnlock 
+                      ? "blur-[0.3px]" 
+                      : "blur-[1.2px]" 
+                    : ""
+                }`}>
+                  <div>
+                    {/* Emoji Icon */}
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cream border border-cream-dark group-hover:scale-105 transition-transform duration-300 text-3xl">
+                      {obj.icon}
+                    </div>
 
-                <div>
-                  {/* Emoji Icon */}
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cream border border-cream-dark group-hover:scale-105 transition-transform duration-300 text-3xl">
-                    {obj.icon}
+                    {/* Name */}
+                    <h4 className="mt-5 text-lg font-bold text-charcoal">
+                      {activeChild.zone === "balita" ? obj.name.id : obj.name.en}
+                    </h4>
+                    
+                    {/* Scientific Name (unlocked only) */}
+                    {!isLocked && (
+                      <p className="text-[11px] text-charcoal/50 italic leading-none mt-1">
+                        {obj.scientificName}
+                      </p>
+                    )}
+
+                    {/* Hint text for next unlock */}
+                    {isLocked && isNextUnlock && (
+                      <p className="text-[10px] text-teal font-bold leading-normal mt-2">
+                        🔓 Selesaikan {prevObjName} untuk membuka ini
+                      </p>
+                    )}
                   </div>
 
-                  {/* Name */}
-                  <h4 className="mt-5 text-lg font-bold text-charcoal">
-                    {activeChild.zone === "balita" ? obj.name.id : obj.name.en}
-                  </h4>
-                  
-                  {/* Scientific Name */}
-                  <p className="text-[11px] text-charcoal/50 italic leading-none mt-1">
-                    {obj.scientificName}
-                  </p>
-                </div>
-
-                {/* Footer status text */}
-                <div className="mt-8 border-t border-cream-dark/60 pt-4 flex items-center justify-between text-[11px] font-semibold">
-                  <span className="text-teal-medium">{obj.surahName}</span>
-                  {isLocked ? (
-                    <span className="text-orange-500 flex items-center gap-0.5">
-                      <Lock className="h-2.5 w-2.5" />
-                      <span>{obj.unlockedAtPoints} Pts</span>
-                    </span>
-                  ) : (
-                    <span className="text-green-600">
-                      {isCompleted ? "Selesai" : "Mulai"}
-                    </span>
+                  {/* Footer status text (unlocked only) */}
+                  {!isLocked && (
+                    <div className="mt-8 border-t border-cream-dark/60 pt-4 flex items-center justify-between text-[11px] font-semibold">
+                      <span className="text-teal-medium">{obj.surahName}</span>
+                      <span className="text-green-600">
+                        {isCompleted ? "Selesai" : "Mulai"}
+                      </span>
+                    </div>
                   )}
                 </div>
 
@@ -374,6 +442,102 @@ export default function Dashboard() {
               </div>
             </form>
           </div>
+        </div>
+      )}
+
+      {/* Welcome Badge Modal with Confetti */}
+      {showWelcomePopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/60 backdrop-blur-sm p-4">
+          {/* Confetti Particles */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+            {Array.from({ length: 45 }).map((_, i) => {
+              const left = Math.random() * 100;
+              const delay = Math.random() * 2;
+              const duration = Math.random() * 2 + 1.5;
+              const size = Math.random() * 8 + 6;
+              const colors = ["#EAB308", "#14B8A6", "#F97316", "#EC4899", "#3B82F6"];
+              const color = colors[Math.floor(Math.random() * colors.length)];
+              return (
+                <div
+                  key={i}
+                  className="absolute rounded-full animate-fall"
+                  style={{
+                    left: `${left}%`,
+                    top: `-20px`,
+                    width: `${size}px`,
+                    height: `${size}px`,
+                    backgroundColor: color,
+                    animationDelay: `${delay}s`,
+                    animationDuration: `${duration}s`,
+                    animationIterationCount: "infinite",
+                  }}
+                />
+              );
+            })}
+          </div>
+
+          {/* Modal Body */}
+          <div className="w-full max-w-md rounded-3xl bg-white border border-cream-dark p-8 shadow-2xl relative text-center z-10 scale-in-animation">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-3xl bg-yellow-50 text-gold text-4xl mb-4 animate-bounce">
+              🌟
+            </div>
+            <h3 className="text-2xl font-extrabold text-charcoal">Badge Pertama Kamu!</h3>
+            <p className="text-sm text-charcoal/70 mt-3 leading-relaxed">
+              Selamat datang, <span className="font-bold text-teal">{activeChild.name}</span>!<br />
+              Petualangan ilmu dimulai hari ini! 🌟
+            </p>
+            
+            <div className="mt-6 p-4 bg-cream/50 rounded-2xl border border-cream-dark/50 inline-flex items-center gap-2">
+              <span className="text-xl">🎖️</span>
+              <span className="text-xs font-bold text-charcoal">Dapatkan Badge: &ldquo;Penjelajah Baru&rdquo;</span>
+            </div>
+
+            <div className="mt-8">
+              <button
+                onClick={() => {
+                  // 1. Scroll to Lebah card
+                  document.getElementById("card-lebah")?.scrollIntoView({ behavior: "smooth", block: "center" });
+                  // 2. Award Badge
+                  awardBadge("Penjelajah Baru");
+                  // 3. Close Popup
+                  setShowWelcomePopup(false);
+                }}
+                className="w-full rounded-2xl bg-teal py-4 text-center text-sm font-bold text-white hover:bg-teal-dark shadow-lg active:scale-[0.98] transition-all"
+              >
+                Ayo Mulai!
+              </button>
+            </div>
+          </div>
+          
+          <style>{`
+            @keyframes fall {
+              0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+              }
+            }
+            .animate-fall {
+              animation-name: fall;
+              animation-timing-function: linear;
+            }
+            @keyframes scaleIn {
+              0% {
+                transform: scale(0.9);
+                opacity: 0;
+              }
+              100% {
+                transform: scale(1);
+                opacity: 1;
+              }
+            }
+            .scale-in-animation {
+              animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            }
+          `}</style>
         </div>
       )}
 
