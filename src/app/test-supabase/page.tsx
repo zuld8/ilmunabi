@@ -5,7 +5,7 @@ import { createClient } from "@/lib/supabase/client"
 
 export default function TestSupabasePage() {
   const [status, setStatus] = useState<string>("Initializing test...")
-  const [envVars, setEnvVars] = useState<any>({})
+  const [envVars, setEnvVars] = useState<Record<string, string | number>>({})
 
   useEffect(() => {
     async function runTest() {
@@ -31,8 +31,9 @@ export default function TestSupabasePage() {
         } else {
           setStatus(`Success! Connection established. Session: ${data.session ? "Active" : "None"}`)
         }
-      } catch (err: any) {
-        setStatus(`Runtime exception: ${err.message || err}`)
+      } catch (err) {
+        const errMsg = err instanceof Error ? err.message : String(err)
+        setStatus(`Runtime exception: ${errMsg}`)
       }
     }
 

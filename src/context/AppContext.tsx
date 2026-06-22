@@ -43,7 +43,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [trialEndsAt, setTrialEndsAt] = useState<string | null>(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [lang, setLang] = useState<"id" | "en" | "ar">("id");
-  const [isLoaded, setIsLoaded] = useState(false);
 
   const supabase = createClient();
 
@@ -61,7 +60,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       if (session) {
-        setIsLoaded(false);
         try {
           const userId = session.user.id;
           
@@ -150,7 +148,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setIsSubscribed(false);
         setTrialEndsAt(null);
       }
-      setIsLoaded(true);
     });
 
     return () => {
@@ -459,11 +456,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         awardBadge,
       }}
     >
-      {isLoaded ? children : (
-        <div className="min-h-screen bg-cream flex items-center justify-center">
-          <p className="text-charcoal/60 animate-pulse font-bold">Menghubungkan ke server...</p>
-        </div>
-      )}
+      {children}
     </AppContext.Provider>
   );
 }
