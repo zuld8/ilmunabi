@@ -21,6 +21,8 @@ interface AppContextType {
   trialDaysRemaining: number;
   isSubscribed: boolean;
   subscriptionStatus: "trial" | "subscribed" | "expired";
+  lang: "id" | "en" | "ar";
+  setLang: (lang: "id" | "en" | "ar") => void;
   addProfile: (name: string, age: number, zoneOverride?: "balita" | "anak" | "explorer") => string;
   switchProfile: (id: string) => void;
   deleteProfile: (id: string) => void;
@@ -38,6 +40,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [streak, setStreak] = useState(1);
   const [trialStartDate, setTrialStartDate] = useState<string | null>(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [lang, setLang] = useState<"id" | "en" | "ar">("id");
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Load from local storage
@@ -48,11 +51,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       const storedStreak = localStorage.getItem("ilmunabi_streak");
       const storedTrialDate = localStorage.getItem("ilmunabi_trial_start");
       const storedSub = localStorage.getItem("ilmunabi_subscribed");
+      const storedLang = localStorage.getItem("ilmunabi_lang");
 
       if (storedProfiles) setProfiles(JSON.parse(storedProfiles));
       if (storedActiveId) setActiveChildId(storedActiveId);
       if (storedStreak) setStreak(parseInt(storedStreak, 10));
       if (storedSub) setIsSubscribed(storedSub === "true");
+      if (storedLang) setLang(storedLang as "id" | "en" | "ar");
 
       if (storedTrialDate) {
         setTrialStartDate(storedTrialDate);
@@ -74,7 +79,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("ilmunabi_active_id", activeChildId || "");
     localStorage.setItem("ilmunabi_streak", streak.toString());
     localStorage.setItem("ilmunabi_subscribed", isSubscribed.toString());
-  }, [profiles, activeChildId, streak, isSubscribed, isLoaded]);
+    localStorage.setItem("ilmunabi_lang", lang);
+  }, [profiles, activeChildId, streak, isSubscribed, lang, isLoaded]);
 
   // Calculate Trial Remaining
   const getTrialDaysRemaining = (): number => {
@@ -231,6 +237,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         trialDaysRemaining,
         isSubscribed,
         subscriptionStatus,
+        lang,
+        setLang,
         addProfile,
         switchProfile,
         deleteProfile,

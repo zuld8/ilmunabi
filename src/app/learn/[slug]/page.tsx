@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useApp } from "@/context/AppContext";
 import { objectsData, ObjectData } from "@/data/objects";
+import KosakatArab from "@/components/KosakatArab";
 import { 
   ArrowLeft, 
   BookOpen, 
@@ -17,7 +18,7 @@ import {
 export default function ObjectDetail() {
   const params = useParams();
   const router = useRouter();
-  const { activeChild, completeObject } = useApp();
+  const { activeChild, completeObject, lang } = useApp();
 
   const slug = params?.slug as string;
   const [object, setObject] = useState<ObjectData | null>(null);
@@ -279,7 +280,9 @@ export default function ObjectDetail() {
               <div className="text-center p-6 md:p-8 bg-cream/25 border border-cream-dark rounded-3xl space-y-6">
                 
                 {/* Arabic Script */}
-                <p className="text-3xl font-bold leading-loose text-right text-charcoal font-serif pt-4 px-4 select-all">
+                <p className={`leading-loose text-right text-charcoal select-all ${
+                  lang === "ar" ? "text-5xl font-amiri font-bold" : "text-3xl font-serif font-bold"
+                } pt-4 px-4`}>
                   {quran.arabic}
                 </p>
 
@@ -457,6 +460,11 @@ export default function ObjectDetail() {
           )}
 
         </div>
+
+        {/* Arabic Vocabulary Section */}
+        {activeTab !== "kuis" && (
+          <KosakatArab object={object} zone={zone} lang={lang} />
+        )}
 
       </main>
 

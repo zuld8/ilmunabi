@@ -1,7 +1,7 @@
 "use client";
 
 // Force rebuild trigger - Vercel cache clear v1.0.1
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AgeZones from "@/components/AgeZones";
@@ -10,9 +10,10 @@ import WhyDifferent from "@/components/WhyDifferent";
 import SocialProof from "@/components/SocialProof";
 import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
+import { useApp } from "@/context/AppContext";
 
 export default function Home() {
-  const [lang, setLang] = useState<"id" | "en">("id");
+  const { lang, setLang } = useApp();
 
   return (
     <div className="min-h-screen flex flex-col bg-cream text-charcoal">
@@ -22,26 +23,26 @@ export default function Home() {
       {/* Main Page Layout */}
       <main className="flex-grow">
         {/* Hero Section */}
-        <HeroSection lang={lang} />
+        <HeroSection lang={lang === "ar" ? "id" : lang} />
 
         {/* 3 Age Zones */}
-        <AgeZones lang={lang} />
+        <AgeZones lang={lang === "ar" ? "id" : lang} />
 
         {/* Content Preview */}
-        <ContentPreview lang={lang} />
+        <ContentPreview lang={lang === "ar" ? "id" : lang} />
 
         {/* Differentiators */}
-        <WhyDifferent lang={lang} />
+        <WhyDifferent lang={lang === "ar" ? "id" : lang} />
 
         {/* Testimonials */}
-        <SocialProof lang={lang} />
+        <SocialProof lang={lang === "ar" ? "id" : lang} />
 
         {/* Pricing Tiers */}
-        <PricingSection lang={lang} />
+        <PricingSection lang={lang === "ar" ? "id" : lang} />
       </main>
 
       {/* Footer */}
-      <Footer lang={lang} />
+      <Footer lang={lang === "ar" ? "id" : lang} />
     </div>
   );
 }

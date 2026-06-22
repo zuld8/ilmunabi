@@ -27,6 +27,15 @@ export interface QuranVerse {
   context?: Translation; // for Explorer
 }
 
+export interface KosakataItem {
+  arab: string;
+  latin: string;
+  arti: string;
+  artiEn: string;
+  contohAyat: string;
+  icon: string;
+}
+
 export interface ObjectData {
   slug: string;
   name: Translation;
@@ -36,6 +45,7 @@ export interface ObjectData {
   icon: string;
   category: string;
   unlockedAtPoints: number; // for gamification
+  kosakata?: KosakataItem[];
   balita: {
     text: Translation;
     audioTranscript: Translation;
@@ -66,6 +76,40 @@ export const objectsData: ObjectData[] = [
     icon: "🐝",
     category: "Serangga",
     unlockedAtPoints: 0, // Free
+    kosakata: [
+      {
+        arab: "نَحْلٌ",
+        latin: "Nahl",
+        arti: "Lebah",
+        artiEn: "Honeybee",
+        contohAyat: "An-Nahl 16:68",
+        icon: "🐝"
+      },
+      {
+        arab: "عَسَلٌ",
+        latin: "Asal",
+        arti: "Madu",
+        artiEn: "Honey",
+        contohAyat: "An-Nahl 16:69",
+        icon: "🍯"
+      },
+      {
+        arab: "وَحْيٌ",
+        latin: "Wahy",
+        arti: "Wahyu/Perintah Allah",
+        artiEn: "Revelation/Command",
+        contohAyat: "An-Nahl 16:68",
+        icon: "📜"
+      },
+      {
+        arab: "شِفَاءٌ",
+        latin: "Syifa",
+        arti: "Penyembuh",
+        artiEn: "Healing",
+        contohAyat: "An-Nahl 16:69",
+        icon: "🧪"
+      }
+    ],
     balita: {
       text: {
         id: "Ini lebah! Lebah suka bunga. Lebah bikin madu yang manis. 🐝",

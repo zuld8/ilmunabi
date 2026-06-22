@@ -4,8 +4,8 @@ import React from "react";
 import { BookOpen } from "lucide-react";
 
 interface NavbarProps {
-  lang: "id" | "en";
-  setLang: (lang: "id" | "en") => void;
+  lang: "id" | "en" | "ar";
+  setLang: (lang: "id" | "en" | "ar") => void;
 }
 
 export default function Navbar({ lang, setLang }: NavbarProps) {
@@ -24,7 +24,7 @@ export default function Navbar({ lang, setLang }: NavbarProps) {
     },
   };
 
-  const t = content[lang];
+  const t = content[lang === "ar" ? "id" : lang];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-cream-dark/60 bg-cream/90 backdrop-blur-md">
@@ -67,7 +67,7 @@ export default function Navbar({ lang, setLang }: NavbarProps) {
           <div className="flex items-center gap-1 rounded-full border border-cream-dark bg-cream-dark/30 p-1">
             <button
               onClick={() => setLang("id")}
-              className={`rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 ${
+              className={`rounded-full px-2 py-1 text-xs font-semibold transition-all duration-200 ${
                 lang === "id"
                   ? "bg-teal text-white shadow-sm"
                   : "text-charcoal/60 hover:text-charcoal"
@@ -77,13 +77,23 @@ export default function Navbar({ lang, setLang }: NavbarProps) {
             </button>
             <button
               onClick={() => setLang("en")}
-              className={`rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 ${
+              className={`rounded-full px-2 py-1 text-xs font-semibold transition-all duration-200 ${
                 lang === "en"
                   ? "bg-teal text-white shadow-sm"
                   : "text-charcoal/60 hover:text-charcoal"
               }`}
             >
               EN
+            </button>
+            <button
+              onClick={() => setLang("ar")}
+              className={`rounded-full px-2 py-1 text-xs font-semibold transition-all duration-200 ${
+                lang === "ar"
+                  ? "bg-teal text-white shadow-sm"
+                  : "text-charcoal/60 hover:text-charcoal"
+              }`}
+            >
+              عر
             </button>
           </div>
 
