@@ -85,7 +85,7 @@ export default function ObjectDetail() {
     setQuizSubmitted(true);
   };
 
-  const handleNextQuestion = () => {
+  const handleNextQuestion = async () => {
     if (currentQuestionIdx < quizzes.length - 1) {
       setCurrentQuestionIdx((prev) => prev + 1);
       setSelectedAnswer(null);
@@ -93,7 +93,7 @@ export default function ObjectDetail() {
     } else {
       // Completed all questions! Claim reward and show modal
       const pointsAwarded = isBalita ? 50 : isAnak ? 75 : 100;
-      completeObject(object.slug, pointsAwarded);
+      await completeObject(object.slug, pointsAwarded);
       setShowRewardModal(true);
     }
   };

@@ -29,11 +29,11 @@ export default function Onboarding() {
     }
   }, [age, isOverride]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || isNaN(age) || age <= 0) return;
 
-    addProfile(name.trim(), age, selectedZone);
+    await addProfile(name.trim(), age, selectedZone);
     router.push("/dashboard");
   };
 

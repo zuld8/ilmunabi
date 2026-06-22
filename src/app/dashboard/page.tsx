@@ -501,11 +501,11 @@ export default function Dashboard() {
 
             <div className="mt-8">
               <button
-                onClick={() => {
+                onClick={async () => {
                   // 1. Scroll to Lebah card
                   document.getElementById("card-lebah")?.scrollIntoView({ behavior: "smooth", block: "center" });
                   // 2. Award Badge
-                  awardBadge("Penjelajah Baru");
+                  await awardBadge("Penjelajah Baru");
                   // 3. Close Popup
                   setShowWelcomePopup(false);
                 }}
