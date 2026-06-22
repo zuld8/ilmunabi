@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useApp } from "@/context/AppContext";
 import { objectsData } from "@/data/objects";
 import KategoriFilter from "@/components/KategoriFilter";
+import { createClient } from "@/lib/supabase/client";
 import { 
   Sparkles, 
   Gamepad2, 
@@ -13,7 +14,8 @@ import {
   Award, 
   Settings, 
   CheckCircle2, 
-  Flame
+  Flame,
+  LogOut
 } from "lucide-react";
 
 export default function Dashboard() {
@@ -185,7 +187,7 @@ export default function Dashboard() {
                     ))}
                   </div>
 
-                  <div className="border-t border-cream-dark mt-3 pt-2">
+                  <div className="border-t border-cream-dark mt-3 pt-2 space-y-2">
                     <button
                       onClick={() => {
                         setShowProfileMenu(false);
@@ -195,6 +197,18 @@ export default function Dashboard() {
                     >
                       <Plus className="h-3.5 w-3.5" />
                       <span>Tambah Profil Anak</span>
+                    </button>
+                    <button
+                      onClick={async () => {
+                        setShowProfileMenu(false);
+                        const supabase = createClient();
+                        await supabase.auth.signOut();
+                        router.push("/auth/login");
+                      }}
+                      className="w-full flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-red-600 bg-red-50 hover:bg-red-100 transition"
+                    >
+                      <LogOut className="h-3.5 w-3.5" />
+                      <span>Keluar Akun</span>
                     </button>
                   </div>
                 </div>

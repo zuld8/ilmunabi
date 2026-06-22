@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useApp, ChildProfile } from "@/context/AppContext";
+import { createClient } from "@/lib/supabase/client";
 
 import { 
   ArrowLeft, 
@@ -15,7 +16,8 @@ import {
   Sparkles, 
   BookOpen, 
   CreditCard,
-  CheckCircle2
+  CheckCircle2,
+  LogOut
 } from "lucide-react";
 
 export default function ParentDashboard() {
@@ -101,14 +103,27 @@ export default function ParentDashboard() {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-cream-dark/60 bg-cream/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => router.push("/dashboard")}
+              className="inline-flex items-center gap-2 text-sm font-bold text-charcoal/80 hover:text-teal transition"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span>Kembali ke Belajar Anak</span>
+            </button>
+            <span className="text-sm font-extrabold text-teal hidden sm:inline">| Dashboard Pemantau Orang Tua</span>
+          </div>
           <button
-            onClick={() => router.push("/dashboard")}
-            className="inline-flex items-center gap-2 text-sm font-bold text-charcoal/80 hover:text-teal transition"
+            onClick={async () => {
+              const supabase = createClient();
+              await supabase.auth.signOut();
+              router.push("/auth/login");
+            }}
+            className="inline-flex items-center gap-1.5 text-xs font-bold text-red-600 bg-red-50 hover:bg-red-100 px-3 py-2 rounded-xl transition active:scale-95"
           >
-            <ArrowLeft className="h-4 w-4" />
-            <span>Kembali ke Belajar Anak</span>
+            <LogOut className="h-3.5 w-3.5" />
+            <span>Keluar Akun</span>
           </button>
-          <span className="text-sm font-extrabold text-teal">Dashboard Pemantau Orang Tua</span>
         </div>
       </header>
 
