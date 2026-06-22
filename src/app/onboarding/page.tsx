@@ -1,12 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { useApp } from "@/context/AppContext";
 import { Sparkles, Gamepad2, Compass, ArrowRight, UserPlus } from "lucide-react";
 
 export default function Onboarding() {
-  const router = useRouter();
   const { addProfile } = useApp();
 
   const [name, setName] = useState("");
@@ -34,7 +32,7 @@ export default function Onboarding() {
     if (!name.trim() || isNaN(age) || age <= 0) return;
 
     await addProfile(name.trim(), age, selectedZone);
-    router.push("/dashboard");
+    window.location.href = "/dashboard";
   };
 
   const zones = [

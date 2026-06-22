@@ -2,14 +2,12 @@
 
 import { useState } from "react"
 import { createClient } from "@/lib/supabase/client"
-import { useRouter } from "next/navigation"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
-  const router = useRouter()
   const supabase = createClient()
 
   const handleLogin = async () => {
@@ -22,10 +20,10 @@ export default function LoginPage() {
     
     if (error) {
       setError("Email atau password salah")
+      setLoading(false)
     } else {
-      router.push('/dashboard')
+      window.location.href = '/dashboard'
     }
-    setLoading(false)
   }
 
   return (

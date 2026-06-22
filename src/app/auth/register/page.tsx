@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { createClient } from "@/lib/supabase/client"
-import { useRouter } from "next/navigation"
 
 export default function RegisterPage() {
   const [form, setForm] = useState({
@@ -10,7 +9,6 @@ export default function RegisterPage() {
   })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
-  const router = useRouter()
   const supabase = createClient()
 
   const handleRegister = async () => {
@@ -39,10 +37,10 @@ export default function RegisterPage() {
 
     if (error) {
       setError(error.message)
+      setLoading(false)
     } else {
-      router.push('/onboarding')
+      window.location.href = '/onboarding'
     }
-    setLoading(false)
   }
 
   return (
