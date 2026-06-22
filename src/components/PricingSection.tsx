@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Check, ShieldCheck } from "lucide-react";
 
 interface PricingSectionProps {
@@ -180,15 +181,16 @@ export default function PricingSection({ lang }: PricingSectionProps) {
 
               {/* Action Button */}
               <div className="mt-8">
-                <button
-                  className={`w-full rounded-2xl py-4 text-center text-sm font-bold shadow-md active:scale-[0.98] transition-all duration-200 ${
+                <Link
+                  href="/onboarding"
+                  className={`block w-full rounded-2xl py-4 text-center text-sm font-bold shadow-md active:scale-[0.98] transition-all duration-200 ${
                     tier.popular
                       ? "bg-teal text-white hover:bg-teal-dark hover:shadow-lg"
                       : "bg-cream-dark/60 text-charcoal hover:bg-cream-dark/95"
                   }`}
                 >
                   {idx === 0 ? t.ctaTrial : t.ctaSelect}
-                </button>
+                </Link>
               </div>
             </div>
           ))}
