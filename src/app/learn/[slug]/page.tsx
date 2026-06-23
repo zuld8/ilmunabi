@@ -69,7 +69,7 @@ export default function ObjectDetail() {
     );
   }
 
-  const zone = activeChild.zone;
+  const zone = activeChild.zone || "balita";
   const isBalita = zone === "balita";
   const isAnak = zone === "anak";
   const isExplorer = zone === "explorer";

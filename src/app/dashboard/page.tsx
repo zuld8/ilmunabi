@@ -41,7 +41,7 @@ export default function Dashboard() {
 
   // Trigger Welcome Popup after 1 second if child has 0 cards and 0 badges
   useEffect(() => {
-    if (activeChild && activeChild.completedObjects.length === 0 && !activeChild.badges.includes("Penjelajah Baru")) {
+    if (activeChild && (activeChild.completedObjects || []).length === 0 && !(activeChild.badges || []).includes("Penjelajah Baru")) {
       const timer = setTimeout(() => {
         setShowWelcomePopup(true);
       }, 1000);
@@ -99,11 +99,11 @@ export default function Dashboard() {
   }
 
   // Active Zone Icon helper
-  const ZoneIcon = {
+  const ZoneIcon = (activeChild?.zone ? {
     balita: Sparkles,
     anak: Gamepad2,
     explorer: Compass
-  }[activeChild.zone];
+  }[activeChild.zone] : Sparkles) || Sparkles;
 
   return (
     <div className="min-h-screen bg-cream pb-16">
@@ -147,9 +147,9 @@ export default function Dashboard() {
                 className="flex items-center gap-2 rounded-2xl bg-white border border-cream-dark p-2 hover:bg-cream-dark/20 transition duration-200"
               >
                 <div className="h-8 w-8 rounded-xl bg-teal text-white flex items-center justify-center font-bold text-sm">
-                  {activeChild.name.substring(0, 2).toUpperCase()}
+                  {(activeChild.name || "").substring(0, 2).toUpperCase()}
                 </div>
-                <span className="text-sm font-bold text-charcoal hidden sm:inline">{activeChild.name}</span>
+                <span className="text-sm font-bold text-charcoal hidden sm:inline">{activeChild?.name || ""}</span>
               </button>
 
               {/* Profile switcher menu overlay */}
@@ -245,18 +245,18 @@ export default function Dashboard() {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-charcoal">
-                Selamat Belajar, {activeChild.name}!
+                Selamat Belajar, {activeChild?.name || ""}!
               </h2>
               <div className="mt-1.5 flex flex-col gap-1.5">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="inline-flex items-center gap-1 rounded-full bg-teal-light px-3 py-1 text-xs font-bold text-teal">
                     <ZoneIcon className="h-3.5 w-3.5" />
-                    {activeChild.zone === "balita" && "Zona Balita (Usia 2-5)"}
-                    {activeChild.zone === "anak" && "Zona Anak (Usia 6-8)"}
-                    {activeChild.zone === "explorer" && "Zona Explorer (Usia 9-12)"}
+                    {activeChild?.zone === "balita" && "Zona Balita (Usia 2-5)"}
+                    {activeChild?.zone === "anak" && "Zona Anak (Usia 6-8)"}
+                    {activeChild?.zone === "explorer" && "Zona Explorer (Usia 9-12)"}
                   </span>
                   <span className="text-xs text-charcoal/50 font-medium">
-                    • Usia {activeChild.age} tahun
+                    • Usia {activeChild?.age || 0} tahun
                   </span>
                 </div>
                 <p className="text-xs text-teal font-semibold italic mt-0.5 animate-pulse">
@@ -269,30 +269,30 @@ export default function Dashboard() {
             {/* Kartu Counter */}
             <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
               <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Kartu</span>
-              {activeChild.unlockedCards.length === 0 ? (
+              {(activeChild?.unlockedCards || []).length === 0 ? (
                 <>
                   <span className="text-lg font-extrabold text-teal block my-0.5">📦</span>
                   <span className="text-[9px] font-bold text-charcoal/40 leading-none">Koleksi kosong</span>
                 </>
               ) : (
                 <>
-                  <span className="text-lg font-extrabold text-teal block my-0.5">{activeChild.unlockedCards.length}</span>
+                  <span className="text-lg font-extrabold text-teal block my-0.5">{(activeChild?.unlockedCards || []).length}</span>
                   <span className="text-[9px] font-bold text-charcoal/40 leading-none">KARTU</span>
                 </>
               )}
             </div>
-
+ 
             {/* Badge Counter */}
             <div className="text-center bg-cream/50 border border-cream-dark px-4 py-2.5 rounded-2xl min-w-[100px] flex flex-col justify-between">
               <span className="block text-[10px] font-bold text-charcoal/40 uppercase">Badge</span>
-              {activeChild.badges.length === 0 ? (
+              {(activeChild?.badges || []).length === 0 ? (
                 <>
                   <span className="text-lg font-extrabold text-gold block my-0.5">🏅</span>
                   <span className="text-[9px] font-bold text-charcoal/40 leading-none">Mulai belajar!</span>
                 </>
               ) : (
                 <>
-                  <span className="text-lg font-extrabold text-gold block my-0.5">{activeChild.badges.length}</span>
+                  <span className="text-lg font-extrabold text-gold block my-0.5">{(activeChild?.badges || []).length}</span>
                   <span className="text-[9px] font-bold text-charcoal/40 leading-none">BADGE</span>
                 </>
               )}
@@ -320,21 +320,21 @@ export default function Dashboard() {
           {objectsData
             .filter((o) => activeCategory === "semua" || o.type === activeCategory)
             .map((obj, idx) => {
-            const isCompleted = activeChild.completedObjects.includes(obj.slug);
+            const isCompleted = (activeChild?.completedObjects || []).includes(obj.slug);
             const isLocked = false; // Unlocked for review
             
             // Determine next unlock object (first locked object in list)
             const lockedObjects: typeof objectsData = [];
             const nextUnlockSlug = lockedObjects.length > 0 ? lockedObjects[0].slug : null;
             const isNextUnlock = nextUnlockSlug === obj.slug;
-
+ 
             // Get previous object name for hint
             let prevObjName = "";
             if (isNextUnlock && idx > 0) {
               const prevObj = objectsData[idx - 1];
-              prevObjName = activeChild.zone === "balita" ? prevObj.name.id : prevObj.name.en;
+              prevObjName = (activeChild?.zone || "balita") === "balita" ? prevObj.name.id : prevObj.name.en;
             }
-
+ 
             return (
               <button
                 key={obj.slug}
@@ -346,7 +346,7 @@ export default function Dashboard() {
                     return;
                   }
                   if (isLocked) {
-                    alert(`Kamu butuh ${obj.unlockedAtPoints} poin untuk membuka ${obj.name[activeChild.zone === "balita" ? "id" : "en"]}!`);
+                    alert(`Kamu butuh ${obj.unlockedAtPoints} poin untuk membuka ${obj.name[(activeChild?.zone || "balita") === "balita" ? "id" : "en"]}!`);
                     return;
                   }
                   router.push(`/learn/${obj.slug}`);
@@ -376,7 +376,7 @@ export default function Dashboard() {
 
                     {/* Name */}
                     <h4 className="mt-5 text-lg font-bold text-charcoal">
-                      {activeChild.zone === "balita" ? obj.name.id : obj.name.en}
+                      {(activeChild?.zone || "balita") === "balita" ? obj.name.id : obj.name.en}
                     </h4>
                     
                     {/* Subtitle / Scientific Name (unlocked only) */}
@@ -513,7 +513,7 @@ export default function Dashboard() {
             </div>
             <h3 className="text-2xl font-extrabold text-charcoal">Badge Pertama Kamu!</h3>
             <p className="text-sm text-charcoal/70 mt-3 leading-relaxed">
-              Selamat datang, <span className="font-bold text-teal">{activeChild.name}</span>!<br />
+              Selamat datang, <span className="font-bold text-teal">{activeChild?.name || ""}</span>!<br />
               Petualangan ilmu dimulai hari ini! 🌟
             </p>
             
