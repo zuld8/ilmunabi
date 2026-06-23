@@ -7,14 +7,14 @@ export const otakBesarData: ObjectData = {
     en: "Otak Besar",
   },
   scientificName: "Cerebrum",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+  surahName: "Al-Alaq",
+  surahReference: "96:15",
   icon: "🧠",
   category: "tubuh",
   type: "tubuh",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Alaq 96:15" }
   ],
   balita: {
     text: {
@@ -43,8 +43,9 @@ export const otakBesarData: ObjectData = {
       en: "Interesting facts about Otak Besar: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Otak Besar diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Otak Besar was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Otak Besar dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Otak Besar in the Qur'an so humans observe the science behind it." }
+      { id: "Sistem Otak Besar di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan.", en: "Sistem Otak Besar di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan." },
+      { id: "Miliaran sel penyusun Otak Besar berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia.", en: "Miliaran sel penyusun Otak Besar berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia." },
+      { id: "Kesehatan Otak Besar sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib.", en: "Kesehatan Otak Besar sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const otakBesarData: ObjectData = {
       en: "Exploration of the anatomy and structure of Otak Besar reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Sistem Sel", en: "Sistem Sel" }, desc: { id: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit.", en: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Otak Besar di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Otak Besar in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban rancangan Otak Besar: Sel-sel pada Otak Besar memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
+      en: "Keajaiban rancangan Otak Besar: Sel-sel pada Otak Besar memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

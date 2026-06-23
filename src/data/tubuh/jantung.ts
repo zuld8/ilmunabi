@@ -9,7 +9,7 @@ export const jantungData: ObjectData = {
   scientificName: "Cor",
   surahName: "Qaf",
   surahReference: "50:37",
-  icon: "🫀",
+  icon: "𫆁",
   category: "tubuh",
   type: "tubuh",
   unlockedAtPoints: 50,
@@ -31,7 +31,7 @@ export const jantungData: ObjectData = {
         en: "Which one is the picture of Jantung?",
       },
       options: [
-        { text: { id: "🫀 Jantung", en: "🫀 Jantung" } },
+        { text: { id: "𫆁 Jantung", en: "𫆁 Jantung" } },
         { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
       answerIdx: 0,

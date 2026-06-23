@@ -7,14 +7,14 @@ export const gerhanaMatahariData: ObjectData = {
     en: "Gerhana Matahari",
   },
   scientificName: "Solar Eclipse",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+  surahName: "Hadist",
+  surahReference: "HR Bukhari",
   icon: "🌑",
   category: "alam",
   type: "alam",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Hadist HR Bukhari" }
   ],
   balita: {
     text: {
@@ -43,8 +43,9 @@ export const gerhanaMatahariData: ObjectData = {
       en: "Interesting facts about Gerhana Matahari: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Gerhana Matahari diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Gerhana Matahari was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Gerhana Matahari dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Gerhana Matahari in the Qur'an so humans observe the science behind it." }
+      { id: "Gerhana Matahari merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Gerhana Matahari merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
+      { id: "Keteraturan siklus Gerhana Matahari memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Gerhana Matahari memungkinkan kehidupan biologis manusia berjalan dengan aman." },
+      { id: "Interaksi fisik Gerhana Matahari dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Gerhana Matahari dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const gerhanaMatahariData: ObjectData = {
       en: "Exploration of the anatomy and structure of Gerhana Matahari reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Gerhana Matahari di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Gerhana Matahari in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban penciptaan Gerhana Matahari: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Gerhana Matahari agar tidak terjadi benturan atau kehancuran kosmis.",
+      en: "Keajaiban penciptaan Gerhana Matahari: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Gerhana Matahari agar tidak terjadi benturan atau kehancuran kosmis.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

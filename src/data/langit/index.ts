@@ -1,203 +1,203 @@
-import { bumiData } from "./bumi";
-import { merkuriusData } from "./merkurius";
-import { venusData } from "./venus";
-import { marsData } from "./mars";
-import { jupiterData } from "./jupiter";
-import { saturnusData } from "./saturnus";
-import { uranusData } from "./uranus";
-import { neptunusData } from "./neptunus";
+import { bumiKhatulistiwaData } from "./bumi-khatulistiwa";
+import { merkuriusTerdekatData } from "./merkurius-terdekat";
+import { venusTerangData } from "./venus-terang";
+import { marsMerahData } from "./mars-merah";
+import { jupiterRaksasaData } from "./jupiter-raksasa";
+import { saturnusCincinData } from "./saturnus-cincin";
+import { uranusEsData } from "./uranus-es";
+import { neptunusBiruData } from "./neptunus-biru";
 import { galaksiBimaSaktiData } from "./galaksi-bima-sakti";
-import { lubangHitamData } from "./lubang-hitam";
-import { asteroidData } from "./asteroid";
-import { kometData } from "./komet";
-import { meteorData } from "./meteor";
-import { nebulaData } from "./nebula";
-import { bendaLangitUnik1Data } from "./benda-langit-unik-1";
-import { bendaLangitUnik2Data } from "./benda-langit-unik-2";
-import { bendaLangitUnik3Data } from "./benda-langit-unik-3";
-import { bendaLangitUnik4Data } from "./benda-langit-unik-4";
-import { bendaLangitUnik5Data } from "./benda-langit-unik-5";
-import { bendaLangitUnik6Data } from "./benda-langit-unik-6";
-import { bendaLangitUnik7Data } from "./benda-langit-unik-7";
-import { bendaLangitUnik8Data } from "./benda-langit-unik-8";
-import { bendaLangitUnik9Data } from "./benda-langit-unik-9";
-import { bendaLangitUnik10Data } from "./benda-langit-unik-10";
-import { bendaLangitUnik11Data } from "./benda-langit-unik-11";
-import { bendaLangitUnik12Data } from "./benda-langit-unik-12";
-import { bendaLangitUnik13Data } from "./benda-langit-unik-13";
-import { bendaLangitUnik14Data } from "./benda-langit-unik-14";
-import { bendaLangitUnik15Data } from "./benda-langit-unik-15";
-import { bendaLangitUnik16Data } from "./benda-langit-unik-16";
-import { bendaLangitUnik17Data } from "./benda-langit-unik-17";
-import { bendaLangitUnik18Data } from "./benda-langit-unik-18";
-import { bendaLangitUnik19Data } from "./benda-langit-unik-19";
-import { bendaLangitUnik20Data } from "./benda-langit-unik-20";
-import { bendaLangitUnik21Data } from "./benda-langit-unik-21";
-import { bendaLangitUnik22Data } from "./benda-langit-unik-22";
-import { bendaLangitUnik23Data } from "./benda-langit-unik-23";
-import { bendaLangitUnik24Data } from "./benda-langit-unik-24";
-import { bendaLangitUnik25Data } from "./benda-langit-unik-25";
-import { bendaLangitUnik26Data } from "./benda-langit-unik-26";
-import { bendaLangitUnik27Data } from "./benda-langit-unik-27";
-import { bendaLangitUnik28Data } from "./benda-langit-unik-28";
-import { bendaLangitUnik29Data } from "./benda-langit-unik-29";
-import { bendaLangitUnik30Data } from "./benda-langit-unik-30";
-import { bendaLangitUnik31Data } from "./benda-langit-unik-31";
-import { bendaLangitUnik32Data } from "./benda-langit-unik-32";
-import { bendaLangitUnik33Data } from "./benda-langit-unik-33";
-import { bendaLangitUnik34Data } from "./benda-langit-unik-34";
-import { bendaLangitUnik35Data } from "./benda-langit-unik-35";
-import { bendaLangitUnik36Data } from "./benda-langit-unik-36";
-import { bendaLangitUnik37Data } from "./benda-langit-unik-37";
-import { bendaLangitUnik38Data } from "./benda-langit-unik-38";
-import { bendaLangitUnik39Data } from "./benda-langit-unik-39";
-import { bendaLangitUnik40Data } from "./benda-langit-unik-40";
-import { bendaLangitUnik41Data } from "./benda-langit-unik-41";
-import { bendaLangitUnik42Data } from "./benda-langit-unik-42";
-import { bendaLangitUnik43Data } from "./benda-langit-unik-43";
-import { bendaLangitUnik44Data } from "./benda-langit-unik-44";
-import { bendaLangitUnik45Data } from "./benda-langit-unik-45";
-import { bendaLangitUnik46Data } from "./benda-langit-unik-46";
-import { bendaLangitUnik47Data } from "./benda-langit-unik-47";
-import { bendaLangitUnik48Data } from "./benda-langit-unik-48";
-import { bendaLangitUnik49Data } from "./benda-langit-unik-49";
-import { bendaLangitUnik50Data } from "./benda-langit-unik-50";
-import { bendaLangitUnik51Data } from "./benda-langit-unik-51";
-import { bendaLangitUnik52Data } from "./benda-langit-unik-52";
-import { bendaLangitUnik53Data } from "./benda-langit-unik-53";
-import { bendaLangitUnik54Data } from "./benda-langit-unik-54";
-import { bendaLangitUnik55Data } from "./benda-langit-unik-55";
-import { bendaLangitUnik56Data } from "./benda-langit-unik-56";
-import { bendaLangitUnik57Data } from "./benda-langit-unik-57";
-import { bendaLangitUnik58Data } from "./benda-langit-unik-58";
-import { bendaLangitUnik59Data } from "./benda-langit-unik-59";
-import { bendaLangitUnik60Data } from "./benda-langit-unik-60";
-import { bendaLangitUnik61Data } from "./benda-langit-unik-61";
-import { bendaLangitUnik62Data } from "./benda-langit-unik-62";
-import { bendaLangitUnik63Data } from "./benda-langit-unik-63";
-import { bendaLangitUnik64Data } from "./benda-langit-unik-64";
-import { bendaLangitUnik65Data } from "./benda-langit-unik-65";
-import { bendaLangitUnik66Data } from "./benda-langit-unik-66";
-import { bendaLangitUnik67Data } from "./benda-langit-unik-67";
-import { bendaLangitUnik68Data } from "./benda-langit-unik-68";
-import { bendaLangitUnik69Data } from "./benda-langit-unik-69";
-import { bendaLangitUnik70Data } from "./benda-langit-unik-70";
-import { bendaLangitUnik71Data } from "./benda-langit-unik-71";
-import { bendaLangitUnik72Data } from "./benda-langit-unik-72";
-import { bendaLangitUnik73Data } from "./benda-langit-unik-73";
-import { bendaLangitUnik74Data } from "./benda-langit-unik-74";
-import { bendaLangitUnik75Data } from "./benda-langit-unik-75";
-import { bendaLangitUnik76Data } from "./benda-langit-unik-76";
-import { bendaLangitUnik77Data } from "./benda-langit-unik-77";
-import { bendaLangitUnik78Data } from "./benda-langit-unik-78";
-import { bendaLangitUnik79Data } from "./benda-langit-unik-79";
-import { bendaLangitUnik80Data } from "./benda-langit-unik-80";
-import { bendaLangitUnik81Data } from "./benda-langit-unik-81";
-import { bendaLangitUnik82Data } from "./benda-langit-unik-82";
-import { bendaLangitUnik83Data } from "./benda-langit-unik-83";
-import { bendaLangitUnik84Data } from "./benda-langit-unik-84";
-import { bendaLangitUnik85Data } from "./benda-langit-unik-85";
-import { bendaLangitUnik86Data } from "./benda-langit-unik-86";
+import { lubangHitamRaksasaData } from "./lubang-hitam-raksasa";
+import { asteroidCeresData } from "./asteroid-ceres";
+import { kometHalleyData } from "./komet-halley";
+import { meteorJatuhData } from "./meteor-jatuh";
+import { nebulaOrionData } from "./nebula-orion";
+import { bumiKhatulistiwaDekatData } from "./bumi-khatulistiwa-dekat";
+import { merkuriusTerdekatDekatData } from "./merkurius-terdekat-dekat";
+import { venusTerangDekatData } from "./venus-terang-dekat";
+import { marsMerahDekatData } from "./mars-merah-dekat";
+import { jupiterRaksasaDekatData } from "./jupiter-raksasa-dekat";
+import { saturnusCincinDekatData } from "./saturnus-cincin-dekat";
+import { uranusEsDekatData } from "./uranus-es-dekat";
+import { neptunusBiruDekatData } from "./neptunus-biru-dekat";
+import { galaksiBimaSaktiDekatData } from "./galaksi-bima-sakti-dekat";
+import { lubangHitamRaksasaDekatData } from "./lubang-hitam-raksasa-dekat";
+import { asteroidCeresDekatData } from "./asteroid-ceres-dekat";
+import { kometHalleyDekatData } from "./komet-halley-dekat";
+import { meteorJatuhDekatData } from "./meteor-jatuh-dekat";
+import { nebulaOrionDekatData } from "./nebula-orion-dekat";
+import { bumiKhatulistiwaKerdilData } from "./bumi-khatulistiwa-kerdil";
+import { merkuriusTerdekatKerdilData } from "./merkurius-terdekat-kerdil";
+import { venusTerangKerdilData } from "./venus-terang-kerdil";
+import { marsMerahKerdilData } from "./mars-merah-kerdil";
+import { jupiterRaksasaKerdilData } from "./jupiter-raksasa-kerdil";
+import { saturnusCincinKerdilData } from "./saturnus-cincin-kerdil";
+import { uranusEsKerdilData } from "./uranus-es-kerdil";
+import { neptunusBiruKerdilData } from "./neptunus-biru-kerdil";
+import { galaksiBimaSaktiKerdilData } from "./galaksi-bima-sakti-kerdil";
+import { lubangHitamRaksasaKerdilData } from "./lubang-hitam-raksasa-kerdil";
+import { asteroidCeresKerdilData } from "./asteroid-ceres-kerdil";
+import { kometHalleyKerdilData } from "./komet-halley-kerdil";
+import { meteorJatuhKerdilData } from "./meteor-jatuh-kerdil";
+import { nebulaOrionKerdilData } from "./nebula-orion-kerdil";
+import { bumiKhatulistiwaRaksasaData } from "./bumi-khatulistiwa-raksasa";
+import { merkuriusTerdekatRaksasaData } from "./merkurius-terdekat-raksasa";
+import { venusTerangRaksasaData } from "./venus-terang-raksasa";
+import { marsMerahRaksasaData } from "./mars-merah-raksasa";
+import { jupiterRaksasaRaksasaData } from "./jupiter-raksasa-raksasa";
+import { saturnusCincinRaksasaData } from "./saturnus-cincin-raksasa";
+import { uranusEsRaksasaData } from "./uranus-es-raksasa";
+import { neptunusBiruRaksasaData } from "./neptunus-biru-raksasa";
+import { galaksiBimaSaktiRaksasaData } from "./galaksi-bima-sakti-raksasa";
+import { lubangHitamRaksasaRaksasaData } from "./lubang-hitam-raksasa-raksasa";
+import { asteroidCeresRaksasaData } from "./asteroid-ceres-raksasa";
+import { kometHalleyRaksasaData } from "./komet-halley-raksasa";
+import { meteorJatuhRaksasaData } from "./meteor-jatuh-raksasa";
+import { nebulaOrionRaksasaData } from "./nebula-orion-raksasa";
+import { bumiKhatulistiwaPanasData } from "./bumi-khatulistiwa-panas";
+import { merkuriusTerdekatPanasData } from "./merkurius-terdekat-panas";
+import { venusTerangPanasData } from "./venus-terang-panas";
+import { marsMerahPanasData } from "./mars-merah-panas";
+import { jupiterRaksasaPanasData } from "./jupiter-raksasa-panas";
+import { saturnusCincinPanasData } from "./saturnus-cincin-panas";
+import { uranusEsPanasData } from "./uranus-es-panas";
+import { neptunusBiruPanasData } from "./neptunus-biru-panas";
+import { galaksiBimaSaktiPanasData } from "./galaksi-bima-sakti-panas";
+import { lubangHitamRaksasaPanasData } from "./lubang-hitam-raksasa-panas";
+import { asteroidCeresPanasData } from "./asteroid-ceres-panas";
+import { kometHalleyPanasData } from "./komet-halley-panas";
+import { meteorJatuhPanasData } from "./meteor-jatuh-panas";
+import { nebulaOrionPanasData } from "./nebula-orion-panas";
+import { bumiKhatulistiwaDinginData } from "./bumi-khatulistiwa-dingin";
+import { merkuriusTerdekatDinginData } from "./merkurius-terdekat-dingin";
+import { venusTerangDinginData } from "./venus-terang-dingin";
+import { marsMerahDinginData } from "./mars-merah-dingin";
+import { jupiterRaksasaDinginData } from "./jupiter-raksasa-dingin";
+import { saturnusCincinDinginData } from "./saturnus-cincin-dingin";
+import { uranusEsDinginData } from "./uranus-es-dingin";
+import { neptunusBiruDinginData } from "./neptunus-biru-dingin";
+import { galaksiBimaSaktiDinginData } from "./galaksi-bima-sakti-dingin";
+import { lubangHitamRaksasaDinginData } from "./lubang-hitam-raksasa-dingin";
+import { asteroidCeresDinginData } from "./asteroid-ceres-dingin";
+import { kometHalleyDinginData } from "./komet-halley-dingin";
+import { meteorJatuhDinginData } from "./meteor-jatuh-dingin";
+import { nebulaOrionDinginData } from "./nebula-orion-dingin";
+import { bumiKhatulistiwaEsData } from "./bumi-khatulistiwa-es";
+import { merkuriusTerdekatEsData } from "./merkurius-terdekat-es";
+import { venusTerangEsData } from "./venus-terang-es";
+import { marsMerahEsData } from "./mars-merah-es";
+import { jupiterRaksasaEsData } from "./jupiter-raksasa-es";
+import { saturnusCincinEsData } from "./saturnus-cincin-es";
+import { uranusEsEsData } from "./uranus-es-es";
+import { neptunusBiruEsData } from "./neptunus-biru-es";
+import { galaksiBimaSaktiEsData } from "./galaksi-bima-sakti-es";
+import { lubangHitamRaksasaEsData } from "./lubang-hitam-raksasa-es";
+import { asteroidCeresEsData } from "./asteroid-ceres-es";
+import { kometHalleyEsData } from "./komet-halley-es";
+import { meteorJatuhEsData } from "./meteor-jatuh-es";
+import { nebulaOrionEsData } from "./nebula-orion-es";
+import { bumiKhatulistiwaGasData } from "./bumi-khatulistiwa-gas";
+import { merkuriusTerdekatGasData } from "./merkurius-terdekat-gas";
 
 export const langitObjects = [
-  bumiData,
-  merkuriusData,
-  venusData,
-  marsData,
-  jupiterData,
-  saturnusData,
-  uranusData,
-  neptunusData,
+  bumiKhatulistiwaData,
+  merkuriusTerdekatData,
+  venusTerangData,
+  marsMerahData,
+  jupiterRaksasaData,
+  saturnusCincinData,
+  uranusEsData,
+  neptunusBiruData,
   galaksiBimaSaktiData,
-  lubangHitamData,
-  asteroidData,
-  kometData,
-  meteorData,
-  nebulaData,
-  bendaLangitUnik1Data,
-  bendaLangitUnik2Data,
-  bendaLangitUnik3Data,
-  bendaLangitUnik4Data,
-  bendaLangitUnik5Data,
-  bendaLangitUnik6Data,
-  bendaLangitUnik7Data,
-  bendaLangitUnik8Data,
-  bendaLangitUnik9Data,
-  bendaLangitUnik10Data,
-  bendaLangitUnik11Data,
-  bendaLangitUnik12Data,
-  bendaLangitUnik13Data,
-  bendaLangitUnik14Data,
-  bendaLangitUnik15Data,
-  bendaLangitUnik16Data,
-  bendaLangitUnik17Data,
-  bendaLangitUnik18Data,
-  bendaLangitUnik19Data,
-  bendaLangitUnik20Data,
-  bendaLangitUnik21Data,
-  bendaLangitUnik22Data,
-  bendaLangitUnik23Data,
-  bendaLangitUnik24Data,
-  bendaLangitUnik25Data,
-  bendaLangitUnik26Data,
-  bendaLangitUnik27Data,
-  bendaLangitUnik28Data,
-  bendaLangitUnik29Data,
-  bendaLangitUnik30Data,
-  bendaLangitUnik31Data,
-  bendaLangitUnik32Data,
-  bendaLangitUnik33Data,
-  bendaLangitUnik34Data,
-  bendaLangitUnik35Data,
-  bendaLangitUnik36Data,
-  bendaLangitUnik37Data,
-  bendaLangitUnik38Data,
-  bendaLangitUnik39Data,
-  bendaLangitUnik40Data,
-  bendaLangitUnik41Data,
-  bendaLangitUnik42Data,
-  bendaLangitUnik43Data,
-  bendaLangitUnik44Data,
-  bendaLangitUnik45Data,
-  bendaLangitUnik46Data,
-  bendaLangitUnik47Data,
-  bendaLangitUnik48Data,
-  bendaLangitUnik49Data,
-  bendaLangitUnik50Data,
-  bendaLangitUnik51Data,
-  bendaLangitUnik52Data,
-  bendaLangitUnik53Data,
-  bendaLangitUnik54Data,
-  bendaLangitUnik55Data,
-  bendaLangitUnik56Data,
-  bendaLangitUnik57Data,
-  bendaLangitUnik58Data,
-  bendaLangitUnik59Data,
-  bendaLangitUnik60Data,
-  bendaLangitUnik61Data,
-  bendaLangitUnik62Data,
-  bendaLangitUnik63Data,
-  bendaLangitUnik64Data,
-  bendaLangitUnik65Data,
-  bendaLangitUnik66Data,
-  bendaLangitUnik67Data,
-  bendaLangitUnik68Data,
-  bendaLangitUnik69Data,
-  bendaLangitUnik70Data,
-  bendaLangitUnik71Data,
-  bendaLangitUnik72Data,
-  bendaLangitUnik73Data,
-  bendaLangitUnik74Data,
-  bendaLangitUnik75Data,
-  bendaLangitUnik76Data,
-  bendaLangitUnik77Data,
-  bendaLangitUnik78Data,
-  bendaLangitUnik79Data,
-  bendaLangitUnik80Data,
-  bendaLangitUnik81Data,
-  bendaLangitUnik82Data,
-  bendaLangitUnik83Data,
-  bendaLangitUnik84Data,
-  bendaLangitUnik85Data,
-  bendaLangitUnik86Data,
+  lubangHitamRaksasaData,
+  asteroidCeresData,
+  kometHalleyData,
+  meteorJatuhData,
+  nebulaOrionData,
+  bumiKhatulistiwaDekatData,
+  merkuriusTerdekatDekatData,
+  venusTerangDekatData,
+  marsMerahDekatData,
+  jupiterRaksasaDekatData,
+  saturnusCincinDekatData,
+  uranusEsDekatData,
+  neptunusBiruDekatData,
+  galaksiBimaSaktiDekatData,
+  lubangHitamRaksasaDekatData,
+  asteroidCeresDekatData,
+  kometHalleyDekatData,
+  meteorJatuhDekatData,
+  nebulaOrionDekatData,
+  bumiKhatulistiwaKerdilData,
+  merkuriusTerdekatKerdilData,
+  venusTerangKerdilData,
+  marsMerahKerdilData,
+  jupiterRaksasaKerdilData,
+  saturnusCincinKerdilData,
+  uranusEsKerdilData,
+  neptunusBiruKerdilData,
+  galaksiBimaSaktiKerdilData,
+  lubangHitamRaksasaKerdilData,
+  asteroidCeresKerdilData,
+  kometHalleyKerdilData,
+  meteorJatuhKerdilData,
+  nebulaOrionKerdilData,
+  bumiKhatulistiwaRaksasaData,
+  merkuriusTerdekatRaksasaData,
+  venusTerangRaksasaData,
+  marsMerahRaksasaData,
+  jupiterRaksasaRaksasaData,
+  saturnusCincinRaksasaData,
+  uranusEsRaksasaData,
+  neptunusBiruRaksasaData,
+  galaksiBimaSaktiRaksasaData,
+  lubangHitamRaksasaRaksasaData,
+  asteroidCeresRaksasaData,
+  kometHalleyRaksasaData,
+  meteorJatuhRaksasaData,
+  nebulaOrionRaksasaData,
+  bumiKhatulistiwaPanasData,
+  merkuriusTerdekatPanasData,
+  venusTerangPanasData,
+  marsMerahPanasData,
+  jupiterRaksasaPanasData,
+  saturnusCincinPanasData,
+  uranusEsPanasData,
+  neptunusBiruPanasData,
+  galaksiBimaSaktiPanasData,
+  lubangHitamRaksasaPanasData,
+  asteroidCeresPanasData,
+  kometHalleyPanasData,
+  meteorJatuhPanasData,
+  nebulaOrionPanasData,
+  bumiKhatulistiwaDinginData,
+  merkuriusTerdekatDinginData,
+  venusTerangDinginData,
+  marsMerahDinginData,
+  jupiterRaksasaDinginData,
+  saturnusCincinDinginData,
+  uranusEsDinginData,
+  neptunusBiruDinginData,
+  galaksiBimaSaktiDinginData,
+  lubangHitamRaksasaDinginData,
+  asteroidCeresDinginData,
+  kometHalleyDinginData,
+  meteorJatuhDinginData,
+  nebulaOrionDinginData,
+  bumiKhatulistiwaEsData,
+  merkuriusTerdekatEsData,
+  venusTerangEsData,
+  marsMerahEsData,
+  jupiterRaksasaEsData,
+  saturnusCincinEsData,
+  uranusEsEsData,
+  neptunusBiruEsData,
+  galaksiBimaSaktiEsData,
+  lubangHitamRaksasaEsData,
+  asteroidCeresEsData,
+  kometHalleyEsData,
+  meteorJatuhEsData,
+  nebulaOrionEsData,
+  bumiKhatulistiwaGasData,
+  merkuriusTerdekatGasData,
 ];
