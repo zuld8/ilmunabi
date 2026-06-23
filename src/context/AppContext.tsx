@@ -4,6 +4,37 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import { objectsData } from "@/data/objects";
 import { createClient } from "@/lib/supabase/client";
 
+const safeStorage = {
+  getItem(key: string): string | null {
+    try {
+      if (typeof window !== "undefined" && window.localStorage) {
+        return localStorage.getItem(key);
+      }
+    } catch (e) {
+      console.warn("Storage access failed:", e);
+    }
+    return null;
+  },
+  setItem(key: string, value: string): void {
+    try {
+      if (typeof window !== "undefined" && window.localStorage) {
+        localStorage.setItem(key, value);
+      }
+    } catch (e) {
+      console.warn("Storage write failed:", e);
+    }
+  },
+  removeItem(key: string): void {
+    try {
+      if (typeof window !== "undefined" && window.localStorage) {
+        localStorage.removeItem(key);
+      }
+    } catch (e) {
+      console.warn("Storage remove failed:", e);
+    }
+  }
+};
+
 export interface ChildProfile {
   id: string;
   name: string;
@@ -51,14 +82,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   // Load state and synchronize with Supabase
   useEffect(() => {
     // Read local storage settings (lang, streak, etc.)
-    try {
-      const storedStreak = localStorage.getItem("ilmunabi_streak");
-      const storedLang = localStorage.getItem("ilmunabi_lang");
-      if (storedStreak) setStreak(parseInt(storedStreak, 10));
-      if (storedLang) setLang(storedLang as "id" | "en" | "ar");
-    } catch (e) {
-      console.error("Failed loading local storage", e);
-    }
+    const storedStreak = safeStorage.getItem("ilmunabi_streak");
+    const storedLang = safeStorage.getItem("ilmunabi_lang");
+    if (storedStreak) setStreak(parseInt(storedStreak, 10));
+    if (storedLang) setLang(storedLang as "id" | "en" | "ar");
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       setIsLoading(true);
@@ -152,12 +179,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
             setProfiles(childrenProfiles);
             
             // Restore active child selection
-            const storedActiveId = localStorage.getItem("ilmunabi_active_id");
+            const storedActiveId = safeStorage.getItem("ilmunabi_active_id");
             if (storedActiveId && childrenProfiles.some(c => c.id === storedActiveId)) {
               setActiveChildId(storedActiveId);
             } else if (childrenProfiles.length > 0) {
               setActiveChildId(childrenProfiles[0].id);
-              localStorage.setItem("ilmunabi_active_id", childrenProfiles[0].id);
+              safeStorage.setItem("ilmunabi_active_id", childrenProfiles[0].id);
             } else {
               setActiveChildId(null);
             }
@@ -187,8 +214,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   // Save localized settings to local storage on state change
   useEffect(() => {
-    localStorage.setItem("ilmunabi_streak", streak.toString());
-    localStorage.setItem("ilmunabi_lang", lang);
+    safeStorage.setItem("ilmunabi_streak", streak.toString());
+    safeStorage.setItem("ilmunabi_lang", lang);
   }, [streak, lang]);
 
   // Calculate Trial Remaining
@@ -251,13 +278,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
     setProfiles((prev) => [...prev, newProfile]);
     setActiveChildId(data.id);
-    localStorage.setItem("ilmunabi_active_id", data.id);
+    safeStorage.setItem("ilmunabi_active_id", data.id);
     return data.id;
   };
 
   const switchProfile = (id: string) => {
     setActiveChildId(id);
-    localStorage.setItem("ilmunabi_active_id", id);
+    safeStorage.setItem("ilmunabi_active_id", id);
   };
 
   const deleteProfile = async (id: string) => {
@@ -277,9 +304,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       const nextActiveId = remaining.length > 0 ? remaining[0].id : null;
       setActiveChildId(nextActiveId);
       if (nextActiveId) {
-        localStorage.setItem("ilmunabi_active_id", nextActiveId);
+        safeStorage.setItem("ilmunabi_active_id", nextActiveId);
       } else {
-        localStorage.removeItem("ilmunabi_active_id");
+        safeStorage.removeItem("ilmunabi_active_id");
       }
     }
   };
