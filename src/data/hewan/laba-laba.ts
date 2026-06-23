@@ -43,8 +43,11 @@ export const labaLabaData: ObjectData = {
       en: "Interesting facts about Laba-laba: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Laba-laba diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Laba-laba was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Laba-laba dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Laba-laba in the Qur'an so humans observe the science behind it." }
+      { id: "Sutra jaring laba-laba lebih kuat dari kawat baja dengan ketebalan yang sama.", en: "Sutra jaring laba-laba lebih kuat dari kawat baja dengan ketebalan yang sama." },
+      { id: "Laba-laba bukan serangga; mereka masuk kelompok arakhnida berkaki delapan.", en: "Laba-laba bukan serangga; mereka masuk kelompok arakhnida berkaki delapan." },
+      { id: "Jaring laba-laba dilapisi lem lengket untuk menangkap serangga terbang.", en: "Jaring laba-laba dilapisi lem lengket untuk menangkap serangga terbang." },
+      { id: "Sebagian besar laba-laba memiliki 8 mata untuk melihat ke segala arah.", en: "Sebagian besar laba-laba memiliki 8 mata untuk melihat ke segala arah." },
+      { id: "Laba-laba membantu petani dengan memakan serangga hama tanaman.", en: "Laba-laba membantu petani dengan memakan serangga hama tanaman." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const labaLabaData: ObjectData = {
       en: "Exploration of the anatomy and structure of Laba-laba reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Organ Pemintal", en: "Organ Pemintal" }, desc: { id: "Mengeluarkan sutra cair yang langsung mengeras saat terkena udara.", en: "Mengeluarkan sutra cair yang langsung mengeras saat terkena udara." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Laba-laba di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Laba-laba in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Al-Ankabut 29:41, Allah mengibaratkan pelindung selain Allah seperti sarang laba-laba, rumah yang paling rapuh. Secara sains, meski sutra pembentuknya kuat, jaring laba-laba tidak mampu melindungi penghuninya dari cuaca ekstrim, angin kencang, air hujan, atau predator besar.",
+      en: "Dalam Surah Al-Ankabut 29:41, Allah mengibaratkan pelindung selain Allah seperti sarang laba-laba, rumah yang paling rapuh. Secara sains, meski sutra pembentuknya kuat, jaring laba-laba tidak mampu melindungi penghuninya dari cuaca ekstrim, angin kencang, air hujan, atau predator besar.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

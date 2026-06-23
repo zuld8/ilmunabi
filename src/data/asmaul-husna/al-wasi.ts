@@ -10,7 +10,7 @@ export const alWasiData: AsmaulHusnaData = {
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْوَASِعُ",
+  arabicWithHarakat: "الْوَاسِعُ",
   transliteration: "Al-Wasi",
   meaning: {
     id: "Maha Luas",

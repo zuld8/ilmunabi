@@ -43,8 +43,9 @@ export const beruangData: ObjectData = {
       en: "Interesting facts about Beruang: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Beruang diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Beruang was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Beruang dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Beruang in the Qur'an so humans observe the science behind it." }
+      { id: "Beruang memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Beruang memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
+      { id: "Setiap sel dan organ tubuh Beruang bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Beruang bekerja dalam keseimbangan ekosistem yang luar biasa." },
+      { id: "Allah SWT menciptakan Beruang dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Beruang dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const beruangData: ObjectData = {
       en: "Exploration of the anatomy and structure of Beruang reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Beruang di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Beruang in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban penciptaan Beruang: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Beruang dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
+      en: "Keajaiban penciptaan Beruang: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Beruang dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

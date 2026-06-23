@@ -10,7 +10,7 @@ export const alBasitData: AsmaulHusnaData = {
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْبَاسِطُ",
+  arabicWithHarakat: "الْبَASِطُ",
   transliteration: "Al-Basit",
   meaning: {
     id: "Maha Melapangkan",

@@ -43,8 +43,11 @@ export const untaData: ObjectData = {
       en: "Interesting facts about Unta: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Unta diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Unta was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Unta dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Unta in the Qur'an so humans observe the science behind it." }
+      { id: "Unta dapat bertahan hidup berbulan-bulan di gurun pasir tanpa minum air.", en: "Unta dapat bertahan hidup berbulan-bulan di gurun pasir tanpa minum air." },
+      { id: "Punuk unta menyimpan lemak cadangan energi, bukan air seperti anggapan umum.", en: "Punuk unta menyimpan lemak cadangan energi, bukan air seperti anggapan umum." },
+      { id: "Unta memiliki tiga pasang kelopak mata dan bulu mata panjang untuk menghalau pasir.", en: "Unta memiliki tiga pasang kelopak mata dan bulu mata panjang untuk menghalau pasir." },
+      { id: "Unta bisa menutup lubang hidungnya saat terjadi badai pasir gurun.", en: "Unta bisa menutup lubang hidungnya saat terjadi badai pasir gurun." },
+      { id: "Sel darah merah unta berbentuk oval sehingga tetap mengalir lancar saat dehidrasi.", en: "Sel darah merah unta berbentuk oval sehingga tetap mengalir lancar saat dehidrasi." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const untaData: ObjectData = {
       en: "Exploration of the anatomy and structure of Unta reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Telapak Kaki Lebar", en: "Telapak Kaki Lebar" }, desc: { id: "Berselaput tebal agar tidak terperosok ke dalam pasir panas.", en: "Berselaput tebal agar tidak terperosok ke dalam pasir panas." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Unta di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Unta in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Al-Ghashiyah 88:17, Allah menyuruh manusia mengamati bagaimana unta diciptakan. Unta memiliki keajaiban sains berupa kemampuan minum 150 liter air sekali minum, dan suhu tubuhnya bisa menyesuaikan diri dengan panas gurun (34C-41C) agar tidak membuang air melalui keringat.",
+      en: "Dalam Surah Al-Ghashiyah 88:17, Allah menyuruh manusia mengamati bagaimana unta diciptakan. Unta memiliki keajaiban sains berupa kemampuan minum 150 liter air sekali minum, dan suhu tubuhnya bisa menyesuaikan diri dengan panas gurun (34C-41C) agar tidak membuang air melalui keringat.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

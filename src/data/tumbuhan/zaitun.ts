@@ -43,8 +43,11 @@ export const zaitunData: ObjectData = {
       en: "Interesting facts about Zaitun: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Zaitun diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Zaitun was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Zaitun dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Zaitun in the Qur'an so humans observe the science behind it." }
+      { id: "Pohon zaitun terkenal sangat panjang umur, bisa hidup ribuan tahun.", en: "Pohon zaitun terkenal sangat panjang umur, bisa hidup ribuan tahun." },
+      { id: "Minyak zaitun mengandung lemak tak jenuh tunggal yang menyehatkan jantung.", en: "Minyak zaitun mengandung lemak tak jenuh tunggal yang menyehatkan jantung." },
+      { id: "Pohon zaitun tetap hijau sepanjang tahun (evergreen).", en: "Pohon zaitun tetap hijau sepanjang tahun (evergreen)." },
+      { id: "Zaitun mentah rasanya pahit dan harus difermentasi dahulu sebelum dimakan.", en: "Zaitun mentah rasanya pahit dan harus difermentasi dahulu sebelum dimakan." },
+      { id: "Cabang zaitun adalah simbol perdamaian universal sejak zaman kuno.", en: "Cabang zaitun adalah simbol perdamaian universal sejak zaman kuno." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const zaitunData: ObjectData = {
       en: "Exploration of the anatomy and structure of Zaitun reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Daun Berlapis Lilin", en: "Daun Berlapis Lilin" }, desc: { id: "Mencegah penguapan air di cuaca mediterania yang terik.", en: "Mencegah penguapan air di cuaca mediterania yang terik." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Zaitun di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Zaitun in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah An-Nur 24:35, Allah mengibaratkan cahaya-Nya seperti minyak pohon zaitun yang diberkahi. Secara sains, minyak zaitun murni memiliki struktur kimia yang sangat stabil dan mampu memancarkan cahaya lampu minyak yang sangat jernih tanpa banyak asap.",
+      en: "Dalam Surah An-Nur 24:35, Allah mengibaratkan cahaya-Nya seperti minyak pohon zaitun yang diberkahi. Secara sains, minyak zaitun murni memiliki struktur kimia yang sangat stabil dan mampu memancarkan cahaya lampu minyak yang sangat jernih tanpa banyak asap.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

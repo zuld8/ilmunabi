@@ -43,8 +43,11 @@ export const jantungData: ObjectData = {
       en: "Interesting facts about Jantung: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Jantung diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Jantung was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Jantung dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Jantung in the Qur'an so humans observe the science behind it." }
+      { id: "Jantung manusia berdetak sekitar 100.000 kali dalam satu hari.", en: "Jantung manusia berdetak sekitar 100.000 kali dalam satu hari." },
+      { id: "Jantung memompa sekitar 7.500 liter darah ke seluruh tubuh setiap hari.", en: "Jantung memompa sekitar 7.500 liter darah ke seluruh tubuh setiap hari." },
+      { id: "Ukuran jantung kita kira-kira sebesar kepalan tangan kita sendiri.", en: "Ukuran jantung kita kira-kira sebesar kepalan tangan kita sendiri." },
+      { id: "Jantung memiliki sistem listriknya sendiri yang membuatnya terus berdetak.", en: "Jantung memiliki sistem listriknya sendiri yang membuatnya terus berdetak." },
+      { id: "Detak jantung kita melambat saat tidur dan berdetak lebih cepat saat olahraga.", en: "Detak jantung kita melambat saat tidur dan berdetak lebih cepat saat olahraga." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const jantungData: ObjectData = {
       en: "Exploration of the anatomy and structure of Jantung reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "4 Ruang Jantung", en: "4 Ruang Jantung" }, desc: { id: "Katup satu arah mencegah darah bercampur atau mengalir mundur.", en: "Katup satu arah mencegah darah bercampur atau mengalir mundur." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Jantung di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Jantung in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Qaf 50:37, Allah menyebutkan pentingnya qalb (jantung/hati) sebagai pusat kesadaran dan pemahaman. Sains modern membuktikan jantung memiliki sistem saraf intrinsik ('otak jantung') yang terdiri dari 40.000 neuron yang berkomunikasi dua arah dengan otak kepala.",
+      en: "Dalam Surah Qaf 50:37, Allah menyebutkan pentingnya qalb (jantung/hati) sebagai pusat kesadaran dan pemahaman. Sains modern membuktikan jantung memiliki sistem saraf intrinsik ('otak jantung') yang terdiri dari 40.000 neuron yang berkomunikasi dua arah dengan otak kepala.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

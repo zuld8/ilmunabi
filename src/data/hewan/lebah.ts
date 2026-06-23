@@ -43,8 +43,11 @@ export const lebahData: ObjectData = {
       en: "Interesting facts about Lebah: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Lebah diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Lebah was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Lebah dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Lebah in the Qur'an so humans observe the science behind it." }
+      { id: "Lebah madu mengepakkan sayapnya sekitar 200 kali per detik untuk terbang.", en: "Lebah madu mengepakkan sayapnya sekitar 200 kali per detik untuk terbang." },
+      { id: "Lebah madu berkomunikasi dengan menari (waggle dance) untuk menunjukkan lokasi bunga.", en: "Lebah madu berkomunikasi dengan menari (waggle dance) untuk menunjukkan lokasi bunga." },
+      { id: "Lebah memiliki 5 mata: 2 mata majemuk besar dan 3 mata kecil di atas kepalanya.", en: "Lebah memiliki 5 mata: 2 mata majemuk besar dan 3 mata kecil di atas kepalanya." },
+      { id: "Madu yang dihasilkan lebah adalah satu-satunya makanan yang tidak pernah basi selama ribuan tahun.", en: "Madu yang dihasilkan lebah adalah satu-satunya makanan yang tidak pernah basi selama ribuan tahun." },
+      { id: "Satu koloni lebah bisa berisi hingga 60.000 lebah yang bekerja sama dengan sangat rapi.", en: "Satu koloni lebah bisa berisi hingga 60.000 lebah yang bekerja sama dengan sangat rapi." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const lebahData: ObjectData = {
       en: "Exploration of the anatomy and structure of Lebah reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Kantong Madu", en: "Kantong Madu" }, desc: { id: "Tempat menyimpan nektar di perut terpisah dari pencernaan biasa.", en: "Tempat menyimpan nektar di perut terpisah dari pencernaan biasa." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Lebah di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Lebah in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah An-Nahl 16:68-69, Allah memerintahkan lebah untuk membuat sarang di gunung dan pohon. Allah menyebutkan cairan madu dari perut lebah beraneka warna dan mengandung obat penyembuh. Sains modern membuktikan madu memiliki kandungan antiseptik, zat besi, dan vitamin yang mempercepat penyembuhan luka secara luar biasa.",
+      en: "Dalam Surah An-Nahl 16:68-69, Allah memerintahkan lebah untuk membuat sarang di gunung dan pohon. Allah menyebutkan cairan madu dari perut lebah beraneka warna dan mengandung obat penyembuh. Sains modern membuktikan madu memiliki kandungan antiseptik, zat besi, dan vitamin yang mempercepat penyembuhan luka secara luar biasa.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

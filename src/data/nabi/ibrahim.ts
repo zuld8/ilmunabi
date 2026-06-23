@@ -11,32 +11,28 @@ export const ibrahimData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   storyShort: {
-    id: "Kisah perjuangan dakwah keteladanan mulia Nabi Ibrahim A.S. kepada kaumnya.",
-    en: "The story of Nabi Ibrahim A.S.'s struggle in preaching and leading as a noble role model.",
+    id: "Bapak para nabi, tidak mempan dibakar api Raja Namrud, dan membangun Ka'bah bersama Nabi Ismail A.S.",
+    en: "Bapak para nabi, tidak mempan dibakar api Raja Namrud, dan membangun Ka'bah bersama Nabi Ismail A.S.",
   },
   storyFull: {
-    id: "Kisah lengkap keteladanan Nabi Ibrahim A.S.. Beliau diutus oleh Allah SWT untuk membimbing umatnya ke jalan kebenaran dengan penuh kesabaran, mukjizat, dan kasih sayang yang luar biasa.",
-    en: "The full story of Nabi Ibrahim A.S.. He was sent by Allah SWT to guide his people to the path of truth with immense patience, miracles, and extraordinary love.",
+    id: "Nabi Ibrahim A.S. adalah Khalilullah (Kekasih Allah). Beliau menghancurkan berhala-berhala Raja Namrud untuk menunjukkan ketidakberdayaan mereka. Akibatnya, beliau dihukum bakar hidup-hidup, namun Allah berfirman kepada api agar menjadi dingin dan menyelamatkan Nabi Ibrahim. Beliau juga diperintahkan menyembelih putranya Ismail yang kemudian diganti domba, serta membangun Ka'bah di Makkah.",
+    en: "Nabi Ibrahim A.S. adalah Khalilullah (Kekasih Allah). Beliau menghancurkan berhala-berhala Raja Namrud untuk menunjukkan ketidakberdayaan mereka. Akibatnya, beliau dihukum bakar hidup-hidup, namun Allah berfirman kepada api agar menjadi dingin dan menyelamatkan Nabi Ibrahim. Beliau juga diperintahkan menyembelih putranya Ismail yang kemudian diganti domba, serta membangun Ka'bah di Makkah.",
   },
   miracles: [
-    { id: "Mendapat petunjuk dan kekuatan dakwah dari Allah SWT.", en: "Blessed with guidance and strength in preaching from Allah SWT." }
+    { id: "Api raksasa menjadi dingin dan damai saat beliau dibakar.", en: "Api raksasa menjadi dingin dan damai saat beliau dibakar." },
+    { id: "Ketaatan mengurbankan Ismail diganti dengan domba dari surga.", en: "Ketaatan mengurbankan Ismail diganti dengan domba dari surga." }
   ],
   characterTraits: [
-    {
-      trait: { id: "Sabar", en: "Patience" },
-      desc: { id: "Menghadapi segala rintangan dakwah dengan tenang dan tawakal.", en: "Confronted all obstacles in preaching with calmness and trust in Allah." }
-    }
+    { trait: { id: "Pemberani", en: "Pemberani" }, desc: { id: "Berani menyampaikan kebenaran tentang keesaan Allah di depan raja kejam.", en: "Berani menyampaikan kebenaran tentang keesaan Allah di depan raja kejam." } }
   ],
   timeline: [
-    {
-      yearOrAge: "Awal",
-      title: { id: "Menerima Wahyu", en: "Receiving Revelation" },
-      desc: { id: "Allah memilihnya sebagai nabi dan rasul pembawa kebenaran.", en: "Allah chose him as a prophet and messenger of truth." }
-    }
+    { yearOrAge: "Muda", title: { id: "Dilemparkan ke Api", en: "Dilemparkan ke Api" }, desc: { id: "Dihukum bakar oleh Namrud, namun api terasa dingin menyegarkan.", en: "Dihukum bakar oleh Namrud, namun api terasa dingin menyegarkan." } },
+    { yearOrAge: "Kurban", title: { id: "Kurban & Zamzam", en: "Kurban & Zamzam" }, desc: { id: "Keteladanan kepatuhan kurban luar biasa digantikan domba surga.", en: "Keteladanan kepatuhan kurban luar biasa digantikan domba surga." } },
+    { yearOrAge: "Tua", title: { id: "Membangun Ka'bah", en: "Membangun Ka'bah" }, desc: { id: "Mendirikan bangunan suci Ka'bah bersama Ismail.", en: "Mendirikan bangunan suci Ka'bah bersama Ismail." } }
   ],
   dailyLifeConnection: {
-    id: "Kita harus meniru akhlak mulia Nabi Ibrahim A.S. dalam kehidupan sehari-hari seperti berkata jujur dan rajin beribadah.",
-    en: "We must emulate Nabi Ibrahim A.S.'s noble character in daily life, such as telling the truth and praying diligently.",
+    id: "Kita harus berani membela kebenaran dan selalu taat serta berbakti kepada orang tua kita.",
+    en: "Kita harus berani membela kebenaran dan selalu taat serta berbakti kepada orang tua kita.",
   },
   surahReference: "Al-Baqarah 2:124-131",
 };

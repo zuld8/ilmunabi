@@ -5,15 +5,15 @@ import { untaData } from "./unta";
 import { nyamukData } from "./nyamuk";
 import { gajahData } from "./gajah";
 import { lalatData } from "./lalat";
-import { hudhudData } from "./hudhud";
+import { burungHudhudData } from "./burung-hudhud";
 import { sapiData } from "./sapi";
 import { anjingData } from "./anjing";
 import { keledaiData } from "./keledai";
 import { kudaData } from "./kuda";
 import { babiData } from "./babi";
 import { monyetData } from "./monyet";
-import { pausData } from "./paus";
-import { gagakData } from "./gagak";
+import { ikanPausData } from "./ikan-paus";
+import { burungGagakData } from "./burung-gagak";
 import { dombaData } from "./domba";
 import { kambingData } from "./kambing";
 import { singaData } from "./singa";
@@ -55,197 +55,6 @@ import { axolotlData } from "./axolotl";
 import { tokekData } from "./tokek";
 import { bintangLautData } from "./bintang-laut";
 import { kudaLautData } from "./kuda-laut";
-import { cheetahData } from "./cheetah";
-import { leopardData } from "./leopard";
-import { jaguarData } from "./jaguar";
-import { pumaData } from "./puma";
-import { simpanseData } from "./simpanse";
-import { orangutanData } from "./orangutan";
-import { baboonData } from "./baboon";
-import { lemurData } from "./lemur";
-import { slothData } from "./sloth";
-import { hamsterData } from "./hamster";
-import { tikusData } from "./tikus";
-import { marmutData } from "./marmut";
-import { kelelawarData } from "./kelelawar";
-import { meerkatData } from "./meerkat";
-import { hyenaData } from "./hyena";
-import { badakData } from "./badak";
-import { kudaNilData } from "./kuda-nil";
-import { bisonData } from "./bison";
-import { kerbauData } from "./kerbau";
-import { bantengData } from "./banteng";
-import { yakData } from "./yak";
-import { okapiData } from "./okapi";
-import { tapirData } from "./tapir";
-import { anteaterData } from "./anteater";
-import { armadilloData } from "./armadillo";
-import { landakData } from "./landak";
-import { wombatData } from "./wombat";
-import { wallabyData } from "./wallaby";
-import { koalaBearData } from "./koala-bear";
-import { redPandaData } from "./red-panda";
-import { giantPandaData } from "./giant-panda";
-import { sunBearData } from "./sun-bear";
-import { polarBearData } from "./polar-bear";
-import { grizzlyBearData } from "./grizzly-bear";
-import { blackBearData } from "./black-bear";
-import { coyoteData } from "./coyote";
-import { jackalData } from "./jackal";
-import { dingoData } from "./dingo";
-import { africanWildDogData } from "./african-wild-dog";
-import { badgerData } from "./badger";
-import { wolverineData } from "./wolverine";
-import { otterData } from "./otter";
-import { seaOtterData } from "./sea-otter";
-import { raccoonData } from "./raccoon";
-import { beaverData } from "./beaver";
-import { porcupineAmericanData } from "./porcupine-american";
-import { hedgehogAfricanData } from "./hedgehog-african";
-import { moleStarData } from "./mole-star";
-import { shrewWaterData } from "./shrew-water";
-import { opossumVirginiaData } from "./opossum-virginia";
-import { echidnaSpinyData } from "./echidna-spiny";
-import { squirrelRedData } from "./squirrel-red";
-import { flyingSquirrelJapaneseData } from "./flying-squirrel-japanese";
-import { chipmunkSiberianData } from "./chipmunk-siberian";
-import { gopherPocketData } from "./gopher-pocket";
-import { marmotAlpineData } from "./marmot-alpine";
-import { lemmingNorwayData } from "./lemming-norway";
-import { voleMeadowData } from "./vole-meadow";
-import { muskratRiverData } from "./muskrat-river";
-import { chinchillaDomesticData } from "./chinchilla-domestic";
-import { guineaPigAbyssinianData } from "./guinea-pig-abyssinian";
-import { capybaraGiantData } from "./capybara-giant";
-import { agoutiGoldenData } from "./agouti-golden";
-import { pacaLowlandData } from "./paca-lowland";
-import { maraPatagonianData } from "./mara-patagonian";
-import { treeShrewCommonData } from "./tree-shrew-common";
-import { galagoSenegalData } from "./galago-senegal";
-import { bushbabyLesserData } from "./bushbaby-lesser";
-import { pottoWestAfricanData } from "./potto-west-african";
-import { lorisBengalData } from "./loris-bengal";
-import { slowLorisPygmyData } from "./slow-loris-pygmy";
-import { tarsierSpectralData } from "./tarsier-spectral";
-import { marmosetCommonData } from "./marmoset-common";
-import { tamarinsRedHandedData } from "./tamarins-red-handed";
-import { squirrelMonkeyCommonData } from "./squirrel-monkey-common";
-import { capuchinMonkeyWhiteFacedData } from "./capuchin-monkey-white-faced";
-import { howlerMonkeyRedData } from "./howler-monkey-red";
-import { spiderMonkeyBlackData } from "./spider-monkey-black";
-import { woollyMonkeyCommonData } from "./woolly-monkey-common";
-import { macaqueCrabEatingData } from "./macaque-crab-eating";
-import { baboonOliveData } from "./baboon-olive";
-import { mandrillMonkeyData } from "./mandrill-monkey";
-import { drillMonkeyData } from "./drill-monkey";
-import { colobusMonkeyBlackAndWhiteData } from "./colobus-monkey-black-and-white";
-import { langurGrayData } from "./langur-gray";
-import { proboscisMonkeyData } from "./proboscis-monkey";
-import { gibbonLarData } from "./gibbon-lar";
-import { siamangBlackData } from "./siamang-black";
-import { chimpanzeePygmyData } from "./chimpanzee-pygmy";
-import { gorillaMountainData } from "./gorilla-mountain";
-import { ikanPariEkorCambukData } from "./ikan-pari-ekor-cambuk";
-import { hiuPausRaksasaData } from "./hiu-paus-raksasa";
-import { cumiCumiRaksasaLautData } from "./cumi-cumi-raksasa-laut";
-import { mantaRayReefData } from "./manta-ray-reef";
-import { uburUburBulanData } from "./ubur-ubur-bulan";
-import { lobsterLautData } from "./lobster-laut";
-import { kerangDarahData } from "./kerang-darah";
-import { tiramTumbuhData } from "./tiram-tumbuh";
-import { bekicotDaratData } from "./bekicot-darat";
-import { buluBabiHitamData } from "./bulu-babi-hitam";
-import { teripangPasirData } from "./teripang-pasir";
-import { karangOtakData } from "./karang-otak";
-import { anemonLautData } from "./anemon-laut";
-import { belutSawahData } from "./belut-sawah";
-import { ikanSalmonAtlantikData } from "./ikan-salmon-atlantik";
-import { ikanTunaSiripBiruData } from "./ikan-tuna-sirip-biru";
-import { ikanKodAtlantikData } from "./ikan-kod-atlantik";
-import { ikanKembungData } from "./ikan-kembung";
-import { ikanTroutPelangiData } from "./ikan-trout-pelangi";
-import { ikanSardenData } from "./ikan-sarden";
-import { ikanTeriData } from "./ikan-teri";
-import { ikanLayurLautData } from "./ikan-layur-laut";
-import { ikanBelidaData } from "./ikan-belida";
-import { kepitingBakauBesarData } from "./kepiting-bakau-besar";
-import { kepitingSokaData } from "./kepiting-soka";
-import { kepitingKenariRaksasaData } from "./kepiting-kenari-raksasa";
-import { rajunganBintangData } from "./rajungan-bintang";
-import { udangWinduLautData } from "./udang-windu-laut";
-import { udangGalahSungaiData } from "./udang-galah-sungai";
-import { udangRonggengData } from "./udang-ronggeng";
-import { lobsterAirTawarBiruData } from "./lobster-air-tawar-biru";
-import { undurUndurPasirData } from "./undur-undur-pasir";
-import { semutJepangData } from "./semut-jepang";
-import { kumbangTandukRaksasaData } from "./kumbang-tanduk-raksasa";
-import { kumbangKoksiTotolData } from "./kumbang-koksi-totol";
-import { kumbangKotoranAfrikaData } from "./kumbang-kotoran-afrika";
-import { kumbangAirRaksasaData } from "./kumbang-air-raksasa";
-import { belalangSembahHijauData } from "./belalang-sembah-hijau";
-import { belalangDaunKamuflaseData } from "./belalang-daun-kamuflase";
-import { belalangKayuCokelatData } from "./belalang-kayu-cokelat";
-import { jangkrikSawahHitamData } from "./jangkrik-sawah-hitam";
-import { ulatSutraPutihData } from "./ulat-sutra-putih";
-import { ulatSaguPapuaData } from "./ulat-sagu-papua";
-import { ulatBuluRacunData } from "./ulat-bulu-racun";
-import { cacingTanahSuburData } from "./cacing-tanah-subur";
-import { lintahAirTawarData } from "./lintah-air-tawar";
-import { pacatHutanData } from "./pacat-hutan";
-import { keongSawahKuningData } from "./keong-sawah-kuning";
-import { kerangDaraRebusData } from "./kerang-dara-rebus";
-import { kerangHijauLautData } from "./kerang-hijau-laut";
-import { kerangBuluHitamData } from "./kerang-bulu-hitam";
-import { kerangBambuGurihData } from "./kerang-bambu-gurih";
-import { sotongKarangData } from "./sotong-karang";
-import { guritaRaksasaPasifikData } from "./gurita-raksasa-pasifik";
-import { uburUburKotakSengatData } from "./ubur-ubur-kotak-sengat";
-import { ikanGuppyHiasData } from "./ikan-guppy-hias";
-import { ikanCupangAduanData } from "./ikan-cupang-aduan";
-import { ikanMasKokiBulatData } from "./ikan-mas-koki-bulat";
-import { ikanKoiJepangData } from "./ikan-koi-jepang";
-import { ikanDiscusAmazonData } from "./ikan-discus-amazon";
-import { ikanLouhanJenongData } from "./ikan-louhan-jenong";
-import { ikanMollyHitamData } from "./ikan-molly-hitam";
-import { ikanPlatyMerahData } from "./ikan-platy-merah";
-import { ikanNeonTetraBersinarData } from "./ikan-neon-tetra-bersinar";
-import { ikanZebraBelangData } from "./ikan-zebra-belang";
-import { anoaPegununganData } from "./anoa-pegunungan";
-import { babirusaSulawesiData } from "./babirusa-sulawesi";
-import { bekantanKalimantanData } from "./bekantan-kalimantan";
-import { tarsiusKerdilData } from "./tarsius-kerdil";
-import { keraHantuSulawesiData } from "./kera-hantu-sulawesi";
-import { burungMaleoData } from "./burung-maleo";
-import { burungCendrawasihData } from "./burung-cendrawasih";
-import { burungKasuariGelambirData } from "./burung-kasuari-gelambir";
-import { burungKakatuaPutihData } from "./burung-kakatua-putih";
-import { burungNuriMerahData } from "./burung-nuri-merah";
-import { burungJalakBaliData } from "./burung-jalak-bali";
-import { burungElangJawaData } from "./burung-elang-jawa";
-import { harimauSumatraData } from "./harimau-sumatra";
-import { gajahSumatraData } from "./gajah-sumatra";
-import { badakJawaBerculaSatuData } from "./badak-jawa-bercula-satu";
-import { orangutanSumatraData } from "./orangutan-sumatra";
-import { pesutMahakamData } from "./pesut-mahakam";
-import { ikanArwanaSuperRedData } from "./ikan-arwana-super-red";
-import { ikanGurameRaksasaData } from "./ikan-gurame-raksasa";
-import { ikanLeleDumboData } from "./ikan-lele-dumbo";
-import { ikanPatinSungaiData } from "./ikan-patin-sungai";
-import { ikanNilaMerahData } from "./ikan-nila-merah";
-import { ikanBandengPayauData } from "./ikan-bandeng-payau";
-import { ikanKakapMerahData } from "./ikan-kakap-merah";
-import { ikanKerapuMacanData } from "./ikan-kerapu-macan";
-import { ikanBaronangSusuData } from "./ikan-baronang-susu";
-import { ikanTenggiriPapanData } from "./ikan-tenggiri-papan";
-import { ikanTongkolKomoData } from "./ikan-tongkol-komo";
-import { anjingLautPelabuhanData } from "./anjing-laut-pelabuhan";
-import { dugongPasifikData } from "./dugong-pasifik";
-import { rusaKutubKutubData } from "./rusa-kutub-kutub";
-import { elangBotakAmerikaData } from "./elang-botak-amerika";
-import { burungHantuSaljuData } from "./burung-hantu-salju";
-import { burungFlamingoChiliData } from "./burung-flamingo-chili";
-import { burungMerakBiruIndiaData } from "./burung-merak-biru-india";
-import { burungMerpatiPosData } from "./burung-merpati-pos";
 import { faunaUnik1Data } from "./fauna-unik-1";
 import { faunaUnik2Data } from "./fauna-unik-2";
 import { faunaUnik3Data } from "./fauna-unik-3";
@@ -298,6 +107,197 @@ import { faunaUnik49Data } from "./fauna-unik-49";
 import { faunaUnik50Data } from "./fauna-unik-50";
 import { faunaUnik51Data } from "./fauna-unik-51";
 import { faunaUnik52Data } from "./fauna-unik-52";
+import { faunaUnik53Data } from "./fauna-unik-53";
+import { faunaUnik54Data } from "./fauna-unik-54";
+import { faunaUnik55Data } from "./fauna-unik-55";
+import { faunaUnik56Data } from "./fauna-unik-56";
+import { faunaUnik57Data } from "./fauna-unik-57";
+import { faunaUnik58Data } from "./fauna-unik-58";
+import { faunaUnik59Data } from "./fauna-unik-59";
+import { faunaUnik60Data } from "./fauna-unik-60";
+import { faunaUnik61Data } from "./fauna-unik-61";
+import { faunaUnik62Data } from "./fauna-unik-62";
+import { faunaUnik63Data } from "./fauna-unik-63";
+import { faunaUnik64Data } from "./fauna-unik-64";
+import { faunaUnik65Data } from "./fauna-unik-65";
+import { faunaUnik66Data } from "./fauna-unik-66";
+import { faunaUnik67Data } from "./fauna-unik-67";
+import { faunaUnik68Data } from "./fauna-unik-68";
+import { faunaUnik69Data } from "./fauna-unik-69";
+import { faunaUnik70Data } from "./fauna-unik-70";
+import { faunaUnik71Data } from "./fauna-unik-71";
+import { faunaUnik72Data } from "./fauna-unik-72";
+import { faunaUnik73Data } from "./fauna-unik-73";
+import { faunaUnik74Data } from "./fauna-unik-74";
+import { faunaUnik75Data } from "./fauna-unik-75";
+import { faunaUnik76Data } from "./fauna-unik-76";
+import { faunaUnik77Data } from "./fauna-unik-77";
+import { faunaUnik78Data } from "./fauna-unik-78";
+import { faunaUnik79Data } from "./fauna-unik-79";
+import { faunaUnik80Data } from "./fauna-unik-80";
+import { faunaUnik81Data } from "./fauna-unik-81";
+import { faunaUnik82Data } from "./fauna-unik-82";
+import { faunaUnik83Data } from "./fauna-unik-83";
+import { faunaUnik84Data } from "./fauna-unik-84";
+import { faunaUnik85Data } from "./fauna-unik-85";
+import { faunaUnik86Data } from "./fauna-unik-86";
+import { faunaUnik87Data } from "./fauna-unik-87";
+import { faunaUnik88Data } from "./fauna-unik-88";
+import { faunaUnik89Data } from "./fauna-unik-89";
+import { faunaUnik90Data } from "./fauna-unik-90";
+import { faunaUnik91Data } from "./fauna-unik-91";
+import { faunaUnik92Data } from "./fauna-unik-92";
+import { faunaUnik93Data } from "./fauna-unik-93";
+import { faunaUnik94Data } from "./fauna-unik-94";
+import { faunaUnik95Data } from "./fauna-unik-95";
+import { faunaUnik96Data } from "./fauna-unik-96";
+import { faunaUnik97Data } from "./fauna-unik-97";
+import { faunaUnik98Data } from "./fauna-unik-98";
+import { faunaUnik99Data } from "./fauna-unik-99";
+import { faunaUnik100Data } from "./fauna-unik-100";
+import { faunaUnik101Data } from "./fauna-unik-101";
+import { faunaUnik102Data } from "./fauna-unik-102";
+import { faunaUnik103Data } from "./fauna-unik-103";
+import { faunaUnik104Data } from "./fauna-unik-104";
+import { faunaUnik105Data } from "./fauna-unik-105";
+import { faunaUnik106Data } from "./fauna-unik-106";
+import { faunaUnik107Data } from "./fauna-unik-107";
+import { faunaUnik108Data } from "./fauna-unik-108";
+import { faunaUnik109Data } from "./fauna-unik-109";
+import { faunaUnik110Data } from "./fauna-unik-110";
+import { faunaUnik111Data } from "./fauna-unik-111";
+import { faunaUnik112Data } from "./fauna-unik-112";
+import { faunaUnik113Data } from "./fauna-unik-113";
+import { faunaUnik114Data } from "./fauna-unik-114";
+import { faunaUnik115Data } from "./fauna-unik-115";
+import { faunaUnik116Data } from "./fauna-unik-116";
+import { faunaUnik117Data } from "./fauna-unik-117";
+import { faunaUnik118Data } from "./fauna-unik-118";
+import { faunaUnik119Data } from "./fauna-unik-119";
+import { faunaUnik120Data } from "./fauna-unik-120";
+import { faunaUnik121Data } from "./fauna-unik-121";
+import { faunaUnik122Data } from "./fauna-unik-122";
+import { faunaUnik123Data } from "./fauna-unik-123";
+import { faunaUnik124Data } from "./fauna-unik-124";
+import { faunaUnik125Data } from "./fauna-unik-125";
+import { faunaUnik126Data } from "./fauna-unik-126";
+import { faunaUnik127Data } from "./fauna-unik-127";
+import { faunaUnik128Data } from "./fauna-unik-128";
+import { faunaUnik129Data } from "./fauna-unik-129";
+import { faunaUnik130Data } from "./fauna-unik-130";
+import { faunaUnik131Data } from "./fauna-unik-131";
+import { faunaUnik132Data } from "./fauna-unik-132";
+import { faunaUnik133Data } from "./fauna-unik-133";
+import { faunaUnik134Data } from "./fauna-unik-134";
+import { faunaUnik135Data } from "./fauna-unik-135";
+import { faunaUnik136Data } from "./fauna-unik-136";
+import { faunaUnik137Data } from "./fauna-unik-137";
+import { faunaUnik138Data } from "./fauna-unik-138";
+import { faunaUnik139Data } from "./fauna-unik-139";
+import { faunaUnik140Data } from "./fauna-unik-140";
+import { faunaUnik141Data } from "./fauna-unik-141";
+import { faunaUnik142Data } from "./fauna-unik-142";
+import { faunaUnik143Data } from "./fauna-unik-143";
+import { faunaUnik144Data } from "./fauna-unik-144";
+import { faunaUnik145Data } from "./fauna-unik-145";
+import { faunaUnik146Data } from "./fauna-unik-146";
+import { faunaUnik147Data } from "./fauna-unik-147";
+import { faunaUnik148Data } from "./fauna-unik-148";
+import { faunaUnik149Data } from "./fauna-unik-149";
+import { faunaUnik150Data } from "./fauna-unik-150";
+import { faunaUnik151Data } from "./fauna-unik-151";
+import { faunaUnik152Data } from "./fauna-unik-152";
+import { faunaUnik153Data } from "./fauna-unik-153";
+import { faunaUnik154Data } from "./fauna-unik-154";
+import { faunaUnik155Data } from "./fauna-unik-155";
+import { faunaUnik156Data } from "./fauna-unik-156";
+import { faunaUnik157Data } from "./fauna-unik-157";
+import { faunaUnik158Data } from "./fauna-unik-158";
+import { faunaUnik159Data } from "./fauna-unik-159";
+import { faunaUnik160Data } from "./fauna-unik-160";
+import { faunaUnik161Data } from "./fauna-unik-161";
+import { faunaUnik162Data } from "./fauna-unik-162";
+import { faunaUnik163Data } from "./fauna-unik-163";
+import { faunaUnik164Data } from "./fauna-unik-164";
+import { faunaUnik165Data } from "./fauna-unik-165";
+import { faunaUnik166Data } from "./fauna-unik-166";
+import { faunaUnik167Data } from "./fauna-unik-167";
+import { faunaUnik168Data } from "./fauna-unik-168";
+import { faunaUnik169Data } from "./fauna-unik-169";
+import { faunaUnik170Data } from "./fauna-unik-170";
+import { faunaUnik171Data } from "./fauna-unik-171";
+import { faunaUnik172Data } from "./fauna-unik-172";
+import { faunaUnik173Data } from "./fauna-unik-173";
+import { faunaUnik174Data } from "./fauna-unik-174";
+import { faunaUnik175Data } from "./fauna-unik-175";
+import { faunaUnik176Data } from "./fauna-unik-176";
+import { faunaUnik177Data } from "./fauna-unik-177";
+import { faunaUnik178Data } from "./fauna-unik-178";
+import { faunaUnik179Data } from "./fauna-unik-179";
+import { faunaUnik180Data } from "./fauna-unik-180";
+import { faunaUnik181Data } from "./fauna-unik-181";
+import { faunaUnik182Data } from "./fauna-unik-182";
+import { faunaUnik183Data } from "./fauna-unik-183";
+import { faunaUnik184Data } from "./fauna-unik-184";
+import { faunaUnik185Data } from "./fauna-unik-185";
+import { faunaUnik186Data } from "./fauna-unik-186";
+import { faunaUnik187Data } from "./fauna-unik-187";
+import { faunaUnik188Data } from "./fauna-unik-188";
+import { faunaUnik189Data } from "./fauna-unik-189";
+import { faunaUnik190Data } from "./fauna-unik-190";
+import { faunaUnik191Data } from "./fauna-unik-191";
+import { faunaUnik192Data } from "./fauna-unik-192";
+import { faunaUnik193Data } from "./fauna-unik-193";
+import { faunaUnik194Data } from "./fauna-unik-194";
+import { faunaUnik195Data } from "./fauna-unik-195";
+import { faunaUnik196Data } from "./fauna-unik-196";
+import { faunaUnik197Data } from "./fauna-unik-197";
+import { faunaUnik198Data } from "./fauna-unik-198";
+import { faunaUnik199Data } from "./fauna-unik-199";
+import { faunaUnik200Data } from "./fauna-unik-200";
+import { faunaUnik201Data } from "./fauna-unik-201";
+import { faunaUnik202Data } from "./fauna-unik-202";
+import { faunaUnik203Data } from "./fauna-unik-203";
+import { faunaUnik204Data } from "./fauna-unik-204";
+import { faunaUnik205Data } from "./fauna-unik-205";
+import { faunaUnik206Data } from "./fauna-unik-206";
+import { faunaUnik207Data } from "./fauna-unik-207";
+import { faunaUnik208Data } from "./fauna-unik-208";
+import { faunaUnik209Data } from "./fauna-unik-209";
+import { faunaUnik210Data } from "./fauna-unik-210";
+import { faunaUnik211Data } from "./fauna-unik-211";
+import { faunaUnik212Data } from "./fauna-unik-212";
+import { faunaUnik213Data } from "./fauna-unik-213";
+import { faunaUnik214Data } from "./fauna-unik-214";
+import { faunaUnik215Data } from "./fauna-unik-215";
+import { faunaUnik216Data } from "./fauna-unik-216";
+import { faunaUnik217Data } from "./fauna-unik-217";
+import { faunaUnik218Data } from "./fauna-unik-218";
+import { faunaUnik219Data } from "./fauna-unik-219";
+import { faunaUnik220Data } from "./fauna-unik-220";
+import { faunaUnik221Data } from "./fauna-unik-221";
+import { faunaUnik222Data } from "./fauna-unik-222";
+import { faunaUnik223Data } from "./fauna-unik-223";
+import { faunaUnik224Data } from "./fauna-unik-224";
+import { faunaUnik225Data } from "./fauna-unik-225";
+import { faunaUnik226Data } from "./fauna-unik-226";
+import { faunaUnik227Data } from "./fauna-unik-227";
+import { faunaUnik228Data } from "./fauna-unik-228";
+import { faunaUnik229Data } from "./fauna-unik-229";
+import { faunaUnik230Data } from "./fauna-unik-230";
+import { faunaUnik231Data } from "./fauna-unik-231";
+import { faunaUnik232Data } from "./fauna-unik-232";
+import { faunaUnik233Data } from "./fauna-unik-233";
+import { faunaUnik234Data } from "./fauna-unik-234";
+import { faunaUnik235Data } from "./fauna-unik-235";
+import { faunaUnik236Data } from "./fauna-unik-236";
+import { faunaUnik237Data } from "./fauna-unik-237";
+import { faunaUnik238Data } from "./fauna-unik-238";
+import { faunaUnik239Data } from "./fauna-unik-239";
+import { faunaUnik240Data } from "./fauna-unik-240";
+import { faunaUnik241Data } from "./fauna-unik-241";
+import { faunaUnik242Data } from "./fauna-unik-242";
+import { faunaUnik243Data } from "./fauna-unik-243";
 
 export const hewanObjects = [
   lebahData,
@@ -307,15 +307,15 @@ export const hewanObjects = [
   nyamukData,
   gajahData,
   lalatData,
-  hudhudData,
+  burungHudhudData,
   sapiData,
   anjingData,
   keledaiData,
   kudaData,
   babiData,
   monyetData,
-  pausData,
-  gagakData,
+  ikanPausData,
+  burungGagakData,
   dombaData,
   kambingData,
   singaData,
@@ -357,197 +357,6 @@ export const hewanObjects = [
   tokekData,
   bintangLautData,
   kudaLautData,
-  cheetahData,
-  leopardData,
-  jaguarData,
-  pumaData,
-  simpanseData,
-  orangutanData,
-  baboonData,
-  lemurData,
-  slothData,
-  hamsterData,
-  tikusData,
-  marmutData,
-  kelelawarData,
-  meerkatData,
-  hyenaData,
-  badakData,
-  kudaNilData,
-  bisonData,
-  kerbauData,
-  bantengData,
-  yakData,
-  okapiData,
-  tapirData,
-  anteaterData,
-  armadilloData,
-  landakData,
-  wombatData,
-  wallabyData,
-  koalaBearData,
-  redPandaData,
-  giantPandaData,
-  sunBearData,
-  polarBearData,
-  grizzlyBearData,
-  blackBearData,
-  coyoteData,
-  jackalData,
-  dingoData,
-  africanWildDogData,
-  badgerData,
-  wolverineData,
-  otterData,
-  seaOtterData,
-  raccoonData,
-  beaverData,
-  porcupineAmericanData,
-  hedgehogAfricanData,
-  moleStarData,
-  shrewWaterData,
-  opossumVirginiaData,
-  echidnaSpinyData,
-  squirrelRedData,
-  flyingSquirrelJapaneseData,
-  chipmunkSiberianData,
-  gopherPocketData,
-  marmotAlpineData,
-  lemmingNorwayData,
-  voleMeadowData,
-  muskratRiverData,
-  chinchillaDomesticData,
-  guineaPigAbyssinianData,
-  capybaraGiantData,
-  agoutiGoldenData,
-  pacaLowlandData,
-  maraPatagonianData,
-  treeShrewCommonData,
-  galagoSenegalData,
-  bushbabyLesserData,
-  pottoWestAfricanData,
-  lorisBengalData,
-  slowLorisPygmyData,
-  tarsierSpectralData,
-  marmosetCommonData,
-  tamarinsRedHandedData,
-  squirrelMonkeyCommonData,
-  capuchinMonkeyWhiteFacedData,
-  howlerMonkeyRedData,
-  spiderMonkeyBlackData,
-  woollyMonkeyCommonData,
-  macaqueCrabEatingData,
-  baboonOliveData,
-  mandrillMonkeyData,
-  drillMonkeyData,
-  colobusMonkeyBlackAndWhiteData,
-  langurGrayData,
-  proboscisMonkeyData,
-  gibbonLarData,
-  siamangBlackData,
-  chimpanzeePygmyData,
-  gorillaMountainData,
-  ikanPariEkorCambukData,
-  hiuPausRaksasaData,
-  cumiCumiRaksasaLautData,
-  mantaRayReefData,
-  uburUburBulanData,
-  lobsterLautData,
-  kerangDarahData,
-  tiramTumbuhData,
-  bekicotDaratData,
-  buluBabiHitamData,
-  teripangPasirData,
-  karangOtakData,
-  anemonLautData,
-  belutSawahData,
-  ikanSalmonAtlantikData,
-  ikanTunaSiripBiruData,
-  ikanKodAtlantikData,
-  ikanKembungData,
-  ikanTroutPelangiData,
-  ikanSardenData,
-  ikanTeriData,
-  ikanLayurLautData,
-  ikanBelidaData,
-  kepitingBakauBesarData,
-  kepitingSokaData,
-  kepitingKenariRaksasaData,
-  rajunganBintangData,
-  udangWinduLautData,
-  udangGalahSungaiData,
-  udangRonggengData,
-  lobsterAirTawarBiruData,
-  undurUndurPasirData,
-  semutJepangData,
-  kumbangTandukRaksasaData,
-  kumbangKoksiTotolData,
-  kumbangKotoranAfrikaData,
-  kumbangAirRaksasaData,
-  belalangSembahHijauData,
-  belalangDaunKamuflaseData,
-  belalangKayuCokelatData,
-  jangkrikSawahHitamData,
-  ulatSutraPutihData,
-  ulatSaguPapuaData,
-  ulatBuluRacunData,
-  cacingTanahSuburData,
-  lintahAirTawarData,
-  pacatHutanData,
-  keongSawahKuningData,
-  kerangDaraRebusData,
-  kerangHijauLautData,
-  kerangBuluHitamData,
-  kerangBambuGurihData,
-  sotongKarangData,
-  guritaRaksasaPasifikData,
-  uburUburKotakSengatData,
-  ikanGuppyHiasData,
-  ikanCupangAduanData,
-  ikanMasKokiBulatData,
-  ikanKoiJepangData,
-  ikanDiscusAmazonData,
-  ikanLouhanJenongData,
-  ikanMollyHitamData,
-  ikanPlatyMerahData,
-  ikanNeonTetraBersinarData,
-  ikanZebraBelangData,
-  anoaPegununganData,
-  babirusaSulawesiData,
-  bekantanKalimantanData,
-  tarsiusKerdilData,
-  keraHantuSulawesiData,
-  burungMaleoData,
-  burungCendrawasihData,
-  burungKasuariGelambirData,
-  burungKakatuaPutihData,
-  burungNuriMerahData,
-  burungJalakBaliData,
-  burungElangJawaData,
-  harimauSumatraData,
-  gajahSumatraData,
-  badakJawaBerculaSatuData,
-  orangutanSumatraData,
-  pesutMahakamData,
-  ikanArwanaSuperRedData,
-  ikanGurameRaksasaData,
-  ikanLeleDumboData,
-  ikanPatinSungaiData,
-  ikanNilaMerahData,
-  ikanBandengPayauData,
-  ikanKakapMerahData,
-  ikanKerapuMacanData,
-  ikanBaronangSusuData,
-  ikanTenggiriPapanData,
-  ikanTongkolKomoData,
-  anjingLautPelabuhanData,
-  dugongPasifikData,
-  rusaKutubKutubData,
-  elangBotakAmerikaData,
-  burungHantuSaljuData,
-  burungFlamingoChiliData,
-  burungMerakBiruIndiaData,
-  burungMerpatiPosData,
   faunaUnik1Data,
   faunaUnik2Data,
   faunaUnik3Data,
@@ -600,4 +409,195 @@ export const hewanObjects = [
   faunaUnik50Data,
   faunaUnik51Data,
   faunaUnik52Data,
+  faunaUnik53Data,
+  faunaUnik54Data,
+  faunaUnik55Data,
+  faunaUnik56Data,
+  faunaUnik57Data,
+  faunaUnik58Data,
+  faunaUnik59Data,
+  faunaUnik60Data,
+  faunaUnik61Data,
+  faunaUnik62Data,
+  faunaUnik63Data,
+  faunaUnik64Data,
+  faunaUnik65Data,
+  faunaUnik66Data,
+  faunaUnik67Data,
+  faunaUnik68Data,
+  faunaUnik69Data,
+  faunaUnik70Data,
+  faunaUnik71Data,
+  faunaUnik72Data,
+  faunaUnik73Data,
+  faunaUnik74Data,
+  faunaUnik75Data,
+  faunaUnik76Data,
+  faunaUnik77Data,
+  faunaUnik78Data,
+  faunaUnik79Data,
+  faunaUnik80Data,
+  faunaUnik81Data,
+  faunaUnik82Data,
+  faunaUnik83Data,
+  faunaUnik84Data,
+  faunaUnik85Data,
+  faunaUnik86Data,
+  faunaUnik87Data,
+  faunaUnik88Data,
+  faunaUnik89Data,
+  faunaUnik90Data,
+  faunaUnik91Data,
+  faunaUnik92Data,
+  faunaUnik93Data,
+  faunaUnik94Data,
+  faunaUnik95Data,
+  faunaUnik96Data,
+  faunaUnik97Data,
+  faunaUnik98Data,
+  faunaUnik99Data,
+  faunaUnik100Data,
+  faunaUnik101Data,
+  faunaUnik102Data,
+  faunaUnik103Data,
+  faunaUnik104Data,
+  faunaUnik105Data,
+  faunaUnik106Data,
+  faunaUnik107Data,
+  faunaUnik108Data,
+  faunaUnik109Data,
+  faunaUnik110Data,
+  faunaUnik111Data,
+  faunaUnik112Data,
+  faunaUnik113Data,
+  faunaUnik114Data,
+  faunaUnik115Data,
+  faunaUnik116Data,
+  faunaUnik117Data,
+  faunaUnik118Data,
+  faunaUnik119Data,
+  faunaUnik120Data,
+  faunaUnik121Data,
+  faunaUnik122Data,
+  faunaUnik123Data,
+  faunaUnik124Data,
+  faunaUnik125Data,
+  faunaUnik126Data,
+  faunaUnik127Data,
+  faunaUnik128Data,
+  faunaUnik129Data,
+  faunaUnik130Data,
+  faunaUnik131Data,
+  faunaUnik132Data,
+  faunaUnik133Data,
+  faunaUnik134Data,
+  faunaUnik135Data,
+  faunaUnik136Data,
+  faunaUnik137Data,
+  faunaUnik138Data,
+  faunaUnik139Data,
+  faunaUnik140Data,
+  faunaUnik141Data,
+  faunaUnik142Data,
+  faunaUnik143Data,
+  faunaUnik144Data,
+  faunaUnik145Data,
+  faunaUnik146Data,
+  faunaUnik147Data,
+  faunaUnik148Data,
+  faunaUnik149Data,
+  faunaUnik150Data,
+  faunaUnik151Data,
+  faunaUnik152Data,
+  faunaUnik153Data,
+  faunaUnik154Data,
+  faunaUnik155Data,
+  faunaUnik156Data,
+  faunaUnik157Data,
+  faunaUnik158Data,
+  faunaUnik159Data,
+  faunaUnik160Data,
+  faunaUnik161Data,
+  faunaUnik162Data,
+  faunaUnik163Data,
+  faunaUnik164Data,
+  faunaUnik165Data,
+  faunaUnik166Data,
+  faunaUnik167Data,
+  faunaUnik168Data,
+  faunaUnik169Data,
+  faunaUnik170Data,
+  faunaUnik171Data,
+  faunaUnik172Data,
+  faunaUnik173Data,
+  faunaUnik174Data,
+  faunaUnik175Data,
+  faunaUnik176Data,
+  faunaUnik177Data,
+  faunaUnik178Data,
+  faunaUnik179Data,
+  faunaUnik180Data,
+  faunaUnik181Data,
+  faunaUnik182Data,
+  faunaUnik183Data,
+  faunaUnik184Data,
+  faunaUnik185Data,
+  faunaUnik186Data,
+  faunaUnik187Data,
+  faunaUnik188Data,
+  faunaUnik189Data,
+  faunaUnik190Data,
+  faunaUnik191Data,
+  faunaUnik192Data,
+  faunaUnik193Data,
+  faunaUnik194Data,
+  faunaUnik195Data,
+  faunaUnik196Data,
+  faunaUnik197Data,
+  faunaUnik198Data,
+  faunaUnik199Data,
+  faunaUnik200Data,
+  faunaUnik201Data,
+  faunaUnik202Data,
+  faunaUnik203Data,
+  faunaUnik204Data,
+  faunaUnik205Data,
+  faunaUnik206Data,
+  faunaUnik207Data,
+  faunaUnik208Data,
+  faunaUnik209Data,
+  faunaUnik210Data,
+  faunaUnik211Data,
+  faunaUnik212Data,
+  faunaUnik213Data,
+  faunaUnik214Data,
+  faunaUnik215Data,
+  faunaUnik216Data,
+  faunaUnik217Data,
+  faunaUnik218Data,
+  faunaUnik219Data,
+  faunaUnik220Data,
+  faunaUnik221Data,
+  faunaUnik222Data,
+  faunaUnik223Data,
+  faunaUnik224Data,
+  faunaUnik225Data,
+  faunaUnik226Data,
+  faunaUnik227Data,
+  faunaUnik228Data,
+  faunaUnik229Data,
+  faunaUnik230Data,
+  faunaUnik231Data,
+  faunaUnik232Data,
+  faunaUnik233Data,
+  faunaUnik234Data,
+  faunaUnik235Data,
+  faunaUnik236Data,
+  faunaUnik237Data,
+  faunaUnik238Data,
+  faunaUnik239Data,
+  faunaUnik240Data,
+  faunaUnik241Data,
+  faunaUnik242Data,
+  faunaUnik243Data,
 ];

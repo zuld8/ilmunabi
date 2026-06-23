@@ -43,8 +43,9 @@ export const asteroidData: ObjectData = {
       en: "Interesting facts about Asteroid: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Asteroid diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Asteroid was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Asteroid dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Asteroid in the Qur'an so humans observe the science behind it." }
+      { id: "Objek luar angkasa Asteroid bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Asteroid bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
+      { id: "Atmosfer atau medan magnet di sekitar Asteroid melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Asteroid melindungi permukaannya dari bahaya kosmis." },
+      { id: "Skala raksasa Asteroid membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Asteroid membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const asteroidData: ObjectData = {
       en: "Exploration of the anatomy and structure of Asteroid reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Asteroid di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Asteroid in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban astrofisika Asteroid: Hukum gravitasi universal mengikat Asteroid agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
+      en: "Keajaiban astrofisika Asteroid: Hukum gravitasi universal mengikat Asteroid agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

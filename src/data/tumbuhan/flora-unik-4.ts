@@ -43,8 +43,9 @@ export const floraUnik4Data: ObjectData = {
       en: "Interesting facts about Flora Unik 4: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Flora Unik 4 diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Flora Unik 4 was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Flora Unik 4 dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Flora Unik 4 in the Qur'an so humans observe the science behind it." }
+      { id: "Tumbuhan Flora Unik 4 beradaptasi menyerap air dari dalam pori-pori tanah.", en: "Tumbuhan Flora Unik 4 beradaptasi menyerap air dari dalam pori-pori tanah." },
+      { id: "Siklus hidup Flora Unik 4 dari spora/biji hingga bertunas menunjukkan siklus hidup luar biasa.", en: "Siklus hidup Flora Unik 4 dari spora/biji hingga bertunas menunjukkan siklus hidup luar biasa." },
+      { id: "Kloroplas dalam sel Flora Unik 4 menangkap energi foton matahari untuk memproduksi nutrisi.", en: "Kloroplas dalam sel Flora Unik 4 menangkap energi foton matahari untuk memproduksi nutrisi." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const floraUnik4Data: ObjectData = {
       en: "Exploration of the anatomy and structure of Flora Unik 4 reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Sistem Vaskular", en: "Sistem Vaskular" }, desc: { id: "Pembuluh jaringan xilem dan floem untuk sirkulasi nutrisi cair.", en: "Pembuluh jaringan xilem dan floem untuk sirkulasi nutrisi cair." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Flora Unik 4 di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Flora Unik 4 in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban sains Flora Unik 4: Sistem transpirasi air pada Flora Unik 4 menguapkan kelebihan air dengan keseimbangan termal yang menjaga kesejukan udara sekitar.",
+      en: "Keajaiban sains Flora Unik 4: Sistem transpirasi air pada Flora Unik 4 menguapkan kelebihan air dengan keseimbangan termal yang menjaga kesejukan udara sekitar.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

@@ -43,8 +43,9 @@ export const marsData: ObjectData = {
       en: "Interesting facts about Mars: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Mars diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Mars was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Mars dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Mars in the Qur'an so humans observe the science behind it." }
+      { id: "Objek luar angkasa Mars bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Mars bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
+      { id: "Atmosfer atau medan magnet di sekitar Mars melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Mars melindungi permukaannya dari bahaya kosmis." },
+      { id: "Skala raksasa Mars membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Mars membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const marsData: ObjectData = {
       en: "Exploration of the anatomy and structure of Mars reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Mars di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Mars in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban astrofisika Mars: Hukum gravitasi universal mengikat Mars agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
+      en: "Keajaiban astrofisika Mars: Hukum gravitasi universal mengikat Mars agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

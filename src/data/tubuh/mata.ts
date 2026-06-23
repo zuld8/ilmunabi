@@ -43,8 +43,11 @@ export const mataData: ObjectData = {
       en: "Interesting facts about Mata: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Mata diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Mata was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Mata dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Mata in the Qur'an so humans observe the science behind it." }
+      { id: "Mata manusia dapat membedakan sekitar 10 juta warna berbeda.", en: "Mata manusia dapat membedakan sekitar 10 juta warna berbeda." },
+      { id: "Mata adalah organ tubuh tercepat; otot mata bereaksi dalam sekejap kedipan.", en: "Mata adalah organ tubuh tercepat; otot mata bereaksi dalam sekejap kedipan." },
+      { id: "Mata berkedip sekitar 15-20 kali setiap menit untuk menjaga kelembapan.", en: "Mata berkedip sekitar 15-20 kali setiap menit untuk menjaga kelembapan." },
+      { id: "Retina mata menangkap gambar secara terbalik, lalu otak memutarnya kembali.", en: "Retina mata menangkap gambar secara terbalik, lalu otak memutarnya kembali." },
+      { id: "Bagian mata berwarna hitam (pupil) akan melebar saat kita berada di tempat gelap.", en: "Bagian mata berwarna hitam (pupil) akan melebar saat kita berada di tempat gelap." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const mataData: ObjectData = {
       en: "Exploration of the anatomy and structure of Mata reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Sensor Retina", en: "Sensor Retina" }, desc: { id: "Mengubah proyeksi cahaya menjadi impuls listrik untuk dikirim ke otak.", en: "Mengubah proyeksi cahaya menjadi impuls listrik untuk dikirim ke otak." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Mata di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Mata in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Al-Balad 90:8, Allah bertanya: 'Bukankah Kami telah menjadikan untuknya sepasang mata?'. Keajaiban mata terletak pada retina yang memiliki 120 juta sel batang untuk mendeteksi cahaya redup dan 6 juta sel kerucut untuk melihat detail warna warni dengan presisi tinggi.",
+      en: "Dalam Surah Al-Balad 90:8, Allah bertanya: 'Bukankah Kami telah menjadikan untuknya sepasang mata?'. Keajaiban mata terletak pada retina yang memiliki 120 juta sel batang untuk mendeteksi cahaya redup dan 6 juta sel kerucut untuk melihat detail warna warni dengan presisi tinggi.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

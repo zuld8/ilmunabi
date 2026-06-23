@@ -192,6 +192,8 @@ export default function ObjectDetail() {
             <h1 className="text-4xl font-extrabold text-charcoal">
               {isAsmaulHusna
                 ? `${(object as AsmaulHusnaData).arabicWithHarakat} — ${object.name.id}`
+                : object.name.id === object.name.en
+                ? object.name.id
                 : `${object.name.id} / ${object.name.en}`}
             </h1>
             <p className="text-sm italic text-charcoal/40 font-medium">

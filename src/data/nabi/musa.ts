@@ -11,32 +11,28 @@ export const musaData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   storyShort: {
-    id: "Kisah perjuangan dakwah keteladanan mulia Nabi Musa A.S. kepada kaumnya.",
-    en: "The story of Nabi Musa A.S.'s struggle in preaching and leading as a noble role model.",
+    id: "Nabi yang membelah Laut Merah dengan tongkatnya untuk menyelamatkan Bani Israil dari kejaran pasukan Firaun.",
+    en: "Nabi yang membelah Laut Merah dengan tongkatnya untuk menyelamatkan Bani Israil dari kejaran pasukan Firaun.",
   },
   storyFull: {
-    id: "Kisah lengkap keteladanan Nabi Musa A.S.. Beliau diutus oleh Allah SWT untuk membimbing umatnya ke jalan kebenaran dengan penuh kesabaran, mukjizat, dan kasih sayang yang luar biasa.",
-    en: "The full story of Nabi Musa A.S.. He was sent by Allah SWT to guide his people to the path of truth with immense patience, miracles, and extraordinary love.",
+    id: "Nabi Musa A.S. dihanyutkan di sungai Nil saat bayi, lalu diasuh oleh istri Firaun sendiri. Setelah dewasa, beliau menerima wahyu di Bukit Sinai. Beliau menentang Firaun yang mengaku tuhan. Ketika terpojok di tepi laut merah, Allah memerintahkannya memukulkan tongkatnya, membelah laut menjadi jalan kering, menyelamatkan Bani Israil, dan menenggelamkan Firaun.",
+    en: "Nabi Musa A.S. dihanyutkan di sungai Nil saat bayi, lalu diasuh oleh istri Firaun sendiri. Setelah dewasa, beliau menerima wahyu di Bukit Sinai. Beliau menentang Firaun yang mengaku tuhan. Ketika terpojok di tepi laut merah, Allah memerintahkannya memukulkan tongkatnya, membelah laut menjadi jalan kering, menyelamatkan Bani Israil, dan menenggelamkan Firaun.",
   },
   miracles: [
-    { id: "Mendapat petunjuk dan kekuatan dakwah dari Allah SWT.", en: "Blessed with guidance and strength in preaching from Allah SWT." }
+    { id: "Tongkat kayu berubah menjadi ular besar dan membelah Laut Merah.", en: "Tongkat kayu berubah menjadi ular besar dan membelah Laut Merah." },
+    { id: "Telapak tangannya memancarkan cahaya putih yang menyilaukan.", en: "Telapak tangannya memancarkan cahaya putih yang menyilaukan." }
   ],
   characterTraits: [
-    {
-      trait: { id: "Sabar", en: "Patience" },
-      desc: { id: "Menghadapi segala rintangan dakwah dengan tenang dan tawakal.", en: "Confronted all obstacles in preaching with calmness and trust in Allah." }
-    }
+    { trait: { id: "Pemberani & Tegas", en: "Pemberani & Tegas" }, desc: { id: "Berani memimpin kaum tertindas melawan raja diktator terkuat di bumi.", en: "Berani memimpin kaum tertindas melawan raja diktator terkuat di bumi." } }
   ],
   timeline: [
-    {
-      yearOrAge: "Awal",
-      title: { id: "Menerima Wahyu", en: "Receiving Revelation" },
-      desc: { id: "Allah memilihnya sebagai nabi dan rasul pembawa kebenaran.", en: "Allah chose him as a prophet and messenger of truth." }
-    }
+    { yearOrAge: "Hanyut", title: { id: "Bayi di Sungai Nil", en: "Bayi di Sungai Nil" }, desc: { id: "Diselamatkan oleh Asiyah, istri Firaun, dari rencana pembunuhan bayi.", en: "Diselamatkan oleh Asiyah, istri Firaun, dari rencana pembunuhan bayi." } },
+    { yearOrAge: "Wahyu", title: { id: "Tongkat Jadi Ular", en: "Tongkat Jadi Ular" }, desc: { id: "Menghadapi para penyihir Firaun dengan mukjizat tongkat kayu.", en: "Menghadapi para penyihir Firaun dengan mukjizat tongkat kayu." } },
+    { yearOrAge: "Laut", title: { id: "Membelah Laut Merah", en: "Membelah Laut Merah" }, desc: { id: "Laut terbelah menciptakan jalan aman bagi ribuan orang.", en: "Laut terbelah menciptakan jalan aman bagi ribuan orang." } }
   ],
   dailyLifeConnection: {
-    id: "Kita harus meniru akhlak mulia Nabi Musa A.S. dalam kehidupan sehari-hari seperti berkata jujur dan rajin beribadah.",
-    en: "We must emulate Nabi Musa A.S.'s noble character in daily life, such as telling the truth and praying diligently.",
+    id: "Kita harus berani membela teman yang sedang dirundung (dibully) dan teguh pendirian melakukan kebaikan.",
+    en: "Kita harus berani membela teman yang sedang dirundung (dibully) dan teguh pendirian melakukan kebaikan.",
   },
   surahReference: "Al-A'raf 7:103-136",
 };

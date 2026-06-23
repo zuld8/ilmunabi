@@ -11,32 +11,28 @@ export const isaData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   storyShort: {
-    id: "Kisah perjuangan dakwah keteladanan mulia Nabi Isa A.S. kepada kaumnya.",
-    en: "The story of Nabi Isa A.S.'s struggle in preaching and leading as a noble role model.",
+    id: "Nabi yang lahir tanpa ayah dari perawan suci Maryam, mampu berbicara saat bayi, membuat burung dari tanah liat, dan menghidupkan orang mati atas izin Allah.",
+    en: "Nabi yang lahir tanpa ayah dari perawan suci Maryam, mampu berbicara saat bayi, membuat burung dari tanah liat, dan menghidupkan orang mati atas izin Allah.",
   },
   storyFull: {
-    id: "Kisah lengkap keteladanan Nabi Isa A.S.. Beliau diutus oleh Allah SWT untuk membimbing umatnya ke jalan kebenaran dengan penuh kesabaran, mukjizat, dan kasih sayang yang luar biasa.",
-    en: "The full story of Nabi Isa A.S.. He was sent by Allah SWT to guide his people to the path of truth with immense patience, miracles, and extraordinary love.",
+    id: "Nabi Isa A.S. dilahirkan oleh Maryam yang suci tanpa perantara ayah sebagai tanda kekuasaan Allah. Ketika Maryam dituduh, bayi Isa berbicara di dalam ayunan bayi untuk membela ibunya. Beliau mendakwahkan kitab Injil, mampu menyembuhkan orang buta sejak lahir, menyembuhkan kusta, membentuk burung dari tanah lalu menghidupkannya, dan menghidupkan orang mati, semuanya atas izin Allah SWT.",
+    en: "Nabi Isa A.S. dilahirkan oleh Maryam yang suci tanpa perantara ayah sebagai tanda kekuasaan Allah. Ketika Maryam dituduh, bayi Isa berbicara di dalam ayunan bayi untuk membela ibunya. Beliau mendakwahkan kitab Injil, mampu menyembuhkan orang buta sejak lahir, menyembuhkan kusta, membentuk burung dari tanah lalu menghidupkannya, dan menghidupkan orang mati, semuanya atas izin Allah SWT.",
   },
   miracles: [
-    { id: "Mendapat petunjuk dan kekuatan dakwah dari Allah SWT.", en: "Blessed with guidance and strength in preaching from Allah SWT." }
+    { id: "Berbicara lancar membela ibunya saat masih bayi di dalam ayunan.", en: "Berbicara lancar membela ibunya saat masih bayi di dalam ayunan." },
+    { id: "Membentuk tanah liat menjadi burung lalu menghidupkannya.", en: "Membentuk tanah liat menjadi burung lalu menghidupkannya." },
+    { id: "Menyembuhkan orang buta, penyakit kusta, dan menghidupkan orang mati.", en: "Menyembuhkan orang buta, penyakit kusta, dan menghidupkan orang mati." }
   ],
   characterTraits: [
-    {
-      trait: { id: "Sabar", en: "Patience" },
-      desc: { id: "Menghadapi segala rintangan dakwah dengan tenang dan tawakal.", en: "Confronted all obstacles in preaching with calmness and trust in Allah." }
-    }
+    { trait: { id: "Sederhana & Kasih", en: "Sederhana & Kasih" }, desc: { id: "Sangat sederhana dalam hidupnya dan penuh kasih sayang kepada kaum miskin.", en: "Sangat sederhana dalam hidupnya dan penuh kasih sayang kepada kaum miskin." } }
   ],
   timeline: [
-    {
-      yearOrAge: "Awal",
-      title: { id: "Menerima Wahyu", en: "Receiving Revelation" },
-      desc: { id: "Allah memilihnya sebagai nabi dan rasul pembawa kebenaran.", en: "Allah chose him as a prophet and messenger of truth." }
-    }
+    { yearOrAge: "Bayi", title: { id: "Berbicara di Ayunan", en: "Berbicara di Ayunan" }, desc: { id: "Menjelaskan bahwa dirinya adalah hamba Allah dan nabi pembawa kitab.", en: "Menjelaskan bahwa dirinya adalah hamba Allah dan nabi pembawa kitab." } },
+    { yearOrAge: "Dakwah", title: { id: "Mukjizat Penyembuhan", en: "Mukjizat Penyembuhan" }, desc: { id: "Menyembuhkan penyakit kronis yang tidak bisa diobati dokter zamannya.", en: "Menyembuhkan penyakit kronis yang tidak bisa diobati dokter zamannya." } }
   ],
   dailyLifeConnection: {
-    id: "Kita harus meniru akhlak mulia Nabi Isa A.S. dalam kehidupan sehari-hari seperti berkata jujur dan rajin beribadah.",
-    en: "We must emulate Nabi Isa A.S.'s noble character in daily life, such as telling the truth and praying diligently.",
+    id: "Kita harus bersikap sopan santun kepada semua orang, terutama menyayangi teman-teman yang kurang beruntung.",
+    en: "Kita harus bersikap sopan santun kepada semua orang, terutama menyayangi teman-teman yang kurang beruntung.",
   },
   surahReference: "Maryam 19:16-36",
 };

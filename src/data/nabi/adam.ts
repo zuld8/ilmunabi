@@ -11,32 +11,28 @@ export const adamData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   storyShort: {
-    id: "Kisah perjuangan dakwah keteladanan mulia Nabi Adam A.S. kepada kaumnya.",
-    en: "The story of Nabi Adam A.S.'s struggle in preaching and leading as a noble role model.",
+    id: "Kisah penciptaan manusia pertama, ketaatan malaikat, dan taubat Nabi Adam setelah diturunkan ke Bumi.",
+    en: "Kisah penciptaan manusia pertama, ketaatan malaikat, dan taubat Nabi Adam setelah diturunkan ke Bumi.",
   },
   storyFull: {
-    id: "Kisah lengkap keteladanan Nabi Adam A.S.. Beliau diutus oleh Allah SWT untuk membimbing umatnya ke jalan kebenaran dengan penuh kesabaran, mukjizat, dan kasih sayang yang luar biasa.",
-    en: "The full story of Nabi Adam A.S.. He was sent by Allah SWT to guide his people to the path of truth with immense patience, miracles, and extraordinary love.",
+    id: "Nabi Adam A.S. adalah manusia pertama yang diciptakan oleh Allah SWT dari tanah. Allah meniupkan ruh-Nya dan mengajarkan semua nama benda kepadanya. Setelah digoda oleh Iblis untuk mendekati pohon terlarang, beliau diturunkan ke bumi, bertaubat, dan dikabulkan doanya oleh Allah untuk membimbing keturunannya.",
+    en: "Nabi Adam A.S. adalah manusia pertama yang diciptakan oleh Allah SWT dari tanah. Allah meniupkan ruh-Nya dan mengajarkan semua nama benda kepadanya. Setelah digoda oleh Iblis untuk mendekati pohon terlarang, beliau diturunkan ke bumi, bertaubat, dan dikabulkan doanya oleh Allah untuk membimbing keturunannya.",
   },
   miracles: [
-    { id: "Mendapat petunjuk dan kekuatan dakwah dari Allah SWT.", en: "Blessed with guidance and strength in preaching from Allah SWT." }
+    { id: "Diciptakan langsung oleh Allah tanpa perantara ayah dan ibu.", en: "Diciptakan langsung oleh Allah tanpa perantara ayah dan ibu." },
+    { id: "Diajarkan nama-nama dari segala sesuatu oleh Allah SWT.", en: "Diajarkan nama-nama dari segala sesuatu oleh Allah SWT." }
   ],
   characterTraits: [
-    {
-      trait: { id: "Sabar", en: "Patience" },
-      desc: { id: "Menghadapi segala rintangan dakwah dengan tenang dan tawakal.", en: "Confronted all obstacles in preaching with calmness and trust in Allah." }
-    }
+    { trait: { id: "Taubat", en: "Taubat" }, desc: { id: "Segera mengakui kesalahan dan memohon ampunan kepada Allah SWT.", en: "Segera mengakui kesalahan dan memohon ampunan kepada Allah SWT." } }
   ],
   timeline: [
-    {
-      yearOrAge: "Awal",
-      title: { id: "Menerima Wahyu", en: "Receiving Revelation" },
-      desc: { id: "Allah memilihnya sebagai nabi dan rasul pembawa kebenaran.", en: "Allah chose him as a prophet and messenger of truth." }
-    }
+    { yearOrAge: "Awal", title: { id: "Penciptaan di Surga", en: "Penciptaan di Surga" }, desc: { id: "Diciptakan dari tanah liat kering dan ruh ditiupkan.", en: "Diciptakan dari tanah liat kering dan ruh ditiupkan." } },
+    { yearOrAge: "Ujian", title: { id: "Godaan Iblis", en: "Godaan Iblis" }, desc: { id: "Memakan buah terlarang di surga karena bujuk rayu Iblis.", en: "Memakan buah terlarang di surga karena bujuk rayu Iblis." } },
+    { yearOrAge: "Bumi", title: { id: "Kekhalifahan di Bumi", en: "Kekhalifahan di Bumi" }, desc: { id: "Diturunkan ke bumi untuk mengelola alam dan beribadah.", en: "Diturunkan ke bumi untuk mengelola alam dan beribadah." } }
   ],
   dailyLifeConnection: {
-    id: "Kita harus meniru akhlak mulia Nabi Adam A.S. dalam kehidupan sehari-hari seperti berkata jujur dan rajin beribadah.",
-    en: "We must emulate Nabi Adam A.S.'s noble character in daily life, such as telling the truth and praying diligently.",
+    id: "Jika melakukan kesalahan, kita harus meniru Nabi Adam dengan segera meminta maaf kepada orang tua dan memohon ampun kepada Allah.",
+    en: "Jika melakukan kesalahan, kita harus meniru Nabi Adam dengan segera meminta maaf kepada orang tua dan memohon ampun kepada Allah.",
   },
   surahReference: "Al-Baqarah 2:30-37",
 };

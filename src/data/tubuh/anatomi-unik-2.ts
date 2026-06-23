@@ -43,8 +43,9 @@ export const anatomiUnik2Data: ObjectData = {
       en: "Interesting facts about Anatomi Unik 2: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Anatomi Unik 2 diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Anatomi Unik 2 was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Anatomi Unik 2 dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Anatomi Unik 2 in the Qur'an so humans observe the science behind it." }
+      { id: "Fungsi organ Anatomi Unik 2 dikontrol secara tak sadar oleh sistem saraf pusat (otak).", en: "Fungsi organ Anatomi Unik 2 dikontrol secara tak sadar oleh sistem saraf pusat (otak)." },
+      { id: "Dinding seluler pada Anatomi Unik 2 dilapisi protein struktural yang kuat dan lentur.", en: "Dinding seluler pada Anatomi Unik 2 dilapisi protein struktural yang kuat dan lentur." },
+      { id: "Kinerja Anatomi Unik 2 beradaptasi cepat dengan denyut jantung dan suplai oksigen.", en: "Kinerja Anatomi Unik 2 beradaptasi cepat dengan denyut jantung dan suplai oksigen." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const anatomiUnik2Data: ObjectData = {
       en: "Exploration of the anatomy and structure of Anatomi Unik 2 reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Jaringan Seluler", en: "Jaringan Seluler" }, desc: { id: "Susunan sel dengan spesialisasi biokimia tinggi.", en: "Susunan sel dengan spesialisasi biokimia tinggi." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Anatomi Unik 2 di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Anatomi Unik 2 in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban rancangan Anatomi Unik 2: Desain pembuluh mikroskopis pada Anatomi Unik 2 menyaring kotoran dan racun dari aliran darah setiap detik tanpa henti.",
+      en: "Keajaiban rancangan Anatomi Unik 2: Desain pembuluh mikroskopis pada Anatomi Unik 2 menyaring kotoran dan racun dari aliran darah setiap detik tanpa henti.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

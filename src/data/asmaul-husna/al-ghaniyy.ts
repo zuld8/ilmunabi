@@ -10,7 +10,7 @@ export const alGhaniyyData: AsmaulHusnaData = {
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْغَنِيُّ",
+  arabicWithHarakat: "الْغَنِيُw",
   transliteration: "Al-Ghaniyy",
   meaning: {
     id: "Maha Kaya",

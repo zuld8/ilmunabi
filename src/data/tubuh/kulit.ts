@@ -43,8 +43,9 @@ export const kulitData: ObjectData = {
       en: "Interesting facts about Kulit: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Kulit diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Kulit was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Kulit dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Kulit in the Qur'an so humans observe the science behind it." }
+      { id: "Sistem Kulit di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan.", en: "Sistem Kulit di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan." },
+      { id: "Miliaran sel penyusun Kulit berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia.", en: "Miliaran sel penyusun Kulit berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia." },
+      { id: "Kesehatan Kulit sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib.", en: "Kesehatan Kulit sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const kulitData: ObjectData = {
       en: "Exploration of the anatomy and structure of Kulit reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Sistem Sel", en: "Sistem Sel" }, desc: { id: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit.", en: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Kulit di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Kulit in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban rancangan Kulit: Sel-sel pada Kulit memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
+      en: "Keajaiban rancangan Kulit: Sel-sel pada Kulit memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

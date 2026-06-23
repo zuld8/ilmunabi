@@ -16,138 +16,138 @@ import { saljuData } from "./salju";
 import { pelangiData } from "./pelangi";
 import { gerhanaData } from "./gerhana";
 import { gunungBerapiData } from "./gunung-berapi";
-import { gempaBumiData } from "./gempa-bumi";
-import { tsunamiData } from "./tsunami";
-import { tornadoData } from "./tornado";
-import { auroraBorealisData } from "./aurora-borealis";
-import { auroraAustralisData } from "./aurora-australis";
-import { gerhanaMatahariData } from "./gerhana-matahari";
-import { gerhanaBulanData } from "./gerhana-bulan";
-import { ekosistemHutanData } from "./ekosistem-hutan";
-import { terumbuKarangData } from "./terumbu-karang";
-import { fotosintesisData } from "./fotosintesis";
-import { siklusAirData } from "./siklus-air";
-import { rantaiMakananData } from "./rantai-makanan";
-import { hutanHujanTropisData } from "./hutan-hujan-tropis";
-import { badaiTopanData } from "./badai-topan";
-import { banjirBandangData } from "./banjir-bandang";
-import { kekeringanData } from "./kekeringan";
-import { tanahLongsorData } from "./tanah-longsor";
-import { saljuLongsorData } from "./salju-longsor";
-import { badaiPasirData } from "./badai-pasir";
-import { kabutTebalData } from "./kabut-tebal";
-import { awanKumulonimbusData } from "./awan-kumulonimbus";
-import { awanSirusData } from "./awan-sirus";
-import { pelangiGandaData } from "./pelangi-ganda";
-import { pasangSurutAirLautData } from "./pasang-surut-air-laut";
-import { arusLautData } from "./arus-laut";
-import { palungLautMarianaData } from "./palung-laut-mariana";
-import { deltaSungaiNilData } from "./delta-sungai-nil";
-import { airTerjunNiagaraData } from "./air-terjun-niagara";
-import { geyserYellowstoneData } from "./geyser-yellowstone";
-import { guaAlamBawahTanahData } from "./gua-alam-bawah-tanah";
-import { stalaktitGuaData } from "./stalaktit-gua";
-import { stalagmitGuaData } from "./stalagmit-gua";
-import { ngaraiBesarCanyonData } from "./ngarai-besar-canyon";
-import { oasisGurunPasirData } from "./oasis-gurun-pasir";
-import { sabanaRumputTropisData } from "./sabana-rumput-tropis";
-import { tundraBekuArtikData } from "./tundra-beku-artik";
-import { taigaPinusSubartikData } from "./taiga-pinus-subartik";
-import { hutanBakauMangroveData } from "./hutan-bakau-mangrove";
-import { pulauVulkanikBaruData } from "./pulau-vulkanik-baru";
-import { atolKarangSamudraData } from "./atol-karang-samudra";
-import { gunungEsArtikData } from "./gunung-es-artik";
-import { gletserBekuAlamiData } from "./gletser-beku-alami";
-import { fjordLautNorwegiaData } from "./fjord-laut-norwegia";
-import { selatSundaData } from "./selat-sunda";
-import { telukJakartaData } from "./teluk-jakarta";
-import { semenanjungMelayuData } from "./semenanjung-melayu";
-import { dataranTinggiDekkanData } from "./dataran-tinggi-dekkan";
-import { gumukPasirSaharaData } from "./gumuk-pasir-sahara";
-import { batuBasaltHitamData } from "./batu-basalt-hitam";
-import { batuGranitKerasData } from "./batu-granit-keras";
-import { batuObsidianKacaData } from "./batu-obsidian-kaca";
-import { batuApungRinganData } from "./batu-apung-ringan";
-import { batuMarmerKilapData } from "./batu-marmer-kilap";
-import { batuKapurPutihData } from "./batu-kapur-putih";
-import { intanPermataKaratData } from "./intan-permata-karat";
-import { emasMurniLogamData } from "./emas-murni-logam";
-import { perakMurniLogamData } from "./perak-murni-logam";
-import { besiAlamiMeteoritData } from "./besi-alami-meteorit";
-import { batubaraTambangData } from "./batubara-tambang";
-import { minyakBumiMentahData } from "./minyak-bumi-mentah";
-import { gasAlamMetanaData } from "./gas-alam-metana";
-import { energiSuryaMatahariData } from "./energi-surya-matahari";
-import { energiAnginTurbinData } from "./energi-angin-turbin";
-import { energiGeotermalBumiData } from "./energi-geotermal-bumi";
-import { siklusCarbonAlamData } from "./siklus-carbon-alam";
-import { siklusNitrogenTanahData } from "./siklus-nitrogen-tanah";
-import { siklusOksigenUdaraData } from "./siklus-oksigen-udara";
-import { efekRumahKacaGlobalData } from "./efek-rumah-kaca-global";
-import { lapisanOzonPelindungData } from "./lapisan-ozon-pelindung";
-import { atmosferBumiBiruData } from "./atmosfer-bumi-biru";
-import { troposferAwanData } from "./troposfer-awan";
-import { stratospherePesawatData } from "./stratosphere-pesawat";
-import { mesosferMeteorData } from "./mesosfer-meteor";
-import { termosferAuroraData } from "./termosfer-aurora";
-import { eksosferSatelitData } from "./eksosfer-satelit";
-import { gravitasiBumiAlamiData } from "./gravitasi-bumi-alami";
-import { magnetismeBumiKompasData } from "./magnetisme-bumi-kompas";
-import { haloMatahariCincinData } from "./halo-matahari-cincin";
-import { haloBulanCincinData } from "./halo-bulan-cincin";
-import { fataMorganaGurunData } from "./fata-morgana-gurun";
-import { hujanAsamPolusiData } from "./hujan-asam-polusi";
-import { gelombangSeismikGempaData } from "./gelombang-seismik-gempa";
-import { magmaCairDalamBumiData } from "./magma-cair-dalam-bumi";
-import { lavaPanasGunungApiData } from "./lava-panas-gunung-api";
-import { kawahGunungApiDanauData } from "./kawah-gunung-api-danau";
-import { sulfurKawahBelerangData } from "./sulfur-kawah-belerang";
-import { batuPasirEndapanData } from "./batu-pasir-endapan";
-import { batuSabakTulisData } from "./batu-sabak-tulis";
-import { kristalKuarsaBeningData } from "./kristal-kuarsa-bening";
-import { tembagaMurniKabelData } from "./tembaga-murni-kabel";
-import { aliranLavaBawahLautSamudraData } from "./aliran-lava-bawah-laut-samudra";
-import { hutanGugurEmpatMusimData } from "./hutan-gugur-empat-musim";
-import { padangLamunPantaiData } from "./padang-lamun-pantai";
-import { estuariSungaiPayauData } from "./estuari-sungai-payau";
-import { mataAirPanasGeothermalData } from "./mata-air-panas-geothermal";
-import { awanStratusTebalData } from "./awan-stratus-tebal";
-import { awanKumulusPutihData } from "./awan-kumulus-putih";
-import { badaiPetirKilatData } from "./badai-petir-kilat";
-import { hujanEsBatuKristalData } from "./hujan-es-batu-kristal";
-import { badaiSaljuDinginData } from "./badai-salju-dingin";
-import { embunPagiDaunData } from "./embun-pagi-daun";
-import { embunanBekuSaljuData } from "./embunan-beku-salju";
-import { pelangiBulanMalamMoonbowData } from "./pelangi-bulan-malam-moonbow";
-import { pelangiKabutGunungFogbowData } from "./pelangi-kabut-gunung-fogbow";
-import { kilatVulkanikLetusanData } from "./kilat-vulkanik-letusan";
-import { gelombangPasangPurnamaData } from "./gelombang-pasang-purnama";
-import { siklonTropisSamudraData } from "./siklon-tropis-samudra";
-import { putingBeliungDaratData } from "./puting-beliung-darat";
-import { kekeringanEkstremAfrikaData } from "./kekeringan-ekstrem-afrika";
-import { tanahHumusSuburData } from "./tanah-humus-subur";
-import { tanahLiatKeramikData } from "./tanah-liat-keramik";
-import { tanahPasirPantaiData } from "./tanah-pasir-pantai";
-import { tanahGambutRawaData } from "./tanah-gambut-rawa";
-import { tanahKapurBukitData } from "./tanah-kapur-bukit";
-import { erosiAirHujanData } from "./erosi-air-hujan";
-import { erosiAnginGurunData } from "./erosi-angin-gurun";
-import { pelapukanBatuanMekanikData } from "./pelapukan-batuan-mekanik";
-import { sedimentasiSungaiDeltaData } from "./sedimentasi-sungai-delta";
-import { karsTopografiBukitData } from "./kars-topografi-bukit";
-import { danauTektonikTobaData } from "./danau-tektonik-toba";
-import { danauVulkanikBaturData } from "./danau-vulkanik-batur";
-import { rawaGambutKalimantanData } from "./rawa-gambut-kalimantan";
-import { airTanahSumurData } from "./air-tanah-sumur";
-import { siklusBatuanAlamData } from "./siklus-batuan-alam";
-import { batuBaraMudaCokelatData } from "./batu-bara-muda-cokelat";
-import { tembagaAlamiTambangData } from "./tembaga-alami-tambang";
-import { batuSerpihLunakData } from "./batu-serpih-lunak";
-import { batuKonglomeratKerikilData } from "./batu-konglomerat-kerikil";
-import { batuBreksiBersudutData } from "./batu-breksi-bersudut";
-import { batuGampingKarangData } from "./batu-gamping-karang";
-import { batuGipsAlamData } from "./batu-gips-alam";
-import { garamBatuTambangData } from "./garam-batu-tambang";
+import { fenomenaUnik1Data } from "./fenomena-unik-1";
+import { fenomenaUnik2Data } from "./fenomena-unik-2";
+import { fenomenaUnik3Data } from "./fenomena-unik-3";
+import { fenomenaUnik4Data } from "./fenomena-unik-4";
+import { fenomenaUnik5Data } from "./fenomena-unik-5";
+import { fenomenaUnik6Data } from "./fenomena-unik-6";
+import { fenomenaUnik7Data } from "./fenomena-unik-7";
+import { fenomenaUnik8Data } from "./fenomena-unik-8";
+import { fenomenaUnik9Data } from "./fenomena-unik-9";
+import { fenomenaUnik10Data } from "./fenomena-unik-10";
+import { fenomenaUnik11Data } from "./fenomena-unik-11";
+import { fenomenaUnik12Data } from "./fenomena-unik-12";
+import { fenomenaUnik13Data } from "./fenomena-unik-13";
+import { fenomenaUnik14Data } from "./fenomena-unik-14";
+import { fenomenaUnik15Data } from "./fenomena-unik-15";
+import { fenomenaUnik16Data } from "./fenomena-unik-16";
+import { fenomenaUnik17Data } from "./fenomena-unik-17";
+import { fenomenaUnik18Data } from "./fenomena-unik-18";
+import { fenomenaUnik19Data } from "./fenomena-unik-19";
+import { fenomenaUnik20Data } from "./fenomena-unik-20";
+import { fenomenaUnik21Data } from "./fenomena-unik-21";
+import { fenomenaUnik22Data } from "./fenomena-unik-22";
+import { fenomenaUnik23Data } from "./fenomena-unik-23";
+import { fenomenaUnik24Data } from "./fenomena-unik-24";
+import { fenomenaUnik25Data } from "./fenomena-unik-25";
+import { fenomenaUnik26Data } from "./fenomena-unik-26";
+import { fenomenaUnik27Data } from "./fenomena-unik-27";
+import { fenomenaUnik28Data } from "./fenomena-unik-28";
+import { fenomenaUnik29Data } from "./fenomena-unik-29";
+import { fenomenaUnik30Data } from "./fenomena-unik-30";
+import { fenomenaUnik31Data } from "./fenomena-unik-31";
+import { fenomenaUnik32Data } from "./fenomena-unik-32";
+import { fenomenaUnik33Data } from "./fenomena-unik-33";
+import { fenomenaUnik34Data } from "./fenomena-unik-34";
+import { fenomenaUnik35Data } from "./fenomena-unik-35";
+import { fenomenaUnik36Data } from "./fenomena-unik-36";
+import { fenomenaUnik37Data } from "./fenomena-unik-37";
+import { fenomenaUnik38Data } from "./fenomena-unik-38";
+import { fenomenaUnik39Data } from "./fenomena-unik-39";
+import { fenomenaUnik40Data } from "./fenomena-unik-40";
+import { fenomenaUnik41Data } from "./fenomena-unik-41";
+import { fenomenaUnik42Data } from "./fenomena-unik-42";
+import { fenomenaUnik43Data } from "./fenomena-unik-43";
+import { fenomenaUnik44Data } from "./fenomena-unik-44";
+import { fenomenaUnik45Data } from "./fenomena-unik-45";
+import { fenomenaUnik46Data } from "./fenomena-unik-46";
+import { fenomenaUnik47Data } from "./fenomena-unik-47";
+import { fenomenaUnik48Data } from "./fenomena-unik-48";
+import { fenomenaUnik49Data } from "./fenomena-unik-49";
+import { fenomenaUnik50Data } from "./fenomena-unik-50";
+import { fenomenaUnik51Data } from "./fenomena-unik-51";
+import { fenomenaUnik52Data } from "./fenomena-unik-52";
+import { fenomenaUnik53Data } from "./fenomena-unik-53";
+import { fenomenaUnik54Data } from "./fenomena-unik-54";
+import { fenomenaUnik55Data } from "./fenomena-unik-55";
+import { fenomenaUnik56Data } from "./fenomena-unik-56";
+import { fenomenaUnik57Data } from "./fenomena-unik-57";
+import { fenomenaUnik58Data } from "./fenomena-unik-58";
+import { fenomenaUnik59Data } from "./fenomena-unik-59";
+import { fenomenaUnik60Data } from "./fenomena-unik-60";
+import { fenomenaUnik61Data } from "./fenomena-unik-61";
+import { fenomenaUnik62Data } from "./fenomena-unik-62";
+import { fenomenaUnik63Data } from "./fenomena-unik-63";
+import { fenomenaUnik64Data } from "./fenomena-unik-64";
+import { fenomenaUnik65Data } from "./fenomena-unik-65";
+import { fenomenaUnik66Data } from "./fenomena-unik-66";
+import { fenomenaUnik67Data } from "./fenomena-unik-67";
+import { fenomenaUnik68Data } from "./fenomena-unik-68";
+import { fenomenaUnik69Data } from "./fenomena-unik-69";
+import { fenomenaUnik70Data } from "./fenomena-unik-70";
+import { fenomenaUnik71Data } from "./fenomena-unik-71";
+import { fenomenaUnik72Data } from "./fenomena-unik-72";
+import { fenomenaUnik73Data } from "./fenomena-unik-73";
+import { fenomenaUnik74Data } from "./fenomena-unik-74";
+import { fenomenaUnik75Data } from "./fenomena-unik-75";
+import { fenomenaUnik76Data } from "./fenomena-unik-76";
+import { fenomenaUnik77Data } from "./fenomena-unik-77";
+import { fenomenaUnik78Data } from "./fenomena-unik-78";
+import { fenomenaUnik79Data } from "./fenomena-unik-79";
+import { fenomenaUnik80Data } from "./fenomena-unik-80";
+import { fenomenaUnik81Data } from "./fenomena-unik-81";
+import { fenomenaUnik82Data } from "./fenomena-unik-82";
+import { fenomenaUnik83Data } from "./fenomena-unik-83";
+import { fenomenaUnik84Data } from "./fenomena-unik-84";
+import { fenomenaUnik85Data } from "./fenomena-unik-85";
+import { fenomenaUnik86Data } from "./fenomena-unik-86";
+import { fenomenaUnik87Data } from "./fenomena-unik-87";
+import { fenomenaUnik88Data } from "./fenomena-unik-88";
+import { fenomenaUnik89Data } from "./fenomena-unik-89";
+import { fenomenaUnik90Data } from "./fenomena-unik-90";
+import { fenomenaUnik91Data } from "./fenomena-unik-91";
+import { fenomenaUnik92Data } from "./fenomena-unik-92";
+import { fenomenaUnik93Data } from "./fenomena-unik-93";
+import { fenomenaUnik94Data } from "./fenomena-unik-94";
+import { fenomenaUnik95Data } from "./fenomena-unik-95";
+import { fenomenaUnik96Data } from "./fenomena-unik-96";
+import { fenomenaUnik97Data } from "./fenomena-unik-97";
+import { fenomenaUnik98Data } from "./fenomena-unik-98";
+import { fenomenaUnik99Data } from "./fenomena-unik-99";
+import { fenomenaUnik100Data } from "./fenomena-unik-100";
+import { fenomenaUnik101Data } from "./fenomena-unik-101";
+import { fenomenaUnik102Data } from "./fenomena-unik-102";
+import { fenomenaUnik103Data } from "./fenomena-unik-103";
+import { fenomenaUnik104Data } from "./fenomena-unik-104";
+import { fenomenaUnik105Data } from "./fenomena-unik-105";
+import { fenomenaUnik106Data } from "./fenomena-unik-106";
+import { fenomenaUnik107Data } from "./fenomena-unik-107";
+import { fenomenaUnik108Data } from "./fenomena-unik-108";
+import { fenomenaUnik109Data } from "./fenomena-unik-109";
+import { fenomenaUnik110Data } from "./fenomena-unik-110";
+import { fenomenaUnik111Data } from "./fenomena-unik-111";
+import { fenomenaUnik112Data } from "./fenomena-unik-112";
+import { fenomenaUnik113Data } from "./fenomena-unik-113";
+import { fenomenaUnik114Data } from "./fenomena-unik-114";
+import { fenomenaUnik115Data } from "./fenomena-unik-115";
+import { fenomenaUnik116Data } from "./fenomena-unik-116";
+import { fenomenaUnik117Data } from "./fenomena-unik-117";
+import { fenomenaUnik118Data } from "./fenomena-unik-118";
+import { fenomenaUnik119Data } from "./fenomena-unik-119";
+import { fenomenaUnik120Data } from "./fenomena-unik-120";
+import { fenomenaUnik121Data } from "./fenomena-unik-121";
+import { fenomenaUnik122Data } from "./fenomena-unik-122";
+import { fenomenaUnik123Data } from "./fenomena-unik-123";
+import { fenomenaUnik124Data } from "./fenomena-unik-124";
+import { fenomenaUnik125Data } from "./fenomena-unik-125";
+import { fenomenaUnik126Data } from "./fenomena-unik-126";
+import { fenomenaUnik127Data } from "./fenomena-unik-127";
+import { fenomenaUnik128Data } from "./fenomena-unik-128";
+import { fenomenaUnik129Data } from "./fenomena-unik-129";
+import { fenomenaUnik130Data } from "./fenomena-unik-130";
+import { fenomenaUnik131Data } from "./fenomena-unik-131";
+import { fenomenaUnik132Data } from "./fenomena-unik-132";
 
 export const alamObjects = [
   matahariData,
@@ -168,136 +168,136 @@ export const alamObjects = [
   pelangiData,
   gerhanaData,
   gunungBerapiData,
-  gempaBumiData,
-  tsunamiData,
-  tornadoData,
-  auroraBorealisData,
-  auroraAustralisData,
-  gerhanaMatahariData,
-  gerhanaBulanData,
-  ekosistemHutanData,
-  terumbuKarangData,
-  fotosintesisData,
-  siklusAirData,
-  rantaiMakananData,
-  hutanHujanTropisData,
-  badaiTopanData,
-  banjirBandangData,
-  kekeringanData,
-  tanahLongsorData,
-  saljuLongsorData,
-  badaiPasirData,
-  kabutTebalData,
-  awanKumulonimbusData,
-  awanSirusData,
-  pelangiGandaData,
-  pasangSurutAirLautData,
-  arusLautData,
-  palungLautMarianaData,
-  deltaSungaiNilData,
-  airTerjunNiagaraData,
-  geyserYellowstoneData,
-  guaAlamBawahTanahData,
-  stalaktitGuaData,
-  stalagmitGuaData,
-  ngaraiBesarCanyonData,
-  oasisGurunPasirData,
-  sabanaRumputTropisData,
-  tundraBekuArtikData,
-  taigaPinusSubartikData,
-  hutanBakauMangroveData,
-  pulauVulkanikBaruData,
-  atolKarangSamudraData,
-  gunungEsArtikData,
-  gletserBekuAlamiData,
-  fjordLautNorwegiaData,
-  selatSundaData,
-  telukJakartaData,
-  semenanjungMelayuData,
-  dataranTinggiDekkanData,
-  gumukPasirSaharaData,
-  batuBasaltHitamData,
-  batuGranitKerasData,
-  batuObsidianKacaData,
-  batuApungRinganData,
-  batuMarmerKilapData,
-  batuKapurPutihData,
-  intanPermataKaratData,
-  emasMurniLogamData,
-  perakMurniLogamData,
-  besiAlamiMeteoritData,
-  batubaraTambangData,
-  minyakBumiMentahData,
-  gasAlamMetanaData,
-  energiSuryaMatahariData,
-  energiAnginTurbinData,
-  energiGeotermalBumiData,
-  siklusCarbonAlamData,
-  siklusNitrogenTanahData,
-  siklusOksigenUdaraData,
-  efekRumahKacaGlobalData,
-  lapisanOzonPelindungData,
-  atmosferBumiBiruData,
-  troposferAwanData,
-  stratospherePesawatData,
-  mesosferMeteorData,
-  termosferAuroraData,
-  eksosferSatelitData,
-  gravitasiBumiAlamiData,
-  magnetismeBumiKompasData,
-  haloMatahariCincinData,
-  haloBulanCincinData,
-  fataMorganaGurunData,
-  hujanAsamPolusiData,
-  gelombangSeismikGempaData,
-  magmaCairDalamBumiData,
-  lavaPanasGunungApiData,
-  kawahGunungApiDanauData,
-  sulfurKawahBelerangData,
-  batuPasirEndapanData,
-  batuSabakTulisData,
-  kristalKuarsaBeningData,
-  tembagaMurniKabelData,
-  aliranLavaBawahLautSamudraData,
-  hutanGugurEmpatMusimData,
-  padangLamunPantaiData,
-  estuariSungaiPayauData,
-  mataAirPanasGeothermalData,
-  awanStratusTebalData,
-  awanKumulusPutihData,
-  badaiPetirKilatData,
-  hujanEsBatuKristalData,
-  badaiSaljuDinginData,
-  embunPagiDaunData,
-  embunanBekuSaljuData,
-  pelangiBulanMalamMoonbowData,
-  pelangiKabutGunungFogbowData,
-  kilatVulkanikLetusanData,
-  gelombangPasangPurnamaData,
-  siklonTropisSamudraData,
-  putingBeliungDaratData,
-  kekeringanEkstremAfrikaData,
-  tanahHumusSuburData,
-  tanahLiatKeramikData,
-  tanahPasirPantaiData,
-  tanahGambutRawaData,
-  tanahKapurBukitData,
-  erosiAirHujanData,
-  erosiAnginGurunData,
-  pelapukanBatuanMekanikData,
-  sedimentasiSungaiDeltaData,
-  karsTopografiBukitData,
-  danauTektonikTobaData,
-  danauVulkanikBaturData,
-  rawaGambutKalimantanData,
-  airTanahSumurData,
-  siklusBatuanAlamData,
-  batuBaraMudaCokelatData,
-  tembagaAlamiTambangData,
-  batuSerpihLunakData,
-  batuKonglomeratKerikilData,
-  batuBreksiBersudutData,
-  batuGampingKarangData,
-  batuGipsAlamData,
-  garamBatuTambangData,
+  fenomenaUnik1Data,
+  fenomenaUnik2Data,
+  fenomenaUnik3Data,
+  fenomenaUnik4Data,
+  fenomenaUnik5Data,
+  fenomenaUnik6Data,
+  fenomenaUnik7Data,
+  fenomenaUnik8Data,
+  fenomenaUnik9Data,
+  fenomenaUnik10Data,
+  fenomenaUnik11Data,
+  fenomenaUnik12Data,
+  fenomenaUnik13Data,
+  fenomenaUnik14Data,
+  fenomenaUnik15Data,
+  fenomenaUnik16Data,
+  fenomenaUnik17Data,
+  fenomenaUnik18Data,
+  fenomenaUnik19Data,
+  fenomenaUnik20Data,
+  fenomenaUnik21Data,
+  fenomenaUnik22Data,
+  fenomenaUnik23Data,
+  fenomenaUnik24Data,
+  fenomenaUnik25Data,
+  fenomenaUnik26Data,
+  fenomenaUnik27Data,
+  fenomenaUnik28Data,
+  fenomenaUnik29Data,
+  fenomenaUnik30Data,
+  fenomenaUnik31Data,
+  fenomenaUnik32Data,
+  fenomenaUnik33Data,
+  fenomenaUnik34Data,
+  fenomenaUnik35Data,
+  fenomenaUnik36Data,
+  fenomenaUnik37Data,
+  fenomenaUnik38Data,
+  fenomenaUnik39Data,
+  fenomenaUnik40Data,
+  fenomenaUnik41Data,
+  fenomenaUnik42Data,
+  fenomenaUnik43Data,
+  fenomenaUnik44Data,
+  fenomenaUnik45Data,
+  fenomenaUnik46Data,
+  fenomenaUnik47Data,
+  fenomenaUnik48Data,
+  fenomenaUnik49Data,
+  fenomenaUnik50Data,
+  fenomenaUnik51Data,
+  fenomenaUnik52Data,
+  fenomenaUnik53Data,
+  fenomenaUnik54Data,
+  fenomenaUnik55Data,
+  fenomenaUnik56Data,
+  fenomenaUnik57Data,
+  fenomenaUnik58Data,
+  fenomenaUnik59Data,
+  fenomenaUnik60Data,
+  fenomenaUnik61Data,
+  fenomenaUnik62Data,
+  fenomenaUnik63Data,
+  fenomenaUnik64Data,
+  fenomenaUnik65Data,
+  fenomenaUnik66Data,
+  fenomenaUnik67Data,
+  fenomenaUnik68Data,
+  fenomenaUnik69Data,
+  fenomenaUnik70Data,
+  fenomenaUnik71Data,
+  fenomenaUnik72Data,
+  fenomenaUnik73Data,
+  fenomenaUnik74Data,
+  fenomenaUnik75Data,
+  fenomenaUnik76Data,
+  fenomenaUnik77Data,
+  fenomenaUnik78Data,
+  fenomenaUnik79Data,
+  fenomenaUnik80Data,
+  fenomenaUnik81Data,
+  fenomenaUnik82Data,
+  fenomenaUnik83Data,
+  fenomenaUnik84Data,
+  fenomenaUnik85Data,
+  fenomenaUnik86Data,
+  fenomenaUnik87Data,
+  fenomenaUnik88Data,
+  fenomenaUnik89Data,
+  fenomenaUnik90Data,
+  fenomenaUnik91Data,
+  fenomenaUnik92Data,
+  fenomenaUnik93Data,
+  fenomenaUnik94Data,
+  fenomenaUnik95Data,
+  fenomenaUnik96Data,
+  fenomenaUnik97Data,
+  fenomenaUnik98Data,
+  fenomenaUnik99Data,
+  fenomenaUnik100Data,
+  fenomenaUnik101Data,
+  fenomenaUnik102Data,
+  fenomenaUnik103Data,
+  fenomenaUnik104Data,
+  fenomenaUnik105Data,
+  fenomenaUnik106Data,
+  fenomenaUnik107Data,
+  fenomenaUnik108Data,
+  fenomenaUnik109Data,
+  fenomenaUnik110Data,
+  fenomenaUnik111Data,
+  fenomenaUnik112Data,
+  fenomenaUnik113Data,
+  fenomenaUnik114Data,
+  fenomenaUnik115Data,
+  fenomenaUnik116Data,
+  fenomenaUnik117Data,
+  fenomenaUnik118Data,
+  fenomenaUnik119Data,
+  fenomenaUnik120Data,
+  fenomenaUnik121Data,
+  fenomenaUnik122Data,
+  fenomenaUnik123Data,
+  fenomenaUnik124Data,
+  fenomenaUnik125Data,
+  fenomenaUnik126Data,
+  fenomenaUnik127Data,
+  fenomenaUnik128Data,
+  fenomenaUnik129Data,
+  fenomenaUnik130Data,
+  fenomenaUnik131Data,
+  fenomenaUnik132Data,
 ];

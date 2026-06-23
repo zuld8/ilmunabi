@@ -43,8 +43,9 @@ export const faunaUnik46Data: ObjectData = {
       en: "Interesting facts about Fauna Unik 46: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Fauna Unik 46 diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Fauna Unik 46 was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Fauna Unik 46 dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Fauna Unik 46 in the Qur'an so humans observe the science behind it." }
+      { id: "Fauna Unik 46 merupakan fauna dengan keunikan biologi ciptaan Allah SWT.", en: "Fauna Unik 46 merupakan fauna dengan keunikan biologi ciptaan Allah SWT." },
+      { id: "Organ tubuh Fauna Unik 46 disesuaikan sempurna untuk bertahan hidup di habitat aslinya.", en: "Organ tubuh Fauna Unik 46 disesuaikan sempurna untuk bertahan hidup di habitat aslinya." },
+      { id: "Setiap perilaku alami Fauna Unik 46 merupakan bagian dari rantai makanan penyeimbang bumi.", en: "Setiap perilaku alami Fauna Unik 46 merupakan bagian dari rantai makanan penyeimbang bumi." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const faunaUnik46Data: ObjectData = {
       en: "Exploration of the anatomy and structure of Fauna Unik 46 reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Fisik Adaptif", en: "Fisik Adaptif" }, desc: { id: "Struktur tubuh yang disesuaikan dengan suhu dan kelembaban habitat.", en: "Struktur tubuh yang disesuaikan dengan suhu dan kelembaban habitat." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Fauna Unik 46 di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Fauna Unik 46 in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban penciptaan Fauna Unik 46: Allah SWT merancang organ sensori khusus pada Fauna Unik 46 agar terhindar dari pemangsa alami secara presisi.",
+      en: "Keajaiban penciptaan Fauna Unik 46: Allah SWT merancang organ sensori khusus pada Fauna Unik 46 agar terhindar dari pemangsa alami secara presisi.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

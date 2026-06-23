@@ -43,8 +43,9 @@ export const awanData: ObjectData = {
       en: "Interesting facts about Awan: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Awan diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Awan was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Awan dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Awan in the Qur'an so humans observe the science behind it." }
+      { id: "Awan merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Awan merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
+      { id: "Keteraturan siklus Awan memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Awan memungkinkan kehidupan biologis manusia berjalan dengan aman." },
+      { id: "Interaksi fisik Awan dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Awan dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const awanData: ObjectData = {
       en: "Exploration of the anatomy and structure of Awan reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Awan di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Awan in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban penciptaan Awan: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Awan agar tidak terjadi benturan atau kehancuran kosmis.",
+      en: "Keajaiban penciptaan Awan: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Awan agar tidak terjadi benturan atau kehancuran kosmis.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

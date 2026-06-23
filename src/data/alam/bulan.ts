@@ -43,8 +43,11 @@ export const bulanData: ObjectData = {
       en: "Interesting facts about Bulan: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Bulan diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Bulan was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Bulan dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Bulan in the Qur'an so humans observe the science behind it." }
+      { id: "Bulan tidak memiliki cahayanya sendiri; ia hanya memantulkan cahaya matahari.", en: "Bulan tidak memiliki cahayanya sendiri; ia hanya memantulkan cahaya matahari." },
+      { id: "Gaya gravitasi bulan menyebabkan pasang surut air laut di bumi.", en: "Gaya gravitasi bulan menyebabkan pasang surut air laut di bumi." },
+      { id: "Bulan berputar pada porosnya dengan kecepatan yang sama dengan orbitnya.", en: "Bulan berputar pada porosnya dengan kecepatan yang sama dengan orbitnya." },
+      { id: "Permukaan bulan dipenuhi kawah akibat hantaman asteroid tanpa atmosfer.", en: "Permukaan bulan dipenuhi kawah akibat hantaman asteroid tanpa atmosfer." },
+      { id: "Bulan bergerak menjauhi bumi sekitar 3,8 cm setiap tahun.", en: "Bulan bergerak menjauhi bumi sekitar 3,8 cm setiap tahun." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const bulanData: ObjectData = {
       en: "Exploration of the anatomy and structure of Bulan reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Kawah Tabrakan", en: "Kawah Tabrakan" }, desc: { id: "Lubang besar bekas hantaman meteorit karena tidak adanya atmosfer pelindung.", en: "Lubang besar bekas hantaman meteorit karena tidak adanya atmosfer pelindung." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Bulan di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Bulan in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Yasin 36:39, Allah berfirman bahwa Dia menetapkan tempat peredaran bulan sehingga tampak seperti tandan kering (sabit). Secara astronomis, fase bulan sabit ini penting untuk penentuan kalender Hijriah dan pasang surut air laut.",
+      en: "Dalam Surah Yasin 36:39, Allah berfirman bahwa Dia menetapkan tempat peredaran bulan sehingga tampak seperti tandan kering (sabit). Secara astronomis, fase bulan sabit ini penting untuk penentuan kalender Hijriah dan pasang surut air laut.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

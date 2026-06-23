@@ -43,8 +43,11 @@ export const matahariData: ObjectData = {
       en: "Interesting facts about Matahari: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Matahari diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Matahari was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Matahari dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Matahari in the Qur'an so humans observe the science behind it." }
+      { id: "Matahari adalah bintang terdekat bumi yang menghasilkan cahayanya sendiri.", en: "Matahari adalah bintang terdekat bumi yang menghasilkan cahayanya sendiri." },
+      { id: "Suhu permukaan matahari mencapai 5.500 derajat Celsius.", en: "Suhu permukaan matahari mencapai 5.500 derajat Celsius." },
+      { id: "Cahaya matahari membutuhkan waktu 8 menit untuk sampai ke bumi.", en: "Cahaya matahari membutuhkan waktu 8 menit untuk sampai ke bumi." },
+      { id: "Energi matahari menggerakkan siklus cuaca dan fotosintesis tanaman.", en: "Energi matahari menggerakkan siklus cuaca dan fotosintesis tanaman." },
+      { id: "Matahari mengandung 99,8% massa dari seluruh tata surya kita.", en: "Matahari mengandung 99,8% massa dari seluruh tata surya kita." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const matahariData: ObjectData = {
       en: "Exploration of the anatomy and structure of Matahari reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Zona Radiatif", en: "Zona Radiatif" }, desc: { id: "Energi termonuklir dari inti merambat keluar membutuhkan waktu ribuan tahun.", en: "Energi termonuklir dari inti merambat keluar membutuhkan waktu ribuan tahun." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Matahari di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Matahari in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Asy-Syams 91:1-2, Allah bersumpah demi matahari dan cahayanya di pagi hari. Matahari memancarkan angin surya dan medan magnet yang melindungi bumi dari radiasi kosmis mematikan, menjadikannya sistem pendukung kehidupan utama.",
+      en: "Dalam Surah Asy-Syams 91:1-2, Allah bersumpah demi matahari dan cahayanya di pagi hari. Matahari memancarkan angin surya dan medan magnet yang melindungi bumi dari radiasi kosmis mematikan, menjadikannya sistem pendukung kehidupan utama.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

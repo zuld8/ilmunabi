@@ -43,8 +43,11 @@ export const kurmaData: ObjectData = {
       en: "Interesting facts about Kurma: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Kurma diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Kurma was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Kurma dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Kurma in the Qur'an so humans observe the science behind it." }
+      { id: "Pohon kurma bisa hidup hingga 150 tahun dan berbuah sangat lebat.", en: "Pohon kurma bisa hidup hingga 150 tahun dan berbuah sangat lebat." },
+      { id: "Buah kurma sangat kaya kalium, serat, zat besi, dan glukosa alami.", en: "Buah kurma sangat kaya kalium, serat, zat besi, dan glukosa alami." },
+      { id: "Biji kurma bisa bertahan tidak aktif selama puluhan tahun sebelum tumbuh.", en: "Biji kurma bisa bertahan tidak aktif selama puluhan tahun sebelum tumbuh." },
+      { id: "Kurma adalah sumber energi instan yang sangat baik saat berbuka puasa.", en: "Kurma adalah sumber energi instan yang sangat baik saat berbuka puasa." },
+      { id: "Pohon kurma sangat tahan terhadap iklim gurun pasir yang panas dan kering.", en: "Pohon kurma sangat tahan terhadap iklim gurun pasir yang panas dan kering." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const kurmaData: ObjectData = {
       en: "Exploration of the anatomy and structure of Kurma reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Akar Serabut Dalam", en: "Akar Serabut Dalam" }, desc: { id: "Mencari air puluhan meter ke dalam tanah gurun yang kering.", en: "Mencari air puluhan meter ke dalam tanah gurun yang kering." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Kurma di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Kurma in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah Maryam 19:25, Allah menyuruh Maryam menggoyang pangkal pohon kurma saat melahirkan untuk menjatuhkan buah kurma segar. Secara sains, kurma mengandung hormon oksitosin yang merangsang kontraksi rahim dan mencegah pendarahan saat melahirkan, serta zat besi penambah energi.",
+      en: "Dalam Surah Maryam 19:25, Allah menyuruh Maryam menggoyang pangkal pohon kurma saat melahirkan untuk menjatuhkan buah kurma segar. Secara sains, kurma mengandung hormon oksitosin yang merangsang kontraksi rahim dan mencegah pendarahan saat melahirkan, serta zat besi penambah energi.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

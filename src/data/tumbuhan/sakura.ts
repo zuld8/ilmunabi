@@ -43,8 +43,9 @@ export const sakuraData: ObjectData = {
       en: "Interesting facts about Sakura: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Sakura diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Sakura was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Sakura dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Sakura in the Qur'an so humans observe the science behind it." }
+      { id: "Tumbuhan Sakura melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Sakura melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
+      { id: "Akar, batang, dan daun Sakura bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Sakura bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
+      { id: "Zat hijau daun (klorofil) pada Sakura adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Sakura adalah laboratorium biokimia canggih ciptaan Allah SWT." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +73,14 @@ export const sakuraData: ObjectData = {
       en: "Exploration of the anatomy and structure of Sakura reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Sakura di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Sakura in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Keajaiban sains Sakura: Struktur pembuluh kayu dan tapis pada Sakura mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
+      en: "Keajaiban sains Sakura: Struktur pembuluh kayu dan tapis pada Sakura mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

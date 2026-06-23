@@ -43,8 +43,11 @@ export const semutData: ObjectData = {
       en: "Interesting facts about Semut: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "Semut diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "Semut was created with unique traits and immense benefits." },
-      { id: "Allah menyebut Semut dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions Semut in the Qur'an so humans observe the science behind it." }
+      { id: "Semut adalah serangga super kuat yang bisa mengangkat beban 50 kali berat badannya.", en: "Semut adalah serangga super kuat yang bisa mengangkat beban 50 kali berat badannya." },
+      { id: "Semut tidak memiliki telinga; mereka merasakan getaran tanah lewat kaki mereka.", en: "Semut tidak memiliki telinga; mereka merasakan getaran tanah lewat kaki mereka." },
+      { id: "Semut berkomunikasi dengan mengeluarkan zat kimia bernama feromon.", en: "Semut berkomunikasi dengan mengeluarkan zat kimia bernama feromon." },
+      { id: "Beberapa spesies semut tidak memiliki mata dan hanya mengandalkan antenanya.", en: "Beberapa spesies semut tidak memiliki mata dan hanya mengandalkan antenanya." },
+      { id: "Semut selalu berjalan berbaris rapi untuk mengikuti jejak aroma feromon temannya.", en: "Semut selalu berjalan berbaris rapi untuk mengikuti jejak aroma feromon temannya." }
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -72,17 +75,14 @@ export const semutData: ObjectData = {
       en: "Exploration of the anatomy and structure of Semut reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      { part: { id: "Rahang (Mandibula)", en: "Rahang (Mandibula)" }, desc: { id: "Digunakan untuk menggigit, membawa makanan, dan mempertahankan sarang.", en: "Digunakan untuk menggigit, membawa makanan, dan mempertahankan sarang." } }
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut Semut di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned Semut in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "Dalam Surah An-Naml 27:18, seekor semut memperingatkan kawanannya agar masuk sarang agar tidak terinjak oleh pasukan Nabi Sulaiman. Sains membuktikan semut memiliki sistem komunikasi suara frekuensi rendah (stridulasi) yang canggih untuk memanggil bantuan dan mengorganisir pertahanan koloni.",
+      en: "Dalam Surah An-Naml 27:18, seekor semut memperingatkan kawanannya agar masuk sarang agar tidak terinjak oleh pasukan Nabi Sulaiman. Sains membuktikan semut memiliki sistem komunikasi suara frekuensi rendah (stridulasi) yang canggih untuk memanggil bantuan dan mengorganisir pertahanan koloni.",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",

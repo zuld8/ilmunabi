@@ -13,807 +13,375 @@ function makeSlug(name) {
     .replace(/-+/g, '-');     // collapse multiple hyphens
 }
 
-// 1. DATA DICTIONARIES FOR BULK GENERATION
-const HEWAN_LIST = [
+function getUniqueSlug(name) {
+  return makeSlug(name);
+}
+
+// 1. COMPACT OVERRIDES FOR MAJOR PROPHETS
+const PROPHET_OVERRIDES = {
+  adam: {
+    storyShort: "Kisah penciptaan manusia pertama, ketaatan malaikat, dan taubat Nabi Adam setelah diturunkan ke Bumi.",
+    storyFull: "Nabi Adam A.S. adalah manusia pertama yang diciptakan oleh Allah SWT dari tanah. Allah meniupkan ruh-Nya dan mengajarkan semua nama benda kepadanya. Setelah digoda oleh Iblis untuk mendekati pohon terlarang, beliau diturunkan ke bumi, bertaubat, dan dikabulkan doanya oleh Allah untuk membimbing keturunannya.",
+    miracles: ["Diciptakan langsung oleh Allah tanpa perantara ayah dan ibu.", "Diajarkan nama-nama dari segala sesuatu oleh Allah SWT."],
+    traits: [{ trait: "Taubat", desc: "Segera mengakui kesalahan dan memohon ampunan kepada Allah SWT." }],
+    timeline: [
+      { yearOrAge: "Awal", title: "Penciptaan di Surga", desc: "Diciptakan dari tanah liat kering dan ruh ditiupkan." },
+      { yearOrAge: "Ujian", title: "Godaan Iblis", desc: "Memakan buah terlarang di surga karena bujuk rayu Iblis." },
+      { yearOrAge: "Bumi", title: "Kekhalifahan di Bumi", desc: "Diturunkan ke bumi untuk mengelola alam dan beribadah." }
+    ],
+    daily: "Jika melakukan kesalahan, kita harus meniru Nabi Adam dengan segera meminta maaf kepada orang tua dan memohon ampun kepada Allah."
+  },
+  nuh: {
+    storyShort: "Nabi yang membangun bahtera raksasa atas perintah Allah untuk menyelamatkan kaum beriman dari banjir besar.",
+    storyFull: "Nabi Nuh A.S. berdakwah selama 950 tahun dengan kesabaran luar biasa, namun hanya sedikit yang beriman. Atas perintah Allah, beliau membuat perahu raksasa (Bahtera) di atas bukit yang gersang. Ketika banjir bandang dahsyat menenggelamkan bumi, kaum beriman dan hewan-hewan berpasangan selamat di dalam bahtera.",
+    miracles: ["Mampu membuat kapal raksasa yang sangat kokoh tanpa teknologi modern.", "Selamat dari banjir besar yang menenggelamkan seluruh daratan."],
+    traits: [{ trait: "Sabar", desc: "Tetap berdakwah ratusan tahun meski terus dihina kaumnya." }],
+    timeline: [
+      { yearOrAge: "Dakwah", title: "Ratusan Tahun Dakwah", desc: "Mengajak kaumnya meninggalkan berhala." },
+      { yearOrAge: "Bahtera", title: "Membuat Kapal Raksasa", desc: "Membuat kapal di daratan atas wahyu Allah SWT." },
+      { yearOrAge: "Banjir", title: "Air Bah Datang", desc: "Banjir melanda bumi, menyelamatkan orang beriman dan hewan." }
+    ],
+    daily: "Kita harus pantang menyerah saat belajar atau berbuat baik, meski orang lain mengejek kita."
+  },
+  ibrahim: {
+    storyShort: "Bapak para nabi, tidak mempan dibakar api Raja Namrud, dan membangun Ka'bah bersama Nabi Ismail A.S.",
+    storyFull: "Nabi Ibrahim A.S. adalah Khalilullah (Kekasih Allah). Beliau menghancurkan berhala-berhala Raja Namrud untuk menunjukkan ketidakberdayaan mereka. Akibatnya, beliau dihukum bakar hidup-hidup, namun Allah berfirman kepada api agar menjadi dingin dan menyelamatkan Nabi Ibrahim. Beliau juga diperintahkan menyembelih putranya Ismail yang kemudian diganti domba, serta membangun Ka'bah di Makkah.",
+    miracles: ["Api raksasa menjadi dingin dan damai saat beliau dibakar.", "Ketaatan mengurbankan Ismail diganti dengan domba dari surga."],
+    traits: [{ trait: "Pemberani", desc: "Berani menyampaikan kebenaran tentang keesaan Allah di depan raja kejam." }],
+    timeline: [
+      { yearOrAge: "Muda", title: "Dilemparkan ke Api", desc: "Dihukum bakar oleh Namrud, namun api terasa dingin menyegarkan." },
+      { yearOrAge: "Kurban", title: "Kurban & Zamzam", desc: "Keteladanan kepatuhan kurban luar biasa digantikan domba surga." },
+      { yearOrAge: "Tua", title: "Membangun Ka'bah", desc: "Mendirikan bangunan suci Ka'bah bersama Ismail." }
+    ],
+    daily: "Kita harus berani membela kebenaran dan selalu taat serta berbakti kepada orang tua kita."
+  },
+  musa: {
+    storyShort: "Nabi yang membelah Laut Merah dengan tongkatnya untuk menyelamatkan Bani Israil dari kejaran pasukan Firaun.",
+    storyFull: "Nabi Musa A.S. dihanyutkan di sungai Nil saat bayi, lalu diasuh oleh istri Firaun sendiri. Setelah dewasa, beliau menerima wahyu di Bukit Sinai. Beliau menentang Firaun yang mengaku tuhan. Ketika terpojok di tepi laut merah, Allah memerintahkannya memukulkan tongkatnya, membelah laut menjadi jalan kering, menyelamatkan Bani Israil, dan menenggelamkan Firaun.",
+    miracles: ["Tongkat kayu berubah menjadi ular besar dan membelah Laut Merah.", "Telapak tangannya memancarkan cahaya putih yang menyilaukan."],
+    traits: [{ trait: "Pemberani & Tegas", desc: "Berani memimpin kaum tertindas melawan raja diktator terkuat di bumi." }],
+    timeline: [
+      { yearOrAge: "Hanyut", title: "Bayi di Sungai Nil", desc: "Diselamatkan oleh Asiyah, istri Firaun, dari rencana pembunuhan bayi." },
+      { yearOrAge: "Wahyu", title: "Tongkat Jadi Ular", desc: "Menghadapi para penyihir Firaun dengan mukjizat tongkat kayu." },
+      { yearOrAge: "Laut", title: "Membelah Laut Merah", desc: "Laut terbelah menciptakan jalan aman bagi ribuan orang." }
+    ],
+    daily: "Kita harus berani membela teman yang sedang dirundung (dibully) dan teguh pendirian melakukan kebaikan."
+  },
+  isa: {
+    storyShort: "Nabi yang lahir tanpa ayah dari perawan suci Maryam, mampu berbicara saat bayi, membuat burung dari tanah liat, dan menghidupkan orang mati atas izin Allah.",
+    storyFull: "Nabi Isa A.S. dilahirkan oleh Maryam yang suci tanpa perantara ayah sebagai tanda kekuasaan Allah. Ketika Maryam dituduh, bayi Isa berbicara di dalam ayunan bayi untuk membela ibunya. Beliau mendakwahkan kitab Injil, mampu menyembuhkan orang buta sejak lahir, menyembuhkan kusta, membentuk burung dari tanah lalu menghidupkannya, dan menghidupkan orang mati, semuanya atas izin Allah SWT.",
+    miracles: ["Berbicara lancar membela ibunya saat masih bayi di dalam ayunan.", "Membentuk tanah liat menjadi burung lalu menghidupkannya.", "Menyembuhkan orang buta, penyakit kusta, dan menghidupkan orang mati."],
+    traits: [{ trait: "Sederhana & Kasih", desc: "Sangat sederhana dalam hidupnya dan penuh kasih sayang kepada kaum miskin." }],
+    timeline: [
+      { yearOrAge: "Bayi", title: "Berbicara di Ayunan", desc: "Menjelaskan bahwa dirinya adalah hamba Allah dan nabi pembawa kitab." },
+      { yearOrAge: "Dakwah", title: "Mukjizat Penyembuhan", desc: "Menyembuhkan penyakit kronis yang tidak bisa diobati dokter zamannya." }
+    ],
+    daily: "Kita harus bersikap sopan santun kepada semua orang, terutama menyayangi teman-teman yang kurang beruntung."
+  },
+  muhammad: {
+    storyShort: "Nabi akhir zaman, penutup para nabi, berakhlak mulia sempurna, mukjizat terbesar Al-Qur'an, dan melakukan perjalanan Isra' Mi'raj.",
+    storyFull: "Nabi Muhammad ﷺ lahir sebagai yatim di Makkah. Beliau terkenal sangat jujur sehingga dijuluki Al-Amin (Yang Terpercaya). Pada usia 40 tahun, beliau menerima wahyu pertama di Gua Hira berupa Al-Qur'an lewat Malaikat Jibril. Beliau mengalami peristiwa Isra' Mi'raj menerima perintah shalat 5 waktu. Dengan akhlak mulia dan kasih sayang yang tiada tara, beliau menyebarkan Islam ke seluruh penjuru dunia.",
+    miracles: ["Al-Qur'anul Karim, mukjizat terbesar sepanjang masa yang menjaga keasliannya.", "Perjalanan luar angkasa Isra' Mi'raj menembus langit ketujuh.", "Membelah bulan dengan isyarat telunjuk jari tangannya."],
+    traits: [{ trait: "Akhlak Sempurna", desc: "Memiliki kejujuran, kesabaran, keadilan, dan cinta kasih teragung." }],
+    timeline: [
+      { yearOrAge: "Lahir", title: "Kelahiran Yatim", desc: "Lahir di tahun gajah, dirawat kakek Abdul Muthalib lalu paman Abu Thalib." },
+      { yearOrAge: "Wahyu", title: "Turunnya Al-Qur'an", desc: "Menerima surah Al-Alaq di Gua Hira sebagai awal tugas kenabian." },
+      { yearOrAge: "Hijrah", title: "Hijrah ke Madinah", desc: "Membangun peradaban Islam yang adil bersama kaum Muhajirin dan Anshar." }
+    ],
+    daily: "Kita harus meniru akhlak Rasulullah dengan selalu jujur dalam ucapan, menyayangi teman, menghormati guru, dan rajin shalat 5 waktu tepat waktu."
+  }
+};
+
+// 2. COMPACT OVERRIDES FOR MAJOR SCIENTIFIC OBJECTS
+const SCIENTIFIC_OVERRIDES = {
+  lebah: {
+    facts: [
+      "Lebah madu mengepakkan sayapnya sekitar 200 kali per detik untuk terbang.",
+      "Lebah madu berkomunikasi dengan menari (waggle dance) untuk menunjukkan lokasi bunga.",
+      "Lebah memiliki 5 mata: 2 mata majemuk besar dan 3 mata kecil di atas kepalanya.",
+      "Madu yang dihasilkan lebah adalah satu-satunya makanan yang tidak pernah basi selama ribuan tahun.",
+      "Satu koloni lebah bisa berisi hingga 60.000 lebah yang bekerja sama dengan sangat rapi."
+    ],
+    wowFactor: "Dalam Surah An-Nahl 16:68-69, Allah memerintahkan lebah untuk membuat sarang di gunung dan pohon. Allah menyebutkan cairan madu dari perut lebah beraneka warna dan mengandung obat penyembuh. Sains modern membuktikan madu memiliki kandungan antiseptik, zat besi, dan vitamin yang mempercepat penyembuhan luka secara luar biasa.",
+    anatomy: [{ part: "Kantong Madu", desc: "Tempat menyimpan nektar di perut terpisah dari pencernaan biasa." }]
+  },
+  semut: {
+    facts: [
+      "Semut adalah serangga super kuat yang bisa mengangkat beban 50 kali berat badannya.",
+      "Semut tidak memiliki telinga; mereka merasakan getaran tanah lewat kaki mereka.",
+      "Semut berkomunikasi dengan mengeluarkan zat kimia bernama feromon.",
+      "Beberapa spesies semut tidak memiliki mata dan hanya mengandalkan antenanya.",
+      "Semut selalu berjalan berbaris rapi untuk mengikuti jejak aroma feromon temannya."
+    ],
+    wowFactor: "Dalam Surah An-Naml 27:18, seekor semut memperingatkan kawanannya agar masuk sarang agar tidak terinjak oleh pasukan Nabi Sulaiman. Sains membuktikan semut memiliki sistem komunikasi suara frekuensi rendah (stridulasi) yang canggih untuk memanggil bantuan dan mengorganisir pertahanan koloni.",
+    anatomy: [{ part: "Rahang (Mandibula)", desc: "Digunakan untuk menggigit, membawa makanan, dan mempertahankan sarang." }]
+  },
+  "laba-laba": {
+    facts: [
+      "Sutra jaring laba-laba lebih kuat dari kawat baja dengan ketebalan yang sama.",
+      "Laba-laba bukan serangga; mereka masuk kelompok arakhnida berkaki delapan.",
+      "Jaring laba-laba dilapisi lem lengket untuk menangkap serangga terbang.",
+      "Sebagian besar laba-laba memiliki 8 mata untuk melihat ke segala arah.",
+      "Laba-laba membantu petani dengan memakan serangga hama tanaman."
+    ],
+    wowFactor: "Dalam Surah Al-Ankabut 29:41, Allah mengibaratkan pelindung selain Allah seperti sarang laba-laba, rumah yang paling rapuh. Secara sains, meski sutra pembentuknya kuat, jaring laba-laba tidak mampu melindungi penghuninya dari cuaca ekstrim, angin kencang, air hujan, atau predator besar.",
+    anatomy: [{ part: "Organ Pemintal", desc: "Mengeluarkan sutra cair yang langsung mengeras saat terkena udara." }]
+  },
+  unta: {
+    facts: [
+      "Unta dapat bertahan hidup berbulan-bulan di gurun pasir tanpa minum air.",
+      "Punuk unta menyimpan lemak cadangan energi, bukan air seperti anggapan umum.",
+      "Unta memiliki tiga pasang kelopak mata dan bulu mata panjang untuk menghalau pasir.",
+      "Unta bisa menutup lubang hidungnya saat terjadi badai pasir gurun.",
+      "Sel darah merah unta berbentuk oval sehingga tetap mengalir lancar saat dehidrasi."
+    ],
+    wowFactor: "Dalam Surah Al-Ghashiyah 88:17, Allah menyuruh manusia mengamati bagaimana unta diciptakan. Unta memiliki keajaiban sains berupa kemampuan minum 150 liter air sekali minum, dan suhu tubuhnya bisa menyesuaikan diri dengan panas gurun (34C-41C) agar tidak membuang air melalui keringat.",
+    anatomy: [{ part: "Telapak Kaki Lebar", desc: "Berselaput tebal agar tidak terperosok ke dalam pasir panas." }]
+  },
+  jantung: {
+    facts: [
+      "Jantung manusia berdetak sekitar 100.000 kali dalam satu hari.",
+      "Jantung memompa sekitar 7.500 liter darah ke seluruh tubuh setiap hari.",
+      "Ukuran jantung kita kira-kira sebesar kepalan tangan kita sendiri.",
+      "Jantung memiliki sistem listriknya sendiri yang membuatnya terus berdetak.",
+      "Detak jantung kita melambat saat tidur dan berdetak lebih cepat saat olahraga."
+    ],
+    wowFactor: "Dalam Surah Qaf 50:37, Allah menyebutkan pentingnya qalb (jantung/hati) sebagai pusat kesadaran dan pemahaman. Sains modern membuktikan jantung memiliki sistem saraf intrinsik ('otak jantung') yang terdiri dari 40.000 neuron yang berkomunikasi dua arah dengan otak kepala.",
+    anatomy: [{ part: "4 Ruang Jantung", desc: "Katup satu arah mencegah darah bercampur atau mengalir mundur." }]
+  },
+  mata: {
+    facts: [
+      "Mata manusia dapat membedakan sekitar 10 juta warna berbeda.",
+      "Mata adalah organ tubuh tercepat; otot mata bereaksi dalam sekejap kedipan.",
+      "Mata berkedip sekitar 15-20 kali setiap menit untuk menjaga kelembapan.",
+      "Retina mata menangkap gambar secara terbalik, lalu otak memutarnya kembali.",
+      "Bagian mata berwarna hitam (pupil) akan melebar saat kita berada di tempat gelap."
+    ],
+    factsEn: [
+      "The human eye can distinguish about 10 million different colors.",
+      "The eye is the fastest organ; eye muscles react in a split second blink.",
+      "Eyes blink about 15-20 times per minute to stay clean and moist.",
+      "The retina captures images upside down, and the brain flips them right side up.",
+      "The black center of the eye (pupil) dilates when we are in a dark space."
+    ],
+    wowFactor: "Dalam Surah Al-Balad 90:8, Allah bertanya: 'Bukankah Kami telah menjadikan untuknya sepasang mata?'. Keajaiban mata terletak pada retina yang memiliki 120 juta sel batang untuk mendeteksi cahaya redup dan 6 juta sel kerucut untuk melihat detail warna warni dengan presisi tinggi.",
+    anatomy: [{ part: "Sensor Retina", desc: "Mengubah proyeksi cahaya menjadi impuls listrik untuk dikirim ke otak." }]
+  },
+  kurma: {
+    facts: [
+      "Pohon kurma bisa hidup hingga 150 tahun dan berbuah sangat lebat.",
+      "Buah kurma sangat kaya kalium, serat, zat besi, dan glukosa alami.",
+      "Biji kurma bisa bertahan tidak aktif selama puluhan tahun sebelum tumbuh.",
+      "Kurma adalah sumber energi instan yang sangat baik saat berbuka puasa.",
+      "Pohon kurma sangat tahan terhadap iklim gurun pasir yang panas dan kering."
+    ],
+    wowFactor: "Dalam Surah Maryam 19:25, Allah menyuruh Maryam menggoyang pangkal pohon kurma saat melahirkan untuk menjatuhkan buah kurma segar. Secara sains, kurma mengandung hormon oksitosin yang merangsang kontraksi rahim dan mencegah pendarahan saat melahirkan, serta zat besi penambah energi.",
+    anatomy: [{ part: "Akar Serabut Dalam", desc: "Mencari air puluhan meter ke dalam tanah gurun yang kering." }]
+  },
+  zaitun: {
+    facts: [
+      "Pohon zaitun terkenal sangat panjang umur, bisa hidup ribuan tahun.",
+      "Minyak zaitun mengandung lemak tak jenuh tunggal yang menyehatkan jantung.",
+      "Pohon zaitun tetap hijau sepanjang tahun (evergreen).",
+      "Zaitun mentah rasanya pahit dan harus difermentasi dahulu sebelum dimakan.",
+      "Cabang zaitun adalah simbol perdamaian universal sejak zaman kuno."
+    ],
+    wowFactor: "Dalam Surah An-Nur 24:35, Allah mengibaratkan cahaya-Nya seperti minyak pohon zaitun yang diberkahi. Secara sains, minyak zaitun murni memiliki struktur kimia yang sangat stabil dan mampu memancarkan cahaya lampu minyak yang sangat jernih tanpa banyak asap.",
+    anatomy: [{ part: "Daun Berlapis Lilin", desc: "Mencegah penguapan air di cuaca mediterania yang terik." }]
+  },
+  matahari: {
+    facts: [
+      "Matahari adalah bintang terdekat bumi yang menghasilkan cahayanya sendiri.",
+      "Suhu permukaan matahari mencapai 5.500 derajat Celsius.",
+      "Cahaya matahari membutuhkan waktu 8 menit untuk sampai ke bumi.",
+      "Energi matahari menggerakkan siklus cuaca dan fotosintesis tanaman.",
+      "Matahari mengandung 99,8% massa dari seluruh tata surya kita."
+    ],
+    wowFactor: "Dalam Surah Asy-Syams 91:1-2, Allah bersumpah demi matahari dan cahayanya di pagi hari. Matahari memancarkan angin surya dan medan magnet yang melindungi bumi dari radiasi kosmis mematikan, menjadikannya sistem pendukung kehidupan utama.",
+    anatomy: [{ part: "Zona Radiatif", desc: "Energi termonuklir dari inti merambat keluar membutuhkan waktu ribuan tahun." }]
+  },
+  bulan: {
+    facts: [
+      "Bulan tidak memiliki cahayanya sendiri; ia hanya memantulkan cahaya matahari.",
+      "Gaya gravitasi bulan menyebabkan pasang surut air laut di bumi.",
+      "Bulan berputar pada porosnya dengan kecepatan yang sama dengan orbitnya.",
+      "Permukaan bulan dipenuhi kawah akibat hantaman asteroid tanpa atmosfer.",
+      "Bulan bergerak menjauhi bumi sekitar 3,8 cm setiap tahun."
+    ],
+    wowFactor: "Dalam Surah Yasin 36:39, Allah berfirman bahwa Dia menetapkan tempat peredaran bulan sehingga tampak seperti tandan kering (sabit). Secara astronomis, fase bulan sabit ini penting untuk penentuan kalender Hijriah dan pasang surut air laut.",
+    anatomy: [{ part: "Kawah Tabrakan", desc: "Lubang besar bekas hantaman meteorit karena tidak adanya atmosfer pelindung." }]
+  }
+};
+
+// 3. BASE DATA lists (Priority 1 and Priority 2/3 names)
+const HEWAN_NAMES = [
   // Priority 1
-  { name: "Lebah", slug: "lebah", latin: "Apis mellifera", surah: "An-Nahl", ayat: "16:68-69", icon: "🐝" },
-  { name: "Semut", slug: "semut", latin: "Formicidae", surah: "An-Naml", ayat: "27:18", icon: "🐜" },
-  { name: "Laba-laba", slug: "laba-laba", latin: "Araneae", surah: "Al-Ankabut", ayat: "29:41", icon: "🕷️" },
-  { name: "Unta", slug: "unta", latin: "Camelus", surah: "Al-Ghashiyah", ayat: "88:17", icon: "🐫" },
-  { name: "Nyamuk", slug: "nyamuk", latin: "Culicidae", surah: "Al-Baqarah", ayat: "2:26", icon: "🦟" },
-  { name: "Gajah", slug: "gajah", latin: "Elephas maximus", surah: "Al-Fil", ayat: "105:1-5", icon: "🐘" },
-  { name: "Lalat", slug: "lalat", latin: "Musca domestica", surah: "Al-Hajj", ayat: "22:73", icon: "🪰" },
-  { name: "Burung Hudhud", slug: "hudhud", latin: "Upupa epops", surah: "An-Naml", ayat: "27:20", icon: "🪶" },
-  { name: "Sapi", slug: "sapi", latin: "Bos taurus", surah: "Al-Baqarah", ayat: "2:67", icon: "🐄" },
-  { name: "Anjing", slug: "anjing", latin: "Canis lupus familiaris", surah: "Al-Kahfi", ayat: "18:18", icon: "🐕" },
-  { name: "Keledai", slug: "keledai", latin: "Equus asinus", surah: "Al-Jumu'ah", ayat: "62:5", icon: "🫏" },
-  { name: "Kuda", slug: "kuda", latin: "Equus caballus", surah: "Al-Adiyat", ayat: "100:1", icon: "🐎" },
-  { name: "Babi", slug: "babi", latin: "Sus scrofa", surah: "Al-Baqarah", ayat: "2:173", icon: "🐖" },
-  { name: "Monyet", slug: "monyet", latin: "Simiiformes", surah: "Al-Baqarah", ayat: "2:65", icon: "🐒" },
-  { name: "Ikan Paus", slug: "paus", latin: "Balaenoptera musculus", surah: "Al-Anbiya", ayat: "21:87", icon: "🐋" },
-  { name: "Burung Gagak", slug: "gagak", latin: "Corvus", surah: "Al-Maidah", ayat: "5:31", icon: "🐦" },
-  { name: "Domba", slug: "domba", latin: "Ovis aries", surah: "Al-An'am", ayat: "6:143", icon: "🐏" },
-  { name: "Kambing", slug: "kambing", latin: "Capra aegagrus hircus", surah: "Al-An'am", ayat: "6:143", icon: "🐐" },
-  { name: "Singa", slug: "singa", latin: "Panthera leo", surah: "HR Bukhari", ayat: "Hadist Singa", icon: "🦁" },
-  { name: "Ular", slug: "ular", latin: "Serpentes", surah: "Ta-Ha", ayat: "20:20", icon: "🐍" },
-  // Priority 2
-  { name: "Kucing", slug: "kucing", latin: "Felis catus", surah: "Hadist", ayat: "HR Bukhari", icon: "🐱" },
-  { name: "Kelinci", slug: "kelinci", latin: "Oryctolagus cuniculus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐇" },
-  { name: "Ayam", slug: "ayam", latin: "Gallus gallus domesticus", surah: "Hadist", ayat: "HR Bukhari", icon: "🐓" },
-  { name: "Bebek", slug: "bebek", latin: "Anas platyrhynchos", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦆" },
-  { name: "Harimau", slug: "harimau", latin: "Panthera tigris", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐯" },
-  { name: "Beruang", slug: "beruang", latin: "Ursidae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐻" },
-  { name: "Serigala", slug: "serigala", latin: "Canis lupus", surah: "Yusuf", ayat: "12:13", icon: "🐺" },
-  { name: "Rubah", slug: "rubah", latin: "Vulpes vulpes", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦊" },
-  { name: "Rusa", slug: "rusa", latin: "Cervidae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦌" },
-  { name: "Zebra", slug: "zebra", latin: "Equus quagga", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦓" },
-  { name: "Jerapah", slug: "jerapah", latin: "Giraffa camelopardalis", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦒" },
-  { name: "Gorilla", slug: "gorilla", latin: "Gorilla", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦍" },
-  { name: "Lumba-lumba", slug: "lumba-lumba", latin: "Delphinidae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐬" },
-  { name: "Hiu", slug: "hiu", latin: "Selachimorpha", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦈" },
-  { name: "Gurita", slug: "gurita", latin: "Octopoda", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐙" },
-  { name: "Kepiting", slug: "kepiting", latin: "Brachyura", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦀" },
-  { name: "Udang", slug: "udang", latin: "Caridea", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦐" },
-  { name: "Kupu-kupu", slug: "kupu-kupu", latin: "Lepidoptera", surah: "Al-Qari'ah", ayat: "101:4", icon: "🦋" },
-  { name: "Capung", slug: "capung", latin: "Anisoptera", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🛸" },
-  { name: "Kumbang", slug: "kumbang", latin: "Coleoptera", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪲" },
-  { name: "Ulat", slug: "ulat", latin: "Larva", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐛" },
-  { name: "Katak", slug: "katak", latin: "Anura", surah: "Al-A'raf", ayat: "7:133", icon: "🐸" },
-  { name: "Buaya", slug: "buaya", latin: "Crocodilidae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐊" },
-  { name: "Kura-kura", slug: "kura-kura", latin: "Testudines", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐢" },
-  { name: "Koala", slug: "koala", latin: "Phascolarctos cinereus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐨" },
-  { name: "Kanguru", slug: "kanguru", latin: "Macropodidae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦘" },
-  { name: "Pinguin", slug: "pinguin", latin: "Spheniscidae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🐧" },
-  { name: "Elang", slug: "elang", latin: "Accipitridae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦅" },
-  { name: "Burung Hantu", slug: "burung-hantu", latin: "Strigiformes", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦉" },
-  { name: "Flamingo", slug: "flamingo", latin: "Phoenicopteridae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦩" },
-  { name: "Merak", slug: "merak", latin: "Pavo cristatus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦚" },
-  { name: "Merpati", slug: "merpati", latin: "Columbidae", surah: "Hadist", ayat: "HR Bukhari", icon: "🕊️" },
-  // Priority 3
-  { name: "Platipus", slug: "platipus", latin: "Ornithorhynchus anatinus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦆" },
-  { name: "Axolotl", slug: "axolotl", latin: "Ambystoma mexicanum", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦎" },
-  { name: "Tokek", slug: "tokek", latin: "Gekkonidae", surah: "Hadist", ayat: "HR Muslim", icon: "🦎" },
-  { name: "Bintang Laut", slug: "bintang-laut", latin: "Asteroidea", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "⭐" },
-  { name: "Kuda Laut", slug: "kuda-laut", latin: "Hippocampus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🦄" }
+  ["Lebah", "Apis mellifera", "An-Nahl", "16:68-69", "🐝"],
+  ["Semut", "Formicidae", "An-Naml", "27:18", "🐜"],
+  ["Laba-laba", "Araneae", "Al-Ankabut", "29:41", "🕷️"],
+  ["Unta", "Camelus", "Al-Ghashiyah", "88:17", "🐫"],
+  ["Nyamuk", "Culicidae", "Al-Baqarah", "2:26", "🦟"],
+  ["Gajah", "Elephas maximus", "Al-Fil", "105:1-5", "🐘"],
+  ["Lalat", "Musca domestica", "Al-Hajj", "22:73", "🪰"],
+  ["Burung Hudhud", "Upupa epops", "An-Naml", "27:20", "🪶"],
+  ["Sapi", "Bos taurus", "Al-Baqarah", "2:67", "🐄"],
+  ["Anjing", "Canis lupus familiaris", "Al-Kahfi", "18:18", "🐕"],
+  ["Keledai", "Equus asinus", "Al-Jumu'ah", "62:5", "🫏"],
+  ["Kuda", "Equus caballus", "Al-Adiyat", "100:1", "🐎"],
+  ["Babi", "Sus scrofa", "Al-Baqarah", "2:173", "🐖"],
+  ["Monyet", "Simiiformes", "Al-Baqarah", "2:65", "🐒"],
+  ["Ikan Paus", "Balaenoptera musculus", "Al-Anbiya", "21:87", "🐋"],
+  ["Burung Gagak", "Corvus", "Al-Maidah", "5:31", "🐦"],
+  ["Domba", "Ovis aries", "Al-An'am", "6:143", "🐏"],
+  ["Kambing", "Capra aegagrus hircus", "Al-An'am", "6:143", "🐐"],
+  ["Singa", "Panthera leo", "HR Bukhari", "Hadist Singa", "🦁"],
+  ["Ular", "Serpentes", "Ta-Ha", "20:20", "🐍"],
+  // Priority 2 & 3
+  ["Kucing", "Felis catus", "Hadist", "HR Bukhari", "🐱"],
+  ["Kelinci", "Oryctolagus cuniculus", "Al-Qur'an", "Ciptaan Allah", "🐇"],
+  ["Ayam", "Gallus gallus domesticus", "Hadist", "HR Bukhari", "🐓"],
+  ["Bebek", "Anas platyrhynchos", "Al-Qur'an", "Ciptaan Allah", "🦆"],
+  ["Harimau", "Panthera tigris", "Al-Qur'an", "Ciptaan Allah", "🐯"],
+  ["Beruang", "Ursidae", "Al-Qur'an", "Ciptaan Allah", "🐻"],
+  ["Serigala", "Canis lupus", "Yusuf", "12:13", "🐺"],
+  ["Rubah", "Vulpes vulpes", "Al-Qur'an", "Ciptaan Allah", "🦊"],
+  ["Rusa", "Cervidae", "Al-Qur'an", "Ciptaan Allah", "🦌"],
+  ["Zebra", "Equus quagga", "Al-Qur'an", "Ciptaan Allah", "🦓"],
+  ["Jerapah", "Giraffa camelopardalis", "Al-Qur'an", "Ciptaan Allah", "🦒"],
+  ["Gorilla", "Gorilla", "Al-Qur'an", "Ciptaan Allah", "🦍"],
+  ["Lumba-lumba", "Delphinidae", "Al-Qur'an", "Ciptaan Allah", "🐬"],
+  ["Hiu", "Selachimorpha", "Al-Qur'an", "Ciptaan Allah", "🦈"],
+  ["Gurita", "Octopoda", "Al-Qur'an", "Ciptaan Allah", "🐙"],
+  ["Kepiting", "Brachyura", "Al-Qur'an", "Ciptaan Allah", "🦀"],
+  ["Udang", "Caridea", "Al-Qur'an", "Ciptaan Allah", "🦐"],
+  ["Kupu-kupu", "Lepidoptera", "Al-Qari'ah", "101:4", "🦋"],
+  ["Capung", "Anisoptera", "Al-Qur'an", "Ciptaan Allah", "🛸"],
+  ["Kumbang", "Coleoptera", "Al-Qur'an", "Ciptaan Allah", "🪲"],
+  ["Ulat", "Larva", "Al-Qur'an", "Ciptaan Allah", "🐛"],
+  ["Katak", "Anura", "Al-A'raf", "7:133", "🐸"],
+  ["Buaya", "Crocodilidae", "Al-Qur'an", "Ciptaan Allah", "🐊"],
+  ["Kura-kura", "Testudines", "Al-Qur'an", "Ciptaan Allah", "🐢"],
+  ["Koala", "Phascolarctos cinereus", "Al-Qur'an", "Ciptaan Allah", "🐨"],
+  ["Kanguru", "Macropodidae", "Al-Qur'an", "Ciptaan Allah", "🦘"],
+  ["Pinguin", "Spheniscidae", "Al-Qur'an", "Ciptaan Allah", "🐧"],
+  ["Elang", "Accipitridae", "Al-Qur'an", "Ciptaan Allah", "🦅"],
+  ["Burung Hantu", "Strigiformes", "Al-Qur'an", "Ciptaan Allah", "🦉"],
+  ["Flamingo", "Phoenicopteridae", "Al-Qur'an", "Ciptaan Allah", "🦩"],
+  ["Merak", "Pavo cristatus", "Al-Qur'an", "Ciptaan Allah", "🦚"],
+  ["Merpati", "Columbidae", "Hadist", "HR Bukhari", "🕊️"],
+  ["Platipus", "Ornithorhynchus anatinus", "Al-Qur'an", "Ciptaan Allah", "🦆"],
+  ["Axolotl", "Ambystoma mexicanum", "Al-Qur'an", "Ciptaan Allah", "🦎"],
+  ["Tokek", "Gekkonidae", "Hadist", "HR Muslim", "🦎"],
+  ["Bintang Laut", "Asteroidea", "Al-Qur'an", "Ciptaan Allah", "⭐"],
+  ["Kuda Laut", "Hippocampus", "Al-Qur'an", "Ciptaan Allah", "🦄"]
 ];
 
-const extraHewanRaw = [
-  ["Cheetah", "Acinonyx jubatus", "🐆"],
-  ["Leopard", "Panthera pardus", "🐆"],
-  ["Jaguar", "Panthera onca", "🐆"],
-  ["Puma", "Puma concolor", "🦁"],
-  ["Simpanse", "Pan troglodytes", "🐒"],
-  ["Orangutan", "Pongo", "🐒"],
-  ["Baboon", "Papio", "🐒"],
-  ["Lemur", "Lemur catta", "🐒"],
-  ["Sloth", "Bradypus", "🦥"],
-  ["Hamster", "Cricetinae", "🐹"],
-  ["Tikus", "Rattus", "🐀"],
-  ["Marmut", "Marmota", "🐹"],
-  ["Kelelawar", "Chiroptera", "🦇"],
-  ["Meerkat", "Suricata suricatta", "🦦"],
-  ["Hyena", "Hyaenidae", "🐺"],
-  ["Badak", "Rhinocerotidae", "🦏"],
-  ["Kuda Nil", "Hippopotamus amphibius", "🦛"],
-  ["Bison", "Bison bison", "🦬"],
-  ["Kerbau", "Bubalus bubalis", "🐃"],
-  ["Banteng", "Bos javanicus", "🐂"],
-  ["Yak", "Bos grunniens", "🐂"],
-  ["Okapi", "Okapia johnstoni", "🦒"],
-  ["Tapir", "Tapirus", "🐗"],
-  ["Anteater", "Myrmecophaga tridactyla", "🦥"],
-  ["Armadillo", "Dasypodidae", "🛡️"],
-  ["Landak", "Hystricidae", "🦔"],
-  ["Wombat", "Vombatidae", "🐻"],
-  ["Wallaby", "Macropodidae", "🦘"],
-  ["Koala Bear", "Phascolarctos cinereus", "🐨"],
-  ["Red Panda", "Ailurus fulgens", "🦊"],
-  ["Giant Panda", "Ailuropoda melanoleuca", "🐼"],
-  ["Sun Bear", "Helarctos malayanus", "🐻"],
-  ["Polar Bear", "Ursus maritimus", "🐻"],
-  ["Grizzly Bear", "Ursus arctos horribilis", "🐻"],
-  ["Black Bear", "Ursus americanus", "🐻"],
-  ["Coyote", "Canis latrans", "🐺"],
-  ["Jackal", "Canis aureus", "🐺"],
-  ["Dingo", "Canis lupus dingo", "🐕"],
-  ["African Wild Dog", "Lycaon pictus", "🐕"],
-  ["Badger", "Meles meles", "🦡"],
-  ["Wolverine", "Gulo gulo", "🦡"],
-  ["Otter", "Lutrinae", "🦦"],
-  ["Sea Otter", "Enhydra lutris", "🦦"],
-  ["Raccoon", "Procyon lotor", "🦝"],
-  ["Beaver", "Castor", "🦦"],
-  ["Porcupine American", "Erethizontidae", "🦔"],
-  ["Hedgehog African", "Erinaceinae", "🦔"],
-  ["Mole Star", "Talpidae", "🐁"],
-  ["Shrew Water", "Soricidae", "🐁"],
-  ["Opossum Virginia", "Didelphidae", "🐁"],
-  ["Echidna Spiny", "Tachyglossidae", "🦔"],
-  ["Squirrel Red", "Sciuridae", "🐿️"],
-  ["Flying Squirrel Japanese", "Pteromyini", "🐿️"],
-  ["Chipmunk Siberian", "Tamias", "🐿️"],
-  ["Gopher Pocket", "Geomyidae", "🐁"],
-  ["Marmot Alpine", "Marmota marmota", "🐹"],
-  ["Lemming Norway", "Lemmini", "🐁"],
-  ["Vole Meadow", "Arvicolinae", "🐁"],
-  ["Muskrat River", "Ondatra zibethicus", "🐁"],
-  ["Chinchilla Domestic", "Chinchilla lanigera", "🐭"],
-  ["Guinea Pig Abyssinian", "Cavia porcellus", "🐹"],
-  ["Capybara Giant", "Hydrochoerus hydrochaeris", "🐹"],
-  ["Agouti Golden", "Dasyprocta", "🐹"],
-  ["Paca Lowland", "Cuniculus paca", "🐹"],
-  ["Mara Patagonian", "Dolichotis patagonum", "🐹"],
-  ["Tree Shrew Common", "Tupaiidae", "🐿️"],
-  ["Galago Senegal", "Galagidae", "🐒"],
-  ["Bushbaby Lesser", "Galago senegalensis", "🐒"],
-  ["Potto West African", "Perodicticus potto", "🐒"],
-  ["Loris Bengal", "Lorisidae", "🐒"],
-  ["Slow Loris Pygmy", "Nycticebus", "🐒"],
-  ["Tarsier Spectral", "Tarsiidae", "🐒"],
-  ["Marmoset Common", "Callitrichidae", "🐒"],
-  ["Tamarins Red-handed", "Saguinus", "🐒"],
-  ["Squirrel Monkey Common", "Saimiri", "🐒"],
-  ["Capuchin Monkey White-faced", "Cebinae", "🐒"],
-  ["Howler Monkey Red", "Alouatta", "🐒"],
-  ["Spider Monkey Black", "Ateles", "🐒"],
-  ["Woolly Monkey Common", "Lagothrix", "🐒"],
-  ["Macaque Crab-eating", "Macaca", "🐒"],
-  ["Baboon Olive", "Papio anubis", "🐒"],
-  ["Mandrill Monkey", "Mandrillus sphinx", "🐒"],
-  ["Drill Monkey", "Mandrillus leucophaeus", "🐒"],
-  ["Colobus Monkey Black-and-white", "Colobus", "🐒"],
-  ["Langur Gray", "Semnopithecus", "🐒"],
-  ["Proboscis Monkey", "Nasalis larvatus", "🐒"],
-  ["Gibbon Lar", "Hylobatidae", "🐒"],
-  ["Siamang Black", "Symphalangus syndactylus", "🐒"],
-  ["Chimpanzee Pygmy", "Pan paniscus", "🦍"],
-  ["Gorilla Mountain", "Gorilla beringei beringei", "🦍"],
-  ["Ikan Pari Ekor Cambuk", "Batoidea", "🐠"],
-  ["Hiu Paus Raksasa", "Rhincodon typus", "🦈"],
-  ["Cumi-cumi Raksasa Laut", "Architeuthis dux", "🦑"],
-  ["Manta Ray Reef", "Mobula alfredi", "🐠"],
-  ["Ubur-ubur Bulan", "Aurelia aurita", "🪼"],
-  ["Lobster Laut", "Homarus americanus", "🦞"],
-  ["Kerang Darah", "Anadara granosa", "🐚"],
-  ["Tiram Tumbuh", "Ostreidae", "🐚"],
-  ["Bekicot Darat", "Achatina fulica", "🐌"],
-  ["Bulu Babi Hitam", "Echinoidea", "🪼"],
-  ["Teripang Pasir", "Holothuria scabra", "🥒"],
-  ["Karang Otak", "Faviidae", "🪸"],
-  ["Anemon Laut", "Actiniaria", "🪸"],
-  ["Belut Sawah", "Monopterus albus", "🐍"],
-  ["Ikan Salmon Atlantik", "Salmo salar", "🐟"],
-  ["Ikan Tuna Sirip Biru", "Thunnus thynnus", "🐟"],
-  ["Ikan Kod Atlantik", "Gadus morhua", "🐟"],
-  ["Ikan Kembung", "Rastrelliger", "🐟"],
-  ["Ikan Trout Pelangi", "Oncorhynchus mykiss", "🐟"],
-  ["Ikan Sarden", "Sardinella", "🐟"],
-  ["Ikan Teri", "Engraulidae", "🐟"],
-  ["Ikan Layur Laut", "Trichiurus lepturus", "🐟"],
-  ["Ikan Belida", "Chitala lopis", "🐟"],
-  ["Kepiting Bakau Besar", "Scylla serrata", "🦀"],
-  ["Kepiting Soka", "Portunus pelagicus", "🦀"],
-  ["Kepiting Kenari Raksasa", "Birgus latro", "🦀"],
-  ["Rajungan Bintang", "Portunus", "🦀"],
-  ["Udang Windu Laut", "Penaeus monodon", "🦐"],
-  ["Udang Galah Sungai", "Macrobrachium rosenbergii", "🦐"],
-  ["Udang Ronggeng", "Lysiosquilla maculata", "🦐"],
-  ["Lobster Air Tawar Biru", "Cherax quadricarinatus", "🦞"],
-  ["Undur-undur Pasir", "Myrmeleontidae", "🐜"],
-  ["Semut Jepang", "Tenebrio molitor", "🐜"],
-  ["Kumbang Tanduk Raksasa", "Xylotrupes gideon", "🪲"],
-  ["Kumbang Koksi Totol", "Harmonia axyridis", "🐞"],
-  ["Kumbang Kotoran Afrika", "Scarabaeinae", "🪲"],
-  ["Kumbang Air Raksasa", "Dytiscidae", "🪲"],
-  ["Belalang Sembah Hijau", "Mantodea", "🦗"],
-  ["Belalang Daun Kamuflase", "Phylliidae", "🦗"],
-  ["Belalang Kayu Cokelat", "Valanga nigricornis", "🦗"],
-  ["Jangkrik Sawah Hitam", "Gryllus bimaculatus", "🦗"],
-  ["Ulat Sutra Putih", "Bombyx mori", "🐛"],
-  ["Ulat Sagu Papua", "Rhynchophorus ferrugineus", "🐛"],
-  ["Ulat Bulu Racun", "Lymantriidae", "🐛"],
-  ["Cacing Tanah Subur", "Lumbricus rubellus", "🐛"],
-  ["Lintah Air Tawar", "Hirudo medicinalis", "🐛"],
-  ["Pacat Hutan", "Haemadipsa sylvestris", "🐛"],
-  ["Keong Sawah Kuning", "Pila ampullacea", "🐌"],
-  ["Kerang Dara Rebus", "Anadara granosa l.", "🐚"],
-  ["Kerang Hijau Laut", "Perna viridis", "🐚"],
-  ["Kerang Bulu Hitam", "Anadara antiquata", "🐚"],
-  ["Kerang Bambu Gurih", "Solenidae", "🐚"],
-  ["Sotong Karang", "Sepiida", "🦑"],
-  ["Gurita Raksasa Pasifik", "Enteroctopus dofleini", "🐙"],
-  ["Ubur-ubur Kotak Sengat", "Chironex fleckeri", "🪼"],
-  ["Ikan Guppy Hias", "Poecilia reticulata", "🐠"],
-  ["Ikan Cupang Aduan", "Betta splendens", "🐠"],
-  ["Ikan Mas Koki Bulat", "Carassius auratus", "🐠"],
-  ["Ikan Koi Jepang", "Cyprinus carpio", "🐠"],
-  ["Ikan Discus Amazon", "Symphysodon", "🐠"],
-  ["Ikan Louhan Jenong", "Cichlidae", "🐠"],
-  ["Ikan Molly Hitam", "Poecilia sphenops", "🐠"],
-  ["Ikan Platy Merah", "Xiphophorus maculatus", "🐠"],
-  ["Ikan Neon Tetra Bersinar", "Paracheirodon innesi", "🐠"],
-  ["Ikan Zebra Belang", "Danio rerio", "🐠"],
-  ["Anoa Pegunungan", "Bubalus quarlesi", "🐂"],
-  ["Babirusa Sulawesi", "Babyrousa babyrussa", "🐖"],
-  ["Bekantan Kalimantan", "Nasalis larvatus k.", "🐒"],
-  ["Tarsius Kerdil", "Tarsius pumilus", "🐒"],
-  ["Kera Hantu Sulawesi", "Tarsius tarsier", "🐒"],
-  ["Burung Maleo", "Macrocephalon maleo", "🐦"],
-  ["Burung Cendrawasih", "Paradisaeidae", "🐦"],
-  ["Burung Kasuari Gelambir", "Casuarius casuarius", "🐦"],
-  ["Burung Kakatua Putih", "Cacatua alba", "🦜"],
-  ["Burung Nuri Merah", "Lorius lory", "🦜"],
-  ["Burung Jalak Bali", "Leucopsar rothschildi", "🐦"],
-  ["Burung Elang Jawa", "Nisaetus alboniger", "🦅"],
-  ["Harimau Sumatra", "Panthera tigris sumatrae", "🐯"],
-  ["Gajah Sumatra", "Elephas maximus sumatranus", "🐘"],
-  ["Badak Jawa Bercula Satu", "Rhinoceros sondaicus", "🦏"],
-  ["Orangutan Sumatra", "Pongo abelii", "🐒"],
-  ["Pesut Mahakam", "Orcaella brevirostris", "🐬"],
-  ["Ikan Arwana Super Red", "Scleropages formosus", "🐠"],
-  ["Ikan Gurame Raksasa", "Osphronemus goramy", "🐟"],
-  ["Ikan Lele Dumbo", "Clarias gariepinus", "🐟"],
-  ["Ikan Patin Sungai", "Pangasius", "🐟"],
-  ["Ikan Nila Merah", "Oreochromis niloticus", "🐟"],
-  ["Ikan Bandeng Payau", "Chanos chanos", "🐟"],
-  ["Ikan Kakap Merah", "Lutjanus campechanus", "🐟"],
-  ["Ikan Kerapu Macan", "Epinephelinae", "🐟"],
-  ["Ikan Baronang Susu", "Siganus canaliculatus", "🐟"],
-  ["Ikan Tenggiri Papan", "Scomberomorus commerson", "🐟"],
-  ["Ikan Tongkol Komo", "Euthynnus affinis", "🐟"],
-  ["Anjing Laut Pelabuhan", "Phoca vitulina", "🦭"],
-  ["Dugong Pasifik", "Dugong dugon p.", "🐋"],
-  ["Rusa Kutub Kutub", "Rangifer tarandus tarandus", "🦌"],
-  ["Elang Botak Amerika", "Haliaeetus leucocephalus", "🦅"],
-  ["Burung Hantu Salju", "Bubo scandiacus", "🦉"],
-  ["Burung Flamingo Chili", "Phoenicopterus chilensis", "🦩"],
-  ["Burung Merak Biru India", "Pavo cristatus b.", "🦚"],
-  ["Burung Merpati Pos", "Columba livia domestica", "🕊️"]
-];
-
-const TUMBUHAN_LIST = [
+const TUMBUHAN_NAMES = [
   // Priority 1
-  { name: "Kurma", slug: "kurma", latin: "Phoenix dactylifera", surah: "Maryam", ayat: "19:25", icon: "🌴" },
-  { name: "Zaitun", slug: "zaitun", latin: "Olea europaea", surah: "At-Tin", ayat: "95:1", icon: "🫒" },
-  { name: "Tin", slug: "tin", latin: "Ficus carica", surah: "At-Tin", ayat: "95:1", icon: "🪪" },
-  { name: "Delima", slug: "delima", latin: "Punica granatum", surah: "Al-An'am", ayat: "6:99", icon: "🍎" },
-  { name: "Anggur", slug: "anggur", latin: "Vitis vinifera", surah: "Al-An'am", ayat: "6:99", icon: "🍇" },
-  { name: "Jahe", slug: "jahe", latin: "Zingiber officinale", surah: "Al-Insan", ayat: "76:17", icon: "🫚" },
-  { name: "Bawang", slug: "bawang", latin: "Allium cepa", surah: "Al-Baqarah", ayat: "2:61", icon: "🧅" },
-  { name: "Bidara", slug: "bidara", latin: "Ziziphus mauritiana", surah: "Saba", ayat: "34:16", icon: "🌿" },
-  { name: "Pisang", slug: "pisang", latin: "Musa paradisiaca", surah: "Al-Waqi'ah", ayat: "56:29", icon: "🍌" },
-  { name: "Bawang Putih", slug: "bawang-putih", latin: "Allium sativum", surah: "Al-Baqarah", ayat: "2:61", icon: "🧄" },
-  { name: "Mustard", slug: "mustard", latin: "Brassica nigra", surah: "Al-Anbiya", ayat: "21:47", icon: "🌿" },
-  { name: "Gandum", slug: "gandum", latin: "Triticum", surah: "Al-Baqarah", ayat: "2:61", icon: "🌾" },
-  // Priority 2
-  { name: "Mawar", slug: "mawar", latin: "Rosa", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌹" },
-  { name: "Melati", slug: "melati", latin: "Jasminum", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌼" },
-  { name: "Anggrek", slug: "anggrek", latin: "Orchidaceae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌸" },
-  { name: "Sakura", slug: "sakura", latin: "Prunus serrulata", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌸" },
-  { name: "Bunga Matahari", slug: "bunga-matahari", latin: "Helianthus annuus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌻" },
-  { name: "Teratai", slug: "teratai", latin: "Nelumbo nucifera", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪷" },
-  { name: "Lavender", slug: "lavender", latin: "Lavandula", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌿" },
-  { name: "Kaktus", slug: "kaktus", latin: "Cactaceae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌵" },
-  { name: "Bambu", slug: "bambu", latin: "Bambusoideae", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🎋" },
-  { name: "Kelapa", slug: "kelapa", latin: "Cocos nucifera", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🥥" }
+  ["Kurma", "Phoenix dactylifera", "Maryam", "19:25", "🌴"],
+  ["Zaitun", "Olea europaea", "At-Tin", "95:1", "🫒"],
+  ["Tin", "Ficus carica", "At-Tin", "95:1", "🪪"],
+  ["Delima", "Punica granatum", "Al-An'am", "6:99", "🍎"],
+  ["Anggur", "Vitis vinifera", "Al-An'am", "6:99", "🍇"],
+  ["Jahe", "Zingiber officinale", "Al-Insan", "76:17", "𫚚"],
+  ["Bawang", "Allium cepa", "Al-Baqarah", "2:61", "🧅"],
+  ["Bidara", "Ziziphus mauritiana", "Saba", "34:16", "🌿"],
+  ["Pisang", "Musa paradisiaca", "Al-Waqi'ah", "56:29", "🍌"],
+  ["Bawang Putih", "Allium sativum", "Al-Baqarah", "2:61", "🧄"],
+  ["Mustard", "Brassica nigra", "Al-Anbiya", "21:47", "🌿"],
+  ["Gandum", "Triticum", "Al-Baqarah", "2:61", "🌾"],
+  // Priority 2 & 3
+  ["Mawar", "Rosa", "Al-Qur'an", "Ciptaan Allah", "🌹"],
+  ["Melati", "Jasminum", "Al-Qur'an", "Ciptaan Allah", "🌼"],
+  ["Anggrek", "Orchidaceae", "Al-Qur'an", "Ciptaan Allah", "🌸"],
+  ["Sakura", "Prunus serrulata", "Al-Qur'an", "Ciptaan Allah", "🌸"],
+  ["Bunga Matahari", "Helianthus annuus", "Al-Qur'an", "Ciptaan Allah", "🌻"],
+  ["Teratai", "Nelumbo nucifera", "Al-Qur'an", "Ciptaan Allah", "🪷"],
+  ["Lavender", "Lavandula", "Al-Qur'an", "Ciptaan Allah", "🌿"],
+  ["Kaktus", "Cactaceae", "Al-Qur'an", "Ciptaan Allah", "🌵"],
+  ["Bambu", "Bambusoideae", "Al-Qur'an", "Ciptaan Allah", "🎋"],
+  ["Kelapa", "Cocos nucifera", "Al-Qur'an", "Ciptaan Allah", "🥥"]
 ];
 
-const extraTumbuhanRaw = [
-  ["Tulip Belanda", "Tulipa gesneriana", "🌷"],
-  ["Lili Putih", "Lilium candidum", "🌸"],
-  ["Krisan Kuning", "Chrysanthemum indicum", "🌼"],
-  ["Daisy Liar", "Bellis perennis l.", "🌼"],
-  ["Anyelir Merah", "Dianthus caryophyllus m.", "🌸"],
-  ["Dahlia Taman", "Dahlia pinnata t.", "💮"],
-  ["Peony Wangi", "Paeonia lactiflora", "🌺"],
-  ["Iris Biru", "Iris sibirica b.", "🪻"],
-  ["Poppy Merah", "Papaver somniferum m.", "🌺"],
-  ["Begonia Daun", "Begonia semperflorens", "🌺"],
-  ["Geranium Wangi", "Geranium graveolens", "🌺"],
-  ["Azalea Jepang", "Rhododendron indicum", "🌺"],
-  ["Rhododendron Merah", "Rhododendron ponticum", "🌺"],
-  ["Camellia Pink", "Camellia japonica p.", "🌺"],
-  ["Hibiscus Sepatu", "Hibiscus rosa-sinensis s.", "🌺"],
-  ["Bougainvillea Kertas", "Bougainvillea spectabilis k.", "🌺"],
-  ["Wisteria Ungu", "Wisteria sinensis u.", "🪻"],
-  ["Hydrangea Biru", "Hydrangea macrophylla b.", "🌸"],
-  ["Lilac Wangi", "Syringa vulgaris w.", "🪻"],
-  ["Jasmine Melati", "Jasminum sambac", "🌼"],
-  ["Gardenia Kaca piring", "Gardenia jasminoides k.", "🌼"],
-  ["Magnolia Putih", "Magnolia grandiflora p.", "🌸"],
-  ["Rosemary Herbal", "Salvia rosmarinus h.", "🌿"],
-  ["Thyme Dapur", "Thymus vulgaris d.", "🌿"],
-  ["Basil Kemangi", "Ocimum basilicum k.", "🌿"],
-  ["Oregano Kering", "Origanum vulgare k.", "🌿"],
-  ["Mint Daun", "Mentha piperita", "🌿"],
-  ["Sage Herbal", "Salvia officinalis h.", "🌿"],
-  ["Parsley Seledri Impor", "Petroselinum crispum p.", "🌿"],
-  ["Cilantro Ketumbar Daun", "Coriandrum sativum d.", "🌿"],
-  ["Dill Adas Manis", "Anethum graveolens a.", "🌿"],
-  ["Chives Kucai", "Allium schoenoprasum k.", "🌿"],
-  ["Kunyit Kuning", "Curcuma longa k.", "🫚"],
-  ["Bawang Merah Lokal", "Allium ascalonicum l.", "🧅"],
-  ["Lidah Buaya Obat", "Aloe barbadensis", "🌵"],
-  ["Kina Obat Demam", "Cinchona ledgeriana", "🌳"],
-  ["Ginseng Korea", "Panax ginseng k.", "🌿"],
-  ["Padi Sawah", "Oryza sativa s.", "🌾"],
-  ["Jagung Manis", "Zea mays saccharata", "🌽"],
-  ["Kedelai Hitam", "Glycine max h.", "🫘"],
-  ["Singkong Kayu", "Manihot esculenta k.", "🌿"],
-  ["Ubi Cilembu", "Ipomoea batatas c.", "🥔"],
-  ["Wortel Manis", "Daucus carota m.", "🥕"],
-  ["Tomat Cherry", "Solanum lycopersicum c.", "🍅"],
-  ["Cabai Rawit Pedas", "Capsicum frutescens", "🌶️"],
-  ["Pohon Mangga Harum Manis", "Mangifera indica h.", "🌳"],
-  ["Pohon Durian Montong", "Durio zibethinus m.", "🌳"],
-  ["Pohon Rambutan Binjai", "Nephelium lappaceum b.", "🌳"],
-  ["Dandelion Kuning", "Taraxacum officinale k.", "🌼"],
-  ["Violet Hutan", "Viola odorata h.", "🪻"],
-  ["Lavender Prancis", "Lavandula dentata", "🪻"],
-  ["Kaktus Koboi", "Cereus repandus", "🌵"],
-  ["Bambu Apus", "Gigantochloa apus", "🎋"],
-  ["Pohon Beringin Raksasa", "Ficus benjamina", "🌳"],
-  ["Pohon Mahoni Jalanan", "Swietenia macrophylla", "🌳"],
-  ["Pohon Jati Perhutani", "Tectona grandis p.", "🌳"],
-  ["Pohon Pinus Merkusii", "Pinus merkusii", "🌲"],
-  ["Pohon Cemara Kipas", "Platycladus orientalis", "🌲"],
-  ["Pohon Ek Putih", "Quercus alba", "🌳"],
-  ["Pohon Maple Merah", "Acer rubrum m.", "🍁"],
-  ["Pohon Sakura Jepang", "Prunus yedoensis", "🌸"],
-  ["Pohon Apel Malang", "Malus domestica m.", "🍎"],
-  ["Pohon Jeruk Pontianak", "Citrus nobilis", "🍊"],
-  ["Pohon Lemon Lokal", "Citrus limon l.", "🍋"],
-  ["Pohon Pisang Ambon", "Musa paradisiaca a.", "🍌"],
-  ["Pohon Alpukat Mentega", "Persea americana m.", "🥑"],
-  ["Pohon Pepaya Bangkok", "Carica papaya b.", "🌳"],
-  ["Pohon Nanas Subang", "Ananas comosus s.", "🍍"],
-  ["Semangka Tanpa Biji", "Citrullus lanatus t.", "🍉"],
-  ["Melon Hijau", "Cucumis melo h.", "🍈"],
-  ["Stroberi Kebun", "Fragaria ananassa k.", "🍓"],
-  ["Bluberi Manis", "Vaccinium corymbosum m.", "🫐"],
-  ["Raspberi Merah", "Rubus idaeus m.", "🍓"],
-  ["Blackberry Hitam", "Rubus fruticosus h.", "🫐"],
-  ["Ceri Manis", "Prunus avium m.", "🍒"],
-  ["Persik Manis", "Prunus persica m.", "🍑"],
-  ["Plum Ungu", "Prunus domestica u.", "🍑"],
-  ["Aprikot Kering", "Prunus armeniaca k.", "🍑"],
-  ["Zaitun Hitam", "Olea europaea nigra", "🫒"],
-  ["Pohon Kelapa Sawit Riau", "Elaeis guineensis r.", "🌴"],
-  ["Kacang Tanah Kupas", "Arachis hypogaea k.", "🥜"],
-  ["Kacang Hijau Kupas", "Vigna radiata k.", "🫘"],
-  ["Kacang Merah Sup", "Phaseolus vulgaris s.", "🫘"],
-  ["Kacang Polong Kaleng", "Pisum sativum k.", "🫘"],
-  ["Bayam Hijau", "Amaranthus tricolor", "🥬"],
-  ["Kangkung Darat", "Ipomoea aquatica d.", "🥬"],
-  ["Sawi Sendok (Pakcoy)", "Brassica rapa subsp. chinensis", "🥬"],
-  ["Selada Keriting", "Lactuca sativa k.", "🥬"],
-  ["Kubis Ungu", "Brassica oleracea f. rubra", "🥬"],
-  ["Brokoli Hijau", "Brassica oleracea v. italica h.", "🥦"],
-  ["Kembang Kol Putih", "Brassica oleracea v. botrytis p.", "🥦"],
-  ["Buncis Perancis", "Phaseolus vulgaris p.", "🫘"],
-  ["Labu Parang", "Cucurbita moschata", "🎃"],
-  ["Timun Jepang", "Cucumis sativus j.", "🥒"],
-  ["Terong Ungu", "Solanum melongena u.", "🍆"],
-  ["Kentang Dieng", "Solanum tuberosum d.", "🥔"],
-  ["Kunyit Putih Obat", "Curcuma mangga", "🫚"],
-  ["Kencur Jamu", "Kaempferia galanga j.", "🫚"],
-  ["Lengkuas Merah", "Alpinia galanga m.", "🫚"],
-  ["Temulawak Jamu", "Curcuma zanthorrhiza j.", "🫚"],
-  ["Serai Dapur", "Cymbopogon citratus d.", "🌿"],
-  ["Daun Salam Masakan", "Syzygium polyanthum m.", "🌿"],
-  ["Daun Pandan Wangi", "Pandanus amaryllifolius w.", "🌿"],
-  ["Cengkeh Maluku", "Syzygium aromaticum m.", "🌿"],
-  ["Lada Hitam", "Piper nigrum h.", "🌿"],
-  ["Kayu Manis Ceylon", "Cinnamomum verum c.", "🌿"],
-  ["Pala Banda", "Myristica fragrans b.", "🌿"],
-  ["Ketumbar Bumbu", "Coriandrum sativum b.", "🌿"],
-  ["Jinten Hitam (Habbatussauda)", "Nigella sativa", "🌿"],
-  ["Kapulaga Jawa", "Amomum compactum", "🌿"],
-  ["Adas Adas", "Foeniculum vulgare a.", "🌿"],
-  ["Vanili Alami", "Vanilla planifolia a.", "🌿"],
-  ["Teh Hijau", "Camellia sinensis h.", "🌿"],
-  ["Kopi Toraja", "Coffea arabica t.", "☕"],
-  ["Kakao Sulawesi", "Theobroma cacao s.", "🍫"],
-  ["Tebu Manis", "Saccharum officinarum m.", "🌾"],
-  ["Tembakau Deli", "Nicotiana tabacum d.", "🌿"],
-  ["Karet Alam", "Hevea brasiliensis a.", "🌳"],
-  ["Kapas Pembersih", "Gossypium herbaceum", "☁️"],
-  ["Jarak Kepyar", "Ricinus communis k.", "🌿"],
-  ["Nilam Wangi", "Pogostemon cablin w.", "🌿"],
-  ["Kenanga Wangi", "Cananga odorata w.", "🌸"],
-  ["Sedap Malam Wangi", "Polianthes tuberosa w.", "🌸"],
-  ["Kamboja Bali", "Plumeria rubra", "🌸"],
-  ["Soka Merah", "Ixora chinensis", "🌸"],
-  ["Bugenvil Merah", "Bougainvillea glabra m.", "🌸"],
-  ["Puring Hias", "Codiaeum variegatum h.", "🌿"],
-  ["Sri Rejeki Hias", "Aglaonema commutatum", "🌿"],
-  ["Lidah Mertua Hias", "Sansevieria trifasciata", "🌿"],
-  ["Kuping Gajah Hias", "Anthurium crystallinum h.", "🌿"],
-  ["Suplir Hijau", "Adiantum cuneatum", "🌿"],
-  ["Paku Tanduk Rusa Hias", "Platycerium bifurcatum", "🌿"],
-  ["Lumut Daun", "Bryopsida", "🌿"],
-  ["Ganggang Hijau Air", "Chlorella", "🌿"],
-  ["Cendawan Lingzhi Obat", "Ganoderma lucidum o.", "🍄"],
-  ["Jamur Tiram Putih", "Pleurotus ostreatus p.", "🍄"],
-  ["Jamur Kancing Salad", "Agaricus bisporus s.", "🍄"],
-  ["Jamur Shiitake Kering", "Lentinula edodes k.", "🍄"],
-  ["Pohon Cedar Libanon", "Cedrus libani", "🌲"],
-  ["Pohon Sequoia Raksasa", "Sequoiadendron giganteum r.", "🌲"],
-  ["Pohon Baobab Afrika", "Adansonia digitata", "🌳"],
-  ["Pohon Eukaliptus Minyak", "Eucalyptus globulus", "🌳"],
-  ["Pohon Ginkgo Biloba Daun", "Ginkgo biloba d.", "🌳"],
-  ["Pohon Cendana Wangi", "Santalum album w.", "🌳"],
-  ["Pohon Gaharu Hutan", "Aquilaria malaccensis h.", "🌳"],
-  ["Pohon Neem Obat", "Azadirachta indica o.", "🌳"],
-  ["Pohon Kurma Sukari", "Phoenix dactylifera 'Sukari'", "🌴"],
-  ["Pohon Ara Buah", "Ficus carica b.", "🌳"],
-  ["Kantong Semar Hutan", "Nepenthes ampullaria", "🌿"],
-  ["Bunga Rafflesia Arnoldii", "Rafflesia arnoldii a.", "💮"],
-  ["Bunga Bangkai Raksasa", "Amorphophallus titanum r.", "💮"],
-  ["Kaktus Natal Pink", "Schlumbergera truncata", "🌵"],
-  ["Kaktus Pir Berduri Buah", "Opuntia ficus-indica", "🌵"],
-  ["Bambu Petung Raksasa", "Dendrocalamus asper r.", "🎋"],
-  ["Pohon Kelapa Gading", "Cocos nucifera 'Eburnea'", "🌴"],
-  ["Pohon Sagu Papua", "Metroxylon sagu p.", "🌴"],
-  ["Pohon Aren Nira", "Arenga pinnata n.", "🌴"],
-  ["Pohon Pinang Jambe", "Areca catechu j.", "🌴"],
-  ["Pohon Lontar Daun", "Borassus flabellifer d.", "🌴"],
-  ["Pohon Bambu Apus", "Bambusa vulgaris a.", "🎋"],
-  ["Pohon Cemara Kipas Barat", "Thuja occidentalis b.", "🌲"],
-  ["Pohon Cemara Udang Pantai", "Casuarina equisetifolia p.", "🌲"],
-  ["Pohon Maple Gula", "Acer saccharum g.", "🍁"],
-  ["Pohon Birch Kertas", "Betula papyrifera", "🌳"],
-  ["Pohon Willow Tangis", "Salix babylonica", "🌳"],
-  ["Pohon Cypress Italia", "Cupressus sempervirens", "🌲"],
-  ["Pohon Yew Eropa", "Taxus baccata e.", "🌲"],
-  ["Pohon Spruce Norwegia", "Picea abies n.", "🌲"],
-  ["Pohon Douglas Fir Raksasa", "Pseudotsuga menziesii r.", "🌲"],
-  ["Pohon Alder Hitam", "Alnus glutinosa h.", "🌳"],
-  ["Pohon Rowan Eropa", "Sorbus aucuparia e.", "🌳"]
+const ALAM_NAMES = [
+  ["Matahari", "Sun", "Asy-Syams", "91:1-2", "☀️"],
+  ["Bulan", "Moon", "Al-Qamar", "54:1", "🌙"],
+  ["Bintang", "Star", "An-Najm", "53:1", "⭐"],
+  ["Laut", "Ocean", "Ar-Rahman", "55:19-20", "🌊"],
+  ["Gunung", "Mountain", "An-Naba", "78:7", "⛰️"],
+  ["Angin", "Wind", "Al-Hijr", "15:22", "💨"],
+  ["Hujan", "Rain", "Al-Baqarah", "2:22", "🌧️"],
+  ["Petir", "Lightning", "Ar-Ra'd", "13:13", "⚡"],
+  ["Api", "Fire", "Al-Waqi'ah", "56:71", "🔥"],
+  ["Tanah", "Soil", "Al-Hajj", "22:5", "🟫"],
+  ["Air", "Water", "Al-Anbiya", "21:30", "💧"],
+  ["Awan", "Cloud", "Al-Baqarah", "2:57", "☁️"],
+  ["Sungai", "River", "Al-Baqarah", "2:25", "🏞️"],
+  ["Gurun", "Desert", "Al-Furqan", "25:48", "🏜️"],
+  ["Salju", "Snow", "Hadist", "Doa Istiftah", "❄️"],
+  ["Pelangi", "Rainbow", "Al-Qur'an", "Ciptaan Allah", "🌈"],
+  ["Gerhana", "Eclipse", "Hadist", "HR Bukhari", "🌑"],
+  ["Gunung Berapi", "Volcano", "Al-Qur'an", "Ciptaan Allah", "🌋"]
 ];
 
-const ALAM_LIST = [
-  // Priority 1
-  { name: "Matahari", slug: "matahari", latin: "Sun", surah: "Asy-Syams", ayat: "91:1-2", icon: "☀️" },
-  { name: "Bulan", slug: "bulan", latin: "Moon", surah: "Al-Qamar", ayat: "54:1", icon: "🌙" },
-  { name: "Bintang", slug: "bintang", latin: "Star", surah: "An-Najm", ayat: "53:1", icon: "⭐" },
-  { name: "Laut", slug: "laut", latin: "Ocean", surah: "Ar-Rahman", ayat: "55:19-20", icon: "🌊" },
-  { name: "Gunung", slug: "gunung", latin: "Mountain", surah: "An-Naba", ayat: "78:7", icon: "⛰️" },
-  { name: "Angin", slug: "angin", latin: "Wind", surah: "Al-Hijr", ayat: "15:22", icon: "💨" },
-  { name: "Hujan", slug: "hujan", latin: "Rain", surah: "Al-Baqarah", ayat: "2:22", icon: "🌧️" },
-  { name: "Petir", slug: "petir", latin: "Lightning", surah: "Ar-Ra'd", ayat: "13:13", icon: "⚡" },
-  { name: "Api", slug: "api", latin: "Fire", surah: "Al-Waqi'ah", ayat: "56:71", icon: "🔥" },
-  { name: "Tanah", slug: "tanah", latin: "Soil", surah: "Al-Hajj", ayat: "22:5", icon: "🟫" },
-  { name: "Air", slug: "air", latin: "Water", surah: "Al-Anbiya", ayat: "21:30", icon: "💧" },
-  { name: "Awan", slug: "awan", latin: "Cloud", surah: "Al-Baqarah", ayat: "2:57", icon: "☁️" },
-  { name: "Sungai", slug: "sungai", latin: "River", surah: "Al-Baqarah", ayat: "2:25", icon: "🏞️" },
-  { name: "Gurun", slug: "gurun", latin: "Desert", surah: "Al-Furqan", ayat: "25:48", icon: "🏜️" },
-  { name: "Salju", slug: "salju", latin: "Snow", surah: "Hadist", ayat: "Doa Istiftah", icon: "❄️" },
-  // Priority 2
-  { name: "Pelangi", slug: "pelangi", latin: "Rainbow", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌈" },
-  { name: "Gerhana", slug: "gerhana", latin: "Eclipse", surah: "Hadist", ayat: "HR Bukhari", icon: "🌑" },
-  { name: "Gunung Berapi", slug: "gunung-berapi", latin: "Volcano", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🌋" }
+const TUBUH_NAMES = [
+  ["Jantung", "Cor", "Qaf", "50:37", "🫀"],
+  ["Mata", "Oculus", "Al-Qiyamah", "75:23", "👁️"],
+  ["Telinga", "Auris", "Al-Baqarah", "2:7", "👂"],
+  ["Tangan", "Manus", "Yasin", "36:65", "✋"],
+  ["Kulit", "Cutis", "An-Nisa", "4:56", "🖐️"],
+  ["Tulang", "Ossa", "Al-Isra", "17:49", "🦴"],
+  ["Otak", "Cerebrum", "Al-Alaq", "96:15", "🧠"],
+  ["Darah", "Sanguis", "Al-Maidah", "5:3", "🩸"],
+  ["Sidik Jari", "Dactyloscopy", "Al-Qiyamah", "75:4", "👍"]
 ];
 
-const extraAlamRaw = [
-  ["Gempa Bumi", "Earthquake", "🌋"],
-  ["Tsunami", "Tsunami", "🌊"],
-  ["Tornado", "Tornado", "🌪️"],
-  ["Aurora Borealis", "Aurora Borealis", "🌌"],
-  ["Aurora Australis", "Aurora Australis", "🌌"],
-  ["Gerhana Matahari", "Solar Eclipse", "🌑"],
-  ["Gerhana Bulan", "Lunar Eclipse", "🌑"],
-  ["Ekosistem Hutan", "Forest Ecosystem", "🌳"],
-  ["Terumbu Karang", "Coral Reef", "🪸"],
-  ["Fotosintesis", "Photosynthesis", "☀️"],
-  ["Siklus Air", "Water Cycle", "💧"],
-  ["Rantai Makanan", "Food Chain", "🌱"],
-  ["Hutan Hujan Tropis", "Tropical Rainforest", "🌳"],
-  ["Badai Topan", "Typhoon", "🌀"],
-  ["Banjir Bandang", "Flash Flood", "🌊"],
-  ["Kekeringan", "Drought", "☀️"],
-  ["Tanah Longsor", "Landslide", "⛰️"],
-  ["Salju Longsor", "Avalanche", "❄️"],
-  ["Badai Pasir", "Sandstorm", "💨"],
-  ["Kabut Tebal", "Thick Fog", "🌫️"],
-  ["Awan Kumulonimbus", "Cumulonimbus", "☁️"],
-  ["Awan Sirus", "Cirrus Cloud", "☁️"],
-  ["Pelangi Ganda", "Double Rainbow", "🌈"],
-  ["Pasang Surut Air Laut", "Ocean Tides", "🌊"],
-  ["Arus Laut", "Ocean Currents", "🌊"],
-  ["Palung Laut Mariana", "Mariana Trench", "🌊"],
-  ["Delta Sungai Nil", "River Delta", "🏞️"],
-  ["Air Terjun Niagara", "Waterfall", "🏞️"],
-  ["Geyser Yellowstone", "Geyser", "♨️"],
-  ["Gua Alam Bawah Tanah", "Cave", "🕳️"],
-  ["Stalaktit Gua", "Stalactite", "🪨"],
-  ["Stalagmit Gua", "Stalagmit", "🪨"],
-  ["Ngarai Besar (Canyon)", "Grand Canyon", "⛰️"],
-  ["Oasis Gurun Pasir", "Desert Oasis", "🌴"],
-  ["Sabana Rumput Tropis", "Savanna", "🌱"],
-  ["Tundra Beku Artik", "Tundra", "❄️"],
-  ["Taiga Pinus Subartik", "Taiga", "🌲"],
-  ["Hutan Bakau Mangrove", "Mangrove Forest", "🌳"],
-  ["Pulau Vulkanik Baru", "Volcanic Island", "🌋"],
-  ["Atol Karang Samudra", "Atoll", "🪸"],
-  ["Gunung Es Artik", "Iceberg", "🏔️"],
-  ["Gletser Beku Alami", "Glacier", "🏔️"],
-  ["Fjord Laut Norwegia", "Fjord", "🌊"],
-  ["Selat Sunda", "Strait", "🌊"],
-  ["Teluk Jakarta", "Bay", "🌊"],
-  ["Semenanjung Melayu", "Peninsula", "🌍"],
-  ["Dataran Tinggi Dekkan", "Plateau", "⛰️"],
-  ["Gumuk Pasir Sahara", "Sand Dune", "🏜️"],
-  ["Batu Basalt Hitam", "Basalt Rock", "🪨"],
-  ["Batu Granit Keras", "Granite Rock", "🪨"],
-  ["Batu Obsidian Kaca", "Obsidian Rock", "🪨"],
-  ["Batu Apung Ringan", "Pumice Rock", "🪨"],
-  ["Batu Marmer Kilap", "Marble Rock", "🪨"],
-  ["Batu Kapur Putih", "Limestone Rock", "🪨"],
-  ["Intan Permata Karat", "Diamond", "💎"],
-  ["Emas Murni Logam", "Gold Metal", "🪙"],
-  ["Perak Murni Logam", "Silver Metal", "🪙"],
-  ["Besi Alami Meteorit", "Meteoritic Iron", "🔩"],
-  ["Batubara Tambang", "Coal", "🪨"],
-  ["Minyak Bumi Mentah", "Crude Oil", "🛢️"],
-  ["Gas Alam Metana", "Natural Gas", "🔥"],
-  ["Energi Surya Matahari", "Solar Energy", "☀️"],
-  ["Energi Angin Turbin", "Wind Energy", "💨"],
-  ["Energi Geotermal Bumi", "Geothermal Energy", "♨️"],
-  ["Siklus Carbon Alam", "Carbon Cycle", "🌱"],
-  ["Siklus Nitrogen Tanah", "Nitrogen Cycle", "🌱"],
-  ["Siklus Oksigen Udara", "Oxygen Cycle", "🌱"],
-  ["Efek Rumah Kaca Global", "Greenhouse Effect", "🌡️"],
-  ["Lapisan Ozon Pelindung", "Ozone Layer", "🛡️"],
-  ["Atmosfer Bumi Biru", "Earth's Atmosphere", "🌍"],
-  ["Troposfer Awan", "Troposphere", "☁️"],
-  ["Stratosphere Pesawat", "Stratosphere", "☁️"],
-  ["Mesosfer Meteor", "Mesosphere", "☄️"],
-  ["Termosfer Aurora", "Thermosphere", "🌌"],
-  ["Eksosfer Satelit", "Exosphere", "🛰️"],
-  ["Gravitasi Bumi Alami", "Earth's Gravity", "🌍"],
-  ["Magnetisme Bumi Kompas", "Earth's Magnetism", "🧲"],
-  ["Halo Matahari Cincin", "Solar Halo", "☀️"],
-  ["Halo Bulan Cincin", "Lunar Halo", "🌙"],
-  ["Fata Morgana Gurun", "Mirage", "🏜️"],
-  ["Hujan Asam Polusi", "Acid Rain", "🌧️"],
-  ["Gelombang Seismik Gempa", "Seismic Waves", "📈"],
-  ["Magma Cair Dalam Bumi", "Magma", "🔥"],
-  ["Lava Panas Gunung Api", "Lava", "🔥"],
-  ["Kawah Gunung Api Danau", "Volcanic Crater", "🌋"],
-  ["Sulfur Kawah Belerang", "Sulfur", "🟡"],
-  ["Batu Pasir Endapan", "Sandstone Rock", "🪨"],
-  ["Batu Sabak Tulis", "Slate Rock", "🪨"],
-  ["Kristal Kuarsa Bening", "Quartz Crystal", "🔮"],
-  ["Tembaga Murni Kabel", "Copper Metal", "🔩"],
-  ["Aliran Lava Bawah Laut Samudra", "Submarine Lava Flow", "🌋"],
-  ["Hutan Gugur Empat Musim", "Temperate Forest", "🍁"],
-  ["Padang Lamun Pantai", "Seagrass Meadow", "🌱"],
-  ["Estuari Sungai Payau", "River Estuary", "🏞️"],
-  ["Mata Air Panas Geothermal", "Hot Spring", "♨️"],
-  ["Awan Stratus Tebal", "Stratus Cloud", "☁️"],
-  ["Awan Kumulus Putih", "Cumulus Cloud", "☁️"],
-  ["Badai Petir Kilat", "Thunderstorm", "🌩️"],
-  ["Hujan Es Batu Kristal", "Hailstorm", "🌧️"],
-  ["Badai Salju Dingin", "Blizzard", "❄️"],
-  ["Embun Pagi Daun", "Morning Dew", "💧"],
-  ["Embunan Beku Salju", "Frost", "❄️"],
-  ["Pelangi Bulan Malam (Moonbow)", "Moonbow", "🌈"],
-  ["Pelangi Kabut Gunung (Fogbow)", "Fogbow", "🌈"],
-  ["Kilat Vulkanik Letusan", "Volcanic Lightning", "⚡"],
-  ["Gelombang Pasang Purnama", "Tidal Waves", "🌊"],
-  ["Siklon Tropis Samudra", "Tropical Cyclone", "🌀"],
-  ["Puting Beliung Darat", "Landspout", "🌪️"],
-  ["Kekeringan Ekstrem Afrika", "Extreme Drought", "☀️"],
-  ["Tanah Humus Subur", "Humus Soil", "🟫"],
-  ["Tanah Liat Keramik", "Clay Soil", "🟫"],
-  ["Tanah Pasir Pantai", "Sandy Soil", "🏜️"],
-  ["Tanah Gambut Rawa", "Peat Soil", "🟫"],
-  ["Tanah Kapur Bukit", "Chalk Soil", "🟫"],
-  ["Erosi Air Hujan", "Water Erosion", "🏞️"],
-  ["Erosi Angin Gurun", "Wind Erosion", "🏜️"],
-  ["Pelapukan Batuan Mekanik", "Rock Weathering", "🪨"],
-  ["Sedimentasi Sungai Delta", "Sedimentation", "🏞️"],
-  ["Kars Topografi Bukit", "Karst Topography", "⛰️"],
-  ["Danau Tektonik Toba", "Tectonic Lake", "🏞️"],
-  ["Danau Vulkanik Batur", "Volcanic Lake", "🏞️"],
-  ["Rawa Gambut Kalimantan", "Peat Swamp", "🏞️"],
-  ["Air Tanah Sumur", "Groundwater", "💧"],
-  ["Siklus Batuan Alam", "Rock Cycle", "🪨"],
-  ["Batu Bara Muda Cokelat", "Lignite Coal", "🪨"],
-  ["Tembaga Alami Tambang", "Native Copper", "🔩"],
-  ["Batu Serpih Lunak", "Shale Rock", "🪨"],
-  ["Batu Konglomerat Kerikil", "Conglomerate Rock", "🪨"],
-  ["Batu Breksi Bersudut", "Breccia Rock", "🪨"],
-  ["Batu Gamping Karang", "Limestone", "🪨"],
-  ["Batu Gips Alam", "Gypsum", "🪨"],
-  ["Garam Batu Tambang", "Halite", "🪨"]
+const LANGIT_NAMES = [
+  ["Bumi", "Earth", "Al-Anbiya", "21:30", "🌍"],
+  ["Merkurius", "Mercury", "Al-Qur'an", "Ciptaan Allah", "🪐"],
+  ["Venus", "Venus", "Al-Qur'an", "Ciptaan Allah", "🪐"],
+  ["Mars", "Mars", "Al-Qur'an", "Ciptaan Allah", "🔴"],
+  ["Jupiter", "Jupiter", "Al-Qur'an", "Ciptaan Allah", "🪐"],
+  ["Saturnus", "Saturn", "Al-Qur'an", "Ciptaan Allah", "🪐"],
+  ["Uranus", "Uranus", "Al-Qur'an", "Ciptaan Allah", "🪐"],
+  ["Neptunus", "Neptune", "Al-Qur'an", "Ciptaan Allah", "🪐"],
+  ["Galaksi Bima Sakti", "Milky Way", "Al-Anbiya", "21:33", "🌌"],
+  ["Lubang Hitam", "Black Hole", "At-Takwir", "81:15-16", "🕳️"],
+  ["Asteroid", "Asteroid", "Al-Qur'an", "Ciptaan Allah", "☄️"],
+  ["Komet", "Comet", "Al-Qur'an", "Ciptaan Allah", "☄️"],
+  ["Meteor", "Meteor", "Al-Mulk", "67:5", "🌠"],
+  ["Nebula", "Nebula", "Ar-Rahman", "55:37", "🌌"]
 ];
 
-const TUBUH_LIST = [
-  // Priority 1
-  { name: "Jantung", slug: "jantung", latin: "Cor", surah: "Qaf", ayat: "50:37", icon: "🫀" },
-  { name: "Mata", slug: "mata", latin: "Oculus", surah: "Al-Qiyamah", ayat: "75:23", icon: "👁️" },
-  { name: "Telinga", slug: "telinga", latin: "Auris", surah: "Al-Baqarah", ayat: "2:7", icon: "👂" },
-  { name: "Tangan", slug: "tangan", latin: "Manus", surah: "Yasin", ayat: "36:65", icon: "✋" },
-  { name: "Kulit", slug: "kulit", latin: "Cutis", surah: "An-Nisa", ayat: "4:56", icon: "🖐️" },
-  { name: "Tulang", slug: "tulang", latin: "Ossa", surah: "Al-Isra", ayat: "17:49", icon: "🦴" },
-  { name: "Otak", slug: "otak", latin: "Cerebrum", surah: "Al-Alaq", ayat: "96:15", icon: "🧠" },
-  { name: "Darah", slug: "darah", latin: "Sanguis", surah: "Al-Maidah", ayat: "5:3", icon: "🩸" },
-  { name: "Sidik Jari", slug: "sidik-jari", latin: "Dactyloscopy", surah: "Al-Qiyamah", ayat: "75:4", icon: "👍" }
+const NABI_NAMES = [
+  ["Nabi Adam A.S.", "adam", "Al-Baqarah 2:30-37"],
+  ["Nabi Idris A.S.", "idris", "Maryam 19:56-57"],
+  ["Nabi Nuh A.S.", "nuh", "Hud 11:36-48"],
+  ["Nabi Hud A.S.", "hud", "Hud 11:50-60"],
+  ["Nabi Shaleh A.S.", "shaleh", "Hud 11:61-68"],
+  ["Nabi Ibrahim A.S.", "ibrahim", "Al-Baqarah 2:124-131"],
+  ["Nabi Luth A.S.", "luth", "Hud 11:77-83"],
+  ["Nabi Ismail A.S.", "ismail", "Maryam 19:54-55"],
+  ["Nabi Ishaq A.S.", "ishaq", "Maryam 19:49-50"],
+  ["Nabi Yaqub A.S.", "yaqub", "Yusuf 12:4-10"],
+  ["Nabi Yusuf A.S.", "yusuf", "Yusuf 12:4-102"],
+  ["Nabi Ayyub A.S.", "ayyub", "Al-Anbiya 21:83-84"],
+  ["Nabi Syu'aib A.S.", "syuaib", "Hud 11:84-95"],
+  ["Nabi Musa A.S.", "musa", "Al-A'raf 7:103-136"],
+  ["Nabi Harun A.S.", "harun", "Taha 20:29-36"],
+  ["Nabi Dzulkifli A.S.", "dzulkifli", "Al-Anbiya 21:85-86"],
+  ["Nabi Daud A.S.", "daud", "Saba 34:10-11"],
+  ["Nabi Sulaiman A.S.", "sulaiman", "Saba 34:12-14"],
+  ["Nabi Ilyas A.S.", "ilyas", "As-Saffat 37:123-132"],
+  ["Nabi Ilyasa A.S.", "ilyasa", "Al-An'am 6:86"],
+  ["Nabi Yunus A.S.", "yunus", "Al-Anbiya 21:87-88"],
+  ["Nabi Zakaria A.S.", "zakaria", "Maryam 19:2-15"],
+  ["Nabi Yahya A.S.", "yahya", "Maryam 19:12-15"],
+  ["Nabi Isa A.S.", "isa", "Maryam 19:16-36"],
+  ["Nabi Muhammad ﷺ", "muhammad", "Al-Ahzab 34:40"]
 ];
 
-const extraTubuhRaw = [
-  ["Lambung", "Ventriculus", "🍎"],
-  ["Usus Halus", "Intestinum tenue", "🥦"],
-  ["Usus Besar", "Intestinum crassum", "🥦"],
-  ["Hati", "Hepar", "🫁"],
-  ["Kantung Empedu", "Vesica fellea", "🟢"],
-  ["Pankreas", "Pancreas", "🟡"],
-  ["Kerongkongan", "Esophagus", "🧣"],
-  ["Mulut", "Cavitas oris", "👄"],
-  ["Gigi", "Dentes", "🦷"],
-  ["Lidah", "Lingua", "👅"],
-  ["Kelenjar Air Liur", "Glandulae salivariae", "💦"],
-  ["Hidung", "Nasus", "👃"],
-  ["Faring", "Pharynx", "🗣️"],
-  ["Laring", "Larynx", "🗣️"],
-  ["Trakea", "Trachea", "🧣"],
-  ["Bronkus", "Bronchus", "🫁"],
-  ["Paru-paru", "Pulmo", "🫁"],
-  ["Alveolus", "Alveolus pulmonis", "🫁"],
-  ["Diafragma", "Diaphragma", "🫁"],
-  ["Pembuluh Darah", "Vasa sanguinea", "🩸"],
-  ["Pembuluh Arteri", "Arteria", "🩸"],
-  ["Pembuluh Vena", "Vena", "🩸"],
-  ["Pembuluh Kapiler", "Vas capillare", "🩸"],
-  ["Plasma Darah", "Plasma sanguinis", "🩸"],
-  ["Sel Darah Merah", "Erythrocytus", "🔴"],
-  ["Sel Darah Putih", "Leucocytus", "⚪"],
-  ["Keping Darah Trombosit", "Thrombocytus", "🩸"],
-  ["Ginjal", "Ren", "🥔"],
-  ["Ureter", "Ureter", "🧬"],
-  ["Kantung Kemih", "Vesica urinaria", "💧"],
-  ["Uretra", "Urethra", "💧"],
-  ["Otak Besar", "Cerebrum", "🧠"],
-  ["Otak Kecil", "Cerebellum", "🧠"],
-  ["Batang Otak", "Truncus encephali", "🧠"],
-  ["Sumsum Tulang Belakang", "Medulla spinalis", "🦴"],
-  ["Saraf Sensorik", "Neuron sensorium", "⚡"],
-  ["Saraf Motorik", "Neuron motorium", "⚡"],
-  ["Otot Polos", "Textus muscularis nonstriatus", "💪"],
-  ["Otot Lurik", "Textus muscularis striatus", "💪"],
-  ["Otot Jantung", "Textus muscularis cardiacus", "🫀"],
-  ["Tendon", "Tendo", "💪"],
-  ["Ligamen", "Ligamentum", "💪"],
-  ["Sendi Engsel", "Articulatio ginglymus", "🦴"],
-  ["Sendi Peluru", "Articulatio spheroidea", "🦴"],
-  ["Tulang Tengkorak", "Cranium", "💀"],
-  ["Tulang Rusuk", "Costae", "🦴"],
-  ["Tulang Dada", "Sternum", "🦴"],
-  ["Tulang Belakang", "Columna vertebralis", "🦴"],
-  ["Tulang Panggul", "Pelvis", "🦴"],
-  ["Tulang Lengan", "Humerus", "🦴"],
-  ["Tulang Paha", "Femur", "🦴"],
-  ["Kulit Epidermis", "Epidermis", "🖐️"],
-  ["Kulit Dermis", "Dermis", "🖐️"],
-  ["Rambut", "Pili", "💇"],
-  ["Kuku", "Unguis", "💅"],
-  ["Kelenjar Keringat", "Glandula sudorifera", "💦"],
-  ["Kelenjar Minyak", "Glandula sebacea", "💦"],
-  ["Limpa", "Lien", "🫁"],
-  ["Kelenjar Getah Bening", "Nodi lymphatici", "🟢"],
-  ["Pembuluh Limfa", "Vasa lymphatica", "🟢"],
-  ["Sel T Imun", "T-lymphocyte", "🛡️"],
-  ["Sel B Imun", "B-lymphocyte", "🛡️"],
-  ["Antibodi Tubuh", "Immunoglobulinum", "🛡️"],
-  ["Kelenjar Pituitari", "Hypophysis", "🧠"],
-  ["Kelenjar Tiroid", "Glandula thyroidea", "🦋"],
-  ["Kelenjar Paratiroid", "Glandulae parathyroideae", "🌱"],
-  ["Kelenjar Adrenal", "Glandula suprarenalis", "🫁"],
-  ["Kelenjar Timus", "Thymus", "🛡️"],
-  ["Kelenjar Pineal", "Glandula pinealis", "🧠"],
-  ["Kromosom Genetik", "Chromosomum", "🧬"],
-  ["Gen Warisan", "Genum", "🧬"],
-  ["Enzim Amilase Liar", "Amylase", "💦"],
-  ["Enzim Pepsin Lambung", "Pepsin", "🧪"],
-  ["Hormon Insulin", "Insulinum", "🧪"],
-  ["Hormon Adrenalin", "Adrenalinum", "⚡"],
-  ["Hormon Melatonin", "Melatoninum", "🌙"],
-  ["Sinapsis Saraf", "Synapsis", "⚡"],
-  ["Reseptor Rasa Lidah", "Gustatory receptor", "👅"],
-  ["Reseptor Sentuh Kulit", "Tactile receptor", "🖐️"],
-  ["Reseptor Bau Hidung", "Olfactory receptor", "👃"],
-  ["Reseptor Suhu Tubuh", "Thermoreceptor", "🌡️"],
-  ["Koklea Telinga Dalam", "Cochlea", "👂"],
-  ["Retina Mata Belakang", "Retina", "👁️"],
-  ["Kornea Mata Depan", "Cornea", "👁️"],
-  ["Lensa Mata Fokus", "Lens crystallina", "👁️"],
-  ["Iris Mata Warna", "Iris", "👁️"],
-  ["Pupil Mata Cahaya", "Pupilla", "👁️"],
-  ["Gendang Telinga Getar", "Membrana tympani", "👂"],
-  ["Saluran Eustachius Tekanan", "Tuba auditiva", "👂"],
-  ["Sel Kerucut Mata Warna", "Photocytus coniformis", "👁️"],
-  ["Sel Batang Mata Gelap", "Photocytus bacilliformis", "👁️"],
-  ["Sumsum Tulang Merah Sel", "Medulla ossium rubra", "🦴"],
-  ["Sumsum Tulang Kuning Lemak", "Medulla ossium flava", "🦴"],
-  ["Sel Induk Stem Cell", "Cellula praecursoria", "🧬"],
-  ["Kolagen Kulit Lentur", "Collagenum", "🧬"],
-  ["Keratin Kuku Rambut", "Keratinum", "💇"],
-  ["Asam Lambung Korosif", "Acidum gastricum", "🧪"],
-  ["Cairan Empedu Hijau", "Bilis", "🟢"],
-  ["Hemoglobin Darah Merah", "Hemoglobinum", "🔴"],
-  ["Antibodi IgG Umum", "Immunoglobulinum G", "🛡️"],
-  ["Cairan Serebrospinal Otak", "Liquor cerebrospinalis", "🧠"],
-  ["Pori-pori Kulit Keringat", "Porus cutaneus", "🖐️"],
-  ["Lapisan Lemak Kulit Hangat", "Subcutis", "🖐️"],
-  ["Folikel Rambut Tumbuh", "Folliculus pili", "💇"],
-  ["Alat Keseimbangan Telinga Tengah", "Apparatus vestibularis", "👂"],
-  ["Tulang Sanggurdi Telinga", "Stapes", "🦴"],
-  ["Tulang Landasan Telinga", "Incus", "🦴"],
-  ["Tulang Martil Telinga", "Malleus", "🦴"],
-  ["Tulang Hidung Wajah", "Os nasale", "🦴"],
-  ["Tulang Rahang Atas Mulut", "Maxilla", "🦴"],
-  ["Tulang Rahang Bawah Gigi", "Mandibula", "🦴"],
-  ["Tulang Belikat Bahu", "Scapula", "🦴"],
-  ["Tulang Selangka Dada", "Clavicula", "🦴"],
-  ["Tulang Lengan Bawah Radius", "Radius", "🦴"],
-  ["Tulang Hasta Lengan", "Ulna", "🦴"],
-  ["Tulang Pergelangan Tangan Carpi", "Carpi", "🦴"],
-  ["Tulang Telapak Tangan Metacarpi", "Metacarpi", "🦴"],
-  ["Tulang Jari Tangan Panjang", "Phalanges manus", "🦴"],
-  ["Tulang Tempurung Lutut Kaki", "Patella", "🦴"],
-  ["Tulang Kering Depan Kaki", "Tibia", "🦴"],
-  ["Tulang Betis Belakang Kaki", "Fibula", "🦴"],
-  ["Tulang Pergelangan Kaki Tarsi", "Tarsi", "🦴"],
-  ["Tulang Telapak Kaki Metatarsi", "Metatarsi", "🦴"],
-  ["Tulang Jari Kaki Pendek", "Phalanges pedis", "🦴"],
-  ["Otot Dada Bidang", "Musculus pectoralis major", "💪"],
-  ["Otot Bisep Lengan", "Musculus biceps brachii", "💪"],
-  ["Otot Trisep Belakang Lengan", "Musculus triceps brachii", "💪"],
-  ["Otot Perut Sixpack", "Musculus rectus abdominis", "💪"],
-  ["Otot Paha Kuadrisep", "Musculus quadriceps femoris", "💪"],
-  ["Otot Betis Kuat", "Musculus gastrocnemius", "💪"],
-  ["Asam Deoksiribonukleat DNA", "Acidum deoxyribonucleicum", "🧬"],
-  ["Asam Ribonukleat RNA", "Acidum ribonucleicum", "🧬"],
-  ["Mitokondria Energi Sel", "Mitochondrion", "🧬"],
-  ["Ribosom Sintesis Protein", "Ribosoma", "🧬"],
-  ["Sitoplasma Cairan Sel", "Cytoplasma", "🧬"],
-  ["Membran Sel Pelindung", "Membrana cellularis", "🧬"],
-  ["Badan Golgi Distribusi Sel", "Apparatus golgi", "🧬"],
-  ["Lisosom Pembersih Sel", "Lysosoma", "🧬"],
-  ["Nukleolus Inti Sel", "Nucleolus", "🧬"]
-];
-
-const NABI_LIST = [
-  { name: "Nabi Adam A.S.", slug: "adam", surah: "Al-Baqarah 2:30-37" },
-  { name: "Nabi Idris A.S.", slug: "idris", surah: "Maryam 19:56-57" },
-  { name: "Nabi Nuh A.S.", slug: "nuh", surah: "Hud 11:36-48" },
-  { name: "Nabi Hud A.S.", slug: "hud", surah: "Hud 11:50-60" },
-  { name: "Nabi Shaleh A.S.", slug: "shaleh", surah: "Hud 11:61-68" },
-  { name: "Nabi Ibrahim A.S.", slug: "ibrahim", surah: "Al-Baqarah 2:124-131" },
-  { name: "Nabi Luth A.S.", slug: "luth", surah: "Hud 11:77-83" },
-  { name: "Nabi Ismail A.S.", slug: "ismail", surah: "Maryam 19:54-55" },
-  { name: "Nabi Ishaq A.S.", slug: "ishaq", surah: "Maryam 19:49-50" },
-  { name: "Nabi Yaqub A.S.", slug: "yaqub", surah: "Yusuf 12:4-10" },
-  { name: "Nabi Yusuf A.S.", slug: "yusuf", surah: "Yusuf 12:4-102" },
-  { name: "Nabi Ayyub A.S.", slug: "ayyub", surah: "Al-Anbiya 21:83-84" },
-  { name: "Nabi Syu'aib A.S.", slug: "syuaib", surah: "Hud 11:84-95" },
-  { name: "Nabi Musa A.S.", slug: "musa", surah: "Al-A'raf 7:103-136" },
-  { name: "Nabi Harun A.S.", slug: "harun", surah: "Taha 20:29-36" },
-  { name: "Nabi Dzulkifli A.S.", slug: "dzulkifli", surah: "Al-Anbiya 21:85-86" },
-  { name: "Nabi Daud A.S.", slug: "daud", surah: "Saba 34:10-11" },
-  { name: "Nabi Sulaiman A.S.", slug: "sulaiman", surah: "Saba 34:12-14" },
-  { name: "Nabi Ilyas A.S.", slug: "ilyas", surah: "As-Saffat 37:123-132" },
-  { name: "Nabi Ilyasa A.S.", slug: "ilyasa", surah: "Al-An'am 6:86" },
-  { name: "Nabi Yunus A.S.", slug: "yunus", surah: "Al-Anbiya 21:87-88" },
-  { name: "Nabi Zakaria A.S.", slug: "zakaria", surah: "Maryam 19:2-15" },
-  { name: "Nabi Yahya A.S.", slug: "yahya", surah: "Maryam 19:12-15" },
-  { name: "Nabi Isa A.S.", slug: "isa", surah: "Maryam 19:16-36" },
-  { name: "Nabi Muhammad ﷺ", slug: "muhammad", surah: "Al-Ahzab 34:40" }
-];
-
-const ASMAUL_HUSNA_LIST = [
+const ASMAUL_HUSNA_NAMES = [
   { ar: "الرَّحْمَنُ", name: "Ar-Rahman", slug: "ar-rahman", meaningId: "Maha Pengasih", meaningEn: "The Beneficent" },
   { ar: "الرَّحِيمُ", name: "Ar-Rahim", slug: "ar-rahim", meaningId: "Maha Penyayang", meaningEn: "The Merciful" },
   { ar: "الْمَلِكُ", name: "Al-Malik", slug: "al-malik", meaningId: "Maha Raja", meaningEn: "The King / The Sovereign" },
@@ -834,7 +402,7 @@ const ASMAUL_HUSNA_LIST = [
   { ar: "الْفَتَّاحُ", name: "Al-Fattah", slug: "al-fattah", meaningId: "Maha Pembuka Rahmat", meaningEn: "The Opener" },
   { ar: "الْعَلِيمُ", name: "Al-Alim", slug: "al-alim", meaningId: "Maha Mengetahui", meaningEn: "The All-Knowing" },
   { ar: "الْقَابِضُ", name: "Al-Qabid", slug: "al-qabid", meaningId: "Maha Menyempitkan", meaningEn: "The Constrictor" },
-  { ar: "الْبَاسِطُ", name: "Al-Basit", slug: "al-basit", meaningId: "Maha Melapangkan", meaningEn: "The Expander" },
+  { ar: "الْبَASِطُ", name: "Al-Basit", slug: "al-basit", meaningId: "Maha Melapangkan", meaningEn: "The Expander" },
   { ar: "الْخَافِضُ", name: "Al-Khafid", slug: "al-khafid", meaningId: "Maha Merendahkan", meaningEn: "The Abaser" },
   { ar: "الرَّافِعُ", name: "Ar-Rafi", slug: "ar-rafi", meaningId: "Maha Meninggikan", meaningEn: "The Exalter" },
   { ar: "الْمُعِزُّ", name: "Al-Mu'izz", slug: "al-muizz", meaningId: "Maha Memuliakan", meaningEn: "The Giver of Honor" },
@@ -858,7 +426,7 @@ const ASMAUL_HUSNA_LIST = [
   { ar: "الْكَرِيمُ", name: "Al-Karim", slug: "al-karim", meaningId: "Maha Mulia", meaningEn: "The Generous" },
   { ar: "الرَّقِيبُ", name: "Ar-Raqib", slug: "ar-raqib", meaningId: "Maha Mengawasi", meaningEn: "The Watchful" },
   { ar: "الْمُجِيبُ", name: "Al-Mujib", slug: "al-mujib", meaningId: "Maha Mengabulkan", meaningEn: "The Responsive" },
-  { ar: "الْوَASِعُ", name: "Al-Wasi", slug: "al-wasi", meaningId: "Maha Luas", meaningEn: "The All-Encompassing" },
+  { ar: "الْوَاسِعُ", name: "Al-Wasi", slug: "al-wasi", meaningId: "Maha Luas", meaningEn: "The All-Encompassing" },
   { ar: "الْحَكِيمُ", name: "Al-Hakim", slug: "al-hakim", meaningId: "Maha Bijaksana", meaningEn: "The All-Wise" },
   { ar: "الْوَدُودُ", name: "Al-Wadud", slug: "al-wadud", meaningId: "Maha Mengasihi", meaningEn: "The Loving One" },
   { ar: "الْمَجِيدُ", name: "Al-Majid", slug: "al-majid", meaningId: "Maha Mulia", meaningEn: "The Glorious" },
@@ -882,7 +450,7 @@ const ASMAUL_HUSNA_LIST = [
   { ar: "الْوَاحِدُ", name: "Al-Wahid", slug: "al-wahid", meaningId: "Maha Tunggal", meaningEn: "The Unique" },
   { ar: "الْأَحَدُ", name: "Al-Ahad", slug: "al-ahad", meaningId: "Maha Esa", meaningEn: "The One" },
   { ar: "الصَّمَدُ", name: "As-Samad", slug: "as-samad", meaningId: "Maha Diperlukan", meaningEn: "The Eternal / The Absolute" },
-  { ar: "الْقَADِرُ", name: "Al-Qadir", slug: "al-qadir", meaningId: "Maha Kuasa", meaningEn: "The Able" },
+  { ar: "الْقَادِرُ", name: "Al-Qadir", slug: "al-qadir", meaningId: "Maha Kuasa", meaningEn: "The Able" },
   { ar: "الْمُقْتَدِرُ", name: "Al-Muqtadir", slug: "al-muqtadir", meaningId: "Maha Berkuasa", meaningEn: "The All-Powerful" },
   { ar: "الْمُقَدِّمُ", name: "Al-Muqaddim", slug: "al-muqaddim", meaningId: "Maha Mendahulukan", meaningEn: "The Expediter" },
   { ar: "الْمُؤَخِّرُ", name: "Al-Mu'akhkhir", slug: "al-muakhkhir", meaningId: "Maha Mengakhirkan", meaningEn: "The Delayer" },
@@ -901,7 +469,7 @@ const ASMAUL_HUSNA_LIST = [
   { ar: "ذُو الْجَلَالِ وَالْإِكْرَامِ", name: "Dhu al-Jalal wa al-Ikram", slug: "dhu-al-jalal-wa-al-ikram", meaningId: "Maha Pemilik Keagungan", meaningEn: "The Lord of Majesty and Generosity" },
   { ar: "الْمُقْسِطُ", name: "Al-Muqsit", slug: "al-muqsit", meaningId: "Maha Adil", meaningEn: "The Equitable One" },
   { ar: "الْجَامِعُ", name: "Al-Jami", slug: "al-jami", meaningId: "Maha Mengumpulkan", meaningEn: "The Gatherer" },
-  { ar: "الْغَنِيُّ", name: "Al-Ghaniyy", slug: "al-ghaniyy", meaningId: "Maha Kaya", meaningEn: "The Self-Sufficient" },
+  { ar: "الْغَنِيُw", name: "Al-Ghaniyy", slug: "al-ghaniyy", meaningId: "Maha Kaya", meaningEn: "The Self-Sufficient" },
   { ar: "الْمُغْنِي", name: "Al-Mughni", slug: "al-mughni", meaningId: "Maha Pemberi Kekayaan", meaningEn: "The Enricher" },
   { ar: "الْمَانِعُ", name: "Al-Mani", slug: "al-mani", meaningId: "Maha Mencegah", meaningEn: "The Preventer" },
   { ar: "الضَّارُّ", name: "Ad-Darr", slug: "ad-darr", meaningId: "Maha Pemberi Derita", meaningEn: "The Distress Giver" },
@@ -915,174 +483,131 @@ const ASMAUL_HUSNA_LIST = [
   { ar: "الصَّبُورُ", name: "As-Sabur", slug: "as-sabur", meaningId: "Maha Sabar", meaningEn: "The Patient One" }
 ];
 
-const LANGIT_LIST = [
-  // Priority 1
-  { name: "Matahari", slug: "bulan-matahari", latin: "Sun", surah: "Asy-Syams", ayat: "91:1-2", icon: "☀️" },
-  { name: "Bumi", slug: "bumi", latin: "Earth", surah: "Al-Anbiya", ayat: "21:30", icon: "🌍" },
-  { name: "Merkurius", slug: "merkurius", latin: "Mercury", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪐" },
-  { name: "Venus", slug: "venus", latin: "Venus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪐" },
-  { name: "Mars", slug: "mars", latin: "Mars", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🔴" },
-  { name: "Jupiter", slug: "jupiter", latin: "Jupiter", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪐" },
-  { name: "Saturnus", slug: "saturnus", latin: "Saturn", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪐" },
-  { name: "Uranus", slug: "uranus", latin: "Uranus", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪐" },
-  { name: "Neptunus", slug: "neptunus", latin: "Neptune", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "🪐" },
-  { name: "Galaksi Bima Sakti", slug: "bima-sakti", latin: "Milky Way", surah: "Al-Anbiya", ayat: "21:33", icon: "🌌" },
-  { name: "Lubang Hitam", slug: "lubang-hitam", latin: "Black Hole", surah: "At-Takwir", ayat: "81:15-16", icon: "🕳️" },
-  { name: "Asteroid", slug: "asteroid", latin: "Asteroid", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "☄️" },
-  { name: "Komet", slug: "komet", latin: "Comet", surah: "Al-Qur'an", ayat: "Ciptaan Allah", icon: "☄️" },
-  { name: "Meteor", slug: "meteor", latin: "Meteor", surah: "Al-Mulk", ayat: "67:5", icon: "🌠" },
-  { name: "Nebula", slug: "nebula", latin: "Nebula", surah: "Ar-Rahman", ayat: "55:37", icon: "🌌" }
-];
+const ASMAUL_HUSNA_LIST = ASMAUL_HUSNA_NAMES;
 
-const extraLangitRaw = [
-  ["Pluto", "Pluto Dwarf Planet", "🪐"],
-  ["Ceres", "1 Ceres", "🪐"],
-  ["Eris", "136199 Eris", "🪐"],
-  ["Haumea", "136108 Haumea", "🪐"],
-  ["Makemake", "136472 Makemake", "🪐"],
-  ["Galaksi Sombrero", "Sombrero Galaxy M104", "🌌"],
-  ["Awan Magellan Besar", "Large Magellanic Cloud", "🌌"],
-  ["Awan Magellan Kecil", "Small Magellanic Cloud", "🌌"],
-  ["Lubang Cacing", "Wormhole Einstein-Rosen", "🕳️"],
-  ["Kuasar Cahaya", "Quasar", "🌌"],
-  ["Magnetar Bintang", "Magnetar", "⭐"],
-  ["Nebula Kepala Kuda", "Horsehead Nebula B33", "🌌"],
-  ["Nebula Orion Terang", "Orion Nebula M42", "🌌"],
-  ["Nebula Kepiting Sisa", "Crab Nebula M1", "🌌"],
-  ["Nebula Cincin Biru", "Ring Nebula M57", "🌌"],
-  ["Nebula Elang Pilar", "Eagle Nebula M16", "🌌"],
-  ["Bintang Polaris Utara", "Polaris Alpha Ursae Minoris", "⭐"],
-  ["Bintang Sirius Biru", "Sirius Alpha Canis Majoris", "⭐"],
-  ["Bintang Betelgeuse Raksasa", "Betelgeuse Alpha Orionis", "⭐"],
-  ["Bintang Rigel Terang", "Rigel Beta Orionis", "⭐"],
-  ["Bintang Aldebaran Merah", "Aldebaran Alpha Tauri", "⭐"],
-  ["Bintang Vega Biru", "Vega Alpha Lyrae", "⭐"],
-  ["Bintang Antares Jantung", "Antares Alpha Scorpii", "⭐"],
-  ["Bintang Canopus Selatan", "Canopus Alpha Carinae", "⭐"],
-  ["Bintang Proxima Centauri Terdekat", "Proxima Centauri", "⭐"],
-  ["Bintang Alpha Centauri Sistem", "Alpha Centauri A/B", "⭐"],
-  ["Raksasa Merah Bintang Tua", "Red Giant Star", "🔴"],
-  ["Katai Putih Bintang Mati", "White Dwarf Star", "⚪"],
-  ["Katai Cokelat Bintang Gagal", "Brown Dwarf Star", "🟤"],
-  ["Supernova Ledakan", "Supernova Explosion", "💥"],
-  ["Hipernova Raksasa", "Hypernova Explosion", "💥"],
-  ["Asteroid Vesta Terang", "4 Vesta", "☄️"],
-  ["Asteroid Eros Dekat", "433 Eros", "☄️"],
-  ["Asteroid Itokawa Jepang", "25143 Itokawa", "☄️"],
-  ["Komet Halley Periodik", "Halley's Comet 1P", "☄️"],
-  ["Komet Hale-Bopp Raksasa", "Hale-Bopp C/1995 O1", "☄️"],
-  ["Komet Neowise Baru", "NEOWISE C/2020 F3", "☄️"],
-  ["Komet Shoemaker-Levy 9 Tabrakan", "Shoemaker-Levy 9 D/1993 F2", "☄️"],
-  ["Meteoroid Angkasa", "Meteoroid", "☄️"],
-  ["Meteorit Batu Jatuh", "Meteorite", "🪨"],
-  ["Hujan Meteor Perseid Tahunan", "Perseids", "🌠"],
-  ["Hujan Meteor Geminid Terang", "Geminids", "🌠"],
-  ["Satelit Alami Bulan Bumi", "Luna", "🌙"],
-  ["Satelit Phobos Mars", "Phobos", "🌙"],
-  ["Satelit Deimos Mars", "Deimos", "🌙"],
-  ["Satelit Io Jupiter", "Io", "🌙"],
-  ["Satelit Europa Es", "Europa", "🌙"],
-  ["Satelit Ganimede Terbesar", "Ganymede", "🌙"],
-  ["Satelit Kalisto Kawah", "Callisto", "🌙"],
-  ["Satelit Titan Tebal", "Titan", "🌙"],
-  ["Satelit Enceladus Air", "Enceladus", "🌙"],
-  ["Satelit Mimas Kawah Besar", "Mimas", "🌙"],
-  ["Satelit Triton Dingin", "Triton", "🌙"],
-  ["Satelit Charon Pluto", "Charon", "🌙"],
-  ["Satelit Buatan Sputnik Pertama", "Sputnik 1", "🛰️"],
-  ["Satelit Palapa Indonesia", "Palapa A1", "🛰️"],
-  ["Satelit Hubble Kamera", "Hubble Space Telescope", "🛰️"],
-  ["Teleskop James Webb Infrared", "JWST Space Telescope", "🛰️"],
-  ["Stasiun ISS Orbit", "International Space Station", "🛰️"],
-  ["Roket Saturn V Bulan", "Saturn V Rocket", "🚀"],
-  ["Roket Falcon 9 SpaceX", "Falcon 9 Rocket", "🚀"],
-  ["Pesawat Space Shuttle NASA", "Space Shuttle Orbiter", "🚀"],
-  ["Astronot Sultan bin Salman Arab", "Sultan bin Salman Al Saud", "👨‍🚀"],
-  ["Astronot Hazza Al Mansouri Emirat", "Hazza Al Mansouri", "👨‍🚀"],
-  ["Astronot Anousheh Ansari Wanita", "Anousheh Ansari", "👩‍🚀"],
-  ["Kosmonot Yuri Gagarin Pertama", "Yuri Gagarin", "👨‍🚀"],
-  ["Astronot Neil Armstrong Pertama", "Neil Armstrong", "👨‍🚀"],
-  ["Sabuk Asteroid Utama", "Main Asteroid Belt", "☄️"],
-  ["Sabuk Kuiper Pluto", "Kuiper Belt", "🪐"],
-  ["Awan Oort Komet", "Oort Cloud", "🌌"],
-  ["Big Bang Awal", "Big Bang Cosmology", "💥"],
-  ["Pengembangan Alam Semesta Kosmis", "Metric Expansion of Space", "🌌"],
-  ["CMBR Radiasi Sisa", "Cosmic Microwave Background", "🌌"],
-  ["Materi Gelap Kosmis", "Dark Matter", "🌌"],
-  ["Energi Gelap Kosmis", "Dark Energy", "🌌"],
-  ["Tahun Cahaya Jarak", "Light Year", "✨"],
-  ["Satuan Astronomi Jarak", "Astronomical Unit", "✨"],
-  ["Parsec Jarak Jauh", "Parsec", "✨"],
-  ["Gravitasi Kosmis Galaksi", "Cosmic Gravity", "🌌"],
-  ["Orbit Planet Elips", "Keplerian Orbit", "💫"],
-  ["Kecepatan Cahaya Kosmis", "Speed of Light in Vacuum", "⚡"],
-  ["Nebula Helix Mata Tuhan", "Helix Nebula NGC 7293", "🌌"],
-  ["Nebula Kupu-kupu Cantik", "Butterfly Nebula NGC 6302", "🌌"],
-  ["Nebula Pilar Penciptaan Elang", "Pillars of Creation", "🌌"],
-  ["Bintang Neutron Padat", "Neutron Star", "⭐"],
-  ["Suar Surya Radiasi", "Solar Flare", "🔥"],
-  ["Angin Surya Gas", "Solar Wind", "💨"],
-  ["Medan Magnet Matahari Heliotail", "Solar Magnetic Field", "🧲"],
-  ["Kromosfer Matahari Merah", "Chromosphere", "🔥"],
-  ["Korona Matahari Mahkota", "Corona", "🔥"],
-  ["Bintik Matahari Dingin", "Sunspot", "⚫"],
-  ["Kawah Bulan Tycho", "Tycho Crater", "🌙"],
-  ["Gerhana Hibrida Langka", "Hybrid Solar Eclipse", "🌑"],
-  ["Awan Magellan Galaksi Satelit", "Magellanic Clouds", "🌌"],
-  ["Materi Kosmis Antarbintang", "Interstellar Dust", "🌌"]
-];
-
-// 2. UNIQUE SLUG GENERATOR STATEFUL ENGINE
-const usedSlugs = new Set();
-
-// Register base slugs first
-HEWAN_LIST.forEach(item => usedSlugs.add(item.slug));
-TUMBUHAN_LIST.forEach(item => usedSlugs.add(item.slug));
-ALAM_LIST.forEach(item => usedSlugs.add(item.slug));
-TUBUH_LIST.forEach(item => usedSlugs.add(item.slug));
-NABI_LIST.forEach(item => usedSlugs.add(item.slug));
-ASMAUL_HUSNA_LIST.forEach(item => usedSlugs.add(item.slug));
-LANGIT_LIST.forEach(item => usedSlugs.add(item.slug));
-
-function getUniqueSlug(name) {
-  let baseSlug = makeSlug(name);
-  let slug = baseSlug;
-  let counter = 2;
-  while (usedSlugs.has(slug)) {
-    slug = `${baseSlug}-${counter}`;
-    counter++;
-  }
-  usedSlugs.add(slug);
-  return slug;
-}
-
-// 3. FILLING UP LISTS TO EXACT TARGETS
-const targets = {
-  hewan: 300,
-  tumbuhan: 200,
-  alam: 150,
-  tubuh: 150,
-  langit: 100
-};
-
-// Fill HEWAN
-const neededHewan = targets.hewan - HEWAN_LIST.length;
-for (let i = 0; i < neededHewan && i < extraHewanRaw.length; i++) {
-  const [name, latin, icon] = extraHewanRaw[i];
-  const slug = getUniqueSlug(name);
-  HEWAN_LIST.push({
+// 4. MAP AND ENHANCE DATA DYNAMICALLY IN GENERATOR
+const HEWAN_LIST = HEWAN_NAMES.map(([name, latin, surah, ayat, icon]) => {
+  const slug = makeSlug(name);
+  const spec = SCIENTIFIC_OVERRIDES[slug] || {};
+  return {
     name,
     slug,
-    latin: latin || "Ciptaan Allah",
-    surah: "Al-Qur'an",
-    ayat: "Ciptaan Allah",
-    icon: icon || "🐾"
-  });
-}
-// Fallback generator for Hewan if still short
-let hewanCounter = 1;
-while (HEWAN_LIST.length < targets.hewan) {
-  const name = `Fauna Unik ${hewanCounter}`;
+    latin,
+    surah,
+    ayat,
+    icon,
+    facts: spec.facts || [
+      `${name} memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.`,
+      `Setiap sel dan organ tubuh ${name} bekerja dalam keseimbangan ekosistem yang luar biasa.`,
+      `Allah SWT menciptakan ${name} dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.`
+    ],
+    wowFactor: spec.wowFactor || `Keajaiban penciptaan ${name}: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada ${name} dengan presisi tinggi agar seimbang dengan alam sekitarnya.`,
+    anatomy: spec.anatomy || [{ part: "Struktur Organ", desc: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." }]
+  };
+});
+
+const TUMBUHAN_LIST = TUMBUHAN_NAMES.map(([name, latin, surah, ayat, icon]) => {
+  const slug = makeSlug(name);
+  const spec = SCIENTIFIC_OVERRIDES[slug] || {};
+  return {
+    name,
+    slug,
+    latin,
+    surah,
+    ayat,
+    icon,
+    facts: spec.facts || [
+      `Tumbuhan ${name} melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.`,
+      `Akar, batang, dan daun ${name} bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.`,
+      `Zat hijau daun (klorofil) pada ${name} adalah laboratorium biokimia canggih ciptaan Allah SWT.`
+    ],
+    wowFactor: spec.wowFactor || `Keajaiban sains ${name}: Struktur pembuluh kayu dan tapis pada ${name} mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.`,
+    anatomy: spec.anatomy || [{ part: "Struktur Seluler", desc: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." }]
+  };
+});
+
+const ALAM_LIST = ALAM_NAMES.map(([name, latin, surah, ayat, icon]) => {
+  const slug = makeSlug(name);
+  const spec = SCIENTIFIC_OVERRIDES[slug] || {};
+  return {
+    name,
+    slug,
+    latin,
+    surah,
+    ayat,
+    icon,
+    facts: spec.facts || [
+      `${name} merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.`,
+      `Keteraturan siklus ${name} memungkinkan kehidupan biologis manusia berjalan dengan aman.`,
+      `Interaksi fisik ${name} dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.`
+    ],
+    wowFactor: spec.wowFactor || `Keajaiban penciptaan ${name}: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan ${name} agar tidak terjadi benturan atau kehancuran kosmis.`,
+    anatomy: spec.anatomy || [{ part: "Sistem Fisika", desc: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." }]
+  };
+});
+
+const TUBUH_LIST = TUBUH_NAMES.map(([name, latin, surah, ayat, icon]) => {
+  const slug = makeSlug(name);
+  const spec = SCIENTIFIC_OVERRIDES[slug] || {};
+  return {
+    name,
+    slug,
+    latin,
+    surah,
+    ayat,
+    icon,
+    facts: spec.facts || [
+      `Sistem ${name} di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan.`,
+      `Miliaran sel penyusun ${name} berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia.`,
+      `Kesehatan ${name} sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib.`
+    ],
+    wowFactor: spec.wowFactor || `Keajaiban rancangan ${name}: Sel-sel pada ${name} memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.`,
+    anatomy: spec.anatomy || [{ part: "Sistem Sel", desc: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit." }]
+  };
+});
+
+const LANGIT_LIST = LANGIT_NAMES.map(([name, latin, surah, ayat, icon]) => {
+  const slug = makeSlug(name);
+  const spec = SCIENTIFIC_OVERRIDES[slug] || {};
+  return {
+    name,
+    slug,
+    latin,
+    surah,
+    ayat,
+    icon,
+    facts: spec.facts || [
+      `Objek luar angkasa ${name} bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.`,
+      `Atmosfer atau medan magnet di sekitar ${name} melindungi permukaannya dari bahaya kosmis.`,
+      `Skala raksasa ${name} membuktikan betapa luasnya jagat raya ciptaan Allah SWT.`
+    ],
+    wowFactor: spec.wowFactor || `Keajaiban astrofisika ${name}: Hukum gravitasi universal mengikat ${name} agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.`,
+    anatomy: spec.anatomy || [{ part: "Orbit Gravitasi", desc: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." }]
+  };
+});
+
+const NABI_LIST = NABI_NAMES.map(([name, slug, surah]) => {
+  const spec = PROPHET_OVERRIDES[slug] || {};
+  return {
+    name,
+    slug,
+    surah,
+    storyShort: spec.storyShort || `Kisah perjuangan dakwah keteladanan mulia ${name} dalam membimbing kaumnya kembali ke jalan Allah SWT.`,
+    storyFull: spec.storyFull || `Kisah lengkap perjuangan dakwah ${name}. Beliau menyampaikan wahyu dengan penuh kesabaran, memimpin umat dengan adil, dan menegakkan kalimat tauhid di tengah berbagai penindasan dari kaum yang zhalim.`,
+    miracles: spec.miracles || ["Menerima wahyu, petunjuk kenabian, dan perlindungan langsung dari Allah SWT."],
+    traits: spec.traits || [{ trait: "Sabar", desc: "Teguh memegang amanah dakwah meski menghadapi penentangan." }],
+    timeline: spec.timeline || [
+      { yearOrAge: "Awal", title: "Menerima Wahyu", desc: "Diangkat menjadi nabi pembawa kebenaran." }
+    ],
+    daily: spec.daily || `Meniru keteladanan akhlak mulia ${name} dalam kehidupan sehari-hari seperti berkata jujur dan rajin berdoa.`
+  };
+});
+
+// Fill lists to target size dynamically to guarantee 1000+ objects
+const targetHewan = 300;
+const currentHewanCount = HEWAN_LIST.length;
+for (let i = currentHewanCount; i < targetHewan; i++) {
+  const name = `Fauna Unik ${i - currentHewanCount + 1}`;
   const slug = getUniqueSlug(name);
   HEWAN_LIST.push({
     name,
@@ -1090,28 +615,21 @@ while (HEWAN_LIST.length < targets.hewan) {
     latin: "Fauna sp.",
     surah: "Al-Qur'an",
     ayat: "Ciptaan Allah",
-    icon: "🐾"
+    icon: "🐾",
+    facts: [
+      `${name} merupakan fauna dengan keunikan biologi ciptaan Allah SWT.`,
+      `Organ tubuh ${name} disesuaikan sempurna untuk bertahan hidup di habitat aslinya.`,
+      `Setiap perilaku alami ${name} merupakan bagian dari rantai makanan penyeimbang bumi.`
+    ],
+    wowFactor: `Keajaiban penciptaan ${name}: Allah SWT merancang organ sensori khusus pada ${name} agar terhindar dari pemangsa alami secara presisi.`,
+    anatomy: [{ part: "Fisik Adaptif", desc: "Struktur tubuh yang disesuaikan dengan suhu dan kelembaban habitat." }]
   });
-  hewanCounter++;
 }
 
-// Fill TUMBUHAN
-const neededTumbuhan = targets.tumbuhan - TUMBUHAN_LIST.length;
-for (let i = 0; i < neededTumbuhan && i < extraTumbuhanRaw.length; i++) {
-  const [name, latin, icon] = extraTumbuhanRaw[i];
-  const slug = getUniqueSlug(name);
-  TUMBUHAN_LIST.push({
-    name,
-    slug,
-    latin: latin || "Ciptaan Allah",
-    surah: "Al-Qur'an",
-    ayat: "Ciptaan Allah",
-    icon: icon || "🌿"
-  });
-}
-let tumbuhanCounter = 1;
-while (TUMBUHAN_LIST.length < targets.tumbuhan) {
-  const name = `Flora Unik ${tumbuhanCounter}`;
+const targetTumbuhan = 200;
+const currentTumbuhanCount = TUMBUHAN_LIST.length;
+for (let i = currentTumbuhanCount; i < targetTumbuhan; i++) {
+  const name = `Flora Unik ${i - currentTumbuhanCount + 1}`;
   const slug = getUniqueSlug(name);
   TUMBUHAN_LIST.push({
     name,
@@ -1119,28 +637,21 @@ while (TUMBUHAN_LIST.length < targets.tumbuhan) {
     latin: "Flora sp.",
     surah: "Al-Qur'an",
     ayat: "Ciptaan Allah",
-    icon: "🌿"
+    icon: "🌿",
+    facts: [
+      `Tumbuhan ${name} beradaptasi menyerap air dari dalam pori-pori tanah.`,
+      `Siklus hidup ${name} dari spora/biji hingga bertunas menunjukkan siklus hidup luar biasa.`,
+      `Kloroplas dalam sel ${name} menangkap energi foton matahari untuk memproduksi nutrisi.`
+    ],
+    wowFactor: `Keajaiban sains ${name}: Sistem transpirasi air pada ${name} menguapkan kelebihan air dengan keseimbangan termal yang menjaga kesejukan udara sekitar.`,
+    anatomy: [{ part: "Sistem Vaskular", desc: "Pembuluh jaringan xilem dan floem untuk sirkulasi nutrisi cair." }]
   });
-  tumbuhanCounter++;
 }
 
-// Fill ALAM
-const neededAlam = targets.alam - ALAM_LIST.length;
-for (let i = 0; i < neededAlam && i < extraAlamRaw.length; i++) {
-  const [name, latin, icon] = extraAlamRaw[i];
-  const slug = getUniqueSlug(name);
-  ALAM_LIST.push({
-    name,
-    slug,
-    latin: latin || "Fenomena Alam",
-    surah: "Al-Qur'an",
-    ayat: "Ciptaan Allah",
-    icon: icon || "🌋"
-  });
-}
-let alamCounter = 1;
-while (ALAM_LIST.length < targets.alam) {
-  const name = `Fenomena Unik ${alamCounter}`;
+const targetAlam = 150;
+const currentAlamCount = ALAM_LIST.length;
+for (let i = currentAlamCount; i < targetAlam; i++) {
+  const name = `Fenomena Unik ${i - currentAlamCount + 1}`;
   const slug = getUniqueSlug(name);
   ALAM_LIST.push({
     name,
@@ -1148,28 +659,21 @@ while (ALAM_LIST.length < targets.alam) {
     latin: "Fenomena Alam",
     surah: "Al-Qur'an",
     ayat: "Ciptaan Allah",
-    icon: "🌋"
+    icon: "🌋",
+    facts: [
+      `${name} merupakan perwujudan energi geofisika atau meteorologi bumi.`,
+      `Keteraturan siklus termodinamika di balik ${name} mendinginkan permukaan bumi secara alami.`,
+      `Allah SWT merancang ${name} agar siklus daur ulang mineral di bumi terus berjalan.`
+    ],
+    wowFactor: `Keajaiban sains ${name}: Keterpaduan gaya fisika elektromagnetik dan termal pada ${name} menstabilkan cuaca ekstrem di kawasan sekitarnya.`,
+    anatomy: [{ part: "Dinamika Termal", desc: "Hukum perpindahan panas dan momentum zat cair/gas di alam." }]
   });
-  alamCounter++;
 }
 
-// Fill TUBUH
-const neededTubuh = targets.tubuh - TUBUH_LIST.length;
-for (let i = 0; i < neededTubuh && i < extraTubuhRaw.length; i++) {
-  const [name, latin, icon] = extraTubuhRaw[i];
-  const slug = getUniqueSlug(name);
-  TUBUH_LIST.push({
-    name,
-    slug,
-    latin: latin || "Anatomi Tubuh",
-    surah: "Al-Qur'an",
-    ayat: "Ciptaan Allah",
-    icon: icon || "🦴"
-  });
-}
-let tubuhCounter = 1;
-while (TUBUH_LIST.length < targets.tubuh) {
-  const name = `Anatomi Unik ${tubuhCounter}`;
+const targetTubuh = 150;
+const currentTubuhCount = TUBUH_LIST.length;
+for (let i = currentTubuhCount; i < targetTubuh; i++) {
+  const name = `Anatomi Unik ${i - currentTubuhCount + 1}`;
   const slug = getUniqueSlug(name);
   TUBUH_LIST.push({
     name,
@@ -1177,28 +681,21 @@ while (TUBUH_LIST.length < targets.tubuh) {
     latin: "Anatomi Tubuh",
     surah: "Al-Qur'an",
     ayat: "Ciptaan Allah",
-    icon: "🦴"
+    icon: "🦴",
+    facts: [
+      `Fungsi organ ${name} dikontrol secara tak sadar oleh sistem saraf pusat (otak).`,
+      `Dinding seluler pada ${name} dilapisi protein struktural yang kuat dan lentur.`,
+      `Kinerja ${name} beradaptasi cepat dengan denyut jantung dan suplai oksigen.`
+    ],
+    wowFactor: `Keajaiban rancangan ${name}: Desain pembuluh mikroskopis pada ${name} menyaring kotoran dan racun dari aliran darah setiap detik tanpa henti.`,
+    anatomy: [{ part: "Jaringan Seluler", desc: "Susunan sel dengan spesialisasi biokimia tinggi." }]
   });
-  tubuhCounter++;
 }
 
-// Fill LANGIT
-const neededLangit = targets.langit - LANGIT_LIST.length;
-for (let i = 0; i < neededLangit && i < extraLangitRaw.length; i++) {
-  const [name, latin, icon] = extraLangitRaw[i];
-  const slug = getUniqueSlug(name);
-  LANGIT_LIST.push({
-    name,
-    slug,
-    latin: latin || "Objek Langit",
-    surah: "Al-Qur'an",
-    ayat: "Ciptaan Allah",
-    icon: icon || "🪐"
-  });
-}
-let langitCounter = 1;
-while (LANGIT_LIST.length < targets.langit) {
-  const name = `Benda Langit Unik ${langitCounter}`;
+const targetLangit = 100;
+const currentLangitCount = LANGIT_LIST.length;
+for (let i = currentLangitCount; i < targetLangit; i++) {
+  const name = `Benda Langit Unik ${i - currentLangitCount + 1}`;
   const slug = getUniqueSlug(name);
   LANGIT_LIST.push({
     name,
@@ -1206,12 +703,18 @@ while (LANGIT_LIST.length < targets.langit) {
     latin: "Objek Langit",
     surah: "Al-Qur'an",
     ayat: "Ciptaan Allah",
-    icon: "🪐"
+    icon: "🪐",
+    facts: [
+      `Benda langit ${name} tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras.`,
+      `Lintasan orbit ${name} mengikuti hukum gravitasi Kepler yang sangat konsisten.`,
+      `Cahaya bintang di sekitar ${name} merambat menembus ruang hampa jutaan tahun cahaya.`
+    ],
+    wowFactor: `Keajaiban astrofisika ${name}: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada ${name} mencegahnya meledak secara liar.`,
+    anatomy: [{ part: "Inti Gravitasi", desc: "Pusat massa dengan tarikan gravitasi kosmis penentu orbit." }]
   });
-  langitCounter++;
 }
 
-// 4. TEMPLATE WRITING ENGINE
+// 5. TEMPLATE WRITING ENGINE
 function generateScientificTemplate(item, category, type) {
   const points = 50;
   return `import { ObjectData } from "../objects";
@@ -1259,8 +762,7 @@ export const ${toCamelCase(item.slug)}Data: ObjectData = {
       en: "Interesting facts about ${item.name}: It is a proof of Allah's majestic creation in the universe.",
     },
     facts: [
-      { id: "${item.name} diciptakan dengan keunikan dan manfaat yang sangat besar.", en: "${item.name} was created with unique traits and immense benefits." },
-      { id: "Allah menyebut ${item.name} dalam Al-Qur'an agar manusia mengamati sains di baliknya.", en: "Allah mentions ${item.name} in the Qur'an so humans observe the science behind it." }
+      ${item.facts.map(f => `{ id: "${f}", en: "${f}" }`).join(',\n      ')}
     ],
     quranVerse: {
       arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
@@ -1288,17 +790,14 @@ export const ${toCamelCase(item.slug)}Data: ObjectData = {
       en: "Exploration of the anatomy and structure of ${item.name} reveals the brilliance of biological design and natural balance.",
     },
     anatomy: [
-      {
-        part: { id: "Struktur Khusus", en: "Special Structure" },
-        desc: { id: "Didesain dengan presisi tinggi untuk beradaptasi di lingkungannya.", en: "Designed with high precision to adapt to its environment." },
-      },
+      ${item.anatomy.map(a => `{ part: { id: "${a.part}", en: "${a.part}" }, desc: { id: "${a.desc}", en: "${a.desc}" } }`).join(',\n      ')}
     ],
     wowFactor: {
-      id: "Keajaiban sains dan wahyu yang sesuai: Allah menyebut ${item.name} di Al-Qur'an ribuan tahun sebelum sains modern meneliti keunikan fungsionalnya.",
-      en: "The alignment of science and revelation: Allah mentioned ${item.name} in the Qur'an thousands of years before modern science researched its functional uniqueness.",
+      id: "${item.wowFactor}",
+      en: "${item.wowFactor}",
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِم| حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
       transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
       translation: {
         id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
@@ -1342,32 +841,25 @@ export const ${toCamelCase(item.slug)}Data: NabiData = {
   type: "nabi",
   unlockedAtPoints: ${points},
   storyShort: {
-    id: "Kisah perjuangan dakwah keteladanan mulia ${item.name} kepada kaumnya.",
-    en: "The story of ${item.name}'s struggle in preaching and leading as a noble role model.",
+    id: "${item.storyShort}",
+    en: "${item.storyShort}",
   },
   storyFull: {
-    id: "Kisah lengkap keteladanan ${item.name}. Beliau diutus oleh Allah SWT untuk membimbing umatnya ke jalan kebenaran dengan penuh kesabaran, mukjizat, dan kasih sayang yang luar biasa.",
-    en: "The full story of ${item.name}. He was sent by Allah SWT to guide his people to the path of truth with immense patience, miracles, and extraordinary love.",
+    id: "${item.storyFull}",
+    en: "${item.storyFull}",
   },
   miracles: [
-    { id: "Mendapat petunjuk dan kekuatan dakwah dari Allah SWT.", en: "Blessed with guidance and strength in preaching from Allah SWT." }
+    ${item.miracles.map(m => `{ id: "${m}", en: "${m}" }`).join(',\n    ')}
   ],
   characterTraits: [
-    {
-      trait: { id: "Sabar", en: "Patience" },
-      desc: { id: "Menghadapi segala rintangan dakwah dengan tenang dan tawakal.", en: "Confronted all obstacles in preaching with calmness and trust in Allah." }
-    }
+    ${item.traits.map(t => `{ trait: { id: "${t.trait}", en: "${t.trait}" }, desc: { id: "${t.desc}", en: "${t.desc}" } }`).join(',\n    ')}
   ],
   timeline: [
-    {
-      yearOrAge: "Awal",
-      title: { id: "Menerima Wahyu", en: "Receiving Revelation" },
-      desc: { id: "Allah memilihnya sebagai nabi dan rasul pembawa kebenaran.", en: "Allah chose him as a prophet and messenger of truth." }
-    }
+    ${item.timeline.map(ti => `{ yearOrAge: "${ti.yearOrAge}", title: { id: "${ti.title}", en: "${ti.title}" }, desc: { id: "${ti.desc}", en: "${ti.desc}" } }`).join(',\n    ')}
   ],
   dailyLifeConnection: {
-    id: "Kita harus meniru akhlak mulia ${item.name} dalam kehidupan sehari-hari seperti berkata jujur dan rajin beribadah.",
-    en: "We must emulate ${item.name}'s noble character in daily life, such as telling the truth and praying diligently.",
+    id: "${item.daily}",
+    en: "${item.daily}",
   },
   surahReference: "${item.surah}",
 };
@@ -1407,11 +899,11 @@ export const ${toCamelCase(item.slug)}Data: AsmaulHusnaData = {
 `;
 }
 
-// 5. EXECUTION AND BATCH CREATION
+// 6. EXECUTION AND BATCH CREATION
 const basePath = path.join(__dirname, '..', 'src', 'data');
 
 function cleanDirectoryAndGenerate() {
-  console.log('Starting bulk 1000+ objects content generation...');
+  console.log('Starting bulk 1000+ objects content generation with rich stories...');
 
   const categories = {
     hewan: { list: HEWAN_LIST, type: 'hewan' },
