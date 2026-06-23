@@ -73,7 +73,7 @@ export default function UsersManagementPage() {
   const [users, setUsers] = useState<UserProfile[]>([])
   const [searchTerm, setSearchTerm] = useState("")
   const [loading, setLoading] = useState(true)
-  const supabase = createClient()
+  const [supabase] = useState(() => createClient())
 
   useEffect(() => {
     async function fetchUsers() {

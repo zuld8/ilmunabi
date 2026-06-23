@@ -77,7 +77,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<"id" | "en" | "ar">("id");
   const [isLoading, setIsLoading] = useState(true);
 
-  const supabase = createClient();
+  const [supabase] = useState(() => createClient());
 
   // Load state and synchronize with Supabase
   useEffect(() => {
