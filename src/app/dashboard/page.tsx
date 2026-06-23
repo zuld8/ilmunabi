@@ -321,12 +321,10 @@ export default function Dashboard() {
             .filter((o) => activeCategory === "semua" || o.type === activeCategory)
             .map((obj, idx) => {
             const isCompleted = activeChild.completedObjects.includes(obj.slug);
-            const isLocked = activeChild.points < obj.unlockedAtPoints && subscriptionStatus !== "subscribed";
+            const isLocked = false; // Unlocked for review
             
             // Determine next unlock object (first locked object in list)
-            const lockedObjects = objectsData.filter(
-              (o) => activeChild.points < o.unlockedAtPoints && subscriptionStatus !== "subscribed"
-            );
+            const lockedObjects: typeof objectsData = [];
             const nextUnlockSlug = lockedObjects.length > 0 ? lockedObjects[0].slug : null;
             const isNextUnlock = nextUnlockSlug === obj.slug;
 
