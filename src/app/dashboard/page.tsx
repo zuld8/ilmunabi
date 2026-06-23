@@ -38,6 +38,14 @@ export default function Dashboard() {
   const [mathQuestion, setMathQuestion] = useState({ q: "", a: 0 });
   const [mathError, setMathError] = useState(false);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
+  const [showTimeoutHelper, setShowTimeoutHelper] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTimeoutHelper(true);
+    }, 4500);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Trigger Welcome Popup after 1 second if child has 0 cards and 0 badges
   useEffect(() => {
@@ -63,9 +71,9 @@ export default function Dashboard() {
   // Redirect to onboarding if no profiles exist
   useEffect(() => {
     if (!isLoading && profiles.length === 0) {
-      router.push("/onboarding");
+      window.location.href = "/onboarding";
     }
-  }, [profiles, isLoading, router]);
+  }, [profiles, isLoading]);
 
   // Generate simple math gate question for parent area
   const openParentArea = () => {
@@ -92,8 +100,35 @@ export default function Dashboard() {
 
   if (isLoading || !activeChild) {
     return (
-      <div className="min-h-screen bg-cream flex items-center justify-center">
-        <p className="text-charcoal/60 animate-pulse font-medium">Memuat profil belajar...</p>
+      <div className="min-h-screen bg-cream flex flex-col items-center justify-center p-6 text-center">
+        <div className="h-10 w-10 rounded-full border-4 border-teal border-t-transparent animate-spin mb-4" />
+        <p className="text-charcoal/60 animate-pulse font-medium text-sm">Memuat profil belajar...</p>
+        
+        {(showTimeoutHelper || (!isLoading && profiles.length === 0)) && (
+          <div className="mt-8 p-6 bg-white border border-cream-dark rounded-3xl shadow-sm max-w-sm w-full animate-fadeIn">
+            <p className="text-xs text-charcoal/60 leading-relaxed mb-4">
+              Koneksi database memerlukan waktu lebih lama dari biasanya. Anda bisa mencoba membuat profil anak baru atau keluar dan masuk kembali.
+            </p>
+            <div className="flex gap-2 justify-center">
+              <button 
+                onClick={() => window.location.href = "/onboarding"}
+                className="px-4 py-2.5 bg-teal text-white rounded-xl font-bold text-xs shadow hover:bg-teal-dark transition duration-200"
+              >
+                Buat Profil Anak
+              </button>
+              <button 
+                onClick={async () => {
+                  const supabaseClient = createClient();
+                  await supabaseClient.auth.signOut();
+                  window.location.href = "/auth/login";
+                }}
+                className="px-4 py-2.5 bg-red-50 text-red-600 border border-red-200 rounded-xl font-bold text-xs hover:bg-red-100 transition duration-200"
+              >
+                Keluar Akun
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     );
   }

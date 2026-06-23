@@ -73,9 +73,30 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
             .eq('id', userId)
             .single();
           
-          if (!profileErr && profileData) {
-            setIsSubscribed(profileData.subscription_status === 'active');
-            setTrialEndsAt(profileData.trial_ends_at);
+          let currentProfile = profileData;
+          if (profileErr || !profileData) {
+            const { data: newProfile, error: insertErr } = await supabase
+              .from('profiles')
+              .insert({
+                id: userId,
+                email: session.user.email,
+                full_name: session.user.user_metadata?.full_name || 'Orang Tua IlmuNabi',
+                subscription_status: 'trial',
+                trial_ends_at: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString()
+              })
+              .select()
+              .single();
+            
+            if (!insertErr && newProfile) {
+              currentProfile = newProfile;
+            } else {
+              console.error("Auto profile creation failed:", insertErr);
+            }
+          }
+          
+          if (currentProfile) {
+            setIsSubscribed(currentProfile.subscription_status === 'active');
+            setTrialEndsAt(currentProfile.trial_ends_at);
           }
           
           // 2. Fetch children profiles
