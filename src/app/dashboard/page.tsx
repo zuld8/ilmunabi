@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useApp } from "@/context/AppContext";
 import { objectsData, ObjectData, NabiData, AsmaulHusnaData } from "@/data/objects";
@@ -40,12 +40,50 @@ export default function Dashboard() {
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const [showTimeoutHelper, setShowTimeoutHelper] = useState(false);
 
+  // Pagination state — render 20 items at a time
+  const PAGE_SIZE = 20;
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const loaderRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTimeoutHelper(true);
     }, 4500);
     return () => clearTimeout(timer);
   }, []);
+
+  // Reset visible count when category changes
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [activeCategory]);
+
+  // Filtered + sliced list — memoised to avoid recalculation on every render
+  const filteredObjects = useMemo(
+    () => objectsData.filter((o) => activeCategory === "semua" || o.type === activeCategory),
+    [activeCategory]
+  );
+  const visibleObjects = useMemo(
+    () => filteredObjects.slice(0, visibleCount),
+    [filteredObjects, visibleCount]
+  );
+
+  // Infinite-scroll via IntersectionObserver
+  const loadMore = useCallback(() => {
+    setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, filteredObjects.length));
+  }, [filteredObjects.length]);
+
+  useEffect(() => {
+    const el = loaderRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) loadMore();
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [loadMore]);
 
   // Trigger Welcome Popup after 1 second if child has 0 cards and 0 badges
   useEffect(() => {
@@ -350,26 +388,15 @@ export default function Dashboard() {
           <KategoriFilter activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
         </div>
 
-        {/* Objects Grid */}
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {objectsData
-            .filter((o) => activeCategory === "semua" || o.type === activeCategory)
-            .map((obj, idx) => {
+        {/* Objects Grid — paginated (20 items per load) */}
+        <p className="text-[11px] text-charcoal/40 font-medium mb-2">
+          Menampilkan {visibleObjects.length} dari {filteredObjects.length} objek
+        </p>
+        <div className="mt-2 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          {visibleObjects.map((obj) => {
             const isCompleted = (activeChild?.completedObjects || []).includes(obj.slug);
             const isLocked = false; // Unlocked for review
-            
-            // Determine next unlock object (first locked object in list)
-            const lockedObjects: typeof objectsData = [];
-            const nextUnlockSlug = lockedObjects.length > 0 ? lockedObjects[0].slug : null;
-            const isNextUnlock = nextUnlockSlug === obj.slug;
- 
-            // Get previous object name for hint
-            let prevObjName = "";
-            if (isNextUnlock && idx > 0) {
-              const prevObj = objectsData[idx - 1];
-              prevObjName = (activeChild?.zone || "balita") === "balita" ? prevObj.name.id : prevObj.name.en;
-            }
- 
+
             return (
               <button
                 key={obj.slug}
@@ -387,14 +414,12 @@ export default function Dashboard() {
                   router.push(`/learn/${obj.slug}`);
                 }}
                 className={`group flex flex-col justify-between text-left rounded-3xl border p-5 shadow-sm transition-all duration-300 relative bg-white min-h-[200px] ${
-                  isLocked 
-                    ? isNextUnlock
-                      ? "border-cream-dark bg-cream-dark/5 cursor-pointer hover:bg-cream-dark/10 card-blur-light" 
-                      : "border-cream-dark/50 bg-cream-dark/5 cursor-default card-blur-heavy"
+                  isLocked
+                    ? "border-cream-dark/50 bg-cream-dark/5 cursor-default"
                     : "border-cream-dark hover:-translate-y-1 hover:shadow-md cursor-pointer"
                 }`}
               >
-                
+
                 {/* Complete Checkmark badge */}
                 {isCompleted && (
                   <span className="absolute top-4 right-4 flex h-6 w-6 items-center justify-center rounded-full bg-green-500 text-white shadow-sm z-10">
@@ -413,47 +438,54 @@ export default function Dashboard() {
                     <h4 className="mt-5 text-lg font-bold text-charcoal">
                       {(activeChild?.zone || "balita") === "balita" ? obj.name.id : obj.name.en}
                     </h4>
-                    
-                    {/* Subtitle / Scientific Name (unlocked only) */}
-                    {!isLocked && (
-                      <p className="text-[11px] text-charcoal/50 italic leading-none mt-1">
-                        {obj.type === "hewan" || obj.type === "tumbuhan" || obj.type === "alam" || obj.type === "tubuh" || obj.type === "langit"
-                          ? (obj as ObjectData).scientificName
-                          : obj.type === "nabi"
-                          ? "Kisah Nabi & Rasul"
-                          : (obj as AsmaulHusnaData).arabicWithHarakat}
-                      </p>
-                    )}
 
-                    {/* Hint text for next unlock */}
-                    {isLocked && isNextUnlock && (
-                      <p className="text-[10px] text-teal font-bold leading-normal mt-2">
-                        🔓 Selesaikan {prevObjName} untuk membuka ini
-                      </p>
-                    )}
+                    {/* Subtitle / Scientific Name */}
+                    <p className="text-[11px] text-charcoal/50 italic leading-none mt-1">
+                      {obj.type === "hewan" || obj.type === "tumbuhan" || obj.type === "alam" || obj.type === "tubuh" || obj.type === "langit"
+                        ? (obj as ObjectData).scientificName
+                        : obj.type === "nabi"
+                        ? "Kisah Nabi & Rasul"
+                        : (obj as AsmaulHusnaData).arabicWithHarakat}
+                    </p>
                   </div>
 
-                  {/* Footer status text (unlocked only) */}
-                  {!isLocked && (
-                    <div className="mt-8 border-t border-cream-dark/60 pt-4 flex items-center justify-between text-[11px] font-semibold">
-                      <span className="text-teal-medium">
-                        {obj.type === "hewan" || obj.type === "tumbuhan" || obj.type === "alam" || obj.type === "tubuh" || obj.type === "langit"
-                          ? (obj as ObjectData).surahName
-                          : obj.type === "nabi"
-                          ? (obj as NabiData).surahReference
-                          : "Asmaul Husna"}
-                      </span>
-                      <span className="text-green-600">
-                        {isCompleted ? "Selesai" : "Mulai"}
-                      </span>
-                    </div>
-                  )}
+                  {/* Footer status text */}
+                  <div className="mt-8 border-t border-cream-dark/60 pt-4 flex items-center justify-between text-[11px] font-semibold">
+                    <span className="text-teal-medium">
+                      {obj.type === "hewan" || obj.type === "tumbuhan" || obj.type === "alam" || obj.type === "tubuh" || obj.type === "langit"
+                        ? (obj as ObjectData).surahName
+                        : obj.type === "nabi"
+                        ? (obj as NabiData).surahReference
+                        : "Asmaul Husna"}
+                    </span>
+                    <span className="text-green-600">
+                      {isCompleted ? "Selesai" : "Mulai"}
+                    </span>
+                  </div>
                 </div>
 
               </button>
             );
           })}
         </div>
+
+        {/* Infinite-scroll loader sentinel */}
+        {visibleCount < filteredObjects.length && (
+          <div
+            ref={loaderRef}
+            className="mt-10 flex justify-center items-center gap-2 py-6 text-charcoal/40 text-xs font-medium"
+          >
+            <div className="h-5 w-5 rounded-full border-2 border-teal border-t-transparent animate-spin" />
+            <span>Memuat lebih banyak…</span>
+          </div>
+        )}
+
+        {/* End of list indicator */}
+        {visibleCount >= filteredObjects.length && filteredObjects.length > PAGE_SIZE && (
+          <p className="mt-10 text-center text-[11px] text-charcoal/30 font-medium pb-4">
+            ✅ Semua {filteredObjects.length} objek sudah dimuat
+          </p>
+        )}
       </main>
 
       {/* Parental Gate Modal */}
