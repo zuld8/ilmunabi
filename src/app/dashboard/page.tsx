@@ -38,19 +38,40 @@ export default function Dashboard() {
   const [mathQuestion, setMathQuestion] = useState({ q: "", a: 0 });
   const [mathError, setMathError] = useState(false);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
-  const [showTimeoutHelper, setShowTimeoutHelper] = useState(false);
+
+  // Auto-retry loading state — 3 retries x 3 seconds each
+  const MAX_RETRIES = 3;
+  const RETRY_INTERVAL_MS = 3000;
+  const [retryCount, setRetryCount] = useState(0);
+  const [retryFailed, setRetryFailed] = useState(false);
+  const [retryLabel, setRetryLabel] = useState("");
 
   // Pagination state — render 20 items at a time
   const PAGE_SIZE = 20;
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const loaderRef = useRef<HTMLDivElement>(null);
 
+  // Auto-retry: when still loading after RETRY_INTERVAL_MS, trigger a soft page reload
+  // up to MAX_RETRIES times before giving up and showing a manual Refresh button.
   useEffect(() => {
+    if (!isLoading || activeChild) return; // already loaded, nothing to do
+
+    if (retryCount >= MAX_RETRIES) {
+      setRetryFailed(true);
+      return;
+    }
+
     const timer = setTimeout(() => {
-      setShowTimeoutHelper(true);
-    }, 4500);
+      const next = retryCount + 1;
+      setRetryCount(next);
+      setRetryLabel(`Mencoba ulang... (${next}/${MAX_RETRIES})`);
+      // Soft reload — clears in-memory React state and re-initialises AppContext
+      window.location.reload();
+    }, RETRY_INTERVAL_MS);
+
     return () => clearTimeout(timer);
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, activeChild, retryCount]);
 
   // Reset visible count when category changes
   useEffect(() => {
@@ -139,32 +160,34 @@ export default function Dashboard() {
   if (isLoading || !activeChild) {
     return (
       <div className="min-h-screen bg-cream flex flex-col items-center justify-center p-6 text-center">
+        {/* Spinner */}
         <div className="h-10 w-10 rounded-full border-4 border-teal border-t-transparent animate-spin mb-4" />
-        <p className="text-charcoal/60 animate-pulse font-medium text-sm">Memuat profil belajar...</p>
-        
-        {(showTimeoutHelper || (!isLoading && profiles.length === 0)) && (
-          <div className="mt-8 p-6 bg-white border border-cream-dark rounded-3xl shadow-sm max-w-sm w-full animate-fadeIn">
-            <p className="text-xs text-charcoal/60 leading-relaxed mb-4">
-              Koneksi database memerlukan waktu lebih lama dari biasanya. Anda bisa mencoba membuat profil anak baru atau keluar dan masuk kembali.
+
+        {retryFailed ? (
+          // All retries exhausted — show simple Refresh button
+          <div className="mt-4 p-6 bg-white border border-cream-dark rounded-3xl shadow-sm max-w-sm w-full">
+            <p className="text-sm font-semibold text-charcoal mb-1">Koneksi lambat 🐢</p>
+            <p className="text-xs text-charcoal/60 leading-relaxed mb-5">
+              Database sedang bangun dari tidur. Coba refresh halaman ya.
             </p>
-            <div className="flex gap-2 justify-center">
-              <button 
-                onClick={() => window.location.href = "/onboarding"}
-                className="px-4 py-2.5 bg-teal text-white rounded-xl font-bold text-xs shadow hover:bg-teal-dark transition duration-200"
-              >
-                Buat Profil Anak
-              </button>
-              <button 
-                onClick={async () => {
-                  const supabaseClient = createClient();
-                  await supabaseClient.auth.signOut();
-                  window.location.href = "/auth/login";
-                }}
-                className="px-4 py-2.5 bg-red-50 text-red-600 border border-red-200 rounded-xl font-bold text-xs hover:bg-red-100 transition duration-200"
-              >
-                Keluar Akun
-              </button>
-            </div>
+            <button
+              onClick={() => window.location.reload()}
+              className="w-full px-4 py-3 bg-teal text-white rounded-xl font-bold text-sm shadow hover:bg-teal-dark transition duration-200"
+            >
+              🔄 Refresh Halaman
+            </button>
+          </div>
+        ) : (
+          // Still retrying — show friendly waiting message
+          <div className="flex flex-col items-center gap-1">
+            <p className="text-charcoal/60 font-medium text-sm animate-pulse">
+              {retryLabel || "Sedang memuat... mohon tunggu sebentar ⏳"}
+            </p>
+            {retryCount > 0 && (
+              <p className="text-[11px] text-charcoal/40">
+                Database sedang bangun, ini normal saat pertama buka
+              </p>
+            )}
           </div>
         )}
       </div>
