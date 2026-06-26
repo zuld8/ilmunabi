@@ -2,107 +2,116 @@ import { ObjectData } from "../objects";
 
 export const nebulaOrionData: ObjectData = {
   slug: "nebula-orion",
-  name: {
-    id: "Nebula Orion",
-    en: "Nebula Orion",
-  },
-  scientificName: "Nebula",
-  surahName: "Ar-Rahman",
-  surahReference: "55:37",
+  name: { id: "Nebula Orion", en: "Orion Nebula" },
   icon: "🌌",
   category: "langit",
   type: "langit",
-  unlockedAtPoints: 50,
+  scientificName: "Messier 42",
+  surahName: "Ad-Dukhan",
+  surahReference: "44:10",
+  unlockedAtPoints: 100,
+
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Ar-Rahman 55:37" }
+    { arab: "دُخَانٌ", latin: "Dukhaanun", arti: "Asap/Kabut", artiEn: "Smoke/Gas", contohAyat: "فَارْتَقِبْ يَوْمَ تَأْتِي السَّمَاءُ بِدُخَانٍ مُبِينٍ" },
+    { arab: "نَجْمٌ", latin: "Najmun", arti: "Bintang", artiEn: "Star", contohAyat: "وَٱلنَّجْمِ إِذَا هَوَىٰ" },
+    { arab: "جَمِيلٌ", latin: "Jamiilun", arti: "Indah", artiEn: "Beautiful", contohAyat: "وَاللَّهُ جَمِيلٌ يُحِبُّ الْجَمَالَ" },
+    { arab: "سَمَاءٌ", latin: "Samaa'un", arti: "Langit", artiEn: "Sky", contohAyat: "وَالسَّمَاءِ ذَاتِ الْبُرُوجِ" }
   ],
+
   balita: {
     text: {
-      id: "Ini Nebula Orion! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Nebula Orion! An amazingly beautiful creation of Allah. 🌟",
+      id: "Lihat awan warna-warni yang bersinar di langit! Itu namanya Nebula. Nebula adalah tempat bintang-bintang baru lahir. Seperti taman bermain untuk bayi-bayi bintang. Allah Maha Menciptakan yang indah-indah!",
+      en: "Look at the colorful glowing clouds in the sky! It's called a Nebula. A Nebula is where new stars are born. Like a playground for baby stars. Allah creates beautiful things!"
     },
     audioTranscript: {
-      id: "Ini Nebula Orion. Allah menciptakan Nebula Orion dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Nebula Orion. Allah created Nebula Orion beautifully so we all become grateful.",
+      id: "Nebula adalah awan cantik tempat bayi bintang lahir. Subhanallah!",
+      en: "Nebula is a beautiful cloud where baby stars are born. Subhanallah!"
     },
     quiz: {
-      question: {
-        id: "Mana gambar Nebula Orion?",
-        en: "Which one is the picture of Nebula Orion?",
-      },
+      question: { id: "Apa itu Nebula?", en: "What is a Nebula?" },
       options: [
-        { text: { id: "🌌 Nebula Orion", en: "🌌 Nebula Orion" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Tempat bintang baru lahir", en: "Place where new stars are born" } },
+        { text: { id: "Rumah burung", en: "Birdhouse" } },
+        { text: { id: "Toko mainan", en: "Toy store" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   anak: {
     text: {
-      id: "Fakta menarik tentang Nebula Orion: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Nebula Orion: It is a proof of Allah's majestic creation in the universe.",
+      id: "Nebula Orion adalah salah satu tempat lahirnya bintang terdekat dengan bumi. Awan gas dan debu raksasa ini sangat panas dan bersinar dalam warna merah jambu dan biru! Allah menciptakan debu dan gas ini untuk membentuk planet dan tata surya baru.",
+      en: "The Orion Nebula is one of the closest star-forming regions to Earth. This giant cloud of gas and dust is very hot and glows in pink and blue colors! Allah created this dust and gas to form new planets and solar systems."
     },
     facts: [
-      { id: "Objek luar angkasa Nebula Orion bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Nebula Orion bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Nebula Orion melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Nebula Orion melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Nebula Orion membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Nebula Orion membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Jaraknya sangat jauh, butuh 1.344 tahun untuk ke sana meski naik roket kecepatan cahaya!", en: "It's so far, it takes 1,344 years to get there even on a light-speed rocket!" },
+      { id: "Isinya penuh gas hidrogen yang bersinar merah.", en: "It is full of hydrogen gas that glows red." },
+      { id: "Ribuan bayi bintang bersembunyi di dalamnya.", en: "Thousands of baby stars are hiding inside." },
+      { id: "Lebar Nebula Orion sangat besar, butuh 24 tahun cahaya untuk melintasinya.", en: "The width is so large, it takes 24 light years to cross it." },
+      { id: "Bisa dilihat dengan mata telanjang jika langit sangat gelap.", en: "Can be seen with the naked eye if the sky is very dark." }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "...",
+      transliteration: "...",
+      translation: { id: "Maka tunggulah hari ketika langit membawa kabut/asap yang nyata... (Ad-Dukhan: 10)", en: "Then watch for the Day when the sky will bring a visible smoke... (Ad-Dukhan: 10)" }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Nebula Orion dengan sempurna?",
-        en: "Who created Nebula Orion perfectly?",
-      },
+      question: { id: "Warna apa yang sering terlihat di Nebula Orion?", en: "What colors are often seen in the Orion Nebula?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "Merah muda dan biru bersinar", en: "Glowing pink and blue" } },
+        { text: { id: "Hitam pekat", en: "Pitch black" } },
+        { text: { id: "Transparan", en: "Transparent" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   explorer: {
     text: {
-      id: "Eksplorasi anatomi dan struktur Nebula Orion mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Nebula Orion reveals the brilliance of biological design and natural balance.",
+      id: "Nebula Orion adalah 'Pabrik Bintang' (Stellar Nursery). Gas hidrogen dan debu berkumpul akibat gravitasi, semakin padat dan panas hingga menyala menjadi bintang baru. Dalam astronomi, materi pembentuk bintang ini disebut sebagai debu dan gas antarbintang. Al-Qur'an secara menakjubkan menggunakan kata 'Dukhan' (asap/gas debu pekat) untuk menyebutkan proses awal pembentukan tata surya alam semesta (Fussilat: 11) sebelum mereka memadat menjadi langit dan bumi!",
+      en: "The Orion Nebula is a 'Stellar Nursery'. Hydrogen gas and dust gather due to gravity, becoming denser and hotter until they ignite into new stars. In astronomy, this star-forming material is interstellar dust and gas. The Quran amazingly uses the word 'Dukhan' (dense smoke/gas dust) to describe the early formation of the universe (Fussilat: 11) before they solidified into heavens and earth!"
     },
     anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
+      { part: { id: "Awan Molekuler", en: "Molecular Cloud" }, desc: { id: "Gas dingin yang belum menjadi bintang.", en: "Cold gas that has not yet become a star." } },
+      { part: { id: "Bayi Bintang (Protostar)", en: "Protostar" }, desc: { id: "Bintang yang baru saja lahir dan masih menarik debu.", en: "A newly born star still pulling in dust." } }
     ],
     wowFactor: {
-      id: "Keajaiban astrofisika Nebula Orion: Hukum gravitasi universal mengikat Nebula Orion agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Nebula Orion: Hukum gravitasi universal mengikat Nebula Orion agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
+      id: "Nebula ini memproduksi bintang seperti pabrik! Ada lebih dari 700 bintang baru di dalamnya sekarang!",
+      en: "This nebula produces stars like a factory! There are over 700 new stars inside it right now!"
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "...",
+      transliteration: "...",
+      translation: { id: "Kemudian Dia menuju kepada penciptaan langit dan langit itu masih merupakan asap (Dukhan), lalu Dia berkata kepadanya dan kepada bumi: 'Datanglah kamu keduanya menurut perintah-Ku dengan suka hati atau terpaksa'. Keduanya menjawab: 'Kami datang dengan suka hati.' (Fussilat: 11)", en: "Then He directed Himself to the heaven while it was smoke (Dukhan) and said to it and to the earth, 'Come [into being], willingly or by compulsion.' They said, 'We have come willingly.' (Fussilat: 11)" }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Nebula Orion?",
-          en: "What is the primary wisdom of scientific signs regarding Nebula Orion?",
-        },
+        question: { id: "Apa istilah sains untuk debu dan gas yang mirip dengan sebutan 'Dukhan' di Al-Qur'an?", en: "What is the scientific term for dust and gas similar to 'Dukhan' in the Quran?" },
         options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+          { text: { id: "Kabut asap", en: "Smog" } },
+          { text: { id: "Awan Molekuler antarbintang", en: "Interstellar Molecular Cloud" } },
+          { text: { id: "Awan hujan", en: "Rain cloud" } }
         ],
-        answerIdx: 0,
+        answerIdx: 1
       },
-    ],
-  },
+      {
+        question: { id: "Berapa banyak bintang baru yang ada di Nebula Orion?", en: "How many new stars are there in the Orion Nebula?" },
+        options: [
+          { text: { id: "Tidak ada", en: "None" } },
+          { text: { id: "Lebih dari 700 bintang", en: "More than 700 stars" } },
+          { text: { id: "Hanya satu", en: "Only one" } }
+        ],
+        answerIdx: 1
+      },
+      {
+        question: { id: "Apa yang membuat gas di Nebula menyala menjadi bintang?", en: "What makes the gas in a Nebula ignite into a star?" },
+        options: [
+          { text: { id: "Ditiup angin", en: "Blown by the wind" } },
+          { text: { id: "Gravitasi dan panas yang sangat tinggi", en: "Gravity and extreme heat" } },
+          { text: { id: "Tersambar petir", en: "Struck by lightning" } }
+        ],
+        answerIdx: 1
+      }
+    ]
+  }
 };

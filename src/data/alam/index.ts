@@ -148,6 +148,16 @@ import { bintangSiriusLembahData } from "./bintang-sirius-lembah";
 import { lautMerahLembahData } from "./laut-merah-lembah";
 import { gunungSinaiLembahData } from "./gunung-sinai-lembah";
 import { anginPuyuhLembahData } from "./angin-puyuh-lembah";
+import { gravitasiData } from "./gravitasi";
+import { magnetBumiData } from "./magnet-bumi";
+import { atmosferData } from "./atmosfer";
+import { ionosferData } from "./ionosfer";
+import { magnetosferData } from "./magnetosfer";
+import { ozonData } from "./ozon";
+import { anginMatahariData } from "./angin-matahari";
+import { auroraData } from "./aurora";
+import { getaranSeismikData } from "./getaran-seismik";
+import { gelombangLautData } from "./gelombang-laut";
 
 export const alamObjects = [
   matahariPagiData,
@@ -300,4 +310,14 @@ export const alamObjects = [
   lautMerahLembahData,
   gunungSinaiLembahData,
   anginPuyuhLembahData,
+  gravitasiData,
+  magnetBumiData,
+  atmosferData,
+  ionosferData,
+  magnetosferData,
+  ozonData,
+  anginMatahariData,
+  auroraData,
+  getaranSeismikData,
+  gelombangLautData,
 ];

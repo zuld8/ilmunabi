@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const asSalamData: AsmaulHusnaData = {
   slug: "as-salam",
-  name: {
-    id: "As-Salam",
-    en: "As-Salam",
-  },
-  icon: "🌟",
+  name: { id: "As-Salam", en: "As-Salam" },
+  icon: "🕊️",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "السَّلَامُ",
+
+  arabicWithHarakat: "ٱلسَّلَامُ",
   transliteration: "As-Salam",
-  meaning: {
-    id: "Maha Pemberi Kesejahteraan",
-    en: "The Source of Peace",
+  meaning: { id: "Yang Maha Memberi Kesejahteraan", en: "The Source of Peace" },
+
+  explanationForKids: { 
+    id: "Allah adalah sumber segala kedamaian dan keselamatan. Setiap kali kamu merasa aman, nyaman, dan damai, itu adalah pemberian indah dari Allah As-Salam. 🌿", 
+    en: "Allah is the source of all peace and safety. Every time you feel safe, comfortable, and peaceful, it's a beautiful gift from Allah As-Salam. 🌿" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah As-Salam berarti Allah memiliki sifat sempurna yaitu Maha Pemberi Kesejahteraan. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah As-Salam means Allah possesses the perfect attribute of being The Source of Peace. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Sebarkan kedamaian dengan selalu mengucapkan 'Assalamu'alaikum' saat bertemu teman atau masuk rumah, dan jadilah anak pembawa damai dengan tidak suka bertengkar.", 
+    en: "Spread peace by always saying 'Assalamu'alaikum' when meeting friends or entering a house, and be a peacemaker by avoiding fights." 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["keluarga", "masjid", "bunga"]
 };

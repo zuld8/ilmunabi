@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const alMutakabbirData: AsmaulHusnaData = {
   slug: "al-mutakabbir",
-  name: {
-    id: "Al-Mutakabbir",
-    en: "Al-Mutakabbir",
-  },
+  name: { id: "Al-Mutakabbir", en: "Al-Mutakabbir" },
   icon: "🌟",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْمُتَكَبِّرُ",
+
+  arabicWithHarakat: "ٱلْمُتَكَبِّرُ",
   transliteration: "Al-Mutakabbir",
-  meaning: {
-    id: "Maha Memiliki Kebesaran",
-    en: "The Supreme",
+  meaning: { id: "Yang Maha Megah", en: "The Supreme" },
+
+  explanationForKids: { 
+    id: "Hanya Allah yang pantas memiliki kesombongan dan kemegahan karena Dia pencipta segalanya. Kemegahan alam semesta adalah bukti kebesaran-Nya! ✨", 
+    en: "Only Allah is worthy of pride and supremacy because He created everything. The grandeur of the universe is proof of His greatness! ✨" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah Al-Mutakabbir berarti Allah memiliki sifat sempurna yaitu Maha Memiliki Kebesaran. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah Al-Mutakabbir means Allah possesses the perfect attribute of being The Supreme. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Sebagai manusia ciptaan Allah, kita tidak boleh sombong atau merendahkan orang lain. Teruslah bersikap rendah hati dan puji kebesaran Allah dengan mengucapkan 'Allahu Akbar'!", 
+    en: "As humans created by Allah, we must not be arrogant or look down on others. Stay humble and praise Allah's greatness by saying 'Allahu Akbar'!" 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["galaksi", "matahari", "langit"]
 };

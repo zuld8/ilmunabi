@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const alAzizData: AsmaulHusnaData = {
   slug: "al-aziz",
-  name: {
-    id: "Al-Aziz",
-    en: "Al-Aziz",
-  },
-  icon: "🌟",
+  name: { id: "Al-Aziz", en: "Al-Aziz" },
+  icon: "💪",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْعَزِيزُ",
+
+  arabicWithHarakat: "ٱلْعَزِيزُ",
   transliteration: "Al-Aziz",
-  meaning: {
-    id: "Maha Perkasa",
-    en: "The Almighty",
+  meaning: { id: "Yang Maha Perkasa", en: "The Almighty" },
+
+  explanationForKids: { 
+    id: "Allah itu Maha Perkasa dan tidak terkalahkan! Kekuatan Allah tidak ada batasnya, Dia bisa menundukkan angin, lautan, dan gunung yang besar. 🌪️", 
+    en: "Allah is The Almighty and invincible! His power has no limits, He can subdue the winds, oceans, and giant mountains. 🌪️" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah Al-Aziz berarti Allah memiliki sifat sempurna yaitu Maha Perkasa. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah Al-Aziz means Allah possesses the perfect attribute of being The Almighty. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Jangan pernah sombong jika kamu kuat atau pintar, karena kekuatan sejati hanya milik Allah. Berdoalah pada Al-Aziz agar memberimu kekuatan untuk berbuat kebaikan.", 
+    en: "Never be arrogant if you are strong or smart, because true strength belongs only to Allah. Pray to Al-Aziz to give you strength to do good." 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["gunung", "angin", "gajah"]
 };

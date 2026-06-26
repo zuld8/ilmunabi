@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const arRahmanData: AsmaulHusnaData = {
   slug: "ar-rahman",
-  name: {
-    id: "Ar-Rahman",
-    en: "Ar-Rahman",
-  },
-  icon: "🌟",
+  name: { id: "Ar-Rahman", en: "Ar-Rahman" },
+  icon: "💝",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الرَّحْمَنُ",
+
+  arabicWithHarakat: "ٱلرَّحْمَٰنُ",
   transliteration: "Ar-Rahman",
-  meaning: {
-    id: "Maha Pengasih",
-    en: "The Beneficent",
+  meaning: { id: "Yang Maha Pengasih", en: "The Most Compassionate" },
+
+  explanationForKids: { 
+    id: "Allah sangat sayang kepada semua makhluk-Nya, dari hewan terkecil hingga galaksi yang besar! Allah memberikan rezeki kepada semuanya tanpa pilih kasih. 🥰", 
+    en: "Allah loves all His creations, from the smallest animals to the largest galaxies! He provides for everyone without exception. 🥰" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah Ar-Rahman berarti Allah memiliki sifat sempurna yaitu Maha Pengasih. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah Ar-Rahman means Allah possesses the perfect attribute of being The Beneficent. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Kamu bisa mencontoh sifat Ar-Rahman dengan cara menyayangi semua makhluk ciptaan Allah. Beri makan kucing jalanan, sirami tanaman yang layu, dan bersikap baik kepada teman-temanmu!", 
+    en: "You can embody Ar-Rahman by loving all of Allah's creations. Feed stray cats, water wilting plants, and be kind to your friends!" 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["matahari", "air", "kucing"]
 };

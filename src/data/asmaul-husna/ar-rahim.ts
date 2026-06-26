@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const arRahimData: AsmaulHusnaData = {
   slug: "ar-rahim",
-  name: {
-    id: "Ar-Rahim",
-    en: "Ar-Rahim",
-  },
-  icon: "🌟",
+  name: { id: "Ar-Rahim", en: "Ar-Rahim" },
+  icon: "💞",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الرَّحِيمُ",
+
+  arabicWithHarakat: "ٱلرَّحِيمُ",
   transliteration: "Ar-Rahim",
-  meaning: {
-    id: "Maha Penyayang",
-    en: "The Merciful",
+  meaning: { id: "Yang Maha Penyayang", en: "The Most Merciful" },
+
+  explanationForKids: { 
+    id: "Allah Maha Penyayang khususnya bagi orang-orang yang beriman. Kasih sayang Allah begitu besar, Dia akan mengampuni kesalahan kita jika kita mau bertaubat dan berusaha menjadi lebih baik. 💖", 
+    en: "Allah is The Most Merciful especially to the believers. His mercy is so great that He forgives our mistakes when we repent and try to be better. 💖" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah Ar-Rahim berarti Allah memiliki sifat sempurna yaitu Maha Penyayang. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah Ar-Rahim means Allah possesses the perfect attribute of being The Merciful. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Kamu bisa mencontoh sifat Ar-Rahim dengan saling menyayangi sesama Muslim, mendoakan orang tuamu setiap hari, dan memaafkan teman yang tidak sengaja berbuat salah padamu.", 
+    en: "You can embody Ar-Rahim by loving your fellow Muslims, praying for your parents every day, and forgiving friends who accidentally wrong you." 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["keluarga", "masjid", "hati"]
 };

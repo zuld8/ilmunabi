@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const alMalikData: AsmaulHusnaData = {
   slug: "al-malik",
-  name: {
-    id: "Al-Malik",
-    en: "Al-Malik",
-  },
-  icon: "🌟",
+  name: { id: "Al-Malik", en: "Al-Malik" },
+  icon: "👑",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْمَلِكُ",
+
+  arabicWithHarakat: "ٱلْمَلِكُ",
   transliteration: "Al-Malik",
-  meaning: {
-    id: "Maha Raja",
-    en: "The King / The Sovereign",
+  meaning: { id: "Yang Maha Merajai", en: "The King" },
+
+  explanationForKids: { 
+    id: "Allah adalah Raja dari semua raja! Allah yang memiliki, menguasai, dan mengatur seluruh alam semesta, dari bintang di langit hingga ikan di lautan dalam. 🌌", 
+    en: "Allah is the King of all kings! He owns, rules, and manages the entire universe, from the stars in the sky to the fish in the deep ocean. 🌌" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah Al-Malik berarti Allah memiliki sifat sempurna yaitu Maha Raja. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah Al-Malik means Allah possesses the perfect attribute of being The King / The Sovereign. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Karena kita tahu Allah adalah Sang Raja, kita harus patuh pada aturan-Nya (seperti shalat 5 waktu) dan tidak perlu takut pada siapa pun selain Allah Sang Pemilik alam semesta.", 
+    en: "Knowing Allah is The King, we must obey His rules (like praying 5 times a day) and fear no one but Allah, the Owner of the universe." 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["bumi", "matahari", "bintang"]
 };

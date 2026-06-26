@@ -1,28 +1,25 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const alQuddusData: AsmaulHusnaData = {
   slug: "al-quddus",
-  name: {
-    id: "Al-Quddus",
-    en: "Al-Quddus",
-  },
-  icon: "🌟",
+  name: { id: "Al-Quddus", en: "Al-Quddus" },
+  icon: "✨",
   category: "asmaul-husna",
   type: "asmaul-husna",
   unlockedAtPoints: 50,
-  arabicWithHarakat: "الْقُدُّوسُ",
+
+  arabicWithHarakat: "ٱلْقُدُّوسُ",
   transliteration: "Al-Quddus",
-  meaning: {
-    id: "Maha Suci",
-    en: "The Holy / The Pure",
+  meaning: { id: "Yang Maha Suci", en: "The Most Holy" },
+
+  explanationForKids: { 
+    id: "Allah itu Maha Suci, artinya Allah sempurna dan tidak punya kekurangan sedikit pun. Allah bersih dari segala kejelekan dan kesalahan. Semuanya teratur dengan sangat indah! 🌟", 
+    en: "Allah is The Most Holy, meaning He is perfect and has no flaws whatsoever. Allah is free from any badness and mistakes. Everything is organized beautifully! 🌟" 
   },
-  explanationForKids: {
-    id: "Nama indah Allah Al-Quddus berarti Allah memiliki sifat sempurna yaitu Maha Suci. Kita harus selalu mengingat kebesaran-Nya.",
-    en: "The beautiful name of Allah Al-Quddus means Allah possesses the perfect attribute of being The Holy / The Pure. We must always remember His majesty.",
+  realLifeExample: { 
+    id: "Kamu bisa mencontoh sifat Al-Quddus dengan menjaga kebersihan tubuhmu, selalu wudhu, membuang sampah pada tempatnya, dan menjaga hatimu dari sifat marah dan bohong.", 
+    en: "You can embody Al-Quddus by keeping your body clean, making wudu, throwing trash in the bin, and keeping your heart pure from anger and lying." 
   },
-  realLifeExample: {
-    id: "Mengagumi segala ciptaan Allah di langit dan bumi serta selalu berbuat baik kepada sesama makhluk.",
-    en: "Admiring all of Allah's creations in heaven and earth and always doing good to fellow creatures.",
-  },
-  connectedObjectSlugs: [],
+  connectedObjectSlugs: ["air", "masjid", "hati"]
 };
