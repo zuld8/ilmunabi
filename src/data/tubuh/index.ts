@@ -1,43 +1,43 @@
+import { darahData } from "./darah";
+import { gigiData } from "./gigi";
+import { ginjalData } from "./ginjal";
+import { hatiData } from "./hati";
+import { hidungData } from "./hidung";
 import { jantungData } from "./jantung";
+import { kukuData } from "./kuku";
+import { kulitData } from "./kulit";
+import { lambungData } from "./lambung";
+import { lidahData } from "./lidah";
 import { mataData } from "./mata";
+import { otakData } from "./otak";
+import { ototData } from "./otot";
+import { paruParuData } from "./paru-paru";
+import { rambutData } from "./rambut";
+import { sidikJariData } from "./sidik-jari";
+import { tanganData } from "./tangan";
 import { telingaData } from "./telinga";
-import { tanganKananData } from "./tangan-kanan";
-import { kulitLuarData } from "./kulit-luar";
 import { tulangRusukData } from "./tulang-rusuk";
-import { otakBesarData } from "./otak-besar";
-import { selDarahMerahData } from "./sel-darah-merah";
-import { sidikJariJempolData } from "./sidik-jari-jempol";
-import { jantungKananData } from "./jantung-kanan";
-import { mataKananData } from "./mata-kanan";
-import { telingaKananData } from "./telinga-kanan";
-import { tanganKananKananData } from "./tangan-kanan-kanan";
-import { kulitLuarKananData } from "./kulit-luar-kanan";
-import { tulangRusukKananData } from "./tulang-rusuk-kanan";
-import { otakBesarKananData } from "./otak-besar-kanan";
-import { selDarahMerahKananData } from "./sel-darah-merah-kanan";
-import { sidikJariJempolKananData } from "./sidik-jari-jempol-kanan";
-import { jantungAtasData } from "./jantung-atas";
-import { mataAtasData } from "./mata-atas";
+import { ususData } from "./usus";
 
-export const tubuhObjects = [
+export const TubuhObjects = [
+  darahData,
+  gigiData,
+  ginjalData,
+  hatiData,
+  hidungData,
   jantungData,
+  kukuData,
+  kulitData,
+  lambungData,
+  lidahData,
   mataData,
+  otakData,
+  ototData,
+  paruParuData,
+  rambutData,
+  sidikJariData,
+  tanganData,
   telingaData,
-  tanganKananData,
-  kulitLuarData,
   tulangRusukData,
-  otakBesarData,
-  selDarahMerahData,
-  sidikJariJempolData,
-  jantungKananData,
-  mataKananData,
-  telingaKananData,
-  tanganKananKananData,
-  kulitLuarKananData,
-  tulangRusukKananData,
-  otakBesarKananData,
-  selDarahMerahKananData,
-  sidikJariJempolKananData,
-  jantungAtasData,
-  mataAtasData,
+  ususData
 ];

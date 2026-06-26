@@ -1,43 +1,43 @@
-import { bawangPutihData } from "./bawang-putih";
+import { anggrekData } from "./anggrek";
+import { anggurData } from "./anggur";
 import { bambuData } from "./bambu";
-import { kurmaAjwaData } from "./kurma-ajwa";
-import { zaitunMediteraniaData } from "./zaitun-mediterania";
-import { tinAraData } from "./tin-ara";
-import { delimaMerahData } from "./delima-merah";
-import { anggurHijauData } from "./anggur-hijau";
-import { jaheMerahData } from "./jahe-merah";
 import { bawangMerahData } from "./bawang-merah";
-import { bidaraArabData } from "./bidara-arab";
-import { pisangRajaData } from "./pisang-raja";
-import { mustardHitamData } from "./mustard-hitam";
-import { gandumEmmerData } from "./gandum-emmer";
-import { mawarMerahData } from "./mawar-merah";
-import { melatiPutihData } from "./melati-putih";
-import { anggrekBulanData } from "./anggrek-bulan";
-import { sakuraPinkData } from "./sakura-pink";
-import { bungaMatahariRaksasaData } from "./bunga-matahari-raksasa";
-import { terataiPutihData } from "./teratai-putih";
-import { lavenderInggrisData } from "./lavender-inggris";
+import { bawangPutihData } from "./bawang-putih";
+import { bidaraData } from "./bidara";
+import { bungaMatahariData } from "./bunga-matahari";
+import { delimaData } from "./delima";
+import { gandumData } from "./gandum";
+import { jaheData } from "./jahe";
+import { kurmaData } from "./kurma";
+import { lavenderData } from "./lavender";
+import { mawarData } from "./mawar";
+import { melatiData } from "./melati";
+import { mustardData } from "./mustard";
+import { pisangData } from "./pisang";
+import { sakuraData } from "./sakura";
+import { terataiData } from "./teratai";
+import { tinData } from "./tin";
+import { zaitunData } from "./zaitun";
 
-export const tumbuhanObjects = [
-  bawangPutihData,
+export const TumbuhanObjects = [
+  anggrekData,
+  anggurData,
   bambuData,
-  kurmaAjwaData,
-  zaitunMediteraniaData,
-  tinAraData,
-  delimaMerahData,
-  anggurHijauData,
-  jaheMerahData,
   bawangMerahData,
-  bidaraArabData,
-  pisangRajaData,
-  mustardHitamData,
-  gandumEmmerData,
-  mawarMerahData,
-  melatiPutihData,
-  anggrekBulanData,
-  sakuraPinkData,
-  bungaMatahariRaksasaData,
-  terataiPutihData,
-  lavenderInggrisData,
+  bawangPutihData,
+  bidaraData,
+  bungaMatahariData,
+  delimaData,
+  gandumData,
+  jaheData,
+  kurmaData,
+  lavenderData,
+  mawarData,
+  melatiData,
+  mustardData,
+  pisangData,
+  sakuraData,
+  terataiData,
+  tinData,
+  zaitunData
 ];

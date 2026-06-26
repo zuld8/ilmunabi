@@ -1,45 +1,43 @@
-import { gravitasiData } from "./gravitasi";
-import { magnetBumiData } from "./magnet-bumi";
-import { atmosferData } from "./atmosfer";
-import { ionosferData } from "./ionosfer";
-import { magnetosferData } from "./magnetosfer";
-import { ozonData } from "./ozon";
-import { anginMatahariData } from "./angin-matahari";
-import { auroraData } from "./aurora";
-import { getaranSeismikData } from "./getaran-seismik";
 import { airData } from "./air";
+import { anginMatahariData } from "./angin-matahari";
+import { anginData } from "./angin";
 import { apiData } from "./api";
-import { matahariPagiData } from "./matahari-pagi";
-import { bulanSabitData } from "./bulan-sabit";
-import { bintangSiriusData } from "./bintang-sirius";
-import { lautMerahData } from "./laut-merah";
-import { gunungSinaiData } from "./gunung-sinai";
-import { anginPuyuhData } from "./angin-puyuh";
-import { hujanGerimisData } from "./hujan-gerimis";
-import { petirMenyambarData } from "./petir-menyambar";
-import { apiUnggunData } from "./api-unggun";
+import { atmosferData } from "./atmosfer";
+import { auroraData } from "./aurora";
+import { bintangData } from "./bintang";
+import { bulanData } from "./bulan";
 import { gelombangLautData } from "./gelombang-laut";
+import { getaranSeismikData } from "./getaran-seismik";
+import { gravitasiData } from "./gravitasi";
+import { gunungData } from "./gunung";
+import { hujanData } from "./hujan";
+import { ionosferData } from "./ionosfer";
+import { lautData } from "./laut";
+import { magnetBumiData } from "./magnet-bumi";
+import { magnetosferData } from "./magnetosfer";
+import { matahariData } from "./matahari";
+import { ozonData } from "./ozon";
+import { petirData } from "./petir";
 
-export const alamObjects = [
-  gravitasiData,
-  magnetBumiData,
-  atmosferData,
-  ionosferData,
-  magnetosferData,
-  ozonData,
-  anginMatahariData,
-  auroraData,
-  getaranSeismikData,
+export const AlamObjects = [
   airData,
+  anginMatahariData,
+  anginData,
   apiData,
-  matahariPagiData,
-  bulanSabitData,
-  bintangSiriusData,
-  lautMerahData,
-  gunungSinaiData,
-  anginPuyuhData,
-  hujanGerimisData,
-  petirMenyambarData,
-  apiUnggunData,
+  atmosferData,
+  auroraData,
+  bintangData,
+  bulanData,
   gelombangLautData,
+  getaranSeismikData,
+  gravitasiData,
+  gunungData,
+  hujanData,
+  ionosferData,
+  lautData,
+  magnetBumiData,
+  magnetosferData,
+  matahariData,
+  ozonData,
+  petirData
 ];
