@@ -18,6 +18,7 @@ import { anginPuyuhData } from "./angin-puyuh";
 import { hujanGerimisData } from "./hujan-gerimis";
 import { petirMenyambarData } from "./petir-menyambar";
 import { apiUnggunData } from "./api-unggun";
+import { gelombangLautData } from "./gelombang-laut";
 
 export const alamObjects = [
   gravitasiData,
@@ -40,4 +41,5 @@ export const alamObjects = [
   hujanGerimisData,
   petirMenyambarData,
   apiUnggunData,
+  gelombangLautData,
 ];

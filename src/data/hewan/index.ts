@@ -18,6 +18,15 @@ import { kucingAngoraData } from "./kucing-angora";
 import { kelinciRexData } from "./kelinci-rex";
 import { ayamKateData } from "./ayam-kate";
 import { bebekPekingData } from "./bebek-peking";
+import { belalangData } from "./belalang";
+import { capungData } from "./capung";
+import { jangkrikData } from "./jangkrik";
+import { kecoaData } from "./kecoa";
+import { kepikData } from "./kepik";
+import { kumbangData } from "./kumbang";
+import { kupuKupuData } from "./kupu-kupu";
+import { rayapData } from "./rayap";
+import { tonggeretData } from "./tonggeret";
 
 export const hewanObjects = [
   burungHudhudData,
@@ -40,4 +49,13 @@ export const hewanObjects = [
   kelinciRexData,
   ayamKateData,
   bebekPekingData,
+  belalangData,
+  capungData,
+  jangkrikData,
+  kecoaData,
+  kepikData,
+  kumbangData,
+  kupuKupuData,
+  rayapData,
+  tonggeretData,
 ];

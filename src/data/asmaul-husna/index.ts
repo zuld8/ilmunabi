@@ -97,6 +97,7 @@ import { alBaqiData } from "./al-baqi";
 import { alWarithData } from "./al-warith";
 import { arRashidData } from "./ar-rashid";
 import { asSaburData } from "./as-sabur";
+import { alMuhaiminData } from "./al-muhaimin";
 
 export const asmaulHusnaObjects = [
   arRahmanData,
@@ -198,4 +199,5 @@ export const asmaulHusnaObjects = [
   alWarithData,
   arRashidData,
   asSaburData,
+  alMuhaiminData,
 ];

@@ -23,6 +23,16 @@ import { zakariaData } from "./zakaria";
 import { yahyaData } from "./yahya";
 import { isaData } from "./isa";
 import { muhammadData } from "./muhammad";
+import { adamAsData } from "./adam-as";
+import { hudAsData } from "./hud-as";
+import { ibrahimAsData } from "./ibrahim-as";
+import { idrisAsData } from "./idris-as";
+import { ishaqAsData } from "./ishaq-as";
+import { ismailAsData } from "./ismail-as";
+import { luthAsData } from "./luth-as";
+import { nuhAsData } from "./nuh-as";
+import { shalehAsData } from "./shaleh-as";
+import { yaqubAsData } from "./yaqub-as";
 
 export const nabiObjects = [
   adamData,
@@ -50,4 +60,14 @@ export const nabiObjects = [
   yahyaData,
   isaData,
   muhammadData,
+  adamAsData,
+  hudAsData,
+  ibrahimAsData,
+  idrisAsData,
+  ishaqAsData,
+  ismailAsData,
+  luthAsData,
+  nuhAsData,
+  shalehAsData,
+  yaqubAsData,
 ];

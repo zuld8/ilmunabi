@@ -18,6 +18,15 @@ import { venusTerangDekatData } from "./venus-terang-dekat";
 import { marsMerahDekatData } from "./mars-merah-dekat";
 import { jupiterRaksasaDekatData } from "./jupiter-raksasa-dekat";
 import { saturnusCincinDekatData } from "./saturnus-cincin-dekat";
+import { energiGelapData } from "./energi-gelap";
+import { gelombangGravitasiData } from "./gelombang-gravitasi";
+import { lubangHitamM87Data } from "./lubang-hitam-m87";
+import { lubangHitamSagittariusAData } from "./lubang-hitam-sagittarius-a";
+import { materiGelapData } from "./materi-gelap";
+import { nebulaCincinData } from "./nebula-cincin";
+import { nebulaKepitingData } from "./nebula-kepiting";
+import { nebulaKupuKupuData } from "./nebula-kupu-kupu";
+import { supernovaData } from "./supernova";
 
 export const langitObjects = [
   nebulaOrionData,
@@ -40,4 +49,13 @@ export const langitObjects = [
   marsMerahDekatData,
   jupiterRaksasaDekatData,
   saturnusCincinDekatData,
+  energiGelapData,
+  gelombangGravitasiData,
+  lubangHitamM87Data,
+  lubangHitamSagittariusAData,
+  materiGelapData,
+  nebulaCincinData,
+  nebulaKepitingData,
+  nebulaKupuKupuData,
+  supernovaData,
 ];
