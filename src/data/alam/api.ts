@@ -6,45 +6,71 @@ export const apiData: ObjectData = {
   icon: "🔥",
   category: "alam",
   type: "alam",
-  scientificName: "Ignis",
+  scientificName: "Ignis (Combustion)",
   surahName: "Al-Waqi'ah",
   surahReference: "56:71-72",
-  unlockedAtPoints: 30,
+  unlockedAtPoints: 20,
   kosakata: [
-    { arab: "نَار", latin: "Naar", arti: "Api", artiEn: "Fire", contohAyat: "نَارٌ حَامِيَةٌ" }
+    { arab: "نَار", latin: "Naar", arti: "Api", artiEn: "Fire", contohAyat: "أَفَرَأَيْتُمُ النَّارَ الَّتِي تُورُونَ" }
   ],
   balita: {
-    text: { id: "Hati-hati, api itu sangat panas! Jangan dipegang ya! 🔥", en: "Careful, fire is very hot! Do not touch it! 🔥" },
-    audioTranscript: { id: "Api warnanya merah kuning dan menari-nari. Ibu menggunakan api kompor untuk memasak makanan enak buat kita.", en: "Fire is colored red yellow and dances around. Mom uses the stove fire to cook delicious food for us." },
+    text: { id: "Sssh! Api itu sangat panas dan terang! 🔥 Kita tidak boleh memegang api ya, biar tangan kita tidak terluka.", en: "Sssh! Fire is very hot and bright! 🔥 We shouldn't touch fire, so our hands won't get hurt." },
+    audioTranscript: { id: "Api warnanya bisa merah, kuning, dan oranye. Bunda pakai api di kompor untuk memasak makanan yang enak!", en: "Fire can be red, yellow, and orange. Mom uses fire on the stove to cook delicious food!" },
     quiz: {
-      question: { id: "Bagaimana rasanya kalau kita dekat dengan api?", en: "How does it feel if we are close to fire?" },
+      question: { id: "Api gunanya untuk apa saat malam hari sedang gelap gulita?", en: "What is fire used for when the night is pitch black?" },
       options: [
-        { text: { id: "Dingin sekali", en: "Very cold" } },
-        { text: { id: "Sangat panas", en: "Very hot" } },
-        { text: { id: "Segar", en: "Fresh" } }
+        { text: { id: "Untuk dimakan", en: "To be eaten" } },
+        { text: { id: "Untuk menerangi jalan", en: "To light up the road" } },
+        { text: { id: "Untuk diminum", en: "To be drunk" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Api adalah energi panas dan cahaya! Api butuh tiga benda untuk bisa hidup: bahan bakar (seperti kayu), panas, dan oksigen dari udara. Kalau kita siram dengan air, apinya mati karena kehilangan panas dan oksigennya terhalang.", en: "Fire is heat and light energy! Fire needs three things to live: fuel (like wood), heat, and oxygen from the air. If we pour water on it, the fire dies because it loses heat and its oxygen is blocked." },
+    text: { id: "Api adalah cahaya dan panas yang muncul karena benda sedang terbakar. Api sangat berguna buat manusia, seperti untuk memasak, menghangatkan badan, dan menjadi sumber cahaya di tempat gelap!", en: "Fire is light and heat that appears when things are burning. Fire is very useful for humans, like for cooking, warming the body, and being a light source in dark places!" },
     facts: [
-      { id: "Api di luar angkasa berbentuk bulat sempurna karena tidak ada gravitasi!", en: "Fire in space is perfectly round because there is no gravity!" },
-      { id: "Warna api bisa berbeda-beda tergantung bahan bakarnya. Api biru jauh lebih panas dari api merah muda.", en: "Fire colors can vary depending on the fuel. Blue fire is much hotter than pink fire." },
-      { id: "Manusia purba menemukan cara membuat api dengan menggesekkan dua buah batu api.", en: "Ancient humans discovered how to make fire by rubbing two flints together." }
+      { id: "Warna api menunjukkan seberapa panas api itu! Api biru ternyata jauh lebih panas daripada api merah.", en: "The color of fire shows how hot it is! Blue fire is actually much hotter than red fire." },
+      { id: "Api tidak memiliki bayangan! Coba nyalakan lilin dan sinari pakai senter ke dinding, apinya tidak akan membentuk bayangan.", en: "Fire has no shadow! Try lighting a candle and shine a flashlight on it towards a wall, the fire won't form a shadow." },
+      { id: "Api selalu mengarah ke atas karena udara panas di sekitar api lebih ringan dan akan selalu naik.", en: "Fire always points up because the hot air around the fire is lighter and will always rise." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "أَفَرَأَيْتُمُ النَّارَ الَّتِي تُورُونَ",
+      transliteration: "Afa ra'aytumun-naaral-latii tuuruun",
+      translation: { id: "Maka terangkanlah kepadaku tentang api yang kamu nyalakan.", en: "Then tell Me about the fire that you ignite." },
+      context: { id: "Allah menyuruh kita berpikir, siapa yang menciptakan pohon hijau sehingga bisa menjadi kayu bakar pembuat api?", en: "Allah commands us to think, who created the green tree so it could become firewood to make fire?" }
+    },
+    quiz: {
+      question: { id: "Warna api apa yang suhunya paling panas?", en: "What color of fire has the hottest temperature?" },
+      options: [
+        { text: { id: "Api Biru", en: "Blue Fire" } },
+        { text: { id: "Api Merah", en: "Red Fire" } },
+        { text: { id: "Api Kuning", en: "Yellow Fire" } }
+      ],
+      answerIdx: 0
+    }
   },
   explorer: {
-    text: { id: "Api terjadi karena reaksi kimia eksotermik bernama pembakaran. Di dalam pohon ada ikatan karbon dari proses fotosintesis. Saat kayu dibakar, ia melepaskan kembali energi matahari yang disimpannya! Al-Qur'an bertanya pada manusia, siapa yang menumbuhkan pohon api hijau itu, kita atau Allah? Maha Suci Allah Sang Pencipta!", en: "Fire happens due to an exothermic chemical reaction called combustion. Inside a tree, there are carbon bonds from photosynthesis. When wood burns, it releases the solar energy it stored! The Quran asks humans, who grows the tree of green fire, us or Allah? Glory be to Allah the Creator!" },
+    text: { id: "Dalam fisika dan kimia, api adalah hasil dari reaksi pembakaran (oksidasi) yang sangat cepat sehingga melepaskan panas dan foton (cahaya). Syarat terjadinya api adalah 'Segitiga Api': oksigen, bahan bakar, dan panas. Yang luar biasa, Al-Qur'an mengajak kita memikirkan penciptaan kayu hijau yang bisa menghasilkan api, padahal pohon hijau penuh dengan air!", en: "In physics and chemistry, fire is the result of a very rapid combustion (oxidation) reaction that releases heat and photons (light). The requirement for fire is the 'Fire Triangle': oxygen, fuel, and heat. Amazingly, the Quran invites us to ponder the creation of green wood that can produce fire, even though green trees are full of water!" },
+    anatomy: [
+      { part: { id: "Oksigen (O2)", en: "Oxygen (O2)" }, desc: { id: "Gas di udara yang membuat api bisa terus menyala.", en: "Gas in the air that keeps the fire burning." } },
+      { part: { id: "Bahan Bakar", en: "Fuel" }, desc: { id: "Benda yang dibakar seperti kayu, kertas, atau gas alam.", en: "The item being burned like wood, paper, or natural gas." } }
+    ],
+    wowFactor: { id: "HAH?! Api tidak bisa menyala di luar angkasa karena tidak ada oksigen! Tapi jika kita membawa oksigen ke sana, apinya akan berbentuk bulat sempurna seperti bola bercahaya karena tidak ada gravitasi yang menarik udara panas ke atas!", en: "WOW?! Fire cannot burn in space because there is no oxygen! But if we brought oxygen there, the fire would be perfectly round like a glowing ball because there's no gravity pulling hot air up!" },
     quranVerse: {
-      arabic: "أَفَرَأَيْتُمُ النَّارَ الَّتِي تُورُونَ ۝ أَأَنْتُمْ أَنْشَأْتُمْ شَجَرَتَهَا أَمْ نَحْنُ الْمُنْشِئُونَ",
-      transliteration: "Afara'aytumun-naarallatii tuuruun. A antum ansya'tum syajaratahaa am nahnul-munsyi'uun",
-      translation: { id: "Maka terangkanlah kepadaku tentang api yang kamu nyalakan. Kamukah yang menjadikan pohon itu atau Kamikah yang menjadikannya?", en: "And have you seen the fire that you ignite? Is it you who produced its tree, or are We the producer?" }
+      arabic: "أَأَنْتُمْ أَنْشَأْتُمْ شَجَرَتَهَا أَمْ نَحْنُ الْمُنْشِئُونَ",
+      transliteration: "A'antum ansya'tum syajaratahaa am nahnul-munsyi'uun",
+      translation: { id: "Kamukah yang menjadikan kayu itu atau Kamikah yang menjadikannya?", en: "Is it you who brought forth its tree, or are We the Bringers?" }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Syarat terjadinya api sering disebut 'Segitiga Api'. Manakah yang BUKAN bagian dari Segitiga Api?", en: "The requirements for fire are often called the 'Fire Triangle'. Which one is NOT a part of the Fire Triangle?" },
+        options: [
+          { text: { id: "Karbondioksida", en: "Carbon dioxide" } },
+          { text: { id: "Oksigen", en: "Oxygen" } },
+          { text: { id: "Bahan bakar", en: "Fuel" } }
+        ],
+        answerIdx: 0
+      }
+    ]
   }
 };

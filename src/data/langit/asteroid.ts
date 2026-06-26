@@ -3,48 +3,70 @@ import { ObjectData } from "../objects";
 export const asteroidData: ObjectData = {
   slug: "asteroid",
   name: { id: "Asteroid", en: "Asteroid" },
-  icon: "☄️",
+  icon: "🪨",
   category: "langit",
   type: "langit",
-  scientificName: "Planetoid",
-  surahName: "Al-Mulk",
-  surahReference: "67:5",
-  unlockedAtPoints: 50,
+  scientificName: "Minor Planet",
+  surahName: "Al-Anbiya",
+  surahReference: "21:32",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "حِجَارَة", latin: "Hijarah", arti: "Batu", artiEn: "Stone", contohAyat: "Asteroid seperti batu raksasa" }
+    { arab: "كويكب", latin: "Khuwaykib", arti: "Asteroid", artiEn: "Asteroid", contohAyat: "Allah menjaga bumi dari jatuhnya benda langit." }
   ],
   balita: {
-    text: { id: "Wusss! Ini asteroid! Batu raksasa yang melayang-layang di luar angkasa! 🪨✨", en: "Whoosh! This is an asteroid! A giant rock floating in space! 🪨✨" },
-    audioTranscript: { id: "Wah, lihat! Ada batu terbang di luar angkasa. Namanya Asteroid! Mereka sisa-sisa pembuatan tata surya ciptaan Allah yang menari-nari mengelilingi matahari.", en: "Wow, look! There's a flying rock in space. It's called an Asteroid! They are leftovers from the creation of the solar system by Allah, dancing around the sun." },
+    text: { id: "Wah, lihat batu besar yang terbang di angkasa! Itu asteroid! 🪨", en: "Wow, look at the big rock flying in space! That's an asteroid! 🪨" },
+    audioTranscript: { id: "Asteroid adalah batu raksasa yang jalan-jalan di luar angkasa.", en: "Asteroids are giant rocks that travel in outer space." },
     quiz: {
-      question: { id: "Asteroid itu terbuat dari apa ya?", en: "What are asteroids made of?" },
+      question: { id: "Asteroid itu terbuat dari apa?", en: "What is an asteroid made of?" },
       options: [
-        { text: { id: "Es krim", en: "Ice cream" } },
+        { text: { id: "Air", en: "Water" } },
         { text: { id: "Batu dan logam", en: "Rock and metal" } },
-        { text: { id: "Kapas", en: "Cotton" } }
+        { text: { id: "Awan", en: "Clouds" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Asteroid adalah batu angkasa yang mengelilingi matahari. Sebagian besar dari mereka suka berkumpul di Sabuk Asteroid, sebuah jalan tol khusus batu di antara planet Mars dan Jupiter!", en: "Asteroids are space rocks orbiting the sun. Most of them love to hang out in the Asteroid Belt, a special rock highway between Mars and Jupiter!" },
+    text: { id: "Asteroid adalah sisa-sisa batu dari awal tata surya kita terbentuk miliaran tahun lalu! Mereka paling banyak kumpul di Sabuk Asteroid antara Mars dan Jupiter.", en: "Asteroids are leftover rocks from the early formation of our solar system billions of years ago! They mostly gather in the Asteroid Belt between Mars and Jupiter." },
     facts: [
-      { id: "Ada jutaan asteroid, ukurannya dari sekecil mobil sampai sebesar negara!", en: "There are millions of asteroids, ranging from the size of a car to the size of a country!" },
-      { id: "Bentuk asteroid tidak bulat sempurna seperti planet, melainkan benjol-benjol seperti kentang raksasa! 🥔", en: "Asteroids are not perfectly round like planets, but rather lumpy like giant potatoes! 🥔" },
-      { id: "Asteroid Ceres adalah yang paling besar, sampai-sampai ia disebut planet kerdil!", en: "Asteroid Ceres is the biggest one, so big that it's called a dwarf planet!" }
+      { id: "Asteroid terbesar bernama Ceres yang ukurannya hampir sebesar negara!", en: "The largest asteroid is named Ceres, and it is almost as big as a country!" },
+      { id: "Bentuk asteroid tidak bulat, tapi benjol-benjol seperti kentang.", en: "Asteroids are not round, but lumpy like potatoes." },
+      { id: "Jika asteroid masuk ke bumi, dia akan terbakar di udara.", en: "If an asteroid enters Earth, it will burn up in the atmosphere." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَجَعَلْنَا السَّمَاءَ سَقْفًا مَّحْفُوظًا",
+      transliteration: "Wa ja'alnas-samaa'a saqfam mahfuuzhaa",
+      translation: { id: "Dan Kami menjadikan langit itu sebagai atap yang terpelihara.", en: "And We made the sky a protected ceiling." },
+      context: { id: "Allah melindungi bumi kita dengan atmosfer sebagai atap agar benda angkasa seperti asteroid hancur sebelum menabrak kita.", en: "Allah protects our Earth with the atmosphere as a ceiling so space objects like asteroids get destroyed before hitting us." }
+    },
+    quiz: {
+      question: { id: "Di mana letak Sabuk Asteroid?", en: "Where is the Asteroid Belt located?" },
+      options: [
+        { text: { id: "Antara Mars dan Jupiter", en: "Between Mars and Jupiter" } },
+        { text: { id: "Di dekat Matahari", en: "Near the Sun" } },
+        { text: { id: "Di luar Bima Sakti", en: "Outside the Milky Way" } }
+      ],
+      answerIdx: 0
+    }
   },
   explorer: {
-    text: { id: "Sabuk Asteroid membentang luas dengan jutaan batuan luar angkasa yang melesat dengan kecepatan tinggi. HAH?! Tapi uniknya, jarak antar asteroid itu sangat jauh (jutaan kilometer), jadi pesawat luar angkasa kita bisa lewat dengan aman tanpa tabrakan! Keseimbangan orbit kosmik ini sangat presisi. 1400 tahun lalu, Al-Qur'an telah mengisyaratkan bahwa Allah telah mengatur lintasan segala benda langit tanpa saling bertabrakan, sebagai pelindung hiasan langit.", en: "The Asteroid Belt stretches wide with millions of space rocks zooming at high speed. HAH?! But amazingly, the distance between them is huge (millions of kilometers), so our spaceships can fly safely without crashing! This cosmic orbital balance is extremely precise. 1400 years ago, the Quran hinted that Allah has arranged the orbits of all celestial bodies without colliding, as protectors and adornments of the sky." },
+    text: { id: "Mempelajari asteroid itu seperti membaca buku sejarah alam semesta. Mereka menyimpan material tua dari 4,6 miliar tahun lalu! Bahkan beberapa ilmuwan meyakini asteroid yang menabrak bumi dulu membawa air untuk lautan kita. Betapa hebatnya sistem yang Allah ciptakan di alam semesta ini, semuanya bergerak dalam orbit yang rapi.", en: "Studying asteroids is like reading a history book of the universe. They hold ancient material from 4.6 billion years ago! Some scientists even believe that an asteroid hitting Earth brought water for our oceans. How amazing is the system Allah created in this universe, everything moves in a neat orbit." },
+    anatomy: [
+      { part: { id: "Inti Logam", en: "Metal Core" }, desc: { id: "Bagian tengah asteroid yang terdiri dari besi dan nikel.", en: "The center part of an asteroid consisting of iron and nickel." } },
+      { part: { id: "Permukaan Regolith", en: "Regolith Surface" }, desc: { id: "Lapisan debu dan batuan hancur yang menyelimuti asteroid.", en: "A layer of dust and crushed rock covering the asteroid." } }
+    ],
+    wowFactor: { id: "Beberapa asteroid memiliki bulan kecilnya sendiri yang mengorbit mengelilinginya, seperti asteroid Ida dengan bulannya yang bernama Dactyl!", en: "Some asteroids have their own tiny moons orbiting them, like the asteroid Ida with its moon named Dactyl!" },
     quranVerse: {
-      arabic: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِلشَّيَاطِينِ",
-      transliteration: "Wa laqad zayyannas-samā'ad-dunyā bimaṣābīḥa wa ja'alnāhā rujūmal-lish-shayāṭīn",
-      translation: { id: "Dan sesungguhnya Kami telah menghiasi langit yang dekat dengan bintang-bintang, dan Kami jadikan bintang-bintang itu alat-alat pelempar syaitan.", en: "And We have certainly beautified the nearest heaven with stars and have made [from] them what is thrown at the devils." }
+      arabic: "وَكُلٌّ فِي فَلَكٍ يَسْبَحُونَ",
+      transliteration: "Wa kullun fii falakiy yasbahuun",
+      translation: { id: "Dan masing-masing beredar pada garis edarnya.", en: "And all swim in an orbit." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Apa lapisan debu yang menyelimuti asteroid?", en: "What is the dust layer covering the asteroid called?" },
+        options: [{ text: { id: "Magma", en: "Magma" } }, { text: { id: "Regolith", en: "Regolith" } }, { text: { id: "Kawah", en: "Crater" } }],
+        answerIdx: 1
+      }
+    ]
   }
 };

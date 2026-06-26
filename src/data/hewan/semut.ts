@@ -4,47 +4,73 @@ export const semutData: ObjectData = {
   slug: "semut",
   name: { id: "Semut", en: "Ant" },
   icon: "🐜",
-  category: "hewan",
+  category: "serangga",
   type: "hewan",
   scientificName: "Formicidae",
   surahName: "An-Naml",
   surahReference: "27:18",
-  unlockedAtPoints: 30,
+  unlockedAtPoints: 80,
   kosakata: [
-    { arab: "نَمْلَةٌ", latin: "namlatun", arti: "Semut", artiEn: "Ant", contohAyat: "قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ (Seekor semut berkata: Hai semut-semut, masuklah ke dalam sarang-sarangmu)" }
+    { arab: "نَمْلَة", latin: "Namlah", arti: "Semut", artiEn: "Ant", contohAyat: "Berkatalah seekor semut: Hai semut-semut, masuklah ke dalam sarang-sarangmu..." }
   ],
   balita: {
-    text: { id: "Semut itu sangat kecil! 🐜 Mereka suka berjalan berbaris-baris. Kiri kanan kiri kanan!", en: "Ants are very small! 🐜 They like to walk in lines. Left right left right!" },
-    audioTranscript: { id: "Halo teman! Aku semut. Aku tinggal bersama ribuan keluargaku di dalam tanah. Kami sangat rajin bekerja!", en: "Hello friend! I am an ant. I live with thousands of my family members underground. We are very hard workers!" },
+    text: { id: "Halo! Aku semut yang kecil tapi kuat! Aku suka berbaris rapi bersama teman-temanku untuk mencari makan! 🐜", en: "Hello! I am a small but strong ant! I love marching in line with my friends to find food! 🐜" },
+    audioTranscript: { id: "Ayo berbaris yang rapi! Satu dua, satu dua! Kita angkat remah roti ini bersama-sama!", en: "Let's march neatly! One two, one two! Let's lift this breadcrumb together!" },
     quiz: {
-      question: { id: "Bagaimana cara semut berjalan bersama teman-temannya?", en: "How do ants walk with their friends?" },
+      question: { id: "Apa yang biasa dilakukan semut saat mencari makan?", en: "What do ants usually do when looking for food?" },
       options: [
-        { text: { id: "Sambil melompat-lompat", en: "By jumping around" } },
-        { text: { id: "Berbaris rapi", en: "Lining up neatly" } },
-        { text: { id: "Terbang bebas", en: "Flying freely" } }
+        { text: { id: "Berbaris dengan rapi", en: "March in a neat line" } },
+        { text: { id: "Tidur sendirian", en: "Sleep alone" } },
+        { text: { id: "Berenang di air", en: "Swim in the water" } }
       ],
-      answerIdx: 1
+      answerIdx: 0
     }
   },
   anak: {
-    text: { id: "Semut adalah hewan terkuat lho! Mereka bisa mengangkat beban yang beratnya 50 kali lipat dari tubuhnya. Bayangkan kalau kamu bisa mengangkat mobil! Wow!", en: "Ants are the strongest animals! They can lift objects that are 50 times heavier than their bodies. Imagine if you could lift a car! Wow!" },
+    text: { id: "Ada surah di dalam Al-Qur'an bernama An-Naml, artinya Semut. Pada zaman Nabi Sulaiman yang bisa berbicara dengan hewan, seekor semut pemimpin memerintahkan rakyatnya masuk ke sarang agar tidak terinjak pasukan Nabi Sulaiman!", en: "There is a surah in the Quran called An-Naml, meaning The Ant. During the time of Prophet Sulaiman who could talk to animals, a leader ant ordered its people to enter their homes so they wouldn't be crushed by Prophet Sulaiman's army!" },
     facts: [
-      { id: "Semut tidak punya telinga, mereka 'mendengar' dari getaran tanah! 📳", en: "Ants don't have ears, they 'hear' by feeling vibrations in the ground! 📳" },
-      { id: "Saat semut bertemu temannya, mereka akan saling menyentuh antena untuk mengobrol! 📡", en: "When ants meet a friend, they touch antennas to chat! 📡" },
-      { id: "Semut punya dua perut: satu untuk dirinya, satu lagi untuk berbagi makanan dengan teman! 🍽️", en: "Ants have two stomachs: one for themselves, and one to share food with friends! 🍽️" }
+      { id: "Semut sangat kuat! Mereka bisa mengangkat benda yang beratnya 50 kali lipat dari berat badannya sendiri.", en: "Ants are very strong! They can lift objects that are 50 times their own body weight." },
+      { id: "Semut tidak punya telinga, mereka 'mendengar' dengan merasakan getaran dari tanah.", en: "Ants do not have ears, they 'hear' by feeling vibrations from the ground." },
+      { id: "Sarang semut di bawah tanah seperti kota besar yang punya banyak ruangan rahasia.", en: "Underground ant nests are like big cities that have many secret rooms." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "حَتَّىٰ إِذَا أَتَوْا عَلَىٰ وَادِ النَّمْلِ قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا يَشْعُرُونَ",
+      transliteration: "Hatta idha ataw 'ala wadin-namli qalat namlatun ya ayyuhan-namlud-khulu masakinakum la yahtimannakum Sulaimanu wa junuduhu wahum la yash'urun.",
+      translation: { id: "Hingga apabila mereka sampai di lembah semut berkatalah seekor semut: Hai semut-semut, masuklah ke dalam sarang-sarangmu, agar kamu tidak diinjak oleh Sulaiman dan tentaranya, sedangkan mereka tidak menyadari.", en: "Until, when they came upon the valley of the ants, an ant said, 'O ants, enter your dwellings that you not be crushed by Solomon and his soldiers while they perceive not.'" },
+      context: { id: "Mukjizat Nabi Sulaiman yang tersenyum mendengar peringatan pemimpin semut kepada kaumnya.", en: "The miracle of Prophet Sulaiman who smiled upon hearing the ant leader's warning to its people." }
+    },
+    quiz: {
+      question: { id: "Berapa kali lipat berat beban yang bisa diangkat oleh semut?", en: "How many times their body weight can an ant lift?" },
+      options: [
+        { text: { id: "50 kali lipat badannya", en: "50 times their body weight" } },
+        { text: { id: "Sama dengan berat badannya", en: "Equal to their body weight" } },
+        { text: { id: "Mereka tidak bisa mengangkat apapun", en: "They can't lift anything" } }
+      ],
+      answerIdx: 0
+    }
   },
   explorer: {
-    text: { id: "Kecerdasan semut sangat luar biasa! Mereka adalah hewan yang pandai berkomunikasi. Dalam Surah An-Naml (Semut), dikisahkan ketika pasukan Nabi Sulaiman AS akan lewat, seekor ratu semut memerintahkan rakyatnya untuk masuk sarang agar tidak terinjak. Nabi Sulaiman tersenyum mendengar ucapan semut itu berkat mukjizat dari Allah!", en: "The intelligence of ants is extraordinary! They are animals that are great at communicating. In Surah An-Naml (The Ant), it is told that when Prophet Sulaiman's (Solomon) army was passing by, an ant queen ordered her people to enter their homes so they wouldn't be crushed. Prophet Sulaiman smiled hearing the ant's words thanks to a miracle from Allah!" },
+    text: { id: "Kalimat semut dalam Al-Qur'an memakai kata ganti bahasa Arab yang hanya digunakan untuk makhluk berakal cerdas! Ilmu pengetahuan modern membuktikan semut memang bertani jamur, menggembala kutu daun (seperti sapi perah), dan membagi tugas dengan sistem sosial terumit di dunia hewan. Allah sungguh luar biasa mendesain semut!", en: "The ant's sentence in the Quran uses Arabic pronouns that are only used for intelligent beings! Modern science proves ants indeed farm fungus, herd aphids (like dairy cows), and divide tasks with the most complex social system in the animal kingdom. Allah truly designed ants incredibly!" },
+    anatomy: [
+      { part: { id: "Antena Kimia", en: "Chemical Antennae" }, desc: { id: "Antena untuk mencium bau jejak zat kimia (feromon) yang ditinggalkan semut lain.", en: "Antennae to smell chemical trails (pheromones) left by other ants." } },
+      { part: { id: "Rahang Berotot (Mandibel)", en: "Muscular Jaws (Mandibles)" }, desc: { id: "Gigi capit super kuat untuk menggigit, memotong daun, dan mengangkat batu.", en: "Super strong pincer teeth to bite, cut leaves, and lift rocks." } }
+    ],
+    wowFactor: { id: "Semut memiliki dua perut! Satu perut untuk menyimpan makanannya sendiri, dan satu lagi perut 'sosial' untuk menyimpan makanan yang akan dimuntahkan kembali untuk dibagikan ke semut lain!", en: "Ants have two stomachs! One stomach to store their own food, and another 'social' stomach to store food to be regurgitated and shared with other ants!" },
     quranVerse: {
-      arabic: "حَتَّىٰ إِذَا أَتَوْا عَلَىٰ وَادِ النَّمْلِ قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا يَشْعُرُونَ",
-      transliteration: "Hattaa idhaa ataw 'alaa waadin-namli qaalat namlatun yaa ayyuhan-namludkhuluu masaakinakum laa yahtimannakum sulaimaanu wajunuuduhu wahum laa yash'uruun",
-      translation: { id: "Hingga apabila mereka sampai di lembah semut berkatalah seekor semut: Hai semut-semut, masuklah ke dalam sarang-sarangmu, agar kamu tidak diinjak oleh Sulaiman dan tentaranya, sedangkan mereka tidak menyadari.", en: "Until, when they came upon the valley of the ants, an ant said, 'O ants, enter your dwellings that you not be crushed by Solomon and his soldiers while they perceive not.'" }
+      arabic: "فَتَبَسَّمَ ضَاحِكًا مِنْ قَوْلِهَا وَقَالَ رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ",
+      transliteration: "Fatabassama dahikan min qawliha wa qala rabbi awzi'ni an ashkura ni'matak.",
+      translation: { id: "Maka dia (Sulaiman) tersenyum dengan tertawa karena (mendengar) perkataan semut itu. Dan dia berdoa: 'Ya Tuhanku berilah aku ilham untuk tetap mensyukuri nikmat-Mu...'", en: "So [Solomon] smiled, amused at her speech, and said, 'My Lord, enable me to be grateful for Your favor...'" }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Untuk apa semut memiliki perut yang kedua (perut sosial)?", en: "What does an ant have a second stomach (social stomach) for?" },
+        options: [
+          { text: { id: "Untuk mencerna batu", en: "To digest rocks" } },
+          { text: { id: "Untuk menyimpan air minum", en: "To store drinking water" } },
+          { text: { id: "Untuk menyimpan makanan yang akan dibagikan ke teman-temannya", en: "To store food that will be shared with its friends" } }
+        ],
+        answerIdx: 2
+      }
+    ]
   }
 };

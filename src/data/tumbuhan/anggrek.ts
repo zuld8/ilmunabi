@@ -7,44 +7,70 @@ export const anggrekData: ObjectData = {
   category: "tumbuhan",
   type: "tumbuhan",
   scientificName: "Orchidaceae",
-  surahName: "Al-Baqarah",
-  surahReference: "2:164",
+  surahName: "Al-An'am",
+  surahReference: "6:99",
   unlockedAtPoints: 10,
   kosakata: [
-    { arab: "زَهْرَةُ الأُورْكِيد", latin: "zahratul uurkiid", arti: "Bunga Anggrek", artiEn: "Orchid flower", contohAyat: "Anggrek yang indah." }
+    { arab: "سِحْلِب", latin: "Sihlib", arti: "Anggrek", artiEn: "Orchid", contohAyat: "Allah menciptakan bunga-bunga yang indah." }
   ],
   balita: {
-    text: { id: "Wah, bunganya cantik sekali! Ini anggrek! 🌸", en: "Wow, the flower is so beautiful! This is an orchid! 🌸" },
-    audioTranscript: { id: "Anggrek punya banyak warna, lho! Ada yang ungu, putih, dan kuning! Yuk, cium wanginya!", en: "Orchids have many colors! There are purple, white, and yellow ones! Let's smell them!" },
+    text: { id: "Wah, lihat bunga anggrek ini! Warnanya sangat cantik dan bentuknya unik! 🌸", en: "Wow, look at this orchid! The colors are so beautiful and its shape is unique! 🌸" },
+    audioTranscript: { id: "Bunga anggrek sangat indah dan harum.", en: "The orchid is very beautiful and fragrant." },
     quiz: {
-      question: { id: "Warna apa yang BUKAN warna bunga anggrek yang biasa kita lihat?", en: "Which color is NOT a common orchid color we usually see?" },
+      question: { id: "Bunga apa yang warnanya sangat cantik dan menempel di pohon?", en: "What flower has beautiful colors and sticks to trees?" },
       options: [
-        { text: { id: "Ungu", en: "Purple" } },
-        { text: { id: "Hitam gelap gulita", en: "Pitch black" } },
-        { text: { id: "Putih", en: "White" } }
+        { text: { id: "Bunga Mawar", en: "Rose" } },
+        { text: { id: "Bunga Anggrek", en: "Orchid" } },
+        { text: { id: "Bunga Matahari", en: "Sunflower" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Anggrek adalah bunga unik yang suka menempel di pohon lain! Mereka tidak merusak pohon itu, lho, cuma numpang tinggal saja. Keren kan?", en: "Orchids are unique flowers that like to attach to other trees! They don't harm the tree, just hitching a ride. Cool, right?" },
+    text: { id: "Anggrek adalah bunga spesial! Beberapa jenis anggrek hidup dengan menempel pada pohon lain, tapi tidak merugikan pohon itu. Subhanallah, Allah menciptakan anggrek dengan bentuk yang sangat beragam, ada yang mirip serangga, lho!", en: "Orchids are special flowers! Some orchids live by attaching themselves to other trees, but they do not harm the tree. Subhanallah, Allah created orchids with very diverse shapes, some even look like insects!" },
     facts: [
-      { id: "Ada anggrek yang bentuknya mirip monyet!", en: "There is an orchid shaped like a monkey!" },
-      { id: "Anggrek adalah salah satu keluarga tanaman terbesar di dunia.", en: "Orchids are one of the largest plant families in the world." },
-      { id: "Beberapa anggrek bisa hidup hingga 100 tahun!", en: "Some orchids can live up to 100 years!" }
+      { id: "Keluarga anggrek memiliki lebih dari 28.000 spesies yang berbeda!", en: "The orchid family has over 28,000 different species!" },
+      { id: "Biji anggrek adalah salah satu biji terkecil di dunia.", en: "Orchid seeds are some of the smallest seeds in the world." },
+      { id: "Anggrek bisa hidup di berbagai tempat, kecuali di daerah yang sangat dingin (Antartika).", en: "Orchids can live almost anywhere, except in extremely cold regions (Antarctica)." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَهُوَ الَّذِي أَنْزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجْنَا بِهِ نَبَاتَ كُلِّ شَيْءٍ",
+      transliteration: "Wa huwa alladhī anzala mina as-samā'i mā'an fa akhrajnā bihi nabāta kulli shay'in",
+      translation: { id: "Dan Dialah yang menurunkan air hujan dari langit, lalu Kami tumbuhkan dengan air itu segala macam tumbuh-tumbuhan...", en: "And it is He who sends down rain from the sky, and We produce thereby the growth of all things..." },
+      context: { id: "Allah Maha Pencipta, menumbuhkan berbagai tanaman cantik seperti anggrek.", en: "Allah, the Creator, grows various beautiful plants like orchids." }
+    },
+    quiz: {
+      question: { id: "Di mana banyak bunga anggrek biasa hidup?", en: "Where do many orchids usually live?" },
+      options: [
+        { text: { id: "Menempel di pohon lain", en: "Attaching to other trees" } },
+        { text: { id: "Di dalam lautan", en: "In the ocean" } },
+        { text: { id: "Terbang di udara", en: "Flying in the air" } }
+      ],
+      answerIdx: 0
+    }
   },
   explorer: {
-    text: { id: "Tahukah kamu? Anggrek sangat cerdas, mereka punya trik untuk menarik serangga agar mau membantu penyerbukan mereka. Ada anggrek yang bentuk kelopaknya mirip lebah betina agar lebah jantan datang! Masya Allah, betapa pintarnya Allah mendesain makhluk sekecil ini. Semua itu bukti kebesaran Sang Pencipta alam semesta.", en: "Did you know? Orchids are very smart, they have tricks to attract insects to help pollinate them. Some orchids have petals shaped like female bees to attract male bees! Masya Allah, how cleverly Allah designed such a small creature. All of this is proof of the greatness of the Creator of the universe." },
+    text: { id: "Tahukah kamu bahwa anggrek memiliki trik khusus untuk menarik serangga agar membantu penyerbukan? Bentuknya yang indah sering kali menipu serangga yang mengira itu pasangannya! Desain serumit ini pasti membutuhkan pencipta yang Maha Cerdas. Allah Al-Khaliq telah mengatur segalanya dengan sempurna.", en: "Did you know that orchids have a special trick to attract insects for pollination? Their beautiful shapes often deceive insects into thinking they are their mates! Such complex design certainly requires an All-Intelligent creator. Allah Al-Khaliq has arranged everything perfectly." },
+    anatomy: [
+      { part: { id: "Akar Udara", en: "Aerial Roots" }, desc: { id: "Menyerap uap air dan nutrisi langsung dari udara.", en: "Absorbs moisture and nutrients directly from the air." } },
+      { part: { id: "Labelum", en: "Labellum" }, desc: { id: "Kelopak bunga khusus yang bertindak sebagai tempat pendaratan bagi serangga.", en: "A special petal that acts as a landing pad for insects." } }
+    ],
+    wowFactor: { id: "Beberapa anggrek membutuhkan waktu hingga 7 tahun sebelum mereka mekar untuk pertama kalinya! Sungguh pelajaran tentang kesabaran.", en: "Some orchids take up to 7 years before they bloom for the first time! Truly a lesson in patience." },
     quranVerse: {
-      arabic: "صُنْعَ اللَّهِ الَّذِي أَتْقَنَ كُلَّ شَيْءٍ",
-      transliteration: "Sun'a Allāhi alladhī atqana kulla shay'in",
-      translation: { id: "(Itulah) ciptaan Allah yang menyempurnakan segala sesuatu.", en: "(It is) the work of Allah, who perfected all things." }
+      arabic: "صُنْعَ اللَّهِ الَّذِي أَتْقَنَ كُلَّ شَيْءٍ",
+      transliteration: "Sun‘a Allāhi alladhī atqana kulla shay'in",
+      translation: { id: "(Itulah) ciptaan Allah yang membuat dengan kokoh (dan sempurna) tiap-tiap sesuatu.", en: "(It is) the work of Allah, who perfected all things." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Apa fungsi dari Labelum pada bunga anggrek?", en: "What is the function of the Labellum on an orchid?" },
+        options: [
+          { text: { id: "Untuk bernapas di air", en: "To breathe underwater" } },
+          { text: { id: "Tempat pendaratan bagi serangga penyerbuk", en: "A landing pad for pollinating insects" } },
+          { text: { id: "Menangkap burung kecil", en: "To catch small birds" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

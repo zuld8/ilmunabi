@@ -3,48 +3,70 @@ import { ObjectData } from "../objects";
 export const uranusData: ObjectData = {
   slug: "uranus",
   name: { id: "Uranus", en: "Uranus" },
-  icon: "💠",
+  icon: "🧊",
   category: "langit",
   type: "langit",
   scientificName: "Uranus",
-  surahName: "An-Nahl",
-  surahReference: "16:12",
+  surahName: "Al-Baqarah",
+  surahReference: "2:29",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "مُسَخَّرَات", latin: "Musakhkharat", arti: "Dundukkan / Dikendalikan", artiEn: "Subjected / Controlled", contohAyat: "Planet-planet tunduk pada perintah Allah" }
+    { arab: "أُورَانُوس", latin: "Uuraanuus", arti: "Uranus", artiEn: "Uranus", contohAyat: "Planet Uranus berwarna biru kehijauan yang unik." }
   ],
   balita: {
-    text: { id: "Hahaha, lihat planet Uranus! Dia berputar dengan posisi miring, seperti bola yang sedang menggelinding ke samping! ⚽❄️", en: "Hahaha, look at planet Uranus! It spins on a tilt, like a ball rolling sideways! ⚽❄️" },
-    audioTranscript: { id: "Ini planet biru muda yang dingin bernama Uranus. Saking miringnya, dia berputar seperti menggelinding rebahan lho! Unik sekali ciptaan Allah ini.", en: "This is a cold light blue planet called Uranus. It's so tilted, it spins like it's rolling on its side! What a unique creation of Allah." },
+    text: { id: "Planet ini suka berguling! Nama planet biru muda ini Uranus! 🧊", en: "This planet likes to roll! The name of this light blue planet is Uranus! 🧊" },
+    audioTranscript: { id: "Uranus adalah planet yang tiduran! Dia berputar seperti bola yang menggelinding ke samping.", en: "Uranus is a planet that lays down! It spins like a ball rolling on its side." },
     quiz: {
-      question: { id: "Bagaimana cara planet Uranus berputar?", en: "How does planet Uranus spin?" },
+      question: { id: "Bagaimana cara planet Uranus berputar?", en: "How does the planet Uranus spin?" },
       options: [
-        { text: { id: "Berdiri tegak", en: "Standing straight" } },
-        { text: { id: "Miring sambil menggelinding ke samping", en: "Tilted and rolling sideways" } },
-        { text: { id: "Lompat-lompat", en: "Jumping up and down" } }
+        { text: { id: "Melompat-lompat", en: "Jumping around" } },
+        { text: { id: "Menggelinding menyamping", en: "Rolling sideways" } },
+        { text: { id: "Berdiri tegak", en: "Standing straight" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Uranus adalah Raksasa Es yang sangat dingin. Karena dia berputar miring (hampir 90 derajat!), salah satu kutubnya menghadap matahari terus menerus selama puluhan tahun!", en: "Uranus is a very cold Ice Giant. Because it spins on a tilt (almost 90 degrees!), one of its poles faces the sun continuously for decades!" },
+    text: { id: "Uranus juga Raksasa Es yang sangat dingin. Yang paling aneh, Uranus adalah satu-satunya planet yang miring hampir 90 derajat! Jadi, saat dia mengelilingi Matahari, ia terlihat seperti bola yang menggelinding rebahan.", en: "Uranus is also a very cold Ice Giant. The strangest thing is, Uranus is the only planet tilted almost 90 degrees! So, as it orbits the Sun, it looks like a ball rolling on its side." },
     facts: [
-      { id: "Satu musim (seperti musim panas atau dingin) di Uranus lamanya bisa sampai 21 tahun Bumi! 🥶", en: "One season (like summer or winter) on Uranus can last up to 21 Earth years! 🥶" },
-      { id: "Seperti Saturnus, Uranus sebenarnya juga punya cincin tipis yang melingkarinya.", en: "Like Saturn, Uranus actually also has thin rings circling it." },
-      { id: "Uranus adalah planet pertama yang ditemukan menggunakan teleskop.", en: "Uranus was the first planet discovered using a telescope." }
+      { id: "Saking miringnya, musim dingin di Uranus bisa berlangsung selama 21 tahun!", en: "Because it's so tilted, winter on Uranus can last for 21 years!" },
+      { id: "Uranus adalah planet pertama yang ditemukan dengan menggunakan teleskop oleh manusia.", en: "Uranus was the first planet discovered by humans using a telescope." },
+      { id: "Uranus juga punya cincin seperti Saturnus, tapi sangat tipis dan gelap.", en: "Uranus also has rings like Saturn, but they are very thin and dark." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "هُوَ الَّذِي خَلَقَ لَكُم مَّا فِي الْأَرْضِ جَمِيعًا ثُمَّ اسْتَوَىٰ إِلَى السَّمَاءِ فَسَوَّاهُنَّ سَبْعَ سَمَاوَاتٍ",
+      transliteration: "Huwalladzii khalaqa lakum maa fil ardhi jamii'an tsummastawaa ilas-samaa'i fasawwaahunna sab'a samaawaat",
+      translation: { id: "Dialah Allah, yang menjadikan segala yang ada di bumi untuk kamu dan Dia berkehendak (menciptakan) langit, lalu dijadikan-Nya tujuh langit.", en: "It is He who created for you all of that which is on the earth. Then He directed Himself to the heaven, and made them seven heavens." },
+      context: { id: "Setiap planet punya jalannya masing-masing. Planet miring seperti Uranus membuktikan bahwa Allah bisa menciptakan segala bentuk dan lintasan di langit.", en: "Every planet has its own way. A tilted planet like Uranus proves that Allah can create all shapes and trajectories in the sky." }
+    },
+    quiz: {
+      question: { id: "Apa yang membuat Uranus terlihat seperti bola yang rebahan?", en: "What makes Uranus look like a rolling ball on its side?" },
+      options: [
+        { text: { id: "Karena dia lelah", en: "Because it is tired" } },
+        { text: { id: "Sumbunya sangat miring", en: "Its axis is highly tilted" } },
+        { text: { id: "Karena didorong badai", en: "Because it is pushed by a storm" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Kalau kamu ke Uranus, kamu akan mencium bau telur busuk yang sangat menyengat! HAH?! Ya, awan atas Uranus penuh dengan gas Hidrogen Sulfida (gas kentut/telur busuk). Keunikan dan ketundukan setiap planet dengan ciri khasnya masing-masing adalah bukti pengaturan Allah. 1400 tahun lalu, Al-Qur'an menegaskan bahwa bulan, bintang, dan planet ditundukkan beredar dengan perintah-Nya.", en: "If you went to Uranus, you would smell incredibly pungent rotten eggs! HAH?! Yes, Uranus' upper clouds are full of Hydrogen Sulfide gas (fart/rotten egg gas). The uniqueness and subjection of each planet with its own characteristics is proof of Allah's arrangement. 1400 years ago, the Quran affirmed that the sun, moon, stars, and planets are subjected to orbit by His command." },
+    text: { id: "Mengapa Uranus bisa miring begitu ekstrem? Ilmuwan menduga miliaran tahun lalu saat tata surya masih muda, sebuah planet sebesar Bumi menabrak Uranus dengan sangat keras hingga membuatnya jatuh ke samping. Meski begitu, Uranus tetap berada di jalur orbitnya yang sempurna, tanda bahwa hukum keseimbangan alam yang Allah buat tak akan pernah hancur secara acak.", en: "Why is Uranus tilted so extremely? Scientists suspect billions of years ago when the solar system was young, an Earth-sized planet crashed into Uranus so hard that it knocked it on its side. Even so, Uranus remains perfectly in its orbital path, a sign that the natural laws of balance created by Allah will never arbitrarily break down." },
+    anatomy: [
+      { part: { id: "Atmosfer Es", en: "Ice Atmosphere" }, desc: { id: "Lapisan gas hidrogen, helium, dan metana beku yang sangat-sangat dingin, mencapai -224 derajat Celcius.", en: "A layer of hydrogen, helium, and frozen methane gas that is extremely cold, reaching -224 degrees Celsius." } },
+      { part: { id: "Mantel Es Cair", en: "Liquid Ice Mantle" }, desc: { id: "Air, amonia, dan metana bertekanan tinggi yang mengalir di atas inti batu.", en: "High-pressure water, ammonia, and methane flowing over the rock core." } }
+    ],
+    wowFactor: { id: "Tidak ada planet di tata surya kita yang se-dingin Uranus, menjadikannya pemegang rekor suhu planet terdingin meski Neptunus lebih jauh dari matahari!", en: "No planet in our solar system is as cold as Uranus, making it the record holder for the coldest planetary temperature even though Neptune is further from the sun!" },
     quranVerse: {
-      arabic: "وَسَخَّرَ لَكُمُ اللَّيْلَ وَالنَّهَارَ وَالشَّمْسَ وَالْقَمَرَ ۖ وَالنُّجُومُ مُسَخَّرَاتٌ بِأَمْرِهِ",
-      transliteration: "Wa sakhkhara lakumul-layla wan-nahāra wash-shamsa wal-qamar, wan-nujūmu musakhkharātum bi'amrih",
-      translation: { id: "Dan Dia menundukkan malam dan siang, matahari dan bulan untukmu. Dan bintang-bintang itu ditundukkan (untukmu) dengan perintah-Nya.", en: "And He has subjected for you the night and day and the sun and moon, and the stars are subjected by His command." }
+      arabic: "صُنْعَ اللَّهِ الَّذِي أَتْقَنَ كُلَّ شَيْءٍ",
+      transliteration: "Shun'allahilladzii atqana kulla syay'",
+      translation: { id: "Ciptaan Allah yang membuat segala sesuatu dengan kokoh (sempurna).", en: "The work of Allah, who perfected all things." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Berapa rekor suhu terdingin di Uranus?", en: "What is the coldest temperature record on Uranus?" },
+        options: [{ text: { id: "-50 derajat Celcius", en: "-50 degrees Celsius" } }, { text: { id: "-224 derajat Celcius", en: "-224 degrees Celsius" } }, { text: { id: "0 derajat Celcius", en: "0 degrees Celsius" } }],
+        answerIdx: 1
+      }
+    ]
   }
 };

@@ -2,49 +2,75 @@ import { ObjectData } from "../objects";
 
 export const bidaraData: ObjectData = {
   slug: "bidara",
-  name: { id: "Bidara", en: "Lote Tree" },
-  icon: "🌿",
+  name: { id: "Bidara", en: "Sidr Tree" },
+  icon: "🌳",
   category: "tumbuhan",
   type: "tumbuhan",
   scientificName: "Ziziphus mauritiana",
-  surahName: "Al-Waqi'ah",
-  surahReference: "56:28",
-  unlockedAtPoints: 50,
+  surahName: "Saba",
+  surahReference: "34:16",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "سِدْرٌ", latin: "sidrun", arti: "Bidara", artiEn: "Lote tree", contohAyat: "Pohon bidara tak berduri." }
+    { arab: "سِدْر", latin: "Sidr", arti: "Bidara", artiEn: "Sidr Tree", contohAyat: "Pohon bidara disebutkan dalam surga." }
   ],
   balita: {
-    text: { id: "Daunnya kecil dan bundar, namanya pohon Bidara! 🌿", en: "Its leaves are small and round, it is the Lote tree! 🌿" },
-    audioTranscript: { id: "Pohon bidara punya daun yang hijau. Zaman dahulu, daunnya dipakai seperti sabun untuk mandi, lho! Segar sekali!", en: "The Lote tree has green leaves. In ancient times, its leaves were used like soap for bathing! So refreshing!" },
+    text: { id: "Pohon bidara punya daun hijau kecil dan buah yang manis! Di daunnya kadang ada duri, jadi hati-hati ya. 🌳", en: "The Sidr tree has small green leaves and sweet fruits! There are sometimes thorns on its leaves, so be careful. 🌳" },
+    audioTranscript: { id: "Pohon bidara sangat istimewa karena ada di surga.", en: "The Sidr tree is very special because it is in heaven." },
     quiz: {
-      question: { id: "Daun bidara zaman dahulu dipakai untuk apa?", en: "What were Lote leaves used for in ancient times?" },
+      question: { id: "Apa yang harus kita perhatikan saat memegang ranting bidara?", en: "What should we be careful about when holding a Sidr branch?" },
       options: [
-        { text: { id: "Sabun mandi", en: "Bath soap" } },
-        { text: { id: "Membungkus makanan", en: "Wrapping food" } },
-        { text: { id: "Dijadikan payung", en: "Made into an umbrella" } }
+        { text: { id: "Gigi yang tajam", en: "Sharp teeth" } },
+        { text: { id: "Duri", en: "Thorns" } },
+        { text: { id: "Tanduk", en: "Horns" } }
       ],
-      answerIdx: 0
+      answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Bidara adalah pohon yang sangat kuat! Dia bisa bertahan hidup meski sangat panas dan jarang turun hujan. Hebat ya, tumbuhan punya cara sendiri untuk bertahan hidup yang diberikan Allah.", en: "The Lote tree is a very strong tree! It can survive even if it's very hot and rarely rains. Great, right? Plants have their own way to survive given by Allah." },
+    text: { id: "Pohon bidara (Sidr) sangat istimewa dalam Islam! Daunnya sering digunakan untuk mandi bersih karena bisa menghilangkan kotoran seperti sabun. Pohon ini sangat kuat dan tahan panas, lho. Subhanallah, pohon bidara juga ada di Surga namun tanpa duri!", en: "The Sidr tree is very special in Islam! Its leaves are often used for cleansing baths because they can remove dirt like soap. This tree is very strong and heat-resistant. Subhanallah, there is also a Sidr tree in Heaven but without thorns!" },
     facts: [
-      { id: "Di dunia nyata, pohon bidara penuh duri yang tajam.", en: "In the real world, the Lote tree is full of sharp thorns." },
-      { id: "Daun bidara sering dipakai untuk mengobati luka ringan.", en: "Lote leaves are often used to treat minor wounds." },
-      { id: "Buah bidara manis dan kaya akan vitamin C.", en: "Lote fruit is sweet and rich in vitamin C." }
+      { id: "Daun bidara jika ditumbuk dan dicampur air akan mengeluarkan busa alami seperti sabun.", en: "Crushed Sidr leaves mixed with water will produce natural foam like soap." },
+      { id: "Akar pohon bidara menembus sangat dalam ke tanah untuk mencari air di tempat kering.", en: "Sidr tree roots penetrate very deep into the soil to find water in dry places." },
+      { id: "Madu dari bunga bidara adalah salah satu madu terbaik di dunia.", en: "Honey from Sidr flowers is one of the best honeys in the world." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  },
-  explorer: {
-    text: { id: "Tahukah kamu? Allah menyebutkan 'pohon bidara yang tidak berduri' sebagai salah satu pohon indah di Surga bagi orang-orang yang beriman. Di dunia pohon ini berduri agar terlindung dari hewan, namun di surga Allah hilangkan durinya agar sempurna! Masya Allah, semoga kita bisa melihatnya di surga kelak.", en: "Did you know? Allah mentions the 'thornless Lote tree' as one of the beautiful trees in Paradise for the believers. In this world, this tree has thorns to protect it from animals, but in paradise Allah removes the thorns to make it perfect! Masya Allah, may we be able to see it in paradise later." },
     quranVerse: {
       arabic: "فِي سِدْرٍ مَخْضُودٍ",
-      transliteration: "Fī sidrin makhḍūd",
-      translation: { id: "Mereka berada di antara pohon bidara yang tidak berduri,", en: "They will be among lote trees with thorns removed," }
+      transliteration: "Fī sidrin makhḍūdin",
+      translation: { id: "Berada di antara pohon bidara yang tidak berduri.", en: "[They will be] among lote trees with thorns removed." },
+      context: { id: "Allah menjanjikan orang-orang beriman pohon bidara yang indah di surga tanpa duri.", en: "Allah promises the believers beautiful Sidr trees in heaven without thorns." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: {
+      question: { id: "Mengapa daun bidara sering digunakan sejak zaman Nabi?", en: "Why have Sidr leaves been used since the time of the Prophet?" },
+      options: [
+        { text: { id: "Karena bisa bernyanyi", en: "Because they can sing" } },
+        { text: { id: "Untuk membersihkan badan seperti sabun", en: "To clean the body like soap" } },
+        { text: { id: "Untuk dijadikan payung", en: "To be used as an umbrella" } }
+      ],
+      answerIdx: 1
+    }
+  },
+  explorer: {
+    text: { id: "Daun bidara memiliki senyawa saponin alami. Saat dilarutkan dalam air, saponin ini akan mengikat kotoran dan lemak layaknya sabun modern! Selain itu, pohon ini adalah 'survivor' sejati di padang pasir. Allah merancangnya untuk bisa bertahan hidup di suhu yang sangat ekstrem. Tidak heran pohon istimewa ini disebut dalam Al-Qur'an.", en: "Sidr leaves contain natural saponin compounds. When dissolved in water, this saponin binds dirt and fat just like modern soap! Besides, this tree is a true 'survivor' in the desert. Allah designed it to survive in very extreme temperatures. No wonder this special tree is mentioned in the Quran." },
+    anatomy: [
+      { part: { id: "Saponin", en: "Saponins" }, desc: { id: "Zat kimia alami di dalam daun yang berfungsi sebagai pembersih.", en: "Natural chemicals in the leaves that act as cleaners." } },
+      { part: { id: "Akar Tunggang", en: "Taproot" }, desc: { id: "Akar utama yang sangat panjang untuk mencapai air tanah dalam.", en: "A very long main root to reach deep groundwater." } }
+    ],
+    wowFactor: { id: "Sidratul Muntaha adalah pohon bidara raksasa di langit ketujuh yang menjadi batas pencapaian makhluk Allah!", en: "Sidrat al-Muntaha is a giant lote tree in the seventh heaven marking the boundary of creation!" },
+    quranVerse: {
+      arabic: "عِنْدَ سِدْرَةِ الْمُنْتَهَىٰ",
+      transliteration: "‘Inda sidrati al-muntahā",
+      translation: { id: "Di Sidratul Muntaha (batas tertinggi).", en: "At the Lote Tree of the Utmost Boundary." }
+    },
+    quiz: [
+      {
+        question: { id: "Zat alami apa dalam daun bidara yang membuatnya bisa berbuih seperti sabun?", en: "What natural substance in Sidr leaves makes them foam like soap?" },
+        options: [
+          { text: { id: "Saponin", en: "Saponins" } },
+          { text: { id: "Klorofil", en: "Chlorophyll" } },
+          { text: { id: "Karbohidrat", en: "Carbohydrates" } }
+        ],
+        answerIdx: 0
+      }
+    ]
   }
 };

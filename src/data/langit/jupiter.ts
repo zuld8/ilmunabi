@@ -1,50 +1,108 @@
 import { ObjectData } from "../objects";
 
 export const jupiterData: ObjectData = {
-  slug: "jupiter",
-  name: { id: "Jupiter", en: "Jupiter" },
+  slug: "jupiter-raksasa-dekat",
+  name: {
+    id: "Jupiter Raksasa Dekat",
+    en: "Jupiter Raksasa Dekat",
+  },
+  scientificName: "Jupiter var. dekat",
+  surahName: "Al-Qur'an",
+  surahReference: "Ciptaan Allah",
   icon: "🪐",
   category: "langit",
   type: "langit",
-  scientificName: "Jupiter",
-  surahName: "Al-Infitar",
-  surahReference: "82:1-2",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "كَوْكَب", latin: "Kawkab", arti: "Planet", artiEn: "Planet", contohAyat: "Planet terbesar di tata surya kita" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
   ],
   balita: {
-    text: { id: "Wusss! Ini Jupiter, si Raksasa Gas! Dia planet paling gedeee di tata surya kita lho! 🎈", en: "Whoosh! This is Jupiter, the Gas Giant! It's the biiiggest planet in our solar system! 🎈" },
-    audioTranscript: { id: "Lihat planet besar ini, namanya Jupiter! Garis-garis warnanya itu sebenarnya awan badai. Allah membuatnya sangat besar dan cantik sekali.", en: "Look at this big planet, it's called Jupiter! Those colorful stripes are actually storm clouds. Allah made it very big and extremely beautiful." },
+    text: {
+      id: "Ini Jupiter Raksasa Dekat! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Jupiter Raksasa Dekat! An amazingly beautiful creation of Allah. 🌟",
+    },
+    audioTranscript: {
+      id: "Ini Jupiter Raksasa Dekat. Allah menciptakan Jupiter Raksasa Dekat dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Jupiter Raksasa Dekat. Allah created Jupiter Raksasa Dekat beautifully so we all become grateful.",
+    },
     quiz: {
-      question: { id: "Apakah kita bisa berdiri di planet Jupiter?", en: "Can we stand on planet Jupiter?" },
+      question: {
+        id: "Mana gambar Jupiter Raksasa Dekat?",
+        en: "Which one is the picture of Jupiter Raksasa Dekat?",
+      },
       options: [
-        { text: { id: "Bisa, seperti di Bumi", en: "Yes, like on Earth" } },
-        { text: { id: "Tidak bisa, karena dia terbuat dari gas!", en: "No, because it's made of gas!" } },
-        { text: { id: "Bisa, kalau bawa payung", en: "Yes, if you bring an umbrella" } }
+        { text: { id: "🪐 Jupiter Raksasa Dekat", en: "🪐 Jupiter Raksasa Dekat" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 1
-    }
+      answerIdx: 0,
+    },
   },
   anak: {
-    text: { id: "Jupiter dijuluki Raja Planet karena ukurannya yang super besar. 1.300 planet Bumi bisa muat dimasukkan ke dalam Jupiter!", en: "Jupiter is nicknamed the King of Planets because of its super huge size. 1,300 Earths could fit inside Jupiter!" },
+    text: {
+      id: "Fakta menarik tentang Jupiter Raksasa Dekat: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Jupiter Raksasa Dekat: It is a proof of Allah's majestic creation in the universe.",
+    },
     facts: [
-      { id: "Ada badai raksasa di Jupiter bernama 'Bintik Merah Besar' yang sudah berputar selama ratusan tahun! 🌪️", en: "There's a giant storm on Jupiter called the 'Great Red Spot' that has been spinning for hundreds of years! 🌪️" },
-      { id: "Meskipun besar, waktu sehari di Jupiter sangat cepat, hanya butuh 10 jam! Pusing deh berputarnya kencang sekali.", en: "Even though it's huge, a day on Jupiter is very short, taking only 10 hours! Dizzying how fast it spins." },
-      { id: "Jupiter punya lebih dari 90 bulan yang mengelilinginya!", en: "Jupiter has more than 90 moons orbiting it!" }
+      { id: "Benda langit Jupiter Raksasa Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras.", en: "Benda langit Jupiter Raksasa Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras." },
+      { id: "Lintasan orbit Jupiter Raksasa Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten.", en: "Lintasan orbit Jupiter Raksasa Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten." },
+      { id: "Cahaya bintang di sekitar Jupiter Raksasa Dekat merambat menembus ruang hampa jutaan tahun cahaya.", en: "Cahaya bintang di sekitar Jupiter Raksasa Dekat merambat menembus ruang hampa jutaan tahun cahaya." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
+      translation: {
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
+      },
+    },
+    quiz: {
+      question: {
+        id: "Siapa yang menciptakan Jupiter Raksasa Dekat dengan sempurna?",
+        en: "Who created Jupiter Raksasa Dekat perfectly?",
+      },
+      options: [
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
+      ],
+      answerIdx: 0,
+    },
   },
   explorer: {
-    text: { id: "Jupiter bukan sekadar planet gas, tapi ia adalah perisai raksasa bagi Bumi! HAH?! Gravitasi Jupiter yang sangat masif menarik komet dan asteroid bahaya ke arahnya sehingga tidak menabrak Bumi! Subhanallah, desain tata surya sangat teliti. 1400 tahun lalu, Al-Qur'an mengajarkan kita merenungi penciptaan benda-benda langit yang memiliki orbit dan fungsi penjagaan yang sempurna.", en: "Jupiter isn't just a gas planet, it's a giant shield for Earth! HAH?! Jupiter's massive gravity pulls dangerous comets and asteroids towards it so they don't crash into Earth! Subhanallah, the solar system's design is highly precise. 1400 years ago, the Quran taught us to reflect on the creation of celestial bodies with perfect orbits and guarding functions." },
-    quranVerse: {
-      arabic: "وَجَعَلْنَا السَّمَاءَ سَقْفًا مَحْفُوظًا ۖ وَهُمْ عَنْ آيَاتِهَا مُعْرِضُونَ",
-      transliteration: "Wa ja'alnas-samā'a saqfam maḥfūẓā, wa hum 'an āyātihā mu'riḍūn",
-      translation: { id: "Dan Kami menjadikan langit itu sebagai atap yang terpelihara, sedang mereka berpaling dari segala tanda-tanda (kekuasaan Allah) yang terdapat padanya.", en: "And We made the sky a protected ceiling, but they, from its signs, are turning away." }
+    text: {
+      id: "Eksplorasi anatomi dan struktur Jupiter Raksasa Dekat mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Jupiter Raksasa Dekat reveals the brilliance of biological design and natural balance.",
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  }
+    anatomy: [
+      { part: { id: "Inti Gravitasi", en: "Inti Gravitasi" }, desc: { id: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit.", en: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit." } }
+    ],
+    wowFactor: {
+      id: "Keajaiban astrofisika Jupiter Raksasa Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Jupiter Raksasa Dekat mencegahnya meledak secara liar.",
+      en: "Keajaiban astrofisika Jupiter Raksasa Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Jupiter Raksasa Dekat mencegahnya meledak secara liar.",
+    },
+    quranVerse: {
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
+      translation: {
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
+      },
+      context: {
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
+      },
+    },
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Jupiter Raksasa Dekat?",
+          en: "What is the primary wisdom of scientific signs regarding Jupiter Raksasa Dekat?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
+      },
+    ],
+  },
 };

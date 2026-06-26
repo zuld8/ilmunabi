@@ -4,47 +4,73 @@ export const untaData: ObjectData = {
   slug: "unta",
   name: { id: "Unta", en: "Camel" },
   icon: "🐪",
-  category: "hewan",
+  category: "mamalia",
   type: "hewan",
-  scientificName: "Camelus dromedarius",
+  scientificName: "Camelus",
   surahName: "Al-Ghashiyah",
   surahReference: "88:17",
-  unlockedAtPoints: 40,
+  unlockedAtPoints: 90,
   kosakata: [
-    { arab: "جَمَلٌ / إِبِلٌ", latin: "jamalun / ibilun", arti: "Unta", artiEn: "Camel", contohAyat: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ (Maka tidakkah mereka memperhatikan unta?)" }
+    { arab: "إِبِل / جَمَل", latin: "Ibil / Jamal", arti: "Unta", artiEn: "Camel", contohAyat: "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan?" }
   ],
   balita: {
-    text: { id: "Uhuuk... 🐪 Unta punya punuk di punggungnya seperti gunung kecil. Dia suka berjalan di gurun pasir!", en: "Grunt... 🐪 Camels have a hump on their back like a small mountain. They love walking in the desert!" },
-    audioTranscript: { id: "Halo teman! Aku Unta. Aku bisa berjalan di pasir yang sangat panas berhari-hari tanpa minum air lho!", en: "Hello friend! I am a Camel. I can walk on very hot sand for days without drinking water!" },
+    text: { id: "Halo, aku unta si kapal gurun pasir! Aku punya punuk besar di punggungku! 🐪", en: "Hello, I am the camel, the ship of the desert! I have a big hump on my back! 🐪" },
+    audioTranscript: { id: "Kaki panjangku tidak akan kepanasan saat berjalan di atas pasir gurun. Keren, kan?", en: "My long legs won't get hot when walking on desert sand. Cool, right?" },
     quiz: {
-      question: { id: "Di mana letak punuk (gunungan) pada tubuh unta?", en: "Where is the hump located on a camel's body?" },
+      question: { id: "Apa nama benjolan besar yang ada di punggung unta?", en: "What is the name of the big bump on a camel's back?" },
       options: [
-        { text: { id: "Di atas kepalanya", en: "On its head" } },
-        { text: { id: "Di punggungnya", en: "On its back" } },
-        { text: { id: "Di ekornya", en: "On its tail" } }
+        { text: { id: "Tanduk", en: "Horn" } },
+        { text: { id: "Punuk", en: "Hump" } },
+        { text: { id: "Sayap", en: "Wing" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Banyak yang mengira punuk unta berisi air, padahal sebenarnya punuk itu berisi lemak cadangan makanan! Kalau unta kehabisan makanan di gurun pasir, lemak itu yang memberinya energi. Keren ya!", en: "Many think a camel's hump is full of water, but it actually contains fat as food reserves! When a camel runs out of food in the desert, that fat gives it energy. So cool!" },
+    text: { id: "Unta adalah keajaiban gurun! Allah secara khusus menyuruh kita memperhatikan bagaimana uniknya penciptaan unta. Hewan ini sangat kuat menahan haus berhari-hari di tengah panas matahari terik.", en: "Camels are miracles of the desert! Allah specifically commands us to look at how uniquely camels are created. This animal is very strong at enduring thirst for days in the scorching heat of the sun." },
     facts: [
-      { id: "Unta punya 3 lapis kelopak mata dan bulu mata panjang untuk menahan badai pasir! 🐪", en: "Camels have 3 layers of eyelids and long eyelashes to keep out sandstorms! 🐪" },
-      { id: "Bibir unta sangat tebal sehingga dia bisa makan kaktus berduri tanpa terluka! 🌵", en: "A camel's lips are so thick it can eat thorny cactus without getting hurt! 🌵" },
-      { id: "Sekali minum, unta bisa menghabiskan 100 liter air dalam 10 menit! 💧", en: "In one drink, a camel can finish 100 liters of water in 10 minutes! 💧" }
+      { id: "Unta bisa minum hingga 100 liter air hanya dalam waktu 10 menit!", en: "A camel can drink up to 100 liters of water in just 10 minutes!" },
+      { id: "Punuk unta TIDAK berisi air, melainkan cadangan lemak yang digunakan sebagai energi cadangan.", en: "A camel's hump does NOT contain water, but rather fat reserves used as backup energy." },
+      { id: "Bulu mata unta sangat panjang dan tebal untuk menghalangi pasir masuk ke matanya saat badai gurun.", en: "A camel's eyelashes are very long and thick to prevent sand from getting into its eyes during desert storms." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  },
-  explorer: {
-    text: { id: "Unta adalah keajaiban penciptaan! Allah secara khusus menyuruh kita memperhatikan penciptaan unta dalam Surah Al-Ghashiyah. Selain itu, Nabi Saleh AS juga diberikan mukjizat berupa Unta Betina raksasa yang keluar dari batu karang, sebagai bukti nyata kebesaran Allah kepada kaum Tsamud.", en: "Camels are a miracle of creation! Allah specifically tells us to observe the creation of camels in Surah Al-Ghashiyah. Besides that, Prophet Saleh AS was also given a miracle of a giant female Camel emerging from a rock, as clear proof of Allah's greatness to the people of Thamud." },
     quranVerse: {
       arabic: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
-      transliteration: "Afalaa yandhuruuna ilal ibili kayfa khuliqat",
-      translation: { id: "Maka tidakkah mereka memperhatikan unta, bagaimana dia diciptakan?", en: "Then do they not look at the camels - how they are created?" }
+      transliteration: "Afala yanzuruna ilal-ibili kayfa khuliqat.",
+      translation: { id: "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan?", en: "Then do they not look at the camels - how they are created?" },
+      context: { id: "Allah menggunakan unta sebagai bukti nyata kebesaran ciptaan-Nya karena kekuatan anatominya bertahan di gurun.", en: "Allah uses camels as clear evidence of the greatness of His creation because of their anatomical strength to survive in the desert." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: {
+      question: { id: "Sebenarnya, apa isi dari punuk unta yang besar itu?", en: "Actually, what is inside that big camel hump?" },
+      options: [
+        { text: { id: "Air cadangan", en: "Backup water" } },
+        { text: { id: "Tulang keras", en: "Hard bone" } },
+        { text: { id: "Cadangan lemak untuk energi", en: "Fat reserves for energy" } }
+      ],
+      answerIdx: 2
+    }
+  },
+  explorer: {
+    text: { id: "Desain unta 100% sempurna untuk bertahan hidup di gurun ekstrim! Saat badai pasir menyapu, unta bisa secara otomatis menutup rapat lubang hidungnya agar debu tak masuk. Darah unta juga sangat spesial, sel darah merahnya berbentuk oval, bukan bulat seperti manusia, sehingga bisa mengalir lancar meski tubuhnya sedang sangat kekurangan air dehidrasi!", en: "The camel's design is 100% perfect to survive in the extreme desert! When a sandstorm sweeps by, camels can automatically seal their nostrils tightly so dust doesn't get in. A camel's blood is also very special, its red blood cells are oval, not round like humans, so they can flow smoothly even when the body is severely dehydrated!" },
+    anatomy: [
+      { part: { id: "Kelopak Mata Tembus Pandang", en: "Transparent Eyelids" }, desc: { id: "Unta punya kelopak mata ketiga yang tipis. Mereka bisa melihat melewati kelopak ini meski sedang menutup mata saat badai pasir!", en: "Camels have a thin third eyelid. They can see through it even when closing their eyes during a sandstorm!" } },
+      { part: { id: "Telapak Kaki Bantalan", en: "Padded Footpads" }, desc: { id: "Telapak kakinya lebar dan empuk seperti bantalan raksasa, mencegah unta terperosok ke dalam pasir yang dalam.", en: "Its footpads are wide and soft like giant cushions, preventing the camel from sinking into deep sand." } }
+    ],
+    wowFactor: { id: "Bibir bagian dalam unta sangat keras dan kebal rasa sakit! Hal ini memungkinkan mereka memakan kaktus gurun yang penuh duri tajam seolah-olah sedang makan biskuit renyah!", en: "The inside of a camel's lips is very hard and immune to pain! This allows them to eat desert cacti full of sharp thorns as if they were eating crunchy biscuits!" },
+    quranVerse: {
+      arabic: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ ۝ وَإِلَى السَّمَاءِ كَيْفَ رُفِعَتْ",
+      transliteration: "Afala yanzuruna ilal-ibili kayfa khuliqat. Wa ilas-sama'i kayfa rufi'at.",
+      translation: { id: "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan? Dan langit, bagaimana ia ditinggikan?", en: "Then do they not look at the camels - how they are created? And at the heaven - how it is raised?" }
+    },
+    quiz: [
+      {
+        question: { id: "Mengapa sel darah merah unta berbentuk oval, bukan bulat seperti manusia?", en: "Why are a camel's red blood cells oval, not round like humans?" },
+        options: [
+          { text: { id: "Agar bisa berubah menjadi air", en: "So they can turn into water" } },
+          { text: { id: "Agar darah tetap bisa mengalir lancar meskipun sedang dehidrasi (kurang air)", en: "So blood can keep flowing smoothly even when dehydrated (lacking water)" } },
+          { text: { id: "Agar warnanya tidak terlalu merah", en: "So the color is not too red" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

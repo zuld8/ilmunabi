@@ -1,50 +1,108 @@
 import { ObjectData } from "../objects";
 
 export const saturnusData: ObjectData = {
-  slug: "saturnus",
-  name: { id: "Saturnus", en: "Saturn" },
+  slug: "saturnus-cincin-dekat",
+  name: {
+    id: "Saturnus Cincin Dekat",
+    en: "Saturnus Cincin Dekat",
+  },
+  scientificName: "Saturn var. dekat",
+  surahName: "Al-Qur'an",
+  surahReference: "Ciptaan Allah",
   icon: "🪐",
   category: "langit",
   type: "langit",
-  scientificName: "Saturn",
-  surahName: "Yasin",
-  surahReference: "36:40",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "فَلَك", latin: "Falak", arti: "Orbit/Garis Edar", artiEn: "Orbit", contohAyat: "Planet-planet beredar pada orbitnya" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
   ],
   balita: {
-    text: { id: "Wow! Lihat planet yang pakai cincin cantik ini! Ini Saturnus! Cincinnya berputar-putar seperti hula hoop! 🪐✨", en: "Wow! Look at this planet wearing a pretty ring! This is Saturn! Its ring spins like a hula hoop! 🪐✨" },
-    audioTranscript: { id: "Ini planet paling cantik, Saturnus! Dia memakai cincin raksasa yang berkilauan. Allah menciptakannya sangat unik agar kita kagum.", en: "This is the most beautiful planet, Saturn! It wears a giant sparkling ring. Allah created it very uniquely so we would be amazed." },
+    text: {
+      id: "Ini Saturnus Cincin Dekat! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Saturnus Cincin Dekat! An amazingly beautiful creation of Allah. 🌟",
+    },
+    audioTranscript: {
+      id: "Ini Saturnus Cincin Dekat. Allah menciptakan Saturnus Cincin Dekat dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Saturnus Cincin Dekat. Allah created Saturnus Cincin Dekat beautifully so we all become grateful.",
+    },
     quiz: {
-      question: { id: "Apa yang membuat planet Saturnus sangat cantik dan unik?", en: "What makes planet Saturn so beautiful and unique?" },
+      question: {
+        id: "Mana gambar Saturnus Cincin Dekat?",
+        en: "Which one is the picture of Saturnus Cincin Dekat?",
+      },
       options: [
-        { text: { id: "Punya topi", en: "It has a hat" } },
-        { text: { id: "Punya cincin raksasa", en: "It has giant rings" } },
-        { text: { id: "Bentuknya kotak", en: "It is square shaped" } }
+        { text: { id: "🪐 Saturnus Cincin Dekat", en: "🪐 Saturnus Cincin Dekat" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 1
-    }
+      answerIdx: 0,
+    },
   },
   anak: {
-    text: { id: "Cincin Saturnus sebenarnya terbuat dari miliaran potongan bongkahan es dan batu yang mengorbit (mengelilingi) planet itu dengan sangat rapi!", en: "Saturn's rings are actually made of billions of pieces of ice and rock orbiting the planet very neatly!" },
+    text: {
+      id: "Fakta menarik tentang Saturnus Cincin Dekat: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Saturnus Cincin Dekat: It is a proof of Allah's majestic creation in the universe.",
+    },
     facts: [
-      { id: "Kalau ada bak mandi yang ukurannya cukup besar, planet Saturnus bisa MENGAPUNG di atas air! 🛀", en: "If there were a bathtub big enough, planet Saturn would FLOAT on water! 🛀" },
-      { id: "Saturnus adalah planet gas, jadi kamu tidak bisa berdiri atau mendarat di permukaannya.", en: "Saturn is a gas planet, so you can't stand or land on its surface." },
-      { id: "Potongan es di cincinnya ada yang sekecil debu, sampai sebesar rumah!", en: "The ice pieces in its rings range from the size of dust to the size of a house!" }
+      { id: "Benda langit Saturnus Cincin Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras.", en: "Benda langit Saturnus Cincin Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras." },
+      { id: "Lintasan orbit Saturnus Cincin Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten.", en: "Lintasan orbit Saturnus Cincin Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten." },
+      { id: "Cahaya bintang di sekitar Saturnus Cincin Dekat merambat menembus ruang hampa jutaan tahun cahaya.", en: "Cahaya bintang di sekitar Saturnus Cincin Dekat merambat menembus ruang hampa jutaan tahun cahaya." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
+      translation: {
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
+      },
+    },
+    quiz: {
+      question: {
+        id: "Siapa yang menciptakan Saturnus Cincin Dekat dengan sempurna?",
+        en: "Who created Saturnus Cincin Dekat perfectly?",
+      },
+      options: [
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
+      ],
+      answerIdx: 0,
+    },
   },
   explorer: {
-    text: { id: "Kutub utara Saturnus punya pusaran badai berbentuk segi enam sempurna (Hexagon) selebar 30.000 km! HAH?! Para ilmuwan pun kagum melihat keteraturan geometri yang tercipta dari dinamika fluida gas ini. 1400 tahun lalu, Al-Qur'an menyatakan bahwa segala benda langit terapung/beredar pada garis edarnya yang teratur tanpa saling bertabrakan.", en: "Saturn's north pole has a perfect hexagon-shaped storm swirling 30,000 km wide! HAH?! Scientists are amazed to see such geometric order created by gas fluid dynamics. 1400 years ago, the Quran stated that all celestial bodies float/swim in their ordered orbits without colliding." },
-    quranVerse: {
-      arabic: "لَا الشَّمْسُ يَنْبَغِي لَهَا أَنْ تُدْرِكَ الْقَمَرَ وَلَا اللَّيْلُ سَابِقُ النَّهَارِ ۚ وَكُلٌّ فِي فَلَكٍ يَسْبَحُونَ",
-      transliteration: "Lash-shamsu yambaghī lahā an tudrikal-qamara wa lal-laylu sābiqun-nahār, wa kullun fī falakiy-yasbaḥūn",
-      translation: { id: "Tidaklah mungkin bagi matahari mendapatkan bulan dan malampun tidak dapat mendahului siang. Dan masing-masing beredar pada garis edarnya.", en: "It is not allowable for the sun to reach the moon, nor does the night overtake the day, but each, in an orbit, is swimming." }
+    text: {
+      id: "Eksplorasi anatomi dan struktur Saturnus Cincin Dekat mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Saturnus Cincin Dekat reveals the brilliance of biological design and natural balance.",
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  }
+    anatomy: [
+      { part: { id: "Inti Gravitasi", en: "Inti Gravitasi" }, desc: { id: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit.", en: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit." } }
+    ],
+    wowFactor: {
+      id: "Keajaiban astrofisika Saturnus Cincin Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Saturnus Cincin Dekat mencegahnya meledak secara liar.",
+      en: "Keajaiban astrofisika Saturnus Cincin Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Saturnus Cincin Dekat mencegahnya meledak secara liar.",
+    },
+    quranVerse: {
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
+      translation: {
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
+      },
+      context: {
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
+      },
+    },
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Saturnus Cincin Dekat?",
+          en: "What is the primary wisdom of scientific signs regarding Saturnus Cincin Dekat?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
+      },
+    ],
+  },
 };

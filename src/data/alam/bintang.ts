@@ -5,46 +5,72 @@ export const bintangData: ObjectData = {
   name: { id: "Bintang", en: "Star" },
   icon: "⭐",
   category: "alam",
-  type: "alam",
-  scientificName: "Aster",
-  surahName: "At-Tariq",
-  surahReference: "86:3",
-  unlockedAtPoints: 10,
+  type: "langit",
+  scientificName: "Stella / Plasma Sphere",
+  surahName: "An-Nahl",
+  surahReference: "16:16",
+  unlockedAtPoints: 25,
   kosakata: [
-    { arab: "نَجْم", latin: "Najm", arti: "Bintang", artiEn: "Star", contohAyat: "وَالنَّجْمِ إِذَا هَوَى" }
+    { arab: "نَجْم", latin: "Najm", arti: "Bintang", artiEn: "Star", contohAyat: "وَعَلَامَاتٍ ۚ وَبِالنَّجْمِ هُمْ يَهْتَدُونَ" }
   ],
   balita: {
-    text: { id: "Wah, lihat ke atas! Ada kerlap-kerlip bintang! ✨", en: "Wow, look up! There are twinkling stars! ✨" },
-    audioTranscript: { id: "Bintang itu besar sekali loh, tapi karena jauuuh, jadinya terlihat kecil seperti lampu kelap-kelip.", en: "Stars are actually very big, but because they are so far away, they look like tiny twinkling lights." },
+    text: { id: "Kelap-kelip di langit malam! ⭐ Bintang itu seperti lampu-lampu kecil yang dipasang di atas langit.", en: "Twinkle-twinkle in the night sky! ⭐ Stars are like tiny lights installed up in the sky." },
+    audioTranscript: { id: "Wah, langit malam indah sekali penuh dengan bintang! Bintang terlihat kecil karena jaraknya sangat jauuuh dari kita.", en: "Wow, the night sky is so beautiful full of stars! Stars look small because they are so faaar away from us." },
     quiz: {
-      question: { id: "Kapan kita biasanya melihat bintang?", en: "When do we usually see stars?" },
+      question: { id: "Kapan kita bisa melihat banyak bintang berkelap-kelip di langit?", en: "When can we see lots of stars twinkling in the sky?" },
       options: [
-        { text: { id: "Pagi hari", en: "Morning" } },
-        { text: { id: "Malam hari", en: "Night" } },
-        { text: { id: "Saat hujan", en: "When it rains" } }
+        { text: { id: "Siang hari", en: "Daytime" } },
+        { text: { id: "Malam hari", en: "Nighttime" } },
+        { text: { id: "Saat hujan deras", en: "During heavy rain" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Bintang sebenarnya adalah bola gas raksasa yang sangat panas! Matahari kita juga sebuah bintang lho. Allah menciptakan bintang untuk menghiasi langit malam dan sebagai petunjuk arah.", en: "A star is actually a giant, super hot ball of gas! Our Sun is also a star. Allah created stars to decorate the night sky and as a guide for direction." },
+    text: { id: "Bintang sebenarnya adalah bola gas panas berukuran super raksasa yang bercahaya terang. Karena jaraknya miliaran kilometer dari Bumi, mereka jadi terlihat sekecil titik cahaya!", en: "Stars are actually super giant balls of hot gas that shine brightly. Because they are billions of kilometers away from Earth, they look like tiny dots of light!" },
     facts: [
-      { id: "Matahari adalah bintang yang paling dekat dengan Bumi.", en: "The Sun is the closest star to Earth." },
-      { id: "Warna bintang berbeda-beda, ada yang merah, kuning, dan biru! Bintang biru itu paling panas.", en: "Stars have different colors, there are red, yellow, and blue! Blue stars are the hottest." },
-      { id: "Bintang digunakan nelayan zaman dulu sebagai kompas alami di malam hari.", en: "Stars were used by fishermen in the past as a natural compass at night." }
+      { id: "Matahari yang menyinari kita di siang hari sebenarnya adalah sebuah Bintang lho! Hanya saja jaraknya paling dekat dengan Bumi.", en: "The sun that shines on us during the day is actually a Star you know! It's just the closest one to Earth." },
+      { id: "Bintang tidak berkelap-kelip dari luar angkasa. Cahayanya terlihat berkelip karena harus menembus udara Bumi yang terus bergerak.", en: "Stars don't twinkle from space. Their light appears to twinkle because it has to pass through Earth's moving air." },
+      { id: "Bintang punya warna yang berbeda. Ada bintang yang warnanya merah, kuning, dan ada yang biru yang paling panas!", en: "Stars have different colors. There are red stars, yellow stars, and blue ones which are the hottest!" }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَعَلَامَاتٍ ۚ وَبِالنَّجْمِ هُمْ يَهْتَدُونَ",
+      transliteration: "Wa 'alaamaat, wa bin-najmi hum yahtaduun",
+      translation: { id: "Dan (Dia ciptakan) tanda-tanda (penunjuk jalan). Dan dengan bintang-bintang itulah mereka mendapat petunjuk.", en: "And landmarks. And by the stars they are [also] guided." },
+      context: { id: "Dulu sebelum ada kompas dan GPS, para pelaut di laut lepas menggunakan posisi bintang untuk mengetahui arah.", en: "Before compasses and GPS, sailors in the open sea used the position of stars to know directions." }
+    },
+    quiz: {
+      question: { id: "Apa bintang yang paling dekat dengan planet Bumi kita?", en: "What is the closest star to our planet Earth?" },
+      options: [
+        { text: { id: "Bintang Sirius", en: "Sirius Star" } },
+        { text: { id: "Matahari", en: "The Sun" } },
+        { text: { id: "Bulan", en: "The Moon" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Alam semesta punya milyaran triliun bintang! Bintang paling terang di malam hari bernama Sirius. Masya Allah, 1400 tahun lalu, Al-Qur'an sudah menyebutkan tentang bintang yang bersinar menembus kegelapan malam, yang sekarang kita tahu memancarkan cahayanya sendiri dari reaksi fusi nuklir di intinya!", en: "The universe has billions of trillions of stars! The brightest star in the night sky is Sirius. Masya Allah, 1400 years ago, the Quran already mentioned about the star of piercing brightness, which we now know emits its own light from nuclear fusion reactions in its core!" },
+    text: { id: "Bintang adalah bola plasma raksasa yang menghasilkan energinya sendiri melalui reaksi fusi nuklir (mengubah hidrogen menjadi helium) di intinya. Sejak zaman kuno manusia menggunakan bintang sebagai peta kosmik. Begitu sempurnanya desain semesta, sehingga Al-Qur'an sejak abad ke-7 sudah menyatakan fungsi bintang sebagai sistem navigasi (petunjuk arah) bagi manusia!", en: "Stars are giant plasma balls that generate their own energy through nuclear fusion (turning hydrogen into helium) at their core. Since ancient times humans have used stars as a cosmic map. So perfect is the design of the universe, that the Quran since the 7th century already stated the function of stars as a navigation system for humans!" },
+    anatomy: [
+      { part: { id: "Inti (Core)", en: "Core" }, desc: { id: "Pusat bintang super panas tempat terjadinya fusi nuklir dahsyat.", en: "The super hot center of a star where explosive nuclear fusion happens." } },
+      { part: { id: "Korona", en: "Corona" }, desc: { id: "Lapisan atmosfer terluar bintang yang terlihat seperti mahkota cahaya.", en: "The outermost atmospheric layer of a star that looks like a crown of light." } }
+    ],
+    wowFactor: { id: "HAH?! Ketika sebuah bintang raksasa meledak dan mati (Supernova), ledakannya bisa lebih terang dari satu galaksi utuh! Dari debu ledakan itulah terbentuk planet-planet berbatu seperti Bumi kita ini!", en: "WOW?! When a giant star explodes and dies (Supernova), its explosion can be brighter than an entire galaxy! It is from the dust of this explosion that rocky planets like our Earth are formed!" },
     quranVerse: {
-      arabic: "النَّجْمُ الثَّاقِبُ",
-      transliteration: "An-najmuth-thaaqib",
-      translation: { id: "(yaitu) bintang yang cahayanya menembus,", en: "It is the piercing star." }
+      arabic: "وَالسَّمَاءِ وَالطَّارِقِ ۝ وَمَا أَدْرَاكَ مَا الطَّارِقُ ۝ النَّجْمُ الثَّاقِبُ",
+      transliteration: "Was-samaa'i wath-thaariq. Wa maa adraaka math-thaariq. An-najmuts-tsaaqib.",
+      translation: { id: "Demi langit dan yang datang pada malam hari. Tahukah kamu apakah yang datang pada malam hari itu? (Yaitu) bintang yang cahayanya menembus.", en: "By the sky and the night comer. And what can make you know what is the night comer? It is the piercing star." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Reaksi fisika apa yang terjadi di dalam inti bintang sehingga menghasilkan cahaya sangat terang?", en: "What physical reaction occurs inside a star's core that produces such bright light?" },
+        options: [
+          { text: { id: "Pembakaran Batu Bara", en: "Coal Burning" } },
+          { text: { id: "Reaksi Fusi Nuklir", en: "Nuclear Fusion Reaction" } },
+          { text: { id: "Gesekan Magnet Bumi", en: "Earth's Magnetic Friction" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

@@ -9,42 +9,64 @@ export const meteorData: ObjectData = {
   scientificName: "Meteoroid",
   surahName: "Al-Mulk",
   surahReference: "67:5",
-  unlockedAtPoints: 50,
+  unlockedAtPoints: 30,
   kosakata: [
-    { arab: "شِهَاب", latin: "Shihab", arti: "Bintang Jatuh/Meteor", artiEn: "Shooting Star/Meteor", contohAyat: "Meteor yang menyala mengejar setan" }
+    { arab: "شِهَاب", latin: "Shihaab", arti: "Meteor", artiEn: "Meteor", contohAyat: "Meteor jatuh di langit terlihat seperti bintang jatuh." }
   ],
   balita: {
-    text: { id: "Wah, ada bintang jatuh! 🌠 Eits, tapi itu bukan bintang sungguhan, itu batu angkasa yang terbakar saat masuk ke Bumi! Wussss!", en: "Wow, a shooting star! 🌠 Wait, but it's not a real star, it's a space rock burning up as it enters Earth! Whoosh!" },
-    audioTranscript: { id: "Lihat ke langit! Cahaya yang melesat cepat itu namanya meteor. Allah melindung Bumi dari batu angkasa dengan membakarnya sebelum sampai ke tanah.", en: "Look at the sky! That fast-moving light is called a meteor. Allah protects Earth from space rocks by burning them before they reach the ground." },
+    text: { id: "Horeee! Ada bintang jatuh berkelip di langit malam! Wussss! 🌠", en: "Hooray! There's a shooting star twinkling in the night sky! Whoosh! 🌠" },
+    audioTranscript: { id: "Bintang jatuh itu namanya Meteor, batu luar angkasa yang terbakar karena sangat cepat.", en: "A shooting star is called a Meteor, a space rock burning up because it's so fast." },
     quiz: {
-      question: { id: "Sebenarnya, bintang jatuh (meteor) itu terbuat dari apa?", en: "Actually, what is a shooting star (meteor) made of?" },
+      question: { id: "Orang-orang sering menyebut meteor sebagai apa?", en: "What do people often call a meteor?" },
       options: [
-        { text: { id: "Cahaya senter", en: "Flashlight beam" } },
-        { text: { id: "Batu angkasa yang terbakar", en: "Burning space rock" } },
-        { text: { id: "Lampu terbang", en: "Flying lamp" } }
+        { text: { id: "Bintang diam", en: "Quiet star" } },
+        { text: { id: "Bintang jatuh", en: "Shooting star" } },
+        { text: { id: "Bulan purnama", en: "Full moon" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Meteor asalnya dari batu angkasa (meteoroid) yang nyasar ke Bumi. Saat menabrak udara Bumi dengan sangat cepat, batu itu jadi super panas dan menyala terang!", en: "Meteors come from space rocks (meteoroids) that stray to Earth. When they hit Earth's air super fast, the rocks get super hot and glow brightly!" },
+    text: { id: "Meteor bukan bintang beneran, loh! Meteor adalah batu atau debu luar angkasa (meteoroid) yang menabrak lapisan udara Bumi. Gesekan yang kuat membuatnya sangat panas dan terbakar terang. Kadang ada pertunjukan 'Hujan Meteor' yang keren banget!", en: "Meteors aren't real stars, you know! A meteor is space rock or dust (meteoroid) that crashes into Earth's air layer. The strong friction makes it very hot and burns brightly. Sometimes there is a really cool 'Meteor Shower' show!" },
     facts: [
-      { id: "Setiap hari ada jutaan meteor yang jatuh ke Bumi, tapi hampir semuanya hangus terbakar di udara! 🛡️", en: "Every day millions of meteors fall to Earth, but almost all of them burn up entirely in the air! 🛡️" },
-      { id: "Kadang kita bisa melihat Hujan Meteor, di mana ada banyak sekali bintang jatuh dalam satu malam!", en: "Sometimes we can see a Meteor Shower, where there are lots of shooting stars in one night!" },
-      { id: "Kalau batunya tidak habis terbakar dan menabrak tanah, batu itu disebut Meteorit.", en: "If the rock doesn't burn up completely and hits the ground, it's called a Meteorite." }
+      { id: "Saat batu masih di luar angkasa, ia disebut Meteoroid.", en: "When the rock is still in outer space, it's called a Meteoroid." },
+      { id: "Saat melintas menyala di langit bumi, ia disebut Meteor.", en: "When it streaks and burns in Earth's sky, it is called a Meteor." },
+      { id: "Jika batu itu jatuh sampai ke tanah tanpa habis terbakar, ia disebut Meteorit.", en: "If the rock falls to the ground without burning completely, it is called a Meteorite." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِّلشَّيَاطِينِ",
+      transliteration: "Wa laqad zayyannas-samaa'ad-dunyaa bimashaabiiha wa ja'alnaahaa rujuumal lish-shayaathiin",
+      translation: { id: "Dan sesungguhnya Kami telah menghiasi langit yang dekat dengan bintang-bintang, dan Kami menjadikannya alat-alat pelempar syaitan.", en: "And We have certainly beautified the nearest heaven with stars and have made [from] them what is thrown at the devils." },
+      context: { id: "Allah menjelaskan bahwa kilatan meteor di langit malam tidak hanya indah, tapi juga merupakan bentuk perlindungan langit.", en: "Allah explains that the flash of meteors in the night sky is not only beautiful, but also a form of protection for the heavens." }
+    },
+    quiz: {
+      question: { id: "Batu luar angkasa yang berhasil jatuh sampai menyentuh tanah bumi disebut apa?", en: "What is a space rock that successfully falls and touches Earth's ground called?" },
+      options: [
+        { text: { id: "Meteor", en: "Meteor" } },
+        { text: { id: "Meteorit", en: "Meteorite" } },
+        { text: { id: "Meteoroid", en: "Meteoroid" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Kecepatan meteor masuk ke Bumi bisa mencapai 250.000 km/jam! HAH?! Gesekan dengan atmosfer menciptaan panas hingga 1600°C yang menghancurkan batu tersebut menjadi debu. Inilah tameng tak terlihat pelindung Bumi! 1400 tahun lalu, Al-Qur'an menceritakan bahwa langit dihiasi lampu-lampu (bintang) dan panah api (meteor) sebagai penjagaan.", en: "Meteors hit Earth at speeds up to 250,000 km/h! HAH?! Friction with the atmosphere creates heat up to 1600°C, crushing the rock into dust. This is Earth's invisible shield! 1400 years ago, the Quran told that the sky is adorned with lamps (stars) and flaming arrows (meteors) as a guard." },
+    text: { id: "Setiap harinya, ribuan ton debu meteoroid menghantam atmosfer Bumi. Bayangkan jika Allah tidak menciptakan atmosfer! Bumi kita akan terus-menerus dihantam batuan mematikan dari angkasa. Atmosfer bertindak sebagai perisai yang membakar habis meteor-meteor tersebut, menjadikannya kilatan indah yang aman bagi kehidupan kita di bawahnya.", en: "Every day, thousands of tons of meteoroid dust hit Earth's atmosphere. Imagine if Allah didn't create the atmosphere! Our Earth would constantly be hit by deadly rocks from space. The atmosphere acts as a shield that burns up these meteors, turning them into beautiful flashes that are safe for our life below." },
+    anatomy: [
+      { part: { id: "Jejak Ionisasi", en: "Ionization Trail" }, desc: { id: "Jalur udara bercahaya yang ditinggalkan meteor saat ia melesat panas menembus atmosfer atas.", en: "The glowing path of air left by a meteor as it speeds hotly through the upper atmosphere." } },
+      { part: { id: "Kerak Fusi", en: "Fusion Crust" }, desc: { id: "Lapisan tipis berwarna hitam seperti kaca pada permukaan meteorit akibat panas ekstrem saat jatuh.", en: "A thin black glass-like layer on the surface of a meteorite caused by extreme heat while falling." } }
+    ],
+    wowFactor: { id: "Hujan meteor terjadi ketika Bumi melewati bekas jalur lintasan komet! Ribuan serpihan debu komet akan terbakar bersamaan menjadi meteor di langit kita.", en: "A meteor shower happens when Earth passes through the trail of a comet! Thousands of comet dust fragments will burn simultaneously into meteors in our sky." },
     quranVerse: {
-      arabic: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِلشَّيَاطِينِ",
-      transliteration: "Wa laqad zayyannas-samā'ad-dunyā bimaṣābīḥa wa ja'alnāhā rujūmal-lish-shayāṭīn",
-      translation: { id: "Dan sesungguhnya Kami telah menghiasi langit yang dekat dengan bintang-bintang, dan Kami jadikan bintang-bintang itu alat-alat pelempar syaitan.", en: "And We have certainly beautified the nearest heaven with stars and have made [from] them what is thrown at the devils." }
+      arabic: "إِلَّا مَنْ خَطِفَ الْخَطْفَةَ فَأَتْبَعَهُ شِهَابٌ ثَاقِبٌ",
+      transliteration: "Illaa man khatifal khatfata fa-atba'ahu shihaabun tsaa-qib",
+      translation: { id: "Kecuali syaitan yang mencuri-curi (pembicaraan); maka ia dikejar oleh bintang yang menyala (meteor) yang terang benderang.", en: "Except one who snatches [some words] by theft, but they are pursued by a burning flame, piercing [in brightness]." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Apa yang menyebabkan meteoroid hancur dan terbakar saat masuk ke Bumi?", en: "What causes a meteoroid to get destroyed and burn when entering Earth?" },
+        options: [{ text: { id: "Disambar petir", en: "Struck by lightning" } }, { text: { id: "Gesekan sangat kuat dengan atmosfer", en: "Very strong friction with the atmosphere" } }, { text: { id: "Meleleh karena sinar matahari", en: "Melts from sunlight" } }],
+        answerIdx: 1
+      }
+    ]
   }
 };

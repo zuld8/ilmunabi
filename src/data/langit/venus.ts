@@ -1,50 +1,108 @@
 import { ObjectData } from "../objects";
 
 export const venusData: ObjectData = {
-  slug: "venus",
-  name: { id: "Venus", en: "Venus" },
-  icon: "✨",
+  slug: "venus-terang-dekat",
+  name: {
+    id: "Venus Terang Dekat",
+    en: "Venus Terang Dekat",
+  },
+  scientificName: "Venus var. dekat",
+  surahName: "Al-Qur'an",
+  surahReference: "Ciptaan Allah",
+  icon: "🪐",
   category: "langit",
   type: "langit",
-  scientificName: "Venus",
-  surahName: "Al-An'am",
-  surahReference: "6:76",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "أَفَلَ", latin: "Afala", arti: "Tenggelam / Hilang", artiEn: "Set / Disappear", contohAyat: "Bintang yang muncul terang lalu tenggelam" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
   ],
   balita: {
-    text: { id: "Wah, cahaya apa yang terang sekali di waktu fajar? Itu planet Venus! Bintang Kejora yang sangat bersinar namun sangat puanas! 🔥⭐", en: "Wow, what is that very bright light at dawn? It's planet Venus! The Morning Star that shines so bright but is incredibly hoooot! 🔥⭐" },
-    audioTranscript: { id: "Venus itu sering disebut Bintang Kejora, padahal dia adalah planet! Dia planet paling terang dan paling panas karena ditutupi awan tebal ciptaan Allah.", en: "Venus is often called the Morning Star, even though it's a planet! It's the brightest and hottest planet because it's covered by thick clouds created by Allah." },
+    text: {
+      id: "Ini Venus Terang Dekat! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Venus Terang Dekat! An amazingly beautiful creation of Allah. 🌟",
+    },
+    audioTranscript: {
+      id: "Ini Venus Terang Dekat. Allah menciptakan Venus Terang Dekat dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Venus Terang Dekat. Allah created Venus Terang Dekat beautifully so we all become grateful.",
+    },
     quiz: {
-      question: { id: "Meski terang seperti bintang, Venus sebenarnya adalah...", en: "Even though it's bright like a star, Venus is actually a..." },
+      question: {
+        id: "Mana gambar Venus Terang Dekat?",
+        en: "Which one is the picture of Venus Terang Dekat?",
+      },
       options: [
-        { text: { id: "Planet", en: "Planet" } },
-        { text: { id: "Pesawat UFO", en: "UFO spaceship" } },
-        { text: { id: "Lampu senter", en: "Flashlight" } }
+        { text: { id: "🪐 Venus Terang Dekat", en: "🪐 Venus Terang Dekat" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 0
-    }
+      answerIdx: 0,
+    },
   },
   anak: {
-    text: { id: "Meskipun Merkurius paling dekat dengan Matahari, planet yang PALING PANAS adalah Venus! Awan tebal di Venus mengurung panas seperti oven raksasa.", en: "Even though Mercury is closest to the Sun, the HOTTEST planet is Venus! Thick clouds on Venus trap heat like a giant oven." },
+    text: {
+      id: "Fakta menarik tentang Venus Terang Dekat: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Venus Terang Dekat: It is a proof of Allah's majestic creation in the universe.",
+    },
     facts: [
-      { id: "Suhu di Venus bisa mencapai 470°C. Cukup panas untuk melelehkan logam timah! 🌡️", en: "The temperature on Venus can reach 470°C. Hot enough to melt lead metal! 🌡️" },
-      { id: "Venus berputar berlawanan arah dengan Bumi. Jadi matahari di sana terbit dari barat!", en: "Venus spins in the opposite direction of Earth. So the sun there rises in the west!" },
-      { id: "Satu hari di Venus lebih panjang daripada satu tahun di Venus (orbitnya mengelilingi matahari)!", en: "One day on Venus is longer than one year on Venus (its orbit around the sun)!" }
+      { id: "Benda langit Venus Terang Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras.", en: "Benda langit Venus Terang Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras." },
+      { id: "Lintasan orbit Venus Terang Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten.", en: "Lintasan orbit Venus Terang Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten." },
+      { id: "Cahaya bintang di sekitar Venus Terang Dekat merambat menembus ruang hampa jutaan tahun cahaya.", en: "Cahaya bintang di sekitar Venus Terang Dekat merambat menembus ruang hampa jutaan tahun cahaya." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
+      translation: {
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
+      },
+    },
+    quiz: {
+      question: {
+        id: "Siapa yang menciptakan Venus Terang Dekat dengan sempurna?",
+        en: "Who created Venus Terang Dekat perfectly?",
+      },
+      options: [
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
+      ],
+      answerIdx: 0,
+    },
   },
   explorer: {
-    text: { id: "Di planet Venus, awannya terbentuk dari asam sulfat korosif, dan hujannya bisa melarutkan logam! HAH?! Benar, inilah Efek Rumah Kaca yang ekstrim. Kisah pencarian Tuhan oleh Nabi Ibrahim juga dimulai dengan melihat bintang terang (diyakini Venus). Saat bintang itu tenggelam, beliau sadar benda langit yang hilang bukanlah Tuhan. 1400 tahun lalu, Al-Qur'an merekam pencarian logis Nabi Ibrahim ini.", en: "On planet Venus, clouds are made of corrosive sulfuric acid, and its rain can dissolve metal! HAH?! True, this is an extreme Greenhouse Effect. The story of Prophet Abraham's search for God also began by observing a bright star (believed to be Venus). When it set, he realized celestial bodies that disappear are not God. 1400 years ago, the Quran recorded this logical search by Prophet Abraham." },
-    quranVerse: {
-      arabic: "فَلَمَّا جَنَّ عَلَيْهِ اللَّيْلُ رَأَىٰ كَوْكَبًا ۖ قَالَ هَٰذَا رَبِّي ۖ فَلَمَّا أَفَلَ قَالَ لَا أُحِبُّ الْآفِلِينَ",
-      transliteration: "Falammā janna 'alayhil-laylu ra'ā kawkabā, qāla hādhā rabbī, falammā afala qāla lā uḥibbul-āfilīn",
-      translation: { id: "Ketika malam telah gelap, dia melihat sebuah bintang (lalu) dia berkata: 'Inilah Tuhanku', tetapi tatkala bintang itu tenggelam dia berkata: 'Saya tidak suka kepada yang tenggelam'.", en: "So when the night covered him [with darkness], he saw a star. He said, 'This is my lord.' But when it set, he said, 'I like not those that disappear.'" }
+    text: {
+      id: "Eksplorasi anatomi dan struktur Venus Terang Dekat mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Venus Terang Dekat reveals the brilliance of biological design and natural balance.",
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  }
+    anatomy: [
+      { part: { id: "Inti Gravitasi", en: "Inti Gravitasi" }, desc: { id: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit.", en: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit." } }
+    ],
+    wowFactor: {
+      id: "Keajaiban astrofisika Venus Terang Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Venus Terang Dekat mencegahnya meledak secara liar.",
+      en: "Keajaiban astrofisika Venus Terang Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Venus Terang Dekat mencegahnya meledak secara liar.",
+    },
+    quranVerse: {
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
+      translation: {
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
+      },
+      context: {
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
+      },
+    },
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Venus Terang Dekat?",
+          en: "What is the primary wisdom of scientific signs regarding Venus Terang Dekat?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
+      },
+    ],
+  },
 };

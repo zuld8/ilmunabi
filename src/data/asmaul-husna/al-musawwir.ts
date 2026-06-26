@@ -1,3 +1,4 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { AsmaulHusnaData } from "../objects";
 
 export const alMusawwirData: AsmaulHusnaData = {

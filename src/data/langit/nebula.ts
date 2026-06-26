@@ -1,6 +1,6 @@
 import { ObjectData } from "../objects";
 
-export const nebulaCincinData: ObjectData = {
+export const nebulaData: ObjectData = {
   slug: "nebula-cincin",
   name: { id: "Nebula Cincin", en: "Ring Nebula" },
   icon: "🪐",

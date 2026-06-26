@@ -5,7 +5,7 @@ import { HewanObjects } from "./hewan";
 import { TumbuhanObjects } from "./tumbuhan";
 import { AlamObjects } from "./alam";
 import { TubuhObjects } from "./tubuh";
-import { nabiObjects } from "./nabi";
+import { NabiObjects } from "./nabi";
 import { asmaulHusnaObjects } from "./asmaul-husna";
 import { LangitObjects } from "./langit";
 
@@ -16,7 +16,7 @@ export const objectsData: LearningObject[] = [
   ...TumbuhanObjects,
   ...AlamObjects,
   ...TubuhObjects,
-  ...nabiObjects,
+  ...NabiObjects,
   ...asmaulHusnaObjects,
   ...LangitObjects,
 ];

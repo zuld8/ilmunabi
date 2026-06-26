@@ -5,46 +5,72 @@ export const bulanData: ObjectData = {
   name: { id: "Bulan", en: "Moon" },
   icon: "🌙",
   category: "alam",
-  type: "alam",
+  type: "langit",
   scientificName: "Luna",
-  surahName: "Al-Qamar",
-  surahReference: "54:1",
-  unlockedAtPoints: 20,
+  surahName: "Yasin",
+  surahReference: "36:39",
+  unlockedAtPoints: 30,
   kosakata: [
-    { arab: "قَمَر", latin: "Qamar", arti: "Bulan", artiEn: "Moon", contohAyat: "اقْتَرَبَتِ السَّاعَةُ وَانْشَقَّ الْقَمَرُ" }
+    { arab: "قَمَر", latin: "Qamar", arti: "Bulan", artiEn: "Moon", contohAyat: "وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ" }
   ],
   balita: {
-    text: { id: "Halo bulan purnama yang cantik! Bentukmu bulat dan terang! 🌝", en: "Hello beautiful full moon! Your shape is round and bright! 🌝" },
-    audioTranscript: { id: "Bulan kadang bentuknya bulat penuh, tapi kadang seperti pisang sabit. Bulan selalu menemani kita tidur.", en: "Sometimes the moon is completely round, but sometimes it looks like a crescent banana. The moon always accompanies us to sleep." },
+    text: { id: "Bulan itu cantik sekali! 🌙 Kadang bentuknya bulat penuh seperti bola, kadang melengkung seperti pisang!", en: "The moon is so pretty! 🌙 Sometimes it's round like a ball, sometimes it's curved like a banana!" },
+    audioTranscript: { id: "Bulan menemani kita saat malam gelap. Bulan bersinar terang menjaga Bumi sebelum matahari terbit kembali besok pagi.", en: "The moon accompanies us when the night is dark. The moon shines brightly guarding the Earth before the sun rises again tomorrow morning." },
     quiz: {
-      question: { id: "Bulan yang bentuknya seperti pisang disebut apa?", en: "What is the moon that looks like a banana called?" },
+      question: { id: "Bentuk bulan yang terlihat melengkung seperti pisang di langit malam disebut bulan apa?", en: "The moon shape that looks curved like a banana in the night sky is called what moon?" },
       options: [
-        { text: { id: "Bulan Purnama", en: "Full Moon" } },
+        { text: { id: "Bulan Kotak", en: "Box Moon" } },
         { text: { id: "Bulan Sabit", en: "Crescent Moon" } },
-        { text: { id: "Bulan Bintang", en: "Star Moon" } }
+        { text: { id: "Bulan Segitiga", en: "Triangle Moon" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Bulan tidak punya cahayanya sendiri loh! Cahaya bulan yang kita lihat itu pantulan dari sinar matahari, seperti cermin raksasa. Allah menjadikan bulan sebagai penunjuk kalender Hijriyah bagi umat Islam.", en: "The moon doesn't have its own light! The moonlight we see is a reflection of sunlight, like a giant mirror. Allah made the moon as a guide for the Hijri calendar for Muslims." },
+    text: { id: "Bulan adalah teman terdekat Bumi di luar angkasa! Bulan itu sebenarnya tidak punya cahaya sendiri lho. Dia bersinar terang karena memantulkan cahaya dari Matahari seperti sebuah cermin raksasa.", en: "The moon is Earth's closest friend in space! The moon actually doesn't have its own light, you know. It shines brightly because it reflects light from the Sun like a giant mirror." },
     facts: [
-      { id: "Satu hari di bulan sama dengan 29.5 hari di Bumi!", en: "One day on the moon is equal to 29.5 days on Earth!" },
-      { id: "Jejak kaki astronot di bulan tidak akan pernah hilang karena tidak ada angin di sana.", en: "Astronauts' footprints on the moon will never disappear because there is no wind there." },
-      { id: "Gravitasi bulan yang menarik air laut membuat terjadinya pasang surut laut di Bumi.", en: "The moon's gravity that pulls seawater causes ocean tides on Earth." }
+      { id: "Manusia pernah mendarat di Bulan lho! Karena di sana tidak ada angin, jejak sepatu astronot itu akan tetap ada selamanya.", en: "Humans have landed on the Moon! Because there is no wind there, the astronauts' shoe prints will stay there forever." },
+      { id: "Permukaan bulan penuh dengan lubang-lubang besar yang disebut Kawah, karena sering ditabrak oleh batu angkasa (meteor).", en: "The moon's surface is full of big holes called Craters, because it's often hit by space rocks (meteors)." },
+      { id: "Bulan bergerak mengelilingi Bumi sambil berputar pelan, makanya kita selalu melihat sisi wajah Bulan yang sama.", en: "The moon orbits the Earth while spinning slowly, that's why we always see the exact same side of the Moon." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ حَتَّىٰ عَادَ كَالْعُرْجُونِ الْقَدِيمِ",
+      transliteration: "Wal-qamara qaddarnaahu manaazila hattaa 'aada kal-'urjuunil-qadiim",
+      translation: { id: "Dan telah Kami tetapkan bagi bulan manzilah-manzilah, sehingga (setelah dia sampai ke manzilah yang terakhir) kembalilah dia sebagai bentuk tandan yang tua.", en: "And We have decreed for the moon phases, until it returns like the old dried curved date stalk." },
+      context: { id: "Allah mengatur bentuk bulan berubah-ubah (sabit, purnama) agar manusia bisa menggunakannya sebagai kalender perhitungan bulan.", en: "Allah sets the moon's shape to change (crescent, full) so humans can use it as a calendar to count months." }
+    },
+    quiz: {
+      question: { id: "Dari mana asal cahaya Bulan yang bersinar di malam hari?", en: "Where does the moonlight that shines at night come from?" },
+      options: [
+        { text: { id: "Dari lampu raksasa di Bulan", en: "From a giant lamp on the Moon" } },
+        { text: { id: "Pantulan cahaya Matahari", en: "Reflection of the Sun's light" } },
+        { text: { id: "Dari bintang yang menempel", en: "From attached stars" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Bulan adalah satelit alami Bumi satu-satunya. Tanpa bulan, Bumi akan berputar jauh lebih cepat dan cuaca akan sangat ekstrem. Al-Qur'an secara menakjubkan mendeskripsikan matahari bersinar (siraj) tapi bulan bercahaya (nur), yang artinya bulan hanya memantulkan cahaya, fakta yang baru dipahami sains modern!", en: "The moon is Earth's only natural satellite. Without the moon, Earth would spin much faster and the weather would be very extreme. The Quran amazingly describes the sun as a burning light (siraj) but the moon as a light (nur), meaning the moon only reflects light, a fact only recently understood by modern science!" },
+    text: { id: "Secara astronomi, Bulan adalah satelit alami Bumi yang terjebak dalam gravitasi planet kita. Bulan menyebabkan pasang surut air laut yang menjaga ekosistem pesisir. Menakjubkannya, Al-Qur'an secara akurat mendeskripsikan siklus fase orbit bulan seperti 'tandan kurma tua' (melengkung), 14 abad sebelum ilmu astronomi modern memetakannya secara presisi!", en: "Astronomically, the Moon is Earth's natural satellite trapped in our planet's gravity. The Moon causes ocean tides that maintain coastal ecosystems. Amazingly, the Quran accurately describes the lunar orbital phase cycle as an 'old dried date stalk' (curved), 14 centuries before modern astronomy mapped it precisely!" },
+    anatomy: [
+      { part: { id: "Kerak Bulan (Crust)", en: "Lunar Crust" }, desc: { id: "Permukaan berbatu dan berdebu tebal tempat terbentuknya kawah-kawah.", en: "The rocky and thick dusty surface where craters are formed." } },
+      { part: { id: "Maria (Lautan Basalt)", en: "Maria (Basalt Plains)" }, desc: { id: "Bercak gelap di bulan yang merupakan lautan lava beku dari gunung berapi kuno.", en: "Dark patches on the moon which are frozen lava seas from ancient volcanoes." } }
+    ],
+    wowFactor: { id: "HAH?! Ternyata setiap tahun Bulan menjauh dari Bumi sekitar 3,8 sentimeter! Berarti jutaan tahun yang lalu, Bulan terlihat sangat-sangat besar di langit karena posisinya jauh lebih dekat dari sekarang!", en: "WOW?! Every year the Moon moves away from Earth by about 3.8 centimeters! This means millions of years ago, the Moon looked incredibly huge in the sky because it was much closer than it is now!" },
     quranVerse: {
-      arabic: "تَبَارَكَ الَّذِي جَعَلَ فِي السَّمَاءِ بُرُوجًا وَجَعَلَ فِيهَا سِرَاجًا وَقَمَرًا مُنِيرًا",
-      transliteration: "Tabaarakalladzii ja'ala fis-samaa'i buruujan wa ja'ala fiihaa siraajan wa qamaran muniiran",
-      translation: { id: "Mahasuci Allah yang menjadikan di langit gugusan bintang-bintang dan Dia juga menjadikan padanya matahari dan bulan yang bersinar.", en: "Blessed is He who has placed in the sky great stars and placed therein a [burning] lamp and luminous moon." }
+      arabic: "هُوَ الَّذِي جَعَلَ الشَّمْسَ ضِيَاءً وَالْقَمَرَ نُورًا",
+      transliteration: "Huwal-ladzii ja'alasy-syamsa dhiyaa'aw wal-qamara nuuraa",
+      translation: { id: "Dialah yang menjadikan matahari bersinar (menghasilkan cahaya sendiri) dan bulan bercahaya (memantulkan cahaya).", en: "It is He who made the sun a shining light (producing its own) and the moon a derived light (reflecting)." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Bagaimana cara Al-Qur'an mendeskripsikan bentuk bulan sabit terakhir sebelum hilang?", en: "How does the Quran describe the shape of the final crescent moon before it disappears?" },
+        options: [
+          { text: { id: "Seperti pisang yang matang", en: "Like a ripe banana" } },
+          { text: { id: "Seperti tandan kurma tua yang melengkung", en: "Like an old curved dried date stalk" } },
+          { text: { id: "Seperti cincin yang bersinar terang", en: "Like a brightly shining ring" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

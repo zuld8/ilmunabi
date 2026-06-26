@@ -7,44 +7,71 @@ export const rambutData: ObjectData = {
   category: "tubuh",
   type: "tubuh",
   scientificName: "Capillus",
-  surahName: "Maryam",
-  surahReference: "19:4",
-  unlockedAtPoints: 10,
+  surahName: "Al-Hajj",
+  surahReference: "22:5",
+  unlockedAtPoints: 130,
   kosakata: [
-    { arab: "شَعْرٌ", latin: "sya'run", arti: "Rambut", artiEn: "Hair", contohAyat: "وَاشْتَعَلَ الرَّأْسُ شَيْبًا" }
+    { arab: "شَعْرٌ", latin: "Sha'run", arti: "Rambut", artiEn: "Hair", contohAyat: "Wamin aswaafihaa wa awbaarihaa wa ash'aarihaa (Dan dari bulu domba, bulu unta dan bulu kambing - An-Nahl:80)." }
   ],
   balita: {
-    text: { id: "Rambut di kepalaku halus! 💇", en: "The hair on my head is soft! 💇" },
-    audioTranscript: { id: "Rambut tumbuh memanjang di kepala kita. Rambut melindungi kepala kita dari panas matahari biar nggak kepanasan!", en: "Hair grows long on our head. Hair protects our head from the hot sun so we don't get overheated!" },
+    text: { id: "Sisir rambutmu pelan-pelan. Wah, rapi sekali! Rambut itu seperti topi pelindung kepala kita supaya tidak kepanasan saat bermain di luar. ☀️👦", en: "Comb your hair gently. Wow, so neat! Hair is like a protective hat for our head so it doesn't get too hot playing outside. ☀️👦" },
+    audioTranscript: { id: "Rambut kita bisa panjang lho! Jangan lupa disisir supaya tidak kusut.", en: "Our hair can grow long, you know! Don't forget to comb it so it doesn't get tangled." },
     quiz: {
-      question: { id: "Kapan rambut kita dicukur biar rapi?", en: "When do we cut our hair so it's neat?" },
+      question: { id: "Apa yang kita gunakan untuk merapikan rambut?", en: "What do we use to tidy our hair?" },
       options: [
-        { text: { id: "Saat sudah panjang", en: "When it gets long" } },
-        { text: { id: "Setiap jam", en: "Every hour" } },
-        { text: { id: "Saat tidur", en: "While sleeping" } }
+        { text: { id: "Sikat gigi", en: "Toothbrush" } },
+        { text: { id: "Sisir", en: "Comb" } },
+        { text: { id: "Sendok", en: "Spoon" } }
       ],
-      answerIdx: 0
+      answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Setiap helai rambut kita tumbuh dari kantong kecil bernama folikel di kulit kepala. Folikel juga memberi warna pada rambut, ada yang hitam, coklat, atau pirang! Nanti kalau kita sudah tua, warna itu hilang dan rambut kita jadi putih bernama uban.", en: "Every strand of our hair grows from a tiny pocket called a follicle in the scalp. The follicle also gives color to the hair, some are black, brown, or blonde! Later when we get old, that color fades and our hair turns white, called gray hair." },
+    text: { id: "Rambut itu seperti mahkota alami! Rambut melindungi kulit kepala kita dari sinar matahari yang terik dan menjaga kepala tetap hangat saat cuaca dingin. Rasulullah ﷺ sangat suka menjaga kebersihan rambutnya dan meminyakinya agar selalu rapi. Ayo jaga kebersihan rambut dengan keramas teratur! 🧴🚿", en: "Hair is like a natural crown! Hair protects our scalp from the hot sun and keeps the head warm in cold weather. The Prophet ﷺ really loved keeping his hair clean and oiling it to always stay neat. Let's keep our hair clean by washing it regularly! 🧴🚿" },
     facts: [
-      { id: "Manusia punya sekitar 100.000 helai rambut di kepalanya!", en: "Humans have about 100,000 strands of hair on their head!" },
-      { id: "Satu helai rambut bisa menahan beban seberat buah apel.", en: "One strand of hair can hold the weight of an apple." },
-      { id: "Rambut kita terus tumbuh 1 sentimeter setiap bulannya.", en: "Our hair continuously grows about 1 centimeter every month." }
+      { id: "Satu helai rambut manusia cukup kuat untuk menahan berat sebuah apel kecil! 🍎", en: "A single strand of human hair is strong enough to hold the weight of a small apple! 🍎" },
+      { id: "Rambut adalah jaringan yang tumbuh paling cepat kedua di tubuh, setelah sumsum tulang. 🏃‍♂️", en: "Hair is the second fastest-growing tissue in the body, after bone marrow. 🏃‍♂️" },
+      { id: "Warna rambut berasal dari zat yang sama dengan penentu warna kulit, yaitu melanin. 🎨", en: "Hair color comes from the same substance that determines skin color, melanin. 🎨" }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ",
+      transliteration: "Yaa banee Aadama khuthoo zeenatakum 'inda kulli masjid",
+      translation: { id: "Hai anak Adam, pakailah pakaianmu yang indah di setiap (memasuki) mesjid.", en: "O children of Adam, take your adornment at every masjid." },
+      context: { id: "Menjaga kerapian tubuh (termasuk rambut) adalah sunnah dan dianjurkan saat beribadah.", en: "Keeping the body neat (including hair) is sunnah and recommended when worshiping." }
+    },
+    quiz: {
+      question: { id: "Apa fungsi rambut untuk kepala kita saat cuaca sedang panas terik?", en: "What is the function of hair for our head when the weather is scorching hot?" },
+      options: [
+        { text: { id: "Membuat kepala semakin panas", en: "Makes the head hotter" } },
+        { text: { id: "Sebagai pelindung dari sinar matahari", en: "As protection from the sun's rays" } },
+        { text: { id: "Menyerap air hujan", en: "Absorbing rainwater" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Rambut tersusun dari protein kuat bernama keratin. Pigmen melanin di dalamnya menentukan warna rambut. Ketika produksi melanin menurun seiring bertambahnya usia, rambut memutih (uban). Al-Qur'an merekam kisah doa Nabi Zakariya yang menyebutkan kepalanya yang telah dipenuhi uban sebagai tanda kerendahan hatinya kepada Allah.", en: "Hair is made of a strong protein called keratin. Melanin pigment inside determines hair color. When melanin production decreases with age, hair turns white (graying). The Quran records the story of Prophet Zechariah's prayer, mentioning his head filled with gray hair as a sign of his humility to Allah." },
+    text: { id: "Setiap helai rambut di kepalamu memiliki siklus hidupnya sendiri! Rambut tumbuh dari akar (folikel) yang tersembunyi di bawah kulit kepala. Ada fase tumbuh (selama beberapa tahun), fase istirahat, dan fase rontok. Itulah mengapa normal jika ada puluhan helai rambutmu yang rontok setiap hari. Hebatnya, Allah menciptakan bentuk folikel yang berbeda-beda: folikel bundar menghasilkan rambut lurus, folikel oval menghasilkan rambut bergelombang, dan folikel pipih menghasilkan rambut keriting! Keberagaman bentuk ini sangat indah. 🧬👩‍𱁱", en: "Every strand of hair on your head has its own life cycle! Hair grows from roots (follicles) hidden under the scalp. There is a growing phase (for several years), a resting phase, and a shedding phase. That's why it's normal for dozens of hairs to fall out every day. Amazingly, Allah created different follicle shapes: round follicles produce straight hair, oval follicles produce wavy hair, and flat follicles produce curly hair! This diversity in shape is very beautiful. 🧬👩‍𱁱" },
+    anatomy: [
+      { part: { id: "Batang Rambut", en: "Hair Shaft" }, desc: { id: "Bagian rambut yang terlihat di luar, terbuat dari protein sel mati bernama keratin.", en: "The visible part of the hair outside, made of dead cell protein called keratin." } },
+      { part: { id: "Folikel", en: "Follicle" }, desc: { id: "Kantung kecil di bawah kulit tempat rambut tumbuh.", en: "A tiny sac under the skin where the hair grows." } },
+      { part: { id: "Kelenjar Sebasea", en: "Sebaceous Gland" }, desc: { id: "Kelenjar kecil penghasil minyak alami (sebum) yang membuat rambut mengkilap.", en: "A small gland producing natural oil (sebum) that makes hair shiny." } }
+    ],
+    wowFactor: { id: "Jika tidak pernah dipotong sama sekali, rambut manusia bisa tumbuh hingga lebih dari 1 meter! Rekor dunia rambut terpanjang lebih dari 5 meter! 📏", en: "If never cut at all, human hair can grow to over 1 meter! The world record for longest hair is over 5 meters! 📏" },
     quranVerse: {
-      arabic: "قَالَ رَبِّ إِنِّي وَهَنَ الْعَظْمُ مِنِّي وَاشْتَعَلَ الرَّأْسُ شَيْبًا",
-      transliteration: "Qaala rabbi innii wahanal 'azhmu minnii wasyta'alar-ra'su syaibaa",
-      translation: { id: "Ia berkata: 'Ya Tuhanku, sesungguhnya tulangku telah lemah dan kepalaku telah ditumbuhi uban...'", en: "He said, 'My Lord, indeed my bones have weakened, and my head has filled with white...'" }
+      arabic: "خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ وَصَوَّرَكُمْ فَأَحْسَنَ صُوَرَكُمْ",
+      transliteration: "Khalaqas-samaawaati wal-arda bilhaqqi wasawwarakum fa-ahsana suwarakum",
+      translation: { id: "Dia menciptakan langit dan bumi dengan hak. Dia membentuk rupamu dan dibaguskan-Nya rupamu itu.", en: "He created the heavens and earth in truth and formed you and perfected your forms." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Apa yang menyebabkan ada rambut yang lurus dan ada rambut yang keriting?", en: "What causes some hair to be straight and some to be curly?" },
+        options: [
+          { text: { id: "Bentuk sisir yang dipakai", en: "The shape of the comb used" } },
+          { text: { id: "Perbedaan bentuk folikel rambut", en: "Differences in hair follicle shapes" } },
+          { text: { id: "Sering keramas atau tidak", en: "Whether washed often or not" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

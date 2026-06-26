@@ -7,44 +7,66 @@ export const lubangHitamData: ObjectData = {
   category: "langit",
   type: "langit",
   scientificName: "Black Hole",
-  surahName: "Al-Waqi'ah",
-  surahReference: "56:75",
-  unlockedAtPoints: 50,
+  surahName: "At-Takwir",
+  surahReference: "81:15-16",
+  unlockedAtPoints: 100,
   kosakata: [
-    { arab: "مَوَاقِع", latin: "Mawaqi'", arti: "Tempat (Jatuhnya/Beredar)", artiEn: "Places (of setting)", contohAyat: "Tempat jatuhnya bintang-bintang" }
+    { arab: "ثُقْبٌ أَسْوَد", latin: "Tsuqbun Aswad", arti: "Lubang Hitam", artiEn: "Black Hole", contohAyat: "Lubang hitam menyerap semua cahaya di dekatnya." }
   ],
   balita: {
-    text: { id: "Uwaaa! Ini Lubang Hitam! Dia seperti 'vacuum cleaner' angkasa yang sangat kuat, menyedot apa saja di dekatnya! 🌪️", en: "Uwaaa! This is a Black Hole! It's like a super strong space vacuum cleaner, sucking up anything near it! 🌪️" },
-    audioTranscript: { id: "Ini misteri besar di luar angkasa, namanya Lubang Hitam! Tarikannya sangat kuat. Benda apa saja yang lewat di dekatnya akan tertelan, Allah berkuasa menciptakan hal-hal hebat yang tersembunyi.", en: "This is a big mystery in space, called a Black Hole! Its pull is extremely strong. Anything passing nearby gets swallowed, Allah is powerful enough to create great hidden things." },
+    text: { id: "Wah, di angkasa ada sesuatu yang super misterius! Warnanya sangat gelap seperti bayangan! 🕳️", en: "Wow, in space there is something super mysterious! It is very dark like a shadow! 🕳️" },
+    audioTranscript: { id: "Lubang Hitam itu seperti magnet raksasa yang menyedot apa saja di dekatnya.", en: "A Black Hole is like a giant magnet that sucks up anything near it." },
     quiz: {
-      question: { id: "Apa kehebatan Lubang Hitam?", en: "What is the superpower of a Black Hole?" },
+      question: { id: "Warna lubang hitam itu seperti apa?", en: "What color is a black hole?" },
       options: [
-        { text: { id: "Bisa mengeluarkan permen", en: "It dispenses candy" } },
-        { text: { id: "Menyedot benda seperti vacuum cleaner", en: "Sucks things like a vacuum cleaner" } },
-        { text: { id: "Bisa bernyanyi", en: "It can sing" } }
+        { text: { id: "Kuning terang", en: "Bright yellow" } },
+        { text: { id: "Sangat gelap/hitam", en: "Very dark/black" } },
+        { text: { id: "Hijau", en: "Green" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Lubang Hitam adalah tempat di ruang angkasa di mana gravitasinya super duper kuat! Bahkan cahaya pun tidak bisa kabur darinya, makanya dia terlihat hitam gelap gulita.", en: "A Black Hole is a place in space where gravity is super duper strong! Not even light can escape it, which is why it looks pitch black." },
+    text: { id: "Lubang hitam adalah tempat di angkasa dengan gaya tarik (gravitasi) yang sangattt kuat! Saking kuatnya, bintang, planet, bahkan cahaya sekalipun tidak bisa kabur darinya kalau sudah terlalu dekat.", en: "A black hole is a place in space with a verrrry strong pulling force (gravity)! It is so strong that stars, planets, and even light cannot escape it once they get too close." },
     facts: [
-      { id: "Lubang Hitam terbentuk saat bintang raksasa meledak dan mati (disebut Supernova). 💥", en: "Black Holes are formed when giant stars explode and die (called a Supernova). 💥" },
-      { id: "Waktu berjalan lebih lambat di dekat Lubang Hitam! Seperti masuk ke mesin waktu.", en: "Time moves slower near a Black Hole! Like stepping into a time machine." },
-      { id: "Kita tidak perlu takut, karena Lubang Hitam letaknya sangaaaat jauh dari Bumi kita.", en: "We don't need to be afraid, because Black Holes are faaaar away from our Earth." }
+      { id: "Lubang hitam tidak bisa dilihat mata karena ia menelan semua cahaya.", en: "Black holes cannot be seen by the eye because they swallow all light." },
+      { id: "Lubang hitam biasanya terbentuk ketika ada bintang raksasa yang sudah tua lalu meledak keras (Supernova).", en: "Black holes usually form when a giant old star explodes violently (Supernova)." },
+      { id: "Meski mengerikan, lubang hitam tidak akan menyedot bumi kita karena jaraknya sangat jauh.", en: "Although terrifying, black holes will not suck our Earth because they are very far away." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "فَلَا أُقْسِمُ بِالْخُنَّسِ ۝ الْجَوَارِ الْكُنَّسِ",
+      transliteration: "Falaa uqsimu bil-khunnas. Al-jawaaril kunnas.",
+      translation: { id: "Sungguh, Aku bersumpah dengan bintang-bintang yang tersembunyi (tidak tampak), yang bergerak cepat dan menyapu.", en: "So I swear by the retreating stars. Those that run [their courses] and disappear (sweeping)." },
+      context: { id: "Ulama modern melihat sifat lubang hitam yang 'tersembunyi, berlari cepat, dan menyapu' benda langit mirip dengan ayat ini.", en: "Modern scholars see the characteristics of black holes being 'hidden, running fast, and sweeping' celestial objects as similar to this verse." }
+    },
+    quiz: {
+      question: { id: "Apa yang terjadi pada cahaya kalau mendekati lubang hitam?", en: "What happens to light if it gets close to a black hole?" },
+      options: [
+        { text: { id: "Terpantul kembali", en: "It reflects back" } },
+        { text: { id: "Tidak bisa kabur atau tersedot", en: "It cannot escape or gets sucked in" } },
+        { text: { id: "Bercahaya makin terang", en: "It shines brighter" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Tarikan gravitasi Lubang Hitam melengkungkan ruang dan waktu! HAH?! Batas terluar Lubang Hitam disebut Event Horizon, titik di mana tidak ada lagi jalan kembali. Semua materi dari bintang-bintang di sekitarnya yang tersedot akan hancur dan hilang tanpa jejak. 1400 tahun lalu, Al-Qur'an bersumpah dengan 'tempat jatuhnya bintang-bintang' sebagai suatu sumpah yang sangat besar.", en: "The gravitational pull of a Black Hole warps space and time! HAH?! The outer edge of a Black Hole is called the Event Horizon, the point of no return. All matter from surrounding stars that gets sucked in will be crushed and disappear without a trace. 1400 years ago, the Quran swore by 'the setting places of the stars' as an immensely great oath." },
+    text: { id: "Lubang hitam adalah salah satu misteri fisika terbesar ciptaan Allah. Ia melengkungkan ruang dan waktu! Jika kamu bisa mendekati sebuah lubang hitam (Event Horizon), waktu untukmu akan berjalan jauh lebih lambat dibanding teman-temanmu di Bumi. Sungguh, alam semesta penuh dengan keajaiban yang membuat kita semakin takjub pada Penciptanya.", en: "Black holes are one of the greatest physics mysteries of Allah's creation. They bend space and time! If you could approach a black hole (Event Horizon), time for you would run much slower compared to your friends on Earth. Indeed, the universe is full of wonders that make us more amazed by its Creator." },
+    anatomy: [
+      { part: { id: "Event Horizon", en: "Event Horizon" }, desc: { id: "Batas ujung lubang hitam. Apapun yang melewati batas ini, tak akan pernah bisa kembali lagi.", en: "The edge boundary of a black hole. Anything that crosses this boundary can never return." } },
+      { part: { id: "Singularitas", en: "Singularity" }, desc: { id: "Titik pusat di dalam lubang hitam tempat seluruh massanya hancur menjadi satu titik dengan kepadatan tak terhingga.", en: "The center point inside a black hole where all its mass is crushed into a single point with infinite density." } }
+    ],
+    wowFactor: { id: "Lubang hitam di pusat galaksi kita, Sagittarius A*, memiliki massa sebesar 4 juta kali massa Matahari kita, tapi dipadatkan dalam ruang yang sangat kecil!", en: "The black hole at the center of our galaxy, Sagittarius A*, has a mass of 4 million times our Sun, but compressed into a very small space!" },
     quranVerse: {
-      arabic: "فَلَا أُقْسِمُ بِمَوَاقِعِ النُّجُومِ ﴿٧٥﴾ وَإِنَّهُ لَقَسَمٌ لَوْ تَعْلَمُونَ عَظِيمٌ ﴿٧٦﴾",
-      transliteration: "Falā uqsimu bimawāqi'in-nujūm (75). Wa innahū laqasamul law ta'lamūna 'aẓīm (76).",
-      translation: { id: "Maka Aku bersumpah dengan tempat beredarnya (jatuhnya) bintang-bintang. Dan sesungguhnya itu adalah sumpah yang sangat besar kalau kamu mengetahui.", en: "Then I swear by the setting places of the stars. And indeed, it is an oath - if you could know - [most] great." }
+      arabic: "وَمَا أُوتِيتُم مِّنَ الْعِلْمِ إِلَّا قَلِيلًا",
+      transliteration: "Wa maa uutiitum minal-ilmi illaa qaliilaa",
+      translation: { id: "Dan tidaklah kamu diberi pengetahuan melainkan sedikit.", en: "And you have not been given of knowledge except a little." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Apa nama batas lubang hitam yang membuat cahaya pun tidak bisa kembali?", en: "What is the name of the black hole's boundary from which even light cannot return?" },
+        options: [{ text: { id: "Batas Bima Sakti", en: "Milky Way Border" } }, { text: { id: "Singularitas", en: "Singularity" } }, { text: { id: "Event Horizon", en: "Event Horizon" } }],
+        answerIdx: 2
+      }
+    ]
   }
 };

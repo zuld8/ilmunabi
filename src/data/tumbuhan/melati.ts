@@ -3,48 +3,74 @@ import { ObjectData } from "../objects";
 export const melatiData: ObjectData = {
   slug: "melati",
   name: { id: "Melati", en: "Jasmine" },
-  icon: "💮",
+  icon: "🌼",
   category: "tumbuhan",
   type: "tumbuhan",
-  scientificName: "Jasminum",
-  surahName: "Al-Baqarah",
-  surahReference: "2:164",
-  unlockedAtPoints: 130,
+  scientificName: "Jasminum sambac",
+  surahName: "Al-An'am",
+  surahReference: "6:99",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "يَاسَمِين", latin: "yaasamiin", arti: "Melati", artiEn: "Jasmine", contohAyat: "Bunga melati di pagi hari." }
+    { arab: "يَاسَمِين", latin: "Yāsamīn", arti: "Melati", artiEn: "Jasmine", contohAyat: "Wangi bunga melati di malam hari." }
   ],
   balita: {
-    text: { id: "Melati itu kecil, warnanya putih, dan wanginya sangat enak! 💮", en: "Jasmine is small, white, and smells very nice! 💮" },
-    audioTranscript: { id: "Bunga melati wanginya sangat manis apalagi di malam hari. Kita juga sering mencampur bunga melati ke dalam teh supaya tehnya jadi wangi!", en: "Jasmine flowers smell very sweet, especially at night. We also often mix jasmine flowers into tea so the tea becomes fragrant!" },
+    text: { id: "Bunga ini kecil dan berwarna putih bersih! Baunya sangat wangi, lho! 🌼 Biasanya suka dipakai untuk hiasan rambut pengantin.", en: "This flower is small and pure white! It smells very fragrant! 🌼 It is usually used as a hair accessory for brides." },
+    audioTranscript: { id: "Bunga melati kecil warnanya putih dan sangat wangi.", en: "Jasmine flowers are small, white, and very fragrant." },
     quiz: {
-      question: { id: "Warna bunga melati biasanya adalah...", en: "The color of jasmine flowers is usually..." },
+      question: { id: "Apa warna bunga melati yang biasa kita lihat?", en: "What is the color of the jasmine flower we usually see?" },
       options: [
-        { text: { id: "Biru", en: "Blue" } },
-        { text: { id: "Putih", en: "White" } },
+        { text: { id: "Merah", en: "Red" } },
+        { text: { id: "Putih bersih", en: "Pure white" } },
         { text: { id: "Hitam", en: "Black" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Melati disebut 'Puspa Bangsa' karena bunga melati putih adalah salah satu bunga nasional Indonesia! Tanaman ini hidup menjalar, jadi perlu bantuan batang atau pagar untuk bersandar.", en: "Jasmine is called 'Puspa Bangsa' because the white jasmine flower is one of Indonesia's national flowers! This plant grows as a vine, so it needs the help of a stem or fence to lean on." },
+    text: { id: "Bunga melati adalah bunga nasional bangsa kita, sering disebut Puspa Bangsa! Allah menciptakan melati dengan wangi yang lembut dan menenangkan. Bunga ini sering digunakan untuk membuat teh menjadi harum. Melati mengajarkan kita agar meskipun kecil dan sederhana, kita bisa menyebarkan kebaikan (harum) ke mana-mana!", en: "The jasmine is our nation's national flower, often called Puspa Bangsa! Allah created jasmine with a soft and calming fragrance. This flower is often used to make tea smell good. Jasmine teaches us that even if we are small and simple, we can spread goodness (fragrance) everywhere!" },
     facts: [
-      { id: "Bunga melati umumnya mekar dan paling wangi saat matahari sudah terbenam.", en: "Jasmine flowers generally bloom and are most fragrant when the sun has set." },
-      { id: "Ada sekitar 200 jenis bunga melati di seluruh dunia.", en: "There are about 200 types of jasmine flowers around the world." },
-      { id: "Teh melati sangat terkenal dan baik untuk menenangkan perut.", en: "Jasmine tea is very famous and good for soothing the stomach." }
+      { id: "Kuncup bunga melati biasanya baru terbuka atau mekar pada malam hari.", en: "Jasmine flower buds usually only open or bloom at night." },
+      { id: "Aroma melati yang paling kuat tercium pada tengah malam saat suhu mulai dingin.", en: "The strongest jasmine scent can be smelled at midnight when the temperature gets cold." },
+      { id: "Di beberapa negara, teh melati diminum untuk menyambut tamu yang datang.", en: "In some countries, jasmine tea is drunk to welcome arriving guests." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَالنَّبَاتُ الطَّيِّبُ يَخْرُجُ نَبَاتُهُ بِإِذْنِ رَبِّهِ",
+      transliteration: "Wal-nabātu aṭ-ṭayyibu yakhruju nabātuhū bi-idhni rabbih",
+      translation: { id: "Dan tanah yang baik, tanaman-tanamannya tumbuh subur dengan seizin Tuhannya...", en: "And the good land - its vegetation emerges by permission of its Lord..." },
+      context: { id: "Melati yang wangi tumbuh dari tanah yang baik berkat izin Allah.", en: "Fragrant jasmine grows from good soil by the permission of Allah." }
+    },
+    quiz: {
+      question: { id: "Kapan bunga melati biasanya mekar dan mengeluarkan aroma paling kuat?", en: "When do jasmine flowers usually bloom and release the strongest scent?" },
+      options: [
+        { text: { id: "Siang hari saat panas", en: "Daytime when it's hot" } },
+        { text: { id: "Malam hari", en: "Night time" } },
+        { text: { id: "Pagi hari saat matahari terbit", en: "Morning when the sun rises" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Zat kimia aromatik bernama benzyl asetat pada melati menghasilkan keharuman khas. Bayangkan, dari tanah yang kotor dan air biasa, sistem akar tumbuhan merakitnya menjadi senyawa paling wangi. Ini adalah keajaiban pabrik biokimia dari Yang Maha Kuasa (Al-Qadir)!", en: "An aromatic chemical substance called benzyl acetate in jasmine produces its distinctive fragrance. Imagine, from dirty soil and plain water, the plant's root system assembles it into the most fragrant compound. This is the miracle of the biochemical factory of the All-Powerful (Al-Qadir)!" },
+    text: { id: "Tahukah kamu mengapa melati mekar di malam hari? Ini adalah strategi Allah Al-Hakim (Maha Bijaksana). Karena bunganya putih, ia akan memantulkan sinar bulan sehingga tampak bercahaya dalam gelap. Warnanya yang mencolok dan wanginya yang kuat ini dirancang khusus untuk menarik ngengat (kupu-kupu malam) agar datang membantu penyerbukannya! Sungguh harmoni alam yang luar biasa.", en: "Do you know why jasmine blooms at night? This is the strategy of Allah Al-Hakim (The All-Wise). Because the flower is white, it reflects moonlight so it looks glowing in the dark. Its striking color and strong scent are specially designed to attract moths (night butterflies) to come and help with its pollination! What an extraordinary harmony of nature." },
+    anatomy: [
+      { part: { id: "Mahkota Bunga", en: "Corolla (Petals)" }, desc: { id: "Kelopak putih yang dirancang untuk memantulkan cahaya di malam hari.", en: "White petals designed to reflect light at night." } },
+      { part: { id: "Kelenjar Nektar", en: "Nectar Gland" }, desc: { id: "Menghasilkan cairan manis beraroma kuat yang memikat ngengat di malam hari.", en: "Produces strongly scented sweet liquid that lures moths at night." } }
+    ],
+    wowFactor: { id: "Dibutuhkan sekitar 8.000 kuntum bunga melati hanya untuk menghasilkan 1 ml minyak esensial melati murni!", en: "It takes about 8,000 jasmine blossoms just to produce 1 ml of pure jasmine essential oil!" },
     quranVerse: {
-      arabic: "أَلَمْ تَرَ أَنَّ اللَّهَ أَنْزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجْنَا بِهِ ثَمَرَاتٍ مُخْتَلِفًا أَلْوَانُهَا",
-      transliteration: "Alam tara annallāha anzala minas-samā'i mā'an fa akhrajnā bihi thamarātin mukhtalifan alwānuhā",
-      translation: { id: "Tidakkah kamu melihat bahwasanya Allah menurunkan air dari langit lalu Kami hasilkan dengan air itu buah-buahan yang beraneka macam warnanya.", en: "Do you not see that Allah sends down rain from the sky, and We produce thereby fruits of varying colors." }
+      arabic: "أَلَمْ تَرَ أَنَّ اللَّهَ يُسَبِّحُ لَهُ مَنْ فِي السَّمَاوَاتِ وَالْأَرْضِ",
+      transliteration: "Alam tara anna Allāha yusabbiḥu lahū man fī as-samāwāti wal-arḍi",
+      translation: { id: "Tidakkah engkau tahu bahwa kepada Allah bertasbih apa yang ada di langit dan di bumi...", en: "Do you not see that to Allah exalts whoever is in the heavens and the earth..." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Hewan apa yang paling sering membantu penyerbukan bunga melati di malam hari?", en: "What animal most often helps pollinate jasmine flowers at night?" },
+        options: [
+          { text: { id: "Ngengat (kupu-kupu malam)", en: "Moths (night butterflies)" } },
+          { text: { id: "Ikan paus", en: "Whales" } },
+          { text: { id: "Burung Elang", en: "Eagles" } }
+        ],
+        answerIdx: 0
+      }
+    ]
   }
 };

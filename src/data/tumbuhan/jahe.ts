@@ -9,42 +9,68 @@ export const jaheData: ObjectData = {
   scientificName: "Zingiber officinale",
   surahName: "Al-Insan",
   surahReference: "76:17",
-  unlockedAtPoints: 90,
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "زَنْجَبِيلٌ", latin: "zanjabiilun", arti: "Jahe", artiEn: "Ginger", contohAyat: "Jahe menghangatkan tubuh." }
+    { arab: "زَنْجَبِيل", latin: "Zanjabīl", arti: "Jahe", artiEn: "Ginger", contohAyat: "Penduduk surga minum minuman campuran jahe." }
   ],
   balita: {
-    text: { id: "Bentuknya lucu dan banyak jarinya, namanya Jahe! 🫚", en: "Its shape is funny and has many fingers, its name is Ginger! 🫚" },
-    audioTranscript: { id: "Jahe baunya wangiii! Kalau dibikin minuman hangat oleh Ibu, rasanya pedas-pedas manis dan membuat perut kita jadi nyaman.", en: "Ginger smells so fragrant! When made into a warm drink by Mom, it tastes spicy-sweet and makes our tummy feel comfortable." },
+    text: { id: "Jahe bentuknya seperti jari tangan yang gendut-gendut! Warnanya cokelat kekuningan. 🫚 Baunya sangat harum dan rasanya sedikit pedas dan hangat!", en: "Ginger looks like chubby fingers! It is yellowish-brown. 🫚 It smells very fragrant and tastes a little spicy and warm!" },
+    audioTranscript: { id: "Jahe bikin badan kita jadi hangat kalau cuaca sedang dingin.", en: "Ginger makes our body warm when the weather is cold." },
     quiz: {
-      question: { id: "Bagaimana rasa air rebusan jahe di tubuh kita?", en: "How does boiled ginger water feel in our body?" },
+      question: { id: "Apa yang kita rasakan jika meminum air rebusan jahe?", en: "What do we feel if we drink ginger boiled water?" },
       options: [
-        { text: { id: "Dingin beku", en: "Freezing cold" } },
-        { text: { id: "Hangat dan nyaman", en: "Warm and cozy" } },
-        { text: { id: "Sangat pahit dan kaku", en: "Very bitter and stiff" } }
+        { text: { id: "Badan menjadi dingin seperti es", en: "Body becomes cold like ice" } },
+        { text: { id: "Badan menjadi hangat dan nyaman", en: "Body becomes warm and comfortable" } },
+        { text: { id: "Perut jadi keroncongan", en: "Stomach starts growling" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Jahe itu umbi yang tumbuh di dalam tanah! Dia mengandung zat super yang bernama gingerol, zat pahlawan yang bisa menyembuhkan sakit tenggorokan dan perut mual, lho!", en: "Ginger is a tuber that grows underground! It contains a super substance called gingerol, a hero substance that can heal a sore throat and nausea, you know!" },
+    text: { id: "Jahe adalah akar tanaman yang hebat! Sejak dulu jahe dipakai sebagai obat untuk menyembuhkan perut sakit atau masuk angin. Allah berfirman di Al-Qur'an, bahwa penghuni surga akan diberi minuman lezat yang dicampur dengan jahe (Zanjabil)! Masya Allah, minuman surga pastilah yang paling enak di alam semesta.", en: "Ginger is a great plant root! Since a long time ago, ginger has been used as medicine to cure stomach aches or colds. Allah says in the Quran that the people of heaven will be given a delicious drink mixed with ginger (Zanjabil)! Mashallah, the drink of heaven must be the most delicious in the universe." },
     facts: [
-      { id: "Manusia sudah memakai jahe sebagai obat alami selama lebih dari 4.000 tahun.", en: "Humans have been using ginger as a natural medicine for over 4,000 years." },
-      { id: "Jahe sekeluarga dengan kunyit dan lengkuas.", en: "Ginger is in the same family as turmeric and galangal." },
-      { id: "Menghirup aroma jahe bisa menghilangkan rasa pusing.", en: "Inhaling the scent of ginger can relieve dizziness." }
+      { id: "Tanaman jahe tidak memiliki biji, ia ditanam dari potongan akarnya sendiri.", en: "Ginger plants don't have seeds, they are planted from pieces of their own roots." },
+      { id: "Rasa pedas pada jahe berasal dari minyak alami yang disebut gingerol.", en: "The spicy taste in ginger comes from a natural oil called gingerol." },
+      { id: "Zanjabil adalah sebutan jahe dalam bahasa Arab Al-Qur'an.", en: "Zanjabil is the word for ginger in the Arabic of the Quran." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  },
-  explorer: {
-    text: { id: "Tahu tidak? Jahe (Zanjabil) disebutkan di dalam Al-Qur'an sebagai campuran minuman khusus penghuni surga kelak. Di dunia saja, jahe sangat bermanfaat bagi tubuh dan membuat hangat, bayangkan selezat dan sehebat apa minuman jahe di surga buatan Allah!", en: "Did you know? Ginger (Zanjabil) is mentioned in the Quran as a special drink mixture for the dwellers of paradise. Even in this world, ginger is very beneficial for the body and keeps it warm, imagine how delicious and amazing the ginger drink in paradise made by Allah!" },
     quranVerse: {
       arabic: "وَيُسْقَوْنَ فِيهَا كَأْسًا كَانَ مِزَاجُهَا زَنْجَبِيلًا",
-      transliteration: "Wa yusqawna fīhā ka'san kāna mizājuhā zanjabīlā",
-      translation: { id: "Di dalam surga itu mereka diberi minum segelas (minuman) yang campurannya adalah jahe.", en: "And they will be given to drink a cup [of wine] whose mixture is of ginger." }
+      transliteration: "Wa yusqawna fīhā ka'san kāna mizājuhā zanjabīlan",
+      translation: { id: "Di dalam surga itu mereka diberi minum secangkir (minuman) yang campurannya adalah jahe.", en: "And they will be given to drink a cup [of wine] whose mixture is of ginger." },
+      context: { id: "Jahe (zanjabil) akan menjadi campuran minuman yang menyegarkan di surga.", en: "Ginger (zanjabil) will be a refreshing drink mixture in heaven." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: {
+      question: { id: "Dalam Al-Qur'an, jahe (zanjabil) disebutkan sebagai campuran apa di surga?", en: "In the Quran, what is ginger (zanjabil) mentioned as a mixture for in heaven?" },
+      options: [
+        { text: { id: "Minyak wangi", en: "Perfume" } },
+        { text: { id: "Tanah surga", en: "The soil of heaven" } },
+        { text: { id: "Minuman penghuni surga", en: "The drink of the people of heaven" } }
+      ],
+      answerIdx: 2
+    }
+  },
+  explorer: {
+    text: { id: "Apa yang membuat jahe terasa hangat di tenggorokan? Jawabannya ada pada senyawa kimia organik bernama 'gingerol'. Saat masuk ke tubuh manusia, gingerol merangsang reseptor suhu di lidah dan perut kita, menipu saraf kita sehingga merasa hangat! Allah Al-Khabir (Maha Mengetahui) merancang interaksi molekul ini sebagai pereda nyeri dan peradangan alami.", en: "What makes ginger feel warm in the throat? The answer lies in an organic chemical compound called 'gingerol'. When it enters the human body, gingerol stimulates the temperature receptors on our tongue and stomach, tricking our nerves into feeling warm! Allah Al-Khabir (The All-Aware) designed this molecular interaction as a natural pain and inflammation reliever." },
+    anatomy: [
+      { part: { id: "Rimpang (Rhizome)", en: "Rhizome" }, desc: { id: "Batang yang tumbuh mendatar di dalam tanah (bagian jahe yang kita makan).", en: "The stem that grows horizontally underground (the part of ginger we eat)." } },
+      { part: { id: "Gingerol", en: "Gingerol" }, desc: { id: "Zat yang membuat jahe terasa pedas, hangat, dan berkhasiat sebagai obat.", en: "The substance that makes ginger taste spicy, warm, and act as medicine." } }
+    ],
+    wowFactor: { id: "Akar jahe bisa bertahan berbulan-bulan di luar kulkas dan bisa langsung ditumbuhkan kembali menjadi tanaman baru di tanah!", en: "Ginger roots can last for months outside the fridge and can be directly regrown into a new plant in the soil!" },
+    quranVerse: {
+      arabic: "عَيْنًا فِيهَا تُسَمَّىٰ سَلْسَبِيلًا",
+      transliteration: "‘Aynan fīhā tusammā salsabīlan",
+      translation: { id: "(Yang didatangkan dari) sebuah mata air surga yang dinamakan salsabil.", en: "[From] a fountain within it named Salsabeel." }
+    },
+    quiz: [
+      {
+        question: { id: "Jahe yang sering kita makan sebenarnya adalah bagian apa dari tanamannya?", en: "The ginger we often eat is actually what part of the plant?" },
+        options: [
+          { text: { id: "Bunganya", en: "Its flower" } },
+          { text: { id: "Rimpang (batang bawah tanah)", en: "Rhizome (underground stem)" } },
+          { text: { id: "Daun muda", en: "Young leaves" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

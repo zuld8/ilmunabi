@@ -1,50 +1,108 @@
 import { ObjectData } from "../objects";
 
 export const merkuriusData: ObjectData = {
-  slug: "merkurius",
-  name: { id: "Merkurius", en: "Mercury" },
-  icon: "⚪",
+  slug: "merkurius-terdekat-dekat",
+  name: {
+    id: "Merkurius Terdekat Dekat",
+    en: "Merkurius Terdekat Dekat",
+  },
+  scientificName: "Mercury var. dekat",
+  surahName: "Al-Qur'an",
+  surahReference: "Ciptaan Allah",
+  icon: "🪐",
   category: "langit",
   type: "langit",
-  scientificName: "Mercury",
-  surahName: "An-Naba",
-  surahReference: "78:12-13",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "سِرَاج", latin: "Siraj", arti: "Pelita (Matahari)", artiEn: "Lamp (Sun)", contohAyat: "Matahari memanaskan Merkurius" }
+    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
   ],
   balita: {
-    text: { id: "Wuzzz! Ini Merkurius, si planet super cepat dan paling dekat dengan matahari! Sangaaat panas kalau siang! ☀️🏃", en: "Zoom! This is Mercury, the super fast planet and the closest to the sun! Veeeery hot during the day! ☀️🏃" },
-    audioTranscript: { id: "Ini planet terkecil di tata surya kita, namanya Merkurius. Dia paling dekat dengan Matahari lho, makanya dia berlari mengelilingi matahari paling cepat dibanding teman-temannya.", en: "This is the smallest planet in our solar system, called Mercury. It's the closest to the Sun, that's why it runs around the sun faster than its friends." },
+    text: {
+      id: "Ini Merkurius Terdekat Dekat! Ciptaan Allah yang luar biasa indah. 🌟",
+      en: "This is Merkurius Terdekat Dekat! An amazingly beautiful creation of Allah. 🌟",
+    },
+    audioTranscript: {
+      id: "Ini Merkurius Terdekat Dekat. Allah menciptakan Merkurius Terdekat Dekat dengan sangat baik agar kita semua bersyukur.",
+      en: "This is Merkurius Terdekat Dekat. Allah created Merkurius Terdekat Dekat beautifully so we all become grateful.",
+    },
     quiz: {
-      question: { id: "Kenapa siang hari di Merkurius sangat panas?", en: "Why is daytime on Mercury so hot?" },
+      question: {
+        id: "Mana gambar Merkurius Terdekat Dekat?",
+        en: "Which one is the picture of Merkurius Terdekat Dekat?",
+      },
       options: [
-        { text: { id: "Karena dekat dengan kulkas", en: "Because it's close to the fridge" } },
-        { text: { id: "Karena dia paling dekat dengan Matahari", en: "Because it's closest to the Sun" } },
-        { text: { id: "Karena ada kompor meledak", en: "Because a stove exploded" } }
+        { text: { id: "🪐 Merkurius Terdekat Dekat", en: "🪐 Merkurius Terdekat Dekat" } },
+        { text: { id: "📦 Kotak", en: "📦 Box" } },
       ],
-      answerIdx: 1
-    }
+      answerIdx: 0,
+    },
   },
   anak: {
-    text: { id: "Meskipun jadi planet paling dekat dengan Matahari, malam hari di Merkurius itu sangat-sangat membeku! Kok bisa? Karena Merkurius tidak punya selimut udara (atmosfer) untuk menyimpan panas.", en: "Even though it's the closest planet to the Sun, nights on Mercury are freezing cold! How come? Because Mercury doesn't have an air blanket (atmosphere) to keep the heat in." },
+    text: {
+      id: "Fakta menarik tentang Merkurius Terdekat Dekat: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
+      en: "Interesting facts about Merkurius Terdekat Dekat: It is a proof of Allah's majestic creation in the universe.",
+    },
     facts: [
-      { id: "Satu tahun di Merkurius itu sangat sebentar, hanya 88 hari! Cepat sekali karena jarak orbitnya pendek.", en: "A year on Mercury is very short, only 88 days! So fast because its orbit is short." },
-      { id: "Permukaan Merkurius penuh dengan kawah bolong-bolong seperti permukaan Bulan karena sering ditabrak meteor. ☄️", en: "Mercury's surface is full of crater holes like the Moon's surface because it's often hit by meteors. ☄️" },
-      { id: "Merkurius tidak punya bulan satupun untuk menemaninya.", en: "Mercury has zero moons to keep it company." }
+      { id: "Benda langit Merkurius Terdekat Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras.", en: "Benda langit Merkurius Terdekat Dekat tersusun dari gas hidrogen, debu kosmis, atau batuan silika keras." },
+      { id: "Lintasan orbit Merkurius Terdekat Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten.", en: "Lintasan orbit Merkurius Terdekat Dekat mengikuti hukum gravitasi Kepler yang sangat konsisten." },
+      { id: "Cahaya bintang di sekitar Merkurius Terdekat Dekat merambat menembus ruang hampa jutaan tahun cahaya.", en: "Cahaya bintang di sekitar Merkurius Terdekat Dekat merambat menembus ruang hampa jutaan tahun cahaya." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
+      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
+      translation: {
+        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
+        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
+      },
+    },
+    quiz: {
+      question: {
+        id: "Siapa yang menciptakan Merkurius Terdekat Dekat dengan sempurna?",
+        en: "Who created Merkurius Terdekat Dekat perfectly?",
+      },
+      options: [
+        { text: { id: "Allah SWT", en: "Allah SWT" } },
+        { text: { id: "Manusia", en: "Humans" } },
+      ],
+      answerIdx: 0,
+    },
   },
   explorer: {
-    text: { id: "Perbedaan suhu di Merkurius adalah yang paling ekstrem di tata surya! HAH?! Siang hari suhunya mencapai 430°C (bisa melelehkan timah) tapi malamnya anjlok ke -180°C! Bayangkan kalau Bumi begitu? 1400 tahun lalu, Al-Qur'an menjelaskan penciptaan langit yang kokoh dan matahari sebagai pelita yang amat terang dan panas.", en: "Temperature swings on Mercury are the most extreme in the solar system! HAH?! Daytime temps reach 430°C (can melt lead) but at night plunge to -180°C! Imagine if Earth were like that? 1400 years ago, the Quran described the creation of a strong sky and the sun as a blazing, hot lamp." },
-    quranVerse: {
-      arabic: "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا ﴿١٢﴾ وَجَعَلْنَا سِرَاجًا وَهَّاجًا ﴿١٣﴾",
-      transliteration: "Wa banaynā fawqakum sab'an shidādā (12). Wa ja'alnā sirājaw wahhājā (13).",
-      translation: { id: "Dan Kami bangun di atas kamu tujuh buah (langit) yang kokoh. Dan Kami jadikan pelita yang amat terang (matahari).", en: "And We have built above you seven strong (heavens). And made [therein] a burning lamp." }
+    text: {
+      id: "Eksplorasi anatomi dan struktur Merkurius Terdekat Dekat mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
+      en: "Exploration of the anatomy and structure of Merkurius Terdekat Dekat reveals the brilliance of biological design and natural balance.",
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
-  }
+    anatomy: [
+      { part: { id: "Inti Gravitasi", en: "Inti Gravitasi" }, desc: { id: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit.", en: "Pusat masa dengan tarikan gravitasi kosmis penentu orbit." } }
+    ],
+    wowFactor: {
+      id: "Keajaiban astrofisika Merkurius Terdekat Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Merkurius Terdekat Dekat mencegahnya meledak secara liar.",
+      en: "Keajaiban astrofisika Merkurius Terdekat Dekat: Keseimbangan antara gaya gravitasi menciutkan dan tekanan fusi gas luar biasa pada Merkurius Terdekat Dekat mencegahnya meledak secara liar.",
+    },
+    quranVerse: {
+      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
+      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
+      translation: {
+        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
+        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
+      },
+      context: {
+        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
+        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
+      },
+    },
+    quiz: [
+      {
+        question: {
+          id: "Apa hikmah utama diutusnya tanda sains tentang Merkurius Terdekat Dekat?",
+          en: "What is the primary wisdom of scientific signs regarding Merkurius Terdekat Dekat?",
+        },
+        options: [
+          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
+          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+        ],
+        answerIdx: 0,
+      },
+    ],
+  },
 };

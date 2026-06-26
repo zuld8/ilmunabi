@@ -5,46 +5,72 @@ export const matahariData: ObjectData = {
   name: { id: "Matahari", en: "Sun" },
   icon: "☀️",
   category: "alam",
-  type: "alam",
-  scientificName: "Sol",
-  surahName: "Nuh",
-  surahReference: "71:16",
-  unlockedAtPoints: 10,
+  type: "langit",
+  scientificName: "Sol (Bintang Tipe-G)",
+  surahName: "Yunus",
+  surahReference: "10:5",
+  unlockedAtPoints: 50,
   kosakata: [
-    { arab: "شَمْس", latin: "Syams", arti: "Matahari", artiEn: "Sun", contohAyat: "وَالشَّمْسِ وَضُحَاهَا" }
+    { arab: "شَمْس", latin: "Syams", arti: "Matahari", artiEn: "Sun", contohAyat: "هُوَ الَّذِي جَعَلَ الشَّمْسَ ضِيَاءً" }
   ],
   balita: {
-    text: { id: "Selamat pagi matahari yang hangat! Sinarmu terang sekali. 🌻", en: "Good morning warm sun! Your light is so bright. 🌻" },
-    audioTranscript: { id: "Matahari bangun di pagi hari untuk memberikan cahaya biar kita bisa main, dan tidur di sore hari supaya kita istirahat.", en: "The sun wakes up in the morning to give light so we can play, and sleeps in the evening so we can rest." },
+    text: { id: "Selamat pagi Matahari! ☀️ Matahari berwarna kuning terang, dia membangunkan kita setiap pagi biar semangat!", en: "Good morning Sun! ☀️ The sun is bright yellow, it wakes us up every morning so we're cheerful!" },
+    audioTranscript: { id: "Matahari panas dan terang benderang. Jangan melihat matahari langsung pakai mata ya, karena silau sekali!", en: "The sun is hot and super bright. Don't look at the sun directly with your eyes, because it's too glaring!" },
     quiz: {
-      question: { id: "Matahari terbit di waktu apa?", en: "What time does the sun rise?" },
+      question: { id: "Kalau matahari sudah terbit tinggi di langit, itu tandanya hari sudah?", en: "When the sun has risen high in the sky, it means the day is?" },
       options: [
-        { text: { id: "Malam hari", en: "Night time" } },
-        { text: { id: "Pagi hari", en: "Morning time" } },
-        { text: { id: "Sore hari", en: "Evening time" } }
+        { text: { id: "Malam", en: "Night" } },
+        { text: { id: "Pagi/Siang", en: "Morning/Noon" } },
+        { text: { id: "Hujan", en: "Rainy" } }
       ],
       answerIdx: 1
     }
   },
   anak: {
-    text: { id: "Matahari adalah bintang yang paling dekat dengan Bumi. Jauuuuuh sekali jaraknya, tapi panasnya sampai ke sini! Tanpa matahari, bumi akan membeku dan gelap gulita. Allah menciptakan matahari bagaikan lampu raksasa.", en: "The sun is the closest star to Earth. It's veeeery far away, but its heat reaches here! Without the sun, the earth would freeze and be pitch black. Allah created the sun like a giant lamp." },
+    text: { id: "Matahari adalah bola api super besar yang menyinari seluruh Bumi kita! Kalau tidak ada Matahari, Bumi akan menjadi sangat gelap gulita dan sedingin es. Tumbuhan juga butuh matahari untuk membuat makanan mereka sendiri.", en: "The sun is a super big fireball that lights up our entire Earth! If there were no Sun, the Earth would become pitch black and cold as ice. Plants also need the sun to make their own food." },
     facts: [
-      { id: "Satu juta planet Bumi bisa muat di dalam Matahari! Wah!", en: "One million Earths can fit inside the Sun! Wow!" },
-      { id: "Cahaya matahari butuh waktu 8 menit untuk sampai ke Bumi.", en: "Sunlight takes 8 minutes to reach Earth." },
-      { id: "Matahari tidak terbuat dari api, melainkan gas hidrogen dan helium yang sangat panas.", en: "The sun is not made of fire, but super hot hydrogen and helium gases." }
+      { id: "Matahari itu sangat raksasa! Butuh lebih dari 1 juta planet sebesar Bumi untuk mengisi ruang di dalam Matahari.", en: "The sun is incredibly giant! It would take over 1 million Earth-sized planets to fill the space inside the Sun." },
+      { id: "Cahaya matahari butuh waktu 8 menit untuk terbang dari luar angkasa sampai ke mata kita di Bumi.", en: "Sunlight takes 8 minutes to travel from space to our eyes on Earth." },
+      { id: "Matahari sebenarnya adalah sebuah bintang raksasa! Dia kelihatan lebih besar karena paling dekat dengan Bumi kita.", en: "The sun is actually a giant star! It looks bigger because it's the closest one to our Earth." }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "هُوَ الَّذِي جَعَلَ الشَّمْسَ ضِيَاءً وَالْقَمَرَ نُورًا",
+      transliteration: "Huwal-ladzii ja'alasy-syamsa dhiyaa'aw wal-qamara nuuraa",
+      translation: { id: "Dialah yang menjadikan matahari bersinar dan bulan bercahaya.", en: "It is He who made the sun a shining light and the moon a derived light." },
+      context: { id: "Allah menciptakan matahari yang mengeluarkan cahayanya sendiri secara aktif (dhiyaa) seperti lampu senter menyala.", en: "Allah created the sun which emits its own light actively (dhiyaa) like a turned-on flashlight." }
+    },
+    quiz: {
+      question: { id: "Siapa yang butuh cahaya matahari untuk memasak makanannya (fotosintesis)?", en: "Who needs sunlight to cook their food (photosynthesis)?" },
+      options: [
+        { text: { id: "Hewan Kucing", en: "Cats" } },
+        { text: { id: "Tumbuh-tumbuhan (Pohon)", en: "Plants (Trees)" } },
+        { text: { id: "Batu-batuan", en: "Rocks" } }
+      ],
+      answerIdx: 1
+    }
   },
   explorer: {
-    text: { id: "Matahari adalah reaktor fusi nuklir alami raksasa yang membakar 600 juta ton hidrogen per detik. Al-Qur'an secara menakjubkan mendeskripsikan matahari sebagai 'siraaj' (pelita yang menyala panas), membedakannya dengan bulan yang hanya memantulkan cahaya. Akurasi ilmiah yang luar biasa!", en: "The sun is a giant natural nuclear fusion reactor that burns 600 million tons of hydrogen per second. The Quran amazingly describes the sun as a 'siraaj' (a burning, blazing lamp), distinguishing it from the moon which only reflects light. Extraordinary scientific accuracy!" },
+    text: { id: "Matahari adalah pusat Tata Surya, massa terbesarnya menghasilkan tarikan gravitasi super kuat yang menahan orbit 8 planet. Yang ajaibnya, Al-Qur'an membedakan istilah 'Matahari' sebagai Dhiyaa (sumber cahaya yang membakar/menyala dari dalam dirinya) dan 'Bulan' sebagai Nuur (cahaya pantulan yang tidak menyala), ribuan tahun sebelum ilmu fisika kuantum mempelajari ini!", en: "The Sun is the center of the Solar System, its massive mass generates a super strong gravitational pull that holds the orbit of 8 planets. Magically, the Quran distinguishes the term 'Sun' as Dhiyaa (a source of light that burns/ignites from within itself) and 'Moon' as Nuur (reflected light that doesn't burn), thousands of years before quantum physics studied this!" },
+    anatomy: [
+      { part: { id: "Inti (Core)", en: "Core" }, desc: { id: "Pusat matahari dengan suhu 15 juta derajat Celcius, tempat fusi hidrogen menjadi helium.", en: "The center of the sun with a temperature of 15 million degrees Celsius, where hydrogen fuses into helium." } },
+      { part: { id: "Fotosfer", en: "Photosphere" }, desc: { id: "Permukaan kuning yang kita lihat, yang melepaskan partikel cahaya ke bumi.", en: "The yellow surface we see, which releases light particles to earth." } }
+    ],
+    wowFactor: { id: "HAH?! Matahari ternyata selalu bergerak 'lari' mengelilingi pusat galaksi Bima Sakti dengan kecepatan 828.000 km per jam sambil menyeret semua planet bersamanya! Fakta ini persis dengan Al-Qur'an (Surat Yasin: 38) yang berbunyi 'Dan matahari berjalan (tajri) di tempat peredarannya'.", en: "WOW?! The Sun is actually always 'running' around the center of the Milky Way galaxy at a speed of 828,000 km per hour while dragging all the planets with it! This fact exactly matches the Quran (Surah Yasin: 38) which says 'And the sun runs (tajri) to its resting place'." },
     quranVerse: {
-      arabic: "وَجَعَلَ الْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا",
-      transliteration: "Wa ja'alal-qamara fiihinna nuuran wa ja'alasy-syamsa siraajaa",
-      translation: { id: "Dan Allah menciptakan padanya bulan sebagai cahaya dan menjadikan matahari sebagai pelita (yang cemerlang)?", en: "And made the moon therein a [reflected] light and made the sun a burning lamp?" }
+      arabic: "وَالشَّمْسُ تَجْرِي لِمُسْتَقَرٍّ لَهَا ۚ ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ",
+      transliteration: "Wasy-syamsu tajrii limustaqarril-lahaa, dzaalika taqdiirul-'aziizil-'aliim",
+      translation: { id: "Dan matahari berjalan di tempat peredarannya. Demikianlah ketetapan Yang Maha Perkasa lagi Maha Mengetahui.", en: "And the sun runs [on course] toward its stopping point. That is the determination of the Exalted in Might, the Knowing." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Dalam Al-Qur'an, kata yang digunakan untuk cahaya matahari (sumber api yang terbakar) adalah?", en: "In the Quran, the word used for sunlight (a burning fire source) is?" },
+        options: [
+          { text: { id: "Nuur (cahaya pantulan)", en: "Nuur (reflected light)" } },
+          { text: { id: "Dhiyaa (cahaya menyala)", en: "Dhiyaa (burning light)" } },
+          { text: { id: "Siraj (bayangan)", en: "Siraj (shadow)" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };

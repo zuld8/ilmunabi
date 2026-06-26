@@ -7,44 +7,71 @@ export const hidungData: ObjectData = {
   category: "tubuh",
   type: "tubuh",
   scientificName: "Nasus",
-  surahName: "Al-Mulk",
-  surahReference: "67:23",
-  unlockedAtPoints: 10,
+  surahName: "Al-Mu'minun",
+  surahReference: "23:78",
+  unlockedAtPoints: 50,
   kosakata: [
-    { arab: "أَنْفٌ", latin: "anfun", arti: "Hidung", artiEn: "Nose", contohAyat: "وَالْأَنفَ بِالْأَنفِ" }
+    { arab: "أَنْفٌ", latin: "Anfun", arti: "Hidung", artiEn: "Nose", contohAyat: "Wal-anfa bil-anfi (Dan hidung dengan hidung - Al-Ma'idah:45)." }
   ],
   balita: {
-    text: { id: "Hmm... wangi kue dari ibu! 👃", en: "Hmm... smell the cake from mom! 👃" },
-    audioTranscript: { id: "Hidung kita ada dua lubang. Kita pakai hidung untuk napas dan mencium bau wangi bunga atau bau busuk sampah!", en: "Our nose has two holes. We use the nose to breathe and smell the nice scent of flowers or the bad smell of trash!" },
+    text: { id: "Hmm... wangi sekali kue ibu! Hidung kita hebat, bisa mencium bau wangi dan bau busuk. Ayo tarik napas panjang lewat hidung! 👃🌬️", en: "Hmm... mommy's cake smells so good! Our nose is amazing, it can smell sweet and stinky things. Let's take a deep breath through the nose! 👃🌬️" },
+    audioTranscript: { id: "Hidung berguna untuk bernapas dan mencium bau wangi seperti bunga.", en: "The nose is used for breathing and smelling sweet scents like flowers." },
     quiz: {
-      question: { id: "Untuk apa hidung kita?", en: "What is our nose for?" },
+      question: { id: "Bagian tubuh mana yang kita gunakan untuk mencium bau?", en: "Which body part do we use to smell?" },
       options: [
-        { text: { id: "Melihat bintang", en: "Seeing stars" } },
-        { text: { id: "Mencium bau dan bernapas", en: "Smelling and breathing" } },
-        { text: { id: "Mendengar musik", en: "Hearing music" } }
+        { text: { id: "Mata", en: "Eyes" } },
+        { text: { id: "Telinga", en: "Ears" } },
+        { text: { id: "Hidung", en: "Nose" } }
       ],
-      answerIdx: 1
+      answerIdx: 2
     }
   },
   anak: {
-    text: { id: "Hidung kita itu pahlawan super! Di dalam hidung ada bulu-bulu kecil dan lendir (upil) yang tugasnya menangkap debu dan kuman supaya tidak masuk ke paru-paru. Jadi jangan suka ngupil sembarangan ya!", en: "Our nose is a superhero! Inside the nose there are tiny hairs and mucus (boogers) whose job is to catch dust and germs so they don't enter the lungs. So don't pick your nose carelessly!" },
+    text: { id: "Hidung adalah pintu masuk udara ke dalam tubuh kita! Di dalam hidung ada bulu-bulu kecil yang bekerja sebagai sapu, membersihkan kotoran dari udara yang kita hirup. Selain itu, hidung bisa membedakan ribuan bau berbeda! Allah menciptakan hidung agar kita bisa bernapas dengan bersih dan menikmati aroma makanan. 🌸", en: "The nose is the front door for air into our body! Inside the nose are tiny hairs that work like a broom, cleaning dirt from the air we breathe. Also, the nose can tell the difference between thousands of smells! Allah created the nose so we can breathe clean air and enjoy the aroma of food. 🌸" },
     facts: [
-      { id: "Manusia bisa mengenali lebih dari 1 triliun bau yang berbeda!", en: "Humans can recognize over 1 trillion different smells!" },
-      { id: "Hidung bisa menghangatkan udara dingin sebelum masuk paru-paru.", en: "The nose can warm up cold air before it enters the lungs." },
-      { id: "Saat kita bersin, udara keluar dari hidung sangat cepat seperti mobil ngebut!", en: "When we sneeze, air comes out of the nose as fast as a speeding car!" }
+      { id: "Manusia bisa membedakan sekitar 1 triliun bau yang berbeda! 👃🌟", en: "Humans can distinguish about 1 trillion different smells! 👃🌟" },
+      { id: "Udara yang masuk lewat hidung langsung dihangatkan sebelum sampai ke paru-paru. 🔥", en: "Air entering through the nose is immediately warmed up before reaching the lungs. 🔥" },
+      { id: "Hidung kita dan telinga kita akan terus memanjang (sangat sedikit) seiring bertambahnya usia. 👴", en: "Our nose and ears continue to lengthen (very slightly) as we age. 👴" }
     ],
-    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quranVerse: {
+      arabic: "وَهُوَ الَّذِي أَنشَأَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ",
+      transliteration: "Wahuwal-lathee ansha-a lakumus-sam'a wal-absaara wal-af'idah",
+      translation: { id: "Dan Dialah yang telah menciptakan bagimu pendengaran, penglihatan dan hati.", en: "And it is He who produced for you hearing and vision and hearts." },
+      context: { id: "Sistem penciuman dan pernapasan juga bagian dari nikmat luar biasa dari Allah yang patut kita syukuri.", en: "The olfactory and respiratory systems are also extraordinary blessings from Allah we should be grateful for." }
+    },
+    quiz: {
+      question: { id: "Apa tugas bulu-bulu kecil di dalam hidung?", en: "What is the job of the tiny hairs inside the nose?" },
+      options: [
+        { text: { id: "Menyapu kotoran dari udara", en: "Sweeping dirt from the air" } },
+        { text: { id: "Membuat suara bersin", en: "Making sneeze sounds" } },
+        { text: { id: "Menangkap makanan", en: "Catching food" } }
+      ],
+      answerIdx: 0
+    }
   },
   explorer: {
-    text: { id: "Rongga hidung mengandung reseptor olfaktori yang mengirimkan sinyal langsung ke otak bagian penciuman. Hidung juga merupakan pintu gerbang pernapasan (respirasi). Sungguh karunia Allah yang luar biasa karena hidung kita terus bernapas otomatis tanpa kita sadari setiap detiknya!", en: "The nasal cavity contains olfactory receptors that send signals directly to the brain's smell center. The nose is also the gateway to respiration. What an extraordinary gift from Allah that our nose breathes automatically without us realizing it every second!" },
+    text: { id: "Sistem penciuman manusia bagaikan sensor kimia paling canggih di dunia. Di bagian atas dalam hidung, terdapat jutaan sel reseptor bau (olfaktori). Saat bau masuk, sel ini mengirim sinyal listrik ke otak secepat kilat! Bahkan, bau tertentu bisa membangkitkan memori masa lalu, karena area penciuman di otak terhubung langsung ke area memori (hippocampus). Maha Suci Allah (Al-Khaliq) yang menciptakan sistem memori dan sensor canggih ini! 🧠⚡", en: "The human olfactory system is like the world's most advanced chemical sensor. At the upper inside of the nose, there are millions of olfactory receptor cells. When a scent enters, these cells send electrical signals to the brain at lightning speed! In fact, certain smells can trigger past memories, because the olfactory area in the brain is directly connected to the memory area (hippocampus). Glory be to Allah (Al-Khaliq) who created this advanced memory and sensor system! 🧠⚡" },
+    anatomy: [
+      { part: { id: "Rongga Hidung", en: "Nasal Cavity" }, desc: { id: "Ruang besar di balik hidung tempat udara dilembabkan dan dihangatkan.", en: "The large space behind the nose where air is moisturized and warmed." } },
+      { part: { id: "Silia (Bulu Hidung)", en: "Cilia" }, desc: { id: "Rambut halus yang menyaring debu agar tidak masuk ke paru-paru.", en: "Fine hairs that filter dust so it doesn't enter the lungs." } },
+      { part: { id: "Epitel Olfaktori", en: "Olfactory Epithelium" }, desc: { id: "Area kecil di atap rongga hidung yang berisi saraf pendeteksi bau.", en: "A small area at the roof of the nasal cavity containing scent-detecting nerves." } }
+    ],
+    wowFactor: { id: "Kecepatan bersin manusia bisa mencapai 160 km/jam! Bersin adalah cara tubuh secara refleks membuang kuman atau debu yang mengganggu. 🤧💨", en: "The speed of a human sneeze can reach 160 km/h! Sneezing is the body's reflex to expel irritating germs or dust. 🤧💨" },
     quranVerse: {
-      arabic: "قُلْ هُوَ الَّذِي أَنشَأَكُمْ وَجَعَلَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ ۖ قَلِيلًا مَّا تَشْكُرُونَ",
-      transliteration: "Qul huwalladzii ansya'akum waja'ala lakumus-sam'a wal-abshaara wal-af'idah, qaliilam maa tasykuruun",
-      translation: { id: "Katakanlah: 'Dialah Yang menciptakan kamu dan menjadikan bagi kamu pendengaran, penglihatan dan hati'. (Tetapi) amat sedikit kamu bersyukur.", en: "Say, 'It is He who has produced you and made for you hearing and vision and hearts; little are you grateful.'" }
+      arabic: "وَخَلَقَ كُلَّ شَيْءٍ فَقَدَّرَهُ تَقْدِيرًا",
+      transliteration: "Wa khalaqa kulla shayin faqaddarahu taqdeera",
+      translation: { id: "Dan Dia telah menciptakan segala sesuatu, dan Dia menetapkan ukuran-ukurannya dengan serapi-rapinya.", en: "And He has created each thing and determined it with [precise] determination." }
     },
-    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
-    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
-    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+    quiz: [
+      {
+        question: { id: "Bersin memiliki fungsi refleks yang sangat cepat untuk apa?", en: "Sneezing has a very fast reflex function for what?" },
+        options: [
+          { text: { id: "Memanggil teman", en: "Calling a friend" } },
+          { text: { id: "Membuang kuman atau debu", en: "Expelling germs or dust" } },
+          { text: { id: "Mendinginkan hidung", en: "Cooling the nose" } }
+        ],
+        answerIdx: 1
+      }
+    ]
   }
 };
