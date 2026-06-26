@@ -2,107 +2,91 @@ import { ObjectData } from "../objects";
 
 export const keledaiData: ObjectData = {
   slug: "keledai",
-  name: {
-    id: "Keledai",
-    en: "Keledai",
-  },
-  scientificName: "Equus asinus",
-  surahName: "Al-Jumu'ah",
-  surahReference: "62:5",
+  name: { id: "Keledai", en: "Donkey" },
   icon: "🫏",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Equus asinus",
+  surahName: "Luqman",
+  surahReference: "31:19",
+  unlockedAtPoints: 70,
+
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Jumu'ah 62:5" }
+    { arab: "حِمَارٌ", latin: "Himaar", arti: "Keledai", artiEn: "Donkey", contohAyat: "Suara paling buruk adalah suara keledai." },
+    { arab: "صَوْتٌ", latin: "Shawt", arti: "Suara", artiEn: "Voice", contohAyat: "Suara keledai sangat keras dan serak." },
+    { arab: "حَمْلٌ", latin: "Haml", arti: "Beban", artiEn: "Burden", contohAyat: "Keledai membawa beban di punggungnya." },
+    { arab: "أُذُنٌ", latin: "Udzun", arti: "Telinga", artiEn: "Ear", contohAyat: "Telinga keledai panjang dan unik." }
   ],
+
   balita: {
-    text: {
-      id: "Ini Keledai! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Keledai! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Keledai. Allah menciptakan Keledai dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Keledai. Allah created Keledai beautifully so we all become grateful.",
-    },
+    text: { id: "Ini keledai! Telinganya panjang dan bunyinya nyaring sekali! 🫏", en: "This is a donkey! Its ears are long and its sound is very loud! 🫏" },
+    audioTranscript: { id: "Hi-hoo! Hi-hoo! Itu suara keledai lho! Coba lihat, telinganya panjang banget ya? Keledai itu hewan yang sangat kuat bawa barang berat. Hebat ya!", en: "Hee-haw! Hee-haw! That's a donkey's sound! Look, its ears are really long, right? Donkeys are very strong animals that carry heavy things. Awesome!" },
     quiz: {
-      question: {
-        id: "Mana gambar Keledai?",
-        en: "Which one is the picture of Keledai?",
-      },
+      question: { id: "Bagaimana suara keledai?", en: "What does a donkey sound like?" },
       options: [
-        { text: { id: "🫏 Keledai", en: "🫏 Keledai" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Mbeeek", en: "Baaa" } },
+        { text: { id: "Meow", en: "Meow" } },
+        { text: { id: "Hi-hoo / meringkik", en: "Hee-haw / bray" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
+
   anak: {
-    text: {
-      id: "Fakta menarik tentang Keledai: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Keledai: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Keledai mungkin terlihat seperti kuda kecil, tapi mereka sangat pintar dan kuat!", en: "Donkeys might look like small horses, but they are very smart and strong!" },
     facts: [
-      { id: "Keledai memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Keledai memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Keledai bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Keledai bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Keledai dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Keledai dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Telinga keledai yang panjang membantunya mendengar suara dari jarak 100 kilometer lho!", en: "A donkey's long ears help it hear sounds from 100 kilometers away!" },
+      { id: "Keledai sering dibilang keras kepala, padahal itu karena mereka super hati-hati terhadap bahaya.", en: "Donkeys are often called stubborn, but that's because they are super cautious of danger." },
+      { id: "Suara keledai sangat keras, melengking, dan mengganggu telinga.", en: "Donkey sounds are very loud, shrill, and annoying to the ear." },
+      { id: "Mereka bisa memanggul barang seberat tubuhnya sendiri naik turun gunung.", en: "They can carry goods as heavy as their own body up and down mountains." },
+      { id: "Keledai adalah teman baik manusia untuk membantu bekerja sejak zaman dulu sekali.", en: "Donkeys have been humanity's good friends for helping with work since ancient times." }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "وَاغْضُضْ مِن صَوْتِكَ ۚ إِنَّ أَنكَرَ الْأَصْوَاتِ لَصَوْتُ الْحَمِيرِ",
+      transliteration: "Waghdhudh min shawtika, inna ankaral ashwaati lashawtul hamiir",
+      translation: { id: "Dan lunakkanlah suaramu. Sesungguhnya seburuk-buruk suara ialah suara keledai.", en: "And lower your voice; indeed, the most disagreeable of sounds is the voice of donkeys." },
+      context: { id: "Tau nggak? Di surah Luqman, Allah menasihati kita supaya tidak teriak-teriak atau bicara terlalu keras. Karena suara keras yang mengganggu itu dimisalkan seperti ringkikan keledai. Jadi bicara yang lembut ya!", en: "Did you know? In Surah Luqman, Allah advises us not to yell or speak too loudly. Because an annoying loud voice is likened to a donkey's bray. So speak gently!" }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Keledai dengan sempurna?",
-        en: "Who created Keledai perfectly?",
-      },
+      question: { id: "Apa yang membuat keledai dibilang 'keras kepala'?", en: "What makes donkeys said to be 'stubborn'?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "Mereka nakal", en: "They are naughty" } },
+        { text: { id: "Mereka sangat berhati-hati sebelum melangkah", en: "They are very cautious before stepping" } },
+        { text: { id: "Mereka malas", en: "They are lazy" } },
+        { text: { id: "Mereka suka tidur", en: "They like to sleep" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
+
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Keledai mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Keledai reveals the brilliance of biological design and natural balance.",
-    },
+    text: { id: "Secara biologis, keledai (Equus asinus) sangat tahan terhadap lingkungan gurun yang kering. Mereka mendapatkan sebagian besar air dari tanaman yang mereka makan dan jarang sakit.\n\nTelinga raksasa mereka tidak hanya berfungsi sebagai radar pendengaran mutakhir, tetapi juga penuh dengan pembuluh darah yang berfungsi melepaskan panas tubuh layaknya telinga gajah!\n\nDi masa lalu, keledai sering dijadikan simbol perumpamaan, baik tentang kekuatan pikulannya, maupun tentang kebebalan jika hanya memikul tanpa mengambil pelajaran.", en: "Biologically, donkeys (Equus asinus) are very resistant to dry desert environments. They get most of their water from the plants they eat and rarely get sick.\n\nTheir giant ears not only serve as advanced hearing radar, but are also full of blood vessels that function to release body heat like an elephant's ears!\n\nIn the past, donkeys were often used as allegorical symbols, both for their carrying strength, and for stubbornness if they only carry burdens without learning lessons." },
     anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
+      { part: { id: "Telinga Panjang", en: "Long Ears" }, desc: { id: "Mendengar jarak jauh & membuang panas tubuh di padang pasir.", en: "Hear from a distance & release body heat in the desert." } },
+      { part: { id: "Pita Suara", en: "Vocal Cords" }, desc: { id: "Menghasilkan suara keras bernada ganda (menarik dan menghembus napas).", en: "Produces loud dual-toned sounds (inhaling and exhaling)." } }
     ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Keledai: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Keledai dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Keledai: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Keledai dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    wowFactor: { id: "Sains tentang suara keledai menunjukkan hal unik: tidak seperti kuda yang merengek saat mengeluarkan napas, keledai meringkik baik saat menarik napas maupun menghembuskannya, sehingga menghasilkan suara 'Hee-Haw' yang sumbang dan kasar menembus frekuensi.\n\nSecara luar biasa, Al-Qur'an dalam surat Luqman menjadikan anatomi vokal keledai ini sebagai perumpamaan agar manusia berakhlak mulia: 'Sesungguhnya seburuk-buruk suara ialah suara keledai (Hamiir)'. Pesan psikologisnya luar biasa: suara keras tak selamanya berwibawa, justru ketenangan dan kelembutanlah letak wibawa manusia!", en: "Science regarding donkey sounds shows a unique thing: unlike horses that whinny when exhaling, donkeys bray both when inhaling and exhaling, producing a discordant and harsh 'Hee-Haw' sound piercing frequencies.\n\nExtraordinarily, the Qur'an in Surah Luqman uses this donkey vocal anatomy as an allegory for humans to have noble character: 'Indeed, the most disagreeable of sounds is the voice of donkeys (Hamiir)'. The psychological message is amazing: a loud voice is not always authoritative; rather, calmness and gentleness are where human authority lies!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَاقْصِدْ فِي مَشْيِكَ وَاغْضُضْ مِن صَوْتِكَ ۚ إِنَّ أَنكَرَ الْأَصْوَاتِ لَصَوْتُ الْحَمِيرِ",
+      transliteration: "Waqshid fii masyika waghdhudh min shawtika, inna ankaral ashwaati lashawtul hamiir",
+      translation: { id: "Dan sederhanakanlah kamu dalam berjalan dan lunakkanlah suaramu. Sesungguhnya seburuk-buruk suara ialah suara keledai.", en: "And be moderate in your pace and lower your voice; indeed, the most disagreeable of sounds is the voice of donkeys." }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Keledai?",
-          en: "What is the primary wisdom of scientific signs regarding Keledai?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
+        question: { id: "Kenapa suara keledai sangat unik (Hee-Haw)?", en: "Why is a donkey's sound so unique (Hee-Haw)?" },
+        options: [{ text: { id: "Karena dia marah", en: "Because it's angry" } }, { text: { id: "Bersuara saat tarik napas & hembus napas", en: "Vocalizes when inhaling & exhaling" } }, { text: { id: "Meniru suara burung", en: "Mimicking birds" } }, { text: { id: "Hanya saat menghembus napas", en: "Only when exhaling" } }],
+        answerIdx: 1
       },
-    ],
-  },
+      {
+        question: { id: "Surat apa yang menasihati kita agar tidak berteriak seperti keledai?", en: "Which surah advises us not to yell like a donkey?" },
+        options: [{ text: { id: "Al-Baqarah", en: "Al-Baqarah" } }, { text: { id: "Luqman", en: "Luqman" } }, { text: { id: "Ar-Rahman", en: "Ar-Rahman" } }, { text: { id: "Al-Mulk", en: "Al-Mulk" } }],
+        answerIdx: 1
+      },
+      {
+        question: { id: "Apa fungsi lain dari telinga panjang keledai selain mendengar?", en: "What is another function of donkey's long ears besides hearing?" },
+        options: [{ text: { id: "Membuang panas tubuh", en: "Releasing body heat" } }, { text: { id: "Untuk terbang", en: "To fly" } }, { text: { id: "Untuk menakuti musuh", en: "To scare enemies" } }, { text: { id: "Untuk menyimpan air", en: "To store water" } }],
+        answerIdx: 0
+      }
+    ]
+  }
 };

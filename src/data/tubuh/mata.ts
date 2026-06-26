@@ -2,109 +2,91 @@ import { ObjectData } from "../objects";
 
 export const mataData: ObjectData = {
   slug: "mata",
-  name: {
-    id: "Mata",
-    en: "Mata",
-  },
-  scientificName: "Oculus",
-  surahName: "Al-Qiyamah",
-  surahReference: "75:23",
+  name: { id: "Mata", en: "Eye" },
   icon: "👁️",
   category: "tubuh",
   type: "tubuh",
+  scientificName: "Oculus",
+  surahName: "Al-Balad",
+  surahReference: "90:8",
   unlockedAtPoints: 50,
+  
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qiyamah 75:23" }
+    { arab: "عَيْنٌ", latin: "'Ayn", arti: "Mata", artiEn: "Eye", contohAyat: "Mata untuk melihat ciptaan Allah." },
+    { arab: "بَصَرٌ", latin: "Basar", arti: "Penglihatan", artiEn: "Vision", contohAyat: "Allah Maha Melihat (Al-Bashiir)." },
+    { arab: "نُورٌ", latin: "Nuur", arti: "Cahaya", artiEn: "Light", contohAyat: "Cahaya diperlukan mata untuk melihat." },
+    { arab: "دَمْعٌ", latin: "Dam'", arti: "Air Mata", artiEn: "Tear", contohAyat: "Air mata karena takut kepada Allah." }
   ],
+  
   balita: {
-    text: {
-      id: "Ini Mata! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Mata! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Mata. Allah menciptakan Mata dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Mata. Allah created Mata beautifully so we all become grateful.",
-    },
+    text: { id: "Ciluk... Ba! Matamu bisa melihat dunia yang indah! 👁️", en: "Peek-a... boo! Your eyes can see the beautiful world! 👁️" },
+    audioTranscript: { id: "Tutup matamu... gelap kan? Sekarang buka! Wah, terang! Matamu adalah hadiah dari Allah supaya kita bisa melihat ibu dan ayah.", en: "Close your eyes... dark right? Now open them! Wow, bright! Your eyes are a gift from Allah so we can see mom and dad." },
     quiz: {
-      question: {
-        id: "Mana gambar Mata?",
-        en: "Which one is the picture of Mata?",
-      },
+      question: { id: "Mana yang namanya mata?", en: "Which one is the eye?" },
       options: [
-        { text: { id: "👁️ Mata", en: "👁️ Mata" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "👁️ Mata", en: "👁️ Eye" } },
+        { text: { id: "👃 Hidung", en: "👃 Nose" } },
+        { text: { id: "👂 Telinga", en: "👂 Ear" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+  
   anak: {
-    text: {
-      id: "Fakta menarik tentang Mata: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Mata: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Matamu bekerja seperti kamera super canggih yang memotret dunia di sekitarmu!", en: "Your eye works like a super advanced camera taking pictures of the world around you!" },
     facts: [
-      { id: "Mata manusia dapat membedakan sekitar 10 juta warna berbeda.", en: "Mata manusia dapat membedakan sekitar 10 juta warna berbeda." },
-      { id: "Mata adalah organ tubuh tercepat; otot mata bereaksi dalam sekejap kedipan.", en: "Mata adalah organ tubuh tercepat; otot mata bereaksi dalam sekejap kedipan." },
-      { id: "Mata berkedip sekitar 15-20 kali setiap menit untuk menjaga kelembapan.", en: "Mata berkedip sekitar 15-20 kali setiap menit untuk menjaga kelembapan." },
-      { id: "Retina mata menangkap gambar secara terbalik, lalu otak memutarnya kembali.", en: "Retina mata menangkap gambar secara terbalik, lalu otak memutarnya kembali." },
-      { id: "Bagian mata berwarna hitam (pupil) akan melebar saat kita berada di tempat gelap.", en: "Bagian mata berwarna hitam (pupil) akan melebar saat kita berada di tempat gelap." }
+      { id: "Mata kita bisa membedakan 10 juta warna yang berbeda!", en: "Our eyes can distinguish 10 million different colors!" },
+      { id: "Mata adalah otot yang paling cepat bergerak di seluruh tubuhmu.", en: "The eye is the fastest moving muscle in your entire body." },
+      { id: "Kita berkedip lebih dari 10.000 kali dalam sehari tanpa kita sadari.", en: "We blink more than 10,000 times a day without realizing it." },
+      { id: "Bayi yang baru lahir awalnya hanya bisa melihat warna hitam dan putih.", en: "Newborn babies initially can only see black and white." },
+      { id: "Air mata kita punya antibakteri untuk menjaga mata tetap bersih.", en: "Our tears have antibacterials to keep the eyes clean." }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ",
+      transliteration: "Alam naj'al lahu 'aynayn",
+      translation: { id: "Bukankah Kami telah menjadikan untuknya sepasang mata?", en: "Have We not made for him two eyes?" },
+      context: { id: "Tau nggak? Mata kita bisa melihat benda 3D dan memperkirakan jarak karena kita punya DUA mata! Allah sengaja memberi kita sepasang mata agar dunia terlihat nyata.", en: "Did you know? Our eyes can see 3D objects and estimate distance because we have TWO eyes! Allah purposely gave us a pair of eyes to make the world look real." }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Mata dengan sempurna?",
-        en: "Who created Mata perfectly?",
-      },
+      question: { id: "Berapa banyak warna yang bisa dibedakan oleh mata kita?", en: "How many colors can our eyes distinguish?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "100 warna", en: "100 colors" } },
+        { text: { id: "1.000 warna", en: "1,000 colors" } },
+        { text: { id: "10 Juta warna", en: "10 Million colors" } },
+        { text: { id: "1 Miliar warna", en: "1 Billion colors" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
+  
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Mata mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Mata reveals the brilliance of biological design and natural balance.",
-    },
+    text: { id: "Mata adalah jendela dunia. Saat kamu melihat sesuatu, cahaya masuk melalui pupil, lalu difokuskan oleh lensa ke bagian belakang mata yang disebut retina.\n\nRetina ini memiliki jutaan sel khusus yang mendeteksi cahaya dan warna, lalu mengirimkannya ke otak sebagai pesan listrik.\n\nTahukah kamu? Gambar yang ditangkap retina sebenarnya terbalik lho! Otak kitalah yang membalikkannya kembali dengan sangat cepat.", en: "The eye is the window to the world. When you see something, light enters through the pupil, then is focused by the lens onto the back of the eye called the retina.\n\nThe retina has millions of special cells that detect light and color, then send them to the brain as electrical messages.\n\nDid you know? The image captured by the retina is actually upside down! It's our brain that flips it back right side up incredibly fast." },
     anatomy: [
-      { part: { id: "Sensor Retina", en: "Sensor Retina" }, desc: { id: "Mengubah proyeksi cahaya menjadi impuls listrik untuk dikirim ke otak.", en: "Mengubah proyeksi cahaya menjadi impuls listrik untuk dikirim ke otak." } }
+      { part: { id: "Pupil", en: "Pupil" }, desc: { id: "Lubang hitam di tengah mata yang membiarkan cahaya masuk.", en: "The black hole in the middle of the eye that lets light in." } },
+      { part: { id: "Iris", en: "Iris" }, desc: { id: "Bagian berwarna yang mengatur ukuran pupil.", en: "The colored part that controls the size of the pupil." } }
     ],
-    wowFactor: {
-      id: "Dalam Surah Al-Balad 90:8, Allah bertanya: 'Bukankah Kami telah menjadikan untuknya sepasang mata?'. Keajaiban mata terletak pada retina yang memiliki 120 juta sel batang untuk mendeteksi cahaya redup dan 6 juta sel kerucut untuk melihat detail warna warni dengan presisi tinggi.",
-      en: "Dalam Surah Al-Balad 90:8, Allah bertanya: 'Bukankah Kami telah menjadikan untuknya sepasang mata?'. Keajaiban mata terletak pada retina yang memiliki 120 juta sel batang untuk mendeteksi cahaya redup dan 6 juta sel kerucut untuk melihat detail warna warni dengan presisi tinggi.",
-    },
+    wowFactor: { id: "Desain mata sangatlah rumit! Bahkan Charles Darwin (Bapak Evolusi) pernah mengakui bahwa mata tampaknya terlalu sempurna untuk tercipta kebetulan.\n\nAllah merancang mata kita lengkap dengan alis, bulu mata, dan kelopak yang semuanya punya fungsi melindungi kamera alami ini dari debu dan cahaya menyilaukan. Subhanallah!", en: "The design of the eye is incredibly complex! Even Charles Darwin (Father of Evolution) once admitted that the eye seems too perfect to be formed by chance.\n\nAllah designed our eyes complete with eyebrows, eyelashes, and eyelids, which all have functions to protect this natural camera from dust and glaring light. Subhanallah!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَاللَّهُ أَخْرَجَكُم مِّن بُطُونِ أُمَّهَاتِكُمْ لَا تَعْلَمُونَ شَيْئًا وَجَعَلَ لَكُمُ السَّمْعَ وَالْأَبْصَارَ وَالْأَفْئِدَةَ",
+      transliteration: "Wallahu akhrajakum min butuni ummahatikum la ta'lamuna shay'an waja'ala lakumus-sam'a wal-absara wal-af'idah",
+      translation: { id: "Dan Allah mengeluarkan kamu dari perut ibumu dalam keadaan tidak mengetahui sesuatu pun, dan Dia memberi kamu pendengaran, penglihatan dan hati.", en: "And Allah has extracted you from the wombs of your mothers not knowing a thing, and He made for you hearing and vision and intellect." }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Mata?",
-          en: "What is the primary wisdom of scientific signs regarding Mata?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
+        question: { id: "Bagian mata yang memberikan warna (seperti hitam, coklat, atau biru) disebut...", en: "The part of the eye that gives it color (like black, brown, or blue) is called..." },
+        options: [{ text: { id: "Retina", en: "Retina" } }, { text: { id: "Kornea", en: "Cornea" } }, { text: { id: "Iris", en: "Iris" } }, { text: { id: "Pupil", en: "Pupil" } }],
+        answerIdx: 2
       },
-    ],
-  },
+      {
+        question: { id: "Gambar yang ditangkap oleh retina mata kita sebenarnya...", en: "The image captured by our eye's retina is actually..." },
+        options: [{ text: { id: "Hitam putih", en: "Black and white" } }, { text: { id: "Terbalik", en: "Upside down" } }, { text: { id: "Buram", en: "Blurry" } }, { text: { id: "Berputar", en: "Spinning" } }],
+        answerIdx: 1
+      },
+      {
+        question: { id: "Apa fungsi air mata selain untuk menangis?", en: "What is the function of tears besides crying?" },
+        options: [{ text: { id: "Membuat mata jadi biru", en: "Making eyes blue" } }, { text: { id: "Membersihkan mata dari bakteri", en: "Cleaning eyes from bacteria" } }, { text: { id: "Membantu kita tidur", en: "Helping us sleep" } }, { text: { id: "Membuat mata menyala di malam hari", en: "Making eyes glow at night" } }],
+        answerIdx: 1
+      }
+    ]
+  }
 };

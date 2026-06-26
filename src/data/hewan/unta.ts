@@ -2,109 +2,91 @@ import { ObjectData } from "../objects";
 
 export const untaData: ObjectData = {
   slug: "unta",
-  name: {
-    id: "Unta",
-    en: "Unta",
-  },
+  name: { id: "Unta", en: "Camel" },
+  icon: "🐪",
+  category: "hewan",
+  type: "hewan",
   scientificName: "Camelus",
   surahName: "Al-Ghashiyah",
   surahReference: "88:17",
-  icon: "🐫",
-  category: "hewan",
-  type: "hewan",
-  unlockedAtPoints: 50,
+  unlockedAtPoints: 100,
+
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Ghashiyah 88:17" }
+    { arab: "إِبِلٌ", latin: "Ibil", arti: "Unta", artiEn: "Camel", contohAyat: "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan?" },
+    { arab: "جَمَلٌ", latin: "Jamal", arti: "Unta jantan", artiEn: "Male camel", contohAyat: "Digunakan dalam ayat tentang jarum." },
+    { arab: "نَاقَةٌ", latin: "Naqah", arti: "Unta betina", artiEn: "Female camel", contohAyat: "Unta betina mukjizat Nabi Shalih AS." },
+    { arab: "صَحْرَاءُ", latin: "Sahraa'", arti: "Gurun", artiEn: "Desert", contohAyat: "Tempat hidup alami unta." }
   ],
+
   balita: {
-    text: {
-      id: "Ini Unta! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Unta! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Unta. Allah menciptakan Unta dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Unta. Allah created Unta beautifully so we all become grateful.",
-    },
+    text: { id: "Ini unta! Unta punya punuk di punggungnya untuk menyimpan makanan! 🐪", en: "This is a camel! Camels have humps on their backs to store food! 🐪" },
+    audioTranscript: { id: "Wah, lihat! Ini unta! Punggungnya ada benjolannya ya? Itu namanya punuk! Unta hebat banget lho, bisa jalan jauh di padang pasir yang panaaas!", en: "Wow, look! It's a camel! It has a bump on its back, right? That's a hump! Camels are awesome, they can walk far in the hot desert!" },
     quiz: {
-      question: {
-        id: "Mana gambar Unta?",
-        en: "Which one is the picture of Unta?",
-      },
+      question: { id: "Mana gambar unta?", en: "Which one is the camel?" },
       options: [
-        { text: { id: "🐫 Unta", en: "🐫 Unta" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "🐪 Unta", en: "🐪 Camel" } },
+        { text: { id: "🐘 Gajah", en: "🐘 Elephant" } },
+        { text: { id: "🐈 Kucing", en: "🐈 Cat" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   anak: {
-    text: {
-      id: "Fakta menarik tentang Unta: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Unta: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Unta adalah kendaraan super di padang pasir yang panas!", en: "Camels are super vehicles in the hot desert!" },
     facts: [
-      { id: "Unta dapat bertahan hidup berbulan-bulan di gurun pasir tanpa minum air.", en: "Unta dapat bertahan hidup berbulan-bulan di gurun pasir tanpa minum air." },
-      { id: "Punuk unta menyimpan lemak cadangan energi, bukan air seperti anggapan umum.", en: "Punuk unta menyimpan lemak cadangan energi, bukan air seperti anggapan umum." },
-      { id: "Unta memiliki tiga pasang kelopak mata dan bulu mata panjang untuk menghalau pasir.", en: "Unta memiliki tiga pasang kelopak mata dan bulu mata panjang untuk menghalau pasir." },
-      { id: "Unta bisa menutup lubang hidungnya saat terjadi badai pasir gurun.", en: "Unta bisa menutup lubang hidungnya saat terjadi badai pasir gurun." },
-      { id: "Sel darah merah unta berbentuk oval sehingga tetap mengalir lancar saat dehidrasi.", en: "Sel darah merah unta berbentuk oval sehingga tetap mengalir lancar saat dehidrasi." }
+      { id: "Unta bisa minum 113 liter air cuma dalam 13 menit! Hah?!", en: "Camels can drink 113 liters of water in just 13 minutes! What?!" },
+      { id: "Punuk unta isinya bukan air lho, tapi cadangan lemak.", en: "A camel's hump is not filled with water, but fat reserves." },
+      { id: "Bulu mata unta tebal banget buat menahan debu gurun pasir.", en: "Camels have thick eyelashes to keep desert sand out." },
+      { id: "Telapak kaki unta lebar seperti sepatu salju supaya tidak tenggelam di pasir.", en: "Camel's feet are wide like snowshoes so they don't sink in the sand." },
+      { id: "Mereka bisa menutup lubang hidungnya supaya pasir tidak masuk saat badai!", en: "They can close their nostrils so sand doesn't enter during storms!" }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+      transliteration: "Afalaa yanzhuruuna ilal ibili kayfa khuliqat",
+      translation: { id: "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan?", en: "Then do they not look at the camels - how they are created?" },
+      context: { id: "Tau nggak? Allah menyuruh kita memikirkan penciptaan unta lho! Coba lihat betapa keren dan kuatnya ciptaan Allah ini untuk hidup di gurun yang super panas.", en: "Did you know? Allah tells us to think about how camels are created! Look at how cool and strong Allah's creation is to live in the super hot desert." }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Unta dengan sempurna?",
-        en: "Who created Unta perfectly?",
-      },
+      question: { id: "Apa isi punuk unta?", en: "What is inside a camel's hump?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "Air", en: "Water" } },
+        { text: { id: "Lemak", en: "Fat" } },
+        { text: { id: "Tulang", en: "Bone" } },
+        { text: { id: "Pasir", en: "Sand" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
+
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Unta mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Unta reveals the brilliance of biological design and natural balance.",
-    },
+    text: { id: "Unta dijuluki 'Kapal Gurun'. Mereka bisa bertahan hidup berhari-hari tanpa air dan makanan dalam suhu yang mencapai 50 derajat celcius!\n\nKemampuan adaptasi biologi unta sangat luar biasa. Sistem pencernaan mereka bisa memproses tumbuhan berduri sekalipun tanpa melukai mulutnya yang kebal.\n\nSelain itu, sel darah merah unta berbentuk oval, tidak bulat seperti mamalia lain. Ini memungkinkan darah tetap mengalir lancar walau unta dehidrasi berat!", en: "Camels are dubbed the 'Ships of the Desert'. They can survive for days without water and food in temperatures up to 50 degrees Celsius!\n\nThe camel's biological adaptation is extraordinary. Their digestive system can process thorny plants without hurting their immune mouths.\n\nAlso, camel red blood cells are oval-shaped, not round like other mammals. This allows blood to keep flowing smoothly even when severely dehydrated!" },
     anatomy: [
-      { part: { id: "Telapak Kaki Lebar", en: "Telapak Kaki Lebar" }, desc: { id: "Berselaput tebal agar tidak terperosok ke dalam pasir panas.", en: "Berselaput tebal agar tidak terperosok ke dalam pasir panas." } }
+      { part: { id: "Punuk", en: "Hump" }, desc: { id: "Menyimpan hingga 36 kg lemak cadangan energi.", en: "Stores up to 36 kg of fat for energy reserves." } },
+      { part: { id: "Sel Darah Merah", en: "Red Blood Cells" }, desc: { id: "Berbentuk oval agar darah mengalir saat kekurangan cairan.", en: "Oval-shaped so blood flows when lacking fluids." } }
     ],
-    wowFactor: {
-      id: "Dalam Surah Al-Ghashiyah 88:17, Allah menyuruh manusia mengamati bagaimana unta diciptakan. Unta memiliki keajaiban sains berupa kemampuan minum 150 liter air sekali minum, dan suhu tubuhnya bisa menyesuaikan diri dengan panas gurun (34C-41C) agar tidak membuang air melalui keringat.",
-      en: "Dalam Surah Al-Ghashiyah 88:17, Allah menyuruh manusia mengamati bagaimana unta diciptakan. Unta memiliki keajaiban sains berupa kemampuan minum 150 liter air sekali minum, dan suhu tubuhnya bisa menyesuaikan diri dengan panas gurun (34C-41C) agar tidak membuang air melalui keringat.",
-    },
+    wowFactor: { id: "Sains menemukan bahwa sel darah merah unta bisa membesar hingga 240% dari ukuran aslinya saat minum banyak air, tanpa pecah! Mamalia lain sel darahnya akan hancur jika membesar lebih dari 150%.\n\nAl-Qur'an dalam surah Al-Ghashiyah secara khusus memerintahkan kita melihat penciptaan Unta: 'Afalaa yanzhuruuna ilal ibili kayfa khuliqat'. Ayat ini mengajak manusia dari berabad-abad lalu untuk meneliti biologi unta yang ternyata menyembunyikan keajaiban sains luar biasa yang baru terungkap di era modern!", en: "Science found that camel red blood cells can expand up to 240% of their original size when drinking lots of water, without bursting! Other mammals' blood cells would be destroyed if expanded beyond 150%.\n\nThe Qur'an in Surah Al-Ghashiyah specifically commands us to look at the camel's creation. This verse invites humans from centuries ago to research camel biology which apparently hides incredible scientific miracles only revealed in the modern era!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+      transliteration: "Afalaa yanzhuruuna ilal ibili kayfa khuliqat",
+      translation: { id: "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan?", en: "Then do they not look at the camels - how they are created?" }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Unta?",
-          en: "What is the primary wisdom of scientific signs regarding Unta?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
+        question: { id: "Apa bentuk sel darah merah unta?", en: "What is the shape of a camel's red blood cells?" },
+        options: [{ text: { id: "Bulat", en: "Round" } }, { text: { id: "Kotak", en: "Square" } }, { text: { id: "Oval", en: "Oval" } }, { text: { id: "Segitiga", en: "Triangle" } }],
+        answerIdx: 2
       },
-    ],
-  },
+      {
+        question: { id: "Berapa lama unta bisa minum 113 liter air?", en: "How fast can a camel drink 113 liters of water?" },
+        options: [{ text: { id: "13 menit", en: "13 minutes" } }, { text: { id: "1 jam", en: "1 hour" } }, { text: { id: "1 hari", en: "1 day" } }, { text: { id: "30 detik", en: "30 seconds" } }],
+        answerIdx: 0
+      },
+      {
+        question: { id: "Surah apa yang menyebutkan keajaiban penciptaan unta?", en: "Which surah mentions the miracle of camel's creation?" },
+        options: [{ text: { id: "Al-Fatihah", en: "Al-Fatihah" } }, { text: { id: "Al-Ghashiyah", en: "Al-Ghashiyah" } }, { text: { id: "Al-Baqarah", en: "Al-Baqarah" } }, { text: { id: "Al-Kahf", en: "Al-Kahf" } }],
+        answerIdx: 1
+      }
+    ]
+  }
 };

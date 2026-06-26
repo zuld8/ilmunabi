@@ -2,107 +2,91 @@ import { ObjectData } from "../objects";
 
 export const hujanData: ObjectData = {
   slug: "hujan",
-  name: {
-    id: "Hujan",
-    en: "Hujan",
-  },
-  scientificName: "Rain",
-  surahName: "Al-Baqarah",
-  surahReference: "2:22",
+  name: { id: "Hujan", en: "Rain" },
   icon: "🌧️",
   category: "alam",
   type: "alam",
+  scientificName: "Pluvia",
+  surahName: "Ar-Rum",
+  surahReference: "30:48",
   unlockedAtPoints: 50,
+
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:22" }
+    { arab: "مَطَرٌ", latin: "Matar", arti: "Hujan", artiEn: "Rain", contohAyat: "Hujan yang turun dari langit" },
+    { arab: "سَحَابٌ", latin: "Sahab", arti: "Awan", artiEn: "Cloud", contohAyat: "Awan mendung tanda akan hujan" },
+    { arab: "قَطْرَةٌ", latin: "Qatrah", arti: "Tetesan", artiEn: "Drop", contohAyat: "Tetesan air hujan" },
+    { arab: "مَاءٌ", latin: "Ma'un", arti: "Air", artiEn: "Water", contohAyat: "Air hujan menyuburkan tanaman" }
   ],
+
   balita: {
-    text: {
-      id: "Ini Hujan! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Hujan! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Hujan. Allah menciptakan Hujan dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Hujan. Allah created Hujan beautifully so we all become grateful.",
-    },
+    text: { id: "Tik tik tik! Bunyi hujan turun dari awan. Airnya segar sekali. Kalau hujan turun, tanaman bisa minum air! 🌧️", en: "Pitter patter! The sound of rain falling from the clouds. The water is so fresh. When it rains, plants can drink water! 🌧️" },
+    audioTranscript: { id: "Horeee hujan turun! Rintik-rintik basahin bumi. Alhamdulillah, Allah kasih kita hujan biar bumi tidak kehausan! 🌧️", en: "Hooray, it's raining! Drizzling wetting the earth. Alhamdulillah, Allah gives us rain so the earth isn't thirsty! 🌧️" },
     quiz: {
-      question: {
-        id: "Mana gambar Hujan?",
-        en: "Which one is the picture of Hujan?",
-      },
+      question: { id: "Air hujan turunnya dari mana?", en: "Where does rain water fall from?" },
       options: [
-        { text: { id: "🌧️ Hujan", en: "🌧️ Hujan" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "☁️ Dari awan di langit", en: "☁️ From clouds in the sky" } },
+        { text: { id: "🚿 Dari keran air", en: "🚿 From a water faucet" } },
+        { text: { id: "🪨 Dari dalam batu", en: "🪨 From inside a stone" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   anak: {
-    text: {
-      id: "Fakta menarik tentang Hujan: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Hujan: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Hujan terjadi saat uap air di awan sudah terlalu berat dan menetes ke Bumi. Hujan sangat penting supaya tumbuhan, hewan, dan manusia bisa mendapatkan air tawar bersih.", en: "Rain happens when water vapor in clouds gets too heavy and drips down to Earth. Rain is very important so plants, animals, and humans can get clean fresh water." },
     facts: [
-      { id: "Hujan merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Hujan merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
-      { id: "Keteraturan siklus Hujan memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Hujan memungkinkan kehidupan biologis manusia berjalan dengan aman." },
-      { id: "Interaksi fisik Hujan dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Hujan dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
+      { id: "Awan yang berwarna hitam/gelap (mendung) tandanya membawa banyak sekali air hujan.", en: "Dark/black clouds (overcast) indicate they carry a lot of rain water." },
+      { id: "Satu tetes hujan jatuhnya sangat cepat lho, seperti mobil yang sedang melaju pelan.", en: "One raindrop falls very fast, like a slow-moving car." },
+      { id: "Bau wangi saat hujan turun mengenai tanah basah itu namanya 'Petrichor'.", en: "The sweet smell when rain hits wet soil is called 'Petrichor'." },
+      { id: "Pelangi sering muncul setelah hujan karena cahaya matahari menembus sisa rintik hujan.", en: "A rainbow often appears after rain because sunlight passes through leftover raindrops." },
+      { id: "Air hujan awalnya berasal dari laut, sungai, dan danau yang menguap ke atas langit.", en: "Rainwater originally comes from seas, rivers, and lakes that evaporate up into the sky." }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "وَأَنزَلْنَا مِنَ ٱلسَّمَآءِ مَآءً طَهُورًا",
+      transliteration: "Wa anzalnaa minas-samaa'i maa'an tahuuraa",
+      translation: { id: "Dan Kami turunkan dari langit air yang amat bersih (suci).", en: "And We send down from the sky pure water." },
+      context: { id: "Tau nggak? Air laut itu sangat asin dan tidak bisa langsung diminum. Tapi Allah punya cara ajaib bernama 'Hujan'. Air laut yang menguap disaring Allah jadi air hujan yang tawar dan bersih untuk kita minum! Hebat kan!", en: "Did you know? Seawater is very salty and cannot be drunk directly. But Allah has a magical way called 'Rain'. Evaporated seawater is filtered by Allah into fresh and clean rain water for us to drink! Isn't that great!" }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Hujan dengan sempurna?",
-        en: "Who created Hujan perfectly?",
-      },
+      question: { id: "Apa nama bau wangi tanah basah yang tercium saat hujan pertama kali turun?", en: "What is the name of the sweet wet soil smell when it first rains?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "Petrichor", en: "Petrichor" } },
+        { text: { id: "Parfum", en: "Perfume" } },
+        { text: { id: "Klorofil", en: "Chlorophyll" } },
+        { text: { id: "Fotosintesis", en: "Photosynthesis" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Hujan mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Hujan reveals the brilliance of biological design and natural balance.",
-    },
+    text: { id: "Hujan adalah bagian utama dari Siklus Hidrologi Bumi. Panas matahari menyebabkan air di lautan, danau, dan tumbuhan menguap menjadi gas (Evaporasi). Saat uap air naik ke langit yang lebih tinggi dan dingin, ia berubah wujud kembali menjadi titik-titik air kecil yang bergerombol membentuk awan (Kondensasi).\n\nKetika titik-titik air di awan bergabung menjadi lebih besar dan terlalu berat untuk ditahan oleh udara, gaya gravitasi menariknya jatuh kembali ke Bumi sebagai hujan (Presipitasi). Tanpa siklus pengolahan air alami yang terus berputar ini, daratan akan menjadi gurun kering tanpa kehidupan.\n\nUniknya, setiap tetes hujan memiliki bentuk seperti hamburger mini (rata di bawah) saat jatuh menembus udara, bukan seperti bentuk tetesan air mata yang sering kita gambar!", en: "Rain is a major part of the Earth's Hydrological Cycle. Sun's heat causes water in oceans, lakes, and plants to evaporate into gas (Evaporation). As water vapor rises to the higher, colder sky, it changes back into tiny water droplets clustering to form clouds (Condensation).\n\nWhen water droplets in clouds merge into bigger ones and get too heavy for the air to hold, gravity pulls them down to Earth as rain (Precipitation). Without this continuously rotating natural water recycling cycle, the land would be a dry lifeless desert.\n\nUniquely, every raindrop is shaped like a mini hamburger (flat on the bottom) as it falls through the air, not like the teardrop shape we often draw!" },
     anatomy: [
-      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
+      { part: { id: "Evaporasi", en: "Evaporation" }, desc: { id: "Proses air cair berubah menjadi gas/uap naik ke atas.", en: "The process of liquid water turning into gas/vapor rising up." } },
+      { part: { id: "Kondensasi", en: "Condensation" }, desc: { id: "Proses uap air mendingin dan berubah menjadi awan.", en: "The process of water vapor cooling and turning into clouds." } }
     ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Hujan: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Hujan agar tidak terjadi benturan atau kehancuran kosmis.",
-      en: "Keajaiban penciptaan Hujan: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Hujan agar tidak terjadi benturan atau kehancuran kosmis.",
-    },
+    wowFactor: { id: "Ilmu meteorologi modern merumuskan Siklus Air (evaporasi, pembentukan awan, presipitasi) baru pada abad ke-16. Hujan terbukti berasal dari air permukaan bumi yang diangkat, lalu disucikan di udara, dan diturunkan kembali dalam takaran yang seimbang agar bumi tidak tenggelam seluruhnya.\n\nAl-Qur'an sudah menjelaskan proses fisika awan dan hujan secara akurat ratusan tahun sebelumnya di Surah Az-Zukhruf ayat 11: 'Dan Yang menurunkan air dari langit menurut kadar (ukuran yang seimbang).' Ini membuktikan bahwa Pencipta alam semesta inilah yang menurunkan Al-Qur'an!", en: "Modern meteorology formulated the Water Cycle (evaporation, cloud formation, precipitation) only in the 16th century. Rain is proven to come from earth's surface water lifted, purified in the air, and sent down again in balanced measure so the earth doesn't completely drown.\n\nThe Qur'an had accurately explained the physics of clouds and rain hundreds of years earlier in Surah Az-Zukhruf verse 11: 'And who sends down rain from the sky in measured amounts.' This proves that the Creator of the universe is the one who sent down the Qur'an!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَٱلَّذِى نَزَّلَ مِنَ ٱلسَّمَآءِ مَآءًۢ بِقَدَرٍ فَأَنشَرْنَا بِهِۦ بَلْدَةً مَّيْتًا",
+      transliteration: "Wal-ladzii nazzala minas-samaa'i maa'am biqadarin fa ansyarnaa bihii baldatam maytaa",
+      translation: { id: "Dan Yang menurunkan air dari langit menurut kadar (yang diperlukan) lalu Kami hidupkan dengan air itu negeri yang mati.", en: "And who sends down rain from the sky in measured amounts, and We revive thereby a dead land." }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Hujan?",
-          en: "What is the primary wisdom of scientific signs regarding Hujan?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
+        question: { id: "Apa sebutan ilmiah untuk proses jatuhnya air hujan dari awan?", en: "What is the scientific term for the process of rainwater falling from clouds?" },
+        options: [{ text: { id: "Presipitasi", en: "Precipitation" } }, { text: { id: "Evaporasi", en: "Evaporation" } }, { text: { id: "Kondensasi", en: "Condensation" } }, { text: { id: "Sublimasi", en: "Sublimation" } }],
+        answerIdx: 0
       },
-    ],
-  },
+      {
+        question: { id: "Bentuk asli tetesan hujan saat jatuh menembus udara mirip seperti apa?", en: "What does the true shape of a falling raindrop look like?" },
+        options: [{ text: { id: "Hamburger mini (rata di bagian bawah)", en: "Mini hamburger (flat on the bottom)" } }, { text: { id: "Bentuk air mata lancip", en: "Pointy teardrop shape" } }, { text: { id: "Bola bundar sempurna", en: "Perfectly round ball" } }, { text: { id: "Kotak es kubus", en: "Ice cube square" } }],
+        answerIdx: 0
+      },
+      {
+        question: { id: "Siklus di mana air bumi menguap, jadi awan, dan turun jadi hujan disebut?", en: "The cycle where earth's water evaporates, becomes clouds, and falls as rain is called?" },
+        options: [{ text: { id: "Siklus Hidrologi", en: "Hydrological Cycle" } }, { text: { id: "Siklus Biologi", en: "Biological Cycle" } }, { text: { id: "Siklus Karbon", en: "Carbon Cycle" } }, { text: { id: "Siklus Tata Surya", en: "Solar System Cycle" } }],
+        answerIdx: 0
+      }
+    ]
+  }
 };

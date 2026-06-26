@@ -1,110 +1,98 @@
 import { ObjectData } from "../objects";
 
-export const labaLabaData: ObjectData = {
+export const labalabaData: ObjectData = {
   slug: "laba-laba",
-  name: {
-    id: "Laba-laba",
-    en: "Laba-laba",
-  },
-  scientificName: "Araneae",
-  surahName: "Al-Ankabut",
-  surahReference: "29:41",
-  icon: "🕷️",
+  name: { id: "Laba-laba", en: "Spider" },
+  icon: "🕷️", 
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Araneae",
+  surahName: "Al-'Ankabut",
+  surahReference: "29:41", 
+  unlockedAtPoints: 50, 
+  
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Ankabut 29:41" }
+    { arab: "عَنْكَبُوتٌ", latin: "Ankabut", arti: "Laba-laba", artiEn: "Spider", contohAyat: "Surah Al-'Ankabut artinya laba-laba betina" },
+    { arab: "بَيْتٌ", latin: "Bait", arti: "Rumah", artiEn: "House/Home", contohAyat: "Rumah yang paling rapuh adalah rumah laba-laba" },
+    { arab: "أَوْهَنَ", latin: "Awhana", arti: "Paling lemah", artiEn: "Weakest", contohAyat: "Sarang laba-laba sangat mudah rusak oleh angin atau sapu" },
+    { arab: "خَيْطٌ", latin: "Khayth", arti: "Benang", artiEn: "Thread", contohAyat: "Laba-laba memintal benang jaring" }
   ],
+  
   balita: {
-    text: {
-      id: "Ini Laba-laba! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Laba-laba! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Laba-laba. Allah menciptakan Laba-laba dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Laba-laba. Allah created Laba-laba beautifully so we all become grateful.",
-    },
+    text: { id: "Wusss! Ini laba-laba, si pembuat jaring yang keren. Jaringnya bisa menangkap nyamuk nakal lho! 🕷️🕸️", en: "Whoosh! This is a spider, a cool web-maker. Its web can catch naughty mosquitoes! 🕷️🕸️" },
+    audioTranscript: { id: "Lihat, ada laba-laba sedang membuat sarang! Jaringnya lengket-lengket. Hebat ya laba-laba bisa merajut jaringnya sendiri!", en: "Look, a spider is making its web! The web is sticky. It's so cool the spider can knit its own web!" },
     quiz: {
-      question: {
-        id: "Mana gambar Laba-laba?",
-        en: "Which one is the picture of Laba-laba?",
-      },
+      question: { id: "Apa yang dibuat laba-laba untuk menangkap nyamuk?", en: "What does the spider make to catch mosquitoes?" },
       options: [
-        { text: { id: "🕷️ Laba-laba", en: "🕷️ Laba-laba" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "🕸️ Jaring lengket", en: "🕸️ Sticky web" } },
+        { text: { id: "🏠 Rumah batu", en: "🏠 Stone house" } },
+        { text: { id: "🌳 Daun besar", en: "🌳 Big leaf" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+  
   anak: {
-    text: {
-      id: "Fakta menarik tentang Laba-laba: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Laba-laba: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Laba-laba punya jaring ajaib! Yuk kenalan dengan hewan pemintal benang ini.", en: "Spiders have magic webs! Let's meet this thread-spinning animal." },
     facts: [
-      { id: "Sutra jaring laba-laba lebih kuat dari kawat baja dengan ketebalan yang sama.", en: "Sutra jaring laba-laba lebih kuat dari kawat baja dengan ketebalan yang sama." },
-      { id: "Laba-laba bukan serangga; mereka masuk kelompok arakhnida berkaki delapan.", en: "Laba-laba bukan serangga; mereka masuk kelompok arakhnida berkaki delapan." },
-      { id: "Jaring laba-laba dilapisi lem lengket untuk menangkap serangga terbang.", en: "Jaring laba-laba dilapisi lem lengket untuk menangkap serangga terbang." },
-      { id: "Sebagian besar laba-laba memiliki 8 mata untuk melihat ke segala arah.", en: "Sebagian besar laba-laba memiliki 8 mata untuk melihat ke segala arah." },
-      { id: "Laba-laba membantu petani dengan memakan serangga hama tanaman.", en: "Laba-laba membantu petani dengan memakan serangga hama tanaman." }
+      { id: "Laba-laba punya 8 kaki. Berbeda dengan serangga yang hanya punya 6 kaki.", en: "Spiders have 8 legs. Unlike insects which only have 6 legs." },
+      { id: "Sutra laba-laba sangat tipis, tapi lebih kuat dari baja jika ukurannya sama tebal!", en: "Spider silk is very thin, but it's stronger than steel of the same thickness!" },
+      { id: "Kebanyakan laba-laba memiliki 8 mata yang bersinar dalam gelap.", en: "Most spiders have 8 eyes that shine in the dark." },
+      { id: "Laba-laba mendaur ulang jaringnya lho! Mereka memakan jaring lama lalu membuat yang baru.", en: "Spiders recycle their webs! They eat the old web and make a new one." },
+      { id: "Tidak semua laba-laba membuat jaring melingkar, ada yang melempar jaring, ada yang berburu melompat.", en: "Not all spiders make circular webs, some throw nets, some hunt by jumping." }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "مَثَلُ الَّذِينَ اتَّخَذُوا مِنْ دُونِ اللَّهِ أَوْلِيَاءَ كَمَثَلِ الْعَنْكَبُوتِ اتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ الْبُيُوتِ لَبَيْتُ الْعَنْكَبُوتِ ۖ لَوْ كَانُوا يَعْلَمُونَ",
+      transliteration: "Matsalulladziinattakhadzuu min duunillaahi awliyaa'a kamatsalil-'ankabuutittakhadzat baitaa. Wa inna awhanal-buyuuti labaitul-'ankabuuti law kaanuu ya'lamuun.",
+      translation: { id: "Perumpamaan orang-orang yang mengambil pelindung-pelindung selain Allah adalah seperti laba-laba yang membuat rumah. Dan sesungguhnya rumah yang paling lemah adalah rumah laba-laba kalau mereka mengetahui.", en: "The example of those who take allies other than Allah is like that of the spider who takes a home. And indeed, the weakest of homes is the home of the spider, if they only knew." },
+      context: { id: "Tau nggak? Biarpun benang laba-laba kuat, sarangnya secara keseluruhan gampang sekali rusak kena angin atau tangan kita. Allah pakai sarang ini sebagai contoh: menyembah selain Allah itu sangat rapuh!", en: "Did you know? Even though spider silk is strong, the web overall is easily destroyed by wind or our hands. Allah uses this web as an example: seeking protection other than Allah is very fragile!" }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Laba-laba dengan sempurna?",
-        en: "Who created Laba-laba perfectly?",
-      },
+      question: { id: "Berapa jumlah kaki yang dimiliki laba-laba?", en: "How many legs does a spider have?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "Delapan", en: "Eight" } },
+        { text: { id: "Enam", en: "Six" } },
+        { text: { id: "Sepuluh", en: "Ten" } },
+        { text: { id: "Empat", en: "Four" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+  
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Laba-laba mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Laba-laba reveals the brilliance of biological design and natural balance.",
+    text: { 
+      id: "Laba-laba adalah arsitek dan insinyur hebat di alam liar. Sutra yang mereka hasilkan berasal dari kelenjar sutra cair di perutnya, yang mengeras begitu ditarik keluar ke udara.\n\nSecara kimia, benang sutra laba-laba adalah protein ajaib. Ilmuwan dunia berusaha meniru material ini karena sifatnya yang super ringan, lentur, tetapi kekuatannya mengalahkan rompi anti peluru (Kevlar). Jaring ini dirancang menyerap energi tabrakan dari serangga terbang agar tidak robek.\n\nNamun di balik kemampuan arsitektur yang canggih ini, struktur sosial dalam keluarga laba-laba ternyata bisa sangat kacau.", 
+      en: "Spiders are great architects and engineers in the wild. The silk they produce comes from liquid silk glands in their abdomen, which solidifies as soon as it's pulled into the air.\n\nChemically, spider silk is a magic protein. Scientists worldwide try to replicate this material because it is super light, flexible, but its strength surpasses bulletproof vests (Kevlar). The web is designed to absorb collision energy from flying insects without tearing.\n\nBut behind this advanced architectural ability, the social structure within a spider's family can be very chaotic." 
     },
     anatomy: [
-      { part: { id: "Organ Pemintal", en: "Organ Pemintal" }, desc: { id: "Mengeluarkan sutra cair yang langsung mengeras saat terkena udara.", en: "Mengeluarkan sutra cair yang langsung mengeras saat terkena udara." } }
+      { part: { id: "Spinneret", en: "Spinnerets" }, desc: { id: "Organ pemintal sutra di ujung perut laba-laba.", en: "Silk-spinning organs at the end of a spider's abdomen." } },
+      { part: { id: "Pedipalpus", en: "Pedipalps" }, desc: { id: "Sepasang anggota badan pendek di dekat mulut untuk merasakan makanan dan kawin.", en: "A pair of short appendages near the mouth for feeling food and mating." } }
     ],
-    wowFactor: {
-      id: "Dalam Surah Al-Ankabut 29:41, Allah mengibaratkan pelindung selain Allah seperti sarang laba-laba, rumah yang paling rapuh. Secara sains, meski sutra pembentuknya kuat, jaring laba-laba tidak mampu melindungi penghuninya dari cuaca ekstrim, angin kencang, air hujan, atau predator besar.",
-      en: "Dalam Surah Al-Ankabut 29:41, Allah mengibaratkan pelindung selain Allah seperti sarang laba-laba, rumah yang paling rapuh. Secara sains, meski sutra pembentuknya kuat, jaring laba-laba tidak mampu melindungi penghuninya dari cuaca ekstrim, angin kencang, air hujan, atau predator besar.",
+    wowFactor: { 
+      id: "Fakta WOW: Kata 'Al-'Ankabut' dalam bahasa Arab merujuk pada laba-laba BETINA, dan sains modern membuktikan bahwa memang laba-laba betinalah yang membuat jaring/rumah.\n\nSelain itu, kenapa Al-Qur'an menyebut 'rumah paling lemah/rapuh'? Sains perilaku hewan mengungkap fakta mengerikan: rumah laba-laba tidak memiliki rasa kasih sayang! Laba-laba betina sering memakan pejantannya setelah kawin, dan anak-anak laba-laba yang menetas terkadang saling memakan saudara mereka sendiri! Rumah laba-laba rapuh secara fisik (mudah tersapu angin), dan lebih rapuh lagi secara ikatan keluarga (tidak aman untuk keluarga sendiri). Benar-benar perumpamaan luar biasa akurat dari Al-Qur'an!", 
+      en: "WOW Fact: The Arabic word 'Al-'Ankabut' refers to a FEMALE spider, and modern science proves that it is indeed the female spider that builds the web/home.\n\nAlso, why does the Qur'an say 'the weakest/most fragile of homes'? Animal behavior science reveals a chilling fact: the spider's home is devoid of affection! The female spider often eats the male after mating, and newly hatched spiderlings sometimes eat their own siblings! The spider's home is physically fragile (easily swept away by wind), and even more fragile in family bonds (unsafe for its own family). A truly astonishingly accurate parable from the Qur'an!" 
     },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَإِنَّ أَوْهَنَ الْبُيُوتِ لَبَيْتُ الْعَنْكَبُوتِ ۖ لَوْ كَانُوا يَعْلَمُونَ",
+      transliteration: "Wa inna awhanal-buyuuti labaitul-'ankabuuti law kaanuu ya'lamuun.",
+      translation: { id: "Dan sesungguhnya rumah yang paling lemah adalah rumah laba-laba kalau mereka mengetahui.", en: "And indeed, the weakest of homes is the home of the spider, if they only knew." }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Laba-laba?",
-          en: "What is the primary wisdom of scientific signs regarding Laba-laba?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
+        question: { id: "Dalam Al-Qur'an, kata Al-'Ankabut (laba-laba betina) digunakan karena...", en: "In the Qur'an, the word Al-'Ankabut (female spider) is used because..." },
+        options: [{ text: { id: "Hanya laba-laba betina yang membuat jaring", en: "Only female spiders build webs" } }, { text: { id: "Laba-laba jantan bisa terbang", en: "Male spiders can fly" } }, { text: { id: "Laba-laba betina ukurannya raksasa", en: "Female spiders are giant" } }, { text: { id: "Semua laba-laba itu betina", en: "All spiders are female" } }],
+        answerIdx: 0
       },
-    ],
-  },
+      {
+        question: { id: "Secara ilmiah, sutra laba-laba ternyata lebih kuat dari...", en: "Scientifically, spider silk is actually stronger than..." },
+        options: [{ text: { id: "Baja dengan ukuran tebal yang sama", en: "Steel of the same thickness" } }, { text: { id: "Berlian", en: "Diamond" } }, { text: { id: "Batu bata", en: "Brick" } }, { text: { id: "Plastik tebal", en: "Thick plastic" } }],
+        answerIdx: 0
+      },
+      {
+        question: { id: "Apa arti psikologis dari 'rumah paling rapuh' pada sarang laba-laba menurut biologi hewan?", en: "What is the psychological meaning of 'weakest home' in a spider's nest according to animal biology?" },
+        options: [{ text: { id: "Anggota keluarga saling memakan dan tidak harmonis", en: "Family members eat each other and lack harmony" } }, { text: { id: "Rumahnya cepat berjamur", en: "The house gets moldy fast" } }, { text: { id: "Cahaya matahari merusaknya", en: "Sunlight destroys it" } }, { text: { id: "Selalu basah karena embun", en: "Always wet from dew" } }],
+        answerIdx: 0
+      }
+    ]
+  }
 };

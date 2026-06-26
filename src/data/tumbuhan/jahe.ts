@@ -2,107 +2,130 @@ import { ObjectData } from "../objects";
 
 export const jaheData: ObjectData = {
   slug: "jahe",
-  name: {
-    id: "Jahe",
-    en: "Jahe",
-  },
+  name: { id: "Jahe", en: "Ginger" },
+  icon: "🫚",
+  category: "tumbuhan",
+  type: "tumbuhan",
   scientificName: "Zingiber officinale",
   surahName: "Al-Insan",
   surahReference: "76:17",
-  icon: "𫚚",
-  category: "tumbuhan",
-  type: "tumbuhan",
-  unlockedAtPoints: 50,
+  unlockedAtPoints: 100,
+
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Insan 76:17" }
+    { arab: "زَنْجَبِيْلٌ", latin: "Zanjabiyl", arti: "Jahe", artiEn: "Ginger", contohAyat: "Di surga ada minuman campuran jahe (Zanjabiyl)." },
+    { arab: "مِزَاجٌ", latin: "Mizaaj", arti: "Campuran", artiEn: "Mixture", contohAyat: "Jahe digunakan sebagai mizaaj minuman yang hangat." },
+    { arab: "كَأْسٌ", latin: "Ka's", arti: "Gelas / Piala", artiEn: "Cup / Goblet", contohAyat: "Minuman jahe disajikan di dalam ka's." },
+    { arab: "دَافِئٌ", latin: "Daafi'", arti: "Hangat", artiEn: "Warm", contohAyat: "Rasa jahe membuat tenggorokan menjadi daafi'." }
   ],
+
   balita: {
     text: {
-      id: "Ini Jahe! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Jahe! An amazingly beautiful creation of Allah. 🌟",
+      id: "Ini jahe! Bentuknya lucu seperti jari-jari gendut. Kalau diminum, wushhh, perut kita langsung terasa hangat! 🫚",
+      en: "This is ginger! It looks funny like chubby fingers. If you drink it, whoosh, our tummy immediately feels warm! 🫚"
     },
     audioTranscript: {
-      id: "Ini Jahe. Allah menciptakan Jahe dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Jahe. Allah created Jahe beautifully so we all become grateful.",
+      id: "Hihi, bentuknya aneh ya? Namanya Jahe! Jahe itu rasanya sedikit pedas, tapi pedasnya enak, bikin perut hangat dan usir masuk angin!",
+      en: "Hehe, it looks weird right? Its name is Ginger! Ginger tastes a little spicy, but a good spicy, makes the tummy warm and chases colds away!"
     },
     quiz: {
-      question: {
-        id: "Mana gambar Jahe?",
-        en: "Which one is the picture of Jahe?",
-      },
+      question: { id: "Bagaimana rasanya kalau kita minum air jahe?", en: "How does it feel when we drink ginger water?" },
       options: [
-        { text: { id: "𫚚 Jahe", en: "𫚚 Jahe" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Sangat dingin 🧊", en: "Very cold 🧊" } },
+        { text: { id: "Hangat di perut ☕", en: "Warm in the tummy ☕" } },
+        { text: { id: "Bikin gigi sakit 🦷", en: "Makes teeth ache 🦷" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
+
   anak: {
     text: {
-      id: "Fakta menarik tentang Jahe: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Jahe: It is a proof of Allah's majestic creation in the universe.",
+      id: "Jahe adalah rempah ajaib yang sembunyi di dalam tanah! Rasanya pedas hangat dan sangat ampuh menyembuhkan batuk atau masuk angin.",
+      en: "Ginger is a magic spice hiding underground! It tastes spicy-warm and is very effective at curing coughs or colds."
     },
     facts: [
-      { id: "Tumbuhan Jahe melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Jahe melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Jahe bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Jahe bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Jahe adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Jahe adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Bagian jahe yang kita pakai masak dan minum sebenarnya adalah batang bawah tanah (Rimpang).", en: "The part of ginger we use to cook and drink is actually an underground stem (Rhizome)." },
+      { id: "Aroma jahe bisa menghilangkan mual atau pusing saat naik mobil.", en: "Ginger's aroma can remove nausea or dizziness during car rides." },
+      { id: "Jahe bisa menenangkan tenggorokan yang sakit dan gatal.", en: "Ginger can soothe a sore and itchy throat." },
+      { id: "Di cuaca dingin, orang suka meminum jahe agar badannya tidak kedinginan.", en: "In cold weather, people love drinking ginger to keep their bodies from getting cold." },
+      { id: "Jahe adalah salah satu minuman spesial yang disiapkan di Surga lho!", en: "Ginger is one of the special drinks prepared in Heaven, you know!" }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
+      arabic: "وَيُسْقَوْنَ فِيْهَا كَأْسًا كَانَ مِزَاجُهَا زَنْجَبِيْلًاۚ",
+      transliteration: "Wa yusqauna fīhā ka'sang kāna mizājuhā zanjabīlā",
       translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Jahe dengan sempurna?",
-        en: "Who created Jahe perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
-  },
-  explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Jahe mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Jahe reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Jahe: Struktur pembuluh kayu dan tapis pada Jahe mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Jahe: Struktur pembuluh kayu dan tapis pada Jahe mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
-    quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
+        id: "Di sana mereka diberi minum dari segelas piala yang campurannya adalah jahe.",
+        en: "And they will be given to drink there a cup [of wine] whose mixture is of ginger."
       },
       context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+        id: "Tau nggak? Penghuni surga akan dijamu minuman super lezat dari mata air surga. Dan tahukah kamu rasanya dicampur dengan apa? Jahe! Allah menyebut Zanjabil (jahe) sebagai campuran minuman surga yang hangat dan menyegarkan.",
+        en: "Did you know? The people of paradise will be treated to a super delicious drink from a heavenly spring. And do you know what it is mixed with? Ginger! Allah calls Zanjabil (ginger) a mixture of the heavenly drink that is warm and refreshing."
+      }
+    },
+    quiz: {
+      question: { id: "Bagian manakah dari tumbuhan jahe yang kita makan atau jadikan minuman?", en: "Which part of the ginger plant do we eat or make into a drink?" },
+      options: [
+        { text: { id: "Daunnya", en: "Its leaves" } },
+        { text: { id: "Rimpang (batang bawah tanah)", en: "Rhizome (underground stem)" } },
+        { text: { id: "Bunganya", en: "Its flower" } },
+        { text: { id: "Buah gantungnya", en: "Its hanging fruit" } }
+      ],
+      answerIdx: 1
+    }
+  },
+
+  explorer: {
+    text: {
+      id: "Jahe (Zingiber officinale) adalah keajaiban botani sejati. Sering disangka sebagai akar, bagian jahe yang gemuk ini sebenarnya adalah 'Rhizoma' atau rimpang—yaitu batang utama tanaman yang tumbuh menjalar di bawah tanah. Rimpang ini bertugas menyimpan nutrisi ekstra untuk tanaman agar bisa bertahan di masa sulit.\n\nSains biologi dan medis sangat memuja jahe karena kandungan zat aktif uniknya yang bernama 'Gingerol'. Gingerol adalah minyak atsiri senyawa fenolik yang memberikan rasa pedas khas pada jahe. Zat ini memiliki sifat anti-inflamasi (anti-radang) kuat. Ia bekerja melumpuhkan bakteri di pencernaan dan mengelabui saraf sensorik di otak sehingga efektif mencegah rasa mual (nausea)—lebih ampuh daripada beberapa obat mual buatan pabrik!\n\nSaat jahe dikeringkan atau dipanaskan, senyawa Gingerol akan berubah menjadi 'Shogaol', yang memberikan efek rasa hangat tajam yang sangat menyamankan tenggorokan manusia.",
+      en: "Ginger (Zingiber officinale) is a true botanical marvel. Often mistaken for a root, this plump part of ginger is actually a 'Rhizome'—the main plant stem that grows horizontally underground. This rhizome is tasked with storing extra nutrients for the plant to survive during tough times.\n\nBiological and medical sciences highly praise ginger because of its unique active substance called 'Gingerol'. Gingerol is an essential oil phenolic compound that gives ginger its characteristic spicy taste. This substance has strong anti-inflammatory properties. It works by paralyzing digestive bacteria and tricking sensory nerves in the brain, making it highly effective at preventing nausea—even more potent than some factory-made nausea drugs!\n\nWhen ginger is dried or heated, the Gingerol compound transforms into 'Shogaol', which provides the sharp warming effect that is highly soothing to the human throat."
+    },
+    anatomy: [
+      { part: { id: "Rimpang (Rhizoma)", en: "Rhizome" }, desc: { id: "Batang termodifikasi di bawah tanah yang bengkak penuh cadangan energi dan minyak atsiri.", en: "Modified underground stem that is swollen with energy reserves and essential oils." } },
+      { part: { id: "Mata Tunas", en: "Bud Eye" }, desc: { id: "Titik kecil pada rimpang tempat bakal batang daun baru akan menembus tanah ke atas.", en: "Small points on the rhizome where new leaf shoots will pierce the ground upwards." } }
+    ],
+    wowFactor: {
+      id: "Sains menemukan bahwa efek pemanasan (thermogenic) dari Gingerol sangat hebat untuk mempercepat pemulihan tubuh yang kelelahan dan kedinginan parah.\n\nLuar biasanya, di saat ilmu pengetahuan baru tahu detail kimiawinya, Al-Qur'an (Surah Al-Insan: 17) sudah menyebut Zanjabil (Jahe) sebagai campuran minuman abadi penduduk surga. Kenikmatan rasa hangat dan efek menenangkan dari minuman jahe adalah cicipan kecil dari nikmat surga yang Allah turunkan ke dunia!",
+      en: "Science found that the thermogenic (warming) effect of Gingerol is fantastic for speeding up the recovery of an exhausted and severely cold body.\n\nAmazingly, while science only recently discovered its chemical details, the Qur'an (Surah Al-Insan: 17) already mentioned Zanjabil (Ginger) as the mixture for the eternal drink of the people of paradise. The enjoyment of the warming taste and soothing effect of ginger drink is a small taste of heaven's blessing that Allah brought down to earth!"
+    },
+    quranVerse: {
+      arabic: "وَيُسْقَوْنَ فِيْهَا كَأْسًا كَانَ مِزَاجُهَا زَنْجَبِيْلًاۚ",
+      transliteration: "Wa yusqauna fīhā ka'sang kāna mizājuhā zanjabīlā",
+      translation: {
+        id: "Di sana mereka diberi minum dari segelas piala yang campurannya adalah jahe.",
+        en: "And they will be given to drink there a cup [of wine] whose mixture is of ginger."
+      }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Jahe?",
-          en: "What is the primary wisdom of scientific signs regarding Jahe?",
-        },
+        question: { id: "Apa nama senyawa kimia utama pada jahe yang memberikannya rasa pedas dan khasiat anti-mual?", en: "What is the main chemical compound in ginger that gives it a spicy taste and anti-nausea benefits?" },
         options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
+          { text: { id: "Klorofil", en: "Chlorophyll" } },
+          { text: { id: "Gingerol", en: "Gingerol" } },
+          { text: { id: "Kafein", en: "Caffeine" } },
+          { text: { id: "Gula darah", en: "Blood sugar" } }
         ],
-        answerIdx: 0,
+        answerIdx: 1
       },
-    ],
-  },
+      {
+        question: { id: "Secara biologi botani, jahe termasuk bagian tumbuhan yang mana?", en: "In botanical biology, which plant part is ginger?" },
+        options: [
+          { text: { id: "Batang yang merayap di bawah tanah (Rimpang)", en: "Stem creeping underground (Rhizome)" } },
+          { text: { id: "Akar tunggang", en: "Taproot" } },
+          { text: { id: "Bunga", en: "Flower" } },
+          { text: { id: "Kulit kayu", en: "Bark" } }
+        ],
+        answerIdx: 0
+      },
+      {
+        question: { id: "Al-Qur'an menyebut jahe (Zanjabil) sebagai campuran apa?", en: "The Qur'an mentions ginger (Zanjabil) as a mixture for what?" },
+        options: [
+          { text: { id: "Campuran makanan burung", en: "A bird food mixture" } },
+          { text: { id: "Campuran minuman penduduk surga", en: "A drink mixture for the people of heaven" } },
+          { text: { id: "Campuran bahan bangunan", en: "A building material mixture" } },
+          { text: { id: "Campuran minyak lampu", en: "A lamp oil mixture" } }
+        ],
+        answerIdx: 1
+      }
+    ]
+  }
 };

@@ -2,109 +2,91 @@ import { ObjectData } from "../objects";
 
 export const matahariData: ObjectData = {
   slug: "matahari",
-  name: {
-    id: "Matahari",
-    en: "Matahari",
-  },
-  scientificName: "Sun",
-  surahName: "Asy-Syams",
-  surahReference: "91:1-2",
+  name: { id: "Matahari", en: "Sun" },
   icon: "☀️",
   category: "alam",
   type: "alam",
+  scientificName: "Sol",
+  surahName: "Ash-Shams",
+  surahReference: "91:1",
   unlockedAtPoints: 50,
+
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Asy-Syams 91:1-2" }
+    { arab: "شَمْسٌ", latin: "Syamsun", arti: "Matahari", artiEn: "Sun", contohAyat: "Wasy-syamsi wa duhaahaa (Demi matahari dan sinarnya pada pagi hari)" },
+    { arab: "نَهَارٌ", latin: "Nahar", arti: "Siang", artiEn: "Day", contohAyat: "Wan-nahaari idzaa jallaahaa (Dan siang apabila menampakkannya)" },
+    { arab: "ضِيَاءٌ", latin: "Dhiya'", arti: "Cahaya bersinar", artiEn: "Shining light", contohAyat: "Huwal-ladzii ja'alasy-syamsa dhiyaa'an (Dialah yang menjadikan matahari bersinar)" },
+    { arab: "حَرَارَةٌ", latin: "Hararah", arti: "Panas", artiEn: "Heat", contohAyat: "Matahari memberikan panas ke bumi" }
   ],
+
   balita: {
-    text: {
-      id: "Ini Matahari! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Matahari! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Matahari. Allah menciptakan Matahari dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Matahari. Allah created Matahari beautifully so we all become grateful.",
-    },
+    text: { id: "Ini matahari! Matahari terbit di pagi hari dan membuat bumi jadi terang dan hangat! ☀️", en: "This is the sun! The sun rises in the morning and makes the earth bright and warm! ☀️" },
+    audioTranscript: { id: "Wah, lihat ke atas langit! Ada matahari yang bersinar terang! Matahari bikin kita hangat. Alhamdulillah ya Allah, sudah menciptakan matahari! ☀️", en: "Wow, look up at the sky! The sun is shining brightly! The sun keeps us warm. Alhamdulillah, Allah created the sun! ☀️" },
     quiz: {
-      question: {
-        id: "Mana gambar Matahari?",
-        en: "Which one is the picture of Matahari?",
-      },
+      question: { id: "Matahari munculnya kapan ya?", en: "When does the sun come out?" },
       options: [
-        { text: { id: "☀️ Matahari", en: "☀️ Matahari" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "🌅 Pagi dan Siang", en: "🌅 Morning and Day" } },
+        { text: { id: "🌌 Malam hari", en: "🌌 Night time" } },
+        { text: { id: "🌧️ Saat hujan deras saja", en: "🌧️ Only during heavy rain" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   anak: {
-    text: {
-      id: "Fakta menarik tentang Matahari: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Matahari: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Matahari itu bintang raksasa yang sangat panas! Letaknya jauh sekali dari Bumi, tapi cahayanya bisa sampai ke kita.", en: "The sun is a giant, super hot star! It's very far from Earth, but its light can reach us." },
     facts: [
-      { id: "Matahari adalah bintang terdekat bumi yang menghasilkan cahayanya sendiri.", en: "Matahari adalah bintang terdekat bumi yang menghasilkan cahayanya sendiri." },
-      { id: "Suhu permukaan matahari mencapai 5.500 derajat Celsius.", en: "Suhu permukaan matahari mencapai 5.500 derajat Celsius." },
-      { id: "Cahaya matahari membutuhkan waktu 8 menit untuk sampai ke bumi.", en: "Cahaya matahari membutuhkan waktu 8 menit untuk sampai ke bumi." },
-      { id: "Energi matahari menggerakkan siklus cuaca dan fotosintesis tanaman.", en: "Energi matahari menggerakkan siklus cuaca dan fotosintesis tanaman." },
-      { id: "Matahari mengandung 99,8% massa dari seluruh tata surya kita.", en: "Matahari mengandung 99,8% massa dari seluruh tata surya kita." }
+      { id: "Matahari adalah bintang yang paling dekat dengan Bumi.", en: "The sun is the closest star to Earth." },
+      { id: "Besar matahari itu lebih dari 1 juta kali lebih besar dari Bumi!", en: "The sun is more than 1 million times larger than Earth!" },
+      { id: "Suhu di permukaan matahari sangat panas, sekitar 5.500 derajat Celcius.", en: "The temperature on the sun's surface is very hot, around 5,500 degrees Celsius." },
+      { id: "Cahaya matahari butuh waktu 8 menit untuk sampai ke Bumi.", en: "Sunlight takes 8 minutes to reach Earth." },
+      { id: "Tanpa matahari, tidak akan ada kehidupan di Bumi karena semuanya akan membeku.", en: "Without the sun, there would be no life on Earth because everything would freeze." }
     ],
     quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
+      arabic: "هُوَ ٱلَّذِى جَعَلَ ٱلشَّمْسَ ضِيَآءً وَٱلْقَمَرَ نُورًا",
+      transliteration: "Huwal-ladzii ja'alasy-syamsa dhiyaa'an wal-qamara nuuran",
+      translation: { id: "Dialah yang menjadikan matahari bersinar dan bulan bercahaya.", en: "It is He who made the sun a shining light and the moon a derived light." },
+      context: { id: "Tau nggak? Allah menciptakan matahari agar kita punya cahaya di siang hari dan tumbuhan bisa tumbuh. Keren banget kan ciptaan Allah!", en: "Did you know? Allah created the sun so we have light during the day and plants can grow. Allah's creation is amazing!" }
     },
     quiz: {
-      question: {
-        id: "Siapa yang menciptakan Matahari dengan sempurna?",
-        en: "Who created Matahari perfectly?",
-      },
+      question: { id: "Berapa lama cahaya matahari sampai ke Bumi?", en: "How long does it take for sunlight to reach Earth?" },
       options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
+        { text: { id: "8 Menit", en: "8 Minutes" } },
+        { text: { id: "8 Jam", en: "8 Hours" } },
+        { text: { id: "8 Detik", en: "8 Seconds" } },
+        { text: { id: "8 Hari", en: "8 Days" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
+
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Matahari mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Matahari reveals the brilliance of biological design and natural balance.",
-    },
+    text: { id: "Matahari adalah pusat Tata Surya kita. Ia adalah bola gas pijar raksasa yang terdiri sebagian besar dari hidrogen dan helium.\n\nDi inti Matahari, terjadi reaksi fusi nuklir yang mengubah hidrogen menjadi helium. Reaksi ini melepaskan energi yang luar biasa besar, yang kemudian dipancarkan ke luar angkasa sebagai cahaya dan panas.\n\nGaya gravitasi Matahari yang sangat kuat menahan planet-planet, termasuk Bumi, tetap berada pada orbitnya.", en: "The Sun is the center of our Solar System. It is a giant ball of glowing gas consisting mostly of hydrogen and helium.\n\nIn the core of the Sun, nuclear fusion reactions occur that convert hydrogen into helium. This reaction releases an enormous amount of energy, which is then radiated into space as light and heat.\n\nThe Sun's incredibly strong gravitational pull keeps planets, including Earth, in their orbits." },
     anatomy: [
-      { part: { id: "Zona Radiatif", en: "Zona Radiatif" }, desc: { id: "Energi termonuklir dari inti merambat keluar membutuhkan waktu ribuan tahun.", en: "Energi termonuklir dari inti merambat keluar membutuhkan waktu ribuan tahun." } }
+      { part: { id: "Inti Matahari", en: "Sun's Core" }, desc: { id: "Bagian tengah yang paling panas tempat terjadinya fusi nuklir.", en: "The hottest central part where nuclear fusion occurs." } },
+      { part: { id: "Korona", en: "Corona" }, desc: { id: "Lapisan atmosfer paling luar yang bisa dilihat saat gerhana matahari total.", en: "The outermost atmospheric layer visible during a total solar eclipse." } }
     ],
-    wowFactor: {
-      id: "Dalam Surah Asy-Syams 91:1-2, Allah bersumpah demi matahari dan cahayanya di pagi hari. Matahari memancarkan angin surya dan medan magnet yang melindungi bumi dari radiasi kosmis mematikan, menjadikannya sistem pendukung kehidupan utama.",
-      en: "Dalam Surah Asy-Syams 91:1-2, Allah bersumpah demi matahari dan cahayanya di pagi hari. Matahari memancarkan angin surya dan medan magnet yang melindungi bumi dari radiasi kosmis mematikan, menjadikannya sistem pendukung kehidupan utama.",
-    },
+    wowFactor: { id: "Sains menemukan bahwa Matahari adalah sumber energi utama tata surya, memancarkan sinar (dhiya') yang menyilaukan dan panas karena reaksi fusi nuklir dari dalam dirinya.\n\nAl-Qur'an secara menakjubkan membedakan cahaya matahari dan cahaya bulan. Matahari disebut 'dhiya' (sumber cahaya yang menyilaukan dan panas), sedangkan bulan disebut 'nur' (cahaya pantulan yang sejuk). Ini adalah fakta ilmiah yang baru dipahami berabad-abad kemudian!", en: "Science discovered that the Sun is the main energy source of the solar system, emitting a blinding and hot light (dhiya') due to nuclear fusion from within.\n\nThe Qur'an amazingly distinguishes between the light of the sun and the moon. The sun is called 'dhiya' (a blazing source of light), while the moon is called 'nur' (a cool reflected light). This is a scientific fact understood centuries later!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
+      transliteration: "Wa ja'alnaa siraajan wahhaajaa",
+      translation: { id: "Dan Kami jadikan pelita yang amat terang (matahari).", en: "And We made a fiercely burning lamp (the sun)." }
     },
     quiz: [
       {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Matahari?",
-          en: "What is the primary wisdom of scientific signs regarding Matahari?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
+        question: { id: "Proses apa yang menghasilkan energi di inti matahari?", en: "What process generates energy in the sun's core?" },
+        options: [{ text: { id: "Fusi Nuklir", en: "Nuclear Fusion" } }, { text: { id: "Pembakaran Batu Bara", en: "Coal Combustion" } }, { text: { id: "Gesekan Angin", en: "Wind Friction" } }, { text: { id: "Reaksi Kimia Air", en: "Water Chemical Reaction" } }],
+        answerIdx: 0
       },
-    ],
-  },
+      {
+        question: { id: "Apa arti kata 'dhiya' dalam Al-Qur'an yang merujuk pada matahari?", en: "What does 'dhiya' mean in the Qur'an referring to the sun?" },
+        options: [{ text: { id: "Cahaya bersinar yang memancarkan panas", en: "A shining light that emits heat" } }, { text: { id: "Cahaya redup", en: "Dim light" } }, { text: { id: "Batu meteor", en: "Meteor stone" } }, { text: { id: "Bulan sabit", en: "Crescent moon" } }],
+        answerIdx: 0
+      },
+      {
+        question: { id: "Gas apa yang paling banyak menyusun matahari?", en: "What gas mostly makes up the sun?" },
+        options: [{ text: { id: "Hidrogen dan Helium", en: "Hydrogen and Helium" } }, { text: { id: "Oksigen dan Karbon Dioksida", en: "Oxygen and Carbon Dioxide" } }, { text: { id: "Nitrogen dan Metana", en: "Nitrogen and Methane" } }, { text: { id: "Besi dan Emas", en: "Iron and Gold" } }],
+        answerIdx: 0
+      }
+    ]
+  }
 };
