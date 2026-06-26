@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const melatiPutihData: ObjectData = {
-  slug: "melati-putih",
-  name: {
-    id: "Melati Putih",
-    en: "Melati Putih",
-  },
-  scientificName: "Jasminum sambac",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
-  icon: "🌼",
+export const melatiData: ObjectData = {
+  slug: "melati",
+  name: { id: "Melati", en: "Jasmine" },
+  icon: "💮",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Jasminum",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 130,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "يَاسَمِين", latin: "yaasamiin", arti: "Melati", artiEn: "Jasmine", contohAyat: "Bunga melati di pagi hari." }
   ],
   balita: {
-    text: {
-      id: "Ini Melati Putih! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Melati Putih! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Melati Putih. Allah menciptakan Melati Putih dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Melati Putih. Allah created Melati Putih beautifully so we all become grateful.",
-    },
+    text: { id: "Melati itu kecil, warnanya putih, dan wanginya sangat enak! 💮", en: "Jasmine is small, white, and smells very nice! 💮" },
+    audioTranscript: { id: "Bunga melati wanginya sangat manis apalagi di malam hari. Kita juga sering mencampur bunga melati ke dalam teh supaya tehnya jadi wangi!", en: "Jasmine flowers smell very sweet, especially at night. We also often mix jasmine flowers into tea so the tea becomes fragrant!" },
     quiz: {
-      question: {
-        id: "Mana gambar Melati Putih?",
-        en: "Which one is the picture of Melati Putih?",
-      },
+      question: { id: "Warna bunga melati biasanya adalah...", en: "The color of jasmine flowers is usually..." },
       options: [
-        { text: { id: "🌼 Melati Putih", en: "🌼 Melati Putih" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Biru", en: "Blue" } },
+        { text: { id: "Putih", en: "White" } },
+        { text: { id: "Hitam", en: "Black" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Melati Putih: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Melati Putih: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Melati disebut 'Puspa Bangsa' karena bunga melati putih adalah salah satu bunga nasional Indonesia! Tanaman ini hidup menjalar, jadi perlu bantuan batang atau pagar untuk bersandar.", en: "Jasmine is called 'Puspa Bangsa' because the white jasmine flower is one of Indonesia's national flowers! This plant grows as a vine, so it needs the help of a stem or fence to lean on." },
     facts: [
-      { id: "Tumbuhan Melati Putih melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Melati Putih melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Melati Putih bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Melati Putih bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Melati Putih adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Melati Putih adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Bunga melati umumnya mekar dan paling wangi saat matahari sudah terbenam.", en: "Jasmine flowers generally bloom and are most fragrant when the sun has set." },
+      { id: "Ada sekitar 200 jenis bunga melati di seluruh dunia.", en: "There are about 200 types of jasmine flowers around the world." },
+      { id: "Teh melati sangat terkenal dan baik untuk menenangkan perut.", en: "Jasmine tea is very famous and good for soothing the stomach." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Melati Putih dengan sempurna?",
-        en: "Who created Melati Putih perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Melati Putih mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Melati Putih reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Melati Putih: Struktur pembuluh kayu dan tapis pada Melati Putih mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Melati Putih: Struktur pembuluh kayu dan tapis pada Melati Putih mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Zat kimia aromatik bernama benzyl asetat pada melati menghasilkan keharuman khas. Bayangkan, dari tanah yang kotor dan air biasa, sistem akar tumbuhan merakitnya menjadi senyawa paling wangi. Ini adalah keajaiban pabrik biokimia dari Yang Maha Kuasa (Al-Qadir)!", en: "An aromatic chemical substance called benzyl acetate in jasmine produces its distinctive fragrance. Imagine, from dirty soil and plain water, the plant's root system assembles it into the most fragrant compound. This is the miracle of the biochemical factory of the All-Powerful (Al-Qadir)!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "أَلَمْ تَرَ أَنَّ اللَّهَ أَنْزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجْنَا بِهِ ثَمَرَاتٍ مُخْتَلِفًا أَلْوَانُهَا",
+      transliteration: "Alam tara annallāha anzala minas-samā'i mā'an fa akhrajnā bihi thamarātin mukhtalifan alwānuhā",
+      translation: { id: "Tidakkah kamu melihat bahwasanya Allah menurunkan air dari langit lalu Kami hasilkan dengan air itu buah-buahan yang beraneka macam warnanya.", en: "Do you not see that Allah sends down rain from the sky, and We produce thereby fruits of varying colors." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Melati Putih?",
-          en: "What is the primary wisdom of scientific signs regarding Melati Putih?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

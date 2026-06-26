@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const lalatRumahData: ObjectData = {
-  slug: "lalat-rumah",
-  name: {
-    id: "Lalat Rumah",
-    en: "Lalat Rumah",
-  },
-  scientificName: "Musca domestica",
-  surahName: "Al-Hajj",
-  surahReference: "22:73",
+export const lalatData: ObjectData = {
+  slug: "lalat",
+  name: { id: "Lalat", en: "Fly" },
   icon: "🪰",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Musca domestica",
+  surahName: "Al-Hajj",
+  surahReference: "22:73",
+  unlockedAtPoints: 30,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Hajj 22:73" }
+    { arab: "ذُبَابٌ", latin: "dhubaabun", arti: "Lalat", artiEn: "Fly", contohAyat: "لَنْ يَخْلُقُوا ذُبَابًا (mereka tidak akan mampu menciptakan seekor lalat pun)" }
   ],
   balita: {
-    text: {
-      id: "Ini Lalat Rumah! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Lalat Rumah! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Lalat Rumah. Allah menciptakan Lalat Rumah dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Lalat Rumah. Allah created Lalat Rumah beautifully so we all become grateful.",
-    },
+    text: { id: "Ngiiing! 🪰 Lalat suka terbang berputar-putar. Kalau makananmu dihinggapi lalat, jangan dimakan ya!", en: "Bzzzz! 🪰 Flies love flying around in circles. If a fly lands on your food, don't eat it!" },
+    audioTranscript: { id: "Wussh! Aku lalat. Aku bisa terbang sangat cepat dan menempel di langit-langit tanpa jatuh. Hebat kan!", en: "Whoosh! I am a fly. I can fly very fast and stick to the ceiling without falling. Great, isn't it!" },
     quiz: {
-      question: {
-        id: "Mana gambar Lalat Rumah?",
-        en: "Which one is the picture of Lalat Rumah?",
-      },
+      question: { id: "Apa yang harus kita lakukan kalau ada lalat di atas makanan kita?", en: "What should we do if there is a fly on our food?" },
       options: [
-        { text: { id: "🪰 Lalat Rumah", en: "🪰 Lalat Rumah" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Mengajaknya main", en: "Play with it" } },
+        { text: { id: "Langsung dimakan", en: "Eat the food immediately" } },
+        { text: { id: "Membuang bagian yang dihinggapinya", en: "Throw away the part it landed on" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Lalat Rumah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Lalat Rumah: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Lalat tidak punya gigi! Mereka mengeluarkan cairan ke makanannya lalu menyedotnya seperti pakai sedotan. Mata lalat juga ada ribuan lho, jadi mereka susah sekali ditangkap!", en: "Did you know? Flies don't have teeth! They spit liquid onto their food and suck it up like using a straw. Flies also have thousands of lenses in their eyes, so they are very hard to catch!" },
     facts: [
-      { id: "Lalat Rumah memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Lalat Rumah memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Lalat Rumah bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Lalat Rumah bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Lalat Rumah dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Lalat Rumah dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Lalat mengepakkan sayapnya 200 kali per detik! ⏱️", en: "Flies flap their wings 200 times per second! ⏱️" },
+      { id: "Lalat mencicipi makanan menggunakan kaki mereka! 👣", en: "Flies taste their food using their feet! 👣" },
+      { id: "Umur lalat rumah rata-rata hanya sekitar 15 sampai 25 hari saja. 🗓️", en: "The average lifespan of a house fly is only about 15 to 25 days. 🗓️" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Lalat Rumah dengan sempurna?",
-        en: "Who created Lalat Rumah perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Lalat Rumah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Lalat Rumah reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Lalat Rumah: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Lalat Rumah dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Lalat Rumah: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Lalat Rumah dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Meskipun kecil dan sering dianggap mengganggu, lalat punya sistem tubuh yang sangat rumit! Allah menantang semua patung dan berhala untuk menciptakan seekor lalat saja, dan mereka pasti tidak bisa! Bahkan jika lalat merampas sesuatu dari mereka, mereka tak bisa merebutnya kembali. Ini bukti betapa maha kuasanya penciptaan Allah.", en: "Even though they are small and often considered annoying, flies have a very complex body system! Allah challenges all idols to create a single fly, and they certainly cannot! Even if a fly snatched something away from them, they couldn't take it back. This is proof of the Almighty power of Allah's creation." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "إِنَّ الَّذِينَ تَدْعُونَ مِنْ دُونِ اللَّهِ لَنْ يَخْلُقُوا ذُبَابًا وَلَوِ اجْتَمَعُوا لَهُ",
+      transliteration: "Innal ladhiina tad'uuna min duunillaahi lan yakhluquu dhubaaban walaw-ijtama'uu lah",
+      translation: { id: "Sesungguhnya segala yang kamu seru selain Allah tidak akan dapat menciptakan seekor lalat pun, walaupun mereka bersatu untuk menciptakannya.", en: "Indeed, those you invoke besides Allah will never create a fly, even if they gathered together for that purpose." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Lalat Rumah?",
-          en: "What is the primary wisdom of scientific signs regarding Lalat Rumah?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

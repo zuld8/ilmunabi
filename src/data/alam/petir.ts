@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const petirMenyambarData: ObjectData = {
-  slug: "petir-menyambar",
-  name: {
-    id: "Petir Menyambar",
-    en: "Petir Menyambar",
-  },
-  scientificName: "Lightning",
-  surahName: "Ar-Ra'd",
-  surahReference: "13:13",
+export const petirData: ObjectData = {
+  slug: "petir",
+  name: { id: "Petir", en: "Lightning" },
   icon: "⚡",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 50,
+  scientificName: "Fulgur",
+  surahName: "Ar-Ra'd",
+  surahReference: "13:12",
+  unlockedAtPoints: 40,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Ar-Ra'd 13:13" }
+    { arab: "بَرْق", latin: "Barq", arti: "Kilat", artiEn: "Lightning", contohAyat: "يَكَادُ سَنَا بَرْقِهِ يَذْهَبُ بِالْأَبْصَارِ" }
   ],
   balita: {
-    text: {
-      id: "Ini Petir Menyambar! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Petir Menyambar! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Petir Menyambar. Allah menciptakan Petir Menyambar dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Petir Menyambar. Allah created Petir Menyambar beautifully so we all become grateful.",
-    },
+    text: { id: "JDER! Wah, langitnya kaget ada kilat terang! 🫣", en: "BOOM! Wow, the sky is shocked by bright lightning! 🫣" },
+    audioTranscript: { id: "Waktu hujan turun deras, kadang ada kilat putih bercahaya dan suara guruh yang kencang. Jangan takut ya, itu cuma awan yang sedang bersentuhan.", en: "When it rains heavily, sometimes there is a bright white flash and a loud thunder sound. Don't be afraid, it's just clouds touching each other." },
     quiz: {
-      question: {
-        id: "Mana gambar Petir Menyambar?",
-        en: "Which one is the picture of Petir Menyambar?",
-      },
+      question: { id: "Suara keras setelah kilat disebut apa?", en: "What is the loud sound after lightning called?" },
       options: [
-        { text: { id: "⚡ Petir Menyambar", en: "⚡ Petir Menyambar" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Guntur", en: "Thunder" } },
+        { text: { id: "Gitar", en: "Guitar" } },
+        { text: { id: "Motor", en: "Motorcycle" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Petir Menyambar: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Petir Menyambar: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Petir itu seperti listrik raksasa yang melompat dari awan ke tanah! Panasnya melebihi permukaan matahari lho! Petir terjadi karena ada gesekan es di dalam awan badai.", en: "Lightning is like giant electricity jumping from the cloud to the ground! Its heat exceeds the surface of the sun! Lightning happens because there is ice friction inside storm clouds." },
     facts: [
-      { id: "Petir Menyambar merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Petir Menyambar merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
-      { id: "Keteraturan siklus Petir Menyambar memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Petir Menyambar memungkinkan kehidupan biologis manusia berjalan dengan aman." },
-      { id: "Interaksi fisik Petir Menyambar dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Petir Menyambar dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
+      { id: "Satu sambaran petir punya energi untuk menyalakan lampu selama sebulan!", en: "One lightning strike has enough energy to power a light bulb for a month!" },
+      { id: "Kaca bisa terbentuk secara alami kalau petir menyambar pasir di pantai.", en: "Glass can form naturally when lightning strikes sand on the beach." },
+      { id: "Kita melihat kilat lebih dulu sebelum mendengar guntur karena cahaya lebih cepat dari suara.", en: "We see the flash first before hearing the thunder because light travels faster than sound." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Petir Menyambar dengan sempurna?",
-        en: "Who created Petir Menyambar perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Petir Menyambar mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Petir Menyambar reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Petir Menyambar: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Petir Menyambar agar tidak terjadi benturan atau kehancuran kosmis.",
-      en: "Keajaiban penciptaan Petir Menyambar: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Petir Menyambar agar tidak terjadi benturan atau kehancuran kosmis.",
-    },
+    text: { id: "Kilat petir sangat menakjubkan, suhunya bisa mencapai 30.000 derajat Celcius! Al-Qur'an menggambarkan kilat yang menyambar-nyambar ini bisa membuat orang ketakutan sekaligus penuh harap akan turunnya hujan yang menyuburkan. Sains membuktikan petir memang memecah molekul nitrogen di udara menjadi pupuk alami penyubur tanah!", en: "Lightning flashes are amazing, their temperature can reach 30,000 degrees Celsius! The Quran describes this flashing lightning can make people feel fear and hope for the rain that fertilizes. Science proves that lightning breaks down nitrogen molecules in the air into natural soil fertilizer!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "هُوَ الَّذِي يُرِيكُمُ الْبَرْقَ خَوْفًا وَطَمَعًا وَيُنْشِئُ السَّحَابَ الثِّقَالَ",
+      transliteration: "Huwalladzii yuriikumul-barqa khawfan wa tama'an wa yunnyi'us-sahaabath-thiqaal",
+      translation: { id: "Dialah Tuhan yang memperlihatkan kilat kepadamu untuk menimbulkan ketakutan dan harapan, dan Dia mengadakan awan mendung.", en: "It is He who shows you lightening, [causing] fear and aspiration, and generates the heavy clouds." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Petir Menyambar?",
-          en: "What is the primary wisdom of scientific signs regarding Petir Menyambar?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

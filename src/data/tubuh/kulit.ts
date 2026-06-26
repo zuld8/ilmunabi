@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const kulitLuarData: ObjectData = {
-  slug: "kulit-luar",
-  name: {
-    id: "Kulit Luar",
-    en: "Kulit Luar",
-  },
-  scientificName: "Epidermis",
-  surahName: "An-Nisa",
-  surahReference: "4:56",
+export const kulitData: ObjectData = {
+  slug: "kulit",
+  name: { id: "Kulit", en: "Skin" },
   icon: "🖐️",
   category: "tubuh",
   type: "tubuh",
-  unlockedAtPoints: 50,
+  scientificName: "Integumentary system",
+  surahName: "Al-Infitar",
+  surahReference: "82:7-8",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "An-Nisa 4:56" }
+    { arab: "جِلْدٌ", latin: "jildun", arti: "Kulit", artiEn: "Skin", contohAyat: "كُلَّمَا نَضِجَتْ جُلُودُهُم..." }
   ],
   balita: {
-    text: {
-      id: "Ini Kulit Luar! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Kulit Luar! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Kulit Luar. Allah menciptakan Kulit Luar dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Kulit Luar. Allah created Kulit Luar beautifully so we all become grateful.",
-    },
+    text: { id: "Wah, kulit kita halus dan hangat! 🖐️", en: "Wow, our skin is smooth and warm! 🖐️" },
+    audioTranscript: { id: "Kulit melindungi tubuh kita seperti baju ajaib yang nempel terus. Bisa merasakan panas, dingin, dan juga pelukan!", en: "Skin protects our body like a magic shirt that sticks to us. It can feel heat, cold, and hugs!" },
     quiz: {
-      question: {
-        id: "Mana gambar Kulit Luar?",
-        en: "Which one is the picture of Kulit Luar?",
-      },
+      question: { id: "Apa yang membuat kita bisa merasakan es yang dingin?", en: "What helps us feel cold ice?" },
       options: [
-        { text: { id: "🖐️ Kulit Luar", en: "🖐️ Kulit Luar" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Mata", en: "Eyes" } },
+        { text: { id: "Kulit", en: "Skin" } },
+        { text: { id: "Rambut", en: "Hair" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Kulit Luar: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Kulit Luar: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Kulit adalah organ terbesar di tubuh kita! Ia seperti tameng yang sangat kuat melawan kuman dan air. Tanpa kulit, organ di dalam kita bisa berhamburan lho! Keren banget kan ciptaan Allah?", en: "Skin is the largest organ in our body! It's like a very strong shield against germs and water. Without skin, our inside organs would spill out! How cool is Allah's creation?" },
     facts: [
-      { id: "Sistem Kulit Luar di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan.", en: "Sistem Kulit Luar di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan." },
-      { id: "Miliaran sel penyusun Kulit Luar berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia.", en: "Miliaran sel penyusun Kulit Luar berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia." },
-      { id: "Kesehatan Kulit Luar sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib.", en: "Kesehatan Kulit Luar sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib." }
+      { id: "Kulit manusia terus berganti setiap bulan!", en: "Human skin constantly renews every month!" },
+      { id: "Kulit menghasilkan vitamin D saat kena sinar matahari.", en: "Skin makes vitamin D when exposed to sunlight." },
+      { id: "Meskipun terlihat tipis, kulit sangat elastis dan tahan air.", en: "Although it looks thin, skin is very elastic and waterproof." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Kulit Luar dengan sempurna?",
-        en: "Who created Kulit Luar perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Kulit Luar mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Kulit Luar reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Sel", en: "Sistem Sel" }, desc: { id: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit.", en: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban rancangan Kulit Luar: Sel-sel pada Kulit Luar memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
-      en: "Keajaiban rancangan Kulit Luar: Sel-sel pada Kulit Luar memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
-    },
+    text: { id: "Kulit adalah keajaiban pelindung super! Lapisan luarnya (epidermis) setipis kertas, namun mampu menahan bakteri. Lapisan dalamnya (dermis) punya saraf yang mendeteksi setiap sentuhan. Hebatnya, Allah menjadikan kulit sebagai saksi di hari kiamat, dan menyempurnakan bentuk tubuh kita dengan kulit yang menutupi rapi.", en: "The skin is a super protective miracle! Its outer layer (epidermis) is paper-thin but stops bacteria. The inner layer (dermis) has nerves that detect every touch. Amazingly, Allah made the skin a witness on the Day of Judgment, and perfected our body shape with skin covering it neatly." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ",
+      transliteration: "Alladzi khalaqaka fasawwaaka fa'adalak",
+      translation: { id: "Yang telah menciptakan kamu lalu menyempurnakan kejadianmu dan menjadikan (susunan tubuh)mu seimbang,", en: "Who created you, proportioned you, and balanced you," }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Kulit Luar?",
-          en: "What is the primary wisdom of scientific signs regarding Kulit Luar?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const lebahMaduData: ObjectData = {
-  slug: "lebah-madu",
-  name: {
-    id: "Lebah Madu",
-    en: "Lebah Madu",
-  },
-  scientificName: "Apis mellifera",
-  surahName: "An-Nahl",
-  surahReference: "16:68-69",
+export const lebahData: ObjectData = {
+  slug: "lebah",
+  name: { id: "Lebah", en: "Bee" },
   icon: "🐝",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Anthophila",
+  surahName: "An-Nahl",
+  surahReference: "16:68-69",
+  unlockedAtPoints: 40,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "An-Nahl 16:68-69" }
+    { arab: "نَحْلٌ", latin: "nahlun", arti: "Lebah", artiEn: "Bee", contohAyat: "وَأَوْحَىٰ رَبُّكَ إِلَى النَّحْلِ (Dan Tuhanmu mewahyukan kepada lebah)" }
   ],
   balita: {
-    text: {
-      id: "Ini Lebah Madu! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Lebah Madu! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Lebah Madu. Allah menciptakan Lebah Madu dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Lebah Madu. Allah created Lebah Madu beautifully so we all become grateful.",
-    },
+    text: { id: "Ngenggg... 🐝 Lebah suka hinggap di bunga-bunga cantik. Mereka membuat madu yang sangaaat manis!", en: "Bzzzz... 🐝 Bees love landing on beautiful flowers. They make verryyy sweet honey!" },
+    audioTranscript: { id: "Halo teman-teman! Aku lebah. Aku mengambil nektar dari bunga untuk dibuat menjadi madu. Jangan ganggu sarangku ya!", en: "Hello friends! I am a bee. I take nectar from flowers to make honey. Please don't disturb my hive!" },
     quiz: {
-      question: {
-        id: "Mana gambar Lebah Madu?",
-        en: "Which one is the picture of Lebah Madu?",
-      },
+      question: { id: "Makanan apa yang dibuat oleh lebah dari bunga?", en: "What food do bees make from flowers?" },
       options: [
-        { text: { id: "🐝 Lebah Madu", en: "🐝 Lebah Madu" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Cokelat", en: "Chocolate" } },
+        { text: { id: "Permen", en: "Candy" } },
+        { text: { id: "Madu", en: "Honey" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Lebah Madu: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Lebah Madu: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Lebah adalah arsitek terhebat di alam! Sarang madu mereka berbentuk segi enam (heksagon) yang sempurna. Bentuk heksagon menyimpan madu paling banyak dan menghemat tempat lho!", en: "Bees are the greatest architects in nature! Their honeycombs are perfectly hexagonal. The hexagon shape stores the most honey and saves the most space!" },
     facts: [
-      { id: "Lebah Madu memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Lebah Madu memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Lebah Madu bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Lebah Madu bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Lebah Madu dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Lebah Madu dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Untuk membuat 1 sendok madu, lebah harus mengunjungi 4000 bunga! 🌸", en: "To make 1 spoonful of honey, bees have to visit 4000 flowers! 🌸" },
+      { id: "Lebah berkomunikasi dengan teman-temannya melalui tarian khusus! 💃", en: "Bees communicate with their friends through a special dance! 💃" },
+      { id: "Lebah adalah satu-satunya serangga yang memproduksi makanan untuk manusia! 🍯", en: "Bees are the only insects that produce food for humans! 🍯" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Lebah Madu dengan sempurna?",
-        en: "Who created Lebah Madu perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Lebah Madu mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Lebah Madu reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Lebah Madu: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Lebah Madu dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Lebah Madu: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Lebah Madu dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "1400 tahun lalu, Al-Qur'an sudah mengabadikan kehebatan lebah dalam Surah An-Nahl (Lebah). Allah menceritakan bahwa Dia mewahyukan insting kepada lebah untuk membuat sarang di bukit dan pohon. Dari perut lebah keluar cairan beraneka warna (madu) yang menjadi obat bagi manusia. Madu terbukti mengandung antibakteri super kuat!", en: "1400 years ago, the Qur'an already eternalized the greatness of bees in Surah An-Nahl (The Bee). Allah tells us that He inspired the bees to build hives in mountains and trees. From their bellies comes a fluid of varying colors (honey) which is a healing for humans. Honey is proven to contain super strong antibacterials!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "يَخْرُجُ مِنْ بُطُونِهَا شَرَابٌ مُخْتَلِفٌ أَلْوَانُهُ فِيهِ شِفَاءٌ لِلنَّاسِ",
+      transliteration: "Yakhruju min butuunihaa sharaabun mukhtalifun alwaanuhu fiihi shifaa'un lin-naas",
+      translation: { id: "Dari perut lebah itu keluar minuman (madu) yang bermacam-macam warnanya, di dalamnya terdapat obat yang menyembuhkan bagi manusia.", en: "There emerges from their bellies a drink, varying in colors, in which there is healing for people." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Lebah Madu?",
-          en: "What is the primary wisdom of scientific signs regarding Lebah Madu?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

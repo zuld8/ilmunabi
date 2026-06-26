@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const anggurHijauData: ObjectData = {
-  slug: "anggur-hijau",
-  name: {
-    id: "Anggur Hijau",
-    en: "Anggur Hijau",
-  },
-  scientificName: "Vitis vinifera",
-  surahName: "Al-An'am",
-  surahReference: "6:99",
+export const anggurData: ObjectData = {
+  slug: "anggur",
+  name: { id: "Anggur", en: "Grape" },
   icon: "🍇",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Vitis vinifera",
+  surahName: "An-Nahl",
+  surahReference: "16:11",
+  unlockedAtPoints: 20,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-An'am 6:99" }
+    { arab: "عِنَبٌ", latin: "'inabun", arti: "Anggur", artiEn: "Grape", contohAyat: "Anggur yang manis." }
   ],
   balita: {
-    text: {
-      id: "Ini Anggur Hijau! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Anggur Hijau! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Anggur Hijau. Allah menciptakan Anggur Hijau dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Anggur Hijau. Allah created Anggur Hijau beautifully so we all become grateful.",
-    },
+    text: { id: "Nyam nyam! Buah anggur bulat-bulat dan manis! 🍇", en: "Yum yum! Grapes are round and sweet! 🍇" },
+    audioTranscript: { id: "Buah anggur bergerombol banyak sekali di pohonnya! Ada yang hijau, ungu, dan merah. Ayo kita petik dan makan!", en: "Grapes bunch up together on their vine! There are green, purple, and red ones. Let's pick and eat them!" },
     quiz: {
-      question: {
-        id: "Mana gambar Anggur Hijau?",
-        en: "Which one is the picture of Anggur Hijau?",
-      },
+      question: { id: "Anggur tumbuhnya biasanya seperti apa?", en: "How do grapes usually grow?" },
       options: [
-        { text: { id: "🍇 Anggur Hijau", en: "🍇 Anggur Hijau" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Sendirian satu-satu", en: "Alone one by one" } },
+        { text: { id: "Bergerombol (berkelompok)", en: "In bunches (groups)" } },
+        { text: { id: "Bersembunyi di dalam tanah", en: "Hiding underground" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Anggur Hijau: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Anggur Hijau: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tanaman anggur itu merambat lho, jadi dia suka melilit dan memanjat pagar kayu agar bisa tumbuh ke atas. Kalau kamu makan anggur, kamu dapat banyak air segar dari buahnya!", en: "Grape vines are climbing plants, so they like to wrap around and climb wooden fences to grow upwards. When you eat grapes, you get a lot of fresh water from the fruit!" },
     facts: [
-      { id: "Tumbuhan Anggur Hijau melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Anggur Hijau melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Anggur Hijau bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Anggur Hijau bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Anggur Hijau adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Anggur Hijau adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Anggur bisa dikeringkan jadi kismis yang enak banget!", en: "Grapes can be dried into very delicious raisins!" },
+      { id: "Satu gerombol anggur bisa berisi lebih dari 100 buah anggur.", en: "One bunch of grapes can contain over 100 grapes." },
+      { id: "Ada ribuan jenis anggur yang berbeda di seluruh dunia.", en: "There are thousands of different grape varieties around the world." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Anggur Hijau dengan sempurna?",
-        en: "Who created Anggur Hijau perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Anggur Hijau mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Anggur Hijau reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Anggur Hijau: Struktur pembuluh kayu dan tapis pada Anggur Hijau mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Anggur Hijau: Struktur pembuluh kayu dan tapis pada Anggur Hijau mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Anggur menyimpan cadangan gula dan air yang sangat baik untuk sumber energi instan. Di dalam Al-Qur'an, anggur sering disebut sebagai salah satu buah yang ditumbuhkan Allah dengan air hujan, bukti kasih sayang Allah agar kita bisa makan buah yang sangat lezat ini! Masya Allah, hebat ya!", en: "Grapes store reserves of sugar and water which are excellent for instant energy. In the Quran, grapes are often mentioned as one of the fruits Allah grows with rainwater, proof of Allah's love so we can eat this highly delicious fruit! Masya Allah, how amazing!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "يُنْبِتُ لَكُمْ بِهِ الزَّرْعَ وَالزَّيْتُونَ وَالنَّخِيلَ وَالْأَعْنَابَ",
+      transliteration: "Yunbitu lakum bihi az-zar'a wazzaytūna wan-nakhīla wal-a'nāba",
+      translation: { id: "Dia menumbuhkan bagi kamu dengan air hujan itu tanam-tanaman; zaitun, kurma, anggur...", en: "He causes to grow for you thereby the crops, olives, palm trees, grapevines..." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Anggur Hijau?",
-          en: "What is the primary wisdom of scientific signs regarding Anggur Hijau?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

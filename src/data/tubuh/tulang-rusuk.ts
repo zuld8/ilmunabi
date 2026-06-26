@@ -2,107 +2,49 @@ import { ObjectData } from "../objects";
 
 export const tulangRusukData: ObjectData = {
   slug: "tulang-rusuk",
-  name: {
-    id: "Tulang Rusuk",
-    en: "Tulang Rusuk",
-  },
-  scientificName: "Costa",
-  surahName: "Al-Isra",
-  surahReference: "17:49",
+  name: { id: "Tulang Rusuk", en: "Rib Cage" },
   icon: "🦴",
   category: "tubuh",
   type: "tubuh",
-  unlockedAtPoints: 50,
+  scientificName: "Costae",
+  surahName: "At-Tariq",
+  surahReference: "86:7",
+  unlockedAtPoints: 15,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Isra 17:49" }
+    { arab: "تَرَائِب", latin: "taraa'ib", arti: "Tulang dada/rusuk", artiEn: "Ribs/Chest bone", contohAyat: "يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ" }
   ],
   balita: {
-    text: {
-      id: "Ini Tulang Rusuk! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Tulang Rusuk! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Tulang Rusuk. Allah menciptakan Tulang Rusuk dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Tulang Rusuk. Allah created Tulang Rusuk beautifully so we all become grateful.",
-    },
+    text: { id: "Coba pegang dadamu, ada tulang keras! 🦴", en: "Try touching your chest, there are hard bones! 🦴" },
+    audioTranscript: { id: "Tulang rusuk seperti kandang besi di dalam dada kita. Tugasnya menjaga hati dan paru-paru kita biar aman kalau kita jatuh!", en: "Rib bones are like an iron cage inside our chest. Their job is to keep our heart and lungs safe if we fall!" },
     quiz: {
-      question: {
-        id: "Mana gambar Tulang Rusuk?",
-        en: "Which one is the picture of Tulang Rusuk?",
-      },
+      question: { id: "Apa bentuk tulang rusuk di dada kita?", en: "What shape do the rib bones in our chest form?" },
       options: [
-        { text: { id: "🦴 Tulang Rusuk", en: "🦴 Tulang Rusuk" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Seperti kandang", en: "Like a cage" } },
+        { text: { id: "Seperti bola", en: "Like a ball" } },
+        { text: { id: "Seperti bintang", en: "Like a star" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Tulang Rusuk: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Tulang Rusuk: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Manusia punya 12 pasang tulang rusuk, mirip keranjang yang melindungi jantung dan paru-paru! Walau kuat seperti tameng, tulang rusuk bisa mengembang saat kita mengambil napas panjang. Wah, Allah ciptakan tulang yang bisa lentur!", en: "Humans have 12 pairs of ribs, like a basket protecting the heart and lungs! Even though they are strong as a shield, rib bones can expand when we take a deep breath. Wow, Allah created bones that can be flexible!" },
     facts: [
-      { id: "Sistem Tulang Rusuk di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan.", en: "Sistem Tulang Rusuk di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan." },
-      { id: "Miliaran sel penyusun Tulang Rusuk berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia.", en: "Miliaran sel penyusun Tulang Rusuk berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia." },
-      { id: "Kesehatan Tulang Rusuk sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib.", en: "Kesehatan Tulang Rusuk sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib." }
+      { id: "Satu dari setiap 500 orang lahir dengan ekstra 1 tulang rusuk lho!", en: "One out of every 500 people is born with 1 extra rib!" },
+      { id: "Tulang rusuk terhubung ke tulang belakang di punggung kita.", en: "Ribs are connected to the spine in our back." },
+      { id: "Tulang rusuk bawah kita mengambang, tidak menempel ke depan.", en: "Our bottom ribs are floating, not attached to the front." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Tulang Rusuk dengan sempurna?",
-        en: "Who created Tulang Rusuk perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Tulang Rusuk mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Tulang Rusuk reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Sel", en: "Sistem Sel" }, desc: { id: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit.", en: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban rancangan Tulang Rusuk: Sel-sel pada Tulang Rusuk memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
-      en: "Keajaiban rancangan Tulang Rusuk: Sel-sel pada Tulang Rusuk memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
-    },
+    text: { id: "Tulang rusuk (costae) membentuk rongga toraks yang krusial. Selain untuk perlindungan, otot interkostal di sela tulang rusuk memungkinkan proses respirasi mengembang-kempiskan paru-paru. Al-Qur'an menyebutkan 'Tara'ib' (tulang dada/rusuk) dalam konteks penciptaan manusia, menyoroti pentingnya anatomi ini dalam reproduksi dan penciptaan embrio!", en: "The ribs (costae) form the crucial thoracic cavity. Besides protection, intercostal muscles between ribs allow respiration by expanding and contracting the lungs. The Quran mentions 'Tara'ib' (chest/rib bones) in the context of human creation, highlighting the importance of this anatomy in reproduction and embryo creation!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ",
+      transliteration: "Yakhruju mim bainish-shulbi wat-taraa'ib",
+      translation: { id: "Yang keluar dari antara tulang sulbi (punggung) dan tulang dada (rusuk).", en: "Emerging from between the backbone and the ribs." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Tulang Rusuk?",
-          en: "What is the primary wisdom of scientific signs regarding Tulang Rusuk?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

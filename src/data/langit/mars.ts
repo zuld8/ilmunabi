@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const marsMerahData: ObjectData = {
-  slug: "mars-merah",
-  name: {
-    id: "Mars Merah",
-    en: "Mars Merah",
-  },
-  scientificName: "Mars",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const marsData: ObjectData = {
+  slug: "mars",
+  name: { id: "Mars", en: "Mars" },
   icon: "🔴",
   category: "langit",
   type: "langit",
+  scientificName: "Mars",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "أَحْمَر", latin: "Ahmar", arti: "Merah", artiEn: "Red", contohAyat: "Planet Merah yang penuh debu" }
   ],
   balita: {
-    text: {
-      id: "Ini Mars Merah! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Mars Merah! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Mars Merah. Allah menciptakan Mars Merah dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Mars Merah. Allah created Mars Merah beautifully so we all become grateful.",
-    },
+    text: { id: "Halo Mars! Ini adalah Si Planet Merah! Warnanya merah karena tertutup banyak sekali debu karat! 🔴🚀", en: "Hello Mars! This is the Red Planet! It's red because it's covered in lots of rusty dust! 🔴🚀" },
+    audioTranscript: { id: "Ini planet Mars! Planet yang warnanya merah bata. Di sana banyak gunung batu, Allah menciptakannya bertetangga dengan planet Bumi kita.", en: "This is planet Mars! The planet with a brick red color. There are many rocky mountains there, Allah created it neighboring our Earth." },
     quiz: {
-      question: {
-        id: "Mana gambar Mars Merah?",
-        en: "Which one is the picture of Mars Merah?",
-      },
+      question: { id: "Warna planet Mars itu apa ya?", en: "What color is planet Mars?" },
       options: [
-        { text: { id: "🔴 Mars Merah", en: "🔴 Mars Merah" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Ungu", en: "Purple" } },
+        { text: { id: "Biru", en: "Blue" } },
+        { text: { id: "Merah bata", en: "Brick red" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Mars Merah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Mars Merah: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Mars adalah planet tetangga Bumi! Sekarang, banyak robot penjelajah (Rover) buatan manusia yang sedang berjalan-jalan di sana mencari tahu apakah dulu ada kehidupan.", en: "Mars is Earth's neighboring planet! Right now, many human-made robot rovers are exploring it, trying to find out if there was ever life there." },
     facts: [
-      { id: "Objek luar angkasa Mars Merah bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Mars Merah bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Mars Merah melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Mars Merah melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Mars Merah membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Mars Merah membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Di Mars ada gunung berapi raksasa bernama Olympus Mons. Gunung ini tiga kali lebih tinggi dari Gunung Everest di Bumi! 🌋", en: "Mars has a giant volcano called Olympus Mons. It's three times taller than Mount Everest on Earth! 🌋" },
+      { id: "Mars punya dua bulan kecil berbentuk seperti kentang: Phobos dan Deimos.", en: "Mars has two small potato-shaped moons: Phobos and Deimos." },
+      { id: "Saking dinginnya, di kutub planet Mars terdapat es batu yang tidak mencair!", en: "It's so cold that at the poles of Mars, there is ice that doesn't melt!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Mars Merah dengan sempurna?",
-        en: "Who created Mars Merah perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Mars Merah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Mars Merah reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Mars Merah: Hukum gravitasi universal mengikat Mars Merah agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Mars Merah: Hukum gravitasi universal mengikat Mars Merah agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Mars dulunya diperkirakan mirip Bumi, punya sungai dan laut! HAH?! Tapi entah kenapa, Mars kehilangan medan magnet dan atmosfernya perlahan menguap ke angkasa tersapu angin matahari, menyisakan gurun merah yang beku. 1400 tahun lalu, Al-Qur'an mengajak kita memikirkan bagaimana silih bergantinya pergantian siang dan malam serta penciptaan langit sebagai pelajaran besar tentang kekuasaan Allah yang mutlak.", en: "Mars is thought to have once been like Earth, with rivers and oceans! HAH?! But somehow, Mars lost its magnetic field and its atmosphere slowly evaporated into space, blown away by solar wind, leaving a frozen red desert. 1400 years ago, the Quran invited us to reflect on the alternation of night and day and the creation of the heavens as a profound lesson in Allah's absolute power." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ... لَآيَاتٍ لِقَوْمٍ يَعْقِلُونَ",
+      transliteration: "Inna fī khalqis-samāwāti wal-arḍi wakhtilāfil-layli wan-nahār... la'āyātil-liqawmiy-ya'qilūn",
+      translation: { id: "Sesungguhnya dalam penciptaan langit dan bumi, silih bergantinya malam dan siang... terdapat tanda-tanda (kebesaran Allah) bagi kaum yang memikirkan.", en: "Indeed, in the creation of the heavens and earth, and the alternation of the night and the day... are signs for a people who use reason." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Mars Merah?",
-          en: "What is the primary wisdom of scientific signs regarding Mars Merah?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

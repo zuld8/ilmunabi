@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const pisangRajaData: ObjectData = {
-  slug: "pisang-raja",
-  name: {
-    id: "Pisang Raja",
-    en: "Pisang Raja",
-  },
-  scientificName: "Musa acuminata",
-  surahName: "Al-Waqi'ah",
-  surahReference: "56:29",
+export const pisangData: ObjectData = {
+  slug: "pisang",
+  name: { id: "Pisang", en: "Banana" },
   icon: "🍌",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Musa",
+  surahName: "Al-Waqi'ah",
+  surahReference: "56:29",
+  unlockedAtPoints: 150,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Waqi'ah 56:29" }
+    { arab: "مَوْزٌ", latin: "mawzun", arti: "Pisang", artiEn: "Banana", contohAyat: "Makan pisang pagi hari." }
   ],
   balita: {
-    text: {
-      id: "Ini Pisang Raja! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Pisang Raja! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Pisang Raja. Allah menciptakan Pisang Raja dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Pisang Raja. Allah created Pisang Raja beautifully so we all become grateful.",
-    },
+    text: { id: "Kuning melengkung seperti senyuman! 🍌", en: "Yellow and curved like a smile! 🍌" },
+    audioTranscript: { id: "Monyet sukaaa sekali makan pisang! Kita juga suka! Buah pisang empuk dan bikin perut kenyang. Jangan lupa kulitnya dibuang ke tempat sampah, ya!", en: "Monkeys reeeally love eating bananas! We love it too! Bananas are soft and make our tummy full. Don't forget to throw the peel in the trash!" },
     quiz: {
-      question: {
-        id: "Mana gambar Pisang Raja?",
-        en: "Which one is the picture of Pisang Raja?",
-      },
+      question: { id: "Ke mana kulit pisang harus dibuang agar orang tidak terpeleset?", en: "Where should banana peels be thrown so people don't slip?" },
       options: [
-        { text: { id: "🍌 Pisang Raja", en: "🍌 Pisang Raja" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Di lantai keramik", en: "On the ceramic floor" } },
+        { text: { id: "Ke tempat sampah", en: "Into the trash can" } },
+        { text: { id: "Di atas kasur", en: "On the bed" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Pisang Raja: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Pisang Raja: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Pohon pisang sebetulnya bukan pohon! Ia adalah herba (tanaman rumput) raksasa karena batangnya tidak berkayu. Batang pisang itu sebenarnya kumpulan daun yang berlapis-lapis erat.", en: "Did you know? Banana trees are actually not trees! They are giant herbs (grass plants) because their stems are not woody. Banana stems are actually tightly layered leaves." },
     facts: [
-      { id: "Tumbuhan Pisang Raja melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Pisang Raja melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Pisang Raja bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Pisang Raja bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Pisang Raja adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Pisang Raja adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Pisang mengandung kalium yang tinggi untuk memperkuat otot kita.", en: "Bananas contain high potassium to strengthen our muscles." },
+      { id: "Pohon pisang hanya berbuah satu kali seumur hidup, lalu akan digantikan tunas baru.", en: "Banana trees only bear fruit once in their lifetime, then are replaced by new shoots." },
+      { id: "Pisang secara alami mengandung bahan kimia yang bisa bikin kita merasa bahagia!", en: "Bananas naturally contain chemicals that can make us feel happy!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Pisang Raja dengan sempurna?",
-        en: "Who created Pisang Raja perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Pisang Raja mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Pisang Raja reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Pisang Raja: Struktur pembuluh kayu dan tapis pada Pisang Raja mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Pisang Raja: Struktur pembuluh kayu dan tapis pada Pisang Raja mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Buah pisang memiliki bungkus alami paling praktis, bersih, dan mudah dikupas di dunia. Allah menyebut pohon pisang yang buahnya bersusun-susun (Thalhin) sebagai salah satu kenikmatan di Surga kelak! Masya Allah, desain pisang sungguh bukti kemurahan Allah pada hamba-Nya.", en: "Bananas have the most practical, clean, and easily peelable natural packaging in the world. Allah mentions banana trees with layered fruits (Thalhin) as one of the delights in Paradise! Masya Allah, the design of a banana is truly proof of Allah's generosity to His servants." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَطَلْحٍ مَنْضُودٍ",
+      transliteration: "Wa ṭalḥin manḍūd",
+      translation: { id: "Dan pohon pisang yang bersusun-susun (buahnya),", en: "And [banana] trees layered [with fruit]," }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Pisang Raja?",
-          en: "What is the primary wisdom of scientific signs regarding Pisang Raja?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

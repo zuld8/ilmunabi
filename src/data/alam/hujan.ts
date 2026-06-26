@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const hujanGerimisData: ObjectData = {
-  slug: "hujan-gerimis",
-  name: {
-    id: "Hujan Gerimis",
-    en: "Hujan Gerimis",
-  },
-  scientificName: "Drizzle",
-  surahName: "Al-Baqarah",
-  surahReference: "2:22",
+export const hujanData: ObjectData = {
+  slug: "hujan",
+  name: { id: "Hujan", en: "Rain" },
   icon: "🌧️",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 50,
+  scientificName: "Precipitation",
+  surahName: "Ar-Rum",
+  surahReference: "30:48",
+  unlockedAtPoints: 15,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:22" }
+    { arab: "مَطَر", latin: "Matar", arti: "Hujan", artiEn: "Rain", contohAyat: "وَأَمْطَرْنَا عَلَيْهِم مَّطَرًا" }
   ],
   balita: {
-    text: {
-      id: "Ini Hujan Gerimis! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Hujan Gerimis! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Hujan Gerimis. Allah menciptakan Hujan Gerimis dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Hujan Gerimis. Allah created Hujan Gerimis beautifully so we all become grateful.",
-    },
+    text: { id: "Tik tik tik! Bunyi hujan di atas genting! ☔", en: "Tik tik tik! The sound of rain on the roof! ☔" },
+    audioTranscript: { id: "Hujan itu air yang turun dari langit untuk memberi minum bunga-bunga dan pohon biar tumbuh besar.", en: "Rain is water that falls from the sky to give a drink to flowers and trees so they grow big." },
     quiz: {
-      question: {
-        id: "Mana gambar Hujan Gerimis?",
-        en: "Which one is the picture of Hujan Gerimis?",
-      },
+      question: { id: "Hujan turun dari mana?", en: "Where does rain fall from?" },
       options: [
-        { text: { id: "🌧️ Hujan Gerimis", en: "🌧️ Hujan Gerimis" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Dari awan", en: "From clouds" } },
+        { text: { id: "Dari matahari", en: "From the sun" } },
+        { text: { id: "Dari bulan", en: "From the moon" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Hujan Gerimis: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Hujan Gerimis: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Hujan terjadi saat air laut memanas, naik menjadi uap berkumpul jadi awan hitam. Lalu turun deh air hujan! Allah menurunkan hujan sebagai rahmat supaya bumi menjadi subur dan ada makanan untuk kita.", en: "Rain happens when seawater heats up, rises into vapor, and gathers into black clouds. Then the rainwater falls! Allah sends down rain as a mercy so the earth becomes fertile and there is food for us." },
     facts: [
-      { id: "Hujan Gerimis merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Hujan Gerimis merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
-      { id: "Keteraturan siklus Hujan Gerimis memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Hujan Gerimis memungkinkan kehidupan biologis manusia berjalan dengan aman." },
-      { id: "Interaksi fisik Hujan Gerimis dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Hujan Gerimis dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
+      { id: "Tetesan hujan tidak berbentuk seperti air mata, tapi seperti kue hamburger kecil lho!", en: "Raindrops are not shaped like teardrops, but like tiny hamburger buns!" },
+      { id: "Bau khas saat hujan turun punya nama keren: Petrichor.", en: "The distinct smell when it rains has a cool name: Petrichor." },
+      { id: "Di planet lain seperti Neptunus, hujannya bukan air, tapi berlian!", en: "On other planets like Neptune, the rain is not water, but diamonds!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Hujan Gerimis dengan sempurna?",
-        en: "Who created Hujan Gerimis perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Hujan Gerimis mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Hujan Gerimis reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Hujan Gerimis: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Hujan Gerimis agar tidak terjadi benturan atau kehancuran kosmis.",
-      en: "Keajaiban penciptaan Hujan Gerimis: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Hujan Gerimis agar tidak terjadi benturan atau kehancuran kosmis.",
-    },
+    text: { id: "Siklus hidrologi sangat rumit, melibatkan penguapan, kondensasi angin, dan partikel debu sebagai nukleasi tetes hujan. Hebatnya, Al-Qur'an menjelaskan siklus air ini secara detail; bagaimana angin menggerakkan awan, lalu awan dikumpulkan, dan air keluar dari celah-celahnya!", en: "The hydrological cycle is very complex, involving evaporation, wind condensation, and dust particles as raindrop nucleation. Amazingly, the Quran explains this water cycle in detail; how the wind drives the clouds, then the clouds are gathered, and water emerges from their midst!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "اللَّهُ الَّذِي يُرْسِلُ الرِّيَاحَ فَتُثِيرُ سَحَابًا فَيَبْسُطُهُ فِي السَّمَاءِ كَيْفَ يَشَاءُ وَيَجْعَلُهُ كِسَفًا فَتَرَى الْوَدْقَ يَخْرُجُ مِنْ خِلَالِهِ",
+      transliteration: "Allaahulladzii yursilur-riyaaha fa tuthiiru sahaaban fa yabsutuhuu fis-samaa'i kayfa yasyaa'u wa yaj'aluhuu kisafan fataral-wadqa yakhruju min khilaalih",
+      translation: { id: "Allah, Dialah yang mengirim angin, lalu angin itu menggerakkan awan dan Allah membentangkannya di langit menurut yang dikehendaki-Nya, dan menjadikannya bergumpal-gumpal; lalu kamu lihat hujan keluar dari celah-celahnya,", en: "It is Allah who sends the winds, and they stir the clouds and spread them in the sky however He wills, and He makes them fragments so you see the rain emerge from within them." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Hujan Gerimis?",
-          en: "What is the primary wisdom of scientific signs regarding Hujan Gerimis?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

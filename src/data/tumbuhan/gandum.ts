@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const gandumEmmerData: ObjectData = {
-  slug: "gandum-emmer",
-  name: {
-    id: "Gandum Emmer",
-    en: "Gandum Emmer",
-  },
-  scientificName: "Triticum dicoccum",
-  surahName: "Al-Baqarah",
-  surahReference: "2:61",
+export const gandumData: ObjectData = {
+  slug: "gandum",
+  name: { id: "Gandum", en: "Wheat" },
   icon: "🌾",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Triticum",
+  surahName: "Al-Baqarah",
+  surahReference: "2:261",
+  unlockedAtPoints: 80,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:61" }
+    { arab: "قَمْحٌ", latin: "qamhun", arti: "Gandum", artiEn: "Wheat", contohAyat: "Roti dari gandum." }
   ],
   balita: {
-    text: {
-      id: "Ini Gandum Emmer! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Gandum Emmer! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Gandum Emmer. Allah menciptakan Gandum Emmer dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Gandum Emmer. Allah created Gandum Emmer beautifully so we all become grateful.",
-    },
+    text: { id: "Rumput emas yang tertiup angin ini namanya Gandum! 🌾", en: "This golden grass blown by the wind is called Wheat! 🌾" },
+    audioTranscript: { id: "Gandum itu akan digiling sampai halus menjadi tepung. Dari tepung gandum, kita bisa buat roti yang enak, donat, dan mie. Nyam nyam!", en: "Wheat will be ground until smooth to become flour. From wheat flour, we can make delicious bread, donuts, and noodles. Yum yum!" },
     quiz: {
-      question: {
-        id: "Mana gambar Gandum Emmer?",
-        en: "Which one is the picture of Gandum Emmer?",
-      },
+      question: { id: "Gandum digiling menjadi apa sebelum dibuat kue?", en: "What is wheat ground into before baking a cake?" },
       options: [
-        { text: { id: "🌾 Gandum Emmer", en: "🌾 Gandum Emmer" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Pasir", en: "Sand" } },
+        { text: { id: "Tepung", en: "Flour" } },
+        { text: { id: "Garam", en: "Salt" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Gandum Emmer: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Gandum Emmer: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Gandum adalah tanaman yang sangat penting bagi manusia di seluruh dunia! Bagian dari gandum yang kita makan adalah bulir atau bijinya yang kaya karbohidrat untuk memberi kita tenaga super sepanjang hari.", en: "Wheat is a very important plant for humans around the world! The part of wheat that we eat is the grain or seed which is rich in carbohydrates to give us super energy all day." },
     facts: [
-      { id: "Tumbuhan Gandum Emmer melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Gandum Emmer melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Gandum Emmer bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Gandum Emmer bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Gandum Emmer adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Gandum Emmer adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Satu benih gandum bisa tumbuh menghasilkan puluhan biji gandum baru.", en: "One wheat seed can grow to produce dozens of new wheat grains." },
+      { id: "Gandum adalah makanan pokok terbanyak di seluruh dunia setelah beras dan jagung.", en: "Wheat is the most abundant staple food worldwide after rice and corn." },
+      { id: "Gandum butuh cahaya matahari yang panas agar bisa matang dan berwarna keemasan.", en: "Wheat needs hot sunlight to ripen and turn golden." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Gandum Emmer dengan sempurna?",
-        en: "Who created Gandum Emmer perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Gandum Emmer mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Gandum Emmer reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Gandum Emmer: Struktur pembuluh kayu dan tapis pada Gandum Emmer mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Gandum Emmer: Struktur pembuluh kayu dan tapis pada Gandum Emmer mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Perkembangbiakan luar biasa dari sebutir biji ini sering diabadikan. Allah mengumpamakan pahala orang yang gemar bersedekah di jalan Allah seperti sebutir benih gandum yang menumbuhkan tujuh tangkai, pada setiap tangkai ada seratus biji. Masya Allah, dari satu kebaikan bisa dibalas 700 kali lipat oleh Allah!", en: "The incredible reproduction of a single seed is often immortalized. Allah compares the reward of those who spend their wealth in the way of Allah to a grain of wheat that grows seven ears, in every ear a hundred grains. Masya Allah, from one good deed, Allah can reward 700 times!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "مَثَلُ الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنْبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنْبُلَةٍ مِائَةُ حَبَّةٍ",
+      transliteration: "Mathalul-ladhīna yunfiqūna amwālahum fī sabīlil-lāhi kamathali ḥabbatin anbatat sab'a sanābila fī kulli sunbulatin mi'atu ḥabbat",
+      translation: { id: "Perumpamaan (nafkah yang dikeluarkan oleh) orang-orang yang menafkahkan hartanya di jalan Allah adalah serupa dengan sebutir benih yang menumbuhkan tujuh bulir, pada tiap-tiap bulir seratus biji.", en: "The example of those who spend their wealth in the way of Allah is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Gandum Emmer?",
-          en: "What is the primary wisdom of scientific signs regarding Gandum Emmer?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const otakBesarData: ObjectData = {
-  slug: "otak-besar",
-  name: {
-    id: "Otak Besar",
-    en: "Otak Besar",
-  },
-  scientificName: "Cerebrum",
-  surahName: "Al-Alaq",
-  surahReference: "96:15",
+export const otakData: ObjectData = {
+  slug: "otak",
+  name: { id: "Otak", en: "Brain" },
   icon: "🧠",
   category: "tubuh",
   type: "tubuh",
+  scientificName: "Cerebrum",
+  surahName: "Al-Alaq",
+  surahReference: "96:15-16",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Alaq 96:15" }
+    { arab: "مُخٌّ", latin: "mukhkhun", arti: "Otak", artiEn: "Brain", contohAyat: "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ" }
   ],
   balita: {
-    text: {
-      id: "Ini Otak Besar! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Otak Besar! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Otak Besar. Allah menciptakan Otak Besar dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Otak Besar. Allah created Otak Besar beautifully so we all become grateful.",
-    },
+    text: { id: "Ini otak kita, letaknya di kepala! 🧠", en: "This is our brain, inside our head! 🧠" },
+    audioTranscript: { id: "Otak adalah bos yang menyuruh tubuh kita bergerak. Mau melompat, nyanyi, atau makan, otak yang kasih perintah!", en: "The brain is the boss that tells our body to move. Want to jump, sing, or eat, the brain gives the order!" },
     quiz: {
-      question: {
-        id: "Mana gambar Otak Besar?",
-        en: "Which one is the picture of Otak Besar?",
-      },
+      question: { id: "Di mana letak otak kita?", en: "Where is our brain located?" },
       options: [
-        { text: { id: "🧠 Otak Besar", en: "🧠 Otak Besar" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Di perut", en: "In the stomach" } },
+        { text: { id: "Di kaki", en: "In the foot" } },
+        { text: { id: "Di kepala", en: "In the head" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Otak Besar: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Otak Besar: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Otak itu superkomputer terhebat di dunia ciptaan Allah! Otak bisa menyimpan ingatan, bikin kita pintar, dan bisa bermimpi. Otak kita tidak pernah tidur lho, ia terus bekerja mengatur napas kita meski kita sedang terlelap!", en: "The brain is the greatest supercomputer in the world created by Allah! It stores memories, makes us smart, and helps us dream. Our brain never sleeps, it keeps working to control our breathing even when we're asleep!" },
     facts: [
-      { id: "Sistem Otak Besar di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan.", en: "Sistem Otak Besar di dalam tubuh kita bekerja 24 jam sehari secara otomatis tanpa kita perintahkan." },
-      { id: "Miliaran sel penyusun Otak Besar berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia.", en: "Miliaran sel penyusun Otak Besar berkomunikasi sangat cepat menggunakan sinyal listrik dan kimia." },
-      { id: "Kesehatan Otak Besar sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib.", en: "Kesehatan Otak Besar sangat dipengaruhi oleh rasa syukur, ketenangan hati, dan nutrisi makanan yang thoyyib." }
+      { id: "Otak menghasilkan listrik yang cukup untuk menyalakan lampu kecil!", en: "The brain generates enough electricity to power a small lightbulb!" },
+      { id: "Informasi di otak bergerak lebih cepat dari mobil balap!", en: "Information in the brain travels faster than a race car!" },
+      { id: "Otak kita terbentuk dari 73% air, jadi harus banyak minum!", en: "Our brain is made up of 73% water, so drink plenty!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Otak Besar dengan sempurna?",
-        en: "Who created Otak Besar perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Otak Besar mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Otak Besar reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Sel", en: "Sistem Sel" }, desc: { id: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit.", en: "Susunan sel-sel spesifik dengan jaringan fungsional yang sangat rumit." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban rancangan Otak Besar: Sel-sel pada Otak Besar memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
-      en: "Keajaiban rancangan Otak Besar: Sel-sel pada Otak Besar memiliki kemampuan regenerasi dan pertahanan kekebalan mandiri yang melindungi tubuh kita dari penyakit setiap detik.",
-    },
+    text: { id: "Otak terdiri dari milyaran sel neuron yang saling mengirim pesan seperti kilatan petir! Bagian depan otak (Nasiyah/Ubun-ubun) adalah pusat pengambil keputusan. Menakjubkannya, Al-Qur'an 1400 tahun lalu sudah menyoroti bagian 'ubun-ubun' sebagai sumber kebohongan dan keputusan, yang baru diakui sains modern sebagai korteks prefrontal!", en: "The brain consists of billions of neurons sending messages like lightning strikes! The front part of the brain (Nasiyah/Forelock) is the decision-making center. Amazingly, the Quran 1400 years ago highlighted the 'forelock' as the source of lies and decisions, which modern science just recognized as the prefrontal cortex!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ ۞ نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+      transliteration: "Kallaa la-in lam yantahi lanasfa'an bin-naasiyah, naasiyatin kaazibatin khaati'ah",
+      translation: { id: "Sekali-kali tidak! Sungguh, jika dia tidak berhenti, niscaya Kami tarik ubun-ubunnya, (yaitu) ubun-ubun orang yang mendustakan dan durhaka.", en: "No! If he does not desist, We will surely drag him by the forelock - a lying, sinning forelock." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Otak Besar?",
-          en: "What is the primary wisdom of scientific signs regarding Otak Besar?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

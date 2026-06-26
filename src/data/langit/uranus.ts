@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const uranusEsData: ObjectData = {
-  slug: "uranus-es",
-  name: {
-    id: "Uranus Es",
-    en: "Uranus Es",
-  },
-  scientificName: "Uranus",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
-  icon: "🪐",
+export const uranusData: ObjectData = {
+  slug: "uranus",
+  name: { id: "Uranus", en: "Uranus" },
+  icon: "💠",
   category: "langit",
   type: "langit",
+  scientificName: "Uranus",
+  surahName: "An-Nahl",
+  surahReference: "16:12",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "مُسَخَّرَات", latin: "Musakhkharat", arti: "Dundukkan / Dikendalikan", artiEn: "Subjected / Controlled", contohAyat: "Planet-planet tunduk pada perintah Allah" }
   ],
   balita: {
-    text: {
-      id: "Ini Uranus Es! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Uranus Es! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Uranus Es. Allah menciptakan Uranus Es dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Uranus Es. Allah created Uranus Es beautifully so we all become grateful.",
-    },
+    text: { id: "Hahaha, lihat planet Uranus! Dia berputar dengan posisi miring, seperti bola yang sedang menggelinding ke samping! ⚽❄️", en: "Hahaha, look at planet Uranus! It spins on a tilt, like a ball rolling sideways! ⚽❄️" },
+    audioTranscript: { id: "Ini planet biru muda yang dingin bernama Uranus. Saking miringnya, dia berputar seperti menggelinding rebahan lho! Unik sekali ciptaan Allah ini.", en: "This is a cold light blue planet called Uranus. It's so tilted, it spins like it's rolling on its side! What a unique creation of Allah." },
     quiz: {
-      question: {
-        id: "Mana gambar Uranus Es?",
-        en: "Which one is the picture of Uranus Es?",
-      },
+      question: { id: "Bagaimana cara planet Uranus berputar?", en: "How does planet Uranus spin?" },
       options: [
-        { text: { id: "🪐 Uranus Es", en: "🪐 Uranus Es" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Berdiri tegak", en: "Standing straight" } },
+        { text: { id: "Miring sambil menggelinding ke samping", en: "Tilted and rolling sideways" } },
+        { text: { id: "Lompat-lompat", en: "Jumping up and down" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Uranus Es: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Uranus Es: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Uranus adalah Raksasa Es yang sangat dingin. Karena dia berputar miring (hampir 90 derajat!), salah satu kutubnya menghadap matahari terus menerus selama puluhan tahun!", en: "Uranus is a very cold Ice Giant. Because it spins on a tilt (almost 90 degrees!), one of its poles faces the sun continuously for decades!" },
     facts: [
-      { id: "Objek luar angkasa Uranus Es bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Uranus Es bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Uranus Es melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Uranus Es melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Uranus Es membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Uranus Es membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Satu musim (seperti musim panas atau dingin) di Uranus lamanya bisa sampai 21 tahun Bumi! 🥶", en: "One season (like summer or winter) on Uranus can last up to 21 Earth years! 🥶" },
+      { id: "Seperti Saturnus, Uranus sebenarnya juga punya cincin tipis yang melingkarinya.", en: "Like Saturn, Uranus actually also has thin rings circling it." },
+      { id: "Uranus adalah planet pertama yang ditemukan menggunakan teleskop.", en: "Uranus was the first planet discovered using a telescope." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Uranus Es dengan sempurna?",
-        en: "Who created Uranus Es perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Uranus Es mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Uranus Es reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Uranus Es: Hukum gravitasi universal mengikat Uranus Es agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Uranus Es: Hukum gravitasi universal mengikat Uranus Es agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Kalau kamu ke Uranus, kamu akan mencium bau telur busuk yang sangat menyengat! HAH?! Ya, awan atas Uranus penuh dengan gas Hidrogen Sulfida (gas kentut/telur busuk). Keunikan dan ketundukan setiap planet dengan ciri khasnya masing-masing adalah bukti pengaturan Allah. 1400 tahun lalu, Al-Qur'an menegaskan bahwa bulan, bintang, dan planet ditundukkan beredar dengan perintah-Nya.", en: "If you went to Uranus, you would smell incredibly pungent rotten eggs! HAH?! Yes, Uranus' upper clouds are full of Hydrogen Sulfide gas (fart/rotten egg gas). The uniqueness and subjection of each planet with its own characteristics is proof of Allah's arrangement. 1400 years ago, the Quran affirmed that the sun, moon, stars, and planets are subjected to orbit by His command." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَسَخَّرَ لَكُمُ اللَّيْلَ وَالنَّهَارَ وَالشَّمْسَ وَالْقَمَرَ ۖ وَالنُّجُومُ مُسَخَّرَاتٌ بِأَمْرِهِ",
+      transliteration: "Wa sakhkhara lakumul-layla wan-nahāra wash-shamsa wal-qamar, wan-nujūmu musakhkharātum bi'amrih",
+      translation: { id: "Dan Dia menundukkan malam dan siang, matahari dan bulan untukmu. Dan bintang-bintang itu ditundukkan (untukmu) dengan perintah-Nya.", en: "And He has subjected for you the night and day and the sun and moon, and the stars are subjected by His command." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Uranus Es?",
-          en: "What is the primary wisdom of scientific signs regarding Uranus Es?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

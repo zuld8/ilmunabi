@@ -1,22 +1,22 @@
 // Auto-generated aggregator index file
 import { LearningObject } from "./objects.types";
 
-import { hewanObjects } from "./hewan";
-import { tumbuhanObjects } from "./tumbuhan";
-import { alamObjects } from "./alam";
-import { tubuhObjects } from "./tubuh";
+import { HewanObjects } from "./hewan";
+import { TumbuhanObjects } from "./tumbuhan";
+import { AlamObjects } from "./alam";
+import { TubuhObjects } from "./tubuh";
 import { nabiObjects } from "./nabi";
 import { asmaulHusnaObjects } from "./asmaul-husna";
-import { langitObjects } from "./langit";
+import { LangitObjects } from "./langit";
 
 export * from "./objects.types";
 
 export const objectsData: LearningObject[] = [
-  ...hewanObjects,
-  ...tumbuhanObjects,
-  ...alamObjects,
-  ...tubuhObjects,
+  ...HewanObjects,
+  ...TumbuhanObjects,
+  ...AlamObjects,
+  ...TubuhObjects,
   ...nabiObjects,
   ...asmaulHusnaObjects,
-  ...langitObjects,
+  ...LangitObjects,
 ];

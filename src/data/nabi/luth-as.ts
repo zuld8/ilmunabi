@@ -4,24 +4,36 @@ import { NabiData } from "../objects";
 export const luthAsData: NabiData = {
   slug: "luth-as",
   name: { id: "Nabi Luth AS", en: "Prophet Luth AS" },
-  icon: "🏙️",
+  icon: "🌍",
   category: "nabi",
   type: "nabi",
   unlockedAtPoints: 100,
-  surahReference: "Hud:81",
-  storyShort: { id: "Mengingatkan kaum Sadum agar kembali ke jalan yang lurus.", en: "Reminded the people of Sodom to return to the straight path." },
-  storyFull: { id: "Nabi Luth AS (keponakan Nabi Ibrahim) diutus ke kota Sodom yang masyarakatnya sangat buruk dan sering merampok. Mereka juga melakukan kebiasaan menyimpang. Malaikat datang berwujud tamu tampan untuk menguji kaum tersebut, namun kaum itu malah ingin berbuat jahat kepada para tamu. Allah lalu memerintahkan Nabi Luth pergi di malam hari, sebelum kota itu dijungkirbalikkan dan dihujani batu dari langit.", en: "Prophet Luth AS (nephew of Prophet Ibrahim) was sent to the city of Sodom, whose people were very wicked and often robbed. They also committed deviant habits. Angels came in the form of handsome guests to test the people, but the people wanted to do evil to the guests. Allah then commanded Prophet Luth to leave at night, before the city was turned upside down and rained with stones from the sky." },
+  surahReference: "Hud:81-82",
+  storyShort: {
+    id: "Nabi yang diutus ke kota Sodom yang masyarakatnya suka berbuat maksiat parah.",
+    en: "The prophet sent to the city of Sodom whose people liked to commit severe immorality."
+  },
+  storyFull: {
+    id: "Nabi Luth AS, keponakan Nabi Ibrahim AS, diutus ke kota Sodom. Penduduk Sodom melakukan perbuatan yang sangat menyimpang dan keji. Karena mereka tidak mau bertobat dan malah menantang Allah, kota mereka dibalikkan oleh Malaikat dan dihujani batu belerang yang panas.",
+    en: "Prophet Luth AS, the nephew of Prophet Ibrahim AS, was sent to the city of Sodom. The people of Sodom committed very deviant and vile acts. Because they refused to repent and instead challenged Allah, their city was turned upside down by Angels and rained upon with hot brimstones."
+  },
   miracles: [
-    { id: "Diselamatkan dari hujan batu belerang", en: "Saved from the rain of brimstones" }
+    { id: "Diselamatkan Allah dari azab hujan batu belerang.", en: "Saved by Allah from the punishment of brimstone rain." },
+    { id: "Malaikat penolong bertamu ke rumahnya dengan wujud pemuda tampan.", en: "Helper angels visited his house in the form of handsome youths." }
   ],
   characterTraits: [
-    { trait: { id: "Sabar", en: "Patient" }, desc: { id: "Sabar menghadapi kaum yang sangat nakal", en: "Patient in dealing with very naughty people" } },
-    { trait: { id: "Memuliakan Tamu", en: "Honoring Guests" }, desc: { id: "Berusaha keras melindungi tamunya", en: "Tried hard to protect his guests" } }
+    { trait: { id: "Tegar", en: "Resilient" }, desc: { id: "Tetap sabar di tengah lingkungan yang sangat buruk", en: "Remained patient amidst a very bad environment" } },
+    { trait: { id: "Berani", en: "Brave" }, desc: { id: "Berani menentang perbuatan keji kaumnya", en: "Brave to oppose the vile acts of his people" } },
+    { trait: { id: "Taat", en: "Obedient" }, desc: { id: "Segera meninggalkan kota saat diperintah Allah", en: "Immediately left the city when commanded by Allah" } }
   ],
   timeline: [
-    { yearOrAge: "Dakwah", title: { id: "Dakwah di Sodom", en: "Preaching in Sodom" }, desc: { id: "Mengajak warga berbuat baik", en: "Inviting citizens to do good" } },
-    { yearOrAge: "Tamu", title: { id: "Kedatangan Malaikat", en: "Arrival of Angels" }, desc: { id: "Malaikat menyamar jadi tamu", en: "Angels disguised as guests" } },
-    { yearOrAge: "Azab", title: { id: "Kota Dibalikkan", en: "City Overturned" }, desc: { id: "Kota Sodom dihancurkan", en: "The city of Sodom was destroyed" } }
+    { yearOrAge: "Masa Dakwah", title: { id: "Dakwah di Sodom", en: "Preaching in Sodom" }, desc: { id: "Melarang perbuatan keji", en: "Forbidding vile acts" } },
+    { yearOrAge: "Kedatangan Malaikat", title: { id: "Tamu Misterius", en: "Mysterious Guests" }, desc: { id: "Malaikat memberi peringatan azab", en: "Angels gave warning of punishment" } },
+    { yearOrAge: "Azab", title: { id: "Hujan Batu Belarang", en: "Brimstone Rain" }, desc: { id: "Kota Sodom dihancurkan", en: "The city of Sodom was destroyed" } }
   ],
-  dailyLifeConnection: { id: "Berbuat baik itu keren! Jangan pernah ikut-ikutan teman yang melakukan perbuatan jelek.", en: "Doing good is cool! Never follow friends who do bad things." }
+  dailyLifeConnection: {
+    id: "Kita harus selalu menjaga diri dari perbuatan buruk, meskipun banyak orang di sekitar kita melakukannya.",
+    en: "We must always guard ourselves from bad deeds, even if many people around us do them."
+  }
 };
+

@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const kudaPacuData: ObjectData = {
-  slug: "kuda-pacu",
-  name: {
-    id: "Kuda Pacu",
-    en: "Kuda Pacu",
-  },
-  scientificName: "Equus caballus",
-  surahName: "Al-Adiyat",
-  surahReference: "100:1",
+export const kudaData: ObjectData = {
+  slug: "kuda",
+  name: { id: "Kuda", en: "Horse" },
   icon: "🐎",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Equus caballus",
+  surahName: "Al-'Adiyat",
+  surahReference: "100:1-2",
+  unlockedAtPoints: 20,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Adiyat 100:1" }
+    { arab: "حِصَانٌ", latin: "hisaanun", arti: "Kuda", artiEn: "Horse", contohAyat: "وَالْعَادِيَاتِ ضَبْحًا (Demi kuda perang yang berlari kencang terengah-engah)" }
   ],
   balita: {
-    text: {
-      id: "Ini Kuda Pacu! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Kuda Pacu! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Kuda Pacu. Allah menciptakan Kuda Pacu dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Kuda Pacu. Allah created Kuda Pacu beautifully so we all become grateful.",
-    },
+    text: { id: "Tuk tik tak tik tuk! 🐎 Kuda berlari sangat cepat. Rambut di lehernya panjang dan indah!", en: "Clip clop clip clop! 🐎 Horses run very fast. The hair on their neck is long and beautiful!" },
+    audioTranscript: { id: "Hai! Aku kuda. Kakiku ada empat dan sangat kuat untuk berlari kencang. Ayo balapan denganku!", en: "Hi! I am a horse. I have four legs and they are very strong for running fast. Let's race with me!" },
     quiz: {
-      question: {
-        id: "Mana gambar Kuda Pacu?",
-        en: "Which one is the picture of Kuda Pacu?",
-      },
+      question: { id: "Apa kehebatan utama yang dimiliki oleh kuda?", en: "What is the main strength of a horse?" },
       options: [
-        { text: { id: "🐎 Kuda Pacu", en: "🐎 Kuda Pacu" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Berenang di laut", en: "Swimming in the sea" } },
+        { text: { id: "Berlari sangat cepat", en: "Running very fast" } },
+        { text: { id: "Memanjat pohon", en: "Climbing trees" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Kuda Pacu: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Kuda Pacu: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Kuda bisa tidur sambil berdiri lho! Mereka punya sistem pengunci khusus di kakinya agar tidak jatuh. Wah, hebat ya ciptaan Allah!", en: "Horses can sleep while standing! They have a special locking system in their legs so they don't fall. Wow, Allah's creation is amazing!" },
     facts: [
-      { id: "Kuda Pacu memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Kuda Pacu memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Kuda Pacu bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Kuda Pacu bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Kuda Pacu dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Kuda Pacu dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Kuda bisa melihat hampir 360 derajat karena matanya berada di samping kepala! 👁️", en: "Horses can see almost 360 degrees because their eyes are on the sides of their head! 👁️" },
+      { id: "Jantung kuda beratnya bisa mencapai 4 sampai 5 kilogram! ❤️", en: "A horse's heart can weigh up to 4 to 5 kilograms! ❤️" },
+      { id: "Nabi Muhammad SAW sangat menyukai olahraga berkuda! 🏇", en: "Prophet Muhammad SAW really loved the sport of horseback riding! 🏇" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Kuda Pacu dengan sempurna?",
-        en: "Who created Kuda Pacu perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Kuda Pacu mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Kuda Pacu reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Kuda Pacu: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kuda Pacu dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Kuda Pacu: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kuda Pacu dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Kuda adalah simbol kekuatan, keberanian, dan kesetiaan. Dalam Surah Al-'Adiyat, Allah bahkan bersumpah demi kuda-kuda perang yang berlari kencang hingga memercikkan api dari pijakan kakinya! Ini menunjukkan betapa istimewanya kuda dalam membantu perjuangan umat manusia sepanjang sejarah.", en: "Horses are a symbol of strength, bravery, and loyalty. In Surah Al-'Adiyat, Allah even swears by the war horses running so fast that they strike sparks of fire from their hooves! This shows how special horses are in assisting human struggles throughout history." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَالْعَادِيَاتِ ضَبْحًا ۝ فَالْمُورِيَاتِ قَدْحًا",
+      transliteration: "Wal 'aadiyaati dabhaa ۝ Fal muuriyaati qadhaa",
+      translation: { id: "Demi kuda perang yang berlari kencang terengah-engah, dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya).", en: "By the racing horses, panting, and the producers of sparks [when] striking." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Kuda Pacu?",
-          en: "What is the primary wisdom of scientific signs regarding Kuda Pacu?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const keledaiDomestikData: ObjectData = {
-  slug: "keledai-domestik",
-  name: {
-    id: "Keledai Domestik",
-    en: "Keledai Domestik",
-  },
-  scientificName: "Equus asinus",
-  surahName: "Al-Jumu'ah",
-  surahReference: "62:5",
-  icon: "𫒏",
+export const keledaiData: ObjectData = {
+  slug: "keledai",
+  name: { id: "Keledai", en: "Donkey" },
+  icon: "🫏",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Equus asinus",
+  surahName: "Luqman",
+  surahReference: "31:19",
+  unlockedAtPoints: 20,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Jumu'ah 62:5" }
+    { arab: "حِمَارٌ", latin: "himaar", arti: "Keledai", artiEn: "Donkey", contohAyat: "إِنَّ أَنكَرَ الْأَصْوَاتِ لَصَوْتُ الْحَمِيرِ (Sesungguhnya seburuk-buruk suara ialah suara keledai)" }
   ],
   balita: {
-    text: {
-      id: "Ini Keledai Domestik! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Keledai Domestik! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Keledai Domestik. Allah menciptakan Keledai Domestik dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Keledai Domestik. Allah created Keledai Domestik beautifully so we all become grateful.",
-    },
+    text: { id: "Hee-haw! 🫏 Keledai punya telinga yang sangaaat panjang dan suka membantu membawa barang-barang berat.", en: "Hee-haw! 🫏 Donkeys have verrrry long ears and like to help carry heavy things." },
+    audioTranscript: { id: "Halo teman! Aku keledai. Tubuhku kuat sekali untuk berjalan jauh, dan telingaku yang panjang ini membantuku mendengar dari kejauhan!", en: "Hello friend! I'm a donkey. My body is very strong for walking far, and my long ears help me hear from far away!" },
     quiz: {
-      question: {
-        id: "Mana gambar Keledai Domestik?",
-        en: "Which one is the picture of Keledai Domestik?",
-      },
+      question: { id: "Bagian tubuh keledai yang sangat khas adalah?", en: "What is a very distinctive body part of a donkey?" },
       options: [
-        { text: { id: "𫒏 Keledai Domestik", en: "𫒏 Keledai Domestik" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Hidung yang panjang", en: "Long nose" } },
+        { text: { id: "Telinga yang panjang", en: "Long ears" } },
+        { text: { id: "Leher yang panjang", en: "Long neck" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Keledai Domestik: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Keledai Domestik: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Hati-hati ya saat berbicara! Dalam Al-Qur'an, Luqman menasihati anaknya agar tidak berteriak-teriak. Orang yang suka berteriak disamakan dengan suara ringkikan keledai yang keras lho!", en: "Be careful when you speak! In the Qur'an, Luqman advised his son not to yell. People who like to yell are compared to the loud braying of a donkey!" },
     facts: [
-      { id: "Keledai Domestik memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Keledai Domestik memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Keledai Domestik bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Keledai Domestik bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Keledai Domestik dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Keledai Domestik dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Telinga panjang keledai berfungsi untuk mendinginkan tubuh di gurun pasir! 🏜️", en: "A donkey's long ears function to cool its body in the desert! 🏜️" },
+      { id: "Keledai sangat tangguh dan bisa membawa beban berat sejauh puluhan kilometer. 🏋️", en: "Donkeys are very tough and can carry heavy loads for tens of kilometers. 🏋️" },
+      { id: "Keledai punya ingatan super kuat, bisa mengingat tempat dan keledai lain selama 25 tahun! 🧠", en: "Donkeys have super strong memories, they can remember places and other donkeys for 25 years! 🧠" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Keledai Domestik dengan sempurna?",
-        en: "Who created Keledai Domestik perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Keledai Domestik mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Keledai Domestik reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Keledai Domestik: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Keledai Domestik dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Keledai Domestik: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Keledai Domestik dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Keledai diciptakan Allah dengan kekuatan luar biasa untuk menjadi kendaraan dan alat angkut bagi manusia di medan yang sulit. Namun, Al-Qur'an menjadikan suara keledai yang memekakkan telinga sebagai perumpamaan buruk bagi orang yang berbicara kasar atau berteriak sombong. Ini mengajarkan kita pentingnya kelembutan dalam berbicara.", en: "Allah created the donkey with extraordinary strength to be a mount and transport for humans in difficult terrains. However, the Qur'an uses the donkey's deafening voice as a bad parable for people who speak harshly or yell arrogantly. This teaches us the importance of gentleness in speech." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَاقْصِدْ فِي مَشْيِكَ وَاغْضُضْ مِنْ صَوْتِكَ ۚ إِنَّ أَنْكَرَ الْأَصْوَاتِ لَصَوْتُ الْحَمِيرِ",
+      transliteration: "Waqsid fii mashyika waghdud min sawtik, inna ankaral aswaati lasawtul hamiir",
+      translation: { id: "Dan sederhanakanlah kamu dalam berjalan dan lunakkanlah suaramu. Sesungguhnya seburuk-buruk suara ialah suara keledai.", en: "And be moderate in your pace and lower your voice; indeed, the most disagreeable of sounds is the voice of donkeys." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Keledai Domestik?",
-          en: "What is the primary wisdom of scientific signs regarding Keledai Domestik?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

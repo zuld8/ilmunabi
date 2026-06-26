@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const ularCobraData: ObjectData = {
-  slug: "ular-cobra",
-  name: {
-    id: "Ular Cobra",
-    en: "Ular Cobra",
-  },
-  scientificName: "Naja naja",
-  surahName: "Ta-Ha",
-  surahReference: "20:20",
+export const ularData: ObjectData = {
+  slug: "ular",
+  name: { id: "Ular", en: "Snake" },
   icon: "🐍",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Serpentes",
+  surahName: "Taha",
+  surahReference: "20:20",
+  unlockedAtPoints: 30,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Ta-Ha 20:20" }
+    { arab: "حَيَّةٌ / ثُعْبَانٌ", latin: "hayyatun / thu'baanun", arti: "Ular", artiEn: "Snake", contohAyat: "فَإِذَا هِيَ حَيَّةٌ تَسْعَىٰ (Maka tiba-tiba tongkat itu menjadi ular yang merayap dengan cepat)" }
   ],
   balita: {
-    text: {
-      id: "Ini Ular Cobra! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Ular Cobra! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Ular Cobra. Allah menciptakan Ular Cobra dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Ular Cobra. Allah created Ular Cobra beautifully so we all become grateful.",
-    },
+    text: { id: "Ssshhh... 🐍 Ular berjalan dengan perutnya karena tidak punya kaki! Kalau ketemu ular di hutan, jangan didekati ya!", en: "Ssshhh... 🐍 Snakes walk on their bellies because they have no legs! If you see a snake in the forest, don't get close!" },
+    audioTranscript: { id: "Ssshh... Aku adalah ular. Aku bergerak merayap di tanah dan pohon. Aku menggunakan lidahku untuk mencium bau di sekitarku!", en: "Ssshhh... I am a snake. I move by slithering on the ground and trees. I use my tongue to smell my surroundings!" },
     quiz: {
-      question: {
-        id: "Mana gambar Ular Cobra?",
-        en: "Which one is the picture of Ular Cobra?",
-      },
+      question: { id: "Bagian tubuh mana yang ular gunakan untuk mencium bau?", en: "Which body part does a snake use to smell?" },
       options: [
-        { text: { id: "🐍 Ular Cobra", en: "🐍 Ular Cobra" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Hidung", en: "Nose" } },
+        { text: { id: "Lidah yang menjulur", en: "Flicking tongue" } },
+        { text: { id: "Ekor", en: "Tail" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Ular Cobra: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Ular Cobra: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Ular tidak punya kelopak mata lho, makanya mereka tidak pernah berkedip! Ular juga bisa menelan makanan yang lebih besar dari kepalanya sendiri karena rahangnya sangat elastis. Ajaib kan!", en: "Snakes don't have eyelids, which is why they never blink! Snakes can also swallow food bigger than their own head because their jaws are very elastic. Magical, isn't it!" },
     facts: [
-      { id: "Ular Cobra memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Ular Cobra memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Ular Cobra bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Ular Cobra bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Ular Cobra dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Ular Cobra dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Ular selalu menjulurkan lidahnya untuk 'mencicipi' udara dan mendeteksi mangsa! 👅", en: "Snakes constantly flick their tongues to 'taste' the air and detect prey! 👅" },
+      { id: "Ular akan mengganti kulit lamanya dengan kulit baru (moulting) agar bisa bertambah besar! 🐍", en: "Snakes shed their old skin for a new one (moulting) so they can grow bigger! 🐍" },
+      { id: "Beberapa ular bisa mendeteksi panas tubuh hewan lain dalam kegelapan (Inframerah)! 🔥", en: "Some snakes can detect the body heat of other animals in the dark (Infrared)! 🔥" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Ular Cobra dengan sempurna?",
-        en: "Who created Ular Cobra perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Ular Cobra mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Ular Cobra reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Ular Cobra: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Ular Cobra dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Ular Cobra: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Ular Cobra dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Allah memberikan mukjizat besar kepada Nabi Musa AS menggunakan tongkatnya. Saat berhadapan dengan Firaun dan tukang sihirnya, Nabi Musa melempar tongkatnya, dan atas izin Allah, tongkat itu berubah menjadi ular naga yang nyata (Thu'ban) dan menelan semua sihir ular palsu buatan mereka! Kebenaran dari Allah selalu menang mengalahkan kebohongan.", en: "Allah gave Prophet Musa (Moses) AS a great miracle using his staff. When facing Pharaoh and his magicians, Prophet Musa threw his staff, and by Allah's permission, it turned into a real huge snake (Thu'ban) and swallowed all their fake magic snakes! The truth from Allah always prevails over falsehood." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "فَأَلْقَاهَا فَإِذَا هِيَ حَيَّةٌ تَسْعَىٰ",
+      transliteration: "Fa alqaahaa fa idhaa hiya hayyatun tas'aa",
+      translation: { id: "Lalu dilemparkannyalah tongkat itu, maka tiba-tiba ia menjadi seekor ular yang merayap dengan cepat.", en: "So he threw it down, and thereupon it was a snake, moving swiftly." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Ular Cobra?",
-          en: "What is the primary wisdom of scientific signs regarding Ular Cobra?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -2,107 +2,49 @@ import { ObjectData } from "../objects";
 
 export const bawangMerahData: ObjectData = {
   slug: "bawang-merah",
-  name: {
-    id: "Bawang Merah",
-    en: "Bawang Merah",
-  },
-  scientificName: "Allium cepa",
-  surahName: "Al-Baqarah",
-  surahReference: "2:61",
+  name: { id: "Bawang Merah", en: "Red Onion" },
   icon: "🧅",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Allium cepa",
+  surahName: "Al-Baqarah",
+  surahReference: "2:61",
+  unlockedAtPoints: 40,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:61" }
+    { arab: "بَصَلٌ", latin: "baṣalun", arti: "Bawang", artiEn: "Onion", contohAyat: "Bawang di dapur." }
   ],
   balita: {
-    text: {
-      id: "Ini Bawang Merah! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Bawang Merah! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Bawang Merah. Allah menciptakan Bawang Merah dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Bawang Merah. Allah created Bawang Merah beautifully so we all become grateful.",
-    },
+    text: { id: "Bentuknya bulat berlapis-lapis dan warnanya ungu kemerahan! 🧅", en: "It is round, has many layers, and is reddish-purple! 🧅" },
+    audioTranscript: { id: "Hatchim! Kalau Bunda sedang mengiris bawang merah, kadang mata kita bisa keluar air mata. Bawang bikin masakan jadi sedaaap!", en: "Achoo! When Mom is slicing red onions, sometimes our eyes can tear up. Onions make cooking super delicious!" },
     quiz: {
-      question: {
-        id: "Mana gambar Bawang Merah?",
-        en: "Which one is the picture of Bawang Merah?",
-      },
+      question: { id: "Bawang merah sering dipakai untuk apa di dapur?", en: "What are red onions often used for in the kitchen?" },
       options: [
-        { text: { id: "🧅 Bawang Merah", en: "🧅 Bawang Merah" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Untuk diminum", en: "For drinking" } },
+        { text: { id: "Bumbu memasak", en: "Cooking spice" } },
+        { text: { id: "Pewarna rambut", en: "Hair dye" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Bawang Merah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Bawang Merah: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu kenapa bawang bikin kita menangis? Saat dipotong, bawang merah melepaskan gas khusus yang membuat mata kita sedikit perih. Itu senjata rahasia bawang agar tidak dimakan serangga!", en: "Do you know why onions make us cry? When cut, red onions release a special gas that makes our eyes sting a bit. That's the onion's secret weapon so insects don't eat it!" },
     facts: [
-      { id: "Tumbuhan Bawang Merah melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Bawang Merah melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Bawang Merah bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Bawang Merah bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Bawang Merah adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Bawang Merah adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Bawang merah sudah ditanam manusia sejak lebih dari 5.000 tahun yang lalu.", en: "Red onions have been cultivated by humans for over 5,000 years." },
+      { id: "Bawang tidak punya biji di dalam umbinya, bawang berkembang biak membelah diri.", en: "Onions don't have seeds inside their bulbs, they multiply by dividing." },
+      { id: "Mengunyah permen karet bisa mencegah mata pedih saat memotong bawang!", en: "Chewing gum can prevent stinging eyes when cutting onions!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Bawang Merah dengan sempurna?",
-        en: "Who created Bawang Merah perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Bawang Merah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Bawang Merah reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Bawang Merah: Struktur pembuluh kayu dan tapis pada Bawang Merah mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Bawang Merah: Struktur pembuluh kayu dan tapis pada Bawang Merah mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Dalam sejarah, Bani Israil pernah meminta Nabi Musa agar berdoa kepada Allah untuk menumbuhkan bawang karena mereka bosan dengan makanan dari surga (Manna dan Salwa). Allah mengingatkan bahwa makanan karunia-Nya jauh lebih baik. Ini pelajaran agar kita selalu bersyukur atas rezeki Allah sekecil apa pun!", en: "In history, the Children of Israel once asked Prophet Musa to pray to Allah to grow onions because they were bored with food from heaven (Manna and Salwa). Allah reminded them that His given food was far better. This is a lesson for us to always be grateful for Allah's provision, no matter how small!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "فَادْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُنْبِتُ الْأَرْضُ مِنْ بَقْلِهَا وَقِثَّائِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا",
+      transliteration: "Fad'u lanā rabbaka yukhrij lanā mimmā tunbitul-arḍu min baqlihā wa qiththā'ihā wa fūmihā wa 'adasihā wa baṣalihā",
+      translation: { id: "Maka mohonkanlah untuk kami kepada Tuhanmu, agar Dia mengeluarkan bagi kami dari apa yang ditumbuhkan bumi, yaitu sayur-mayurnya, ketimunnya, bawang putihnya, kacang adasnya, dan bawang merahnya.", en: "So call upon your Lord to bring forth for us from the earth its green herbs and its cucumbers and its garlic and its lentils and its onions." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Bawang Merah?",
-          en: "What is the primary wisdom of scientific signs regarding Bawang Merah?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

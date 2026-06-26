@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const terataiPutihData: ObjectData = {
-  slug: "teratai-putih",
-  name: {
-    id: "Teratai Putih",
-    en: "Teratai Putih",
-  },
-  scientificName: "Nymphaea alba",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const terataiData: ObjectData = {
+  slug: "teratai",
+  name: { id: "Teratai", en: "Lotus" },
   icon: "🪷",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Nelumbo nucifera",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 170,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "لُوتَس", latin: "luutas", arti: "Teratai", artiEn: "Lotus", contohAyat: "Teratai di atas air." }
   ],
   balita: {
-    text: {
-      id: "Ini Teratai Putih! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Teratai Putih! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Teratai Putih. Allah menciptakan Teratai Putih dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Teratai Putih. Allah created Teratai Putih beautifully so we all become grateful.",
-    },
+    text: { id: "Wah, bunganya mengapung di atas air! Daunnya lebar seperti piring! 🪷", en: "Wow, the flower floats on water! Its leaves are wide like a plate! 🪷" },
+    audioTranscript: { id: "Katak suka melompat hop! hop! ke atas daun teratai. Bunga teratai mekar dengan sangat cantik dan wangi walau hidupnya di air yang berlumpur kotor.", en: "Frogs love to jump hop! hop! onto lotus leaves. Lotus flowers bloom very beautifully and fragrantly even though they live in dirty muddy water." },
     quiz: {
-      question: {
-        id: "Mana gambar Teratai Putih?",
-        en: "Which one is the picture of Teratai Putih?",
-      },
+      question: { id: "Di manakah bunga teratai hidup?", en: "Where do lotus flowers live?" },
       options: [
-        { text: { id: "🪷 Teratai Putih", en: "🪷 Teratai Putih" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Di gurun pasir", en: "In the desert" } },
+        { text: { id: "Mengapung di atas air/kolam", en: "Floating on water/ponds" } },
+        { text: { id: "Tumbuh menempel di dinding", en: "Growing attached to walls" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Teratai Putih: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Teratai Putih: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Kok daun teratai tidak pernah basah kuyup meski terus-terusan di atas air? Itu karena daun teratai punya lapisan lilin super ajaib bernama 'Efek Lotus' yang membuat debu dan air langsung meluncur jatuh!", en: "How come lotus leaves never get soaking wet even though they're constantly on water? That's because lotus leaves have a super magical wax layer called the 'Lotus Effect' which makes dust and water instantly slide off!" },
     facts: [
-      { id: "Tumbuhan Teratai Putih melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Teratai Putih melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Teratai Putih bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Teratai Putih bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Teratai Putih adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Teratai Putih adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Akar teratai tertanam kuat di dasar lumpur, batangnya memanjang naik ke permukaan air.", en: "Lotus roots are firmly planted in the mud at the bottom, their stems stretch up to the water surface." },
+      { id: "Biji teratai bisa bertahan hidup selama lebih dari ribuan tahun sebelum ditanam.", en: "Lotus seeds can survive for over thousands of years before being planted." },
+      { id: "Akar teratai berongga dan bisa dimasak jadi sayur, rasanya renyah kress-kress!", en: "Lotus roots are hollow and can be cooked as vegetables, they taste crunchy crisp!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Teratai Putih dengan sempurna?",
-        en: "Who created Teratai Putih perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Teratai Putih mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Teratai Putih reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Teratai Putih: Struktur pembuluh kayu dan tapis pada Teratai Putih mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Teratai Putih: Struktur pembuluh kayu dan tapis pada Teratai Putih mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Para ilmuwan mencoba meniru 'Efek Lotus' pada daun teratai untuk membuat pakaian anti air dan cat anti kotor, ini namanya Biomimikri. Allah Yang Maha Mengetahui telah mendesain nanoteknologi canggih pada daun teratai sejak awal mula penciptaan. Masya Allah!", en: "Scientists try to imitate the 'Lotus Effect' on lotus leaves to make waterproof clothes and dirt-repellent paint, this is called Biomimicry. Allah the All-Knowing has designed advanced nanotechnology on lotus leaves since the beginning of creation. Masya Allah!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "هَذَا خَلْقُ اللَّهِ فَأَرُونِي مَاذَا خَلَقَ الَّذِينَ مِنْ دُونِهِ",
+      transliteration: "Hādhā khalqullāhi fa-arūnī mādhā khalaqal-ladhīna min dūnih",
+      translation: { id: "Inilah ciptaan Allah, maka perlihatkanlah olehmu kepadaku apa yang telah diciptakan oleh sembahan-sembahan(mu) selain Allah.", en: "This is the creation of Allah. So show Me what those other than Him have created." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Teratai Putih?",
-          en: "What is the primary wisdom of scientific signs regarding Teratai Putih?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

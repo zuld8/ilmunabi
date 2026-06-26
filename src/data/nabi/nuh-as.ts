@@ -9,20 +9,31 @@ export const nuhAsData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   surahReference: "Nuh:1",
-  storyShort: { id: "Nabi yang membangun bahtera raksasa untuk menyelamatkan makhluk hidup dari banjir besar.", en: "The prophet who built a giant ark to save living creatures from a great flood." },
-  storyFull: { id: "Nabi Nuh AS berdakwah selama 950 tahun, tapi sangat sedikit yang mau mendengarkan. Atas perintah Allah, beliau membuat kapal raksasa di atas bukit, yang diejek oleh orang-orang. Saat banjir besar yang dahsyat datang, hanya mereka yang beriman dan sepasang hewan dari setiap jenis yang selamat di dalam kapal. Ini mengajarkan pentingnya kesabaran luar biasa dan ketaatan kepada Allah.", en: "Prophet Nuh AS preached for 950 years, but very few listened. By Allah's command, he built a giant ship on a hill, which people mocked. When the devastating great flood came, only the believers and a pair of each kind of animal were saved in the ship. This teaches the importance of extraordinary patience and obedience to Allah." },
+  storyShort: {
+    id: "Nabi yang membangun kapal raksasa untuk selamat dari banjir besar.",
+    en: "The prophet who built a giant ship to survive a great flood."
+  },
+  storyFull: {
+    id: "Nabi Nuh AS berdakwah selama 950 tahun, tapi sangat sedikit yang mau beriman. Ketika kaumnya semakin durhaka, Allah memerintahkan Nabi Nuh membuat kapal besar di atas bukit. Saat banjir bandang yang sangat besar datang, hanya pengikut Nabi Nuh dan hewan-hewan yang naik kapal yang selamat.",
+    en: "Prophet Nuh AS preached for 950 years, but very few believed. When his people became more disobedient, Allah commanded Prophet Nuh to build a large ship on a hill. When the massive flash flood came, only the followers of Prophet Nuh and the animals that boarded the ship survived."
+  },
   miracles: [
-    { id: "Membangun kapal raksasa tanpa teknologi modern", en: "Building a giant ship without modern technology" },
-    { id: "Selamat dari banjir bandang seluruh bumi", en: "Surviving a global flash flood" }
+    { id: "Membangun kapal raksasa yang sangat kuat dengan panduan Allah.", en: "Building a very strong giant ship with Allah's guidance." },
+    { id: "Selamat dari banjir bandang terbesar yang menutupi bumi.", en: "Surviving the greatest flash flood that covered the earth." }
   ],
   characterTraits: [
-    { trait: { id: "Sabar", en: "Patient" }, desc: { id: "Terus berdakwah meski diejek", en: "Kept preaching despite being mocked" } },
-    { trait: { id: "Pekerja Keras", en: "Hard worker" }, desc: { id: "Membangun kapal besar tanpa lelah", en: "Built a large ship tirelessly" } }
+    { trait: { id: "Pekerja Keras", en: "Hardworking" }, desc: { id: "Membuat kapal raksasa tanpa kenal lelah", en: "Tirelessly built the giant ship" } },
+    { trait: { id: "Pantang Menyerah", en: "Never Gives Up" }, desc: { id: "Berdakwah selama 950 tahun", en: "Preached for 950 years" } },
+    { trait: { id: "Taat Perintah", en: "Obedient" }, desc: { id: "Melaksanakan perintah Allah meski diejek kaumnya", en: "Carried out Allah's command despite being mocked by his people" } }
   ],
   timeline: [
-    { yearOrAge: "Berdakwah", title: { id: "Berdakwah 950 Tahun", en: "Preaching for 950 Years" }, desc: { id: "Mengajak umatnya menyembah Allah", en: "Inviting his people to worship Allah" } },
-    { yearOrAge: "Membangun", title: { id: "Membuat Bahtera", en: "Building the Ark" }, desc: { id: "Membuat kapal sesuai petunjuk Allah", en: "Built a ship according to Allah's guidance" } },
-    { yearOrAge: "Banjir", title: { id: "Banjir Besar", en: "Great Flood" }, desc: { id: "Banjir menyapu bersih orang yang ingkar", en: "A flood wiped out the disbelievers" } }
+    { yearOrAge: "Awal Berdakwah", title: { id: "Dakwah Tanpa Henti", en: "Relentless Preaching" }, desc: { id: "Berdakwah siang malam", en: "Preached day and night" } },
+    { yearOrAge: "Masa Pembuatan Kapal", title: { id: "Membuat Bahtera", en: "Building the Ark" }, desc: { id: "Membuat kapal raksasa di atas bukit", en: "Built a giant ship on a hill" } },
+    { yearOrAge: "Banjir Besar", title: { id: "Banjir Bandang", en: "The Great Flood" }, desc: { id: "Bumi tenggelam oleh air", en: "The earth was drowned by water" } }
   ],
-  dailyLifeConnection: { id: "Kalau kita melakukan kebaikan tapi diejek teman, jangan menyerah! Tetaplah sabar seperti Nabi Nuh.", en: "If we do good but are mocked by friends, don't give up! Stay patient like Prophet Nuh." }
+  dailyLifeConnection: {
+    id: "Tetaplah berbuat baik dan taat kepada Allah, walaupun ada teman yang mengejek kita. Kesabaran Nabi Nuh luar biasa!",
+    en: "Keep doing good and obey Allah, even if friends mock us. Prophet Nuh's patience was extraordinary!"
+  }
 };
+

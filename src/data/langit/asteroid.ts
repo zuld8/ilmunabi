@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const asteroidCeresData: ObjectData = {
-  slug: "asteroid-ceres",
-  name: {
-    id: "Asteroid Ceres",
-    en: "Asteroid Ceres",
-  },
-  scientificName: "Asteroid",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const asteroidData: ObjectData = {
+  slug: "asteroid",
+  name: { id: "Asteroid", en: "Asteroid" },
   icon: "☄️",
   category: "langit",
   type: "langit",
+  scientificName: "Planetoid",
+  surahName: "Al-Mulk",
+  surahReference: "67:5",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "حِجَارَة", latin: "Hijarah", arti: "Batu", artiEn: "Stone", contohAyat: "Asteroid seperti batu raksasa" }
   ],
   balita: {
-    text: {
-      id: "Ini Asteroid Ceres! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Asteroid Ceres! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Asteroid Ceres. Allah menciptakan Asteroid Ceres dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Asteroid Ceres. Allah created Asteroid Ceres beautifully so we all become grateful.",
-    },
+    text: { id: "Wusss! Ini asteroid! Batu raksasa yang melayang-layang di luar angkasa! 🪨✨", en: "Whoosh! This is an asteroid! A giant rock floating in space! 🪨✨" },
+    audioTranscript: { id: "Wah, lihat! Ada batu terbang di luar angkasa. Namanya Asteroid! Mereka sisa-sisa pembuatan tata surya ciptaan Allah yang menari-nari mengelilingi matahari.", en: "Wow, look! There's a flying rock in space. It's called an Asteroid! They are leftovers from the creation of the solar system by Allah, dancing around the sun." },
     quiz: {
-      question: {
-        id: "Mana gambar Asteroid Ceres?",
-        en: "Which one is the picture of Asteroid Ceres?",
-      },
+      question: { id: "Asteroid itu terbuat dari apa ya?", en: "What are asteroids made of?" },
       options: [
-        { text: { id: "☄️ Asteroid Ceres", en: "☄️ Asteroid Ceres" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Es krim", en: "Ice cream" } },
+        { text: { id: "Batu dan logam", en: "Rock and metal" } },
+        { text: { id: "Kapas", en: "Cotton" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Asteroid Ceres: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Asteroid Ceres: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Asteroid adalah batu angkasa yang mengelilingi matahari. Sebagian besar dari mereka suka berkumpul di Sabuk Asteroid, sebuah jalan tol khusus batu di antara planet Mars dan Jupiter!", en: "Asteroids are space rocks orbiting the sun. Most of them love to hang out in the Asteroid Belt, a special rock highway between Mars and Jupiter!" },
     facts: [
-      { id: "Objek luar angkasa Asteroid Ceres bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Asteroid Ceres bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Asteroid Ceres melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Asteroid Ceres melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Asteroid Ceres membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Asteroid Ceres membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Ada jutaan asteroid, ukurannya dari sekecil mobil sampai sebesar negara!", en: "There are millions of asteroids, ranging from the size of a car to the size of a country!" },
+      { id: "Bentuk asteroid tidak bulat sempurna seperti planet, melainkan benjol-benjol seperti kentang raksasa! 🥔", en: "Asteroids are not perfectly round like planets, but rather lumpy like giant potatoes! 🥔" },
+      { id: "Asteroid Ceres adalah yang paling besar, sampai-sampai ia disebut planet kerdil!", en: "Asteroid Ceres is the biggest one, so big that it's called a dwarf planet!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Asteroid Ceres dengan sempurna?",
-        en: "Who created Asteroid Ceres perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Asteroid Ceres mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Asteroid Ceres reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Asteroid Ceres: Hukum gravitasi universal mengikat Asteroid Ceres agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Asteroid Ceres: Hukum gravitasi universal mengikat Asteroid Ceres agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Sabuk Asteroid membentang luas dengan jutaan batuan luar angkasa yang melesat dengan kecepatan tinggi. HAH?! Tapi uniknya, jarak antar asteroid itu sangat jauh (jutaan kilometer), jadi pesawat luar angkasa kita bisa lewat dengan aman tanpa tabrakan! Keseimbangan orbit kosmik ini sangat presisi. 1400 tahun lalu, Al-Qur'an telah mengisyaratkan bahwa Allah telah mengatur lintasan segala benda langit tanpa saling bertabrakan, sebagai pelindung hiasan langit.", en: "The Asteroid Belt stretches wide with millions of space rocks zooming at high speed. HAH?! But amazingly, the distance between them is huge (millions of kilometers), so our spaceships can fly safely without crashing! This cosmic orbital balance is extremely precise. 1400 years ago, the Quran hinted that Allah has arranged the orbits of all celestial bodies without colliding, as protectors and adornments of the sky." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِلشَّيَاطِينِ",
+      transliteration: "Wa laqad zayyannas-samā'ad-dunyā bimaṣābīḥa wa ja'alnāhā rujūmal-lish-shayāṭīn",
+      translation: { id: "Dan sesungguhnya Kami telah menghiasi langit yang dekat dengan bintang-bintang, dan Kami jadikan bintang-bintang itu alat-alat pelempar syaitan.", en: "And We have certainly beautified the nearest heaven with stars and have made [from] them what is thrown at the devils." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Asteroid Ceres?",
-          en: "What is the primary wisdom of scientific signs regarding Asteroid Ceres?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

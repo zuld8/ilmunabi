@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const semutHitamData: ObjectData = {
-  slug: "semut-hitam",
-  name: {
-    id: "Semut Hitam",
-    en: "Semut Hitam",
-  },
-  scientificName: "Lasius niger",
-  surahName: "An-Naml",
-  surahReference: "27:18",
+export const semutData: ObjectData = {
+  slug: "semut",
+  name: { id: "Semut", en: "Ant" },
   icon: "🐜",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Formicidae",
+  surahName: "An-Naml",
+  surahReference: "27:18",
+  unlockedAtPoints: 30,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "An-Naml 27:18" }
+    { arab: "نَمْلَةٌ", latin: "namlatun", arti: "Semut", artiEn: "Ant", contohAyat: "قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ (Seekor semut berkata: Hai semut-semut, masuklah ke dalam sarang-sarangmu)" }
   ],
   balita: {
-    text: {
-      id: "Ini Semut Hitam! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Semut Hitam! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Semut Hitam. Allah menciptakan Semut Hitam dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Semut Hitam. Allah created Semut Hitam beautifully so we all become grateful.",
-    },
+    text: { id: "Semut itu sangat kecil! 🐜 Mereka suka berjalan berbaris-baris. Kiri kanan kiri kanan!", en: "Ants are very small! 🐜 They like to walk in lines. Left right left right!" },
+    audioTranscript: { id: "Halo teman! Aku semut. Aku tinggal bersama ribuan keluargaku di dalam tanah. Kami sangat rajin bekerja!", en: "Hello friend! I am an ant. I live with thousands of my family members underground. We are very hard workers!" },
     quiz: {
-      question: {
-        id: "Mana gambar Semut Hitam?",
-        en: "Which one is the picture of Semut Hitam?",
-      },
+      question: { id: "Bagaimana cara semut berjalan bersama teman-temannya?", en: "How do ants walk with their friends?" },
       options: [
-        { text: { id: "🐜 Semut Hitam", en: "🐜 Semut Hitam" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Sambil melompat-lompat", en: "By jumping around" } },
+        { text: { id: "Berbaris rapi", en: "Lining up neatly" } },
+        { text: { id: "Terbang bebas", en: "Flying freely" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Semut Hitam: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Semut Hitam: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Semut adalah hewan terkuat lho! Mereka bisa mengangkat beban yang beratnya 50 kali lipat dari tubuhnya. Bayangkan kalau kamu bisa mengangkat mobil! Wow!", en: "Ants are the strongest animals! They can lift objects that are 50 times heavier than their bodies. Imagine if you could lift a car! Wow!" },
     facts: [
-      { id: "Semut Hitam memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Semut Hitam memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Semut Hitam bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Semut Hitam bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Semut Hitam dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Semut Hitam dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Semut tidak punya telinga, mereka 'mendengar' dari getaran tanah! 📳", en: "Ants don't have ears, they 'hear' by feeling vibrations in the ground! 📳" },
+      { id: "Saat semut bertemu temannya, mereka akan saling menyentuh antena untuk mengobrol! 📡", en: "When ants meet a friend, they touch antennas to chat! 📡" },
+      { id: "Semut punya dua perut: satu untuk dirinya, satu lagi untuk berbagi makanan dengan teman! 🍽️", en: "Ants have two stomachs: one for themselves, and one to share food with friends! 🍽️" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Semut Hitam dengan sempurna?",
-        en: "Who created Semut Hitam perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Semut Hitam mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Semut Hitam reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Semut Hitam: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Semut Hitam dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Semut Hitam: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Semut Hitam dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Kecerdasan semut sangat luar biasa! Mereka adalah hewan yang pandai berkomunikasi. Dalam Surah An-Naml (Semut), dikisahkan ketika pasukan Nabi Sulaiman AS akan lewat, seekor ratu semut memerintahkan rakyatnya untuk masuk sarang agar tidak terinjak. Nabi Sulaiman tersenyum mendengar ucapan semut itu berkat mukjizat dari Allah!", en: "The intelligence of ants is extraordinary! They are animals that are great at communicating. In Surah An-Naml (The Ant), it is told that when Prophet Sulaiman's (Solomon) army was passing by, an ant queen ordered her people to enter their homes so they wouldn't be crushed. Prophet Sulaiman smiled hearing the ant's words thanks to a miracle from Allah!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "حَتَّىٰ إِذَا أَتَوْا عَلَىٰ وَادِ النَّمْلِ قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا يَشْعُرُونَ",
+      transliteration: "Hattaa idhaa ataw 'alaa waadin-namli qaalat namlatun yaa ayyuhan-namludkhuluu masaakinakum laa yahtimannakum sulaimaanu wajunuuduhu wahum laa yash'uruun",
+      translation: { id: "Hingga apabila mereka sampai di lembah semut berkatalah seekor semut: Hai semut-semut, masuklah ke dalam sarang-sarangmu, agar kamu tidak diinjak oleh Sulaiman dan tentaranya, sedangkan mereka tidak menyadari.", en: "Until, when they came upon the valley of the ants, an ant said, 'O ants, enter your dwellings that you not be crushed by Solomon and his soldiers while they perceive not.'" }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Semut Hitam?",
-          en: "What is the primary wisdom of scientific signs regarding Semut Hitam?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

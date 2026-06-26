@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const sakuraPinkData: ObjectData = {
-  slug: "sakura-pink",
-  name: {
-    id: "Sakura Pink",
-    en: "Sakura Pink",
-  },
-  scientificName: "Prunus serrulata",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const sakuraData: ObjectData = {
+  slug: "sakura",
+  name: { id: "Sakura", en: "Cherry Blossom" },
   icon: "🌸",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Prunus serrulata",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 160,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "زَهْرَةُ الكَرَز", latin: "zahratul karaz", arti: "Sakura/Bunga Ceri", artiEn: "Cherry blossom", contohAyat: "Bunga sakura berguguran." }
   ],
   balita: {
-    text: {
-      id: "Ini Sakura Pink! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Sakura Pink! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Sakura Pink. Allah menciptakan Sakura Pink dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Sakura Pink. Allah created Sakura Pink beautifully so we all become grateful.",
-    },
+    text: { id: "Warnanya merah muda dan kelopaknya beterbangan seperti salju! 🌸", en: "Its color is pink and its petals fly around like snow! 🌸" },
+    audioTranscript: { id: "Bunga sakura tumbuhnya banyak sekaaaliii di satu pohon. Kalau tertiup angin, kelopaknya akan jatuh menari-nari di udara. Cantik banget!", en: "Cherry blossoms grow in huuuge numbers on one tree. When blown by the wind, the petals will fall dancing in the air. So pretty!" },
     quiz: {
-      question: {
-        id: "Mana gambar Sakura Pink?",
-        en: "Which one is the picture of Sakura Pink?",
-      },
+      question: { id: "Apa yang terjadi pada bunga sakura jika tertiup angin kencang?", en: "What happens to cherry blossoms if blown by strong winds?" },
       options: [
-        { text: { id: "🌸 Sakura Pink", en: "🌸 Sakura Pink" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Pohonnya akan terbang ke awan", en: "The tree will fly to the clouds" } },
+        { text: { id: "Kelopaknya rontok dan beterbangan", en: "Its petals fall and fly around" } },
+        { text: { id: "Bunganya berubah jadi batu", en: "The flower turns into stone" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Sakura Pink: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Sakura Pink: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Bunga Sakura ini asalnya dari negara Jepang! Bunga ini sangat spesial karena ia hanya mekar penuh selama satu atau dua minggu setiap awal musim semi. Makanya kalau lagi mekar, orang-orang sangat senang melihatnya.", en: "Cherry blossoms come from Japan! This flower is very special because it only fully blooms for one or two weeks at the beginning of spring. That's why when they bloom, people are very happy to see them." },
     facts: [
-      { id: "Tumbuhan Sakura Pink melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Sakura Pink melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Sakura Pink bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Sakura Pink bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Sakura Pink adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Sakura Pink adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Di Jepang, tradisi melihat bunga sakura disebut 'Hanami'.", en: "In Japan, the tradition of viewing cherry blossoms is called 'Hanami'." },
+      { id: "Ada lebih dari 200 varietas bunga sakura.", en: "There are more than 200 varieties of cherry blossoms." },
+      { id: "Meskipun disebut pohon ceri, pohon sakura kebanyakan tidak menghasilkan buah ceri yang bisa dimakan.", en: "Although called cherry trees, most sakura trees do not produce edible cherries." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Sakura Pink dengan sempurna?",
-        en: "Who created Sakura Pink perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Sakura Pink mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Sakura Pink reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Sakura Pink: Struktur pembuluh kayu dan tapis pada Sakura Pink mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Sakura Pink: Struktur pembuluh kayu dan tapis pada Sakura Pink mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Sakura mengajarkan kita bahwa keindahan di dunia ini tidak ada yang abadi, bunga yang mekar luar biasa cantik pun akan gugur dalam hitungan hari. Ini mengingatkan kita bahwa dunia hanyalah sementara, dan kampung abadi kita kelak adalah Surga yang diciptakan Allah (Al-Baqi', Yang Maha Kekal).", en: "Sakura teaches us that beauty in this world is not eternal, even incredibly beautiful blooming flowers will fall in a matter of days. This reminds us that the world is only temporary, and our eternal home later is Paradise created by Allah (Al-Baqi', The Eternal)." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "كُلُّ مَنْ عَلَيْهَا فَانٍ ۝ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      transliteration: "Kullu man 'alayhā fān. Wa yabqā wajhu rabbika dhul-jalāli wal-ikrām",
+      translation: { id: "Semua yang ada di bumi itu akan binasa. Dan tetap kekal Zat Tuhanmu yang mempunyai kebesaran dan kemuliaan.", en: "Everyone upon the earth will perish, And there will remain the Face of your Lord, Owner of Majesty and Honor." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Sakura Pink?",
-          en: "What is the primary wisdom of scientific signs regarding Sakura Pink?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

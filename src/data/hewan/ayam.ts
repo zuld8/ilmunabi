@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const ayamKateData: ObjectData = {
-  slug: "ayam-kate",
-  name: {
-    id: "Ayam Kate",
-    en: "Ayam Kate",
-  },
-  scientificName: "Gallus gallus",
-  surahName: "Hadist",
-  surahReference: "HR Bukhari",
-  icon: "🐓",
+export const ayamData: ObjectData = {
+  slug: "ayam",
+  name: { id: "Ayam", en: "Chicken" },
+  icon: "🐔",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Gallus gallus domesticus",
+  surahName: "Al-Waqi'ah",
+  surahReference: "56:21",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Hadist HR Bukhari" }
+    { arab: "دَجَاجَةٌ", latin: "dajaajah", arti: "Ayam", artiEn: "Chicken", contohAyat: "وَلَحْمِ طَيْرٍ مِمَّا يَشْتَهُونَ (dan daging burung dari apa yang mereka inginkan)" }
   ],
   balita: {
-    text: {
-      id: "Ini Ayam Kate! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Ayam Kate! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Ayam Kate. Allah menciptakan Ayam Kate dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Ayam Kate. Allah created Ayam Kate beautifully so we all become grateful.",
-    },
+    text: { id: "Petok petok! 🐔 Ayam suka berkokok di pagi hari. Telurnya enak lho!", en: "Cluck cluck! 🐔 Chickens crow in the morning. Their eggs are yummy!" },
+    audioTranscript: { id: "Halo teman! Aku ayam. Aku suka makan biji-bijian dan bertelur. Kamu suka makan telur ayam tidak?", en: "Hello friends! I am a chicken. I like eating seeds and laying eggs. Do you like eating chicken eggs?" },
     quiz: {
-      question: {
-        id: "Mana gambar Ayam Kate?",
-        en: "Which one is the picture of Ayam Kate?",
-      },
+      question: { id: "Suara apa yang dikeluarkan ayam di pagi hari?", en: "What sound does a chicken make in the morning?" },
       options: [
-        { text: { id: "🐓 Ayam Kate", en: "🐓 Ayam Kate" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Moo moo", en: "Moo moo" } },
+        { text: { id: "Kukuruyuk", en: "Cock-a-doodle-doo" } },
+        { text: { id: "Meong", en: "Meow" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Ayam Kate: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Ayam Kate: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Ayam itu keturunan burung T-Rex purba lho! Mereka juga punya pendengaran yang super tajam meskipun telinganya tertutup bulu. Masya Allah!", en: "Did you know? Chickens are descendants of the ancient T-Rex! They also have super sharp hearing even though their ears are covered in feathers. Mashallah!" },
     facts: [
-      { id: "Ayam Kate memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Ayam Kate memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Ayam Kate bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Ayam Kate bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Ayam Kate dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Ayam Kate dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Ayam bisa mengingat lebih dari 100 wajah teman-temannya! 🧠", en: "Chickens can remember more than 100 faces of their friends! 🧠" },
+      { id: "Mata ayam bisa melihat warna jauh lebih baik dari manusia! 🌈", en: "A chicken's eyes can see colors much better than humans! 🌈" },
+      { id: "Induk ayam selalu berbicara kepada anak-anaknya saat mereka masih di dalam telur! 🐣", en: "Mother chickens talk to their chicks while they are still in the egg! 🐣" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Ayam Kate dengan sempurna?",
-        en: "Who created Ayam Kate perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Ayam Kate mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Ayam Kate reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Ayam Kate: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Ayam Kate dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Ayam Kate: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Ayam Kate dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Sains menemukan bahwa ayam sangat pintar dan punya alat komunikasi yang kompleks. Allah menciptakan berbagai jenis unggas dan burung sebagai rezeki bagi manusia, termasuk telur dan dagingnya yang kaya protein. Di surga pun, Allah menjanjikan daging burung (termasuk ayam-ayaman) untuk orang yang beriman!", en: "Science discovered that chickens are very smart and have complex communication. Allah created various types of fowls and birds as sustenance for humans, including their protein-rich eggs and meat. In paradise, Allah promises the meat of fowls for the believers!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَلَحْمِ طَيْرٍ مِمَّا يَشْتَهُونَ",
+      transliteration: "Wa lahmi tairin mimmaa yashtahuun",
+      translation: { id: "Dan daging burung dari apa yang mereka inginkan.", en: "And the meat of fowls, from whatever they desire." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Ayam Kate?",
-          en: "What is the primary wisdom of scientific signs regarding Ayam Kate?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

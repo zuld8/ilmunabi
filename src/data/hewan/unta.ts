@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const untaSatuPunukData: ObjectData = {
-  slug: "unta-satu-punuk",
-  name: {
-    id: "Unta Satu Punuk",
-    en: "Unta Satu Punuk",
-  },
+export const untaData: ObjectData = {
+  slug: "unta",
+  name: { id: "Unta", en: "Camel" },
+  icon: "🐪",
+  category: "hewan",
+  type: "hewan",
   scientificName: "Camelus dromedarius",
   surahName: "Al-Ghashiyah",
   surahReference: "88:17",
-  icon: "🐫",
-  category: "hewan",
-  type: "hewan",
-  unlockedAtPoints: 50,
+  unlockedAtPoints: 40,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Ghashiyah 88:17" }
+    { arab: "جَمَلٌ / إِبِلٌ", latin: "jamalun / ibilun", arti: "Unta", artiEn: "Camel", contohAyat: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ (Maka tidakkah mereka memperhatikan unta?)" }
   ],
   balita: {
-    text: {
-      id: "Ini Unta Satu Punuk! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Unta Satu Punuk! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Unta Satu Punuk. Allah menciptakan Unta Satu Punuk dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Unta Satu Punuk. Allah created Unta Satu Punuk beautifully so we all become grateful.",
-    },
+    text: { id: "Uhuuk... 🐪 Unta punya punuk di punggungnya seperti gunung kecil. Dia suka berjalan di gurun pasir!", en: "Grunt... 🐪 Camels have a hump on their back like a small mountain. They love walking in the desert!" },
+    audioTranscript: { id: "Halo teman! Aku Unta. Aku bisa berjalan di pasir yang sangat panas berhari-hari tanpa minum air lho!", en: "Hello friend! I am a Camel. I can walk on very hot sand for days without drinking water!" },
     quiz: {
-      question: {
-        id: "Mana gambar Unta Satu Punuk?",
-        en: "Which one is the picture of Unta Satu Punuk?",
-      },
+      question: { id: "Di mana letak punuk (gunungan) pada tubuh unta?", en: "Where is the hump located on a camel's body?" },
       options: [
-        { text: { id: "🐫 Unta Satu Punuk", en: "🐫 Unta Satu Punuk" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Di atas kepalanya", en: "On its head" } },
+        { text: { id: "Di punggungnya", en: "On its back" } },
+        { text: { id: "Di ekornya", en: "On its tail" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Unta Satu Punuk: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Unta Satu Punuk: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Banyak yang mengira punuk unta berisi air, padahal sebenarnya punuk itu berisi lemak cadangan makanan! Kalau unta kehabisan makanan di gurun pasir, lemak itu yang memberinya energi. Keren ya!", en: "Many think a camel's hump is full of water, but it actually contains fat as food reserves! When a camel runs out of food in the desert, that fat gives it energy. So cool!" },
     facts: [
-      { id: "Unta Satu Punuk memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Unta Satu Punuk memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Unta Satu Punuk bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Unta Satu Punuk bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Unta Satu Punuk dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Unta Satu Punuk dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Unta punya 3 lapis kelopak mata dan bulu mata panjang untuk menahan badai pasir! 🐪", en: "Camels have 3 layers of eyelids and long eyelashes to keep out sandstorms! 🐪" },
+      { id: "Bibir unta sangat tebal sehingga dia bisa makan kaktus berduri tanpa terluka! 🌵", en: "A camel's lips are so thick it can eat thorny cactus without getting hurt! 🌵" },
+      { id: "Sekali minum, unta bisa menghabiskan 100 liter air dalam 10 menit! 💧", en: "In one drink, a camel can finish 100 liters of water in 10 minutes! 💧" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Unta Satu Punuk dengan sempurna?",
-        en: "Who created Unta Satu Punuk perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Unta Satu Punuk mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Unta Satu Punuk reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Unta Satu Punuk: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Unta Satu Punuk dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Unta Satu Punuk: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Unta Satu Punuk dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Unta adalah keajaiban penciptaan! Allah secara khusus menyuruh kita memperhatikan penciptaan unta dalam Surah Al-Ghashiyah. Selain itu, Nabi Saleh AS juga diberikan mukjizat berupa Unta Betina raksasa yang keluar dari batu karang, sebagai bukti nyata kebesaran Allah kepada kaum Tsamud.", en: "Camels are a miracle of creation! Allah specifically tells us to observe the creation of camels in Surah Al-Ghashiyah. Besides that, Prophet Saleh AS was also given a miracle of a giant female Camel emerging from a rock, as clear proof of Allah's greatness to the people of Thamud." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "أَفَلَا يَنْظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+      transliteration: "Afalaa yandhuruuna ilal ibili kayfa khuliqat",
+      translation: { id: "Maka tidakkah mereka memperhatikan unta, bagaimana dia diciptakan?", en: "Then do they not look at the camels - how they are created?" }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Unta Satu Punuk?",
-          en: "What is the primary wisdom of scientific signs regarding Unta Satu Punuk?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -9,20 +9,31 @@ export const ibrahimAsData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   surahReference: "Al-Anbiya:69",
-  storyShort: { id: "Bapak para nabi yang tidak hangus dibakar api dan membangun Ka'bah.", en: "The father of the prophets who was not burned by fire and built the Kaaba." },
-  storyFull: { id: "Nabi Ibrahim AS adalah pemuda cerdas yang mencari Tuhan melalui alam semesta. Beliau menghancurkan berhala-berhala yang disembah kaumnya. Raja Namrud yang marah memerintahkan agar Nabi Ibrahim dibakar hidup-hidup. Ajaibnya, Allah memerintahkan api menjadi dingin dan menyelamatkan beliau. Beliau juga yang membangun Ka'bah bersama putranya, Nabi Ismail.", en: "Prophet Ibrahim AS was a smart youth who sought God through the universe. He destroyed the idols worshipped by his people. The angry King Nimrod ordered Ibrahim to be burned alive. Miraculously, Allah commanded the fire to be cool and saved him. He also built the Kaaba with his son, Prophet Ismail." },
+  storyShort: {
+    id: "Nabi yang tidak hangus dibakar api dan membangun Ka'bah.",
+    en: "The prophet who did not burn in fire and built the Kaaba."
+  },
+  storyFull: {
+    id: "Nabi Ibrahim AS sejak kecil selalu berpikir kritis mencari Tuhan yang sebenarnya hingga ia tahu Allah adalah Sang Pencipta. Karena menghancurkan berhala raja Namrud, beliau dibakar hidup-hidup, tapi Allah membuat api menjadi dingin! Beliau juga membangun Ka'bah bersama putranya, Nabi Ismail AS.",
+    en: "Since childhood, Prophet Ibrahim AS critically thought about finding the true God until he knew Allah is the Creator. Because he destroyed King Namrud's idols, he was burned alive, but Allah made the fire cool! He also built the Kaaba with his son, Prophet Ismail AS."
+  },
   miracles: [
-    { id: "Api menjadi dingin dan tidak membakarnya", en: "The fire became cold and did not burn him" },
-    { id: "Burung mati yang hidup kembali", en: "Dead birds coming back to life" }
+    { id: "Tubuhnya tidak hangus terbakar oleh api raksasa Raja Namrud.", en: "His body was not burned by King Namrud's giant fire." },
+    { id: "Allah memperlihatkan burung yang sudah mati bisa dihidupkan kembali.", en: "Allah showed him dead birds brought back to life." }
   ],
   characterTraits: [
-    { trait: { id: "Kritis", en: "Critical" }, desc: { id: "Selalu mencari kebenaran lewat berpikir", en: "Always seeking truth through thinking" } },
-    { trait: { id: "Pemberani", en: "Courageous" }, desc: { id: "Berani melawan ketidakadilan Raja Namrud", en: "Brave to fight King Nimrod's injustice" } }
+    { trait: { id: "Berpikir Kritis", en: "Critical Thinker" }, desc: { id: "Selalu menggunakan akal untuk mencari kebenaran", en: "Always used his intellect to seek the truth" } },
+    { trait: { id: "Pemberani", en: "Brave" }, desc: { id: "Berani menghancurkan berhala Raja Namrud", en: "Brave to destroy King Namrud's idols" } },
+    { trait: { id: "Taat Kepada Allah", en: "Obedient to Allah" }, desc: { id: "Sangat patuh pada segala perintah Allah", en: "Very obedient to all of Allah's commands" } }
   ],
   timeline: [
-    { yearOrAge: "Muda", title: { id: "Menghancurkan Berhala", en: "Destroying Idols" }, desc: { id: "Menyadarkan kaumnya yang tersesat", en: "Awakening his misguided people" } },
-    { yearOrAge: "Cobaan Api", title: { id: "Dibakar Raja Namrud", en: "Burned by Nimrod" }, desc: { id: "Diselamatkan Allah dari panasnya api", en: "Saved by Allah from the heat of the fire" } },
-    { yearOrAge: "Tua", title: { id: "Membangun Ka'bah", en: "Building the Kaaba" }, desc: { id: "Mendirikan Baitullah di Mekkah", en: "Building the House of Allah in Mecca" } }
+    { yearOrAge: "Masa Muda", title: { id: "Mencari Tuhan", en: "Seeking God" }, desc: { id: "Melihat bintang, bulan, dan matahari", en: "Looking at the stars, moon, and sun" } },
+    { yearOrAge: "Masa Dakwah", title: { id: "Dibakar Api", en: "Burned in Fire" }, desc: { id: "Api menjadi dingin dan menyelamatkannya", en: "The fire became cool and saved him" } },
+    { yearOrAge: "Masa Tua", title: { id: "Membangun Ka'bah", en: "Building Kaaba" }, desc: { id: "Bersama Nabi Ismail membangun baitullah", en: "Together with Prophet Ismail building the House of Allah" } }
   ],
-  dailyLifeConnection: { id: "Gunakan akal kita untuk berpikir kritis seperti Nabi Ibrahim yang memperhatikan matahari, bulan, dan bintang untuk mengenal Allah.", en: "Use our intellect to think critically like Prophet Ibrahim who observed the sun, moon, and stars to know Allah." }
+  dailyLifeConnection: {
+    id: "Gunakan akal kita untuk membedakan hal yang benar dan salah, serta berani membela kebenaran meskipun sendiri!",
+    en: "Use our intellect to distinguish between right and wrong, and be brave to defend the truth even if we are alone!"
+  }
 };
+

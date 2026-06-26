@@ -9,19 +9,31 @@ export const yaqubAsData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   surahReference: "Yusuf:86",
-  storyShort: { id: "Ayah penyayang yang memiliki kesabaran tak terbatas menanti putranya.", en: "A loving father who had limitless patience waiting for his son." },
-  storyFull: { id: "Nabi Yaqub AS adalah cucu Nabi Ibrahim AS dan ayah dari Nabi Yusuf AS. Beliau memiliki 12 anak laki-laki. Saat Yusuf dihilangkan oleh saudara-saudaranya, Yaqub menangis hingga matanya buta karena sedih. Namun, ia tidak pernah putus asa dan selalu mengadu kepada Allah. Bertahun-tahun kemudian, kesabarannya berbuah manis. Ia bertemu kembali dengan Yusuf yang telah menjadi pejabat besar di Mesir, dan penglihatannya pun kembali atas izin Allah.", en: "Prophet Yaqub AS is the grandson of Prophet Ibrahim AS and the father of Prophet Yusuf AS. He had 12 sons. When Yusuf was disappeared by his brothers, Yaqub cried until his eyes went blind from sadness. However, he never gave up and always complained to Allah. Years later, his patience bore sweet fruit. He was reunited with Yusuf who had become a high official in Egypt, and his sight returned by Allah's permission." },
+  storyShort: {
+    id: "Nabi yang sangat sabar saat kehilangan anak kesayangannya, Yusuf.",
+    en: "The prophet who was very patient when losing his beloved son, Yusuf."
+  },
+  storyFull: {
+    id: "Nabi Yaqub AS adalah ayah dari 12 anak laki-laki, salah satunya Nabi Yusuf AS. Karena iri, kakak-kakak Yusuf membuang Yusuf ke sumur dan berbohong bahwa Yusuf dimakan serigala. Nabi Yaqub sangat sedih hingga matanya buta karena sering menangis. Tapi beliau tidak pernah putus asa dari rahmat Allah, hingga akhirnya bisa bertemu lagi dengan Yusuf.",
+    en: "Prophet Yaqub AS was the father of 12 sons, one of whom was Prophet Yusuf AS. Out of jealousy, Yusuf's older brothers threw Yusuf into a well and lied that he was eaten by a wolf. Prophet Yaqub was so sad that he went blind from crying so much. But he never despaired of Allah's mercy, until finally he could meet Yusuf again."
+  },
   miracles: [
-    { id: "Sembuh dari kebutaan setelah mengusap wajahnya dengan baju Yusuf", en: "Cured of blindness after wiping his face with Yusuf's shirt" }
+    { id: "Kesabaran luar biasa (Sabrun Jamil) dalam menghadapi ujian keluarga.", en: "Extraordinary patience (Sabrun Jamil) in facing family trials." },
+    { id: "Penglihatannya yang buta kembali sembuh setelah diusap dengan baju Nabi Yusuf.", en: "His blind sight was cured after being wiped with Prophet Yusuf's shirt." }
   ],
   characterTraits: [
-    { trait: { id: "Penyayang Keluarga", en: "Family Loving" }, desc: { id: "Sangat mencintai semua anak-anaknya", en: "Deeply loved all his children" } },
-    { trait: { id: "Sabar Tiada Batas", en: "Limitless Patience" }, desc: { id: "Sabar menanti bertahun-tahun", en: "Patiently waited for years" } }
+    { trait: { id: "Sabar", en: "Patient" }, desc: { id: "Bersabar dalam tingkat paling tinggi tanpa mengeluh pada manusia", en: "Patient at the highest level without complaining to humans" } },
+    { trait: { id: "Pemaaf", en: "Forgiving" }, desc: { id: "Memaafkan anak-anaknya yang telah membohonginya", en: "Forgave his children who had lied to him" } },
+    { trait: { id: "Optimis", en: "Optimistic" }, desc: { id: "Tidak pernah putus harapan dari pertolongan Allah", en: "Never gave up hope on Allah's help" } }
   ],
   timeline: [
-    { yearOrAge: "Cobaan", title: { id: "Kehilangan Yusuf", en: "Losing Yusuf" }, desc: { id: "Anaknya hilang dan ia sangat bersedih", en: "His son was lost and he was very sad" } },
-    { yearOrAge: "Kesabaran", title: { id: "Berdoa Tanpa Henti", en: "Praying Endlessly" }, desc: { id: "Hanya mengadu pada Allah", en: "Only complained to Allah" } },
-    { yearOrAge: "Kebahagiaan", title: { id: "Bertemu Yusuf", en: "Meeting Yusuf" }, desc: { id: "Matanya sembuh dan keluarga bersatu", en: "His eyes healed and family united" } }
+    { yearOrAge: "Kehilangan", title: { id: "Yusuf Hilang", en: "Yusuf Lost" }, desc: { id: "Anaknya dibuang ke sumur", en: "His son was thrown into a well" } },
+    { yearOrAge: "Masa Ujian", title: { id: "Menangis Sedih", en: "Crying in Sorrow" }, desc: { id: "Mata menjadi buta karena sedih", en: "Eyes became blind due to sorrow" } },
+    { yearOrAge: "Pertemuan", title: { id: "Bertemu Yusuf", en: "Meeting Yusuf" }, desc: { id: "Mata sembuh dan kumpul kembali", en: "Eyes healed and reunited" } }
   ],
-  dailyLifeConnection: { id: "Jika kita sedang sedih atau punya masalah, ceritakanlah semuanya kepada Allah karena Allah pasti menolong.", en: "If we are sad or have a problem, tell it all to Allah because Allah will surely help." }
+  dailyLifeConnection: {
+    id: "Kalau sedang sedih atau punya masalah, mengadulah hanya kepada Allah dan jangan pernah putus asa!",
+    en: "If you are sad or have a problem, complain only to Allah and never despair!"
+  }
 };
+

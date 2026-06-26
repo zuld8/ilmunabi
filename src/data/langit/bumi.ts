@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const bumiKhatulistiwaData: ObjectData = {
-  slug: "bumi-khatulistiwa",
-  name: {
-    id: "Bumi Khatulistiwa",
-    en: "Bumi Khatulistiwa",
-  },
-  scientificName: "Earth",
-  surahName: "Al-Anbiya",
-  surahReference: "21:30",
+export const bumiData: ObjectData = {
+  slug: "bumi",
+  name: { id: "Bumi", en: "Earth" },
   icon: "🌍",
   category: "langit",
   type: "langit",
+  scientificName: "Terra",
+  surahName: "Taha",
+  surahReference: "20:53",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Anbiya 21:30" }
+    { arab: "أَرْض", latin: "Ardh", arti: "Bumi", artiEn: "Earth", contohAyat: "Allah menciptakan langit dan bumi" }
   ],
   balita: {
-    text: {
-      id: "Ini Bumi Khatulistiwa! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Bumi Khatulistiwa! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Bumi Khatulistiwa. Allah menciptakan Bumi Khatulistiwa dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Bumi Khatulistiwa. Allah created Bumi Khatulistiwa beautifully so we all become grateful.",
-    },
+    text: { id: "Halo Bumi! Ini adalah rumah kita yang berwarna biru dan hijau. Penuh dengan air, hewan, dan tanaman! 🏡💧", en: "Hello Earth! This is our blue and green home. Full of water, animals, and plants! 🏡💧" },
+    audioTranscript: { id: "Ini planet Bumi! Satu-satunya tempat yang punya udara segar untuk kita bernapas. Allah membuat Bumi sangat nyaman agar kita bisa bermain dan belajar setiap hari.", en: "This is planet Earth! The only place that has fresh air for us to breathe. Allah made Earth so cozy so we can play and learn every day." },
     quiz: {
-      question: {
-        id: "Mana gambar Bumi Khatulistiwa?",
-        en: "Which one is the picture of Bumi Khatulistiwa?",
-      },
+      question: { id: "Warna biru di Bumi itu apa ya?", en: "What is the blue color on Earth?" },
       options: [
-        { text: { id: "🌍 Bumi Khatulistiwa", en: "🌍 Bumi Khatulistiwa" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Langit-langitan", en: "Ceiling" } },
+        { text: { id: "Laut dan Samudra", en: "Sea and Ocean" } },
+        { text: { id: "Permen karet", en: "Bubblegum" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Bumi Khatulistiwa: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Bumi Khatulistiwa: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Bumi adalah planet ketiga dari matahari. Posisinya sangat pas lho, tidak terlalu panas dan tidak terlalu dingin. Sempurna untuk kehidupan!", en: "Earth is the third planet from the sun. Its position is just right, not too hot and not too cold. Perfect for life!" },
     facts: [
-      { id: "Objek luar angkasa Bumi Khatulistiwa bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Bumi Khatulistiwa bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Bumi Khatulistiwa melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Bumi Khatulistiwa melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Bumi Khatulistiwa membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Bumi Khatulistiwa membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Bumi berputar pada sumbunya dengan kecepatan 1.600 km/jam! Tapi kita tidak merasa pusing, kan?", en: "Earth spins on its axis at 1,600 km/hour! But we don't feel dizzy, do we?" },
+      { id: "Sekitar 71% permukaan Bumi tertutup oleh air! Sisanya adalah daratan tempat kita tinggal.", en: "About 71% of Earth's surface is covered by water! The rest is land where we live." },
+      { id: "Bumi punya perisai tak terlihat bernama medan magnet yang melindungi kita dari angin matahari berbahaya! 🛡️", en: "Earth has an invisible shield called a magnetic field that protects us from dangerous solar winds! 🛡️" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Bumi Khatulistiwa dengan sempurna?",
-        en: "Who created Bumi Khatulistiwa perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Bumi Khatulistiwa mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Bumi Khatulistiwa reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Bumi Khatulistiwa: Hukum gravitasi universal mengikat Bumi Khatulistiwa agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Bumi Khatulistiwa: Hukum gravitasi universal mengikat Bumi Khatulistiwa agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Bumi berada di 'Goldilocks Zone', area presisi di tata surya di mana air bisa berwujud cair. HAH?! Atmosfer bumi tidak hanya memberi oksigen, tapi juga membakar meteor yang jatuh, melindungi kita seperti atap yang kokoh! 1400 tahun lalu, Al-Qur'an sudah menyebutkan bahwa Allah menjadikan bumi sebagai hamparan dan tempat yang nyaman serta langit sebagai atap yang terpelihara.", en: "Earth is in the 'Goldilocks Zone', a precise area in the solar system where water can exist as a liquid. HAH?! Earth's atmosphere doesn't just provide oxygen, but also burns falling meteors, protecting us like a solid roof! 1400 years ago, the Quran already mentioned that Allah made the earth a resting place and a comfortable home, and the sky a protected roof." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "الَّذِي جَعَلَ لَكُمُ الْأَرْضَ مَهْدًا وَسَلَكَ لَكُمْ فِيهَا سُبُلًا وَأَنْزَلَ مِنَ السَّمَاءِ مَاءً",
+      transliteration: "Alladhī ja'ala lakumul-arḍa mahdan wa salaka lakum fīhā subulan wa anzala minas-samā'i mā'an",
+      translation: { id: "Tuhan yang telah menjadikan bumi sebagai hamparan bagimu, dan menjadikan jalan-jalan di atasnya untukmu, dan yang menurunkan air (hujan) dari langit.", en: "[It is He] who has made for you the earth as a bed [spread out] and inserted therein for you roadways and sent down from the sky, rain." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Bumi Khatulistiwa?",
-          en: "What is the primary wisdom of scientific signs regarding Bumi Khatulistiwa?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

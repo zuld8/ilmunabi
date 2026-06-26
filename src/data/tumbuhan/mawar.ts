@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const mawarMerahData: ObjectData = {
-  slug: "mawar-merah",
-  name: {
-    id: "Mawar Merah",
-    en: "Mawar Merah",
-  },
-  scientificName: "Rosa damascena",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const mawarData: ObjectData = {
+  slug: "mawar",
+  name: { id: "Mawar", en: "Rose" },
   icon: "🌹",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Rosa",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 120,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "وَرْدَةٌ", latin: "wardatun", arti: "Mawar", artiEn: "Rose", contohAyat: "Mawar merah merona." }
   ],
   balita: {
-    text: {
-      id: "Ini Mawar Merah! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Mawar Merah! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Mawar Merah. Allah menciptakan Mawar Merah dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Mawar Merah. Allah created Mawar Merah beautifully so we all become grateful.",
-    },
+    text: { id: "Mawar yang merah, cantik dan sangat harum wanginya! 🌹", en: "Red roses, beautiful and very fragrant! 🌹" },
+    audioTranscript: { id: "Bunga mawar warnanya sangat menyala! Tapi hati-hati ya, di batang bunga mawar ada duri-duri kecil yang tajam.", en: "Rose flowers are very bright in color! But be careful, on the stem of the rose there are small sharp thorns." },
     quiz: {
-      question: {
-        id: "Mana gambar Mawar Merah?",
-        en: "Which one is the picture of Mawar Merah?",
-      },
+      question: { id: "Apa yang harus kita waspadai kalau mau memegang batang bunga mawar?", en: "What should we watch out for if we want to hold a rose stem?" },
       options: [
-        { text: { id: "🌹 Mawar Merah", en: "🌹 Mawar Merah" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Daunnya", en: "Its leaves" } },
+        { text: { id: "Durinya yang tajam", en: "Its sharp thorns" } },
+        { text: { id: "Akarnya", en: "Its roots" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Mawar Merah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Mawar Merah: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Kenapa mawar punya duri? Duri mawar sebenarnya untuk melindungi diri dari hewan herbivora yang mau memakan bunganya! Mawar juga punya vitamin C di bagian 'rose hip'-nya lho.", en: "Why do roses have thorns? Rose thorns are actually to protect themselves from herbivorous animals that want to eat their flowers! Roses also have vitamin C in their 'rose hip'." },
     facts: [
-      { id: "Tumbuhan Mawar Merah melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Mawar Merah melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Mawar Merah bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Mawar Merah bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Mawar Merah adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Mawar Merah adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Mawar tertua di dunia tumbuh di Jerman dan berusia lebih dari 1.000 tahun!", en: "The oldest rose in the world grows in Germany and is over 1,000 years old!" },
+      { id: "Ada ribuan jenis spesies mawar hasil persilangan di seluruh dunia.", en: "There are thousands of species of crossbred roses around the world." },
+      { id: "Air mawar sering dipakai untuk campuran makanan karena harum.", en: "Rose water is often used for food mixtures because of its fragrance." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Mawar Merah dengan sempurna?",
-        en: "Who created Mawar Merah perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Mawar Merah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Mawar Merah reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Mawar Merah: Struktur pembuluh kayu dan tapis pada Mawar Merah mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Mawar Merah: Struktur pembuluh kayu dan tapis pada Mawar Merah mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Keindahan mawar sangat termasyhur. Dalam Al-Qur'an, Allah mengumpamakan langit yang terbelah pada hari kiamat akan terlihat merah memukau bagaikan mawar (wardah) atau kilapan minyak. Sains pun menemukan fenomena nebula di luar angkasa yang mirip mawar raksasa mekar!", en: "The beauty of the rose is very famous. In the Quran, Allah compares the splitting of the sky on the day of judgment to look stunningly red like a rose (wardah) or gleaming oil. Science has even found a nebula phenomenon in space that looks like a giant blooming rose!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "فَإِذَا انْشَقَّتِ السَّمَاءُ فَكَانَتْ وَرْدَةً كَالدِّهَانِ",
+      transliteration: "Fa-idhan shaqqatis-samā'u fakānat wardatan kaddihān",
+      translation: { id: "Maka apabila langit telah terbelah dan menjadi merah mawar seperti (kilapan) minyak.", en: "And when the heaven is split open and becomes rose-colored like oil." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Mawar Merah?",
-          en: "What is the primary wisdom of scientific signs regarding Mawar Merah?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

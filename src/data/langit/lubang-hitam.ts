@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const lubangHitamRaksasaData: ObjectData = {
-  slug: "lubang-hitam-raksasa",
-  name: {
-    id: "Lubang Hitam Raksasa",
-    en: "Lubang Hitam Raksasa",
-  },
-  scientificName: "Black Hole",
-  surahName: "At-Takwir",
-  surahReference: "81:15-16",
+export const lubangHitamData: ObjectData = {
+  slug: "lubang-hitam",
+  name: { id: "Lubang Hitam", en: "Black Hole" },
   icon: "🕳️",
   category: "langit",
   type: "langit",
+  scientificName: "Black Hole",
+  surahName: "Al-Waqi'ah",
+  surahReference: "56:75",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "At-Takwir 81:15-16" }
+    { arab: "مَوَاقِع", latin: "Mawaqi'", arti: "Tempat (Jatuhnya/Beredar)", artiEn: "Places (of setting)", contohAyat: "Tempat jatuhnya bintang-bintang" }
   ],
   balita: {
-    text: {
-      id: "Ini Lubang Hitam Raksasa! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Lubang Hitam Raksasa! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Lubang Hitam Raksasa. Allah menciptakan Lubang Hitam Raksasa dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Lubang Hitam Raksasa. Allah created Lubang Hitam Raksasa beautifully so we all become grateful.",
-    },
+    text: { id: "Uwaaa! Ini Lubang Hitam! Dia seperti 'vacuum cleaner' angkasa yang sangat kuat, menyedot apa saja di dekatnya! 🌪️", en: "Uwaaa! This is a Black Hole! It's like a super strong space vacuum cleaner, sucking up anything near it! 🌪️" },
+    audioTranscript: { id: "Ini misteri besar di luar angkasa, namanya Lubang Hitam! Tarikannya sangat kuat. Benda apa saja yang lewat di dekatnya akan tertelan, Allah berkuasa menciptakan hal-hal hebat yang tersembunyi.", en: "This is a big mystery in space, called a Black Hole! Its pull is extremely strong. Anything passing nearby gets swallowed, Allah is powerful enough to create great hidden things." },
     quiz: {
-      question: {
-        id: "Mana gambar Lubang Hitam Raksasa?",
-        en: "Which one is the picture of Lubang Hitam Raksasa?",
-      },
+      question: { id: "Apa kehebatan Lubang Hitam?", en: "What is the superpower of a Black Hole?" },
       options: [
-        { text: { id: "🕳️ Lubang Hitam Raksasa", en: "🕳️ Lubang Hitam Raksasa" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Bisa mengeluarkan permen", en: "It dispenses candy" } },
+        { text: { id: "Menyedot benda seperti vacuum cleaner", en: "Sucks things like a vacuum cleaner" } },
+        { text: { id: "Bisa bernyanyi", en: "It can sing" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Lubang Hitam Raksasa: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Lubang Hitam Raksasa: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Lubang Hitam adalah tempat di ruang angkasa di mana gravitasinya super duper kuat! Bahkan cahaya pun tidak bisa kabur darinya, makanya dia terlihat hitam gelap gulita.", en: "A Black Hole is a place in space where gravity is super duper strong! Not even light can escape it, which is why it looks pitch black." },
     facts: [
-      { id: "Objek luar angkasa Lubang Hitam Raksasa bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Lubang Hitam Raksasa bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Lubang Hitam Raksasa melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Lubang Hitam Raksasa melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Lubang Hitam Raksasa membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Lubang Hitam Raksasa membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Lubang Hitam terbentuk saat bintang raksasa meledak dan mati (disebut Supernova). 💥", en: "Black Holes are formed when giant stars explode and die (called a Supernova). 💥" },
+      { id: "Waktu berjalan lebih lambat di dekat Lubang Hitam! Seperti masuk ke mesin waktu.", en: "Time moves slower near a Black Hole! Like stepping into a time machine." },
+      { id: "Kita tidak perlu takut, karena Lubang Hitam letaknya sangaaaat jauh dari Bumi kita.", en: "We don't need to be afraid, because Black Holes are faaaar away from our Earth." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Lubang Hitam Raksasa dengan sempurna?",
-        en: "Who created Lubang Hitam Raksasa perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Lubang Hitam Raksasa mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Lubang Hitam Raksasa reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Lubang Hitam Raksasa: Hukum gravitasi universal mengikat Lubang Hitam Raksasa agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Lubang Hitam Raksasa: Hukum gravitasi universal mengikat Lubang Hitam Raksasa agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Tarikan gravitasi Lubang Hitam melengkungkan ruang dan waktu! HAH?! Batas terluar Lubang Hitam disebut Event Horizon, titik di mana tidak ada lagi jalan kembali. Semua materi dari bintang-bintang di sekitarnya yang tersedot akan hancur dan hilang tanpa jejak. 1400 tahun lalu, Al-Qur'an bersumpah dengan 'tempat jatuhnya bintang-bintang' sebagai suatu sumpah yang sangat besar.", en: "The gravitational pull of a Black Hole warps space and time! HAH?! The outer edge of a Black Hole is called the Event Horizon, the point of no return. All matter from surrounding stars that gets sucked in will be crushed and disappear without a trace. 1400 years ago, the Quran swore by 'the setting places of the stars' as an immensely great oath." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "فَلَا أُقْسِمُ بِمَوَاقِعِ النُّجُومِ ﴿٧٥﴾ وَإِنَّهُ لَقَسَمٌ لَوْ تَعْلَمُونَ عَظِيمٌ ﴿٧٦﴾",
+      transliteration: "Falā uqsimu bimawāqi'in-nujūm (75). Wa innahū laqasamul law ta'lamūna 'aẓīm (76).",
+      translation: { id: "Maka Aku bersumpah dengan tempat beredarnya (jatuhnya) bintang-bintang. Dan sesungguhnya itu adalah sumpah yang sangat besar kalau kamu mengetahui.", en: "Then I swear by the setting places of the stars. And indeed, it is an oath - if you could know - [most] great." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Lubang Hitam Raksasa?",
-          en: "What is the primary wisdom of scientific signs regarding Lubang Hitam Raksasa?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

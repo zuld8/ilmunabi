@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const kelinciRexData: ObjectData = {
-  slug: "kelinci-rex",
-  name: {
-    id: "Kelinci Rex",
-    en: "Kelinci Rex",
-  },
-  scientificName: "Oryctolagus cuniculus",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
-  icon: "🐇",
+export const kelinciData: ObjectData = {
+  slug: "kelinci",
+  name: { id: "Kelinci", en: "Rabbit" },
+  icon: "🐰",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Oryctolagus cuniculus",
+  surahName: "Al-Baqarah",
+  surahReference: "2:168",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "أَرْنَبٌ", latin: "arnabun", arti: "Kelinci", artiEn: "Rabbit", contohAyat: "Kelinci adalah salah satu rezeki halal di bumi." }
   ],
   balita: {
-    text: {
-      id: "Ini Kelinci Rex! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Kelinci Rex! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Kelinci Rex. Allah menciptakan Kelinci Rex dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Kelinci Rex. Allah created Kelinci Rex beautifully so we all become grateful.",
-    },
+    text: { id: "Boing! Boing! 🐰 Kelinci melompat-lompat dengan lincah. Dia suka makan wortel!", en: "Boing! Boing! 🐰 Rabbits hop around playfully. They love eating carrots!" },
+    audioTranscript: { id: "Halo teman! Aku kelinci yang lucu. Gigiku kuat untuk mengunyah sayuran, dan aku suka melompat tinggi!", en: "Hello friend! I am a cute rabbit. My teeth are strong for chewing vegetables, and I love jumping high!" },
     quiz: {
-      question: {
-        id: "Mana gambar Kelinci Rex?",
-        en: "Which one is the picture of Kelinci Rex?",
-      },
+      question: { id: "Sayuran apa yang sangat disukai kelinci?", en: "What vegetable do rabbits love very much?" },
       options: [
-        { text: { id: "🐇 Kelinci Rex", en: "🐇 Kelinci Rex" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Cabai", en: "Chili" } },
+        { text: { id: "Wortel", en: "Carrot" } },
+        { text: { id: "Bawang", en: "Onion" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Kelinci Rex: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Kelinci Rex: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Gigi kelinci itu terus tumbuh sepanjang hidup mereka lho! Makanya mereka harus sering mengunyah agar giginya tidak kepanjangan. Masya Allah ya ciptaan-Nya!", en: "A rabbit's teeth keep growing throughout its life! That's why they have to chew often so their teeth don't get too long. Mashallah, what a creation!" },
     facts: [
-      { id: "Kelinci Rex memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Kelinci Rex memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Kelinci Rex bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Kelinci Rex bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Kelinci Rex dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Kelinci Rex dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Kelinci bisa melompat setinggi 1 meter dan sejauh 3 meter! 🦘", en: "Rabbits can jump up to 1 meter high and 3 meters long! 🦘" },
+      { id: "Telinga panjang mereka bisa diputar 270 derajat untuk mendeteksi bahaya dari segala arah! 👂", en: "Their long ears can rotate 270 degrees to detect danger from all directions! 👂" },
+      { id: "Kelinci sangat peduli dengan kebersihan, mereka selalu membersihkan diri setiap hari seperti kucing! 🛁", en: "Rabbits are very hygienic, they groom themselves every day like cats! 🛁" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Kelinci Rex dengan sempurna?",
-        en: "Who created Kelinci Rex perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Kelinci Rex mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Kelinci Rex reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Kelinci Rex: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kelinci Rex dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Kelinci Rex: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kelinci Rex dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Tahukah kamu, sahabat Nabi Anas bin Malik pernah menangkap kelinci dan Nabi Muhammad SAW memakannya? Ini menjadi bukti bahwa kelinci termasuk hewan buruan darat yang baik dan halal dimakan (Halalan Thayyiban), sesuai dengan perintah Allah untuk memakan makanan yang halal di bumi.", en: "Did you know, the Prophet's companion Anas bin Malik once caught a rabbit and Prophet Muhammad SAW ate it? This is proof that rabbits are good land game and halal to eat (Halalan Tayyiban), according to Allah's command to eat halal food on earth." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا",
+      transliteration: "Yaa ayyuhannaasu kuluu mimmaa fil ardi halaalan tayyibaa",
+      translation: { id: "Wahai manusia, makanlah dari apa yang ada di bumi yang halal lagi baik.", en: "O mankind, eat from whatever is on earth [that is] lawful and good." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Kelinci Rex?",
-          en: "What is the primary wisdom of scientific signs regarding Kelinci Rex?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

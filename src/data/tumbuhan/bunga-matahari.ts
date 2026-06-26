@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const bungaMatahariRaksasaData: ObjectData = {
-  slug: "bunga-matahari-raksasa",
-  name: {
-    id: "Bunga Matahari Raksasa",
-    en: "Bunga Matahari Raksasa",
-  },
-  scientificName: "Helianthus annuus",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const bungaMatahariData: ObjectData = {
+  slug: "bunga-matahari",
+  name: { id: "Bunga Matahari", en: "Sunflower" },
   icon: "🌻",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Helianthus annuus",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 60,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "دَوَّارُ الشَّمْسِ", latin: "dawwaarusy syamsi", arti: "Bunga Matahari", artiEn: "Sunflower", contohAyat: "Bunga matahari menatap matahari." }
   ],
   balita: {
-    text: {
-      id: "Ini Bunga Matahari Raksasa! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Bunga Matahari Raksasa! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Bunga Matahari Raksasa. Allah menciptakan Bunga Matahari Raksasa dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Bunga Matahari Raksasa. Allah created Bunga Matahari Raksasa beautifully so we all become grateful.",
-    },
+    text: { id: "Wah, bunganya besar sekali, warnanya kuning cerah seperti matahari! 🌻", en: "Wow, the flower is so big, bright yellow like the sun! 🌻" },
+    audioTranscript: { id: "Bunga matahari bentuknya sangat cantik. Biji-bijinya bisa dipanggang jadi kuaci yang enak, kriuk kriuk kriuk!", en: "Sunflowers have a very beautiful shape. Their seeds can be roasted into delicious sunflower seeds, crunch crunch crunch!" },
     quiz: {
-      question: {
-        id: "Mana gambar Bunga Matahari Raksasa?",
-        en: "Which one is the picture of Bunga Matahari Raksasa?",
-      },
+      question: { id: "Biji bunga matahari bisa dibuat jadi camilan apa?", en: "What snack can sunflower seeds be made into?" },
       options: [
-        { text: { id: "🌻 Bunga Matahari Raksasa", en: "🌻 Bunga Matahari Raksasa" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Permen", en: "Candy" } },
+        { text: { id: "Kuaci", en: "Sunflower seeds (Kuaci)" } },
+        { text: { id: "Cokelat", en: "Chocolate" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Bunga Matahari Raksasa: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Bunga Matahari Raksasa: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Bunga matahari punya keajaiban lho! Saat pagi, bunganya akan bergerak menghadap ke arah matahari terbit dan terus mengikutinya sampai terbenam. Namanya heliotropisme. Pintar sekali ya tanaman ini!", en: "Sunflowers have magic! In the morning, the flower will move to face the sunrise and keep following it until sunset. It's called heliotropism. This plant is so smart!" },
     facts: [
-      { id: "Tumbuhan Bunga Matahari Raksasa melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Bunga Matahari Raksasa melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Bunga Matahari Raksasa bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Bunga Matahari Raksasa bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Bunga Matahari Raksasa adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Bunga Matahari Raksasa adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Satu bunga matahari sebenarnya terdiri dari ribuan bunga kecil di bagian tengahnya.", en: "A sunflower actually consists of thousands of tiny flowers in its center." },
+      { id: "Tinggi bunga matahari bisa mencapai lebih dari 3 meter!", en: "The height of a sunflower can reach over 3 meters!" },
+      { id: "Bunga ini digunakan untuk menyerap radiasi beracun di tanah.", en: "This flower is used to absorb toxic radiation in the soil." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Bunga Matahari Raksasa dengan sempurna?",
-        en: "Who created Bunga Matahari Raksasa perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Bunga Matahari Raksasa mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Bunga Matahari Raksasa reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Bunga Matahari Raksasa: Struktur pembuluh kayu dan tapis pada Bunga Matahari Raksasa mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Bunga Matahari Raksasa: Struktur pembuluh kayu dan tapis pada Bunga Matahari Raksasa mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Setiap bagian dari bunga matahari mengikuti pola matematika luar biasa yang disebut 'deret Fibonacci' pada biji-bijinya. Desain melengkung ini memastikan bahwa sebanyak mungkin biji bisa tumbuh di tengah bunga. Tidak ada yang kebetulan di alam semesta, ini adalah bukti kehebatan desain luar biasa dari Allah yang Maha Teliti (Al-Khabir)!", en: "Every part of the sunflower follows an incredible mathematical pattern called the 'Fibonacci sequence' on its seeds. This curved design ensures that as many seeds as possible can grow in the center of the flower. Nothing is a coincidence in the universe, this is proof of the incredible design greatness of Allah the All-Aware (Al-Khabir)!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ",
+      transliteration: "Innā kulla shay'in khalaqnāhu biqadar",
+      translation: { id: "Sesungguhnya Kami menciptakan segala sesuatu menurut ukuran.", en: "Indeed, all things We created with predestination." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Bunga Matahari Raksasa?",
-          en: "What is the primary wisdom of scientific signs regarding Bunga Matahari Raksasa?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

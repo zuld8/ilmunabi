@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const tinAraData: ObjectData = {
-  slug: "tin-ara",
-  name: {
-    id: "Tin Ara",
-    en: "Tin Ara",
-  },
+export const tinData: ObjectData = {
+  slug: "tin",
+  name: { id: "Buah Tin", en: "Fig" },
+  icon: "🪴",
+  category: "tumbuhan",
+  type: "tumbuhan",
   scientificName: "Ficus carica",
   surahName: "At-Tin",
   surahReference: "95:1",
-  icon: "🪪",
-  category: "tumbuhan",
-  type: "tumbuhan",
-  unlockedAtPoints: 50,
+  unlockedAtPoints: 180,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "At-Tin 95:1" }
+    { arab: "تِينٌ", latin: "tiinun", arti: "Buah Tin", artiEn: "Fig", contohAyat: "Demi buah Tin dan Zaitun." }
   ],
   balita: {
-    text: {
-      id: "Ini Tin Ara! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Tin Ara! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Tin Ara. Allah menciptakan Tin Ara dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Tin Ara. Allah created Tin Ara beautifully so we all become grateful.",
-    },
+    text: { id: "Buah manis yang di dalamnya berserat merah empuk! 🪴", en: "A sweet fruit whose inside has soft red fibers! 🪴" },
+    audioTranscript: { id: "Buah tin itu empuk sekali, bisa dimakan mentah atau dikeringkan! Rasanya manis seperti madu. Nyam nyam nyam!", en: "Figs are very soft, they can be eaten raw or dried! They taste as sweet as honey. Yum yum yum!" },
     quiz: {
-      question: {
-        id: "Mana gambar Tin Ara?",
-        en: "Which one is the picture of Tin Ara?",
-      },
+      question: { id: "Bagaimana rasa buah tin?", en: "How do figs taste?" },
       options: [
-        { text: { id: "🪪 Tin Ara", en: "🪪 Tin Ara" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Manis", en: "Sweet" } },
+        { text: { id: "Sangat Asin", en: "Very Salty" } },
+        { text: { id: "Pahit", en: "Bitter" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Tin Ara: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Tin Ara: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Buah tin sebenarnya bukanlah sebuah buah! Buah tin sebenarnya adalah kumpulan bunga-bunga kecil yang tumbuh berbalik menghadap ke dalam. Keren banget ya!", en: "Did you know? A fig is actually not a fruit! A fig is actually a cluster of small flowers that grow reversed facing inwards. So cool, right!" },
     facts: [
-      { id: "Tumbuhan Tin Ara melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Tin Ara melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Tin Ara bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Tin Ara bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Tin Ara adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Tin Ara adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Pohon tin adalah salah satu pohon buah tertua yang ditanam oleh manusia.", en: "The fig tree is one of the oldest fruit trees cultivated by humans." },
+      { id: "Ada jenis lebah khusus (lebah ara) yang bertugas membantu penyerbukan buah tin.", en: "There is a special type of wasp (fig wasp) assigned to help pollinate figs." },
+      { id: "Buah tin kaya dengan serat yang sangat bagus untuk pencernaan kita.", en: "Figs are rich in fiber which is very good for our digestion." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Tin Ara dengan sempurna?",
-        en: "Who created Tin Ara perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Tin Ara mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Tin Ara reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Tin Ara: Struktur pembuluh kayu dan tapis pada Tin Ara mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Tin Ara: Struktur pembuluh kayu dan tapis pada Tin Ara mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Saking istimewanya, Allah menjadikan nama Buah Tin sebagai salah satu nama surah di Al-Qur'an dan bersumpah atas nama buah ini! Sumpah Allah menandakan bahwa buah Tin memiliki manfaat luar biasa untuk kesehatan dan nutrisi. Masya Allah!", en: "Because it's so special, Allah made the name of the Fig as one of the chapter names in the Quran and swore by this fruit! Allah's oath signifies that the Fig has extraordinary benefits for health and nutrition. Masya Allah!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَالتِّينِ وَالزَّيْتُونِ ۝ وَطُورِ سِينِينَ",
+      transliteration: "Wat-tīni waz-zaytūn. Wa ṭūri sīnīn",
+      translation: { id: "Demi (buah) Tin dan (buah) Zaitun, dan demi bukit Sinai.", en: "By the fig and the olive, And [by] Mount Sinai." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Tin Ara?",
-          en: "What is the primary wisdom of scientific signs regarding Tin Ara?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

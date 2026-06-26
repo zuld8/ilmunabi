@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const anginPuyuhData: ObjectData = {
-  slug: "angin-puyuh",
-  name: {
-    id: "Angin Puyuh",
-    en: "Angin Puyuh",
-  },
-  scientificName: "Tornado",
-  surahName: "Al-Hijr",
-  surahReference: "15:22",
-  icon: "💨",
+export const anginData: ObjectData = {
+  slug: "angin",
+  name: { id: "Angin", en: "Wind" },
+  icon: "🌬️",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 50,
+  scientificName: "Ventus",
+  surahName: "Al-Hijr",
+  surahReference: "15:22",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Hijr 15:22" }
+    { arab: "رِيح", latin: "Rih", arti: "Angin", artiEn: "Wind", contohAyat: "وَأَرْسَلْنَا الرِّيَاحَ لَوَاقِحَ" }
   ],
   balita: {
-    text: {
-      id: "Ini Angin Puyuh! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Angin Puyuh! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Angin Puyuh. Allah menciptakan Angin Puyuh dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Angin Puyuh. Allah created Angin Puyuh beautifully so we all become grateful.",
-    },
+    text: { id: "Wusshhh! Angin meniup daun-daun sampai terbang! 🍃", en: "Whooshhh! The wind blows the leaves flying! 🍃" },
+    audioTranscript: { id: "Angin tidak bisa dilihat oleh mata kita, tapi kita bisa merasakannya sejuk di pipi kita.", en: "The wind cannot be seen by our eyes, but we can feel it cool on our cheeks." },
     quiz: {
-      question: {
-        id: "Mana gambar Angin Puyuh?",
-        en: "Which one is the picture of Angin Puyuh?",
-      },
+      question: { id: "Benda apa yang bisa terbang jika tertiup angin?", en: "What thing can fly if blown by the wind?" },
       options: [
-        { text: { id: "💨 Angin Puyuh", en: "💨 Angin Puyuh" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Layang-layang", en: "Kite" } },
+        { text: { id: "Mobil", en: "Car" } },
+        { text: { id: "Batu", en: "Stone" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Angin Puyuh: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Angin Puyuh: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Angin adalah udara yang bergerak! Angin bisa membantu menggerakkan perahu layar, memutar kincir angin untuk listrik, dan membawa bibit bunga ke tempat baru untuk tumbuh.", en: "Wind is moving air! Wind can help move sailboats, turn windmills for electricity, and carry flower seeds to new places to grow." },
     facts: [
-      { id: "Angin Puyuh merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Angin Puyuh merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
-      { id: "Keteraturan siklus Angin Puyuh memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Angin Puyuh memungkinkan kehidupan biologis manusia berjalan dengan aman." },
-      { id: "Interaksi fisik Angin Puyuh dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Angin Puyuh dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
+      { id: "Angin tornado itu sangat kencang dan berbentuk corong putar yang bisa menerbangkan rumah!", en: "Tornado winds are very fast and shaped like a spinning funnel that can fly houses!" },
+      { id: "Burung menggunakan hembusan angin untuk terbang jauh tanpa harus banyak mengepakkan sayap.", en: "Birds use gusts of wind to fly far without having to flap their wings a lot." },
+      { id: "Angin tercepat di tata surya ada di planet Neptunus, kecepatannya 2.000 km per jam!", en: "The fastest wind in the solar system is on the planet Neptune, its speed is 2,000 km per hour!" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Angin Puyuh dengan sempurna?",
-        en: "Who created Angin Puyuh perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Angin Puyuh mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Angin Puyuh reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Angin Puyuh: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Angin Puyuh agar tidak terjadi benturan atau kehancuran kosmis.",
-      en: "Keajaiban penciptaan Angin Puyuh: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Angin Puyuh agar tidak terjadi benturan atau kehancuran kosmis.",
-    },
+    text: { id: "Angin punya peran biologi luar biasa: polinasi (penyerbukan) dan mendatangkan hujan! Hebatnya, Al-Qur'an 1400 tahun lalu secara sangat ilmiah menyebut angin sebagai 'lawaaqih' (yang mengawinkan). Angin membawa serbuk sari ke putik bunga, serta membawa partikel uap dan aerosol ke awan agar turun hujan!", en: "Wind has extraordinary biological roles: pollination and bringing rain! Amazingly, the Quran 1400 years ago scientifically called the wind 'lawaaqih' (fertilizers). Wind carries pollen to flower pistils, and carries vapor and aerosol particles to clouds so it rains!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَأَرْسَلْنَا الرِّيَاحَ لَوَاقِحَ فَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً فَأَسْقَيْنَاكُمُوهُ",
+      transliteration: "Wa arsalnar-riyaaha lawaaqiha fa anzalnaa minas-samaa'i maa'an fa asqaynaakumuuh",
+      translation: { id: "Dan Kami telah meniupkan angin untuk mengawinkan (tumbuh-tumbuhan) dan Kami turunkan hujan dari langit, lalu Kami beri minum kamu dengan air itu.", en: "And We have sent the fertilizing winds and sent down water from the sky and given you drink from it." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Angin Puyuh?",
-          en: "What is the primary wisdom of scientific signs regarding Angin Puyuh?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

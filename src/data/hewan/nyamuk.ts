@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const nyamukKebunData: ObjectData = {
-  slug: "nyamuk-kebun",
-  name: {
-    id: "Nyamuk Kebun",
-    en: "Nyamuk Kebun",
-  },
-  scientificName: "Aedes albopictus",
-  surahName: "Al-Baqarah",
-  surahReference: "2:26",
+export const nyamukData: ObjectData = {
+  slug: "nyamuk",
+  name: { id: "Nyamuk", en: "Mosquito" },
   icon: "🦟",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Culicidae",
+  surahName: "Al-Baqarah",
+  surahReference: "2:26",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:26" }
+    { arab: "بَعُوضَةٌ", latin: "ba'uudatun", arti: "Nyamuk", artiEn: "Mosquito", contohAyat: "مَثَلًا مَا بَعُوضَةً (suatu perumpamaan seekor nyamuk)" }
   ],
   balita: {
-    text: {
-      id: "Ini Nyamuk Kebun! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Nyamuk Kebun! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Nyamuk Kebun. Allah menciptakan Nyamuk Kebun dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Nyamuk Kebun. Allah created Nyamuk Kebun beautifully so we all become grateful.",
-    },
+    text: { id: "Nguung... 🦟 Nyamuk itu kecil sekali dan suka menggigit. Kalau tidur, pakai selimut ya biar tidak digigit nyamuk!", en: "Bzzzz... 🦟 Mosquitoes are very small and love to bite. When sleeping, use a blanket so you don't get bitten!" },
+    audioTranscript: { id: "Ngiiiiing... Hai! Aku nyamuk. Badanku sangat kecil. Kamu harus rajin membersihkan air genangan agar teman-temanku tidak bersarang di sana!", en: "Bzzzzz... Hi! I am a mosquito. My body is very small. You must regularly clean stagnant water so my friends don't nest there!" },
     quiz: {
-      question: {
-        id: "Mana gambar Nyamuk Kebun?",
-        en: "Which one is the picture of Nyamuk Kebun?",
-      },
+      question: { id: "Di mana nyamuk biasanya suka bertelur?", en: "Where do mosquitoes usually like to lay their eggs?" },
       options: [
-        { text: { id: "🦟 Nyamuk Kebun", en: "🦟 Nyamuk Kebun" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Di atas kasur", en: "On a bed" } },
+        { text: { id: "Di air yang menggenang", en: "In stagnant water" } },
+        { text: { id: "Di daun kering", en: "On dry leaves" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Nyamuk Kebun: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Nyamuk Kebun: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Hanya nyamuk betina yang menggigit kita! Mereka butuh darah untuk memberi makan telur-telurnya. Sedangkan nyamuk jantan hanya makan sari bunga lho!", en: "Did you know? Only female mosquitoes bite us! They need blood to feed their eggs. Meanwhile, male mosquitoes only drink flower nectar!" },
     facts: [
-      { id: "Nyamuk Kebun memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Nyamuk Kebun memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Nyamuk Kebun bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Nyamuk Kebun bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Nyamuk Kebun dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Nyamuk Kebun dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Nyamuk bisa mendeteksi karbon dioksida dari napas kita dari jarak 50 meter! 🌬️", en: "Mosquitoes can detect carbon dioxide from our breath from 50 meters away! 🌬️" },
+      { id: "Sayap nyamuk mengepak hingga 1000 kali per detik! ⏱️", en: "Mosquito wings flap up to 1000 times per second! ⏱️" },
+      { id: "Ada hewan yang lebih kecil lagi yang hidup di atas tubuh nyamuk lho! 🔬", en: "There are even smaller animals living on top of a mosquito's body! 🔬" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Nyamuk Kebun dengan sempurna?",
-        en: "Who created Nyamuk Kebun perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Nyamuk Kebun mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Nyamuk Kebun reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Nyamuk Kebun: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Nyamuk Kebun dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Nyamuk Kebun: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Nyamuk Kebun dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Meskipun sangat kecil, struktur tubuh nyamuk sangat rumit dan canggih! Allah berfirman dalam Al-Baqarah bahwa Dia tidak malu membuat perumpamaan berupa nyamuk atau yang lebih kecil dari itu (kutu di atas nyamuk). Ilmu pengetahuan modern baru membuktikan bahwa memang ada mikroorganisme yang menumpang hidup di atas tubuh nyamuk!", en: "Although very small, a mosquito's body structure is highly complex and advanced! Allah states in Al-Baqarah that He is not ashamed to present an example of a mosquito or what is smaller than it (mites on the mosquito). Modern science has only recently proven that there are indeed microorganisms living on a mosquito's body!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "إِنَّ اللَّهَ لَا يَسْتَحْيِي أَنْ يَضْرِبَ مَثَلًا مَا بَعُوضَةً فَمَا فَوْقَهَا",
+      transliteration: "Innallaaha laa yastahyii an yadriba mathalan maa ba'uudatan famaa fawqahaa",
+      translation: { id: "Sesungguhnya Allah tidak segan membuat perumpamaan berupa nyamuk atau yang lebih rendah dari itu.", en: "Indeed, Allah is not timid to present an example - that of a mosquito or what is smaller than it." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Nyamuk Kebun?",
-          en: "What is the primary wisdom of scientific signs regarding Nyamuk Kebun?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const lavenderInggrisData: ObjectData = {
-  slug: "lavender-inggris",
-  name: {
-    id: "Lavender Inggris",
-    en: "Lavender Inggris",
-  },
-  scientificName: "Lavandula angustifolia",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
-  icon: "🌿",
+export const lavenderData: ObjectData = {
+  slug: "lavender",
+  name: { id: "Lavender", en: "Lavender" },
+  icon: "🪻",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Lavandula",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 110,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "خُزَامَى", latin: "khuzaamaa", arti: "Lavender", artiEn: "Lavender", contohAyat: "Bunga lavender yang wangi." }
   ],
   balita: {
-    text: {
-      id: "Ini Lavender Inggris! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Lavender Inggris! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Lavender Inggris. Allah menciptakan Lavender Inggris dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Lavender Inggris. Allah created Lavender Inggris beautifully so we all become grateful.",
-    },
+    text: { id: "Bunganya kecil-kecil berwarna ungu cantik! 🪻", en: "Its flowers are small and beautiful purple! 🪻" },
+    audioTranscript: { id: "Wah, cium deh! Wangi lavender ini sangat lembut. Nyamuk tidak suka lho wangi ini, jadi kita aman dari gigitan nyamuk!", en: "Wow, smell this! This lavender scent is very soft. Mosquitoes don't like this scent, so we are safe from mosquito bites!" },
     quiz: {
-      question: {
-        id: "Mana gambar Lavender Inggris?",
-        en: "Which one is the picture of Lavender Inggris?",
-      },
+      question: { id: "Hewan apa yang takut dan tidak suka wangi lavender?", en: "What animal is afraid and dislikes the smell of lavender?" },
       options: [
-        { text: { id: "🌿 Lavender Inggris", en: "🌿 Lavender Inggris" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Kupu-kupu", en: "Butterfly" } },
+        { text: { id: "Nyamuk nakal", en: "Naughty mosquito" } },
+        { text: { id: "Kelinci", en: "Rabbit" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Lavender Inggris: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Lavender Inggris: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Minyak dari bunga lavender sering dipakai untuk membuat sabun dan sampo! Wangi lavender juga punya kehebatan, bisa bikin otak kita merasa tenang dan tidur jadi nyenyak.", en: "Oil from lavender flowers is often used to make soap and shampoo! The smell of lavender also has a superpower, it can make our brain feel calm and sleep soundly." },
     facts: [
-      { id: "Tumbuhan Lavender Inggris melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Lavender Inggris melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Lavender Inggris bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Lavender Inggris bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Lavender Inggris adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Lavender Inggris adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Lebah sangat suka madu dari bunga lavender.", en: "Bees really love honey from lavender flowers." },
+      { id: "Lavender berasal dari daerah pegunungan di dekat laut.", en: "Lavender comes from mountainous areas near the sea." },
+      { id: "Kata 'lavender' berasal dari bahasa Latin 'lavare' yang artinya 'mencuci'.", en: "The word 'lavender' comes from the Latin 'lavare' which means 'to wash'." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Lavender Inggris dengan sempurna?",
-        en: "Who created Lavender Inggris perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Lavender Inggris mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Lavender Inggris reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Lavender Inggris: Struktur pembuluh kayu dan tapis pada Lavender Inggris mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Lavender Inggris: Struktur pembuluh kayu dan tapis pada Lavender Inggris mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Senyawa Linalool di dalam bunga lavender secara ajaib mengirim sinyal relaksasi ke sistem saraf penciuman manusia. Allah Maha Pencipta, yang tak sekadar merancang bunga ungu yang indah, tetapi menyelipkan fungsi obat alami untuk menenangkan saraf hambanya yang kelelahan.", en: "The Linalool compound in the lavender flower magically sends relaxation signals to the human olfactory nervous system. Allah the Creator, who didn't just design a beautiful purple flower, but slipped in a natural medicine function to calm the tired nerves of His servants." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "الَّذِي أَحْسَنَ كُلَّ شَيْءٍ خَلَقَهُ",
+      transliteration: "Alladhī aḥsana kulla shay'in khalaqah",
+      translation: { id: "Yang membuat segala sesuatu yang Dia ciptakan sebaik-baiknya.", en: "Who perfected everything which He created." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Lavender Inggris?",
-          en: "What is the primary wisdom of scientific signs regarding Lavender Inggris?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

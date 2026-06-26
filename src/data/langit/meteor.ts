@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const meteorJatuhData: ObjectData = {
-  slug: "meteor-jatuh",
-  name: {
-    id: "Meteor Jatuh",
-    en: "Meteor Jatuh",
-  },
-  scientificName: "Meteor",
-  surahName: "Al-Mulk",
-  surahReference: "67:5",
+export const meteorData: ObjectData = {
+  slug: "meteor",
+  name: { id: "Meteor", en: "Meteor" },
   icon: "🌠",
   category: "langit",
   type: "langit",
+  scientificName: "Meteoroid",
+  surahName: "Al-Mulk",
+  surahReference: "67:5",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Mulk 67:5" }
+    { arab: "شِهَاب", latin: "Shihab", arti: "Bintang Jatuh/Meteor", artiEn: "Shooting Star/Meteor", contohAyat: "Meteor yang menyala mengejar setan" }
   ],
   balita: {
-    text: {
-      id: "Ini Meteor Jatuh! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Meteor Jatuh! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Meteor Jatuh. Allah menciptakan Meteor Jatuh dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Meteor Jatuh. Allah created Meteor Jatuh beautifully so we all become grateful.",
-    },
+    text: { id: "Wah, ada bintang jatuh! 🌠 Eits, tapi itu bukan bintang sungguhan, itu batu angkasa yang terbakar saat masuk ke Bumi! Wussss!", en: "Wow, a shooting star! 🌠 Wait, but it's not a real star, it's a space rock burning up as it enters Earth! Whoosh!" },
+    audioTranscript: { id: "Lihat ke langit! Cahaya yang melesat cepat itu namanya meteor. Allah melindung Bumi dari batu angkasa dengan membakarnya sebelum sampai ke tanah.", en: "Look at the sky! That fast-moving light is called a meteor. Allah protects Earth from space rocks by burning them before they reach the ground." },
     quiz: {
-      question: {
-        id: "Mana gambar Meteor Jatuh?",
-        en: "Which one is the picture of Meteor Jatuh?",
-      },
+      question: { id: "Sebenarnya, bintang jatuh (meteor) itu terbuat dari apa?", en: "Actually, what is a shooting star (meteor) made of?" },
       options: [
-        { text: { id: "🌠 Meteor Jatuh", en: "🌠 Meteor Jatuh" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Cahaya senter", en: "Flashlight beam" } },
+        { text: { id: "Batu angkasa yang terbakar", en: "Burning space rock" } },
+        { text: { id: "Lampu terbang", en: "Flying lamp" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Meteor Jatuh: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Meteor Jatuh: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Meteor asalnya dari batu angkasa (meteoroid) yang nyasar ke Bumi. Saat menabrak udara Bumi dengan sangat cepat, batu itu jadi super panas dan menyala terang!", en: "Meteors come from space rocks (meteoroids) that stray to Earth. When they hit Earth's air super fast, the rocks get super hot and glow brightly!" },
     facts: [
-      { id: "Objek luar angkasa Meteor Jatuh bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Meteor Jatuh bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Meteor Jatuh melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Meteor Jatuh melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Meteor Jatuh membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Meteor Jatuh membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Setiap hari ada jutaan meteor yang jatuh ke Bumi, tapi hampir semuanya hangus terbakar di udara! 🛡️", en: "Every day millions of meteors fall to Earth, but almost all of them burn up entirely in the air! 🛡️" },
+      { id: "Kadang kita bisa melihat Hujan Meteor, di mana ada banyak sekali bintang jatuh dalam satu malam!", en: "Sometimes we can see a Meteor Shower, where there are lots of shooting stars in one night!" },
+      { id: "Kalau batunya tidak habis terbakar dan menabrak tanah, batu itu disebut Meteorit.", en: "If the rock doesn't burn up completely and hits the ground, it's called a Meteorite." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Meteor Jatuh dengan sempurna?",
-        en: "Who created Meteor Jatuh perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Meteor Jatuh mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Meteor Jatuh reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Meteor Jatuh: Hukum gravitasi universal mengikat Meteor Jatuh agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Meteor Jatuh: Hukum gravitasi universal mengikat Meteor Jatuh agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Kecepatan meteor masuk ke Bumi bisa mencapai 250.000 km/jam! HAH?! Gesekan dengan atmosfer menciptaan panas hingga 1600°C yang menghancurkan batu tersebut menjadi debu. Inilah tameng tak terlihat pelindung Bumi! 1400 tahun lalu, Al-Qur'an menceritakan bahwa langit dihiasi lampu-lampu (bintang) dan panah api (meteor) sebagai penjagaan.", en: "Meteors hit Earth at speeds up to 250,000 km/h! HAH?! Friction with the atmosphere creates heat up to 1600°C, crushing the rock into dust. This is Earth's invisible shield! 1400 years ago, the Quran told that the sky is adorned with lamps (stars) and flaming arrows (meteors) as a guard." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِلشَّيَاطِينِ",
+      transliteration: "Wa laqad zayyannas-samā'ad-dunyā bimaṣābīḥa wa ja'alnāhā rujūmal-lish-shayāṭīn",
+      translation: { id: "Dan sesungguhnya Kami telah menghiasi langit yang dekat dengan bintang-bintang, dan Kami jadikan bintang-bintang itu alat-alat pelempar syaitan.", en: "And We have certainly beautified the nearest heaven with stars and have made [from] them what is thrown at the devils." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Meteor Jatuh?",
-          en: "What is the primary wisdom of scientific signs regarding Meteor Jatuh?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

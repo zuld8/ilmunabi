@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const delimaMerahData: ObjectData = {
-  slug: "delima-merah",
-  name: {
-    id: "Delima Merah",
-    en: "Delima Merah",
-  },
-  scientificName: "Punica granatum",
-  surahName: "Al-An'am",
-  surahReference: "6:99",
+export const delimaData: ObjectData = {
+  slug: "delima",
+  name: { id: "Buah Delima", en: "Pomegranate" },
   icon: "🍎",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Punica granatum",
+  surahName: "Ar-Rahman",
+  surahReference: "55:68",
+  unlockedAtPoints: 70,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-An'am 6:99" }
+    { arab: "رُمَّانٌ", latin: "rummaanun", arti: "Delima", artiEn: "Pomegranate", contohAyat: "Delima buah dari surga." }
   ],
   balita: {
-    text: {
-      id: "Ini Delima Merah! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Delima Merah! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Delima Merah. Allah menciptakan Delima Merah dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Delima Merah. Allah created Delima Merah beautifully so we all become grateful.",
-    },
+    text: { id: "Buah delima merah merona! Di dalamnya ada banyak biji kecil seperti permata. 💎", en: "Red pomegranates! Inside there are many small seeds like gems. 💎" },
+    audioTranscript: { id: "Wah, kalau kita buka buah delima, wow! Ada biji-biji kecil berwarna merah yang rasanya manis dan segar. Nyam!", en: "Wow, if we open a pomegranate, wow! There are little red seeds that taste sweet and fresh. Yum!" },
     quiz: {
-      question: {
-        id: "Mana gambar Delima Merah?",
-        en: "Which one is the picture of Delima Merah?",
-      },
+      question: { id: "Seperti apa isi di dalam buah delima?", en: "What does the inside of a pomegranate look like?" },
       options: [
-        { text: { id: "🍎 Delima Merah", en: "🍎 Delima Merah" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Satu biji yang sangat besar", en: "One very large seed" } },
+        { text: { id: "Kosong tidak ada isi", en: "Empty, nothing inside" } },
+        { text: { id: "Biji-biji kecil merah yang banyak", en: "Many small red seeds" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Delima Merah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Delima Merah: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Buah delima itu super sehat! Bijinya yang warna merah mengandung banyak antioksidan yang bertugas melawan kuman dan penyakit di tubuh kita. Kayak pasukan pahlawan super!", en: "Pomegranates are super healthy! The red seeds contain a lot of antioxidants that act to fight germs and diseases in our body. Like an army of superheroes!" },
     facts: [
-      { id: "Tumbuhan Delima Merah melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Delima Merah melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Delima Merah bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Delima Merah bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Delima Merah adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Delima Merah adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Satu buah delima bisa berisi hingga lebih dari 600 biji kecil (aril)!", en: "One pomegranate can contain up to more than 600 small seeds (arils)!" },
+      { id: "Pohon delima bisa hidup dan berbuah sampai berumur lebih dari 200 tahun.", en: "Pomegranate trees can live and bear fruit up to more than 200 years old." },
+      { id: "Kulit buah delima sangat keras dan tebal untuk melindungi biji di dalamnya.", en: "The skin of a pomegranate is very hard and thick to protect the seeds inside." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Delima Merah dengan sempurna?",
-        en: "Who created Delima Merah perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Delima Merah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Delima Merah reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Delima Merah: Struktur pembuluh kayu dan tapis pada Delima Merah mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Delima Merah: Struktur pembuluh kayu dan tapis pada Delima Merah mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Tahukah kamu? Allah secara khusus menyebutkan buah delima (rumman) di dalam Al-Qur'an sebagai salah satu buah yang ada di Surga kelak! Buah dengan ratusan biji bersusun rapi, penuh air dan gizi ini menjadi tanda kebesaran Allah bagi orang yang mau berpikir.", en: "Did you know? Allah specifically mentions the pomegranate (rumman) in the Quran as one of the fruits that will be in Paradise! This fruit with hundreds of neatly arranged seeds, full of water and nutrition, is a sign of Allah's greatness for people who think." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "فِيهِمَا فَاكِهَةٌ وَنَخْلٌ وَرُمَّانٌ",
+      transliteration: "Fīhimā fākihatun wa nakhlun wa rummān",
+      translation: { id: "Di dalam keduanya (surga itu) ada buah-buahan dan kurma serta delima.", en: "In both of them are fruit and palm trees and pomegranates." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Delima Merah?",
-          en: "What is the primary wisdom of scientific signs regarding Delima Merah?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

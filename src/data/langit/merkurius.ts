@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const merkuriusTerdekatData: ObjectData = {
-  slug: "merkurius-terdekat",
-  name: {
-    id: "Merkurius Terdekat",
-    en: "Merkurius Terdekat",
-  },
-  scientificName: "Mercury",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
-  icon: "🪐",
+export const merkuriusData: ObjectData = {
+  slug: "merkurius",
+  name: { id: "Merkurius", en: "Mercury" },
+  icon: "⚪",
   category: "langit",
   type: "langit",
+  scientificName: "Mercury",
+  surahName: "An-Naba",
+  surahReference: "78:12-13",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "سِرَاج", latin: "Siraj", arti: "Pelita (Matahari)", artiEn: "Lamp (Sun)", contohAyat: "Matahari memanaskan Merkurius" }
   ],
   balita: {
-    text: {
-      id: "Ini Merkurius Terdekat! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Merkurius Terdekat! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Merkurius Terdekat. Allah menciptakan Merkurius Terdekat dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Merkurius Terdekat. Allah created Merkurius Terdekat beautifully so we all become grateful.",
-    },
+    text: { id: "Wuzzz! Ini Merkurius, si planet super cepat dan paling dekat dengan matahari! Sangaaat panas kalau siang! ☀️🏃", en: "Zoom! This is Mercury, the super fast planet and the closest to the sun! Veeeery hot during the day! ☀️🏃" },
+    audioTranscript: { id: "Ini planet terkecil di tata surya kita, namanya Merkurius. Dia paling dekat dengan Matahari lho, makanya dia berlari mengelilingi matahari paling cepat dibanding teman-temannya.", en: "This is the smallest planet in our solar system, called Mercury. It's the closest to the Sun, that's why it runs around the sun faster than its friends." },
     quiz: {
-      question: {
-        id: "Mana gambar Merkurius Terdekat?",
-        en: "Which one is the picture of Merkurius Terdekat?",
-      },
+      question: { id: "Kenapa siang hari di Merkurius sangat panas?", en: "Why is daytime on Mercury so hot?" },
       options: [
-        { text: { id: "🪐 Merkurius Terdekat", en: "🪐 Merkurius Terdekat" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Karena dekat dengan kulkas", en: "Because it's close to the fridge" } },
+        { text: { id: "Karena dia paling dekat dengan Matahari", en: "Because it's closest to the Sun" } },
+        { text: { id: "Karena ada kompor meledak", en: "Because a stove exploded" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Merkurius Terdekat: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Merkurius Terdekat: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Meskipun jadi planet paling dekat dengan Matahari, malam hari di Merkurius itu sangat-sangat membeku! Kok bisa? Karena Merkurius tidak punya selimut udara (atmosfer) untuk menyimpan panas.", en: "Even though it's the closest planet to the Sun, nights on Mercury are freezing cold! How come? Because Mercury doesn't have an air blanket (atmosphere) to keep the heat in." },
     facts: [
-      { id: "Objek luar angkasa Merkurius Terdekat bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Merkurius Terdekat bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Merkurius Terdekat melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Merkurius Terdekat melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Merkurius Terdekat membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Merkurius Terdekat membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Satu tahun di Merkurius itu sangat sebentar, hanya 88 hari! Cepat sekali karena jarak orbitnya pendek.", en: "A year on Mercury is very short, only 88 days! So fast because its orbit is short." },
+      { id: "Permukaan Merkurius penuh dengan kawah bolong-bolong seperti permukaan Bulan karena sering ditabrak meteor. ☄️", en: "Mercury's surface is full of crater holes like the Moon's surface because it's often hit by meteors. ☄️" },
+      { id: "Merkurius tidak punya bulan satupun untuk menemaninya.", en: "Mercury has zero moons to keep it company." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Merkurius Terdekat dengan sempurna?",
-        en: "Who created Merkurius Terdekat perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Merkurius Terdekat mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Merkurius Terdekat reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Merkurius Terdekat: Hukum gravitasi universal mengikat Merkurius Terdekat agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Merkurius Terdekat: Hukum gravitasi universal mengikat Merkurius Terdekat agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Perbedaan suhu di Merkurius adalah yang paling ekstrem di tata surya! HAH?! Siang hari suhunya mencapai 430°C (bisa melelehkan timah) tapi malamnya anjlok ke -180°C! Bayangkan kalau Bumi begitu? 1400 tahun lalu, Al-Qur'an menjelaskan penciptaan langit yang kokoh dan matahari sebagai pelita yang amat terang dan panas.", en: "Temperature swings on Mercury are the most extreme in the solar system! HAH?! Daytime temps reach 430°C (can melt lead) but at night plunge to -180°C! Imagine if Earth were like that? 1400 years ago, the Quran described the creation of a strong sky and the sun as a blazing, hot lamp." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا ﴿١٢﴾ وَجَعَلْنَا سِرَاجًا وَهَّاجًا ﴿١٣﴾",
+      transliteration: "Wa banaynā fawqakum sab'an shidādā (12). Wa ja'alnā sirājaw wahhājā (13).",
+      translation: { id: "Dan Kami bangun di atas kamu tujuh buah (langit) yang kokoh. Dan Kami jadikan pelita yang amat terang (matahari).", en: "And We have built above you seven strong (heavens). And made [therein] a burning lamp." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Merkurius Terdekat?",
-          en: "What is the primary wisdom of scientific signs regarding Merkurius Terdekat?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

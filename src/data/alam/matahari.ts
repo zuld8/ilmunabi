@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const matahariPagiData: ObjectData = {
-  slug: "matahari-pagi",
-  name: {
-    id: "Matahari Pagi",
-    en: "Matahari Pagi",
-  },
-  scientificName: "Sun",
-  surahName: "Asy-Syams",
-  surahReference: "91:1-2",
+export const matahariData: ObjectData = {
+  slug: "matahari",
+  name: { id: "Matahari", en: "Sun" },
   icon: "☀️",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 50,
+  scientificName: "Sol",
+  surahName: "Nuh",
+  surahReference: "71:16",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Asy-Syams 91:1-2" }
+    { arab: "شَمْس", latin: "Syams", arti: "Matahari", artiEn: "Sun", contohAyat: "وَالشَّمْسِ وَضُحَاهَا" }
   ],
   balita: {
-    text: {
-      id: "Ini Matahari Pagi! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Matahari Pagi! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Matahari Pagi. Allah menciptakan Matahari Pagi dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Matahari Pagi. Allah created Matahari Pagi beautifully so we all become grateful.",
-    },
+    text: { id: "Selamat pagi matahari yang hangat! Sinarmu terang sekali. 🌻", en: "Good morning warm sun! Your light is so bright. 🌻" },
+    audioTranscript: { id: "Matahari bangun di pagi hari untuk memberikan cahaya biar kita bisa main, dan tidur di sore hari supaya kita istirahat.", en: "The sun wakes up in the morning to give light so we can play, and sleeps in the evening so we can rest." },
     quiz: {
-      question: {
-        id: "Mana gambar Matahari Pagi?",
-        en: "Which one is the picture of Matahari Pagi?",
-      },
+      question: { id: "Matahari terbit di waktu apa?", en: "What time does the sun rise?" },
       options: [
-        { text: { id: "☀️ Matahari Pagi", en: "☀️ Matahari Pagi" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Malam hari", en: "Night time" } },
+        { text: { id: "Pagi hari", en: "Morning time" } },
+        { text: { id: "Sore hari", en: "Evening time" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Matahari Pagi: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Matahari Pagi: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Matahari adalah bintang yang paling dekat dengan Bumi. Jauuuuuh sekali jaraknya, tapi panasnya sampai ke sini! Tanpa matahari, bumi akan membeku dan gelap gulita. Allah menciptakan matahari bagaikan lampu raksasa.", en: "The sun is the closest star to Earth. It's veeeery far away, but its heat reaches here! Without the sun, the earth would freeze and be pitch black. Allah created the sun like a giant lamp." },
     facts: [
-      { id: "Matahari Pagi merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Matahari Pagi merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
-      { id: "Keteraturan siklus Matahari Pagi memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Matahari Pagi memungkinkan kehidupan biologis manusia berjalan dengan aman." },
-      { id: "Interaksi fisik Matahari Pagi dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Matahari Pagi dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
+      { id: "Satu juta planet Bumi bisa muat di dalam Matahari! Wah!", en: "One million Earths can fit inside the Sun! Wow!" },
+      { id: "Cahaya matahari butuh waktu 8 menit untuk sampai ke Bumi.", en: "Sunlight takes 8 minutes to reach Earth." },
+      { id: "Matahari tidak terbuat dari api, melainkan gas hidrogen dan helium yang sangat panas.", en: "The sun is not made of fire, but super hot hydrogen and helium gases." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Matahari Pagi dengan sempurna?",
-        en: "Who created Matahari Pagi perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Matahari Pagi mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Matahari Pagi reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Matahari Pagi: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Matahari Pagi agar tidak terjadi benturan atau kehancuran kosmis.",
-      en: "Keajaiban penciptaan Matahari Pagi: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Matahari Pagi agar tidak terjadi benturan atau kehancuran kosmis.",
-    },
+    text: { id: "Matahari adalah reaktor fusi nuklir alami raksasa yang membakar 600 juta ton hidrogen per detik. Al-Qur'an secara menakjubkan mendeskripsikan matahari sebagai 'siraaj' (pelita yang menyala panas), membedakannya dengan bulan yang hanya memantulkan cahaya. Akurasi ilmiah yang luar biasa!", en: "The sun is a giant natural nuclear fusion reactor that burns 600 million tons of hydrogen per second. The Quran amazingly describes the sun as a 'siraaj' (a burning, blazing lamp), distinguishing it from the moon which only reflects light. Extraordinary scientific accuracy!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَجَعَلَ الْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا",
+      transliteration: "Wa ja'alal-qamara fiihinna nuuran wa ja'alasy-syamsa siraajaa",
+      translation: { id: "Dan Allah menciptakan padanya bulan sebagai cahaya dan menjadikan matahari sebagai pelita (yang cemerlang)?", en: "And made the moon therein a [reflected] light and made the sun a burning lamp?" }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Matahari Pagi?",
-          en: "What is the primary wisdom of scientific signs regarding Matahari Pagi?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

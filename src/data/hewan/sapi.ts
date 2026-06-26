@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const sapiPerahData: ObjectData = {
-  slug: "sapi-perah",
-  name: {
-    id: "Sapi Perah",
-    en: "Sapi Perah",
-  },
-  scientificName: "Bos taurus",
-  surahName: "Al-Baqarah",
-  surahReference: "2:67",
+export const sapiData: ObjectData = {
+  slug: "sapi",
+  name: { id: "Sapi", en: "Cow" },
   icon: "🐄",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Bos taurus",
+  surahName: "Al-Baqarah",
+  surahReference: "2:67",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Baqarah 2:67" }
+    { arab: "بَقَرَةٌ", latin: "baqaratun", arti: "Sapi", artiEn: "Cow", contohAyat: "إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تَذْبَحُوا بَقَرَةً (Sesungguhnya Allah menyuruhmu menyembelih seekor sapi)" }
   ],
   balita: {
-    text: {
-      id: "Ini Sapi Perah! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Sapi Perah! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Sapi Perah. Allah menciptakan Sapi Perah dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Sapi Perah. Allah created Sapi Perah beautifully so we all become grateful.",
-    },
+    text: { id: "Mooooo! 🐄 Sapi itu hewan yang besar dan menghasilkan susu yang bergizi untuk kita minum. Nyam!", en: "Mooooo! 🐄 Cows are large animals that produce nutritious milk for us to drink. Yum!" },
+    audioTranscript: { id: "Halo kawan! Aku sapi betina. Badanku besar dan belang-belang. Aku suka makan rumput segar supaya susuku sehat!", en: "Hello friend! I am a cow. My body is big and spotted. I like eating fresh grass so my milk is healthy!" },
     quiz: {
-      question: {
-        id: "Mana gambar Sapi Perah?",
-        en: "Which one is the picture of Sapi Perah?",
-      },
+      question: { id: "Minuman apa yang dihasilkan sapi untuk kita?", en: "What drink do cows produce for us?" },
       options: [
-        { text: { id: "🐄 Sapi Perah", en: "🐄 Sapi Perah" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Jus jeruk", en: "Orange juice" } },
+        { text: { id: "Susu", en: "Milk" } },
+        { text: { id: "Kopi", en: "Coffee" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Sapi Perah: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Sapi Perah: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Sapi punya perut yang terbagi menjadi empat ruangan! Mereka mengunyah rumput, menelannya, lalu mengeluarkannya lagi untuk dikunyah kedua kalinya. Wah, rajin mengunyah ya!", en: "Did you know? Cows have a stomach divided into four compartments! They chew grass, swallow it, and then bring it back up to chew it a second time. Wow, they really love chewing!" },
     facts: [
-      { id: "Sapi Perah memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Sapi Perah memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Sapi Perah bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Sapi Perah bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Sapi Perah dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Sapi Perah dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Sapi bisa memproduksi lebih dari 25 liter susu setiap hari! 🥛", en: "Cows can produce more than 25 liters of milk every day! 🥛" },
+      { id: "Sapi punya penciuman tajam, bisa mencium aroma dari jarak 8 kilometer! 👃", en: "Cows have a sharp sense of smell, they can smell scents from 8 kilometers away! 👃" },
+      { id: "Sapi minum air setara dengan ukuran sebuah bak mandi (bathtub) setiap harinya! 🛁", en: "Cows drink water equivalent to the size of a bathtub every day! 🛁" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Sapi Perah dengan sempurna?",
-        en: "Who created Sapi Perah perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Sapi Perah mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Sapi Perah reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Sapi Perah: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Sapi Perah dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Sapi Perah: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Sapi Perah dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Sapi adalah salah satu hewan ternak yang sangat diberkahi oleh Allah. Bahkan, surah terpanjang di dalam Al-Qur'an dinamakan 'Al-Baqarah' yang berarti Sapi Betina. Kisahnya bermula dari Bani Israil yang diperintahkan Allah untuk menyembelih seekor sapi berwana kuning cerah untuk mengungkap sebuah misteri!", en: "Cows are one of the livestock highly blessed by Allah. In fact, the longest surah in the Qur'an is named 'Al-Baqarah', which means The Cow. The story begins with the Children of Israel who were commanded by Allah to slaughter a bright yellow cow to solve a mystery!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "قَالُوا ادْعُ لَنَا رَبَّكَ يُبَيِّنْ لَنَا مَا لَوْنُهَا ۚ قَالَ إِنَّهُ يَقُولُ إِنَّهَا بَقَرَةٌ صَفْرَاءُ فَاقِعٌ لَوْنُهَا تَسُرُّ النَّاظِرِينَ",
+      transliteration: "Qaaluud'u lanaa rabbaka yubayyil-lanaa maa lawnuhaa, qaala innahu yaquulu innahaa baqaratun safraa'u faaqi'un lawnuhaa tasurrun-naaziriin",
+      translation: { id: "Mereka berkata, 'Mohonkanlah kepada Tuhanmu untuk kami agar Dia menerangkan kepada kami apa warnanya'. (Musa) menjawab, 'Allah berfirman bahwa sapi itu adalah sapi betina yang kuning tua warnanya, lagi menyennagkan hati orang-orang yang memandangnya'.", en: "They said, 'Call upon your Lord to make clear to us its color.' He said, 'He says, it is a yellow cow, bright in color - pleasing to the observers.'" }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Sapi Perah?",
-          en: "What is the primary wisdom of scientific signs regarding Sapi Perah?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

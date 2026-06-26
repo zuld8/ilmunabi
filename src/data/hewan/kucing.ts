@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const kucingAngoraData: ObjectData = {
-  slug: "kucing-angora",
-  name: {
-    id: "Kucing Angora",
-    en: "Kucing Angora",
-  },
-  scientificName: "Felis catus",
-  surahName: "Hadist",
-  surahReference: "HR Bukhari",
-  icon: "🐱",
+export const kucingData: ObjectData = {
+  slug: "kucing",
+  name: { id: "Kucing", en: "Cat" },
+  icon: "🐈",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Felis catus",
+  surahName: "Hadits Riwayat Bukhari",
+  surahReference: "Kisah Kucing",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Hadist HR Bukhari" }
+    { arab: "قِطَّةٌ", latin: "qittatun", arti: "Kucing", artiEn: "Cat", contohAyat: "Kucing adalah hewan kesayangan." }
   ],
   balita: {
-    text: {
-      id: "Ini Kucing Angora! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Kucing Angora! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Kucing Angora. Allah menciptakan Kucing Angora dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Kucing Angora. Allah created Kucing Angora beautifully so we all become grateful.",
-    },
+    text: { id: "Meoong! 🐈 Kucing punya bulu yang lembut dan suka bermanja-manja. Lucu ya!", en: "Meow! 🐈 Cats have soft fur and love to cuddle. So cute!" },
+    audioTranscript: { id: "Halo, aku kucing. Aku suka dielus-elus dan tidur di tempat yang hangat. Purrr...", en: "Hello, I am a cat. I love being pet and sleeping in warm places. Purrr..." },
     quiz: {
-      question: {
-        id: "Mana gambar Kucing Angora?",
-        en: "Which one is the picture of Kucing Angora?",
-      },
+      question: { id: "Suara apa yang kucing keluarkan saat dia merasa senang?", en: "What sound does a cat make when it feels happy?" },
       options: [
-        { text: { id: "🐱 Kucing Angora", en: "🐱 Kucing Angora" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Guk guk", en: "Woof woof" } },
+        { text: { id: "Purrr (mendengkur)", en: "Purrr" } },
+        { text: { id: "Moo", en: "Moo" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Kucing Angora: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Kucing Angora: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Kucing selalu jatuh dengan kakinya karena refleks khususnya lho! Mereka juga sangat bersih dan punya lidah seperti sikat untuk menyisir bulu. Masya Allah!", en: "Cats always land on their feet because of their special reflex! They are also very clean and have a brush-like tongue to comb their fur. Mashallah!" },
     facts: [
-      { id: "Kucing Angora memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Kucing Angora memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Kucing Angora bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Kucing Angora bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Kucing Angora dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Kucing Angora dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Kucing menghabiskan 70% dari hidupnya hanya untuk tidur! 💤", en: "Cats spend 70% of their lives just sleeping! 💤" },
+      { id: "Hidung kucing memiliki pola unik seperti sidik jari manusia, tidak ada yang sama! 👃", en: "A cat's nose has a unique pattern like a human fingerprint, no two are the same! 👃" },
+      { id: "Kumis kucing berfungsi seperti antena untuk mengukur jarak benda di malam hari! 📡", en: "Cat whiskers act like antennas to measure the distance of objects at night! 📡" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Kucing Angora dengan sempurna?",
-        en: "Who created Kucing Angora perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Kucing Angora mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Kucing Angora reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Kucing Angora: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kucing Angora dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Kucing Angora: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kucing Angora dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Dalam Islam, kucing adalah hewan yang sangat istimewa dan suci (tidak najis). Sahabat Nabi yang paling banyak meriwayatkan hadits bernama 'Abu Hurairah', yang artinya 'Bapaknya Kucing Kecil', karena beliau sangat menyayangi kucing. Rasulullah SAW mengajarkan kita untuk menyayangi semua hewan dan tidak boleh menyiksanya.", en: "In Islam, cats are very special and pure animals (not ritually impure). The Prophet's companion who narrated the most hadiths was named 'Abu Hurairah', which means 'Father of the Little Cat', because he loved cats so much. Prophet Muhammad SAW taught us to love all animals and never torture them." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "إِنَّهَا لَيْسَتْ بِنَجَسٍ إِنَّهَا مِنَ الطَّوَّافِينَ عَلَيْكُمْ وَالطَّوَّافَاتِ",
+      transliteration: "Innaha laisat binajasin innaha minat tawwafeena 'alaikum wat tawwaafaat",
+      translation: { id: "Kucing itu tidak najis. Ia adalah termasuk hewan yang selalu berkeliaran di sekelilingmu (HR. Abu Dawud).", en: "Cats are not impure. They are among the animals that roam around you (Sunan Abi Dawud)." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Kucing Angora?",
-          en: "What is the primary wisdom of scientific signs regarding Kucing Angora?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

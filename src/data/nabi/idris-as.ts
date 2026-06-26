@@ -4,24 +4,36 @@ import { NabiData } from "../objects";
 export const idrisAsData: NabiData = {
   slug: "idris-as",
   name: { id: "Nabi Idris AS", en: "Prophet Idris AS" },
-  icon: "📚",
+  icon: "✍️",
   category: "nabi",
   type: "nabi",
   unlockedAtPoints: 100,
   surahReference: "Maryam:56-57",
-  storyShort: { id: "Nabi yang rajin belajar dan manusia pertama yang pandai menulis.", en: "The diligent prophet who was the first human to write." },
-  storyFull: { id: "Nabi Idris AS adalah manusia pertama yang pandai membaca, menulis dengan pena, dan menjahit pakaian. Sebelum beliau, manusia menggunakan kulit hewan sebagai pakaian. Beliau sangat rajin belajar dan beribadah kepada Allah. Karena ketekunan dan kesalehannya, Allah mengangkat beliau ke tempat yang tinggi (langit).", en: "Prophet Idris AS was the first human to master reading, writing with a pen, and sewing clothes. Before him, people used animal skins as clothes. He was very diligent in studying and worshipping Allah. Because of his perseverance and piety, Allah raised him to a high place (heaven)." },
+  storyShort: {
+    id: "Nabi yang pertama kali bisa menulis dengan pena dan menjahit pakaian.",
+    en: "The first prophet who could write with a pen and sew clothes."
+  },
+  storyFull: {
+    id: "Nabi Idris AS adalah manusia pertama yang dianugerahi kepandaian luar biasa oleh Allah. Beliau adalah orang pertama yang pandai membaca, menulis dengan pena, berhitung, menjahit baju, hingga ilmu perbintangan (astronomi). Selain cerdas, beliau juga sangat rajin beribadah dan sabar berdakwah.",
+    en: "Prophet Idris AS was the first human endowed with extraordinary intelligence by Allah. He was the first person skilled in reading, writing with a pen, calculating, sewing clothes, and even astronomy. Besides being smart, he was also very diligent in worship and patient in preaching."
+  },
   miracles: [
-    { id: "Mampu menulis dengan pena pertama kali", en: "The first to write with a pen" },
-    { id: "Manusia pertama yang pandai menjahit pakaian", en: "The first human to sew clothes" }
+    { id: "Manusia pertama yang menulis dengan pena.", en: "The first human to write with a pen." },
+    { id: "Diberi ilmu astronomi (perbintangan) dan matematika.", en: "Given the knowledge of astronomy and mathematics." }
   ],
   characterTraits: [
-    { trait: { id: "Rajin Belajar", en: "Diligent in studying" }, desc: { id: "Suka membaca dan menuntut ilmu", en: "Likes to read and seek knowledge" } },
-    { trait: { id: "Kreatif", en: "Creative" }, desc: { id: "Mampu membuat pakaian dari kain", en: "Able to make clothes from fabric" } }
+    { trait: { id: "Cerdas", en: "Intelligent" }, desc: { id: "Gemar belajar banyak ilmu pengetahuan", en: "Loves to learn many sciences" } },
+    { trait: { id: "Sabar", en: "Patient" }, desc: { id: "Tidak mudah menyerah saat mengajar", en: "Does not easily give up when teaching" } },
+    { trait: { id: "Rajin Beribadah", en: "Diligent in Worship" }, desc: { id: "Selalu mengingat Allah di setiap waktu", en: "Always remembers Allah at all times" } }
   ],
   timeline: [
-    { yearOrAge: "Muda", title: { id: "Menemukan alat tulis", en: "Invented writing tools" }, desc: { id: "Mengajarkan cara menulis dan membaca", en: "Taught how to read and write" } },
-    { yearOrAge: "Dewasa", title: { id: "Menjahit Pakaian", en: "Sewing Clothes" }, desc: { id: "Membuat pakaian yang lebih nyaman dipakai", en: "Made more comfortable clothes" } }
+    { yearOrAge: "Masa Muda", title: { id: "Belajar Menulis", en: "Learning to Write" }, desc: { id: "Mulai menggunakan pena", en: "Started using a pen" } },
+    { yearOrAge: "Dewasa", title: { id: "Menjahit Pakaian", en: "Sewing Clothes" }, desc: { id: "Membuat pakaian untuk manusia", en: "Making clothes for humans" } },
+    { yearOrAge: "Tua", title: { id: "Berdakwah", en: "Preaching" }, desc: { id: "Mengajarkan tauhid", en: "Teaching monotheism" } }
   ],
-  dailyLifeConnection: { id: "Mari kita rajin membaca buku dan berkreasi, karena ilmu pengetahuan adalah kunci kesuksesan!", en: "Let's read books diligently and be creative, because knowledge is the key to success!" }
+  dailyLifeConnection: {
+    id: "Rajinlah belajar menulis dan membaca seperti Nabi Idris AS! Ilmu yang kita pelajari akan sangat bermanfaat.",
+    en: "Be diligent in learning to write and read like Prophet Idris AS! The knowledge we learn will be very useful."
+  }
 };
+

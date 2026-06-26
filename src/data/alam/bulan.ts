@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const bulanSabitData: ObjectData = {
-  slug: "bulan-sabit",
-  name: {
-    id: "Bulan Sabit",
-    en: "Bulan Sabit",
-  },
-  scientificName: "Moon",
-  surahName: "Al-Qamar",
-  surahReference: "54:1",
+export const bulanData: ObjectData = {
+  slug: "bulan",
+  name: { id: "Bulan", en: "Moon" },
   icon: "🌙",
   category: "alam",
   type: "alam",
-  unlockedAtPoints: 50,
+  scientificName: "Luna",
+  surahName: "Al-Qamar",
+  surahReference: "54:1",
+  unlockedAtPoints: 20,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qamar 54:1" }
+    { arab: "قَمَر", latin: "Qamar", arti: "Bulan", artiEn: "Moon", contohAyat: "اقْتَرَبَتِ السَّاعَةُ وَانْشَقَّ الْقَمَرُ" }
   ],
   balita: {
-    text: {
-      id: "Ini Bulan Sabit! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Bulan Sabit! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Bulan Sabit. Allah menciptakan Bulan Sabit dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Bulan Sabit. Allah created Bulan Sabit beautifully so we all become grateful.",
-    },
+    text: { id: "Halo bulan purnama yang cantik! Bentukmu bulat dan terang! 🌝", en: "Hello beautiful full moon! Your shape is round and bright! 🌝" },
+    audioTranscript: { id: "Bulan kadang bentuknya bulat penuh, tapi kadang seperti pisang sabit. Bulan selalu menemani kita tidur.", en: "Sometimes the moon is completely round, but sometimes it looks like a crescent banana. The moon always accompanies us to sleep." },
     quiz: {
-      question: {
-        id: "Mana gambar Bulan Sabit?",
-        en: "Which one is the picture of Bulan Sabit?",
-      },
+      question: { id: "Bulan yang bentuknya seperti pisang disebut apa?", en: "What is the moon that looks like a banana called?" },
       options: [
-        { text: { id: "🌙 Bulan Sabit", en: "🌙 Bulan Sabit" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Bulan Purnama", en: "Full Moon" } },
+        { text: { id: "Bulan Sabit", en: "Crescent Moon" } },
+        { text: { id: "Bulan Bintang", en: "Star Moon" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Bulan Sabit: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Bulan Sabit: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Bulan tidak punya cahayanya sendiri loh! Cahaya bulan yang kita lihat itu pantulan dari sinar matahari, seperti cermin raksasa. Allah menjadikan bulan sebagai penunjuk kalender Hijriyah bagi umat Islam.", en: "The moon doesn't have its own light! The moonlight we see is a reflection of sunlight, like a giant mirror. Allah made the moon as a guide for the Hijri calendar for Muslims." },
     facts: [
-      { id: "Bulan Sabit merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi.", en: "Bulan Sabit merupakan bagian dari sunnatullah (hukum alam) yang menjaga kestabilan energi di bumi." },
-      { id: "Keteraturan siklus Bulan Sabit memungkinkan kehidupan biologis manusia berjalan dengan aman.", en: "Keteraturan siklus Bulan Sabit memungkinkan kehidupan biologis manusia berjalan dengan aman." },
-      { id: "Interaksi fisik Bulan Sabit dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga.", en: "Interaksi fisik Bulan Sabit dengan unsur bumi lainnya menciptakan keindahan alam yang tak terhingga." }
+      { id: "Satu hari di bulan sama dengan 29.5 hari di Bumi!", en: "One day on the moon is equal to 29.5 days on Earth!" },
+      { id: "Jejak kaki astronot di bulan tidak akan pernah hilang karena tidak ada angin di sana.", en: "Astronauts' footprints on the moon will never disappear because there is no wind there." },
+      { id: "Gravitasi bulan yang menarik air laut membuat terjadinya pasang surut laut di Bumi.", en: "The moon's gravity that pulls seawater causes ocean tides on Earth." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Bulan Sabit dengan sempurna?",
-        en: "Who created Bulan Sabit perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Bulan Sabit mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Bulan Sabit reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Sistem Fisika", en: "Sistem Fisika" }, desc: { id: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil.", en: "Bekerja di bawah hukum mekanika alam yang presisi dan stabil." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Bulan Sabit: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Bulan Sabit agar tidak terjadi benturan atau kehancuran kosmis.",
-      en: "Keajaiban penciptaan Bulan Sabit: Allah SWT menyeimbangkan gaya gravitasi, suhu, dan rotasi bumi dengan Bulan Sabit agar tidak terjadi benturan atau kehancuran kosmis.",
-    },
+    text: { id: "Bulan adalah satelit alami Bumi satu-satunya. Tanpa bulan, Bumi akan berputar jauh lebih cepat dan cuaca akan sangat ekstrem. Al-Qur'an secara menakjubkan mendeskripsikan matahari bersinar (siraj) tapi bulan bercahaya (nur), yang artinya bulan hanya memantulkan cahaya, fakta yang baru dipahami sains modern!", en: "The moon is Earth's only natural satellite. Without the moon, Earth would spin much faster and the weather would be very extreme. The Quran amazingly describes the sun as a burning light (siraj) but the moon as a light (nur), meaning the moon only reflects light, a fact only recently understood by modern science!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "تَبَارَكَ الَّذِي جَعَلَ فِي السَّمَاءِ بُرُوجًا وَجَعَلَ فِيهَا سِرَاجًا وَقَمَرًا مُنِيرًا",
+      transliteration: "Tabaarakalladzii ja'ala fis-samaa'i buruujan wa ja'ala fiihaa siraajan wa qamaran muniiran",
+      translation: { id: "Mahasuci Allah yang menjadikan di langit gugusan bintang-bintang dan Dia juga menjadikan padanya matahari dan bulan yang bersinar.", en: "Blessed is He who has placed in the sky great stars and placed therein a [burning] lamp and luminous moon." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Bulan Sabit?",
-          en: "What is the primary wisdom of scientific signs regarding Bulan Sabit?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const kometHalleyData: ObjectData = {
-  slug: "komet-halley",
-  name: {
-    id: "Komet Halley",
-    en: "Komet Halley",
-  },
-  scientificName: "Comet",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+export const kometData: ObjectData = {
+  slug: "komet",
+  name: { id: "Komet", en: "Comet" },
   icon: "☄️",
   category: "langit",
   type: "langit",
+  scientificName: "Comet",
+  surahName: "At-Tariq",
+  surahReference: "86:1-3",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "ثَاقِب", latin: "Thaqib", arti: "Menembus", artiEn: "Piercing", contohAyat: "Bintang yang cahayanya menembus kegelapan" }
   ],
   balita: {
-    text: {
-      id: "Ini Komet Halley! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Komet Halley! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Komet Halley. Allah menciptakan Komet Halley dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Komet Halley. Allah created Komet Halley beautifully so we all become grateful.",
-    },
+    text: { id: "Wuuussh! Ini komet! Dia seperti bola salju kotor raksasa yang punya ekor menyala panjang sekali! ❄️🔥", en: "Whoosh! This is a comet! It's like a giant dirty snowball with a super long glowing tail! ❄️🔥" },
+    audioTranscript: { id: "Lihat itu! Ada bola salju terbang yang punya ekor cahaya panjang. Namanya Komet! Allah menciptakannya melesat sangat cepat di angkasa.", en: "Look at that! There's a flying snowball with a long tail of light. It's called a Comet! Allah created it to zoom very fast in space." },
     quiz: {
-      question: {
-        id: "Mana gambar Komet Halley?",
-        en: "Which one is the picture of Komet Halley?",
-      },
+      question: { id: "Komet itu sering disebut mirip apa ya?", en: "What is a comet often said to look like?" },
       options: [
-        { text: { id: "☄️ Komet Halley", en: "☄️ Komet Halley" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Bola api", en: "Fireball" } },
+        { text: { id: "Bola salju kotor yang terbang", en: "Flying dirty snowball" } },
+        { text: { id: "Kue donat", en: "Donut" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Komet Halley: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Komet Halley: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Komet terbuat dari es, debu, dan batuan sisa pembentukan tata surya. Kalau komet mendekati matahari, esnya akan menguap dan membentuk ekor yang indah!", en: "Comets are made of ice, dust, and rocks left over from the formation of the solar system. When a comet gets close to the sun, its ice evaporates and forms a beautiful tail!" },
     facts: [
-      { id: "Objek luar angkasa Komet Halley bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Komet Halley bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Komet Halley melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Komet Halley melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Komet Halley membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Komet Halley membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Ekor komet panjangnya bisa mencapai jutaan kilometer lho! Wow!", en: "A comet's tail can be millions of kilometers long! Wow!" },
+      { id: "Anehnya, ekor komet SELALU menjauhi matahari, karena tertiup oleh angin matahari.", en: "Strangely, a comet's tail ALWAYS points away from the sun, blown by the solar wind." },
+      { id: "Komet yang sangat terkenal adalah Komet Halley. Ia hanya lewat di dekat Bumi setiap 76 tahun sekali! 📅", en: "A very famous comet is Halley's Comet. It only passes near Earth once every 76 years! 📅" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Komet Halley dengan sempurna?",
-        en: "Who created Komet Halley perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Komet Halley mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Komet Halley reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Komet Halley: Hukum gravitasi universal mengikat Komet Halley agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Komet Halley: Hukum gravitasi universal mengikat Komet Halley agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Orbit komet sangat sangat lonjong. HAH?! Komet bisa pergi ke pinggiran tata surya yang paling gelap dan dingin, lalu kembali lagi meluncur mendekati panasnya matahari bak peluru tajam! 1400 tahun lalu, Al-Qur'an menggambarkan benda langit yang menembus kegelapan dengan cahayanya yang cemerlang.", en: "Comet orbits are incredibly elliptical. HAH?! Comets can travel to the darkest, coldest edges of the solar system, then shoot back near the scorching heat of the sun like a sharp bullet! 1400 years ago, the Quran described celestial bodies piercing the darkness with their brilliant light." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَالسَّمَاءِ وَالطَّارِقِ ﴿١﴾ وَمَا أَدْرَاكَ مَا الطَّارِقُ ﴿٢﴾ النَّجْمُ الثَّاقِبُ ﴿٣﴾",
+      transliteration: "Was-samā'i waṭ-ṭāriq (1). Wa mā adrāka maṭ-ṭāriq (2). An-najmuth-thāqib (3).",
+      translation: { id: "Demi langit dan yang datang pada malam hari, tahukah kamu apakah yang datang pada malam hari itu? (yaitu) bintang yang cahayanya menembus.", en: "By the sky and the night comer - And what can make you know what is the night comer? It is the piercing star." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Komet Halley?",
-          en: "What is the primary wisdom of scientific signs regarding Komet Halley?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

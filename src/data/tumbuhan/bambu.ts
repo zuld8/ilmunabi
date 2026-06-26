@@ -2,107 +2,49 @@ import { ObjectData } from "../objects";
 
 export const bambuData: ObjectData = {
   slug: "bambu",
-  name: {
-    id: "Bambu",
-    en: "Bambu",
-  },
-  scientificName: "Bambusoideae",
-  surahName: "Al-Qur'an",
-  surahReference: "Ciptaan Allah",
+  name: { id: "Bambu", en: "Bamboo" },
   icon: "🎋",
   category: "tumbuhan",
   type: "tumbuhan",
-  unlockedAtPoints: 50,
+  scientificName: "Bambusoideae",
+  surahName: "Al-Baqarah",
+  surahReference: "2:164",
+  unlockedAtPoints: 30,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Qur'an Ciptaan Allah" }
+    { arab: "خَيْزُرَانٌ", latin: "khayzuraanun", arti: "Bambu", artiEn: "Bamboo", contohAyat: "Bambu yang kuat." }
   ],
   balita: {
-    text: {
-      id: "Ini Bambu! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Bambu! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Bambu. Allah menciptakan Bambu dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Bambu. Allah created Bambu beautifully so we all become grateful.",
-    },
+    text: { id: "Wow, pohonnya tinggi, kurus, dan warnanya hijau! 🎋", en: "Wow, the tree is tall, skinny, and green! 🎋" },
+    audioTranscript: { id: "Bambu berbunyi krak-krak saat tertiup angin kencang. Hewan lucu panda sangat suka makan daun bambu, nyam nyam!", en: "Bamboo makes a crack-crack sound when blown by strong winds. The cute panda loves to eat bamboo leaves, yum yum!" },
     quiz: {
-      question: {
-        id: "Mana gambar Bambu?",
-        en: "Which one is the picture of Bambu?",
-      },
+      question: { id: "Hewan apa yang suka sekali makan bambu?", en: "Which animal really likes eating bamboo?" },
       options: [
-        { text: { id: "🎋 Bambu", en: "🎋 Bambu" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Panda", en: "Panda" } },
+        { text: { id: "Kucing", en: "Cat" } },
+        { text: { id: "Ayam", en: "Chicken" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 0
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Bambu: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Bambu: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Bambu itu sebetulnya bukan pohon besar, melainkan rumput raksasa! Bambu adalah salah satu tanaman yang tumbuhnya paling cepat di dunia.", en: "Did you know? Bamboo is actually not a big tree, but giant grass! Bamboo is one of the fastest-growing plants in the world." },
     facts: [
-      { id: "Tumbuhan Bambu melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar.", en: "Tumbuhan Bambu melakukan fotosintesis menyerap karbon dioksida dan menghasilkan oksigen segar." },
-      { id: "Akar, batang, dan daun Bambu bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh.", en: "Akar, batang, dan daun Bambu bekerja menyerap mineral bumi untuk menghasilkan buah atau zat penyembuh." },
-      { id: "Zat hijau daun (klorofil) pada Bambu adalah laboratorium biokimia canggih ciptaan Allah SWT.", en: "Zat hijau daun (klorofil) pada Bambu adalah laboratorium biokimia canggih ciptaan Allah SWT." }
+      { id: "Bambu bisa tumbuh setinggi badanmu cuma dalam satu hari!", en: "Bamboo can grow as tall as you in just one day!" },
+      { id: "Bambu lebih kuat dari baja dalam menahan gaya tarik.", en: "Bamboo is stronger than steel in withstanding tensile force." },
+      { id: "Manusia sudah menggunakan bambu untuk membuat rumah, jembatan, dan alat musik.", en: "Humans have used bamboo to make houses, bridges, and musical instruments." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Bambu dengan sempurna?",
-        en: "Who created Bambu perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Bambu mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Bambu reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Seluler", en: "Struktur Seluler" }, desc: { id: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari.", en: "Dinding sel selulosa kuat menyokong tegaknya tumbuhan mencari sinar matahari." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban sains Bambu: Struktur pembuluh kayu dan tapis pada Bambu mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-      en: "Keajaiban sains Bambu: Struktur pembuluh kayu dan tapis pada Bambu mengalirkan air melawan gravitasi bumi tanpa suara, membuktikan kehebatan rekayasa biologi Allah.",
-    },
+    text: { id: "Pernahkah kamu melihat bagaimana lenturnya bambu saat diterpa angin kencang? Bambu tidak mudah patah karena strukturnya yang beruas-ruas lentur namun sangat kuat. Allah menciptakan alam dengan keseimbangan luar biasa. Bambu mengajarkan kita tentang ketahanan dan kelenturan, sebuah desain luar biasa dari Sang Khalik!", en: "Have you ever seen how flexible bamboo is when hit by strong winds? Bamboo doesn't break easily because of its flexible yet very strong jointed structure. Allah created nature with incredible balance. Bamboo teaches us about resilience and flexibility, an amazing design from the Creator!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَخَلَقَ كُلَّ شَيْءٍ فَقَدَّرَهُ تَقْدِيرًا",
+      transliteration: "Wa khalaqa kulla shay'in faqaddarahu taqdīrā",
+      translation: { id: "Dan Dia telah menciptakan segala sesuatu, dan Dia menetapkan ukuran-ukurannya dengan serapi-rapinya.", en: "And He has created each thing and determined it with [precise] determination." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Bambu?",
-          en: "What is the primary wisdom of scientific signs regarding Bambu?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

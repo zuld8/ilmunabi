@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const dombaGarutData: ObjectData = {
-  slug: "domba-garut",
-  name: {
-    id: "Domba Garut",
-    en: "Domba Garut",
-  },
-  scientificName: "Ovis aries",
-  surahName: "Al-An'am",
-  surahReference: "6:143",
-  icon: "🐏",
+export const dombaData: ObjectData = {
+  slug: "domba",
+  name: { id: "Domba", en: "Sheep" },
+  icon: "🐑",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Ovis aries",
+  surahName: "As-Saffat",
+  surahReference: "37:107",
+  unlockedAtPoints: 20,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-An'am 6:143" }
+    { arab: "ضَأْنٌ", latin: "da'nun", arti: "Domba", artiEn: "Sheep", contohAyat: "وَفَدَيْنَاهُ بِذِبْحٍ عَظِيمٍ (Dan Kami tebus anak itu dengan seekor sembelihan yang besar)" }
   ],
   balita: {
-    text: {
-      id: "Ini Domba Garut! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Domba Garut! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Domba Garut. Allah menciptakan Domba Garut dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Domba Garut. Allah created Domba Garut beautifully so we all become grateful.",
-    },
+    text: { id: "Mbeeek! 🐑 Bulu domba itu tebal dan keriting seperti awan. Lembut sekali lho!", en: "Baa baa! 🐑 Sheep wool is thick and curly like clouds. It's so soft!" },
+    audioTranscript: { id: "Halo teman-teman! Aku domba. Buluku tebal untuk menahan dingin. Kamu punya jaket dari bulu domba?", en: "Hello friends! I am a sheep. My wool is thick to keep me warm in the cold. Do you have a wool jacket?" },
     quiz: {
-      question: {
-        id: "Mana gambar Domba Garut?",
-        en: "Which one is the picture of Domba Garut?",
-      },
+      question: { id: "Seperti apa bentuk bulu domba?", en: "What does sheep wool look like?" },
       options: [
-        { text: { id: "🐏 Domba Garut", en: "🐏 Domba Garut" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Panjang dan lurus", en: "Long and straight" } },
+        { text: { id: "Tebal, keriting, dan putih", en: "Thick, curly, and white" } },
+        { text: { id: "Tajam seperti duri", en: "Sharp like thorns" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Domba Garut: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Domba Garut: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Domba itu hewan yang sangat patuh! Dulu, hampir semua Nabi pernah menjadi penggembala domba, termasuk Nabi Muhammad SAW. Dengan menggembala domba, para Nabi belajar sabar dan menyayangi makhluk hidup.", en: "Sheep are very obedient animals! In the past, almost all Prophets were shepherds, including Prophet Muhammad (PBUH). By herding sheep, the Prophets learned patience and compassion for living beings." },
     facts: [
-      { id: "Domba Garut memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Domba Garut memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Domba Garut bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Domba Garut bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Domba Garut dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Domba Garut dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Pupil mata domba berbentuk persegi panjang, sehingga mereka bisa melihat ke belakang tanpa menoleh! 👁️", en: "Sheep have rectangular pupils, allowing them to see behind them without turning their heads! 👁️" },
+      { id: "Domba bisa mengingat 50 wajah domba lain dan manusia selama bertahun-tahun! 🧠", en: "Sheep can remember 50 faces of other sheep and humans for years! 🧠" },
+      { id: "Saat Nabi Ismail hendak disembelih, Allah menggantinya dengan domba yang besar dari surga! 🐑", en: "When Prophet Ismail was about to be sacrificed, Allah replaced him with a large sheep from heaven! 🐑" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Domba Garut dengan sempurna?",
-        en: "Who created Domba Garut perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Domba Garut mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Domba Garut reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Domba Garut: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Domba Garut dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Domba Garut: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Domba Garut dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Domba adalah hewan yang istimewa. Dari bulunya kita bisa membuat pakaian hangat, dari susunya kita mendapat gizi, dan dagingnya sangat lezat. Kisah pengorbanan Nabi Ibrahim yang diganti dengan sembelihan domba besar (kibasy) oleh Allah menjadi cikal bakal ibadah Qurban di bulan Dzulhijjah yang kita rayakan sampai sekarang!", en: "Sheep are special animals. From their wool we make warm clothes, from their milk we get nutrition, and their meat is delicious. The story of Prophet Ibrahim's sacrifice, which Allah replaced with a great sheep (ram), became the origin of the Qurban worship in Dzulhijjah that we celebrate until today!" },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَفَدَيْنَاهُ بِذِبْحٍ عَظِيمٍ",
+      transliteration: "Wa fadaynaahu bidzibhin 'adhiim",
+      translation: { id: "Dan Kami tebus anak itu dengan seekor sembelihan yang besar.", en: "And We ransomed him with a great sacrifice." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Domba Garut?",
-          en: "What is the primary wisdom of scientific signs regarding Domba Garut?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

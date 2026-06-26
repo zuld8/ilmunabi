@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const kambingEtawaData: ObjectData = {
-  slug: "kambing-etawa",
-  name: {
-    id: "Kambing Etawa",
-    en: "Kambing Etawa",
-  },
-  scientificName: "Capra hircus",
-  surahName: "Al-An'am",
-  surahReference: "6:143",
+export const kambingData: ObjectData = {
+  slug: "kambing",
+  name: { id: "Kambing", en: "Goat" },
   icon: "🐐",
   category: "hewan",
   type: "hewan",
-  unlockedAtPoints: 50,
+  scientificName: "Capra hircus",
+  surahName: "Al-An'am",
+  surahReference: "6:143",
+  unlockedAtPoints: 10,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-An'am 6:143" }
+    { arab: "مَاعِزٌ", latin: "maa'izun", arti: "Kambing", artiEn: "Goat", contohAyat: "Kambing menghasilkan susu yang sehat." }
   ],
   balita: {
-    text: {
-      id: "Ini Kambing Etawa! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Kambing Etawa! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Kambing Etawa. Allah menciptakan Kambing Etawa dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Kambing Etawa. Allah created Kambing Etawa beautifully so we all become grateful.",
-    },
+    text: { id: "Mbeeek! 🐐 Kambing suka makan rumput daun hijau. Mereka pintar melompat lho!", en: "Meeeh! 🐐 Goats love eating green grass and leaves. They are very good at jumping!" },
+    audioTranscript: { id: "Hai! Aku kambing! Aku suka sekali memanjat dan makan dedaunan yang segar. Nyam nyam!", en: "Hi! I'm a goat! I really love climbing and eating fresh leaves. Yum yum!" },
     quiz: {
-      question: {
-        id: "Mana gambar Kambing Etawa?",
-        en: "Which one is the picture of Kambing Etawa?",
-      },
+      question: { id: "Apa makanan kesukaan kambing?", en: "What is a goat's favorite food?" },
       options: [
-        { text: { id: "🐐 Kambing Etawa", en: "🐐 Kambing Etawa" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Tulang", en: "Bones" } },
+        { text: { id: "Rumput dan daun", en: "Grass and leaves" } },
+        { text: { id: "Es krim", en: "Ice cream" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 1
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Kambing Etawa: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Kambing Etawa: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Tahukah kamu? Kambing gunung itu pemanjat tebing paling hebat di dunia! Mereka bisa berdiri di tebing batu yang sangat curam lho. Subhanallah!", en: "Did you know? Mountain goats are the best cliff climbers in the world! They can stand on very steep rock cliffs. Subhanallah!" },
     facts: [
-      { id: "Kambing Etawa memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT.", en: "Kambing Etawa memiliki keunikan fisik dan perilaku yang membuktikan kesempurnaan ciptaan Allah SWT." },
-      { id: "Setiap sel dan organ tubuh Kambing Etawa bekerja dalam keseimbangan ekosistem yang luar biasa.", en: "Setiap sel dan organ tubuh Kambing Etawa bekerja dalam keseimbangan ekosistem yang luar biasa." },
-      { id: "Allah SWT menciptakan Kambing Etawa dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia.", en: "Allah SWT menciptakan Kambing Etawa dengan peran dan manfaat khusus yang sangat bernutrisi atau berguna bagi manusia." }
+      { id: "Susu kambing sangat sehat dan merupakan minuman kesukaan Rasulullah SAW! 🥛", en: "Goat milk is very healthy and was the favorite drink of Prophet Muhammad SAW! 🥛" },
+      { id: "Kambing punya pupil mata berbentuk persegi panjang supaya bisa melihat sangat lebar! 👀", en: "Goats have rectangular pupils so they can see very widely! 👀" },
+      { id: "Kambing sangat cerdas dan bisa diajari trik seperti anjing! 🎓", en: "Goats are very smart and can be taught tricks like dogs! 🎓" }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Kambing Etawa dengan sempurna?",
-        en: "Who created Kambing Etawa perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Kambing Etawa mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Kambing Etawa reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Struktur Organ", en: "Struktur Organ" }, desc: { id: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya.", en: "Didesain khusus untuk beradaptasi dengan lingkungan dan makanannya." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban penciptaan Kambing Etawa: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kambing Etawa dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-      en: "Keajaiban penciptaan Kambing Etawa: Allah SWT merancang sistem sensorik, anatomi, dan insting bertahan hidup pada Kambing Etawa dengan presisi tinggi agar seimbang dengan alam sekitarnya.",
-    },
+    text: { id: "Kambing adalah salah satu hewan peliharaan pertama dalam sejarah manusia! Allah memberikan susu kambing khasiat luar biasa, lebih mudah dicerna manusia dibanding susu sapi. Dalam Al-Qur'an disebutkan 8 hewan ternak berpasangan, termasuk sepasang dari jenis domba dan sepasang dari jenis kambing.", en: "Goats are one of the first domesticated animals in human history! Allah gave goat's milk extraordinary benefits, it's easier for humans to digest than cow's milk. The Qur'an mentions 8 livestock in pairs, including a pair of sheep and a pair of goats." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "ثَمَانِيَةَ أَزْوَاجٍ ۖ مِنَ الضَّأْنِ اثْنَيْنِ وَمِنَ الْمَعْزِ اثْنَيْنِ",
+      transliteration: "Thamaaniyata azwaajin minad-da'nith-naini wa minal-ma'zith-nain",
+      translation: { id: "Ada delapan hewan ternak yang berpasangan; sepasang domba dan sepasang kambing.", en: "There are eight mates (in pairs): of the sheep two, and of the goats two." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Kambing Etawa?",
-          en: "What is the primary wisdom of scientific signs regarding Kambing Etawa?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

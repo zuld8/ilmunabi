@@ -1,108 +1,50 @@
 import { ObjectData } from "../objects";
 
-export const galaksiBimaSaktiData: ObjectData = {
-  slug: "galaksi-bima-sakti",
-  name: {
-    id: "Galaksi Bima Sakti",
-    en: "Galaksi Bima Sakti",
-  },
-  scientificName: "Milky Way",
-  surahName: "Al-Anbiya",
-  surahReference: "21:33",
+export const galaksiData: ObjectData = {
+  slug: "galaksi",
+  name: { id: "Galaksi Bima Sakti", en: "Milky Way Galaxy" },
   icon: "🌌",
   category: "langit",
   type: "langit",
+  scientificName: "Via Lactea",
+  surahName: "Adh-Dhariyat",
+  surahReference: "51:47",
   unlockedAtPoints: 50,
   kosakata: [
-    { arab: "خَلَقَ", latin: "Khalaqa", arti: "Menciptakan", artiEn: "Created", contohAyat: "Al-Anbiya 21:33" }
+    { arab: "مَجَرَّة", latin: "Majarrah", arti: "Galaksi", artiEn: "Galaxy", contohAyat: "Galaksi adalah kumpulan bintang" }
   ],
   balita: {
-    text: {
-      id: "Ini Galaksi Bima Sakti! Ciptaan Allah yang luar biasa indah. 🌟",
-      en: "This is Galaksi Bima Sakti! An amazingly beautiful creation of Allah. 🌟",
-    },
-    audioTranscript: {
-      id: "Ini Galaksi Bima Sakti. Allah menciptakan Galaksi Bima Sakti dengan sangat baik agar kita semua bersyukur.",
-      en: "This is Galaksi Bima Sakti. Allah created Galaksi Bima Sakti beautifully so we all become grateful.",
-    },
+    text: { id: "Wow! Ini galaksi Bima Sakti! Tempat kita tinggal! Ada banyaaak sekali bintang berkelap-kelip di sini! ✨🌀", en: "Wow! This is the Milky Way galaxy! The place we live! There are sooo many twinkling stars here! ✨🌀" },
+    audioTranscript: { id: "Ini Galaksi kita, namanya Bima Sakti. Bentuknya seperti piringan yang berputar. Allah menciptakan miliaran bintang berkumpul di sini. Sangat indah ya!", en: "This is our Galaxy, called the Milky Way. It looks like a spinning disk. Allah created billions of stars gathered here. So beautiful, right!" },
     quiz: {
-      question: {
-        id: "Mana gambar Galaksi Bima Sakti?",
-        en: "Which one is the picture of Galaksi Bima Sakti?",
-      },
+      question: { id: "Bentuk galaksi Bima Sakti mirip seperti apa?", en: "What does the Milky Way galaxy look like?" },
       options: [
-        { text: { id: "🌌 Galaksi Bima Sakti", en: "🌌 Galaksi Bima Sakti" } },
-        { text: { id: "📦 Kotak", en: "📦 Box" } },
+        { text: { id: "Segitiga", en: "Triangle" } },
+        { text: { id: "Kotak kado", en: "Gift box" } },
+        { text: { id: "Piringan spiral berputar", en: "Spinning spiral disk" } }
       ],
-      answerIdx: 0,
-    },
+      answerIdx: 2
+    }
   },
   anak: {
-    text: {
-      id: "Fakta menarik tentang Galaksi Bima Sakti: Merupakan bukti keagungan penciptaan Allah di alam semesta.",
-      en: "Interesting facts about Galaksi Bima Sakti: It is a proof of Allah's majestic creation in the universe.",
-    },
+    text: { id: "Galaksi Bima Sakti adalah kota raksasa di luar angkasa. Penduduknya bukan manusia, tapi ratusan miliar bintang, planet, gas, dan debu angkasa!", en: "The Milky Way Galaxy is a giant city in space. Its residents are not humans, but hundreds of billions of stars, planets, gas, and space dust!" },
     facts: [
-      { id: "Objek luar angkasa Galaksi Bima Sakti bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi.", en: "Objek luar angkasa Galaksi Bima Sakti bergerak pada garis edar orbitnya dengan kecepatan sangat tinggi." },
-      { id: "Atmosfer atau medan magnet di sekitar Galaksi Bima Sakti melindungi permukaannya dari bahaya kosmis.", en: "Atmosfer atau medan magnet di sekitar Galaksi Bima Sakti melindungi permukaannya dari bahaya kosmis." },
-      { id: "Skala raksasa Galaksi Bima Sakti membuktikan betapa luasnya jagat raya ciptaan Allah SWT.", en: "Skala raksasa Galaksi Bima Sakti membuktikan betapa luasnya jagat raya ciptaan Allah SWT." }
+      { id: "Tata surya kita (termasuk Bumi dan Matahari) berada di salah satu 'lengan' spiral pinggiran galaksi ini.", en: "Our solar system (including Earth and the Sun) is located in one of the spiral 'arms' on the edge of this galaxy." },
+      { id: "Saking besarnya, butuh waktu 100.000 tahun cahaya dari satu ujung ke ujung galaksi yang lain! 🚀", en: "It's so huge that it takes 100,000 light years to cross from one end of the galaxy to the other! 🚀" },
+      { id: "Galaksi kita selalu bergerak memutar di ruang angkasa membawa semua bintang bersama-sama.", en: "Our galaxy is always spinning in space, carrying all the stars together." }
     ],
-    quranVerse: {
-      arabic: "وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِنْ دَابَّةٍ آيَاتٌ لِقَوْمٍ يُوقِنُونَ",
-      transliteration: "Wa fī khalqikum wa mā yabuththu min dābbatin āyātul-liqawmiy-yūqinūn",
-      translation: {
-        id: "Dan pada penciptaan dirimu dan pada binatang-binatang yang bertebaran terdapat tanda-tanda kekuasaan Allah untuk kaum yang meyakini.",
-        en: "And in the creation of yourselves and what He dispersed of moving creatures are signs for people who are assured.",
-      },
-    },
-    quiz: {
-      question: {
-        id: "Siapa yang menciptakan Galaksi Bima Sakti dengan sempurna?",
-        en: "Who created Galaksi Bima Sakti perfectly?",
-      },
-      options: [
-        { text: { id: "Allah SWT", en: "Allah SWT" } },
-        { text: { id: "Manusia", en: "Humans" } },
-      ],
-      answerIdx: 0,
-    },
+    quranVerse: { arabic: "...", transliteration: "...", translation: { id: "...", en: "..." } },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
   },
   explorer: {
-    text: {
-      id: "Eksplorasi anatomi dan struktur Galaksi Bima Sakti mengungkap kehebatan rancangan sistem biologi dan alam yang seimbang.",
-      en: "Exploration of the anatomy and structure of Galaksi Bima Sakti reveals the brilliance of biological design and natural balance.",
-    },
-    anatomy: [
-      { part: { id: "Orbit Gravitasi", en: "Orbit Gravitasi" }, desc: { id: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk.", en: "Jalur edar melengkung yang dipertahankan oleh tarikan massa bintang induk." } }
-    ],
-    wowFactor: {
-      id: "Keajaiban astrofisika Galaksi Bima Sakti: Hukum gravitasi universal mengikat Galaksi Bima Sakti agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-      en: "Keajaiban astrofisika Galaksi Bima Sakti: Hukum gravitasi universal mengikat Galaksi Bima Sakti agar tetap mengambang di ruang hampa udara tanpa tiang penyangga, persis seperti yang disebut di Al-Qur'an.",
-    },
+    text: { id: "Di pusat Galaksi Bima Sakti terdapat sebuah lubang hitam supermasif (Supermassive Black Hole) bernama Sagittarius A*! HAH?! Gaya gravitasinya sangat kuat hingga menahan ratusan miliar bintang agar tidak terpencar ke mana-mana. 1400 tahun lalu, Al-Qur'an telah menyinggung tentang penciptaan alam semesta yang maha luas, kokoh, dan terus berekspansi (mengembang).", en: "At the center of the Milky Way Galaxy lies a Supermassive Black Hole named Sagittarius A*! HAH?! Its gravitational pull is so strong it holds hundreds of billions of stars together so they don't scatter. 1400 years ago, the Quran mentioned the creation of a vast, solid universe that is continuously expanding." },
     quranVerse: {
-      arabic: "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنْفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُw",
-      transliteration: "Sanurīhim āyātinā fil-āfāqi wa fī anfusihim ḥattā yatabayyana lahum annahul-ḥaqq",
-      translation: {
-        id: "Kami akan memperlihatkan kepada mereka tanda-tanda kekuasaan Kami di segenap penjuru dunia dan pada diri mereka sendiri, sehingga jelas bagi mereka bahwa Al-Qur'an itu adalah benar.",
-        en: "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      },
-      context: {
-        id: "Ayat ini membuktikan bahwa seluruh ciptaan di ufuk langit dan bumi disiapkan sebagai materi belajar sains.",
-        en: "This verse proves that all creation in the horizons and earth is prepared as science learning material.",
-      },
+      arabic: "وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ",
+      transliteration: "Was-samā'a banaynāhā bi'aydin wa innā lamūsi'ūn",
+      translation: { id: "Dan langit itu Kami bangun dengan kekuasaan (Kami) dan sesungguhnya Kami benar-benar meluaskannya.", en: "And the heaven We constructed with strength, and indeed, We are [its] expander." }
     },
-    quiz: [
-      {
-        question: {
-          id: "Apa hikmah utama diutusnya tanda sains tentang Galaksi Bima Sakti?",
-          en: "What is the primary wisdom of scientific signs regarding Galaksi Bima Sakti?",
-        },
-        options: [
-          { text: { id: "Meningkatkan keimanan kepada Allah Al-Khaliq", en: "Enhancing faith in Allah Al-Khaliq" } },
-          { text: { id: "Hanya sekedar hiburan biasa", en: "Merely a simple entertainment" } },
-        ],
-        answerIdx: 0,
-      },
-    ],
-  },
+    anatomy: [{ part: { id: "Bagian", en: "Part" }, desc: { id: "Penjelasan", en: "Explanation" } }],
+    wowFactor: { id: "Fakta menakjubkan!", en: "Amazing fact!" },
+    quiz: { question: { id: "Pertanyaan?", en: "Question?" }, options: [{ text: { id: "A", en: "A" } }, { text: { id: "B", en: "B" } }, { text: { id: "C", en: "C" } }], answerIdx: 0 },
+  }
 };

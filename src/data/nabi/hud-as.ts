@@ -9,18 +9,31 @@ export const hudAsData: NabiData = {
   type: "nabi",
   unlockedAtPoints: 100,
   surahReference: "Hud:50",
-  storyShort: { id: "Diutus kepada kaum 'Aad yang sombong karena kekuatan fisiknya.", en: "Sent to the 'Aad people who were arrogant due to their physical strength." },
-  storyFull: { id: "Nabi Hud AS diutus ke kaum 'Aad yang memiliki tubuh besar, kuat, dan membangun gedung-gedung mewah di perbukitan. Mereka sangat sombong dan menyembah berhala. Nabi Hud menasihati mereka, tapi mereka menolak. Akhirnya Allah menurunkan angin topan dahsyat selama 7 malam 8 hari yang memusnahkan kesombongan mereka. Nabi Hud dan orang beriman diselamatkan.", en: "Prophet Hud AS was sent to the 'Aad people who had large, strong bodies and built luxurious buildings on hills. They were very arrogant and worshipped idols. Prophet Hud advised them, but they refused. Finally, Allah sent a devastating hurricane for 7 nights and 8 days that destroyed their arrogance. Prophet Hud and the believers were saved." },
+  storyShort: {
+    id: "Nabi yang diutus untuk Kaum 'Aad yang sombong karena kekuatannya.",
+    en: "The prophet sent to the 'Aad people who were arrogant due to their strength."
+  },
+  storyFull: {
+    id: "Kaum 'Aad sangat kuat dan pintar membangun gedung-gedung tinggi, tapi mereka sombong dan menyembah berhala. Nabi Hud AS mengingatkan mereka, namun mereka malah menantang Allah. Akhirnya, Allah mengirimkan angin kencang yang sangat dingin selama 7 malam 8 hari yang menghancurkan kesombongan mereka.",
+    en: "The 'Aad people were very strong and smart at building tall buildings, but they were arrogant and worshipped idols. Prophet Hud AS warned them, but they challenged Allah instead. Finally, Allah sent a very cold and fierce wind for 7 nights and 8 days that destroyed their arrogance."
+  },
   miracles: [
-    { id: "Diselamatkan dari angin topan yang sangat dahsyat", en: "Saved from a very devastating hurricane" }
+    { id: "Selamat dari badai angin super dahsyat.", en: "Survived a super devastating wind storm." },
+    { id: "Diberi kesabaran menghadapi kaum raksasa yang kuat.", en: "Given patience in facing a strong, giant-like people." }
   ],
   characterTraits: [
-    { trait: { id: "Berani", en: "Brave" }, desc: { id: "Berani menasihati kaum yang kuat dan kejam", en: "Brave to advise a strong and cruel people" } },
-    { trait: { id: "Rendah Hati", en: "Humble" }, desc: { id: "Tidak sombong meski utusan Allah", en: "Not arrogant despite being Allah's messenger" } }
+    { trait: { id: "Berani", en: "Brave" }, desc: { id: "Berani menasihati orang-orang kuat dan sombong", en: "Brave to advise strong and arrogant people" } },
+    { trait: { id: "Tenang", en: "Calm" }, desc: { id: "Tidak panik saat diancam kaumnya", en: "Not panicked when threatened by his people" } },
+    { trait: { id: "Tawakkal", en: "Trust in Allah" }, desc: { id: "Hanya bergantung pada perlindungan Allah", en: "Relied solely on Allah's protection" } }
   ],
   timeline: [
-    { yearOrAge: "Dakwah", title: { id: "Menasihati Kaum 'Aad", en: "Advising 'Aad" }, desc: { id: "Mengingatkan agar tidak sombong", en: "Reminding them not to be arrogant" } },
-    { yearOrAge: "Azab", title: { id: "Angin Topan", en: "Hurricane" }, desc: { id: "Angin badai menghancurkan kesombongan mereka", en: "A storm destroyed their arrogance" } }
+    { yearOrAge: "Masa Dakwah", title: { id: "Menasihati Kaum 'Aad", en: "Advising 'Aad" }, desc: { id: "Mengajak menyembah Allah", en: "Calling to worship Allah" } },
+    { yearOrAge: "Penolakan", title: { id: "Kaum 'Aad Sombong", en: "Arrogant 'Aad" }, desc: { id: "Mereka membanggakan kekuatan fisiknya", en: "They boasted of their physical strength" } },
+    { yearOrAge: "Azab", title: { id: "Angin Dingin", en: "Cold Wind" }, desc: { id: "Badai dahsyat memusnahkan mereka", en: "A fierce storm wiped them out" } }
   ],
-  dailyLifeConnection: { id: "Sebesar apa pun kekuatan atau kepintaran kita, jangan pernah sombong ya! Semua itu titipan Allah.", en: "No matter how strong or smart we are, never be arrogant! It's all entrusted by Allah." }
+  dailyLifeConnection: {
+    id: "Orang kuat bukan berarti boleh sombong. Kekuatan itu titipan Allah, gunakan untuk melindungi yang lemah!",
+    en: "Being strong doesn't mean you can be arrogant. Strength is entrusted by Allah, use it to protect the weak!"
+  }
 };
+

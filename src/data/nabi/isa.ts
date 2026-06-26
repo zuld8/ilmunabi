@@ -1,38 +1,41 @@
+// TODO: WAJIB REVIEW USTADZ SEBELUM PUBLISH
 import { NabiData } from "../objects";
 
 export const isaData: NabiData = {
   slug: "nabi-isa",
   name: {
     id: "Nabi Isa A.S.",
-    en: "Nabi Isa A.S.",
+    en: "Prophet Isa A.S.",
   },
-  icon: "🕌",
+  icon: "✨",
   category: "nabi",
   type: "nabi",
   unlockedAtPoints: 100,
   storyShort: {
-    id: "Nabi yang lahir tanpa ayah dari perawan suci Maryam, mampu berbicara saat bayi, membuat burung dari tanah liat, dan menghidupkan orang mati atas izin Allah.",
-    en: "Nabi yang lahir tanpa ayah dari perawan suci Maryam, mampu berbicara saat bayi, membuat burung dari tanah liat, dan menghidupkan orang mati atas izin Allah.",
+    id: "Nabi yang bisa bicara saat bayi dan mampu menyembuhkan orang sakit dengan izin Allah.",
+    en: "The Prophet who could speak as a baby and heal the sick with Allah's permission.",
   },
   storyFull: {
-    id: "Nabi Isa A.S. dilahirkan oleh Maryam yang suci tanpa perantara ayah sebagai tanda kekuasaan Allah. Ketika Maryam dituduh, bayi Isa berbicara di dalam ayunan bayi untuk membela ibunya. Beliau mendakwahkan kitab Injil, mampu menyembuhkan orang buta sejak lahir, menyembuhkan kusta, membentuk burung dari tanah lalu menghidupkannya, dan menghidupkan orang mati, semuanya atas izin Allah SWT.",
-    en: "Nabi Isa A.S. dilahirkan oleh Maryam yang suci tanpa perantara ayah sebagai tanda kekuasaan Allah. Ketika Maryam dituduh, bayi Isa berbicara di dalam ayunan bayi untuk membela ibunya. Beliau mendakwahkan kitab Injil, mampu menyembuhkan orang buta sejak lahir, menyembuhkan kusta, membentuk burung dari tanah lalu menghidupkannya, dan menghidupkan orang mati, semuanya atas izin Allah SWT.",
+    id: "Nabi Isa A.S. lahir dari wanita suci Siti Maryam tanpa ayah. Mukjizat ini membuktikan kebesaran Allah. Sejak bayi dalam buaian, beliau sudah bisa berbicara membela ibunya. Saat dewasa, beliau diberi kitab Injil, bisa menghidupkan burung dari tanah liat, dan menyembuhkan penyakit buta.",
+    en: "Prophet Isa A.S. was born to the pure woman Lady Maryam without a father. This miracle proved Allah's greatness. Since he was a baby in the cradle, he could speak to defend his mother. As an adult, he was given the Gospel (Injil), could bring clay birds to life, and heal the blind.",
   },
   miracles: [
-    { id: "Berbicara lancar membela ibunya saat masih bayi di dalam ayunan.", en: "Berbicara lancar membela ibunya saat masih bayi di dalam ayunan." },
-    { id: "Membentuk tanah liat menjadi burung lalu menghidupkannya.", en: "Membentuk tanah liat menjadi burung lalu menghidupkannya." },
-    { id: "Menyembuhkan orang buta, penyakit kusta, dan menghidupkan orang mati.", en: "Menyembuhkan orang buta, penyakit kusta, dan menghidupkan orang mati." }
+    { id: "Lahir tanpa ayah dan bisa berbicara jelas saat masih bayi merah.", en: "Born without a father and could speak clearly as a newborn baby." },
+    { id: "Menyembuhkan orang buta sejak lahir dan menghidupkan orang mati dengan izin Allah.", en: "Healed the blind from birth and brought the dead to life with Allah's permission." }
   ],
   characterTraits: [
-    { trait: { id: "Sederhana & Kasih", en: "Sederhana & Kasih" }, desc: { id: "Sangat sederhana dalam hidupnya dan penuh kasih sayang kepada kaum miskin.", en: "Sangat sederhana dalam hidupnya dan penuh kasih sayang kepada kaum miskin." } }
+    { trait: { id: "Penuh Kasih", en: "Compassionate" }, desc: { id: "Sangat lembut dan peduli kepada orang-orang miskin dan sakit.", en: "Very gentle and cared for the poor and sick." } },
+    { trait: { id: "Pembela Ibu", en: "Mother's Defender" }, desc: { id: "Berbicara saat bayi untuk melindungi nama baik ibunya, Siti Maryam.", en: "Spoke as a baby to protect the good name of his mother, Lady Maryam." } },
+    { trait: { id: "Sederhana", en: "Simple" }, desc: { id: "Hidup berpindah-pindah menyebarkan kebaikan tanpa mengejar harta.", en: "Lived a nomadic life spreading goodness without chasing wealth." } }
   ],
   timeline: [
-    { yearOrAge: "Bayi", title: { id: "Berbicara di Ayunan", en: "Berbicara di Ayunan" }, desc: { id: "Menjelaskan bahwa dirinya adalah hamba Allah dan nabi pembawa kitab.", en: "Menjelaskan bahwa dirinya adalah hamba Allah dan nabi pembawa kitab." } },
-    { yearOrAge: "Dakwah", title: { id: "Mukjizat Penyembuhan", en: "Mukjizat Penyembuhan" }, desc: { id: "Menyembuhkan penyakit kronis yang tidak bisa diobati dokter zamannya.", en: "Menyembuhkan penyakit kronis yang tidak bisa diobati dokter zamannya." } }
+    { yearOrAge: "Bayi", title: { id: "Bicara di Buaian", en: "Speaking in the Cradle" }, desc: { id: "Menjelaskan dirinya adalah hamba Allah dan Nabi yang membawa kitab.", en: "Explained he was Allah's servant and a Prophet bringing a book." } },
+    { yearOrAge: "Dakwah", title: { id: "Mukjizat Penyakit", en: "Miracles of Healing" }, desc: { id: "Menyembuhkan orang buta dan kusta agar orang-orang percaya Allah.", en: "Healed the blind and lepers so people would believe in Allah." } },
+    { yearOrAge: "Akhir", title: { id: "Diangkat ke Langit", en: "Raised to the Sky" }, desc: { id: "Diselamatkan Allah dari kejaran musuh dengan diangkat ke langit.", en: "Saved by Allah from enemies by being raised to the sky." } }
   ],
   dailyLifeConnection: {
-    id: "Kita harus bersikap sopan santun kepada semua orang, terutama menyayangi teman-teman yang kurang beruntung.",
-    en: "Kita harus bersikap sopan santun kepada semua orang, terutama menyayangi teman-teman yang kurang beruntung.",
+    id: "Kita harus membela dan menyayangi ibu kita, serta menolong orang yang sedang sakit.",
+    en: "We must defend and love our mothers, and help those who are sick.",
   },
-  surahReference: "Maryam 19:16-36",
+  surahReference: "Maryam 19:30-33",
 };
